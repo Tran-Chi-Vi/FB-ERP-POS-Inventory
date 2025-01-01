@@ -11,3 +11,4 @@
 [2025-01-01T17:33:37] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-01T17:33:37 #9)
 [2025-01-01T20:04:49] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-01T20:04:49 #10)
 [2025-01-01T09:01:51] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-01T09:01:51 #11)
+[2025-01-01T21:51:11] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-01T21:51:11 #12)
