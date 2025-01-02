@@ -17,3 +17,4 @@
 [2025-01-02T11:51:54] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-02T11:51:54 #3)
 [2025-01-02T19:49:20] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-02T19:49:20 #4)
 [2025-01-02T18:28:11] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-02T18:28:11 #5)
+[2025-01-02T10:22:48] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-02T10:22:48 #6)
