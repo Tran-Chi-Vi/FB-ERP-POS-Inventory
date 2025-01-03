@@ -24,3 +24,4 @@
 [2025-01-03T16:40:44] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-03T16:40:44 #4)
 [2025-01-03T14:27:34] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-03T14:27:34 #5)
 [2025-01-03T16:35:34] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-03T16:35:34 #6)
+[2025-01-03T16:57:03] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-03T16:57:03 #7)
