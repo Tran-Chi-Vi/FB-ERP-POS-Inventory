@@ -22,3 +22,4 @@
 [2025-01-03T16:33:11] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-03T16:33:11 #2)
 [2025-01-03T11:12:32] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-03T11:12:32 #3)
 [2025-01-03T16:40:44] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-03T16:40:44 #4)
+[2025-01-03T14:27:34] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-03T14:27:34 #5)
