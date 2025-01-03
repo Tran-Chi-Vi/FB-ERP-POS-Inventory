@@ -19,3 +19,4 @@
 [2025-01-02T18:28:11] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-02T18:28:11 #5)
 [2025-01-02T10:22:48] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-02T10:22:48 #6)
 [2025-01-03T19:00:50] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-03T19:00:50 #1)
+[2025-01-03T16:33:11] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-03T16:33:11 #2)
