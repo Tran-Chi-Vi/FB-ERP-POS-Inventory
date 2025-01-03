@@ -28,3 +28,4 @@
 [2025-01-03T16:52:07] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-03T16:52:07 #8)
 [2025-01-03T19:48:30] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-03T19:48:30 #9)
 [2025-01-03T08:26:55] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-03T08:26:55 #10)
+[2025-01-03T11:31:41] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-03T11:31:41 #11)
