@@ -44,3 +44,4 @@
 [2025-01-04T09:34:44] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-04T09:34:44 #5)
 [2025-01-06T13:02:21] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-06T13:02:21 #1)
 [2025-01-06T19:17:14] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-06T19:17:14 #2)
+[2025-01-06T15:26:17] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-06T15:26:17 #3)
