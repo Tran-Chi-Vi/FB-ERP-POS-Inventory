@@ -51,3 +51,4 @@
 [2025-01-06T19:48:13] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-06T19:48:13 #7)
 [2025-01-06T13:45:34] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-06T13:45:34 #8)
 [2025-01-06T09:01:43] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-06T09:01:43 #9)
+[2025-01-06T09:52:54] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-06T09:52:54 #10)
