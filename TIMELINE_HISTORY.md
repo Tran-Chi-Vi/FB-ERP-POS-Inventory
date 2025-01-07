@@ -59,3 +59,4 @@
 [2025-01-07T12:42:31] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-07T12:42:31 #4)
 [2025-01-07T11:28:00] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-07T11:28:00 #5)
 [2025-01-07T13:42:41] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-07T13:42:41 #6)
+[2025-01-07T17:47:01] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-07T17:47:01 #7)
