@@ -54,3 +54,4 @@
 [2025-01-06T09:52:54] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-06T09:52:54 #10)
 [2025-01-06T18:50:24] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-06T18:50:24 #11)
 [2025-01-07T14:08:34] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-01-07T14:08:34 #1)
+[2025-01-07T12:37:40] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-07T12:37:40 #2)
