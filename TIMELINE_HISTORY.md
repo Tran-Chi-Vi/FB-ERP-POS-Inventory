@@ -63,3 +63,4 @@
 [2025-01-07T11:34:58] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-07T11:34:58 #8)
 [2025-01-07T21:51:04] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-07T21:51:04 #9)
 [2025-01-07T15:23:38] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-07T15:23:38 #10)
+[2025-01-07T19:40:55] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-07T19:40:55 #11)
