@@ -53,3 +53,4 @@
 [2025-01-06T09:01:43] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-06T09:01:43 #9)
 [2025-01-06T09:52:54] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-06T09:52:54 #10)
 [2025-01-06T18:50:24] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-06T18:50:24 #11)
+[2025-01-07T14:08:34] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-01-07T14:08:34 #1)
