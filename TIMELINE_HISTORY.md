@@ -66,3 +66,4 @@
 [2025-01-07T19:40:55] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-07T19:40:55 #11)
 [2025-01-08T21:57:41] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-08T21:57:41 #1)
 [2025-01-08T17:04:29] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-08T17:04:29 #2)
+[2025-01-08T09:59:13] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-08T09:59:13 #3)
