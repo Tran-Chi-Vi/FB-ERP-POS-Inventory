@@ -79,3 +79,4 @@
 [2025-01-08T16:36:52] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-08T16:36:52 #13)
 [2025-01-08T10:21:16] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-08T10:21:16 #14)
 [2025-01-08T12:46:37] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-08T12:46:37 #15)
+[2025-01-08T11:02:07] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-08T11:02:07 #16)
