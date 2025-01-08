@@ -77,3 +77,4 @@
 [2025-01-08T21:20:32] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-08T21:20:32 #11)
 [2025-01-08T12:29:12] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-08T12:29:12 #12)
 [2025-01-08T16:36:52] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-08T16:36:52 #13)
+[2025-01-08T10:21:16] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-08T10:21:16 #14)
