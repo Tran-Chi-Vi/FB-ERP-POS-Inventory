@@ -74,3 +74,4 @@
 [2025-01-08T15:55:46] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-08T15:55:46 #8)
 [2025-01-08T08:57:14] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-08T08:57:14 #9)
 [2025-01-08T17:49:38] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-08T17:49:38 #10)
+[2025-01-08T21:20:32] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-08T21:20:32 #11)
