@@ -70,3 +70,4 @@
 [2025-01-08T18:49:31] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-08T18:49:31 #4)
 [2025-01-08T09:53:33] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-08T09:53:33 #5)
 [2025-01-08T09:04:19] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-08T09:04:19 #6)
+[2025-01-08T19:41:23] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-08T19:41:23 #7)
