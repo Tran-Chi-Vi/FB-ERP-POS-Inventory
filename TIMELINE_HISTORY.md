@@ -68,3 +68,4 @@
 [2025-01-08T17:04:29] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-08T17:04:29 #2)
 [2025-01-08T09:59:13] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-08T09:59:13 #3)
 [2025-01-08T18:49:31] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-08T18:49:31 #4)
+[2025-01-08T09:53:33] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-08T09:53:33 #5)
