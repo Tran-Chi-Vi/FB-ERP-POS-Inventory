@@ -82,3 +82,4 @@
 [2025-01-08T11:02:07] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-08T11:02:07 #16)
 [2025-01-09T09:59:10] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-09T09:59:10 #1)
 [2025-01-09T21:45:36] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-09T21:45:36 #2)
+[2025-01-09T09:50:12] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-09T09:50:12 #3)
