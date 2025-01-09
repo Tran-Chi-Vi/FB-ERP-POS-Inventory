@@ -85,3 +85,4 @@
 [2025-01-09T09:50:12] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-09T09:50:12 #3)
 [2025-01-09T10:59:41] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-09T10:59:41 #4)
 [2025-01-09T18:24:28] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-09T18:24:28 #5)
+[2025-01-09T08:42:46] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-09T08:42:46 #6)
