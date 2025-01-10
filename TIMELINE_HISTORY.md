@@ -94,3 +94,4 @@
 [2025-01-10T09:36:19] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-10T09:36:19 #6)
 [2025-01-10T11:33:22] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-10T11:33:22 #7)
 [2025-01-10T20:05:21] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-10T20:05:21 #8)
+[2025-01-10T21:45:15] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-10T21:45:15 #9)
