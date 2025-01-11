@@ -101,3 +101,4 @@
 [2025-01-11T17:26:38] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-11T17:26:38 #2)
 [2025-01-11T11:38:08] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-11T11:38:08 #3)
 [2025-01-11T13:08:12] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-11T13:08:12 #4)
+[2025-01-11T09:33:39] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-11T09:33:39 #5)
