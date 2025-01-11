@@ -105,3 +105,4 @@
 [2025-01-11T09:19:14] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-11T09:19:14 #6)
 [2025-01-11T15:03:30] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-11T15:03:30 #7)
 [2025-01-11T14:17:19] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-11T14:17:19 #8)
+[2025-01-11T16:02:46] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-11T16:02:46 #9)
