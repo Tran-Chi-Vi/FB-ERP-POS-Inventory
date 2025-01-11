@@ -111,3 +111,4 @@
 [2025-01-11T14:58:58] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-11T14:58:58 #12)
 [2025-01-11T17:36:35] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-11T17:36:35 #13)
 [2025-01-11T19:17:31] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-11T19:17:31 #14)
+[2025-01-11T18:16:30] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-11T18:16:30 #15)
