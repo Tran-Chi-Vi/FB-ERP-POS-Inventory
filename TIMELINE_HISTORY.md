@@ -108,3 +108,4 @@
 [2025-01-11T16:02:46] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-11T16:02:46 #9)
 [2025-01-11T18:45:59] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-11T18:45:59 #10)
 [2025-01-11T08:39:29] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-11T08:39:29 #11)
+[2025-01-11T14:58:58] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-11T14:58:58 #12)
