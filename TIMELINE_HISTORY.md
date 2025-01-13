@@ -120,3 +120,4 @@
 [2025-01-13T16:35:23] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-13T16:35:23 #3)
 [2025-01-13T16:07:26] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-13T16:07:26 #4)
 [2025-01-13T17:40:57] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-13T17:40:57 #5)
+[2025-01-13T11:20:20] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-13T11:20:20 #6)
