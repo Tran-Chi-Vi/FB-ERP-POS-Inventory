@@ -115,3 +115,4 @@
 [2025-01-11T15:46:33] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-11T15:46:33 #16)
 [2025-01-11T18:49:11] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-11T18:49:11 #17)
 [2025-01-11T08:36:40] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-01-11T08:36:40 #18)
+[2025-01-13T14:35:10] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-13T14:35:10 #1)
