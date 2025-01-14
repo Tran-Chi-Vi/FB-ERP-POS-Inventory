@@ -128,3 +128,4 @@
 [2025-01-14T12:56:41] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-14T12:56:41 #3)
 [2025-01-14T12:21:32] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-14T12:21:32 #4)
 [2025-01-14T16:54:51] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-14T16:54:51 #5)
+[2025-01-14T16:21:47] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-14T16:21:47 #6)
