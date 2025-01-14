@@ -124,3 +124,4 @@
 [2025-01-13T12:33:38] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-13T12:33:38 #7)
 [2025-01-13T19:59:51] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-13T19:59:51 #8)
 [2025-01-14T12:28:57] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-14T12:28:57 #1)
+[2025-01-14T15:54:56] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-14T15:54:56 #2)
