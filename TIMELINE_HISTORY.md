@@ -139,3 +139,4 @@
 [2025-01-15T16:21:20] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-15T16:21:20 #5)
 [2025-01-15T10:32:44] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-15T10:32:44 #6)
 [2025-01-15T13:46:23] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-15T13:46:23 #7)
+[2025-01-15T10:05:47] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-15T10:05:47 #8)
