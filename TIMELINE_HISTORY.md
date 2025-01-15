@@ -141,3 +141,4 @@
 [2025-01-15T13:46:23] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-15T13:46:23 #7)
 [2025-01-15T10:05:47] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-15T10:05:47 #8)
 [2025-01-15T17:15:31] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-15T17:15:31 #9)
+[2025-01-15T08:16:21] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-15T08:16:21 #10)
