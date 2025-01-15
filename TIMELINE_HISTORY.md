@@ -144,3 +144,4 @@
 [2025-01-15T08:16:21] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-15T08:16:21 #10)
 [2025-01-15T20:53:45] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-15T20:53:45 #11)
 [2025-01-15T18:53:06] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-15T18:53:06 #12)
+[2025-01-15T13:52:27] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-15T13:52:27 #13)
