@@ -146,3 +146,4 @@
 [2025-01-15T18:53:06] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-15T18:53:06 #12)
 [2025-01-15T13:52:27] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-15T13:52:27 #13)
 [2025-01-15T11:09:54] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-15T11:09:54 #14)
+[2025-01-15T15:52:01] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-15T15:52:01 #15)
