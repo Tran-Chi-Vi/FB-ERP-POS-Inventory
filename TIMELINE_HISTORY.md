@@ -147,3 +147,4 @@
 [2025-01-15T13:52:27] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-15T13:52:27 #13)
 [2025-01-15T11:09:54] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-15T11:09:54 #14)
 [2025-01-15T15:52:01] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-15T15:52:01 #15)
+[2025-01-15T21:54:51] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-15T21:54:51 #16)
