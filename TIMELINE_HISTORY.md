@@ -156,3 +156,4 @@
 [2025-01-16T13:44:06] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-16T13:44:06 #6)
 [2025-01-16T10:41:30] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-16T10:41:30 #7)
 [2025-01-16T08:28:42] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-16T08:28:42 #8)
+[2025-01-16T16:39:39] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-16T16:39:39 #9)
