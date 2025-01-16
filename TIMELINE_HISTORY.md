@@ -149,3 +149,4 @@
 [2025-01-15T15:52:01] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-15T15:52:01 #15)
 [2025-01-15T21:54:51] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-15T21:54:51 #16)
 [2025-01-16T18:39:31] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-16T18:39:31 #1)
+[2025-01-16T12:46:34] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-16T12:46:34 #2)
