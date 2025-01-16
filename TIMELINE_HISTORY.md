@@ -154,3 +154,4 @@
 [2025-01-16T10:26:14] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-16T10:26:14 #4)
 [2025-01-16T19:22:40] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-16T19:22:40 #5)
 [2025-01-16T13:44:06] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-16T13:44:06 #6)
+[2025-01-16T10:41:30] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-16T10:41:30 #7)
