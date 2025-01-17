@@ -178,3 +178,4 @@
 [2025-01-17T21:47:16] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-17T21:47:16 #11)
 [2025-01-17T18:48:38] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-17T18:48:38 #12)
 [2025-01-17T14:44:48] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-17T14:44:48 #13)
+[2025-01-17T19:38:31] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-17T19:38:31 #14)
