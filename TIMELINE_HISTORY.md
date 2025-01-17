@@ -165,3 +165,4 @@
 [2025-01-16T16:19:16] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-16T16:19:16 #15)
 [2025-01-16T18:07:07] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-16T18:07:07 #16)
 [2025-01-16T21:13:21] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-16T21:13:21 #17)
+[2025-01-17T08:51:09] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-17T08:51:09 #1)
