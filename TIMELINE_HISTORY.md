@@ -182,3 +182,4 @@
 [2025-01-17T13:37:32] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-17T13:37:32 #15)
 [2025-01-17T12:43:44] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-17T12:43:44 #16)
 [2025-01-17T18:10:53] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-17T18:10:53 #17)
+[2025-01-17T17:47:40] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-17T17:47:40 #18)
