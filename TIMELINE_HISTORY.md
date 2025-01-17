@@ -176,3 +176,4 @@
 [2025-01-17T11:58:28] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-17T11:58:28 #9)
 [2025-01-17T15:49:39] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-17T15:49:39 #10)
 [2025-01-17T21:47:16] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-17T21:47:16 #11)
+[2025-01-17T18:48:38] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-17T18:48:38 #12)
