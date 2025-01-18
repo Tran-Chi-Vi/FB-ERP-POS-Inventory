@@ -195,3 +195,4 @@
 [2025-01-18T12:34:21] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-18T12:34:21 #10)
 [2025-01-18T10:24:50] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-18T10:24:50 #11)
 [2025-01-18T18:24:57] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-18T18:24:57 #12)
+[2025-01-18T16:36:31] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-18T16:36:31 #13)
