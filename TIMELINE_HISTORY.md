@@ -198,3 +198,4 @@
 [2025-01-18T16:36:31] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-18T16:36:31 #13)
 [2025-01-20T15:20:07] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-20T15:20:07 #1)
 [2025-01-20T09:10:10] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-20T09:10:10 #2)
+[2025-01-20T18:02:53] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-20T18:02:53 #3)
