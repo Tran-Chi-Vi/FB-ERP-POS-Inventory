@@ -205,3 +205,4 @@
 [2025-01-20T14:53:55] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-20T14:53:55 #7)
 [2025-01-20T14:05:33] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-20T14:05:33 #8)
 [2025-01-20T15:55:00] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-20T15:55:00 #9)
+[2025-01-20T15:09:12] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-20T15:09:12 #10)
