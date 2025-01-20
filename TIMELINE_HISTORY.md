@@ -211,3 +211,4 @@
 [2025-01-20T12:15:11] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-20T12:15:11 #13)
 [2025-01-20T10:43:07] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-20T10:43:07 #14)
 [2025-01-20T17:20:13] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-20T17:20:13 #15)
+[2025-01-20T11:58:38] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-20T11:58:38 #16)
