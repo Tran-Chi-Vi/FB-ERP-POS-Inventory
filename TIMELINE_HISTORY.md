@@ -201,3 +201,4 @@
 [2025-01-20T18:02:53] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-20T18:02:53 #3)
 [2025-01-20T18:29:55] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-20T18:29:55 #4)
 [2025-01-20T19:33:33] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-20T19:33:33 #5)
+[2025-01-20T11:28:59] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-20T11:28:59 #6)
