@@ -215,3 +215,4 @@
 [2025-01-21T15:25:57] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-21T15:25:57 #1)
 [2025-01-21T08:17:05] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-21T08:17:05 #2)
 [2025-01-21T10:06:39] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-21T10:06:39 #3)
+[2025-01-21T11:14:11] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-21T11:14:11 #4)
