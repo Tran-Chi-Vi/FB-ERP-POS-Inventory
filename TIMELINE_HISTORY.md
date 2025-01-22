@@ -239,3 +239,4 @@
 [2025-01-22T20:34:54] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-01-22T20:34:54 #10)
 [2025-01-22T18:59:56] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-22T18:59:56 #11)
 [2025-01-22T11:05:19] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-22T11:05:19 #12)
+[2025-01-22T12:15:53] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-22T12:15:53 #13)
