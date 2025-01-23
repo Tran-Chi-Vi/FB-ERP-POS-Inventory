@@ -241,3 +241,4 @@
 [2025-01-22T11:05:19] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-22T11:05:19 #12)
 [2025-01-22T12:15:53] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-22T12:15:53 #13)
 [2025-01-23T15:12:17] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-23T15:12:17 #1)
+[2025-01-23T09:54:32] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-23T09:54:32 #2)
