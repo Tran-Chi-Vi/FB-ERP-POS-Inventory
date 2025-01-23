@@ -251,3 +251,4 @@
 [2025-01-23T14:23:26] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-23T14:23:26 #9)
 [2025-01-23T08:38:39] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-01-23T08:38:39 #10)
 [2025-01-23T09:58:25] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-23T09:58:25 #11)
+[2025-01-23T17:13:36] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-23T17:13:36 #12)
