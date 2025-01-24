@@ -259,3 +259,4 @@
 [2025-01-24T13:14:08] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-24T13:14:08 #5)
 [2025-01-24T12:12:02] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-24T12:12:02 #6)
 [2025-01-24T19:13:35] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-24T19:13:35 #7)
+[2025-01-24T21:29:53] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-24T21:29:53 #8)
