@@ -256,3 +256,4 @@
 [2025-01-24T08:55:48] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-24T08:55:48 #2)
 [2025-01-24T13:48:59] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-24T13:48:59 #3)
 [2025-01-24T17:25:47] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-24T17:25:47 #4)
+[2025-01-24T13:14:08] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-24T13:14:08 #5)
