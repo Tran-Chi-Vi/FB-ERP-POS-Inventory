@@ -262,3 +262,4 @@
 [2025-01-24T21:29:53] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-24T21:29:53 #8)
 [2025-01-24T10:21:32] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-01-24T10:21:32 #9)
 [2025-01-24T08:34:59] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-24T08:34:59 #10)
+[2025-01-24T21:40:23] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-24T21:40:23 #11)
