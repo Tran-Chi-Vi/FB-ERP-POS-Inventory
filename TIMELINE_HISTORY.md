@@ -268,3 +268,4 @@
 [2025-01-24T08:32:38] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-01-24T08:32:38 #14)
 [2025-01-24T21:55:44] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-24T21:55:44 #15)
 [2025-01-24T13:59:04] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-24T13:59:04 #16)
+[2025-01-24T11:23:48] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-24T11:23:48 #17)
