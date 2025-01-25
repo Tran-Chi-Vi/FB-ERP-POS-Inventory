@@ -274,3 +274,4 @@
 [2025-01-25T19:03:20] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-25T19:03:20 #1)
 [2025-01-25T20:24:28] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-25T20:24:28 #2)
 [2025-01-25T08:48:12] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-25T08:48:12 #3)
+[2025-01-25T13:16:45] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-25T13:16:45 #4)
