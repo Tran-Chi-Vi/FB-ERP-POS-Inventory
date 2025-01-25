@@ -281,3 +281,4 @@
 [2025-01-25T12:18:40] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-25T12:18:40 #8)
 [2025-01-25T12:54:02] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-25T12:54:02 #9)
 [2025-01-25T18:40:15] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-25T18:40:15 #10)
+[2025-01-25T15:34:04] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-25T15:34:04 #11)
