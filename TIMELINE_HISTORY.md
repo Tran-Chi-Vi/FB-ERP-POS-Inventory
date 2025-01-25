@@ -283,3 +283,4 @@
 [2025-01-25T18:40:15] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-25T18:40:15 #10)
 [2025-01-25T15:34:04] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-25T15:34:04 #11)
 [2025-01-25T21:03:55] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-25T21:03:55 #12)
+[2025-01-25T11:20:34] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-25T11:20:34 #13)
