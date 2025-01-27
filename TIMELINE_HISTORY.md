@@ -297,3 +297,4 @@
 [2025-01-27T10:19:21] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-27T10:19:21 #7)
 [2025-01-27T11:43:24] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-27T11:43:24 #8)
 [2025-01-27T16:16:26] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-27T16:16:26 #9)
+[2025-01-27T19:27:13] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-27T19:27:13 #10)
