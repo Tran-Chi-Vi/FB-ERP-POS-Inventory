@@ -291,3 +291,4 @@
 [2025-01-27T14:29:15] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-27T14:29:15 #1)
 [2025-01-27T11:11:00] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-27T11:11:00 #2)
 [2025-01-27T08:09:51] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-27T08:09:51 #3)
+[2025-01-27T17:00:39] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-01-27T17:00:39 #4)
