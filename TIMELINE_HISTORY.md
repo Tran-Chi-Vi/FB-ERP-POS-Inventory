@@ -296,3 +296,4 @@
 [2025-01-27T17:42:26] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-27T17:42:26 #6)
 [2025-01-27T10:19:21] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-01-27T10:19:21 #7)
 [2025-01-27T11:43:24] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-27T11:43:24 #8)
+[2025-01-27T16:16:26] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-27T16:16:26 #9)
