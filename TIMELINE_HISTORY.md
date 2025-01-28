@@ -309,3 +309,4 @@
 [2025-01-28T20:04:27] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-28T20:04:27 #8)
 [2025-01-28T12:37:46] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-28T12:37:46 #9)
 [2025-01-28T09:14:20] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-28T09:14:20 #10)
+[2025-01-28T09:44:16] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-28T09:44:16 #11)
