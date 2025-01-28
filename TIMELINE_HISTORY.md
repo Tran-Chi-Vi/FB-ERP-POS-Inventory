@@ -304,3 +304,4 @@
 [2025-01-28T20:33:52] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-28T20:33:52 #3)
 [2025-01-28T08:22:54] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-28T08:22:54 #4)
 [2025-01-28T19:09:22] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-28T19:09:22 #5)
+[2025-01-28T09:44:19] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-28T09:44:19 #6)
