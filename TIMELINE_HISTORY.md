@@ -299,3 +299,4 @@
 [2025-01-27T16:16:26] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-27T16:16:26 #9)
 [2025-01-27T19:27:13] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-27T19:27:13 #10)
 [2025-01-27T17:55:54] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-27T17:55:54 #11)
+[2025-01-28T13:00:22] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-28T13:00:22 #1)
