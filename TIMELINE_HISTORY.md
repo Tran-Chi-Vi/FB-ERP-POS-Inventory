@@ -311,3 +311,4 @@
 [2025-01-28T09:14:20] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-28T09:14:20 #10)
 [2025-01-28T09:44:16] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-28T09:44:16 #11)
 [2025-01-28T18:27:18] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-28T18:27:18 #12)
+[2025-01-28T15:39:37] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-28T15:39:37 #13)
