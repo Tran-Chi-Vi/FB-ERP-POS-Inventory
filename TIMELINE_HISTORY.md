@@ -323,3 +323,4 @@
 [2025-01-29T18:21:48] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-29T18:21:48 #9)
 [2025-01-29T16:01:49] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-29T16:01:49 #10)
 [2025-01-29T19:58:10] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-29T19:58:10 #11)
+[2025-01-29T14:00:42] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-29T14:00:42 #12)
