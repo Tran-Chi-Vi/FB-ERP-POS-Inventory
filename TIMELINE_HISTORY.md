@@ -314,3 +314,4 @@
 [2025-01-28T15:39:37] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-28T15:39:37 #13)
 [2025-01-29T13:06:28] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-01-29T13:06:28 #1)
 [2025-01-29T15:25:42] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-29T15:25:42 #2)
+[2025-01-29T09:09:18] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-29T09:09:18 #3)
