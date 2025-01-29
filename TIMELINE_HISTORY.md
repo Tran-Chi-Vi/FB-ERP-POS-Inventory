@@ -327,3 +327,4 @@
 [2025-01-29T11:42:39] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-29T11:42:39 #13)
 [2025-01-29T10:02:36] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-29T10:02:36 #14)
 [2025-01-29T10:53:28] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-29T10:53:28 #15)
+[2025-01-29T15:39:43] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-29T15:39:43 #16)
