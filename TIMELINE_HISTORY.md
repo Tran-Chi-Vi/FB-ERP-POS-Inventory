@@ -326,3 +326,4 @@
 [2025-01-29T14:00:42] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-29T14:00:42 #12)
 [2025-01-29T11:42:39] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-29T11:42:39 #13)
 [2025-01-29T10:02:36] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-29T10:02:36 #14)
+[2025-01-29T10:53:28] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-29T10:53:28 #15)
