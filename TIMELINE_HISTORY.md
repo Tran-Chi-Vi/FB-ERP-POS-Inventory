@@ -343,3 +343,4 @@
 [2025-01-30T10:13:26] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-30T10:13:26 #13)
 [2025-01-30T13:39:27] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-30T13:39:27 #14)
 [2025-01-30T20:34:26] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-30T20:34:26 #15)
+[2025-01-30T09:46:47] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-30T09:46:47 #16)
