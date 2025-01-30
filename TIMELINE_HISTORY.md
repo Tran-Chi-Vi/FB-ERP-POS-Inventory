@@ -342,3 +342,4 @@
 [2025-01-30T18:55:22] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-30T18:55:22 #12)
 [2025-01-30T10:13:26] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-30T10:13:26 #13)
 [2025-01-30T13:39:27] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-30T13:39:27 #14)
+[2025-01-30T20:34:26] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-30T20:34:26 #15)
