@@ -329,3 +329,4 @@
 [2025-01-29T10:53:28] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-29T10:53:28 #15)
 [2025-01-29T15:39:43] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-01-29T15:39:43 #16)
 [2025-01-30T21:02:02] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-01-30T21:02:02 #1)
+[2025-01-30T11:32:41] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-30T11:32:41 #2)
