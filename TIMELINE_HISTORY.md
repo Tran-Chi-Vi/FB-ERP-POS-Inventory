@@ -333,3 +333,4 @@
 [2025-01-30T16:03:13] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-30T16:03:13 #3)
 [2025-01-30T15:18:00] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-30T15:18:00 #4)
 [2025-01-30T18:18:02] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-30T18:18:02 #5)
+[2025-01-30T10:16:35] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-30T10:16:35 #6)
