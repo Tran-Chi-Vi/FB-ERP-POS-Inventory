@@ -344,3 +344,4 @@
 [2025-01-30T13:39:27] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-01-30T13:39:27 #14)
 [2025-01-30T20:34:26] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-30T20:34:26 #15)
 [2025-01-30T09:46:47] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-30T09:46:47 #16)
+[2025-01-30T08:43:01] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-30T08:43:01 #17)
