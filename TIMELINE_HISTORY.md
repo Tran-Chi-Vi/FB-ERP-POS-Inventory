@@ -340,3 +340,4 @@
 [2025-01-30T17:39:53] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-30T17:39:53 #10)
 [2025-01-30T17:18:42] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-30T17:18:42 #11)
 [2025-01-30T18:55:22] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-30T18:55:22 #12)
+[2025-01-30T10:13:26] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-01-30T10:13:26 #13)
