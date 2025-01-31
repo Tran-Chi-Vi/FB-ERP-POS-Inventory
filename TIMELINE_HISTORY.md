@@ -359,3 +359,4 @@
 [2025-01-31T21:46:35] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-31T21:46:35 #12)
 [2025-01-31T18:11:58] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-01-31T18:11:58 #13)
 [2025-01-31T19:22:22] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-31T19:22:22 #14)
+[2025-01-31T13:36:44] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-31T13:36:44 #15)
