@@ -347,3 +347,4 @@
 [2025-01-30T08:43:01] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-30T08:43:01 #17)
 [2025-01-31T08:03:50] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-01-31T08:03:50 #1)
 [2025-01-31T16:43:32] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-01-31T16:43:32 #2)
+[2025-01-31T13:26:58] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-01-31T13:26:58 #3)
