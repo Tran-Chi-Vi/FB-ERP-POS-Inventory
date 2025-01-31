@@ -351,3 +351,4 @@
 [2025-01-31T19:17:14] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-31T19:17:14 #4)
 [2025-01-31T18:50:03] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-01-31T18:50:03 #5)
 [2025-01-31T17:20:55] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-31T17:20:55 #6)
+[2025-01-31T13:25:54] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-01-31T13:25:54 #7)
