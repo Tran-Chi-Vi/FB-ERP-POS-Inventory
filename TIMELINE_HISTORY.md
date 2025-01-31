@@ -356,3 +356,4 @@
 [2025-01-31T11:08:40] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-01-31T11:08:40 #9)
 [2025-01-31T13:07:09] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-01-31T13:07:09 #10)
 [2025-01-31T15:16:56] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-01-31T15:16:56 #11)
+[2025-01-31T21:46:35] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-01-31T21:46:35 #12)
