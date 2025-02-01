@@ -363,3 +363,4 @@
 [2025-01-31T09:55:45] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-01-31T09:55:45 #16)
 [2025-01-31T15:17:20] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-01-31T15:17:20 #17)
 [2025-01-31T08:49:59] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-01-31T08:49:59 #18)
+[2025-02-01T11:24:26] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-01T11:24:26 #1)
