@@ -371,3 +371,4 @@
 [2025-02-01T14:26:09] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-01T14:26:09 #6)
 [2025-02-01T14:09:34] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-01T14:09:34 #7)
 [2025-02-01T14:45:07] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-01T14:45:07 #8)
+[2025-02-01T19:15:08] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-01T19:15:08 #9)
