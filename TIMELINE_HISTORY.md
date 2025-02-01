@@ -380,3 +380,4 @@
 [2025-02-01T17:03:40] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-01T17:03:40 #15)
 [2025-02-01T21:01:24] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-01T21:01:24 #16)
 [2025-02-01T17:14:55] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-01T17:14:55 #17)
+[2025-02-01T11:13:06] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-01T11:13:06 #18)
