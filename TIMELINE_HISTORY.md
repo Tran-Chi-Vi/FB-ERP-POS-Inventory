@@ -373,3 +373,4 @@
 [2025-02-01T14:45:07] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-01T14:45:07 #8)
 [2025-02-01T19:15:08] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-01T19:15:08 #9)
 [2025-02-01T09:28:23] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-02-01T09:28:23 #10)
+[2025-02-01T18:24:21] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-01T18:24:21 #11)
