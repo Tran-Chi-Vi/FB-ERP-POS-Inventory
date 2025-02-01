@@ -378,3 +378,4 @@
 [2025-02-01T09:08:21] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-01T09:08:21 #13)
 [2025-02-01T10:42:07] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-01T10:42:07 #14)
 [2025-02-01T17:03:40] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-01T17:03:40 #15)
+[2025-02-01T21:01:24] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-01T21:01:24 #16)
