@@ -384,3 +384,4 @@
 [2025-02-01T20:03:25] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-01T20:03:25 #19)
 [2025-02-03T11:39:04] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-03T11:39:04 #1)
 [2025-02-03T11:59:19] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-03T11:59:19 #2)
+[2025-02-03T12:28:13] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-03T12:28:13 #3)
