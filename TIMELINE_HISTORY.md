@@ -392,3 +392,4 @@
 [2025-02-03T15:23:41] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-03T15:23:41 #8)
 [2025-02-03T13:05:25] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-03T13:05:25 #9)
 [2025-02-03T18:08:17] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-03T18:08:17 #10)
+[2025-02-03T12:26:54] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-02-03T12:26:54 #11)
