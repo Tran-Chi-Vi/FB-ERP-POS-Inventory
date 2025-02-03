@@ -387,3 +387,4 @@
 [2025-02-03T12:28:13] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-03T12:28:13 #3)
 [2025-02-03T15:19:43] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-03T15:19:43 #4)
 [2025-02-03T21:38:31] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-03T21:38:31 #5)
+[2025-02-03T08:34:48] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-03T08:34:48 #6)
