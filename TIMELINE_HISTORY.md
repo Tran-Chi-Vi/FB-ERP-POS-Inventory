@@ -382,3 +382,4 @@
 [2025-02-01T17:14:55] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-01T17:14:55 #17)
 [2025-02-01T11:13:06] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-01T11:13:06 #18)
 [2025-02-01T20:03:25] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-01T20:03:25 #19)
+[2025-02-03T11:39:04] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-03T11:39:04 #1)
