@@ -386,3 +386,4 @@
 [2025-02-03T11:59:19] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-03T11:59:19 #2)
 [2025-02-03T12:28:13] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-03T12:28:13 #3)
 [2025-02-03T15:19:43] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-03T15:19:43 #4)
+[2025-02-03T21:38:31] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-03T21:38:31 #5)
