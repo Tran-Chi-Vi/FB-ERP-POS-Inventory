@@ -403,3 +403,4 @@
 [2025-02-03T11:56:07] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-03T11:56:07 #19)
 [2025-02-04T20:01:43] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-04T20:01:43 #1)
 [2025-02-04T17:23:46] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-04T17:23:46 #2)
+[2025-02-04T13:40:11] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-04T13:40:11 #3)
