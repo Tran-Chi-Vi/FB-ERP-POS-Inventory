@@ -414,3 +414,4 @@
 [2025-02-04T15:53:20] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-04T15:53:20 #11)
 [2025-02-04T10:51:00] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-04T10:51:00 #12)
 [2025-02-04T09:47:01] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-04T09:47:01 #13)
+[2025-02-04T16:49:43] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-04T16:49:43 #14)
