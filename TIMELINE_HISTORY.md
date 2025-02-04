@@ -409,3 +409,4 @@
 [2025-02-04T15:59:49] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-04T15:59:49 #6)
 [2025-02-04T14:31:26] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-04T14:31:26 #7)
 [2025-02-04T16:43:31] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-04T16:43:31 #8)
+[2025-02-04T17:29:12] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-04T17:29:12 #9)
