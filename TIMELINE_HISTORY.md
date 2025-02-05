@@ -426,3 +426,4 @@
 [2025-02-05T11:44:18] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-02-05T11:44:18 #3)
 [2025-02-05T08:18:45] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-05T08:18:45 #4)
 [2025-02-05T19:17:30] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-05T19:17:30 #5)
+[2025-02-05T18:37:20] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-05T18:37:20 #6)
