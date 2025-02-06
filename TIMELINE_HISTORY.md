@@ -431,3 +431,4 @@
 [2025-02-05T13:06:38] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-05T13:06:38 #8)
 [2025-02-06T21:19:35] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-06T21:19:35 #1)
 [2025-02-06T16:19:42] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-06T16:19:42 #2)
+[2025-02-06T17:35:48] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-06T17:35:48 #3)
