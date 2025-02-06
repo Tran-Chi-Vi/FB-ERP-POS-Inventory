@@ -439,3 +439,4 @@
 [2025-02-06T11:46:11] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-06T11:46:11 #8)
 [2025-02-06T21:14:18] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-06T21:14:18 #9)
 [2025-02-06T18:34:40] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-02-06T18:34:40 #10)
+[2025-02-06T21:54:53] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-06T21:54:53 #11)
