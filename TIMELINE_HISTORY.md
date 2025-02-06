@@ -429,3 +429,4 @@
 [2025-02-05T18:37:20] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-05T18:37:20 #6)
 [2025-02-05T16:43:19] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-05T16:43:19 #7)
 [2025-02-05T13:06:38] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-05T13:06:38 #8)
+[2025-02-06T21:19:35] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-06T21:19:35 #1)
