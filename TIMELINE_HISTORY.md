@@ -435,3 +435,4 @@
 [2025-02-06T21:39:31] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-06T21:39:31 #4)
 [2025-02-06T21:20:38] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-06T21:20:38 #5)
 [2025-02-06T20:01:20] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-06T20:01:20 #6)
+[2025-02-06T09:34:01] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-06T09:34:01 #7)
