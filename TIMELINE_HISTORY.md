@@ -444,3 +444,4 @@
 [2025-02-06T11:32:48] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-06T11:32:48 #13)
 [2025-02-06T16:21:47] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-06T16:21:47 #14)
 [2025-02-06T20:03:41] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-06T20:03:41 #15)
+[2025-02-06T15:17:13] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-06T15:17:13 #16)
