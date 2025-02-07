@@ -456,3 +456,4 @@
 [2025-02-07T15:58:20] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-07T15:58:20 #5)
 [2025-02-07T18:07:47] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-07T18:07:47 #6)
 [2025-02-07T17:03:01] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-07T17:03:01 #7)
+[2025-02-07T21:39:34] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-07T21:39:34 #8)
