@@ -457,3 +457,4 @@
 [2025-02-07T18:07:47] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-07T18:07:47 #6)
 [2025-02-07T17:03:01] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-07T17:03:01 #7)
 [2025-02-07T21:39:34] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-07T21:39:34 #8)
+[2025-02-07T11:23:40] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-07T11:23:40 #9)
