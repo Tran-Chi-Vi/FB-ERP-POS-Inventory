@@ -463,3 +463,4 @@
 [2025-02-08T08:00:02] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-08T08:00:02 #2)
 [2025-02-08T12:39:55] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-08T12:39:55 #3)
 [2025-02-08T17:18:37] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-08T17:18:37 #4)
+[2025-02-08T14:08:32] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-08T14:08:32 #5)
