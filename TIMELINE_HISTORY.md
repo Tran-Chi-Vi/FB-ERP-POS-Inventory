@@ -465,3 +465,4 @@
 [2025-02-08T17:18:37] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-08T17:18:37 #4)
 [2025-02-08T14:08:32] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-08T14:08:32 #5)
 [2025-02-08T20:15:24] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-08T20:15:24 #6)
+[2025-02-08T21:44:55] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-08T21:44:55 #7)
