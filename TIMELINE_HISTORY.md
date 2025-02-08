@@ -459,3 +459,4 @@
 [2025-02-07T21:39:34] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-07T21:39:34 #8)
 [2025-02-07T11:23:40] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-07T11:23:40 #9)
 [2025-02-07T17:09:28] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-07T17:09:28 #10)
+[2025-02-08T21:07:09] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-08T21:07:09 #1)
