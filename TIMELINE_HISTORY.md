@@ -479,3 +479,4 @@
 [2025-02-10T19:06:51] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-02-10T19:06:51 #6)
 [2025-02-10T20:05:23] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-02-10T20:05:23 #7)
 [2025-02-10T17:52:58] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-10T17:52:58 #8)
+[2025-02-10T16:49:27] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-10T16:49:27 #9)
