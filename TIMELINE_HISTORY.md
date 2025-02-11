@@ -490,3 +490,4 @@
 [2025-02-10T15:09:56] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-10T15:09:56 #17)
 [2025-02-10T16:58:37] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-10T16:58:37 #18)
 [2025-02-11T18:09:30] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-11T18:09:30 #1)
+[2025-02-11T11:40:51] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-11T11:40:51 #2)
