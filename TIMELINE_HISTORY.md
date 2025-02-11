@@ -495,3 +495,4 @@
 [2025-02-11T09:44:11] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-11T09:44:11 #4)
 [2025-02-11T20:53:25] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-11T20:53:25 #5)
 [2025-02-11T12:21:34] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-02-11T12:21:34 #6)
+[2025-02-11T11:41:31] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-11T11:41:31 #7)
