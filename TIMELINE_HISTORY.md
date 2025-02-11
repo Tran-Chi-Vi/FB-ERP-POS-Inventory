@@ -492,3 +492,4 @@
 [2025-02-11T18:09:30] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-11T18:09:30 #1)
 [2025-02-11T11:40:51] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-11T11:40:51 #2)
 [2025-02-11T21:26:14] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-11T21:26:14 #3)
+[2025-02-11T09:44:11] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-11T09:44:11 #4)
