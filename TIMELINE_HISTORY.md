@@ -489,3 +489,4 @@
 [2025-02-10T15:41:49] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-10T15:41:49 #16)
 [2025-02-10T15:09:56] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-10T15:09:56 #17)
 [2025-02-10T16:58:37] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-10T16:58:37 #18)
+[2025-02-11T18:09:30] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-11T18:09:30 #1)
