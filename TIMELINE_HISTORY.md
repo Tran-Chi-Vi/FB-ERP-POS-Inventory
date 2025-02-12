@@ -505,3 +505,4 @@
 [2025-02-12T11:49:08] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-02-12T11:49:08 #5)
 [2025-02-12T12:04:02] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-12T12:04:02 #6)
 [2025-02-12T14:53:26] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-12T14:53:26 #7)
+[2025-02-12T19:46:48] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-12T19:46:48 #8)
