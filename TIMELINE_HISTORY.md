@@ -513,3 +513,4 @@
 [2025-02-12T08:49:28] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-12T08:49:28 #13)
 [2025-02-12T19:01:50] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-02-12T19:01:50 #14)
 [2025-02-12T16:55:14] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-12T16:55:14 #15)
+[2025-02-12T20:00:21] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-12T20:00:21 #16)
