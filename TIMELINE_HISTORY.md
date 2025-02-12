@@ -499,3 +499,4 @@
 [2025-02-11T15:02:16] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-11T15:02:16 #8)
 [2025-02-11T14:12:42] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-02-11T14:12:42 #9)
 [2025-02-12T21:15:09] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-12T21:15:09 #1)
+[2025-02-12T08:10:19] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-02-12T08:10:19 #2)
