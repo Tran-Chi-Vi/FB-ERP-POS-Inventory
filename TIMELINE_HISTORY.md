@@ -518,3 +518,4 @@
 [2025-02-12T16:55:36] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-12T16:55:36 #18)
 [2025-02-12T09:50:36] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-12T09:50:36 #19)
 [2025-02-12T17:36:57] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-12T17:36:57 #20)
+[2025-02-13T13:54:57] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-13T13:54:57 #1)
