@@ -533,3 +533,4 @@
 [2025-02-13T12:33:04] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-13T12:33:04 #13)
 [2025-02-13T10:22:25] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-13T10:22:25 #14)
 [2025-02-13T20:58:54] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-13T20:58:54 #15)
+[2025-02-13T14:30:01] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-02-13T14:30:01 #16)
