@@ -521,3 +521,4 @@
 [2025-02-13T13:54:57] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-13T13:54:57 #1)
 [2025-02-13T13:13:56] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-13T13:13:56 #2)
 [2025-02-13T17:35:02] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-02-13T17:35:02 #3)
+[2025-02-13T19:09:56] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-13T19:09:56 #4)
