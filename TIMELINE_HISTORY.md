@@ -542,3 +542,4 @@
 [2025-02-14T21:29:16] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-14T21:29:16 #3)
 [2025-02-14T20:29:53] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-14T20:29:53 #4)
 [2025-02-14T09:34:58] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-02-14T09:34:58 #5)
+[2025-02-14T21:47:37] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-14T21:47:37 #6)
