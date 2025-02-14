@@ -539,3 +539,4 @@
 [2025-02-13T09:25:52] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-13T09:25:52 #19)
 [2025-02-14T14:17:43] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-14T14:17:43 #1)
 [2025-02-14T16:43:28] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-14T16:43:28 #2)
+[2025-02-14T21:29:16] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-14T21:29:16 #3)
