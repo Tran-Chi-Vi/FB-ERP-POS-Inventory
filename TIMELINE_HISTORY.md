@@ -554,3 +554,4 @@
 [2025-02-14T21:01:31] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-14T21:01:31 #15)
 [2025-02-14T16:23:54] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-14T16:23:54 #16)
 [2025-02-15T10:40:08] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-15T10:40:08 #1)
+[2025-02-15T09:23:37] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-15T09:23:37 #2)
