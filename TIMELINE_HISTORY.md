@@ -556,3 +556,4 @@
 [2025-02-15T10:40:08] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-15T10:40:08 #1)
 [2025-02-15T09:23:37] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-15T09:23:37 #2)
 [2025-02-15T13:09:24] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-15T13:09:24 #3)
+[2025-02-15T17:46:33] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-15T17:46:33 #4)
