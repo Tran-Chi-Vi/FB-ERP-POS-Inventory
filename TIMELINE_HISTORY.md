@@ -553,3 +553,4 @@
 [2025-02-14T16:23:33] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-14T16:23:33 #14)
 [2025-02-14T21:01:31] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-14T21:01:31 #15)
 [2025-02-14T16:23:54] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-14T16:23:54 #16)
+[2025-02-15T10:40:08] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-15T10:40:08 #1)
