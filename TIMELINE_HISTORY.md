@@ -566,3 +566,4 @@
 [2025-02-15T13:15:36] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-15T13:15:36 #11)
 [2025-02-15T14:06:42] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-15T14:06:42 #12)
 [2025-02-15T11:28:57] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-15T11:28:57 #13)
+[2025-02-17T20:49:36] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-17T20:49:36 #1)
