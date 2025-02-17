@@ -573,3 +573,4 @@
 [2025-02-17T14:30:27] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-17T14:30:27 #5)
 [2025-02-17T20:48:28] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-17T20:48:28 #6)
 [2025-02-17T16:41:43] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-17T16:41:43 #7)
+[2025-02-17T08:18:05] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-17T08:18:05 #8)
