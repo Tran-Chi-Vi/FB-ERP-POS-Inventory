@@ -581,3 +581,4 @@
 [2025-02-18T14:47:27] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-18T14:47:27 #5)
 [2025-02-18T11:01:12] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-18T11:01:12 #6)
 [2025-02-18T18:45:34] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-18T18:45:34 #7)
+[2025-02-18T08:07:36] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-18T08:07:36 #8)
