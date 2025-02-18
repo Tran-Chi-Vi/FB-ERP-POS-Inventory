@@ -576,3 +576,4 @@
 [2025-02-17T08:18:05] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-17T08:18:05 #8)
 [2025-02-18T18:58:15] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-18T18:58:15 #1)
 [2025-02-18T14:45:59] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-18T14:45:59 #2)
+[2025-02-18T18:07:49] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-18T18:07:49 #3)
