@@ -584,3 +584,4 @@
 [2025-02-18T08:07:36] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-18T08:07:36 #8)
 [2025-02-18T18:16:28] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-02-18T18:16:28 #9)
 [2025-02-18T21:56:59] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-18T21:56:59 #10)
+[2025-02-19T09:57:51] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-02-19T09:57:51 #1)
