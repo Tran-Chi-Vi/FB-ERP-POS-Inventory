@@ -605,3 +605,4 @@
 [2025-02-20T19:29:33] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-20T19:29:33 #4)
 [2025-02-20T14:07:24] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-20T14:07:24 #5)
 [2025-02-20T14:45:10] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-20T14:45:10 #6)
+[2025-02-20T13:00:12] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-20T13:00:12 #7)
