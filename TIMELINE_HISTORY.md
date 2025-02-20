@@ -600,3 +600,4 @@
 [2025-02-19T11:35:23] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-02-19T11:35:23 #14)
 [2025-02-19T11:57:51] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-19T11:57:51 #15)
 [2025-02-20T14:29:43] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-20T14:29:43 #1)
+[2025-02-20T14:34:11] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-20T14:34:11 #2)
