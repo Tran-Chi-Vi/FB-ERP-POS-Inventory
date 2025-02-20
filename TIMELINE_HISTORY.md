@@ -608,3 +608,4 @@
 [2025-02-20T13:00:12] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-20T13:00:12 #7)
 [2025-02-20T21:28:42] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-20T21:28:42 #8)
 [2025-02-20T17:53:33] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-20T17:53:33 #9)
+[2025-02-20T08:25:16] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-20T08:25:16 #10)
