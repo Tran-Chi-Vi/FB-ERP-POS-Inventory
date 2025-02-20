@@ -601,3 +601,4 @@
 [2025-02-19T11:57:51] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-19T11:57:51 #15)
 [2025-02-20T14:29:43] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-20T14:29:43 #1)
 [2025-02-20T14:34:11] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-20T14:34:11 #2)
+[2025-02-20T15:35:31] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-20T15:35:31 #3)
