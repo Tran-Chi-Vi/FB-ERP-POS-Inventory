@@ -613,3 +613,4 @@
 [2025-02-20T21:32:21] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-20T21:32:21 #12)
 [2025-02-20T18:31:00] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-20T18:31:00 #13)
 [2025-02-20T13:03:58] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-20T13:03:58 #14)
+[2025-02-20T17:38:38] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-20T17:38:38 #15)
