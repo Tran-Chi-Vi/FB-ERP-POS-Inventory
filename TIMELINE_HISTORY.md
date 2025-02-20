@@ -611,3 +611,4 @@
 [2025-02-20T08:25:16] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-20T08:25:16 #10)
 [2025-02-20T19:21:28] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-20T19:21:28 #11)
 [2025-02-20T21:32:21] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-20T21:32:21 #12)
+[2025-02-20T18:31:00] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-20T18:31:00 #13)
