@@ -637,3 +637,4 @@
 [2025-02-22T20:39:12] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-02-22T20:39:12 #15)
 [2025-02-22T10:20:12] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-22T10:20:12 #16)
 [2025-02-22T13:22:39] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-22T13:22:39 #17)
+[2025-02-22T11:24:59] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-22T11:24:59 #18)
