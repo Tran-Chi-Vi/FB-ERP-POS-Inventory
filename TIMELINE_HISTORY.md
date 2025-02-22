@@ -633,3 +633,4 @@
 [2025-02-22T17:52:03] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-22T17:52:03 #11)
 [2025-02-22T20:27:05] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-22T20:27:05 #12)
 [2025-02-22T08:47:38] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-22T08:47:38 #13)
+[2025-02-22T11:32:31] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-22T11:32:31 #14)
