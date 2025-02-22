@@ -635,3 +635,4 @@
 [2025-02-22T08:47:38] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-22T08:47:38 #13)
 [2025-02-22T11:32:31] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-22T11:32:31 #14)
 [2025-02-22T20:39:12] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-02-22T20:39:12 #15)
+[2025-02-22T10:20:12] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-22T10:20:12 #16)
