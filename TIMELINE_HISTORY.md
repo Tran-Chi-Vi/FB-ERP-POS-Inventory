@@ -621,3 +621,4 @@
 [2025-02-21T21:35:55] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-21T21:35:55 #4)
 [2025-02-21T17:53:58] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-21T17:53:58 #5)
 [2025-02-22T10:10:37] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-22T10:10:37 #1)
+[2025-02-22T15:53:13] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-02-22T15:53:13 #2)
