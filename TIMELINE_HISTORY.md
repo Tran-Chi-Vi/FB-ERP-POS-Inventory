@@ -631,3 +631,4 @@
 [2025-02-22T16:52:04] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-22T16:52:04 #9)
 [2025-02-22T13:36:11] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-22T13:36:11 #10)
 [2025-02-22T17:52:03] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-22T17:52:03 #11)
+[2025-02-22T20:27:05] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-22T20:27:05 #12)
