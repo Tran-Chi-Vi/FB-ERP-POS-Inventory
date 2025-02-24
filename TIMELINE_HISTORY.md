@@ -650,3 +650,4 @@
 [2025-02-24T13:06:46] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-02-24T13:06:46 #9)
 [2025-02-24T09:59:26] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-24T09:59:26 #10)
 [2025-02-24T10:09:39] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-24T10:09:39 #11)
+[2025-02-24T17:49:57] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-24T17:49:57 #12)
