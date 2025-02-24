@@ -655,3 +655,4 @@
 [2025-02-24T15:59:39] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-24T15:59:39 #14)
 [2025-02-24T11:35:24] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-24T11:35:24 #15)
 [2025-02-24T11:45:30] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-24T11:45:30 #16)
+[2025-02-24T13:49:17] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-24T13:49:17 #17)
