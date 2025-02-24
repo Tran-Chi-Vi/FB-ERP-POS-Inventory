@@ -640,3 +640,4 @@
 [2025-02-22T11:24:59] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-22T11:24:59 #18)
 [2025-02-22T16:12:37] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-22T16:12:37 #19)
 [2025-02-24T13:26:44] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-02-24T13:26:44 #1)
+[2025-02-24T21:43:08] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-24T21:43:08 #2)
