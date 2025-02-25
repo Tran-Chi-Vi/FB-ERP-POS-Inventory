@@ -656,3 +656,4 @@
 [2025-02-24T11:35:24] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-02-24T11:35:24 #15)
 [2025-02-24T11:45:30] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-24T11:45:30 #16)
 [2025-02-24T13:49:17] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-02-24T13:49:17 #17)
+[2025-02-25T17:11:52] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-25T17:11:52 #1)
