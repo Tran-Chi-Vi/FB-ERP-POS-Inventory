@@ -674,3 +674,4 @@
 [2025-02-26T10:00:42] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-02-26T10:00:42 #9)
 [2025-02-26T18:00:02] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-02-26T18:00:02 #10)
 [2025-02-26T18:17:56] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-26T18:17:56 #11)
+[2025-02-26T09:53:07] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-26T09:53:07 #12)
