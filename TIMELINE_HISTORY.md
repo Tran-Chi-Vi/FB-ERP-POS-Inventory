@@ -677,3 +677,4 @@
 [2025-02-26T09:53:07] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-26T09:53:07 #12)
 [2025-02-26T19:05:32] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-26T19:05:32 #13)
 [2025-02-26T21:02:33] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-26T21:02:33 #14)
+[2025-02-26T19:59:46] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-26T19:59:46 #15)
