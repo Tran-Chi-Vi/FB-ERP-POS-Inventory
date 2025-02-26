@@ -676,3 +676,4 @@
 [2025-02-26T18:17:56] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-26T18:17:56 #11)
 [2025-02-26T09:53:07] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-26T09:53:07 #12)
 [2025-02-26T19:05:32] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-02-26T19:05:32 #13)
+[2025-02-26T21:02:33] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-26T21:02:33 #14)
