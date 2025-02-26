@@ -668,3 +668,4 @@
 [2025-02-26T08:21:08] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-26T08:21:08 #3)
 [2025-02-26T16:46:13] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-26T16:46:13 #4)
 [2025-02-26T09:58:54] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-26T09:58:54 #5)
+[2025-02-26T20:57:16] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-26T20:57:16 #6)
