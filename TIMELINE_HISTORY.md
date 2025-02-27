@@ -690,3 +690,4 @@
 [2025-02-27T13:10:09] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-27T13:10:09 #9)
 [2025-02-27T18:08:43] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-27T18:08:43 #10)
 [2025-02-27T13:42:51] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-02-27T13:42:51 #11)
+[2025-02-27T13:57:39] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-02-27T13:57:39 #12)
