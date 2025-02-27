@@ -688,3 +688,4 @@
 [2025-02-27T09:05:19] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-02-27T09:05:19 #7)
 [2025-02-27T13:37:39] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-02-27T13:37:39 #8)
 [2025-02-27T13:10:09] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-27T13:10:09 #9)
+[2025-02-27T18:08:43] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-02-27T18:08:43 #10)
