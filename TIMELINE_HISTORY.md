@@ -696,3 +696,4 @@
 [2025-02-27T08:43:57] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-02-27T08:43:57 #15)
 [2025-02-27T09:16:42] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-27T09:16:42 #16)
 [2025-02-27T11:09:13] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-02-27T11:09:13 #17)
+[2025-02-28T10:01:04] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-28T10:01:04 #1)
