@@ -703,3 +703,4 @@
 [2025-02-28T21:15:49] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-28T21:15:49 #5)
 [2025-02-28T16:15:53] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-02-28T16:15:53 #6)
 [2025-02-28T13:37:20] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-02-28T13:37:20 #7)
+[2025-02-28T18:19:22] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-28T18:19:22 #8)
