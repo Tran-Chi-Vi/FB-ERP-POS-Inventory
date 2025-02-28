@@ -707,3 +707,4 @@
 [2025-02-28T19:26:06] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-02-28T19:26:06 #9)
 [2025-02-28T11:19:38] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-02-28T11:19:38 #10)
 [2025-02-28T13:03:25] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-28T13:03:25 #11)
+[2025-02-28T14:54:19] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-28T14:54:19 #12)
