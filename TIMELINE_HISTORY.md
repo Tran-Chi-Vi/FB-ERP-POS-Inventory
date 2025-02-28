@@ -712,3 +712,4 @@
 [2025-02-28T21:10:00] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-02-28T21:10:00 #14)
 [2025-02-28T14:34:25] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-02-28T14:34:25 #15)
 [2025-02-28T17:12:49] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-02-28T17:12:49 #16)
+[2025-02-28T15:38:11] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-28T15:38:11 #17)
