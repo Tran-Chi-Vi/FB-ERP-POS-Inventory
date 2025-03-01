@@ -717,3 +717,4 @@
 [2025-03-01T08:28:27] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-01T08:28:27 #1)
 [2025-03-01T18:55:21] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-01T18:55:21 #2)
 [2025-03-01T18:21:26] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-01T18:21:26 #3)
+[2025-03-01T13:06:03] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-01T13:06:03 #4)
