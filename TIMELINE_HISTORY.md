@@ -715,3 +715,4 @@
 [2025-02-28T15:38:11] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-02-28T15:38:11 #17)
 [2025-02-28T17:20:16] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-02-28T17:20:16 #18)
 [2025-03-01T08:28:27] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-01T08:28:27 #1)
+[2025-03-01T18:55:21] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-01T18:55:21 #2)
