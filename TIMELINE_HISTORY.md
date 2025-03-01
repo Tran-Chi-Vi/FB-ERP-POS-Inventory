@@ -723,3 +723,4 @@
 [2025-03-01T12:13:13] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-01T12:13:13 #7)
 [2025-03-01T20:15:52] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-01T20:15:52 #8)
 [2025-03-01T09:17:04] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-01T09:17:04 #9)
+[2025-03-01T09:19:36] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-01T09:19:36 #10)
