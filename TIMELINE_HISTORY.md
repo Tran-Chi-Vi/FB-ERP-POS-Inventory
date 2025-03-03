@@ -728,3 +728,4 @@
 [2025-03-01T16:49:42] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-01T16:49:42 #12)
 [2025-03-01T14:52:04] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-01T14:52:04 #13)
 [2025-03-03T08:48:24] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-03T08:48:24 #1)
+[2025-03-03T13:17:13] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-03T13:17:13 #2)
