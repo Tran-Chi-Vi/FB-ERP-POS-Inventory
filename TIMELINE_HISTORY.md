@@ -738,3 +738,4 @@
 [2025-03-03T18:30:54] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-03T18:30:54 #9)
 [2025-03-03T19:05:45] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-03T19:05:45 #10)
 [2025-03-03T17:51:28] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-03T17:51:28 #11)
+[2025-03-03T12:57:59] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-03T12:57:59 #12)
