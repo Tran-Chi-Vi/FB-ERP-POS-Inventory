@@ -733,3 +733,4 @@
 [2025-03-03T09:45:48] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-03T09:45:48 #4)
 [2025-03-03T20:56:14] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-03T20:56:14 #5)
 [2025-03-03T20:38:05] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-03T20:38:05 #6)
+[2025-03-03T17:49:13] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-03T17:49:13 #7)
