@@ -745,3 +745,4 @@
 [2025-03-04T13:16:01] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T13:16:01 #4)
 [2025-03-04T18:36:04] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-04T18:36:04 #5)
 [2025-03-04T19:39:42] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-04T19:39:42 #6)
+[2025-03-04T15:53:44] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T15:53:44 #7)
