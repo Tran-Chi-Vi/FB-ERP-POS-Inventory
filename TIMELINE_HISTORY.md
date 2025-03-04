@@ -747,3 +747,4 @@
 [2025-03-04T19:39:42] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-04T19:39:42 #6)
 [2025-03-04T15:53:44] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T15:53:44 #7)
 [2025-03-04T21:42:26] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-04T21:42:26 #8)
+[2025-03-04T18:13:18] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-04T18:13:18 #9)
