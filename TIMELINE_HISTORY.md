@@ -751,3 +751,4 @@
 [2025-03-04T09:16:05] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-04T09:16:05 #10)
 [2025-03-04T14:03:54] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T14:03:54 #11)
 [2025-03-04T16:54:30] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-04T16:54:30 #12)
+[2025-03-04T14:40:28] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T14:40:28 #13)
