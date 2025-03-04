@@ -744,3 +744,4 @@
 [2025-03-04T13:57:53] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-04T13:57:53 #3)
 [2025-03-04T13:16:01] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T13:16:01 #4)
 [2025-03-04T18:36:04] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-04T18:36:04 #5)
+[2025-03-04T19:39:42] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-04T19:39:42 #6)
