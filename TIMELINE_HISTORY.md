@@ -748,3 +748,4 @@
 [2025-03-04T15:53:44] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T15:53:44 #7)
 [2025-03-04T21:42:26] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-04T21:42:26 #8)
 [2025-03-04T18:13:18] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-04T18:13:18 #9)
+[2025-03-04T09:16:05] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-04T09:16:05 #10)
