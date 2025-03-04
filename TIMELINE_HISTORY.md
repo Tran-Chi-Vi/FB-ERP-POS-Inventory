@@ -742,3 +742,4 @@
 [2025-03-04T12:28:44] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-04T12:28:44 #1)
 [2025-03-04T13:19:38] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-04T13:19:38 #2)
 [2025-03-04T13:57:53] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-04T13:57:53 #3)
+[2025-03-04T13:16:01] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T13:16:01 #4)
