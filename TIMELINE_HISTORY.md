@@ -759,3 +759,4 @@
 [2025-03-05T21:23:21] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-05T21:23:21 #4)
 [2025-03-05T10:00:48] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-05T10:00:48 #5)
 [2025-03-05T09:16:49] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-05T09:16:49 #6)
+[2025-03-05T10:47:37] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-05T10:47:37 #7)
