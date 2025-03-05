@@ -756,3 +756,4 @@
 [2025-03-05T15:03:38] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-05T15:03:38 #1)
 [2025-03-05T16:12:53] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-05T16:12:53 #2)
 [2025-03-05T10:03:18] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-05T10:03:18 #3)
+[2025-03-05T21:23:21] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-05T21:23:21 #4)
