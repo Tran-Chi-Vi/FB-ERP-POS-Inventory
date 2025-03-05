@@ -760,3 +760,4 @@
 [2025-03-05T10:00:48] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-05T10:00:48 #5)
 [2025-03-05T09:16:49] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-05T09:16:49 #6)
 [2025-03-05T10:47:37] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-05T10:47:37 #7)
+[2025-03-05T19:33:17] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-05T19:33:17 #8)
