@@ -753,3 +753,4 @@
 [2025-03-04T16:54:30] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-04T16:54:30 #12)
 [2025-03-04T14:40:28] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-04T14:40:28 #13)
 [2025-03-04T17:55:44] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-04T17:55:44 #14)
+[2025-03-05T15:03:38] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-05T15:03:38 #1)
