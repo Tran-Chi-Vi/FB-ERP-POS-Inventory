@@ -771,3 +771,4 @@
 [2025-03-06T14:13:46] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-06T14:13:46 #7)
 [2025-03-06T14:13:07] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-06T14:13:07 #8)
 [2025-03-06T10:39:55] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-06T10:39:55 #9)
+[2025-03-06T11:10:35] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-06T11:10:35 #10)
