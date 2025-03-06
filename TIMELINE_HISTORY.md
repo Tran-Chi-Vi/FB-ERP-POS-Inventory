@@ -763,3 +763,4 @@
 [2025-03-05T19:33:17] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-05T19:33:17 #8)
 [2025-03-05T21:33:42] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-05T21:33:42 #9)
 [2025-03-06T08:44:04] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-06T08:44:04 #1)
+[2025-03-06T16:01:29] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-06T16:01:29 #2)
