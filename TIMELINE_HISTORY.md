@@ -774,3 +774,4 @@
 [2025-03-06T11:10:35] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-06T11:10:35 #10)
 [2025-03-06T16:54:10] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-06T16:54:10 #11)
 [2025-03-06T08:48:13] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-06T08:48:13 #12)
+[2025-03-06T08:03:54] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-06T08:03:54 #13)
