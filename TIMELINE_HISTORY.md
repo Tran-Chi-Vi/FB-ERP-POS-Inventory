@@ -767,3 +767,4 @@
 [2025-03-06T17:53:31] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-06T17:53:31 #3)
 [2025-03-06T14:37:47] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-06T14:37:47 #4)
 [2025-03-06T10:28:52] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-06T10:28:52 #5)
+[2025-03-06T20:42:55] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-06T20:42:55 #6)
