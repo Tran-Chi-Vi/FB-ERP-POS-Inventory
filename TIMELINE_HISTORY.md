@@ -790,3 +790,4 @@
 [2025-03-07T08:54:19] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-07T08:54:19 #10)
 [2025-03-07T14:42:21] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-07T14:42:21 #11)
 [2025-03-07T20:04:04] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-07T20:04:04 #12)
+[2025-03-07T15:14:15] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-07T15:14:15 #13)
