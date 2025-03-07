@@ -783,3 +783,4 @@
 [2025-03-07T12:57:36] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-07T12:57:36 #3)
 [2025-03-07T21:22:28] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-07T21:22:28 #4)
 [2025-03-07T18:32:59] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-07T18:32:59 #5)
+[2025-03-07T12:38:48] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-07T12:38:48 #6)
