@@ -794,3 +794,4 @@
 [2025-03-08T14:38:44] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-08T14:38:44 #1)
 [2025-03-08T10:24:32] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-08T10:24:32 #2)
 [2025-03-08T14:09:29] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-08T14:09:29 #3)
+[2025-03-08T20:07:14] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-08T20:07:14 #4)
