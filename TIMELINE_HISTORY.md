@@ -805,3 +805,4 @@
 [2025-03-08T20:24:52] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-08T20:24:52 #12)
 [2025-03-08T17:33:01] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-08T17:33:01 #13)
 [2025-03-08T20:39:50] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-08T20:39:50 #14)
+[2025-03-08T18:40:42] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-08T18:40:42 #15)
