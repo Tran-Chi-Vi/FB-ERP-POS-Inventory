@@ -804,3 +804,4 @@
 [2025-03-08T11:57:42] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-08T11:57:42 #11)
 [2025-03-08T20:24:52] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-08T20:24:52 #12)
 [2025-03-08T17:33:01] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-08T17:33:01 #13)
+[2025-03-08T20:39:50] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-08T20:39:50 #14)
