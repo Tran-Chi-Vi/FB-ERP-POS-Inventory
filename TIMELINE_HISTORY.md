@@ -802,3 +802,4 @@
 [2025-03-08T10:49:04] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-03-08T10:49:04 #9)
 [2025-03-08T08:55:45] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-08T08:55:45 #10)
 [2025-03-08T11:57:42] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-08T11:57:42 #11)
+[2025-03-08T20:24:52] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-08T20:24:52 #12)
