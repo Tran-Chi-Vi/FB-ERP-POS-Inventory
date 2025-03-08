@@ -791,3 +791,4 @@
 [2025-03-07T14:42:21] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-07T14:42:21 #11)
 [2025-03-07T20:04:04] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-07T20:04:04 #12)
 [2025-03-07T15:14:15] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-07T15:14:15 #13)
+[2025-03-08T14:38:44] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-08T14:38:44 #1)
