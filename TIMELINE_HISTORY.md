@@ -814,3 +814,4 @@
 [2025-03-10T21:43:51] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-10T21:43:51 #3)
 [2025-03-10T11:49:34] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-10T11:49:34 #4)
 [2025-03-10T10:37:49] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-10T10:37:49 #5)
+[2025-03-10T21:39:30] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-10T21:39:30 #6)
