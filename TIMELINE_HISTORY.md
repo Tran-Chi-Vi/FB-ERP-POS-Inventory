@@ -817,3 +817,4 @@
 [2025-03-10T21:39:30] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-10T21:39:30 #6)
 [2025-03-10T21:02:51] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-10T21:02:51 #7)
 [2025-03-10T12:30:55] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-10T12:30:55 #8)
+[2025-03-10T17:38:39] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-10T17:38:39 #9)
