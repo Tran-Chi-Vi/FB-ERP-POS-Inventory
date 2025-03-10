@@ -816,3 +816,4 @@
 [2025-03-10T10:37:49] [feat/be-auth-rbac-multi-branch] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-10T10:37:49 #5)
 [2025-03-10T21:39:30] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-10T21:39:30 #6)
 [2025-03-10T21:02:51] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-10T21:02:51 #7)
+[2025-03-10T12:30:55] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-10T12:30:55 #8)
