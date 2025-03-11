@@ -827,3 +827,4 @@
 [2025-03-11T09:14:00] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-11T09:14:00 #7)
 [2025-03-11T15:25:40] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-11T15:25:40 #8)
 [2025-03-11T15:19:31] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-11T15:19:31 #9)
+[2025-03-11T08:32:10] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-11T08:32:10 #10)
