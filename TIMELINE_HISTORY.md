@@ -835,3 +835,4 @@
 [2025-03-11T13:59:06] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-11T13:59:06 #15)
 [2025-03-12T17:48:01] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-12T17:48:01 #1)
 [2025-03-12T20:23:04] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-12T20:23:04 #2)
+[2025-03-12T17:28:47] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-12T17:28:47 #3)
