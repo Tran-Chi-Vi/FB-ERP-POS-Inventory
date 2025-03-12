@@ -843,3 +843,4 @@
 [2025-03-12T12:59:05] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-12T12:59:05 #8)
 [2025-03-12T20:59:33] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-12T20:59:33 #9)
 [2025-03-12T14:28:14] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-12T14:28:14 #10)
+[2025-03-12T20:14:39] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-12T20:14:39 #11)
