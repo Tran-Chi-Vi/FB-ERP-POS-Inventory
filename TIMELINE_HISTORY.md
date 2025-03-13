@@ -857,3 +857,4 @@
 [2025-03-13T09:57:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-13T09:57:19 #8)
 [2025-03-13T20:37:46] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-13T20:37:46 #9)
 [2025-03-13T10:33:10] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-13T10:33:10 #10)
+[2025-03-13T08:58:57] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-13T08:58:57 #11)
