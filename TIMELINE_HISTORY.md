@@ -847,3 +847,4 @@
 [2025-03-12T13:11:06] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-12T13:11:06 #12)
 [2025-03-12T16:31:54] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-12T16:31:54 #13)
 [2025-03-12T12:03:09] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-12T12:03:09 #14)
+[2025-03-13T16:11:34] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-13T16:11:34 #1)
