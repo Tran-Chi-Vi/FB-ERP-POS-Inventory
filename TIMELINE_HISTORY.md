@@ -854,3 +854,4 @@
 [2025-03-13T10:46:10] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-13T10:46:10 #5)
 [2025-03-13T20:26:40] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-13T20:26:40 #6)
 [2025-03-13T16:09:50] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-13T16:09:50 #7)
+[2025-03-13T09:57:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-13T09:57:19 #8)
