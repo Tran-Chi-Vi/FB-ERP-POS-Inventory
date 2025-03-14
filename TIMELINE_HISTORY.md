@@ -862,3 +862,4 @@
 [2025-03-13T12:10:03] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-13T12:10:03 #13)
 [2025-03-13T14:08:56] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-13T14:08:56 #14)
 [2025-03-14T18:46:47] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-14T18:46:47 #1)
+[2025-03-14T12:46:15] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-14T12:46:15 #2)
