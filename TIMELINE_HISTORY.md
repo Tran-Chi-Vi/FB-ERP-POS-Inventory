@@ -884,3 +884,4 @@
 [2025-03-15T08:35:52] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-03-15T08:35:52 #14)
 [2025-03-15T17:10:16] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-15T17:10:16 #15)
 [2025-03-15T13:56:28] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-15T13:56:28 #16)
+[2025-03-15T20:28:21] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-15T20:28:21 #17)
