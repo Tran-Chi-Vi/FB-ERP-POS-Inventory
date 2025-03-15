@@ -874,3 +874,4 @@
 [2025-03-15T20:58:09] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-15T20:58:09 #4)
 [2025-03-15T09:32:40] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-15T09:32:40 #5)
 [2025-03-15T17:33:22] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-15T17:33:22 #6)
+[2025-03-15T18:15:14] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-15T18:15:14 #7)
