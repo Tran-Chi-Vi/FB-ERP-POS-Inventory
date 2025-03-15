@@ -876,3 +876,4 @@
 [2025-03-15T17:33:22] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-15T17:33:22 #6)
 [2025-03-15T18:15:14] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-15T18:15:14 #7)
 [2025-03-15T20:41:27] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-15T20:41:27 #8)
+[2025-03-15T14:43:02] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-15T14:43:02 #9)
