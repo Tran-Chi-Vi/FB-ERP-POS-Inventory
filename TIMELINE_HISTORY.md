@@ -879,3 +879,4 @@
 [2025-03-15T14:43:02] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-15T14:43:02 #9)
 [2025-03-15T21:43:15] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-15T21:43:15 #10)
 [2025-03-15T14:16:28] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-15T14:16:28 #11)
+[2025-03-15T12:31:00] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-15T12:31:00 #12)
