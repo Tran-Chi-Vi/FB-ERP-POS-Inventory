@@ -895,3 +895,4 @@
 [2025-03-17T13:47:08] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-17T13:47:08 #7)
 [2025-03-17T17:27:31] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-17T17:27:31 #8)
 [2025-03-17T20:35:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-17T20:35:19 #9)
+[2025-03-17T18:19:34] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-17T18:19:34 #10)
