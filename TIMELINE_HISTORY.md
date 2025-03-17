@@ -894,3 +894,4 @@
 [2025-03-17T12:56:44] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-17T12:56:44 #6)
 [2025-03-17T13:47:08] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-17T13:47:08 #7)
 [2025-03-17T17:27:31] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-17T17:27:31 #8)
+[2025-03-17T20:35:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-17T20:35:19 #9)
