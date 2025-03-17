@@ -897,3 +897,4 @@
 [2025-03-17T20:35:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-17T20:35:19 #9)
 [2025-03-17T18:19:34] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-17T18:19:34 #10)
 [2025-03-17T12:03:36] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-17T12:03:36 #11)
+[2025-03-17T12:41:52] [feat/be-auth-rbac-multi-branch] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-17T12:41:52 #12)
