@@ -893,3 +893,4 @@
 [2025-03-17T18:21:46] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-17T18:21:46 #5)
 [2025-03-17T12:56:44] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-17T12:56:44 #6)
 [2025-03-17T13:47:08] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-17T13:47:08 #7)
+[2025-03-17T17:27:31] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-17T17:27:31 #8)
