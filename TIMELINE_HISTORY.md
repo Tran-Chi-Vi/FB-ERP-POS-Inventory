@@ -891,3 +891,4 @@
 [2025-03-17T09:51:45] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-17T09:51:45 #3)
 [2025-03-17T10:02:12] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-17T10:02:12 #4)
 [2025-03-17T18:21:46] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-17T18:21:46 #5)
+[2025-03-17T12:56:44] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-17T12:56:44 #6)
