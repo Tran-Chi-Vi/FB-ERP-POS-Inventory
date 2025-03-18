@@ -911,3 +911,4 @@
 [2025-03-18T20:35:13] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-18T20:35:13 #11)
 [2025-03-18T20:35:57] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-18T20:35:57 #12)
 [2025-03-18T16:04:22] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-18T16:04:22 #13)
+[2025-03-18T15:57:56] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-18T15:57:56 #14)
