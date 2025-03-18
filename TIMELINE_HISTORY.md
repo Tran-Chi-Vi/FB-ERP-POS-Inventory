@@ -904,3 +904,4 @@
 [2025-03-18T09:41:43] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-18T09:41:43 #4)
 [2025-03-18T17:52:36] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-18T17:52:36 #5)
 [2025-03-18T16:31:08] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-18T16:31:08 #6)
+[2025-03-18T12:23:45] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-18T12:23:45 #7)
