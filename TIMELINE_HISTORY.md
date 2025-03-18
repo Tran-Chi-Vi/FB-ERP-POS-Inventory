@@ -906,3 +906,4 @@
 [2025-03-18T16:31:08] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-18T16:31:08 #6)
 [2025-03-18T12:23:45] [feat/be-auth-rbac-multi-branch] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-18T12:23:45 #7)
 [2025-03-18T15:32:00] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-18T15:32:00 #8)
+[2025-03-18T20:31:20] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-18T20:31:20 #9)
