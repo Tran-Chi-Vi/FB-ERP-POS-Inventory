@@ -902,3 +902,4 @@
 [2025-03-18T08:17:10] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-18T08:17:10 #2)
 [2025-03-18T19:10:30] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-03-18T19:10:30 #3)
 [2025-03-18T09:41:43] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-18T09:41:43 #4)
+[2025-03-18T17:52:36] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-18T17:52:36 #5)
