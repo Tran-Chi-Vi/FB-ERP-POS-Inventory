@@ -926,3 +926,4 @@
 [2025-03-19T20:39:47] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-19T20:39:47 #11)
 [2025-03-19T17:53:37] [feat/be-auth-rbac-multi-branch] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-19T17:53:37 #12)
 [2025-03-19T10:04:58] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-19T10:04:58 #13)
+[2025-03-19T20:57:44] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-19T20:57:44 #14)
