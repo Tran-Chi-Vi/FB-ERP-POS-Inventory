@@ -919,3 +919,4 @@
 [2025-03-19T14:44:13] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-19T14:44:13 #4)
 [2025-03-19T12:56:56] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-19T12:56:56 #5)
 [2025-03-19T21:23:23] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-19T21:23:23 #6)
+[2025-03-19T12:16:06] [feat/be-auth-rbac-multi-branch] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-19T12:16:06 #7)
