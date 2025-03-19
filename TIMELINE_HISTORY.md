@@ -928,3 +928,4 @@
 [2025-03-19T10:04:58] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-19T10:04:58 #13)
 [2025-03-19T20:57:44] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-19T20:57:44 #14)
 [2025-03-19T19:50:13] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-19T19:50:13 #15)
+[2025-03-19T08:05:44] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-19T08:05:44 #16)
