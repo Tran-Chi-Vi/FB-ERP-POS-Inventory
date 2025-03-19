@@ -914,3 +914,4 @@
 [2025-03-18T15:57:56] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-18T15:57:56 #14)
 [2025-03-18T18:39:43] [feat/be-auth-rbac-multi-branch] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-18T18:39:43 #15)
 [2025-03-19T12:50:58] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-19T12:50:58 #1)
+[2025-03-19T15:42:28] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-19T15:42:28 #2)
