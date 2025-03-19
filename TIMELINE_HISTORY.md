@@ -916,3 +916,4 @@
 [2025-03-19T12:50:58] [feat/be-auth-rbac-multi-branch] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-19T12:50:58 #1)
 [2025-03-19T15:42:28] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-19T15:42:28 #2)
 [2025-03-19T08:12:48] [feat/be-auth-rbac-multi-branch] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-19T08:12:48 #3)
+[2025-03-19T14:44:13] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-19T14:44:13 #4)
