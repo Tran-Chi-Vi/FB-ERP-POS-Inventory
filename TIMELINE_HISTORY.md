@@ -933,3 +933,4 @@
 [2025-03-20T08:32:53] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-20T08:32:53 #2)
 [2025-03-20T19:11:31] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-20T19:11:31 #3)
 [2025-03-20T10:35:33] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-20T10:35:33 #4)
+[2025-03-20T18:22:48] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-20T18:22:48 #5)
