@@ -934,3 +934,4 @@
 [2025-03-20T19:11:31] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-20T19:11:31 #3)
 [2025-03-20T10:35:33] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-20T10:35:33 #4)
 [2025-03-20T18:22:48] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-20T18:22:48 #5)
+[2025-03-20T14:53:18] [feat/be-auth-rbac-multi-branch] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-20T14:53:18 #6)
