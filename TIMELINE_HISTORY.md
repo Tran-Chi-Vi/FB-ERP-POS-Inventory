@@ -930,3 +930,4 @@
 [2025-03-19T19:50:13] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-19T19:50:13 #15)
 [2025-03-19T08:05:44] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-19T08:05:44 #16)
 [2025-03-20T19:08:13] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-20T19:08:13 #1)
+[2025-03-20T08:32:53] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-20T08:32:53 #2)
