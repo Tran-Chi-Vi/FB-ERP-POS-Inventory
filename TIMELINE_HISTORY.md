@@ -948,3 +948,4 @@
 [2025-03-21T21:24:48] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-21T21:24:48 #3)
 [2025-03-21T14:45:57] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-21T14:45:57 #4)
 [2025-03-21T15:42:09] [feat/be-auth-rbac-multi-branch] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-03-21T15:42:09 #5)
+[2025-03-21T11:19:03] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-21T11:19:03 #6)
