@@ -945,3 +945,4 @@
 [2025-03-20T14:02:21] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-20T14:02:21 #14)
 [2025-03-21T10:26:55] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-21T10:26:55 #1)
 [2025-03-21T17:00:52] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-21T17:00:52 #2)
+[2025-03-21T21:24:48] [feat/be-auth-rbac-multi-branch] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-21T21:24:48 #3)
