@@ -959,3 +959,4 @@
 [2025-03-21T19:09:46] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-21T19:09:46 #14)
 [2025-03-21T13:06:01] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-21T13:06:01 #15)
 [2025-03-21T13:19:55] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-21T13:19:55 #16)
+[2025-03-21T16:44:14] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-21T16:44:14 #17)
