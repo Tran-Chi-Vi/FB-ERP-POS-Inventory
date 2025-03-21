@@ -958,3 +958,4 @@
 [2025-03-21T15:42:40] [feat/be-auth-rbac-multi-branch] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-21T15:42:40 #13)
 [2025-03-21T19:09:46] [feat/be-auth-rbac-multi-branch] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-21T19:09:46 #14)
 [2025-03-21T13:06:01] [feat/be-auth-rbac-multi-branch] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-21T13:06:01 #15)
+[2025-03-21T13:19:55] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-21T13:19:55 #16)
