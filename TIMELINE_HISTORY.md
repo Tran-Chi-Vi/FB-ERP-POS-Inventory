@@ -943,3 +943,4 @@
 [2025-03-20T11:20:04] [feat/be-auth-rbac-multi-branch] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-20T11:20:04 #12)
 [2025-03-20T19:15:56] [feat/be-auth-rbac-multi-branch] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-20T19:15:56 #13)
 [2025-03-20T14:02:21] [feat/be-auth-rbac-multi-branch] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-20T14:02:21 #14)
+[2025-03-21T10:26:55] [feat/be-auth-rbac-multi-branch] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-21T10:26:55 #1)
