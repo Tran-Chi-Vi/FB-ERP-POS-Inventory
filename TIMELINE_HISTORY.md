@@ -987,3 +987,4 @@
 [2025-03-24T12:10:41] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-24T12:10:41 #11)
 [2025-03-24T11:25:44] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-24T11:25:44 #12)
 [2025-03-24T19:51:55] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-24T19:51:55 #13)
+[2025-03-24T17:23:00] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-24T17:23:00 #14)
