@@ -982,3 +982,4 @@
 [2025-03-24T10:43:11] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-24T10:43:11 #6)
 [2025-03-24T21:31:29] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-24T21:31:29 #7)
 [2025-03-24T16:41:31] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-24T16:41:31 #8)
+[2025-03-24T18:17:04] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-24T18:17:04 #9)
