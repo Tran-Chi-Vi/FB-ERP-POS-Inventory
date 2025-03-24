@@ -981,3 +981,4 @@
 [2025-03-24T16:04:14] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-24T16:04:14 #5)
 [2025-03-24T10:43:11] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-24T10:43:11 #6)
 [2025-03-24T21:31:29] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-24T21:31:29 #7)
+[2025-03-24T16:41:31] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-24T16:41:31 #8)
