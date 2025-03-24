@@ -991,3 +991,4 @@
 [2025-03-24T10:50:22] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-24T10:50:22 #15)
 [2025-03-24T12:14:45] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-24T12:14:45 #16)
 [2025-03-24T16:09:53] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-24T16:09:53 #17)
+[2025-03-24T20:00:55] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-24T20:00:55 #18)
