@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# F&B ERP POS System Development Timeline
 
 [2025-01-01T12:01:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-01T12:01:19 #1)
@@ -961,3 +962,16 @@
 [2025-03-21T13:19:55] [feat/be-auth-rbac-multi-branch] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-21T13:19:55 #16)
 [2025-03-21T16:44:14] [feat/be-auth-rbac-multi-branch] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-21T16:44:14 #17)
 [2025-03-21T14:23:35] [feat/be-auth-rbac-multi-branch] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-21T14:23:35 #18)
+=======
+﻿[2025-03-22T14:01:20] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-22T14:01:20 #1)
+[2025-03-22T09:13:03] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-22T09:13:03 #2)
+[2025-03-22T10:30:59] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-22T10:30:59 #3)
+[2025-03-22T12:24:05] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-22T12:24:05 #4)
+[2025-03-22T14:08:19] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-22T14:08:19 #5)
+[2025-03-22T21:33:57] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-22T21:33:57 #6)
+[2025-03-22T21:10:52] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-22T21:10:52 #7)
+[2025-03-22T18:24:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-22T18:24:14 #8)
+[2025-03-22T18:13:26] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-22T18:13:26 #9)
+[2025-03-22T16:33:45] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-22T16:33:45 #10)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-03-24T15:25:05] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-24T15:25:05 #1)
