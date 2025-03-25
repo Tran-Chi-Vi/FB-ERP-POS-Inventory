@@ -20,3 +20,4 @@
 [2025-03-25T16:24:37] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-25T16:24:37 #10)
 [2025-03-25T09:19:02] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-25T09:19:02 #11)
 [2025-03-25T16:42:25] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-25T16:42:25 #12)
+[2025-03-25T15:10:08] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-25T15:10:08 #13)
