@@ -17,3 +17,4 @@
 [2025-03-25T12:06:49] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-25T12:06:49 #7)
 [2025-03-25T09:33:11] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-25T09:33:11 #8)
 [2025-03-25T10:50:24] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-25T10:50:24 #9)
+[2025-03-25T16:24:37] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-25T16:24:37 #10)
