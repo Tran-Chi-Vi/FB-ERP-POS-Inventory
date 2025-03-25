@@ -13,3 +13,4 @@
 [2025-03-25T13:05:02] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-25T13:05:02 #3)
 [2025-03-25T08:15:43] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-25T08:15:43 #4)
 [2025-03-25T15:13:49] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-25T15:13:49 #5)
+[2025-03-25T09:17:09] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-25T09:17:09 #6)
