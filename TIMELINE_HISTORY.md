@@ -9,3 +9,4 @@
 [2025-03-22T18:13:26] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-22T18:13:26 #9)
 [2025-03-22T16:33:45] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-22T16:33:45 #10)
 [2025-03-25T13:11:49] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-25T13:11:49 #1)
+[2025-03-25T12:23:58] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-25T12:23:58 #2)
