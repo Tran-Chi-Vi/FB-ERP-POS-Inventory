@@ -973,6 +973,7 @@
 [2025-03-22T18:24:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-22T18:24:14 #8)
 [2025-03-22T18:13:26] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-22T18:13:26 #9)
 [2025-03-22T16:33:45] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-22T16:33:45 #10)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-03-24T15:25:05] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-24T15:25:05 #1)
 [2025-03-24T19:23:11] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-24T19:23:11 #2)
@@ -992,3 +993,21 @@
 [2025-03-24T12:14:45] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-24T12:14:45 #16)
 [2025-03-24T16:09:53] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-24T16:09:53 #17)
 [2025-03-24T20:00:55] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-24T20:00:55 #18)
+=======
+[2025-03-25T13:11:49] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-25T13:11:49 #1)
+[2025-03-25T12:23:58] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-25T12:23:58 #2)
+[2025-03-25T13:05:02] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-25T13:05:02 #3)
+[2025-03-25T08:15:43] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-03-25T08:15:43 #4)
+[2025-03-25T15:13:49] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-25T15:13:49 #5)
+[2025-03-25T09:17:09] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-25T09:17:09 #6)
+[2025-03-25T12:06:49] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-25T12:06:49 #7)
+[2025-03-25T09:33:11] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-25T09:33:11 #8)
+[2025-03-25T10:50:24] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-25T10:50:24 #9)
+[2025-03-25T16:24:37] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-25T16:24:37 #10)
+[2025-03-25T09:19:02] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-25T09:19:02 #11)
+[2025-03-25T16:42:25] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-25T16:42:25 #12)
+[2025-03-25T15:10:08] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-25T15:10:08 #13)
+[2025-03-25T14:27:42] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-25T14:27:42 #14)
+[2025-03-25T18:40:13] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-25T18:40:13 #15)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-03-26T21:49:25] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-26T21:49:25 #1)
