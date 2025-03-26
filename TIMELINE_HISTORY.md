@@ -1016,3 +1016,4 @@
 [2025-03-26T09:47:11] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-26T09:47:11 #4)
 [2025-03-26T19:33:34] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-26T19:33:34 #5)
 [2025-03-26T18:11:24] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-26T18:11:24 #6)
+[2025-03-26T15:58:09] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-26T15:58:09 #7)
