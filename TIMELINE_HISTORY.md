@@ -1012,3 +1012,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-03-26T21:49:25] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-26T21:49:25 #1)
 [2025-03-26T10:27:22] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-26T10:27:22 #2)
+[2025-03-26T09:26:00] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-26T09:26:00 #3)
