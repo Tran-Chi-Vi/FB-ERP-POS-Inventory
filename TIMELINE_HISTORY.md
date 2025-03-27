@@ -27,3 +27,4 @@
 [2025-03-27T08:03:21] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-03-27T08:03:21 #2)
 [2025-03-27T13:06:55] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-27T13:06:55 #3)
 [2025-03-27T12:34:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-27T12:34:00 #4)
+[2025-03-27T18:01:37] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-27T18:01:37 #5)
