@@ -37,3 +37,4 @@
 [2025-03-27T09:57:38] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T09:57:38 #12)
 [2025-03-27T21:08:02] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-27T21:08:02 #13)
 [2025-03-27T21:17:37] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T21:17:37 #14)
+[2025-03-27T09:11:35] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-27T09:11:35 #15)
