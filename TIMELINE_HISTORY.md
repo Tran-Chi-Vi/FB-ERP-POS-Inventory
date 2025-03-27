@@ -23,3 +23,4 @@
 [2025-03-25T15:10:08] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-25T15:10:08 #13)
 [2025-03-25T14:27:42] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-25T14:27:42 #14)
 [2025-03-25T18:40:13] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-25T18:40:13 #15)
+[2025-03-27T12:53:05] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-27T12:53:05 #1)
