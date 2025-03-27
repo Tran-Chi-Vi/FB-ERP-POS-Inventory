@@ -39,3 +39,4 @@
 [2025-03-27T21:17:37] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T21:17:37 #14)
 [2025-03-27T09:11:35] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-27T09:11:35 #15)
 [2025-03-27T21:45:42] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-27T21:45:42 #16)
+[2025-03-27T11:58:41] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T11:58:41 #17)
