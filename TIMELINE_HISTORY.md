@@ -31,3 +31,4 @@
 [2025-03-27T09:21:05] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T09:21:05 #6)
 [2025-03-27T11:41:29] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-27T11:41:29 #7)
 [2025-03-27T20:54:39] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T20:54:39 #8)
+[2025-03-27T16:55:30] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-27T16:55:30 #9)
