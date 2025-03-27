@@ -35,3 +35,4 @@
 [2025-03-27T20:12:04] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-27T20:12:04 #10)
 [2025-03-27T21:50:21] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-27T21:50:21 #11)
 [2025-03-27T09:57:38] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T09:57:38 #12)
+[2025-03-27T21:08:02] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-27T21:08:02 #13)
