@@ -36,3 +36,4 @@
 [2025-03-27T21:50:21] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-27T21:50:21 #11)
 [2025-03-27T09:57:38] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T09:57:38 #12)
 [2025-03-27T21:08:02] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-27T21:08:02 #13)
+[2025-03-27T21:17:37] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T21:17:37 #14)
