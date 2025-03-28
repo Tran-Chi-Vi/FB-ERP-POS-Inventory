@@ -1038,3 +1038,4 @@
 [2025-03-27T11:58:41] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T11:58:41 #17)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-03-28T14:50:14] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-28T14:50:14 #1)
+[2025-03-28T18:51:08] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-28T18:51:08 #2)
