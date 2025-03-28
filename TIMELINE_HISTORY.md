@@ -1040,3 +1040,4 @@
 [2025-03-28T14:50:14] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-28T14:50:14 #1)
 [2025-03-28T18:51:08] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-28T18:51:08 #2)
 [2025-03-28T09:16:22] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-28T09:16:22 #3)
+[2025-03-28T20:19:43] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-28T20:19:43 #4)
