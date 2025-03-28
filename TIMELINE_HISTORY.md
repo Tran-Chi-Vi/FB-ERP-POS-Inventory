@@ -1042,3 +1042,4 @@
 [2025-03-28T09:16:22] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-28T09:16:22 #3)
 [2025-03-28T20:19:43] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-28T20:19:43 #4)
 [2025-03-28T19:27:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-28T19:27:51 #5)
+[2025-03-28T08:28:01] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-28T08:28:01 #6)
