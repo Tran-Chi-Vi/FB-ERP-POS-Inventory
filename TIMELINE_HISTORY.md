@@ -1043,3 +1043,4 @@
 [2025-03-28T20:19:43] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-28T20:19:43 #4)
 [2025-03-28T19:27:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-28T19:27:51 #5)
 [2025-03-28T08:28:01] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-28T08:28:01 #6)
+[2025-03-28T19:12:06] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-28T19:12:06 #7)
