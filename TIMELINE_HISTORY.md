@@ -1009,6 +1009,7 @@
 [2025-03-25T15:10:08] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-25T15:10:08 #13)
 [2025-03-25T14:27:42] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-25T14:27:42 #14)
 [2025-03-25T18:40:13] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-25T18:40:13 #15)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-03-26T21:49:25] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-26T21:49:25 #1)
 [2025-03-26T10:27:22] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-26T10:27:22 #2)
@@ -1017,3 +1018,23 @@
 [2025-03-26T19:33:34] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-26T19:33:34 #5)
 [2025-03-26T18:11:24] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-26T18:11:24 #6)
 [2025-03-26T15:58:09] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-26T15:58:09 #7)
+=======
+[2025-03-27T12:53:05] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-27T12:53:05 #1)
+[2025-03-27T08:03:21] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-03-27T08:03:21 #2)
+[2025-03-27T13:06:55] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-27T13:06:55 #3)
+[2025-03-27T12:34:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-27T12:34:00 #4)
+[2025-03-27T18:01:37] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-03-27T18:01:37 #5)
+[2025-03-27T09:21:05] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T09:21:05 #6)
+[2025-03-27T11:41:29] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-27T11:41:29 #7)
+[2025-03-27T20:54:39] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T20:54:39 #8)
+[2025-03-27T16:55:30] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-27T16:55:30 #9)
+[2025-03-27T20:12:04] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-27T20:12:04 #10)
+[2025-03-27T21:50:21] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-03-27T21:50:21 #11)
+[2025-03-27T09:57:38] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-27T09:57:38 #12)
+[2025-03-27T21:08:02] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-27T21:08:02 #13)
+[2025-03-27T21:17:37] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T21:17:37 #14)
+[2025-03-27T09:11:35] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-27T09:11:35 #15)
+[2025-03-27T21:45:42] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-27T21:45:42 #16)
+[2025-03-27T11:58:41] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T11:58:41 #17)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-03-28T14:50:14] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-28T14:50:14 #1)
