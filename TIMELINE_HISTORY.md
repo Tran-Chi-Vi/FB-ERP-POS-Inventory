@@ -50,3 +50,4 @@
 [2025-03-29T21:59:39] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-29T21:59:39 #8)
 [2025-03-29T09:33:12] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-29T09:33:12 #9)
 [2025-03-29T16:16:00] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-29T16:16:00 #10)
+[2025-03-29T12:25:47] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-29T12:25:47 #11)
