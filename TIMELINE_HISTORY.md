@@ -49,3 +49,4 @@
 [2025-03-29T13:22:32] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-29T13:22:32 #7)
 [2025-03-29T21:59:39] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-29T21:59:39 #8)
 [2025-03-29T09:33:12] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-29T09:33:12 #9)
+[2025-03-29T16:16:00] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-29T16:16:00 #10)
