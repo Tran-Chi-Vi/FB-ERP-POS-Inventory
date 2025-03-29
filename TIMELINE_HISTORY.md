@@ -45,3 +45,4 @@
 [2025-03-29T08:16:55] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-29T08:16:55 #3)
 [2025-03-29T12:48:03] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-29T12:48:03 #4)
 [2025-03-29T19:58:28] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-29T19:58:28 #5)
+[2025-03-29T18:41:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-29T18:41:19 #6)
