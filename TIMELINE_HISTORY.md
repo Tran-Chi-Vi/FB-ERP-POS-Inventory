@@ -55,3 +55,4 @@
 [2025-03-29T09:14:39] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-29T09:14:39 #13)
 [2025-03-29T13:52:23] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-29T13:52:23 #14)
 [2025-03-29T09:25:43] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-29T09:25:43 #15)
+[2025-03-29T17:52:34] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-29T17:52:34 #16)
