@@ -43,3 +43,4 @@
 [2025-03-29T19:59:08] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-29T19:59:08 #1)
 [2025-03-29T20:23:28] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-29T20:23:28 #2)
 [2025-03-29T08:16:55] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-29T08:16:55 #3)
+[2025-03-29T12:48:03] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-29T12:48:03 #4)
