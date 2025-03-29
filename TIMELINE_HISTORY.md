@@ -48,3 +48,4 @@
 [2025-03-29T18:41:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-29T18:41:19 #6)
 [2025-03-29T13:22:32] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-29T13:22:32 #7)
 [2025-03-29T21:59:39] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-29T21:59:39 #8)
+[2025-03-29T09:33:12] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-29T09:33:12 #9)
