@@ -1069,3 +1069,4 @@
 [2025-03-31T12:36:23] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-03-31T12:36:23 #4)
 [2025-03-31T08:55:23] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-31T08:55:23 #5)
 [2025-03-31T14:13:19] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-31T14:13:19 #6)
+[2025-03-31T09:19:43] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-31T09:19:43 #7)
