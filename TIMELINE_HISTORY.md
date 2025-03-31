@@ -1065,3 +1065,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-03-31T13:26:19] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-31T13:26:19 #1)
 [2025-03-31T08:26:53] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-31T08:26:53 #2)
+[2025-03-31T09:49:36] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-31T09:49:36 #3)
