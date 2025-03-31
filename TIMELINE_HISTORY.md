@@ -1036,6 +1036,7 @@
 [2025-03-27T09:11:35] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-03-27T09:11:35 #15)
 [2025-03-27T21:45:42] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-27T21:45:42 #16)
 [2025-03-27T11:58:41] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-27T11:58:41 #17)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-03-28T14:50:14] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-28T14:50:14 #1)
 [2025-03-28T18:51:08] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-28T18:51:08 #2)
@@ -1044,3 +1045,22 @@
 [2025-03-28T19:27:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-28T19:27:51 #5)
 [2025-03-28T08:28:01] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-03-28T08:28:01 #6)
 [2025-03-28T19:12:06] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-28T19:12:06 #7)
+=======
+[2025-03-29T19:59:08] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-29T19:59:08 #1)
+[2025-03-29T20:23:28] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-03-29T20:23:28 #2)
+[2025-03-29T08:16:55] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-03-29T08:16:55 #3)
+[2025-03-29T12:48:03] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-03-29T12:48:03 #4)
+[2025-03-29T19:58:28] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-29T19:58:28 #5)
+[2025-03-29T18:41:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-03-29T18:41:19 #6)
+[2025-03-29T13:22:32] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-03-29T13:22:32 #7)
+[2025-03-29T21:59:39] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-03-29T21:59:39 #8)
+[2025-03-29T09:33:12] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-29T09:33:12 #9)
+[2025-03-29T16:16:00] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-29T16:16:00 #10)
+[2025-03-29T12:25:47] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-29T12:25:47 #11)
+[2025-03-29T17:19:37] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-29T17:19:37 #12)
+[2025-03-29T09:14:39] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-03-29T09:14:39 #13)
+[2025-03-29T13:52:23] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-29T13:52:23 #14)
+[2025-03-29T09:25:43] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-29T09:25:43 #15)
+[2025-03-29T17:52:34] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-29T17:52:34 #16)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-03-31T13:26:19] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-31T13:26:19 #1)
