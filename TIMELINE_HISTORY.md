@@ -1071,3 +1071,4 @@
 [2025-03-31T14:13:19] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-31T14:13:19 #6)
 [2025-03-31T09:19:43] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-03-31T09:19:43 #7)
 [2025-03-31T18:58:38] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-31T18:58:38 #8)
+[2025-03-31T10:04:19] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-31T10:04:19 #9)
