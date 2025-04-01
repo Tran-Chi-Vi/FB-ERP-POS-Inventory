@@ -62,3 +62,4 @@
 [2025-04-01T21:37:16] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-01T21:37:16 #4)
 [2025-04-01T15:19:27] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-01T15:19:27 #5)
 [2025-04-01T08:22:33] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-01T08:22:33 #6)
+[2025-04-01T10:09:11] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-01T10:09:11 #7)
