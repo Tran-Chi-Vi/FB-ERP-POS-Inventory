@@ -58,3 +58,4 @@
 [2025-03-29T17:52:34] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-29T17:52:34 #16)
 [2025-04-01T21:14:58] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-01T21:14:58 #1)
 [2025-04-01T09:53:42] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-01T09:53:42 #2)
+[2025-04-01T21:30:44] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-01T21:30:44 #3)
