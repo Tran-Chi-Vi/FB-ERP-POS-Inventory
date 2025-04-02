@@ -1100,3 +1100,4 @@
 [2025-04-02T15:01:26] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-02T15:01:26 #15)
 [2025-04-02T10:12:28] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-02T10:12:28 #16)
 [2025-04-02T17:25:14] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-02T17:25:14 #17)
+[2025-04-02T18:17:36] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-02T18:17:36 #18)
