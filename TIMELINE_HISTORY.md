@@ -1062,6 +1062,7 @@
 [2025-03-29T13:52:23] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-03-29T13:52:23 #14)
 [2025-03-29T09:25:43] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-03-29T09:25:43 #15)
 [2025-03-29T17:52:34] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-03-29T17:52:34 #16)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-03-31T13:26:19] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-03-31T13:26:19 #1)
 [2025-03-31T08:26:53] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-03-31T08:26:53 #2)
@@ -1073,3 +1074,13 @@
 [2025-03-31T18:58:38] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-31T18:58:38 #8)
 [2025-03-31T10:04:19] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-03-31T10:04:19 #9)
 [2025-03-31T18:49:28] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-03-31T18:49:28 #10)
+=======
+[2025-04-01T21:14:58] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-01T21:14:58 #1)
+[2025-04-01T09:53:42] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-01T09:53:42 #2)
+[2025-04-01T21:30:44] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-01T21:30:44 #3)
+[2025-04-01T21:37:16] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-01T21:37:16 #4)
+[2025-04-01T15:19:27] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-01T15:19:27 #5)
+[2025-04-01T08:22:33] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-01T08:22:33 #6)
+[2025-04-01T10:09:11] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-01T10:09:11 #7)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-02T18:01:47] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-02T18:01:47 #1)
