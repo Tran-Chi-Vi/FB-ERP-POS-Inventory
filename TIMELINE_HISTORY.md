@@ -1087,3 +1087,4 @@
 [2025-04-02T17:15:02] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-02T17:15:02 #2)
 [2025-04-02T13:22:20] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-02T13:22:20 #3)
 [2025-04-02T13:08:47] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-02T13:08:47 #4)
+[2025-04-02T13:05:27] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-02T13:05:27 #5)
