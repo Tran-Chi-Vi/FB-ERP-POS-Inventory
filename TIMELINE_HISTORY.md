@@ -1097,3 +1097,4 @@
 [2025-04-02T12:25:00] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-02T12:25:00 #12)
 [2025-04-02T12:56:06] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-02T12:56:06 #13)
 [2025-04-02T15:13:22] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-02T15:13:22 #14)
+[2025-04-02T15:01:26] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-02T15:01:26 #15)
