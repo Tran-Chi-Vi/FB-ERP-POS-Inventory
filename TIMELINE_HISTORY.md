@@ -75,3 +75,4 @@
 [2025-04-03T14:47:20] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-03T14:47:20 #10)
 [2025-04-03T21:07:05] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T21:07:05 #11)
 [2025-04-03T11:39:44] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-03T11:39:44 #12)
+[2025-04-03T13:08:04] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-03T13:08:04 #13)
