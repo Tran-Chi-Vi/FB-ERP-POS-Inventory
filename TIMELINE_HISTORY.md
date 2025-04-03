@@ -67,3 +67,4 @@
 [2025-04-03T20:07:50] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-03T20:07:50 #2)
 [2025-04-03T08:55:39] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-03T08:55:39 #3)
 [2025-04-03T13:38:28] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-03T13:38:28 #4)
+[2025-04-03T21:28:26] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-03T21:28:26 #5)
