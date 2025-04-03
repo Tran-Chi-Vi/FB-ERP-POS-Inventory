@@ -78,3 +78,4 @@
 [2025-04-03T13:08:04] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-03T13:08:04 #13)
 [2025-04-03T19:49:22] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T19:49:22 #14)
 [2025-04-03T21:33:35] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-03T21:33:35 #15)
+[2025-04-03T18:06:20] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-03T18:06:20 #16)
