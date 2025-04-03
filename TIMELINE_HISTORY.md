@@ -70,3 +70,4 @@
 [2025-04-03T21:28:26] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-03T21:28:26 #5)
 [2025-04-03T16:02:22] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-03T16:02:22 #6)
 [2025-04-03T09:59:28] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-03T09:59:28 #7)
+[2025-04-03T17:13:53] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-03T17:13:53 #8)
