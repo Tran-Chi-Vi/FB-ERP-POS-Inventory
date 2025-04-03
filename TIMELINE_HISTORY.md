@@ -72,3 +72,4 @@
 [2025-04-03T09:59:28] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-03T09:59:28 #7)
 [2025-04-03T17:13:53] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-03T17:13:53 #8)
 [2025-04-03T17:19:17] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T17:19:17 #9)
+[2025-04-03T14:47:20] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-03T14:47:20 #10)
