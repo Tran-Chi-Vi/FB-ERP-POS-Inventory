@@ -1133,3 +1133,4 @@
 [2025-04-04T08:45:00] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-04T08:45:00 #9)
 [2025-04-04T09:34:48] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-04T09:34:48 #10)
 [2025-04-04T21:25:09] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-04T21:25:09 #11)
+[2025-04-04T15:04:32] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-04T15:04:32 #12)
