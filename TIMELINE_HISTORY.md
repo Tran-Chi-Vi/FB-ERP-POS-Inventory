@@ -1082,6 +1082,7 @@
 [2025-04-01T15:19:27] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-01T15:19:27 #5)
 [2025-04-01T08:22:33] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-01T08:22:33 #6)
 [2025-04-01T10:09:11] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-01T10:09:11 #7)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-02T18:01:47] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-02T18:01:47 #1)
 [2025-04-02T17:15:02] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-02T17:15:02 #2)
@@ -1103,3 +1104,22 @@
 [2025-04-02T18:17:36] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-02T18:17:36 #18)
 [2025-04-02T10:00:11] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-02T10:00:11 #19)
 [2025-04-02T21:46:54] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-02T21:46:54 #20)
+=======
+[2025-04-03T15:37:26] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-03T15:37:26 #1)
+[2025-04-03T20:07:50] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-03T20:07:50 #2)
+[2025-04-03T08:55:39] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-03T08:55:39 #3)
+[2025-04-03T13:38:28] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-03T13:38:28 #4)
+[2025-04-03T21:28:26] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-03T21:28:26 #5)
+[2025-04-03T16:02:22] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-03T16:02:22 #6)
+[2025-04-03T09:59:28] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-03T09:59:28 #7)
+[2025-04-03T17:13:53] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-03T17:13:53 #8)
+[2025-04-03T17:19:17] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T17:19:17 #9)
+[2025-04-03T14:47:20] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-03T14:47:20 #10)
+[2025-04-03T21:07:05] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T21:07:05 #11)
+[2025-04-03T11:39:44] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-03T11:39:44 #12)
+[2025-04-03T13:08:04] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-03T13:08:04 #13)
+[2025-04-03T19:49:22] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T19:49:22 #14)
+[2025-04-03T21:33:35] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-03T21:33:35 #15)
+[2025-04-03T18:06:20] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-03T18:06:20 #16)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-04T21:46:56] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-04T21:46:56 #1)
