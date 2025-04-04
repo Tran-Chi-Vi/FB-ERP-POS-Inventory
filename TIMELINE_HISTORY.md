@@ -1126,3 +1126,4 @@
 [2025-04-04T16:09:09] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-04T16:09:09 #2)
 [2025-04-04T21:21:37] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-04T21:21:37 #3)
 [2025-04-04T16:00:45] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-04T16:00:45 #4)
+[2025-04-04T10:29:40] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-04T10:29:40 #5)
