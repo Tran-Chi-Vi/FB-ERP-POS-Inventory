@@ -87,3 +87,4 @@
 [2025-04-05T17:24:22] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-05T17:24:22 #6)
 [2025-04-05T13:24:48] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-05T13:24:48 #7)
 [2025-04-05T10:29:59] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T10:29:59 #8)
+[2025-04-05T09:27:21] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-05T09:27:21 #9)
