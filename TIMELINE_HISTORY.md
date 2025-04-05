@@ -84,3 +84,4 @@
 [2025-04-05T21:42:09] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-05T21:42:09 #3)
 [2025-04-05T21:16:47] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-05T21:16:47 #4)
 [2025-04-05T16:44:44] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-05T16:44:44 #5)
+[2025-04-05T17:24:22] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-05T17:24:22 #6)
