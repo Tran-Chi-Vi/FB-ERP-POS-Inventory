@@ -82,3 +82,4 @@
 [2025-04-05T14:30:46] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T14:30:46 #1)
 [2025-04-05T09:35:28] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T09:35:28 #2)
 [2025-04-05T21:42:09] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-05T21:42:09 #3)
+[2025-04-05T21:16:47] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-05T21:16:47 #4)
