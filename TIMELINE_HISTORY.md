@@ -88,3 +88,4 @@
 [2025-04-05T13:24:48] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-05T13:24:48 #7)
 [2025-04-05T10:29:59] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T10:29:59 #8)
 [2025-04-05T09:27:21] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-05T09:27:21 #9)
+[2025-04-05T15:50:53] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-05T15:50:53 #10)
