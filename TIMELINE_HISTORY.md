@@ -79,3 +79,4 @@
 [2025-04-03T19:49:22] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T19:49:22 #14)
 [2025-04-03T21:33:35] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-03T21:33:35 #15)
 [2025-04-03T18:06:20] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-03T18:06:20 #16)
+[2025-04-05T14:30:46] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T14:30:46 #1)
