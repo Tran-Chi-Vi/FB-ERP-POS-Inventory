@@ -1121,6 +1121,7 @@
 [2025-04-03T19:49:22] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-03T19:49:22 #14)
 [2025-04-03T21:33:35] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-03T21:33:35 #15)
 [2025-04-03T18:06:20] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-03T18:06:20 #16)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-04T21:46:56] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-04T21:46:56 #1)
 [2025-04-04T16:09:09] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-04T16:09:09 #2)
@@ -1134,3 +1135,18 @@
 [2025-04-04T09:34:48] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-04T09:34:48 #10)
 [2025-04-04T21:25:09] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-04T21:25:09 #11)
 [2025-04-04T15:04:32] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-04T15:04:32 #12)
+=======
+[2025-04-05T14:30:46] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T14:30:46 #1)
+[2025-04-05T09:35:28] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T09:35:28 #2)
+[2025-04-05T21:42:09] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-05T21:42:09 #3)
+[2025-04-05T21:16:47] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-05T21:16:47 #4)
+[2025-04-05T16:44:44] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-05T16:44:44 #5)
+[2025-04-05T17:24:22] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-05T17:24:22 #6)
+[2025-04-05T13:24:48] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-05T13:24:48 #7)
+[2025-04-05T10:29:59] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T10:29:59 #8)
+[2025-04-05T09:27:21] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-05T09:27:21 #9)
+[2025-04-05T15:50:53] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-05T15:50:53 #10)
+[2025-04-05T11:54:35] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-05T11:54:35 #11)
+[2025-04-05T16:10:00] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T16:10:00 #12)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-07T10:38:57] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-07T10:38:57 #1)
