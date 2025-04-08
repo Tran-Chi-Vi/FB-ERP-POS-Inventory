@@ -99,3 +99,4 @@
 [2025-04-08T15:17:23] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-08T15:17:23 #6)
 [2025-04-08T08:56:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-08T08:56:19 #7)
 [2025-04-08T16:24:25] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-08T16:24:25 #8)
+[2025-04-08T11:10:10] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-08T11:10:10 #9)
