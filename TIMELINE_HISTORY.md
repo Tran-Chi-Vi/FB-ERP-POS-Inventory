@@ -96,3 +96,4 @@
 [2025-04-08T19:32:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-08T19:32:51 #3)
 [2025-04-08T16:10:21] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-08T16:10:21 #4)
 [2025-04-08T08:10:13] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-08T08:10:13 #5)
+[2025-04-08T15:17:23] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-08T15:17:23 #6)
