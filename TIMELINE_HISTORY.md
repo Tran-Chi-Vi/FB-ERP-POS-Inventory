@@ -92,3 +92,4 @@
 [2025-04-05T11:54:35] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-05T11:54:35 #11)
 [2025-04-05T16:10:00] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T16:10:00 #12)
 [2025-04-08T12:10:36] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-08T12:10:36 #1)
+[2025-04-08T21:54:56] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T21:54:56 #2)
