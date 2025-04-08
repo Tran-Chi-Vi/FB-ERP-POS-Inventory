@@ -100,3 +100,4 @@
 [2025-04-08T08:56:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-08T08:56:19 #7)
 [2025-04-08T16:24:25] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-08T16:24:25 #8)
 [2025-04-08T11:10:10] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-08T11:10:10 #9)
+[2025-04-08T19:58:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T19:58:54 #10)
