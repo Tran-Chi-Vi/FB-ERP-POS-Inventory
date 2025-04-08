@@ -97,3 +97,4 @@
 [2025-04-08T16:10:21] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-08T16:10:21 #4)
 [2025-04-08T08:10:13] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-08T08:10:13 #5)
 [2025-04-08T15:17:23] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-08T15:17:23 #6)
+[2025-04-08T08:56:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-08T08:56:19 #7)
