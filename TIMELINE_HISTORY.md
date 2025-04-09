@@ -1148,6 +1148,7 @@
 [2025-04-05T15:50:53] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-05T15:50:53 #10)
 [2025-04-05T11:54:35] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-05T11:54:35 #11)
 [2025-04-05T16:10:00] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-05T16:10:00 #12)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-07T10:38:57] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-07T10:38:57 #1)
 [2025-04-07T16:46:16] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-07T16:46:16 #2)
@@ -1155,3 +1156,16 @@
 [2025-04-07T14:40:51] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-07T14:40:51 #4)
 [2025-04-07T09:58:49] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-07T09:58:49 #5)
 [2025-04-07T13:50:02] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-07T13:50:02 #6)
+=======
+[2025-04-08T12:10:36] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-08T12:10:36 #1)
+[2025-04-08T21:54:56] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T21:54:56 #2)
+[2025-04-08T19:32:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-08T19:32:51 #3)
+[2025-04-08T16:10:21] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-08T16:10:21 #4)
+[2025-04-08T08:10:13] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-08T08:10:13 #5)
+[2025-04-08T15:17:23] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-08T15:17:23 #6)
+[2025-04-08T08:56:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-08T08:56:19 #7)
+[2025-04-08T16:24:25] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-08T16:24:25 #8)
+[2025-04-08T11:10:10] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-08T11:10:10 #9)
+[2025-04-08T19:58:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T19:58:54 #10)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-09T08:38:27] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-09T08:38:27 #1)
