@@ -1169,3 +1169,4 @@
 [2025-04-08T19:58:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T19:58:54 #10)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-09T08:38:27] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-09T08:38:27 #1)
+[2025-04-09T10:57:10] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-09T10:57:10 #2)
