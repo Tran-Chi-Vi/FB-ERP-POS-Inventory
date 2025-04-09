@@ -1170,3 +1170,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-09T08:38:27] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-09T08:38:27 #1)
 [2025-04-09T10:57:10] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-09T10:57:10 #2)
+[2025-04-09T16:41:09] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-09T16:41:09 #3)
