@@ -108,3 +108,4 @@
 [2025-04-10T16:55:25] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-10T16:55:25 #5)
 [2025-04-10T14:08:48] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-10T14:08:48 #6)
 [2025-04-10T17:18:39] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-10T17:18:39 #7)
+[2025-04-10T08:03:23] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-10T08:03:23 #8)
