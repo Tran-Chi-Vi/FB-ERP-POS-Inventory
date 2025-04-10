@@ -119,3 +119,4 @@
 [2025-04-10T20:53:02] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-10T20:53:02 #16)
 [2025-04-10T08:12:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-10T08:12:54 #17)
 [2025-04-10T15:30:56] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-10T15:30:56 #18)
+[2025-04-10T19:25:34] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-10T19:25:34 #19)
