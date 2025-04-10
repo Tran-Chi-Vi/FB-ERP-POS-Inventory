@@ -101,3 +101,4 @@
 [2025-04-08T16:24:25] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-08T16:24:25 #8)
 [2025-04-08T11:10:10] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-08T11:10:10 #9)
 [2025-04-08T19:58:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T19:58:54 #10)
+[2025-04-10T08:04:45] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-10T08:04:45 #1)
