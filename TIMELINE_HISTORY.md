@@ -117,3 +117,4 @@
 [2025-04-10T20:24:19] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-10T20:24:19 #14)
 [2025-04-10T18:32:43] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-10T18:32:43 #15)
 [2025-04-10T20:53:02] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-10T20:53:02 #16)
+[2025-04-10T08:12:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-10T08:12:54 #17)
