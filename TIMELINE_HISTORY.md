@@ -102,3 +102,4 @@
 [2025-04-08T11:10:10] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-08T11:10:10 #9)
 [2025-04-08T19:58:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T19:58:54 #10)
 [2025-04-10T08:04:45] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-10T08:04:45 #1)
+[2025-04-10T14:27:56] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-10T14:27:56 #2)
