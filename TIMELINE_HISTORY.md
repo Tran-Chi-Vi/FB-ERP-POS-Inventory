@@ -103,3 +103,4 @@
 [2025-04-08T19:58:54] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-08T19:58:54 #10)
 [2025-04-10T08:04:45] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-10T08:04:45 #1)
 [2025-04-10T14:27:56] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-10T14:27:56 #2)
+[2025-04-10T08:11:06] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-10T08:11:06 #3)
