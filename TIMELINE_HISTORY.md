@@ -105,3 +105,4 @@
 [2025-04-10T14:27:56] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-10T14:27:56 #2)
 [2025-04-10T08:11:06] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-10T08:11:06 #3)
 [2025-04-10T18:19:02] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-10T18:19:02 #4)
+[2025-04-10T16:55:25] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-10T16:55:25 #5)
