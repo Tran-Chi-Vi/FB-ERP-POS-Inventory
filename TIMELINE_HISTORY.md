@@ -115,3 +115,4 @@
 [2025-04-10T13:08:05] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-10T13:08:05 #12)
 [2025-04-10T21:18:17] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-10T21:18:17 #13)
 [2025-04-10T20:24:19] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-10T20:24:19 #14)
+[2025-04-10T18:32:43] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-10T18:32:43 #15)
