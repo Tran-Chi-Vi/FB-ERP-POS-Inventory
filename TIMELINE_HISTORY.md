@@ -1220,3 +1220,4 @@
 [2025-04-11T15:56:28] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-11T15:56:28 #12)
 [2025-04-11T19:19:08] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-11T19:19:08 #13)
 [2025-04-11T19:23:29] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-11T19:23:29 #14)
+[2025-04-11T14:37:52] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-11T14:37:52 #15)
