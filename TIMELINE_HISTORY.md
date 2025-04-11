@@ -1215,3 +1215,4 @@
 [2025-04-11T16:38:19] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-11T16:38:19 #7)
 [2025-04-11T19:43:09] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-11T19:43:09 #8)
 [2025-04-11T08:30:47] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-11T08:30:47 #9)
+[2025-04-11T18:46:01] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-11T18:46:01 #10)
