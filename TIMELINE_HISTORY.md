@@ -1223,3 +1223,4 @@
 [2025-04-11T14:37:52] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-11T14:37:52 #15)
 [2025-04-11T12:52:57] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-11T12:52:57 #16)
 [2025-04-11T12:45:26] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-11T12:45:26 #17)
+[2025-04-11T08:04:33] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-11T08:04:33 #18)
