@@ -1207,3 +1207,4 @@
 [2025-04-10T11:57:40] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-10T11:57:40 #20)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-11T11:24:51] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-11T11:24:51 #1)
+[2025-04-11T12:18:30] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-11T12:18:30 #2)
