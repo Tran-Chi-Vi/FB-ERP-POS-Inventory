@@ -1209,3 +1209,4 @@
 [2025-04-11T11:24:51] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-11T11:24:51 #1)
 [2025-04-11T12:18:30] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-11T12:18:30 #2)
 [2025-04-11T21:52:20] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-11T21:52:20 #3)
+[2025-04-11T09:25:02] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-11T09:25:02 #4)
