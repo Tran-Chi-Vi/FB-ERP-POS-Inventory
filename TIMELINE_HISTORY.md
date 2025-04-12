@@ -124,3 +124,4 @@
 [2025-04-12T08:21:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-12T08:21:02 #1)
 [2025-04-12T12:15:03] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-12T12:15:03 #2)
 [2025-04-12T09:02:53] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-12T09:02:53 #3)
+[2025-04-12T08:23:22] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-12T08:23:22 #4)
