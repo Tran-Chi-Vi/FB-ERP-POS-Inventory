@@ -122,3 +122,4 @@
 [2025-04-10T19:25:34] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-10T19:25:34 #19)
 [2025-04-10T11:57:40] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-10T11:57:40 #20)
 [2025-04-12T08:21:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-12T08:21:02 #1)
+[2025-04-12T12:15:03] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-12T12:15:03 #2)
