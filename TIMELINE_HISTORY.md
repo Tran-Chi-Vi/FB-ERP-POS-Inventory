@@ -1236,3 +1236,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-14T10:10:03] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-14T10:10:03 #1)
 [2025-04-14T15:19:20] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-14T15:19:20 #2)
+[2025-04-14T12:48:31] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-14T12:48:31 #3)
