@@ -1205,6 +1205,7 @@
 [2025-04-10T15:30:56] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-10T15:30:56 #18)
 [2025-04-10T19:25:34] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-10T19:25:34 #19)
 [2025-04-10T11:57:40] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-10T11:57:40 #20)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-11T11:24:51] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-11T11:24:51 #1)
 [2025-04-11T12:18:30] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-11T12:18:30 #2)
@@ -1225,3 +1226,12 @@
 [2025-04-11T12:45:26] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-11T12:45:26 #17)
 [2025-04-11T08:04:33] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-11T08:04:33 #18)
 [2025-04-11T09:03:10] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-11T09:03:10 #19)
+=======
+[2025-04-12T08:21:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-12T08:21:02 #1)
+[2025-04-12T12:15:03] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-12T12:15:03 #2)
+[2025-04-12T09:02:53] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-12T09:02:53 #3)
+[2025-04-12T08:23:22] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-12T08:23:22 #4)
+[2025-04-12T11:28:53] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-12T11:28:53 #5)
+[2025-04-12T12:55:39] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-12T12:55:39 #6)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-14T10:10:03] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-14T10:10:03 #1)
