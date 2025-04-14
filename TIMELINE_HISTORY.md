@@ -1240,3 +1240,4 @@
 [2025-04-14T12:48:55] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-14T12:48:55 #4)
 [2025-04-14T19:29:48] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-14T19:29:48 #5)
 [2025-04-14T11:20:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-14T11:20:51 #6)
+[2025-04-14T18:02:54] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-14T18:02:54 #7)
