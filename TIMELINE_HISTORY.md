@@ -1241,3 +1241,4 @@
 [2025-04-14T19:29:48] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-14T19:29:48 #5)
 [2025-04-14T11:20:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-14T11:20:51 #6)
 [2025-04-14T18:02:54] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-14T18:02:54 #7)
+[2025-04-14T16:01:20] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-14T16:01:20 #8)
