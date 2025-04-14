@@ -1243,3 +1243,4 @@
 [2025-04-14T18:02:54] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-14T18:02:54 #7)
 [2025-04-14T16:01:20] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-14T16:01:20 #8)
 [2025-04-14T16:23:40] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-14T16:23:40 #9)
+[2025-04-14T13:39:49] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-14T13:39:49 #10)
