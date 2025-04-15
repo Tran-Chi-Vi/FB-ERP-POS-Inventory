@@ -127,3 +127,4 @@
 [2025-04-12T08:23:22] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-12T08:23:22 #4)
 [2025-04-12T11:28:53] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-12T11:28:53 #5)
 [2025-04-12T12:55:39] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-12T12:55:39 #6)
+[2025-04-15T15:09:32] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-15T15:09:32 #1)
