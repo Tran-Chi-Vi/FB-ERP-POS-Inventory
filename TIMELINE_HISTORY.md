@@ -1265,3 +1265,4 @@
 [2025-04-16T11:23:15] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-16T11:23:15 #11)
 [2025-04-16T15:17:09] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-16T15:17:09 #12)
 [2025-04-16T13:44:20] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-16T13:44:20 #13)
+[2025-04-16T18:32:08] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-16T18:32:08 #14)
