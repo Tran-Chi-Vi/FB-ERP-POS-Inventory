@@ -1266,3 +1266,4 @@
 [2025-04-16T15:17:09] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-16T15:17:09 #12)
 [2025-04-16T13:44:20] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-16T13:44:20 #13)
 [2025-04-16T18:32:08] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-16T18:32:08 #14)
+[2025-04-16T11:59:31] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-16T11:59:31 #15)
