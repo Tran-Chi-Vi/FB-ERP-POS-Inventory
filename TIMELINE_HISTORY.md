@@ -1256,3 +1256,4 @@
 [2025-04-16T10:49:54] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-16T10:49:54 #2)
 [2025-04-16T09:34:43] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-16T09:34:43 #3)
 [2025-04-16T21:52:11] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-16T21:52:11 #4)
+[2025-04-16T17:07:27] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-16T17:07:27 #5)
