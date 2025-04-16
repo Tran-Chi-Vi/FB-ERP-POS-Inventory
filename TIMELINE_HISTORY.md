@@ -1262,3 +1262,4 @@
 [2025-04-16T13:07:20] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-16T13:07:20 #8)
 [2025-04-16T19:02:37] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-16T19:02:37 #9)
 [2025-04-16T19:06:29] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-16T19:06:29 #10)
+[2025-04-16T11:23:15] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-16T11:23:15 #11)
