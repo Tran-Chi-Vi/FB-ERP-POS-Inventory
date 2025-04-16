@@ -1260,3 +1260,4 @@
 [2025-04-16T19:48:56] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-16T19:48:56 #6)
 [2025-04-16T13:01:41] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-16T13:01:41 #7)
 [2025-04-16T13:07:20] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-16T13:07:20 #8)
+[2025-04-16T19:02:37] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-16T19:02:37 #9)
