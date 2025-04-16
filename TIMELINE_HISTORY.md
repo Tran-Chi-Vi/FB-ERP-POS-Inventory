@@ -1263,3 +1263,4 @@
 [2025-04-16T19:02:37] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-16T19:02:37 #9)
 [2025-04-16T19:06:29] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-16T19:06:29 #10)
 [2025-04-16T11:23:15] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-16T11:23:15 #11)
+[2025-04-16T15:17:09] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-16T15:17:09 #12)
