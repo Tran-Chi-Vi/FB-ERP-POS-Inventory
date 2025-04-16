@@ -1253,3 +1253,4 @@
 [2025-04-15T15:38:15] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-15T15:38:15 #5)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-16T19:43:22] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-16T19:43:22 #1)
+[2025-04-16T10:49:54] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-16T10:49:54 #2)
