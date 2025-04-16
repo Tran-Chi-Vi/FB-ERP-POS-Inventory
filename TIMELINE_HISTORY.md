@@ -1233,6 +1233,7 @@
 [2025-04-12T08:23:22] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-12T08:23:22 #4)
 [2025-04-12T11:28:53] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-12T11:28:53 #5)
 [2025-04-12T12:55:39] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-12T12:55:39 #6)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-14T10:10:03] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-14T10:10:03 #1)
 [2025-04-14T15:19:20] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-14T15:19:20 #2)
@@ -1244,3 +1245,11 @@
 [2025-04-14T16:01:20] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-14T16:01:20 #8)
 [2025-04-14T16:23:40] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-14T16:23:40 #9)
 [2025-04-14T13:39:49] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-14T13:39:49 #10)
+=======
+[2025-04-15T15:09:32] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-15T15:09:32 #1)
+[2025-04-15T19:21:43] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-15T19:21:43 #2)
+[2025-04-15T15:34:56] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-15T15:34:56 #3)
+[2025-04-15T20:01:52] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-15T20:01:52 #4)
+[2025-04-15T15:38:15] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-15T15:38:15 #5)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-16T19:43:22] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-16T19:43:22 #1)
