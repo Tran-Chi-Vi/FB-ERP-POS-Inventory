@@ -141,3 +141,4 @@
 [2025-04-17T08:36:57] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-17T08:36:57 #7)
 [2025-04-17T21:09:44] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-17T21:09:44 #8)
 [2025-04-17T15:53:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-17T15:53:00 #9)
+[2025-04-17T13:18:13] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-17T13:18:13 #10)
