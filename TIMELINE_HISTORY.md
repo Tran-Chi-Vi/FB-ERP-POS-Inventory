@@ -142,3 +142,4 @@
 [2025-04-17T21:09:44] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-17T21:09:44 #8)
 [2025-04-17T15:53:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-17T15:53:00 #9)
 [2025-04-17T13:18:13] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-17T13:18:13 #10)
+[2025-04-17T10:06:10] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-17T10:06:10 #11)
