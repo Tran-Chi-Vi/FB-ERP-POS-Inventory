@@ -144,3 +144,4 @@
 [2025-04-17T13:18:13] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-17T13:18:13 #10)
 [2025-04-17T10:06:10] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-17T10:06:10 #11)
 [2025-04-17T16:36:06] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-17T16:36:06 #12)
+[2025-04-17T13:48:38] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-17T13:48:38 #13)
