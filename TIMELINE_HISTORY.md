@@ -133,3 +133,4 @@
 [2025-04-15T20:01:52] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-15T20:01:52 #4)
 [2025-04-15T15:38:15] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-15T15:38:15 #5)
 [2025-04-17T15:05:46] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-17T15:05:46 #1)
+[2025-04-17T20:26:27] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-17T20:26:27 #2)
