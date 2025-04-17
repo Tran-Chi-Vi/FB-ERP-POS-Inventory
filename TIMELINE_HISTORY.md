@@ -139,3 +139,4 @@
 [2025-04-17T20:43:04] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-17T20:43:04 #5)
 [2025-04-17T18:28:54] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-17T18:28:54 #6)
 [2025-04-17T08:36:57] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-17T08:36:57 #7)
+[2025-04-17T21:09:44] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-17T21:09:44 #8)
