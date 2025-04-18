@@ -1299,3 +1299,4 @@
 [2025-04-18T14:47:04] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-18T14:47:04 #10)
 [2025-04-18T19:54:52] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-18T19:54:52 #11)
 [2025-04-18T13:20:44] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-18T13:20:44 #12)
+[2025-04-18T13:10:28] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-18T13:10:28 #13)
