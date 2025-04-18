@@ -1288,3 +1288,4 @@
 [2025-04-17T15:14:09] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-17T15:14:09 #17)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-18T19:32:44] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-18T19:32:44 #1)
+[2025-04-18T09:30:47] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-18T09:30:47 #2)
