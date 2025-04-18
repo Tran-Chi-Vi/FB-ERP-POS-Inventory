@@ -1293,3 +1293,4 @@
 [2025-04-18T09:11:38] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-18T09:11:38 #4)
 [2025-04-18T20:06:35] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-18T20:06:35 #5)
 [2025-04-18T20:57:13] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-18T20:57:13 #6)
+[2025-04-18T17:54:50] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-18T17:54:50 #7)
