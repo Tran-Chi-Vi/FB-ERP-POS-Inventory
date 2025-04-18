@@ -1301,3 +1301,4 @@
 [2025-04-18T13:20:44] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-18T13:20:44 #12)
 [2025-04-18T13:10:28] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-18T13:10:28 #13)
 [2025-04-18T11:32:30] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-18T11:32:30 #14)
+[2025-04-18T21:55:39] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-18T21:55:39 #15)
