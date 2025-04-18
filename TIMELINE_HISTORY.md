@@ -1295,3 +1295,4 @@
 [2025-04-18T20:57:13] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-18T20:57:13 #6)
 [2025-04-18T17:54:50] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-18T17:54:50 #7)
 [2025-04-18T10:17:37] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-18T10:17:37 #8)
+[2025-04-18T18:57:38] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-18T18:57:38 #9)
