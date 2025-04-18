@@ -1251,6 +1251,7 @@
 [2025-04-15T15:34:56] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-15T15:34:56 #3)
 [2025-04-15T20:01:52] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-15T20:01:52 #4)
 [2025-04-15T15:38:15] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-15T15:38:15 #5)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-16T19:43:22] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-16T19:43:22 #1)
 [2025-04-16T10:49:54] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-16T10:49:54 #2)
@@ -1267,3 +1268,23 @@
 [2025-04-16T13:44:20] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-16T13:44:20 #13)
 [2025-04-16T18:32:08] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-16T18:32:08 #14)
 [2025-04-16T11:59:31] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-16T11:59:31 #15)
+=======
+[2025-04-17T15:05:46] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-17T15:05:46 #1)
+[2025-04-17T20:26:27] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-17T20:26:27 #2)
+[2025-04-17T15:05:04] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-17T15:05:04 #3)
+[2025-04-17T08:11:55] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-17T08:11:55 #4)
+[2025-04-17T20:43:04] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-17T20:43:04 #5)
+[2025-04-17T18:28:54] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-17T18:28:54 #6)
+[2025-04-17T08:36:57] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-17T08:36:57 #7)
+[2025-04-17T21:09:44] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-17T21:09:44 #8)
+[2025-04-17T15:53:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-17T15:53:00 #9)
+[2025-04-17T13:18:13] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-17T13:18:13 #10)
+[2025-04-17T10:06:10] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-17T10:06:10 #11)
+[2025-04-17T16:36:06] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-17T16:36:06 #12)
+[2025-04-17T13:48:38] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-17T13:48:38 #13)
+[2025-04-17T15:36:48] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-17T15:36:48 #14)
+[2025-04-17T18:20:00] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-17T18:20:00 #15)
+[2025-04-17T09:33:26] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-17T09:33:26 #16)
+[2025-04-17T15:14:09] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-17T15:14:09 #17)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-18T19:32:44] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-18T19:32:44 #1)
