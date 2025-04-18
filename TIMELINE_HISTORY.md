@@ -1291,3 +1291,4 @@
 [2025-04-18T09:30:47] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-18T09:30:47 #2)
 [2025-04-18T13:33:23] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-18T13:33:23 #3)
 [2025-04-18T09:11:38] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-18T09:11:38 #4)
+[2025-04-18T20:06:35] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-18T20:06:35 #5)
