@@ -152,3 +152,4 @@
 [2025-04-19T12:29:32] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-19T12:29:32 #1)
 [2025-04-19T09:51:21] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-19T09:51:21 #2)
 [2025-04-19T19:26:09] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-19T19:26:09 #3)
+[2025-04-19T18:59:11] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-19T18:59:11 #4)
