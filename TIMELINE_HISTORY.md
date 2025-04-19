@@ -160,3 +160,4 @@
 [2025-04-19T19:27:10] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-19T19:27:10 #9)
 [2025-04-19T18:38:30] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-19T18:38:30 #10)
 [2025-04-19T20:36:51] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-19T20:36:51 #11)
+[2025-04-19T15:25:26] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-19T15:25:26 #12)
