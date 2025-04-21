@@ -1325,3 +1325,4 @@
 [2025-04-21T14:03:01] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-21T14:03:01 #5)
 [2025-04-21T18:27:36] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-21T18:27:36 #6)
 [2025-04-21T10:55:06] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-21T10:55:06 #7)
+[2025-04-21T17:56:43] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-21T17:56:43 #8)
