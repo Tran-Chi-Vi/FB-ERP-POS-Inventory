@@ -1286,6 +1286,7 @@
 [2025-04-17T18:20:00] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-17T18:20:00 #15)
 [2025-04-17T09:33:26] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-17T09:33:26 #16)
 [2025-04-17T15:14:09] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-17T15:14:09 #17)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-18T19:32:44] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-18T19:32:44 #1)
 [2025-04-18T09:30:47] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-18T09:30:47 #2)
@@ -1303,3 +1304,18 @@
 [2025-04-18T11:32:30] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-18T11:32:30 #14)
 [2025-04-18T21:55:39] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-18T21:55:39 #15)
 [2025-04-18T16:35:04] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-18T16:35:04 #16)
+=======
+[2025-04-19T12:29:32] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-19T12:29:32 #1)
+[2025-04-19T09:51:21] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-19T09:51:21 #2)
+[2025-04-19T19:26:09] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-19T19:26:09 #3)
+[2025-04-19T18:59:11] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-19T18:59:11 #4)
+[2025-04-19T19:59:18] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-19T19:59:18 #5)
+[2025-04-19T17:14:20] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-19T17:14:20 #6)
+[2025-04-19T14:47:33] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-19T14:47:33 #7)
+[2025-04-19T19:32:00] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-19T19:32:00 #8)
+[2025-04-19T19:27:10] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-19T19:27:10 #9)
+[2025-04-19T18:38:30] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-19T18:38:30 #10)
+[2025-04-19T20:36:51] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-19T20:36:51 #11)
+[2025-04-19T15:25:26] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-19T15:25:26 #12)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-21T21:04:57] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-21T21:04:57 #1)
