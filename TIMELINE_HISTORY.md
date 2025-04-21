@@ -1323,3 +1323,4 @@
 [2025-04-21T19:48:24] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-21T19:48:24 #3)
 [2025-04-21T10:31:30] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-21T10:31:30 #4)
 [2025-04-21T14:03:01] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-21T14:03:01 #5)
+[2025-04-21T18:27:36] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-21T18:27:36 #6)
