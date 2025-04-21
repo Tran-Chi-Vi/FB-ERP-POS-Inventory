@@ -1326,3 +1326,4 @@
 [2025-04-21T18:27:36] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-21T18:27:36 #6)
 [2025-04-21T10:55:06] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-21T10:55:06 #7)
 [2025-04-21T17:56:43] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-21T17:56:43 #8)
+[2025-04-21T16:32:34] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-21T16:32:34 #9)
