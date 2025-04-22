@@ -164,3 +164,4 @@
 [2025-04-22T16:13:11] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-22T16:13:11 #1)
 [2025-04-22T21:05:49] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-22T21:05:49 #2)
 [2025-04-22T19:54:02] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-22T19:54:02 #3)
+[2025-04-22T13:52:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-22T13:52:35 #4)
