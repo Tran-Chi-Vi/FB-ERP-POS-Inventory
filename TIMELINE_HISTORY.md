@@ -162,3 +162,4 @@
 [2025-04-19T20:36:51] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-19T20:36:51 #11)
 [2025-04-19T15:25:26] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-19T15:25:26 #12)
 [2025-04-22T16:13:11] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-22T16:13:11 #1)
+[2025-04-22T21:05:49] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-22T21:05:49 #2)
