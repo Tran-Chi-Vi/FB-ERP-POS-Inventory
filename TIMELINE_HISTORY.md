@@ -1348,3 +1348,4 @@
 [2025-04-23T11:29:54] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-23T11:29:54 #6)
 [2025-04-23T11:47:31] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-23T11:47:31 #7)
 [2025-04-23T08:11:03] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-23T08:11:03 #8)
+[2025-04-23T20:16:53] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-23T20:16:53 #9)
