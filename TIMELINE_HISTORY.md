@@ -1352,3 +1352,4 @@
 [2025-04-23T08:32:16] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-23T08:32:16 #10)
 [2025-04-23T20:39:07] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-23T20:39:07 #11)
 [2025-04-23T12:04:12] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-23T12:04:12 #12)
+[2025-04-23T16:26:42] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-23T16:26:42 #13)
