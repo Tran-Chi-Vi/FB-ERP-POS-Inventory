@@ -1346,3 +1346,4 @@
 [2025-04-23T13:34:53] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-23T13:34:53 #4)
 [2025-04-23T11:32:52] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-23T11:32:52 #5)
 [2025-04-23T11:29:54] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-23T11:29:54 #6)
+[2025-04-23T11:47:31] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-23T11:47:31 #7)
