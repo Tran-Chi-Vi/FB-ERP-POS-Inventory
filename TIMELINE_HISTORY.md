@@ -1350,3 +1350,4 @@
 [2025-04-23T08:11:03] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-23T08:11:03 #8)
 [2025-04-23T20:16:53] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-23T20:16:53 #9)
 [2025-04-23T08:32:16] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-23T08:32:16 #10)
+[2025-04-23T20:39:07] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-23T20:39:07 #11)
