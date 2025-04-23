@@ -1344,3 +1344,4 @@
 [2025-04-23T21:53:58] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-23T21:53:58 #2)
 [2025-04-23T19:59:18] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-23T19:59:18 #3)
 [2025-04-23T13:34:53] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-23T13:34:53 #4)
+[2025-04-23T11:32:52] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-23T11:32:52 #5)
