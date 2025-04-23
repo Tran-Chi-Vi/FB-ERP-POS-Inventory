@@ -1317,6 +1317,7 @@
 [2025-04-19T18:38:30] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-19T18:38:30 #10)
 [2025-04-19T20:36:51] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-19T20:36:51 #11)
 [2025-04-19T15:25:26] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-19T15:25:26 #12)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-21T21:04:57] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-21T21:04:57 #1)
 [2025-04-21T19:13:09] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-21T19:13:09 #2)
@@ -1329,3 +1330,14 @@
 [2025-04-21T16:32:34] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-21T16:32:34 #9)
 [2025-04-21T09:44:06] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-21T09:44:06 #10)
 [2025-04-21T21:25:09] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-21T21:25:09 #11)
+=======
+[2025-04-22T16:13:11] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-22T16:13:11 #1)
+[2025-04-22T21:05:49] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-22T21:05:49 #2)
+[2025-04-22T19:54:02] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-22T19:54:02 #3)
+[2025-04-22T13:52:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-22T13:52:35 #4)
+[2025-04-22T18:22:16] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-22T18:22:16 #5)
+[2025-04-22T09:31:21] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-22T09:31:21 #6)
+[2025-04-22T21:35:47] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-22T21:35:47 #7)
+[2025-04-22T10:32:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-22T10:32:51 #8)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-23T11:59:51] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-23T11:59:51 #1)
