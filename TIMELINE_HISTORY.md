@@ -1341,3 +1341,4 @@
 [2025-04-22T10:32:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-22T10:32:51 #8)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-23T11:59:51] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-23T11:59:51 #1)
+[2025-04-23T21:53:58] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-23T21:53:58 #2)
