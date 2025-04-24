@@ -183,3 +183,4 @@
 [2025-04-24T09:28:31] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-24T09:28:31 #12)
 [2025-04-24T20:33:45] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-24T20:33:45 #13)
 [2025-04-24T12:22:43] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-24T12:22:43 #14)
+[2025-04-24T18:41:09] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-24T18:41:09 #15)
