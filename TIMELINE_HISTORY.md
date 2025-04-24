@@ -186,3 +186,4 @@
 [2025-04-24T18:41:09] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-24T18:41:09 #15)
 [2025-04-24T15:13:28] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-24T15:13:28 #16)
 [2025-04-24T18:21:15] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-24T18:21:15 #17)
+[2025-04-24T10:21:41] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-24T10:21:41 #18)
