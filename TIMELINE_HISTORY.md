@@ -172,3 +172,4 @@
 [2025-04-24T15:35:07] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-24T15:35:07 #1)
 [2025-04-24T21:51:30] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-24T21:51:30 #2)
 [2025-04-24T19:17:18] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-24T19:17:18 #3)
+[2025-04-24T13:19:40] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-24T13:19:40 #4)
