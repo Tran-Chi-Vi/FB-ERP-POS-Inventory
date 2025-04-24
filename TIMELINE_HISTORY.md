@@ -173,3 +173,4 @@
 [2025-04-24T21:51:30] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-24T21:51:30 #2)
 [2025-04-24T19:17:18] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-24T19:17:18 #3)
 [2025-04-24T13:19:40] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-24T13:19:40 #4)
+[2025-04-24T16:02:35] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-24T16:02:35 #5)
