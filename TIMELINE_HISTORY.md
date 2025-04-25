@@ -1379,3 +1379,4 @@
 [2025-04-25T10:34:49] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-25T10:34:49 #2)
 [2025-04-25T16:58:47] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-25T16:58:47 #3)
 [2025-04-25T19:14:11] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-25T19:14:11 #4)
+[2025-04-25T15:07:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-25T15:07:02 #5)
