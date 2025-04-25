@@ -1377,3 +1377,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-25T17:34:46] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-25T17:34:46 #1)
 [2025-04-25T10:34:49] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-25T10:34:49 #2)
+[2025-04-25T16:58:47] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-25T16:58:47 #3)
