@@ -1392,3 +1392,4 @@
 [2025-04-25T15:39:09] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-25T15:39:09 #15)
 [2025-04-25T20:24:39] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-25T20:24:39 #16)
 [2025-04-25T20:33:51] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-25T20:33:51 #17)
+[2025-04-25T21:42:28] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-25T21:42:28 #18)
