@@ -1381,3 +1381,4 @@
 [2025-04-25T19:14:11] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-25T19:14:11 #4)
 [2025-04-25T15:07:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-25T15:07:02 #5)
 [2025-04-25T09:18:44] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-25T09:18:44 #6)
+[2025-04-25T12:10:20] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-25T12:10:20 #7)
