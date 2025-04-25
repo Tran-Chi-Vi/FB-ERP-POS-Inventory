@@ -1386,3 +1386,4 @@
 [2025-04-25T16:04:17] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-25T16:04:17 #9)
 [2025-04-25T09:16:16] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-25T09:16:16 #10)
 [2025-04-25T09:33:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-25T09:33:00 #11)
+[2025-04-25T19:10:41] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-25T19:10:41 #12)
