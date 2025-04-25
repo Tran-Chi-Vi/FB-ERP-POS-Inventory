@@ -1339,6 +1339,7 @@
 [2025-04-22T09:31:21] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-22T09:31:21 #6)
 [2025-04-22T21:35:47] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-22T21:35:47 #7)
 [2025-04-22T10:32:51] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-22T10:32:51 #8)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-23T11:59:51] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-23T11:59:51 #1)
 [2025-04-23T21:53:58] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-23T21:53:58 #2)
@@ -1353,3 +1354,25 @@
 [2025-04-23T20:39:07] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-23T20:39:07 #11)
 [2025-04-23T12:04:12] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-23T12:04:12 #12)
 [2025-04-23T16:26:42] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-23T16:26:42 #13)
+=======
+[2025-04-24T15:35:07] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-24T15:35:07 #1)
+[2025-04-24T21:51:30] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-24T21:51:30 #2)
+[2025-04-24T19:17:18] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-04-24T19:17:18 #3)
+[2025-04-24T13:19:40] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-24T13:19:40 #4)
+[2025-04-24T16:02:35] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-24T16:02:35 #5)
+[2025-04-24T18:36:01] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-24T18:36:01 #6)
+[2025-04-24T19:05:28] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-24T19:05:28 #7)
+[2025-04-24T15:37:09] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-24T15:37:09 #8)
+[2025-04-24T14:09:48] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-24T14:09:48 #9)
+[2025-04-24T09:59:18] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-24T09:59:18 #10)
+[2025-04-24T16:30:20] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-24T16:30:20 #11)
+[2025-04-24T09:28:31] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-24T09:28:31 #12)
+[2025-04-24T20:33:45] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-24T20:33:45 #13)
+[2025-04-24T12:22:43] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-24T12:22:43 #14)
+[2025-04-24T18:41:09] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-24T18:41:09 #15)
+[2025-04-24T15:13:28] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-24T15:13:28 #16)
+[2025-04-24T18:21:15] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-24T18:21:15 #17)
+[2025-04-24T10:21:41] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-24T10:21:41 #18)
+[2025-04-24T13:57:00] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-24T13:57:00 #19)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-25T17:34:46] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-25T17:34:46 #1)
