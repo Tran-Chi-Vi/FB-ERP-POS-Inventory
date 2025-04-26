@@ -194,3 +194,4 @@
 [2025-04-26T14:46:42] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-26T14:46:42 #4)
 [2025-04-26T17:38:59] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-26T17:38:59 #5)
 [2025-04-26T09:28:20] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-26T09:28:20 #6)
+[2025-04-26T12:01:14] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-26T12:01:14 #7)
