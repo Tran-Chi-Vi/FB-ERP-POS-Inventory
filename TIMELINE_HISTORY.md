@@ -192,3 +192,4 @@
 [2025-04-26T08:53:20] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-26T08:53:20 #2)
 [2025-04-26T11:22:18] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-26T11:22:18 #3)
 [2025-04-26T14:46:42] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-26T14:46:42 #4)
+[2025-04-26T17:38:59] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-26T17:38:59 #5)
