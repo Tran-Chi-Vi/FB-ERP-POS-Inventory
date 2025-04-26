@@ -199,3 +199,4 @@
 [2025-04-26T14:39:50] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-26T14:39:50 #9)
 [2025-04-26T09:06:01] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-26T09:06:01 #10)
 [2025-04-26T17:59:27] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-26T17:59:27 #11)
+[2025-04-26T10:26:27] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-26T10:26:27 #12)
