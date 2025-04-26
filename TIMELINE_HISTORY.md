@@ -201,3 +201,4 @@
 [2025-04-26T17:59:27] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-26T17:59:27 #11)
 [2025-04-26T10:26:27] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-26T10:26:27 #12)
 [2025-04-26T12:20:42] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-26T12:20:42 #13)
+[2025-04-26T13:18:59] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-26T13:18:59 #14)
