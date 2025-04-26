@@ -189,3 +189,4 @@
 [2025-04-24T10:21:41] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-24T10:21:41 #18)
 [2025-04-24T13:57:00] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-24T13:57:00 #19)
 [2025-04-26T14:34:14] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-26T14:34:14 #1)
+[2025-04-26T08:53:20] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-26T08:53:20 #2)
