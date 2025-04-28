@@ -1421,3 +1421,4 @@
 [2025-04-28T20:53:55] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-28T20:53:55 #5)
 [2025-04-28T21:27:57] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-28T21:27:57 #6)
 [2025-04-28T20:32:16] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-28T20:32:16 #7)
+[2025-04-28T21:56:37] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-28T21:56:37 #8)
