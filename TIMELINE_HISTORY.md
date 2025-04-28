@@ -1425,3 +1425,4 @@
 [2025-04-28T21:24:43] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-28T21:24:43 #9)
 [2025-04-28T10:58:39] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-28T10:58:39 #10)
 [2025-04-28T11:13:52] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-28T11:13:52 #11)
+[2025-04-28T18:52:29] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-28T18:52:29 #12)
