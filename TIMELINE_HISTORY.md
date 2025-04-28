@@ -1420,3 +1420,4 @@
 [2025-04-28T21:34:49] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-28T21:34:49 #4)
 [2025-04-28T20:53:55] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-28T20:53:55 #5)
 [2025-04-28T21:27:57] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-28T21:27:57 #6)
+[2025-04-28T20:32:16] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-28T20:32:16 #7)
