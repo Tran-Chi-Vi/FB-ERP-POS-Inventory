@@ -1374,6 +1374,7 @@
 [2025-04-24T18:21:15] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-24T18:21:15 #17)
 [2025-04-24T10:21:41] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-04-24T10:21:41 #18)
 [2025-04-24T13:57:00] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-24T13:57:00 #19)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-25T17:34:46] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-25T17:34:46 #1)
 [2025-04-25T10:34:49] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-25T10:34:49 #2)
@@ -1393,3 +1394,24 @@
 [2025-04-25T20:24:39] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-25T20:24:39 #16)
 [2025-04-25T20:33:51] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-25T20:33:51 #17)
 [2025-04-25T21:42:28] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-04-25T21:42:28 #18)
+=======
+[2025-04-26T14:34:14] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-26T14:34:14 #1)
+[2025-04-26T08:53:20] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-26T08:53:20 #2)
+[2025-04-26T11:22:18] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-04-26T11:22:18 #3)
+[2025-04-26T14:46:42] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-26T14:46:42 #4)
+[2025-04-26T17:38:59] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-04-26T17:38:59 #5)
+[2025-04-26T09:28:20] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-26T09:28:20 #6)
+[2025-04-26T12:01:14] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-26T12:01:14 #7)
+[2025-04-26T20:00:39] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-26T20:00:39 #8)
+[2025-04-26T14:39:50] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-04-26T14:39:50 #9)
+[2025-04-26T09:06:01] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-26T09:06:01 #10)
+[2025-04-26T17:59:27] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-26T17:59:27 #11)
+[2025-04-26T10:26:27] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-26T10:26:27 #12)
+[2025-04-26T12:20:42] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-26T12:20:42 #13)
+[2025-04-26T13:18:59] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-26T13:18:59 #14)
+[2025-04-26T15:41:42] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-26T15:41:42 #15)
+[2025-04-26T08:54:48] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-26T08:54:48 #16)
+[2025-04-26T16:17:52] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-26T16:17:52 #17)
+[2025-04-26T08:33:18] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-26T08:33:18 #18)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-28T15:18:40] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-28T15:18:40 #1)
