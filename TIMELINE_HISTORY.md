@@ -1418,3 +1418,4 @@
 [2025-04-28T16:58:21] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-28T16:58:21 #2)
 [2025-04-28T09:32:19] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-28T09:32:19 #3)
 [2025-04-28T21:34:49] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-28T21:34:49 #4)
+[2025-04-28T20:53:55] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-28T20:53:55 #5)
