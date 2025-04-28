@@ -1430,3 +1430,4 @@
 [2025-04-28T20:18:21] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-04-28T20:18:21 #14)
 [2025-04-28T11:05:00] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-28T11:05:00 #15)
 [2025-04-28T15:38:33] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-28T15:38:33 #16)
+[2025-04-28T08:16:19] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-28T08:16:19 #17)
