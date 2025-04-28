@@ -1416,3 +1416,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-28T15:18:40] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-28T15:18:40 #1)
 [2025-04-28T16:58:21] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-28T16:58:21 #2)
+[2025-04-28T09:32:19] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-28T09:32:19 #3)
