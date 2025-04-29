@@ -214,3 +214,4 @@
 [2025-04-29T12:33:21] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-29T12:33:21 #6)
 [2025-04-29T14:43:17] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-29T14:43:17 #7)
 [2025-04-29T13:58:18] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-29T13:58:18 #8)
+[2025-04-29T10:24:10] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-29T10:24:10 #9)
