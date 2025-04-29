@@ -209,3 +209,4 @@
 [2025-04-29T19:15:00] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-29T19:15:00 #1)
 [2025-04-29T08:12:01] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-29T08:12:01 #2)
 [2025-04-29T20:35:35] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-29T20:35:35 #3)
+[2025-04-29T08:06:29] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-29T08:06:29 #4)
