@@ -211,3 +211,4 @@
 [2025-04-29T20:35:35] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-29T20:35:35 #3)
 [2025-04-29T08:06:29] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-29T08:06:29 #4)
 [2025-04-29T10:11:09] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-29T10:11:09 #5)
+[2025-04-29T12:33:21] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-29T12:33:21 #6)
