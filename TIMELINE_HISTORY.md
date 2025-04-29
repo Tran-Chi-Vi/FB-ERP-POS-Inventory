@@ -206,3 +206,4 @@
 [2025-04-26T08:54:48] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-26T08:54:48 #16)
 [2025-04-26T16:17:52] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-26T16:17:52 #17)
 [2025-04-26T08:33:18] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-26T08:33:18 #18)
+[2025-04-29T19:15:00] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-29T19:15:00 #1)
