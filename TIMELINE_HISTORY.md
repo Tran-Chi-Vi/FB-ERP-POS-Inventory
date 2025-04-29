@@ -212,3 +212,4 @@
 [2025-04-29T08:06:29] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-29T08:06:29 #4)
 [2025-04-29T10:11:09] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-29T10:11:09 #5)
 [2025-04-29T12:33:21] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-29T12:33:21 #6)
+[2025-04-29T14:43:17] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-29T14:43:17 #7)
