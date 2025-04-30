@@ -1413,6 +1413,7 @@
 [2025-04-26T08:54:48] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-04-26T08:54:48 #16)
 [2025-04-26T16:17:52] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-26T16:17:52 #17)
 [2025-04-26T08:33:18] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-26T08:33:18 #18)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-28T15:18:40] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-04-28T15:18:40 #1)
 [2025-04-28T16:58:21] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-04-28T16:58:21 #2)
@@ -1431,3 +1432,18 @@
 [2025-04-28T11:05:00] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-28T11:05:00 #15)
 [2025-04-28T15:38:33] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-28T15:38:33 #16)
 [2025-04-28T08:16:19] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-28T08:16:19 #17)
+=======
+[2025-04-29T19:15:00] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-04-29T19:15:00 #1)
+[2025-04-29T08:12:01] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-04-29T08:12:01 #2)
+[2025-04-29T20:35:35] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-29T20:35:35 #3)
+[2025-04-29T08:06:29] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-04-29T08:06:29 #4)
+[2025-04-29T10:11:09] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-04-29T10:11:09 #5)
+[2025-04-29T12:33:21] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-29T12:33:21 #6)
+[2025-04-29T14:43:17] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-04-29T14:43:17 #7)
+[2025-04-29T13:58:18] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-04-29T13:58:18 #8)
+[2025-04-29T10:24:10] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-04-29T10:24:10 #9)
+[2025-04-29T08:33:52] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T08:33:52 #10)
+[2025-04-29T09:23:32] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T09:23:32 #11)
+[2025-04-29T09:40:38] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T09:40:38 #12)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-04-30T21:05:11] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-30T21:05:11 #1)
