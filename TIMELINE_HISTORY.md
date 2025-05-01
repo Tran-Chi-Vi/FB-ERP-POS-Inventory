@@ -218,3 +218,4 @@
 [2025-04-29T08:33:52] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T08:33:52 #10)
 [2025-04-29T09:23:32] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T09:23:32 #11)
 [2025-04-29T09:40:38] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T09:40:38 #12)
+[2025-05-01T08:34:13] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-01T08:34:13 #1)
