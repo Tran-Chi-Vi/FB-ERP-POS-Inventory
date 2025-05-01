@@ -226,3 +226,4 @@
 [2025-05-01T14:05:23] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-01T14:05:23 #6)
 [2025-05-01T14:55:37] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-01T14:55:37 #7)
 [2025-05-01T10:25:58] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-01T10:25:58 #8)
+[2025-05-01T12:51:21] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-01T12:51:21 #9)
