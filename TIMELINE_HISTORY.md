@@ -223,3 +223,4 @@
 [2025-05-01T13:43:57] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-01T13:43:57 #3)
 [2025-05-01T17:40:22] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-01T17:40:22 #4)
 [2025-05-01T11:03:15] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-01T11:03:15 #5)
+[2025-05-01T14:05:23] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-01T14:05:23 #6)
