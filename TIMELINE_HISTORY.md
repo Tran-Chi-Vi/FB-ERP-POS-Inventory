@@ -1474,3 +1474,4 @@
 [2025-05-02T13:55:47] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-02T13:55:47 #6)
 [2025-05-02T08:49:28] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-02T08:49:28 #7)
 [2025-05-02T08:47:44] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-02T08:47:44 #8)
+[2025-05-02T20:27:40] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-02T20:27:40 #9)
