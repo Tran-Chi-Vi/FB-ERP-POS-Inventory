@@ -1471,3 +1471,4 @@
 [2025-05-02T13:57:53] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-02T13:57:53 #3)
 [2025-05-02T20:51:57] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-02T20:51:57 #4)
 [2025-05-02T11:37:25] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-02T11:37:25 #5)
+[2025-05-02T13:55:47] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-02T13:55:47 #6)
