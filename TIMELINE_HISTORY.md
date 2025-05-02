@@ -1479,3 +1479,4 @@
 [2025-05-02T10:04:43] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-02T10:04:43 #11)
 [2025-05-02T15:50:26] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-02T15:50:26 #12)
 [2025-05-02T15:17:47] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-02T15:17:47 #13)
+[2025-05-02T20:54:38] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-02T20:54:38 #14)
