@@ -1485,3 +1485,4 @@
 [2025-05-02T17:48:42] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-02T17:48:42 #17)
 [2025-05-02T21:26:53] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-02T21:26:53 #18)
 [2025-05-02T14:28:34] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-02T14:28:34 #19)
+[2025-05-02T16:05:58] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-02T16:05:58 #20)
