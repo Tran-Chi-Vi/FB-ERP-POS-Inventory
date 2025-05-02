@@ -1483,3 +1483,4 @@
 [2025-05-02T09:07:09] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-02T09:07:09 #15)
 [2025-05-02T20:33:51] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-02T20:33:51 #16)
 [2025-05-02T17:48:42] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-02T17:48:42 #17)
+[2025-05-02T21:26:53] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-02T21:26:53 #18)
