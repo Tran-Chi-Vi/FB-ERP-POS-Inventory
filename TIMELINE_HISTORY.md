@@ -1445,6 +1445,7 @@
 [2025-04-29T08:33:52] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T08:33:52 #10)
 [2025-04-29T09:23:32] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T09:23:32 #11)
 [2025-04-29T09:40:38] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-04-29T09:40:38 #12)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-04-30T21:05:11] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-04-30T21:05:11 #1)
 [2025-04-30T21:12:59] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-30T21:12:59 #2)
@@ -1452,3 +1453,17 @@
 [2025-04-30T21:56:26] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-04-30T21:56:26 #4)
 [2025-04-30T11:03:03] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-04-30T11:03:03 #5)
 [2025-04-30T16:54:33] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-04-30T16:54:33 #6)
+=======
+[2025-05-01T08:34:13] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-01T08:34:13 #1)
+[2025-05-01T18:37:31] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-01T18:37:31 #2)
+[2025-05-01T13:43:57] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-01T13:43:57 #3)
+[2025-05-01T17:40:22] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-01T17:40:22 #4)
+[2025-05-01T11:03:15] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-01T11:03:15 #5)
+[2025-05-01T14:05:23] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-01T14:05:23 #6)
+[2025-05-01T14:55:37] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-01T14:55:37 #7)
+[2025-05-01T10:25:58] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-01T10:25:58 #8)
+[2025-05-01T12:51:21] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-01T12:51:21 #9)
+[2025-05-01T15:40:53] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-01T15:40:53 #10)
+[2025-05-01T17:58:35] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-01T17:58:35 #11)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-02T15:45:51] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-02T15:45:51 #1)
