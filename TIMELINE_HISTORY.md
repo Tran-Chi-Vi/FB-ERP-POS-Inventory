@@ -232,3 +232,4 @@
 [2025-05-03T09:38:06] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-03T09:38:06 #1)
 [2025-05-03T20:46:35] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-03T20:46:35 #2)
 [2025-05-03T20:17:58] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-03T20:17:58 #3)
+[2025-05-03T20:04:05] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-03T20:04:05 #4)
