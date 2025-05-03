@@ -233,3 +233,4 @@
 [2025-05-03T20:46:35] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-03T20:46:35 #2)
 [2025-05-03T20:17:58] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-03T20:17:58 #3)
 [2025-05-03T20:04:05] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-03T20:04:05 #4)
+[2025-05-03T12:44:28] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T12:44:28 #5)
