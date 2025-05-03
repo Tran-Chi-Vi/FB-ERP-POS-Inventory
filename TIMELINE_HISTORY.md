@@ -238,3 +238,4 @@
 [2025-05-03T11:22:39] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-03T11:22:39 #7)
 [2025-05-03T21:56:10] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T21:56:10 #8)
 [2025-05-03T09:36:22] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-03T09:36:22 #9)
+[2025-05-03T08:38:49] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-03T08:38:49 #10)
