@@ -1517,3 +1517,4 @@
 [2025-05-05T13:35:37] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-05T13:35:37 #13)
 [2025-05-05T11:42:05] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-05T11:42:05 #14)
 [2025-05-05T11:21:12] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-05T11:21:12 #15)
+[2025-05-05T16:15:20] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-05T16:15:20 #16)
