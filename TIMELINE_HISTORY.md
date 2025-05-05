@@ -1507,3 +1507,4 @@
 [2025-05-05T12:42:30] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-05T12:42:30 #3)
 [2025-05-05T11:47:01] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-05T11:47:01 #4)
 [2025-05-05T21:54:54] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-05T21:54:54 #5)
+[2025-05-05T15:26:42] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-05T15:26:42 #6)
