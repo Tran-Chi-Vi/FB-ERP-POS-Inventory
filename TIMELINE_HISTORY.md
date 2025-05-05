@@ -1465,6 +1465,7 @@
 [2025-05-01T12:51:21] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-01T12:51:21 #9)
 [2025-05-01T15:40:53] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-01T15:40:53 #10)
 [2025-05-01T17:58:35] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-01T17:58:35 #11)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-02T15:45:51] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-02T15:45:51 #1)
 [2025-05-02T18:59:03] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-02T18:59:03 #2)
@@ -1486,3 +1487,19 @@
 [2025-05-02T21:26:53] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-02T21:26:53 #18)
 [2025-05-02T14:28:34] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-02T14:28:34 #19)
 [2025-05-02T16:05:58] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-02T16:05:58 #20)
+=======
+[2025-05-03T09:38:06] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-03T09:38:06 #1)
+[2025-05-03T20:46:35] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-03T20:46:35 #2)
+[2025-05-03T20:17:58] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-03T20:17:58 #3)
+[2025-05-03T20:04:05] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-03T20:04:05 #4)
+[2025-05-03T12:44:28] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T12:44:28 #5)
+[2025-05-03T11:38:41] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-03T11:38:41 #6)
+[2025-05-03T11:22:39] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-03T11:22:39 #7)
+[2025-05-03T21:56:10] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T21:56:10 #8)
+[2025-05-03T09:36:22] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-03T09:36:22 #9)
+[2025-05-03T08:38:49] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-03T08:38:49 #10)
+[2025-05-03T08:28:19] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-03T08:28:19 #11)
+[2025-05-03T18:56:55] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T18:56:55 #12)
+[2025-05-03T11:19:58] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-03T11:19:58 #13)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-05T17:33:04] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-05T17:33:04 #1)
