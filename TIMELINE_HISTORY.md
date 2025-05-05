@@ -1505,3 +1505,4 @@
 [2025-05-05T17:33:04] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-05T17:33:04 #1)
 [2025-05-05T08:30:41] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-05T08:30:41 #2)
 [2025-05-05T12:42:30] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-05T12:42:30 #3)
+[2025-05-05T11:47:01] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-05T11:47:01 #4)
