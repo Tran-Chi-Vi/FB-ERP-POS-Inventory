@@ -1518,3 +1518,4 @@
 [2025-05-05T11:42:05] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-05T11:42:05 #14)
 [2025-05-05T11:21:12] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-05T11:21:12 #15)
 [2025-05-05T16:15:20] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-05T16:15:20 #16)
+[2025-05-05T18:05:37] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-05T18:05:37 #17)
