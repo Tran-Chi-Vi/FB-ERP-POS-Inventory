@@ -1509,3 +1509,4 @@
 [2025-05-05T21:54:54] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-05T21:54:54 #5)
 [2025-05-05T15:26:42] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-05T15:26:42 #6)
 [2025-05-05T18:10:57] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-05T18:10:57 #7)
+[2025-05-05T10:01:45] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-05T10:01:45 #8)
