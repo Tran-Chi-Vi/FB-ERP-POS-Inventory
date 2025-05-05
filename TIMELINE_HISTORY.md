@@ -1512,3 +1512,4 @@
 [2025-05-05T10:01:45] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-05T10:01:45 #8)
 [2025-05-05T14:01:55] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-05T14:01:55 #9)
 [2025-05-05T14:55:00] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-05T14:55:00 #10)
+[2025-05-05T19:13:47] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-05T19:13:47 #11)
