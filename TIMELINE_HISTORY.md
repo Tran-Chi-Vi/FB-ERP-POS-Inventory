@@ -243,3 +243,4 @@
 [2025-05-03T18:56:55] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T18:56:55 #12)
 [2025-05-03T11:19:58] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-03T11:19:58 #13)
 [2025-05-06T11:12:05] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-06T11:12:05 #1)
+[2025-05-06T11:30:03] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-06T11:30:03 #2)
