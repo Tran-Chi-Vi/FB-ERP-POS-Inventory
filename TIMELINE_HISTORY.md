@@ -242,3 +242,4 @@
 [2025-05-03T08:28:19] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-03T08:28:19 #11)
 [2025-05-03T18:56:55] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T18:56:55 #12)
 [2025-05-03T11:19:58] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-03T11:19:58 #13)
+[2025-05-06T11:12:05] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-06T11:12:05 #1)
