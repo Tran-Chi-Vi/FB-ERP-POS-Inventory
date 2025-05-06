@@ -250,3 +250,4 @@
 [2025-05-06T10:51:37] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-06T10:51:37 #6)
 [2025-05-06T21:07:49] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-06T21:07:49 #7)
 [2025-05-06T19:25:45] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-06T19:25:45 #8)
+[2025-05-06T18:59:27] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-06T18:59:27 #9)
