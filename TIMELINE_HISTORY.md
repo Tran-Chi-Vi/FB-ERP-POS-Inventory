@@ -244,3 +244,4 @@
 [2025-05-03T11:19:58] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-03T11:19:58 #13)
 [2025-05-06T11:12:05] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-06T11:12:05 #1)
 [2025-05-06T11:30:03] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-06T11:30:03 #2)
+[2025-05-06T17:49:15] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-06T17:49:15 #3)
