@@ -253,3 +253,4 @@
 [2025-05-06T18:59:27] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-06T18:59:27 #9)
 [2025-05-06T15:58:44] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-06T15:58:44 #10)
 [2025-05-06T18:36:19] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-06T18:36:19 #11)
+[2025-05-06T18:47:59] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-06T18:47:59 #12)
