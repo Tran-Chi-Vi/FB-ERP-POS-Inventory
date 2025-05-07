@@ -1549,3 +1549,4 @@
 [2025-05-07T19:07:23] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-07T19:07:23 #10)
 [2025-05-07T18:16:49] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-07T18:16:49 #11)
 [2025-05-07T12:24:38] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-07T12:24:38 #12)
+[2025-05-07T17:58:19] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-07T17:58:19 #13)
