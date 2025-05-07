@@ -1501,6 +1501,7 @@
 [2025-05-03T08:28:19] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-03T08:28:19 #11)
 [2025-05-03T18:56:55] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-03T18:56:55 #12)
 [2025-05-03T11:19:58] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-03T11:19:58 #13)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-05T17:33:04] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-05T17:33:04 #1)
 [2025-05-05T08:30:41] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-05T08:30:41 #2)
@@ -1519,3 +1520,21 @@
 [2025-05-05T11:21:12] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-05T11:21:12 #15)
 [2025-05-05T16:15:20] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-05T16:15:20 #16)
 [2025-05-05T18:05:37] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-05T18:05:37 #17)
+=======
+[2025-05-06T11:12:05] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-06T11:12:05 #1)
+[2025-05-06T11:30:03] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-06T11:30:03 #2)
+[2025-05-06T17:49:15] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-06T17:49:15 #3)
+[2025-05-06T11:49:34] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-06T11:49:34 #4)
+[2025-05-06T10:53:17] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-06T10:53:17 #5)
+[2025-05-06T10:51:37] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-06T10:51:37 #6)
+[2025-05-06T21:07:49] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-06T21:07:49 #7)
+[2025-05-06T19:25:45] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-06T19:25:45 #8)
+[2025-05-06T18:59:27] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-06T18:59:27 #9)
+[2025-05-06T15:58:44] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-06T15:58:44 #10)
+[2025-05-06T18:36:19] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-06T18:36:19 #11)
+[2025-05-06T18:47:59] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-06T18:47:59 #12)
+[2025-05-06T17:30:47] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-06T17:30:47 #13)
+[2025-05-06T12:11:56] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-06T12:11:56 #14)
+[2025-05-06T12:09:02] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-06T12:09:02 #15)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-07T11:33:38] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-07T11:33:38 #1)
