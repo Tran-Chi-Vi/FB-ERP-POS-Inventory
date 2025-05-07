@@ -1543,3 +1543,4 @@
 [2025-05-07T09:21:47] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-07T09:21:47 #4)
 [2025-05-07T19:59:28] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-07T19:59:28 #5)
 [2025-05-07T14:04:27] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-07T14:04:27 #6)
+[2025-05-07T12:44:31] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-07T12:44:31 #7)
