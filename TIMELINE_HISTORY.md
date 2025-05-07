@@ -1538,3 +1538,4 @@
 [2025-05-06T12:09:02] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-06T12:09:02 #15)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-07T11:33:38] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-07T11:33:38 #1)
+[2025-05-07T16:54:57] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-07T16:54:57 #2)
