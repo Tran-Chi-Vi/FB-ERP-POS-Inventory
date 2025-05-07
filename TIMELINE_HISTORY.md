@@ -1545,3 +1545,4 @@
 [2025-05-07T14:04:27] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-07T14:04:27 #6)
 [2025-05-07T12:44:31] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-07T12:44:31 #7)
 [2025-05-07T13:39:45] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-07T13:39:45 #8)
+[2025-05-07T08:32:37] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-07T08:32:37 #9)
