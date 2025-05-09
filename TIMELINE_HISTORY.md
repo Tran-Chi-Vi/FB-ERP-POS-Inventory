@@ -1575,3 +1575,4 @@
 [2025-05-09T21:45:43] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-09T21:45:43 #14)
 [2025-05-09T16:59:00] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-09T16:59:00 #15)
 [2025-05-09T21:03:04] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-09T21:03:04 #16)
+[2025-05-09T15:50:33] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-09T15:50:33 #17)
