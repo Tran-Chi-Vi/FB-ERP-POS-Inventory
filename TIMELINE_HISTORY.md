@@ -1536,6 +1536,7 @@
 [2025-05-06T17:30:47] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-06T17:30:47 #13)
 [2025-05-06T12:11:56] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-06T12:11:56 #14)
 [2025-05-06T12:09:02] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-06T12:09:02 #15)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-07T11:33:38] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-07T11:33:38 #1)
 [2025-05-07T16:54:57] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-07T16:54:57 #2)
@@ -1551,3 +1552,11 @@
 [2025-05-07T12:24:38] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-07T12:24:38 #12)
 [2025-05-07T17:58:19] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-07T17:58:19 #13)
 [2025-05-07T13:58:33] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-07T13:58:33 #14)
+=======
+[2025-05-08T16:46:25] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-08T16:46:25 #1)
+[2025-05-08T14:43:13] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-08T14:43:13 #2)
+[2025-05-08T10:45:15] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-08T10:45:15 #3)
+[2025-05-08T08:15:26] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-08T08:15:26 #4)
+[2025-05-08T14:36:09] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-08T14:36:09 #5)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-09T19:25:54] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-09T19:25:54 #1)
