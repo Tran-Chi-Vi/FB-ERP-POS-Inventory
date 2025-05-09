@@ -1561,3 +1561,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-09T19:25:54] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-09T19:25:54 #1)
 [2025-05-09T19:08:05] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-09T19:08:05 #2)
+[2025-05-09T21:14:29] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-09T21:14:29 #3)
