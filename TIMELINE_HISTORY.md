@@ -1568,3 +1568,4 @@
 [2025-05-09T13:51:01] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-09T13:51:01 #7)
 [2025-05-09T15:21:26] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-09T15:21:26 #8)
 [2025-05-09T19:20:27] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-09T19:20:27 #9)
+[2025-05-09T19:10:05] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-09T19:10:05 #10)
