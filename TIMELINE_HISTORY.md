@@ -1573,3 +1573,4 @@
 [2025-05-09T20:41:19] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-09T20:41:19 #12)
 [2025-05-09T19:30:01] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-09T19:30:01 #13)
 [2025-05-09T21:45:43] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-09T21:45:43 #14)
+[2025-05-09T16:59:00] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-09T16:59:00 #15)
