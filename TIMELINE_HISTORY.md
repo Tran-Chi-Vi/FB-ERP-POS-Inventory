@@ -1570,3 +1570,4 @@
 [2025-05-09T19:20:27] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-09T19:20:27 #9)
 [2025-05-09T19:10:05] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-09T19:10:05 #10)
 [2025-05-09T20:13:47] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-09T20:13:47 #11)
+[2025-05-09T20:41:19] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-09T20:41:19 #12)
