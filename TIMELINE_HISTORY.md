@@ -266,3 +266,4 @@
 [2025-05-10T11:59:46] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-10T11:59:46 #2)
 [2025-05-10T16:36:58] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-10T16:36:58 #3)
 [2025-05-10T16:50:57] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-10T16:50:57 #4)
+[2025-05-10T14:11:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-10T14:11:19 #5)
