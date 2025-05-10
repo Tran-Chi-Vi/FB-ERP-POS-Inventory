@@ -265,3 +265,4 @@
 [2025-05-10T18:39:58] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-10T18:39:58 #1)
 [2025-05-10T11:59:46] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-10T11:59:46 #2)
 [2025-05-10T16:36:58] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-10T16:36:58 #3)
+[2025-05-10T16:50:57] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-10T16:50:57 #4)
