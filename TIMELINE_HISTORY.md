@@ -1558,6 +1558,7 @@
 [2025-05-08T10:45:15] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-08T10:45:15 #3)
 [2025-05-08T08:15:26] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-08T08:15:26 #4)
 [2025-05-08T14:36:09] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-08T14:36:09 #5)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-09T19:25:54] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-09T19:25:54 #1)
 [2025-05-09T19:08:05] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-09T19:08:05 #2)
@@ -1576,3 +1577,11 @@
 [2025-05-09T16:59:00] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-09T16:59:00 #15)
 [2025-05-09T21:03:04] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-09T21:03:04 #16)
 [2025-05-09T15:50:33] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-09T15:50:33 #17)
+=======
+[2025-05-10T18:39:58] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-10T18:39:58 #1)
+[2025-05-10T11:59:46] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-10T11:59:46 #2)
+[2025-05-10T16:36:58] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-10T16:36:58 #3)
+[2025-05-10T16:50:57] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-10T16:50:57 #4)
+[2025-05-10T14:11:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-10T14:11:19 #5)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-12T12:18:59] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-12T12:18:59 #1)
