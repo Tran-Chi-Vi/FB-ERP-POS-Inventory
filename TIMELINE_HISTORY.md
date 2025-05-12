@@ -1586,3 +1586,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-12T12:18:59] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-12T12:18:59 #1)
 [2025-05-12T14:03:34] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-12T14:03:34 #2)
+[2025-05-12T13:15:45] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-12T13:15:45 #3)
