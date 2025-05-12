@@ -1585,3 +1585,4 @@
 [2025-05-10T14:11:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-10T14:11:19 #5)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-12T12:18:59] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-12T12:18:59 #1)
+[2025-05-12T14:03:34] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-12T14:03:34 #2)
