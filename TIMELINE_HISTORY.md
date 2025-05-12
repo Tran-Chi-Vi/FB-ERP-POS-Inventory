@@ -1594,3 +1594,4 @@
 [2025-05-12T20:54:15] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-12T20:54:15 #8)
 [2025-05-12T11:05:33] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-12T11:05:33 #9)
 [2025-05-12T17:27:33] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-12T17:27:33 #10)
+[2025-05-12T19:20:41] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-12T19:20:41 #11)
