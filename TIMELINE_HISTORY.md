@@ -1596,3 +1596,4 @@
 [2025-05-12T17:27:33] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-12T17:27:33 #10)
 [2025-05-12T19:20:41] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-12T19:20:41 #11)
 [2025-05-12T08:07:52] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-12T08:07:52 #12)
+[2025-05-12T18:27:10] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-12T18:27:10 #13)
