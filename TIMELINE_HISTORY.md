@@ -1591,3 +1591,4 @@
 [2025-05-12T08:54:46] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-12T08:54:46 #5)
 [2025-05-12T14:47:32] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-12T14:47:32 #6)
 [2025-05-12T14:47:30] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-12T14:47:30 #7)
+[2025-05-12T20:54:15] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-12T20:54:15 #8)
