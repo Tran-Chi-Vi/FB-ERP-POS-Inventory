@@ -1595,3 +1595,4 @@
 [2025-05-12T11:05:33] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-12T11:05:33 #9)
 [2025-05-12T17:27:33] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-12T17:27:33 #10)
 [2025-05-12T19:20:41] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-12T19:20:41 #11)
+[2025-05-12T08:07:52] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-12T08:07:52 #12)
