@@ -1598,3 +1598,4 @@
 [2025-05-12T08:07:52] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-12T08:07:52 #12)
 [2025-05-12T18:27:10] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-12T18:27:10 #13)
 [2025-05-12T15:56:48] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-12T15:56:48 #14)
+[2025-05-12T21:07:48] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-12T21:07:48 #15)
