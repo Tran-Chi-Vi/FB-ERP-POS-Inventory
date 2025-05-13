@@ -274,3 +274,4 @@
 [2025-05-13T19:49:37] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-13T19:49:37 #5)
 [2025-05-13T12:31:23] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-13T12:31:23 #6)
 [2025-05-13T10:19:05] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-13T10:19:05 #7)
+[2025-05-13T13:28:44] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-13T13:28:44 #8)
