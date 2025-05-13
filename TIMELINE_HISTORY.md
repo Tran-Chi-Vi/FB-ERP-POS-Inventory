@@ -276,3 +276,4 @@
 [2025-05-13T10:19:05] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-13T10:19:05 #7)
 [2025-05-13T13:28:44] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-13T13:28:44 #8)
 [2025-05-13T17:06:20] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-13T17:06:20 #9)
+[2025-05-13T18:28:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-13T18:28:02 #10)
