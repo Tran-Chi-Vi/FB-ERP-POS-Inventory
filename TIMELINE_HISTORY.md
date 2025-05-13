@@ -273,3 +273,4 @@
 [2025-05-13T13:46:12] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-13T13:46:12 #4)
 [2025-05-13T19:49:37] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-13T19:49:37 #5)
 [2025-05-13T12:31:23] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-13T12:31:23 #6)
+[2025-05-13T10:19:05] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-13T10:19:05 #7)
