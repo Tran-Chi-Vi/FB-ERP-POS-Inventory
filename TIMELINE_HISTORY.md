@@ -272,3 +272,4 @@
 [2025-05-13T16:53:25] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-13T16:53:25 #3)
 [2025-05-13T13:46:12] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-13T13:46:12 #4)
 [2025-05-13T19:49:37] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-13T19:49:37 #5)
+[2025-05-13T12:31:23] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-13T12:31:23 #6)
