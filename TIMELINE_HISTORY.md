@@ -268,3 +268,4 @@
 [2025-05-10T16:50:57] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-10T16:50:57 #4)
 [2025-05-10T14:11:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-10T14:11:19 #5)
 [2025-05-13T08:27:06] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-13T08:27:06 #1)
+[2025-05-13T19:41:37] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-13T19:41:37 #2)
