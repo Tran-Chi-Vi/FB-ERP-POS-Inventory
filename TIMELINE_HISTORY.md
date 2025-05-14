@@ -1616,3 +1616,4 @@
 [2025-05-13T18:28:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-13T18:28:02 #10)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-14T12:20:18] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-14T12:20:18 #1)
+[2025-05-14T18:38:39] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-14T18:38:39 #2)
