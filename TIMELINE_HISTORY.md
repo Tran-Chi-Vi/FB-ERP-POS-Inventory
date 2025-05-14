@@ -1583,6 +1583,7 @@
 [2025-05-10T16:36:58] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-10T16:36:58 #3)
 [2025-05-10T16:50:57] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-10T16:50:57 #4)
 [2025-05-10T14:11:19] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-10T14:11:19 #5)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-12T12:18:59] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-12T12:18:59 #1)
 [2025-05-12T14:03:34] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-12T14:03:34 #2)
@@ -1602,3 +1603,16 @@
 [2025-05-12T08:03:17] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-12T08:03:17 #16)
 [2025-05-12T08:43:48] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-12T08:43:48 #17)
 [2025-05-12T15:30:48] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-12T15:30:48 #18)
+=======
+[2025-05-13T08:27:06] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-13T08:27:06 #1)
+[2025-05-13T19:41:37] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-13T19:41:37 #2)
+[2025-05-13T16:53:25] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-13T16:53:25 #3)
+[2025-05-13T13:46:12] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-13T13:46:12 #4)
+[2025-05-13T19:49:37] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-13T19:49:37 #5)
+[2025-05-13T12:31:23] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-13T12:31:23 #6)
+[2025-05-13T10:19:05] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-13T10:19:05 #7)
+[2025-05-13T13:28:44] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-13T13:28:44 #8)
+[2025-05-13T17:06:20] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-13T17:06:20 #9)
+[2025-05-13T18:28:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-13T18:28:02 #10)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-14T12:20:18] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-14T12:20:18 #1)
