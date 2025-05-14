@@ -1619,3 +1619,4 @@
 [2025-05-14T18:38:39] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-14T18:38:39 #2)
 [2025-05-14T14:07:21] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-14T14:07:21 #3)
 [2025-05-14T17:00:38] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-14T17:00:38 #4)
+[2025-05-14T12:58:54] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-14T12:58:54 #5)
