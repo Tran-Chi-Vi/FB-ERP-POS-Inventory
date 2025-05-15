@@ -278,3 +278,4 @@
 [2025-05-13T17:06:20] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-13T17:06:20 #9)
 [2025-05-13T18:28:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-13T18:28:02 #10)
 [2025-05-15T10:56:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-15T10:56:14 #1)
+[2025-05-15T09:46:29] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-15T09:46:29 #2)
