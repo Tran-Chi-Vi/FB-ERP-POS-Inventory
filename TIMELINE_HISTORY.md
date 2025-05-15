@@ -280,3 +280,4 @@
 [2025-05-15T10:56:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-15T10:56:14 #1)
 [2025-05-15T09:46:29] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-15T09:46:29 #2)
 [2025-05-15T16:42:56] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-15T16:42:56 #3)
+[2025-05-15T12:29:08] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-15T12:29:08 #4)
