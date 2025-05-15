@@ -282,3 +282,4 @@
 [2025-05-15T16:42:56] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-15T16:42:56 #3)
 [2025-05-15T12:29:08] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-15T12:29:08 #4)
 [2025-05-15T13:29:02] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-15T13:29:02 #5)
+[2025-05-15T11:21:34] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-15T11:21:34 #6)
