@@ -1638,3 +1638,4 @@
 [2025-05-15T15:12:50] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-15T15:12:50 #14)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-16T08:47:45] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-16T08:47:45 #1)
+[2025-05-16T17:02:48] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-16T17:02:48 #2)
