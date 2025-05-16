@@ -1614,9 +1614,27 @@
 [2025-05-13T13:28:44] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-13T13:28:44 #8)
 [2025-05-13T17:06:20] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-13T17:06:20 #9)
 [2025-05-13T18:28:02] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-13T18:28:02 #10)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-14T12:20:18] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-14T12:20:18 #1)
 [2025-05-14T18:38:39] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-14T18:38:39 #2)
 [2025-05-14T14:07:21] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-14T14:07:21 #3)
 [2025-05-14T17:00:38] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-14T17:00:38 #4)
 [2025-05-14T12:58:54] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-14T12:58:54 #5)
+=======
+[2025-05-15T10:56:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-15T10:56:14 #1)
+[2025-05-15T09:46:29] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-15T09:46:29 #2)
+[2025-05-15T16:42:56] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-15T16:42:56 #3)
+[2025-05-15T12:29:08] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-15T12:29:08 #4)
+[2025-05-15T13:29:02] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-15T13:29:02 #5)
+[2025-05-15T11:21:34] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-15T11:21:34 #6)
+[2025-05-15T19:13:52] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-15T19:13:52 #7)
+[2025-05-15T17:13:17] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-15T17:13:17 #8)
+[2025-05-15T19:43:07] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-15T19:43:07 #9)
+[2025-05-15T17:24:05] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-15T17:24:05 #10)
+[2025-05-15T11:24:08] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-15T11:24:08 #11)
+[2025-05-15T20:34:08] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-15T20:34:08 #12)
+[2025-05-15T09:22:12] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-15T09:22:12 #13)
+[2025-05-15T15:12:50] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-15T15:12:50 #14)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-16T08:47:45] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-16T08:47:45 #1)
