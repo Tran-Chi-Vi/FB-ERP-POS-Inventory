@@ -1639,3 +1639,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-16T08:47:45] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-16T08:47:45 #1)
 [2025-05-16T17:02:48] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-16T17:02:48 #2)
+[2025-05-16T09:04:51] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-16T09:04:51 #3)
