@@ -293,3 +293,4 @@
 [2025-05-15T15:12:50] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-15T15:12:50 #14)
 [2025-05-17T11:16:02] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-17T11:16:02 #1)
 [2025-05-17T17:30:59] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T17:30:59 #2)
+[2025-05-17T21:42:20] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-17T21:42:20 #3)
