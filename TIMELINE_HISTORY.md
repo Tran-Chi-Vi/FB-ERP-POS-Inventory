@@ -292,3 +292,4 @@
 [2025-05-15T09:22:12] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-15T09:22:12 #13)
 [2025-05-15T15:12:50] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-15T15:12:50 #14)
 [2025-05-17T11:16:02] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-17T11:16:02 #1)
+[2025-05-17T17:30:59] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T17:30:59 #2)
