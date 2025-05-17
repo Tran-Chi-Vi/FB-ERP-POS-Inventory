@@ -295,3 +295,4 @@
 [2025-05-17T17:30:59] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T17:30:59 #2)
 [2025-05-17T21:42:20] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-17T21:42:20 #3)
 [2025-05-17T11:41:26] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-17T11:41:26 #4)
+[2025-05-17T08:51:09] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-17T08:51:09 #5)
