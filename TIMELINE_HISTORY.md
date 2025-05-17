@@ -302,3 +302,4 @@
 [2025-05-17T12:12:41] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-17T12:12:41 #9)
 [2025-05-17T09:17:48] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T09:17:48 #10)
 [2025-05-17T14:37:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-17T14:37:28 #11)
+[2025-05-17T18:33:56] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-17T18:33:56 #12)
