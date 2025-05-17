@@ -300,3 +300,4 @@
 [2025-05-17T18:14:23] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-17T18:14:23 #7)
 [2025-05-17T21:33:26] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-17T21:33:26 #8)
 [2025-05-17T12:12:41] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-17T12:12:41 #9)
+[2025-05-17T09:17:48] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T09:17:48 #10)
