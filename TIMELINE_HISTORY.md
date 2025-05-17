@@ -299,3 +299,4 @@
 [2025-05-17T13:48:44] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-17T13:48:44 #6)
 [2025-05-17T18:14:23] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-17T18:14:23 #7)
 [2025-05-17T21:33:26] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-17T21:33:26 #8)
+[2025-05-17T12:12:41] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-17T12:12:41 #9)
