@@ -297,3 +297,4 @@
 [2025-05-17T11:41:26] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-17T11:41:26 #4)
 [2025-05-17T08:51:09] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-17T08:51:09 #5)
 [2025-05-17T13:48:44] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-17T13:48:44 #6)
+[2025-05-17T18:14:23] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-17T18:14:23 #7)
