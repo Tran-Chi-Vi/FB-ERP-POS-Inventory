@@ -1636,6 +1636,7 @@
 [2025-05-15T20:34:08] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-15T20:34:08 #12)
 [2025-05-15T09:22:12] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-15T09:22:12 #13)
 [2025-05-15T15:12:50] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-15T15:12:50 #14)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-16T08:47:45] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-16T08:47:45 #1)
 [2025-05-16T17:02:48] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-16T17:02:48 #2)
@@ -1647,3 +1648,18 @@
 [2025-05-16T20:08:59] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-16T20:08:59 #8)
 [2025-05-16T17:10:50] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-16T17:10:50 #9)
 [2025-05-16T16:30:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-16T16:30:35 #10)
+=======
+[2025-05-17T11:16:02] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-17T11:16:02 #1)
+[2025-05-17T17:30:59] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T17:30:59 #2)
+[2025-05-17T21:42:20] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-17T21:42:20 #3)
+[2025-05-17T11:41:26] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-17T11:41:26 #4)
+[2025-05-17T08:51:09] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-17T08:51:09 #5)
+[2025-05-17T13:48:44] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-17T13:48:44 #6)
+[2025-05-17T18:14:23] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-17T18:14:23 #7)
+[2025-05-17T21:33:26] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-17T21:33:26 #8)
+[2025-05-17T12:12:41] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-17T12:12:41 #9)
+[2025-05-17T09:17:48] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T09:17:48 #10)
+[2025-05-17T14:37:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-17T14:37:28 #11)
+[2025-05-17T18:33:56] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-17T18:33:56 #12)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-19T18:04:29] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-19T18:04:29 #1)
