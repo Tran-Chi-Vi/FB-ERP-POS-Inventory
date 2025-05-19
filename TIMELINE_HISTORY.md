@@ -1666,3 +1666,4 @@
 [2025-05-19T09:42:46] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-19T09:42:46 #2)
 [2025-05-19T15:44:03] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-19T15:44:03 #3)
 [2025-05-19T13:42:59] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-19T13:42:59 #4)
+[2025-05-19T20:52:12] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-19T20:52:12 #5)
