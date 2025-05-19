@@ -1665,3 +1665,4 @@
 [2025-05-19T18:04:29] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-19T18:04:29 #1)
 [2025-05-19T09:42:46] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-19T09:42:46 #2)
 [2025-05-19T15:44:03] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-19T15:44:03 #3)
+[2025-05-19T13:42:59] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-19T13:42:59 #4)
