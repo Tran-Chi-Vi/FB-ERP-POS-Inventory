@@ -303,3 +303,4 @@
 [2025-05-17T09:17:48] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T09:17:48 #10)
 [2025-05-17T14:37:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-17T14:37:28 #11)
 [2025-05-17T18:33:56] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-17T18:33:56 #12)
+[2025-05-20T13:38:56] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-20T13:38:56 #1)
