@@ -308,3 +308,4 @@
 [2025-05-20T09:08:39] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-20T09:08:39 #3)
 [2025-05-20T09:46:07] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-20T09:46:07 #4)
 [2025-05-20T12:22:13] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-20T12:22:13 #5)
+[2025-05-20T17:13:37] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-20T17:13:37 #6)
