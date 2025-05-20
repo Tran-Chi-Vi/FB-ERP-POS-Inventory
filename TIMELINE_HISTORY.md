@@ -310,3 +310,4 @@
 [2025-05-20T12:22:13] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-20T12:22:13 #5)
 [2025-05-20T17:13:37] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-20T17:13:37 #6)
 [2025-05-20T10:03:49] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-20T10:03:49 #7)
+[2025-05-20T08:32:59] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-20T08:32:59 #8)
