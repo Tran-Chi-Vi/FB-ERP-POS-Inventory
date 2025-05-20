@@ -306,3 +306,4 @@
 [2025-05-20T13:38:56] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-20T13:38:56 #1)
 [2025-05-20T13:33:33] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-20T13:33:33 #2)
 [2025-05-20T09:08:39] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-20T09:08:39 #3)
+[2025-05-20T09:46:07] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-20T09:46:07 #4)
