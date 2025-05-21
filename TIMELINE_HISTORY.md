@@ -1684,3 +1684,4 @@
 [2025-05-21T14:39:00] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-21T14:39:00 #4)
 [2025-05-21T13:56:25] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-21T13:56:25 #5)
 [2025-05-21T16:18:46] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-21T16:18:46 #6)
+[2025-05-21T12:29:11] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-21T12:29:11 #7)
