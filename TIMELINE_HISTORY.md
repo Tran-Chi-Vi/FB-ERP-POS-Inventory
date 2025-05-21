@@ -1661,9 +1661,21 @@
 [2025-05-17T09:17:48] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-17T09:17:48 #10)
 [2025-05-17T14:37:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-17T14:37:28 #11)
 [2025-05-17T18:33:56] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-17T18:33:56 #12)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-19T18:04:29] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-19T18:04:29 #1)
 [2025-05-19T09:42:46] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-19T09:42:46 #2)
 [2025-05-19T15:44:03] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-19T15:44:03 #3)
 [2025-05-19T13:42:59] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-19T13:42:59 #4)
 [2025-05-19T20:52:12] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-19T20:52:12 #5)
+=======
+[2025-05-20T13:38:56] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-20T13:38:56 #1)
+[2025-05-20T13:33:33] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-20T13:33:33 #2)
+[2025-05-20T09:08:39] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-20T09:08:39 #3)
+[2025-05-20T09:46:07] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-20T09:46:07 #4)
+[2025-05-20T12:22:13] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-20T12:22:13 #5)
+[2025-05-20T17:13:37] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-20T17:13:37 #6)
+[2025-05-20T10:03:49] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-20T10:03:49 #7)
+[2025-05-20T08:32:59] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-20T08:32:59 #8)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-21T16:07:14] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-21T16:07:14 #1)
