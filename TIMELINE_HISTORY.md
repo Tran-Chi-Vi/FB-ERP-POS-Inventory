@@ -1682,3 +1682,4 @@
 [2025-05-21T19:48:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-21T19:48:00 #2)
 [2025-05-21T12:25:51] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-21T12:25:51 #3)
 [2025-05-21T14:39:00] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-21T14:39:00 #4)
+[2025-05-21T13:56:25] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-21T13:56:25 #5)
