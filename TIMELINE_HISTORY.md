@@ -1679,3 +1679,4 @@
 [2025-05-20T08:32:59] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-20T08:32:59 #8)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-21T16:07:14] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-21T16:07:14 #1)
+[2025-05-21T19:48:00] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-21T19:48:00 #2)
