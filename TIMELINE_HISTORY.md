@@ -1690,3 +1690,4 @@
 [2025-05-21T13:20:28] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-21T13:20:28 #10)
 [2025-05-21T20:28:18] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-21T20:28:18 #11)
 [2025-05-21T13:52:37] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-21T13:52:37 #12)
+[2025-05-21T10:31:45] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-21T10:31:45 #13)
