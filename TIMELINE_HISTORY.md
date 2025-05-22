@@ -312,3 +312,4 @@
 [2025-05-20T10:03:49] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-20T10:03:49 #7)
 [2025-05-20T08:32:59] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-20T08:32:59 #8)
 [2025-05-22T09:11:30] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-22T09:11:30 #1)
+[2025-05-22T20:42:14] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-22T20:42:14 #2)
