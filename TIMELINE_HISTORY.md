@@ -316,3 +316,4 @@
 [2025-05-22T14:04:12] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-22T14:04:12 #3)
 [2025-05-22T18:02:53] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-22T18:02:53 #4)
 [2025-05-22T08:49:54] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-22T08:49:54 #5)
+[2025-05-22T13:27:37] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-22T13:27:37 #6)
