@@ -319,3 +319,4 @@
 [2025-05-22T13:27:37] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-22T13:27:37 #6)
 [2025-05-22T13:31:27] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-22T13:31:27 #7)
 [2025-05-22T20:41:40] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-22T20:41:40 #8)
+[2025-05-22T17:14:53] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-22T17:14:53 #9)
