@@ -1713,3 +1713,4 @@
 [2025-05-23T21:59:29] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-23T21:59:29 #4)
 [2025-05-23T10:29:01] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-23T10:29:01 #5)
 [2025-05-23T18:12:12] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-23T18:12:12 #6)
+[2025-05-23T14:50:58] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-23T14:50:58 #7)
