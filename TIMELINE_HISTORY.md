@@ -1708,3 +1708,4 @@
 [2025-05-22T17:14:53] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-22T17:14:53 #9)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-23T12:17:54] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-23T12:17:54 #1)
+[2025-05-23T11:43:28] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-23T11:43:28 #2)
