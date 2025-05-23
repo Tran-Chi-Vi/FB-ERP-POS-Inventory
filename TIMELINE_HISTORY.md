@@ -1712,3 +1712,4 @@
 [2025-05-23T15:57:44] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-23T15:57:44 #3)
 [2025-05-23T21:59:29] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-23T21:59:29 #4)
 [2025-05-23T10:29:01] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-23T10:29:01 #5)
+[2025-05-23T18:12:12] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-23T18:12:12 #6)
