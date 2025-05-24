@@ -325,3 +325,4 @@
 [2025-05-24T12:40:11] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T12:40:11 #3)
 [2025-05-24T16:57:50] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-24T16:57:50 #4)
 [2025-05-24T18:49:34] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-24T18:49:34 #5)
+[2025-05-24T16:59:56] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-24T16:59:56 #6)
