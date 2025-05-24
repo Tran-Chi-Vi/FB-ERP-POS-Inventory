@@ -335,3 +335,4 @@
 [2025-05-24T14:22:17] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T14:22:17 #13)
 [2025-05-24T12:50:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-24T12:50:38 #14)
 [2025-05-24T12:47:16] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-24T12:47:16 #15)
+[2025-05-24T10:59:50] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-24T10:59:50 #16)
