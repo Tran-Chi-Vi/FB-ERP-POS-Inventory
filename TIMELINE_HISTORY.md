@@ -320,3 +320,4 @@
 [2025-05-22T13:31:27] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-22T13:31:27 #7)
 [2025-05-22T20:41:40] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-22T20:41:40 #8)
 [2025-05-22T17:14:53] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-22T17:14:53 #9)
+[2025-05-24T20:17:00] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-24T20:17:00 #1)
