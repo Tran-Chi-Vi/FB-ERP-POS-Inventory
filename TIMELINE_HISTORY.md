@@ -333,3 +333,4 @@
 [2025-05-24T08:46:52] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T08:46:52 #11)
 [2025-05-24T13:20:27] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-24T13:20:27 #12)
 [2025-05-24T14:22:17] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T14:22:17 #13)
+[2025-05-24T12:50:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-24T12:50:38 #14)
