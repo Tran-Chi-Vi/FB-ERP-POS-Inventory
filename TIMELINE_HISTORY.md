@@ -323,3 +323,4 @@
 [2025-05-24T20:17:00] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-24T20:17:00 #1)
 [2025-05-24T19:05:59] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-24T19:05:59 #2)
 [2025-05-24T12:40:11] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T12:40:11 #3)
+[2025-05-24T16:57:50] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-24T16:57:50 #4)
