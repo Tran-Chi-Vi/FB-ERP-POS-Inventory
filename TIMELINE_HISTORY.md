@@ -322,3 +322,4 @@
 [2025-05-22T17:14:53] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-22T17:14:53 #9)
 [2025-05-24T20:17:00] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-24T20:17:00 #1)
 [2025-05-24T19:05:59] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-24T19:05:59 #2)
+[2025-05-24T12:40:11] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T12:40:11 #3)
