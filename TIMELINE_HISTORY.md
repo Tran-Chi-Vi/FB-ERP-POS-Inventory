@@ -328,3 +328,4 @@
 [2025-05-24T16:59:56] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-24T16:59:56 #6)
 [2025-05-24T14:36:02] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-24T14:36:02 #7)
 [2025-05-24T09:16:50] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-24T09:16:50 #8)
+[2025-05-24T15:34:34] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-24T15:34:34 #9)
