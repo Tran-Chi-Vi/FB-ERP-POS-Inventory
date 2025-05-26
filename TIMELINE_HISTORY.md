@@ -1740,3 +1740,4 @@
 [2025-05-26T16:48:20] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-26T16:48:20 #5)
 [2025-05-26T18:56:16] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-26T18:56:16 #6)
 [2025-05-26T16:35:32] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-26T16:35:32 #7)
+[2025-05-26T17:39:23] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-26T17:39:23 #8)
