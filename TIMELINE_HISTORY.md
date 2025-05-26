@@ -1735,3 +1735,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-26T13:48:29] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-26T13:48:29 #1)
 [2025-05-26T15:59:10] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-26T15:59:10 #2)
+[2025-05-26T18:57:53] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-26T18:57:53 #3)
