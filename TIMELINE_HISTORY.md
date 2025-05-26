@@ -1706,6 +1706,7 @@
 [2025-05-22T13:31:27] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-22T13:31:27 #7)
 [2025-05-22T20:41:40] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-22T20:41:40 #8)
 [2025-05-22T17:14:53] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-22T17:14:53 #9)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-23T12:17:54] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-23T12:17:54 #1)
 [2025-05-23T11:43:28] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-23T11:43:28 #2)
@@ -1714,3 +1715,22 @@
 [2025-05-23T10:29:01] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-23T10:29:01 #5)
 [2025-05-23T18:12:12] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-23T18:12:12 #6)
 [2025-05-23T14:50:58] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-23T14:50:58 #7)
+=======
+[2025-05-24T20:17:00] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-24T20:17:00 #1)
+[2025-05-24T19:05:59] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-24T19:05:59 #2)
+[2025-05-24T12:40:11] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T12:40:11 #3)
+[2025-05-24T16:57:50] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-24T16:57:50 #4)
+[2025-05-24T18:49:34] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-24T18:49:34 #5)
+[2025-05-24T16:59:56] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-24T16:59:56 #6)
+[2025-05-24T14:36:02] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-24T14:36:02 #7)
+[2025-05-24T09:16:50] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-24T09:16:50 #8)
+[2025-05-24T15:34:34] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-24T15:34:34 #9)
+[2025-05-24T16:23:32] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-24T16:23:32 #10)
+[2025-05-24T08:46:52] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T08:46:52 #11)
+[2025-05-24T13:20:27] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-24T13:20:27 #12)
+[2025-05-24T14:22:17] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-24T14:22:17 #13)
+[2025-05-24T12:50:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-24T12:50:38 #14)
+[2025-05-24T12:47:16] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-24T12:47:16 #15)
+[2025-05-24T10:59:50] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-24T10:59:50 #16)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-05-26T13:48:29] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-26T13:48:29 #1)
