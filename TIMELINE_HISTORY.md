@@ -1734,3 +1734,4 @@
 [2025-05-24T10:59:50] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-24T10:59:50 #16)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-26T13:48:29] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-26T13:48:29 #1)
+[2025-05-26T15:59:10] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-26T15:59:10 #2)
