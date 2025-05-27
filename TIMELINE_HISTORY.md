@@ -343,3 +343,4 @@
 [2025-05-27T21:08:23] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-27T21:08:23 #5)
 [2025-05-27T09:11:08] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-27T09:11:08 #6)
 [2025-05-27T21:53:47] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-27T21:53:47 #7)
+[2025-05-27T09:39:50] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-27T09:39:50 #8)
