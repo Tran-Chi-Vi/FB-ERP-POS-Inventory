@@ -348,3 +348,4 @@
 [2025-05-27T12:09:01] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-27T12:09:01 #10)
 [2025-05-27T11:32:20] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-27T11:32:20 #11)
 [2025-05-27T18:15:05] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-27T18:15:05 #12)
+[2025-05-27T18:37:30] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-27T18:37:30 #13)
