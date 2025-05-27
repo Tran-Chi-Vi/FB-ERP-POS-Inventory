@@ -355,3 +355,4 @@
 [2025-05-27T17:54:04] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-27T17:54:04 #17)
 [2025-05-27T18:03:01] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-05-27T18:03:01 #18)
 [2025-05-27T08:02:24] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-27T08:02:24 #19)
+[2025-05-27T14:46:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-27T14:46:35 #20)
