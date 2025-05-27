@@ -340,3 +340,4 @@
 [2025-05-27T10:00:40] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-27T10:00:40 #2)
 [2025-05-27T09:06:28] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-27T09:06:28 #3)
 [2025-05-27T15:20:08] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-27T15:20:08 #4)
+[2025-05-27T21:08:23] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-27T21:08:23 #5)
