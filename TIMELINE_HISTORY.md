@@ -1766,3 +1766,4 @@
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-28T18:55:35] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-28T18:55:35 #1)
 [2025-05-28T16:03:53] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-28T16:03:53 #2)
+[2025-05-28T10:03:20] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-28T10:03:20 #3)
