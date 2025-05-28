@@ -1765,3 +1765,4 @@
 [2025-05-27T14:46:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-27T14:46:35 #20)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-28T18:55:35] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-05-28T18:55:35 #1)
+[2025-05-28T16:03:53] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-28T16:03:53 #2)
