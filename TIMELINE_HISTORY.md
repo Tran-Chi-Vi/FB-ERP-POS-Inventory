@@ -1771,3 +1771,4 @@
 [2025-05-28T13:40:23] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-28T13:40:23 #5)
 [2025-05-28T11:55:36] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-28T11:55:36 #6)
 [2025-05-28T18:51:13] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-05-28T18:51:13 #7)
+[2025-05-28T19:59:06] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-28T19:59:06 #8)
