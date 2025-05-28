@@ -1769,3 +1769,4 @@
 [2025-05-28T10:03:20] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-28T10:03:20 #3)
 [2025-05-28T09:14:46] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-28T09:14:46 #4)
 [2025-05-28T13:40:23] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-28T13:40:23 #5)
+[2025-05-28T11:55:36] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-28T11:55:36 #6)
