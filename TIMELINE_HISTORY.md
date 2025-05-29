@@ -368,3 +368,4 @@
 [2025-05-29T14:46:31] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-29T14:46:31 #10)
 [2025-05-29T18:10:37] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-29T18:10:37 #11)
 [2025-05-29T16:37:18] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-29T16:37:18 #12)
+[2025-05-29T20:10:40] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-29T20:10:40 #13)
