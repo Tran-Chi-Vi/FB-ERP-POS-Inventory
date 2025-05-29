@@ -369,3 +369,4 @@
 [2025-05-29T18:10:37] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-29T18:10:37 #11)
 [2025-05-29T16:37:18] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-29T16:37:18 #12)
 [2025-05-29T20:10:40] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-05-29T20:10:40 #13)
+[2025-05-29T13:10:30] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-29T13:10:30 #14)
