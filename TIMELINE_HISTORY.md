@@ -357,3 +357,4 @@
 [2025-05-27T08:02:24] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-27T08:02:24 #19)
 [2025-05-27T14:46:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-27T14:46:35 #20)
 [2025-05-29T10:31:58] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-29T10:31:58 #1)
+[2025-05-29T11:46:19] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-29T11:46:19 #2)
