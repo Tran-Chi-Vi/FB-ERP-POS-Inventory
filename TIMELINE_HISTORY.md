@@ -366,3 +366,4 @@
 [2025-05-29T13:44:14] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-29T13:44:14 #8)
 [2025-05-29T15:06:42] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-29T15:06:42 #9)
 [2025-05-29T14:46:31] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-05-29T14:46:31 #10)
+[2025-05-29T18:10:37] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-29T18:10:37 #11)
