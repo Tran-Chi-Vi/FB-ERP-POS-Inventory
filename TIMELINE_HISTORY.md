@@ -358,3 +358,4 @@
 [2025-05-27T14:46:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-27T14:46:35 #20)
 [2025-05-29T10:31:58] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-05-29T10:31:58 #1)
 [2025-05-29T11:46:19] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-29T11:46:19 #2)
+[2025-05-29T20:11:22] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-05-29T20:11:22 #3)
