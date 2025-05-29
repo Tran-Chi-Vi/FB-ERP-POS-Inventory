@@ -375,3 +375,4 @@
 [2025-05-29T12:35:50] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-29T12:35:50 #17)
 [2025-05-29T12:29:40] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-29T12:29:40 #18)
 [2025-05-29T11:38:30] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-29T11:38:30 #19)
+[2025-05-29T10:50:24] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-29T10:50:24 #20)
