@@ -373,3 +373,4 @@
 [2025-05-29T16:40:19] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-29T16:40:19 #15)
 [2025-05-29T16:46:32] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-05-29T16:46:32 #16)
 [2025-05-29T12:35:50] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-29T12:35:50 #17)
+[2025-05-29T12:29:40] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-29T12:29:40 #18)
