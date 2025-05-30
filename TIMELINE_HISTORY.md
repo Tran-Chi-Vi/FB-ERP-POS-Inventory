@@ -1808,3 +1808,4 @@
 [2025-05-30T10:22:17] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-30T10:22:17 #11)
 [2025-05-30T17:02:45] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-30T17:02:45 #12)
 [2025-05-30T08:18:02] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-30T08:18:02 #13)
+[2025-05-30T21:10:35] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-30T21:10:35 #14)
