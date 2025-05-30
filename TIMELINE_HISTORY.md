@@ -1799,3 +1799,4 @@
 [2025-05-30T09:19:25] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-30T09:19:25 #2)
 [2025-05-30T09:05:05] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-30T09:05:05 #3)
 [2025-05-30T08:27:55] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-30T08:27:55 #4)
+[2025-05-30T18:12:42] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-30T18:12:42 #5)
