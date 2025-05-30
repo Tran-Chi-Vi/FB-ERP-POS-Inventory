@@ -1806,3 +1806,4 @@
 [2025-05-30T16:02:03] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-30T16:02:03 #9)
 [2025-05-30T12:02:03] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-30T12:02:03 #10)
 [2025-05-30T10:22:17] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-30T10:22:17 #11)
+[2025-05-30T17:02:45] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-05-30T17:02:45 #12)
