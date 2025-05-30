@@ -1796,3 +1796,4 @@
 [2025-05-29T10:50:24] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-29T10:50:24 #20)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-30T11:12:34] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-30T11:12:34 #1)
+[2025-05-30T09:19:25] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-30T09:19:25 #2)
