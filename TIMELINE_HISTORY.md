@@ -1802,3 +1802,4 @@
 [2025-05-30T18:12:42] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-30T18:12:42 #5)
 [2025-05-30T15:10:41] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-30T15:10:41 #6)
 [2025-05-30T20:59:37] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-30T20:59:37 #7)
+[2025-05-30T14:59:03] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-05-30T14:59:03 #8)
