@@ -1801,3 +1801,4 @@
 [2025-05-30T08:27:55] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-05-30T08:27:55 #4)
 [2025-05-30T18:12:42] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-30T18:12:42 #5)
 [2025-05-30T15:10:41] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-30T15:10:41 #6)
+[2025-05-30T20:59:37] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-30T20:59:37 #7)
