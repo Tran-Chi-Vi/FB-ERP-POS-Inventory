@@ -380,3 +380,4 @@
 [2025-05-31T15:46:01] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-31T15:46:01 #2)
 [2025-05-31T13:20:01] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-31T13:20:01 #3)
 [2025-05-31T13:59:25] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-31T13:59:25 #4)
+[2025-05-31T16:23:48] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-31T16:23:48 #5)
