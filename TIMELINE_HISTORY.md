@@ -383,3 +383,4 @@
 [2025-05-31T16:23:48] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-31T16:23:48 #5)
 [2025-05-31T11:25:22] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-31T11:25:22 #6)
 [2025-05-31T08:18:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-31T08:18:28 #7)
+[2025-05-31T16:01:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-31T16:01:38 #8)
