@@ -382,3 +382,4 @@
 [2025-05-31T13:59:25] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-31T13:59:25 #4)
 [2025-05-31T16:23:48] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-31T16:23:48 #5)
 [2025-05-31T11:25:22] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-31T11:25:22 #6)
+[2025-05-31T08:18:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-31T08:18:28 #7)
