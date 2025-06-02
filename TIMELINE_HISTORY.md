@@ -1794,6 +1794,7 @@
 [2025-05-29T12:29:40] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-05-29T12:29:40 #18)
 [2025-05-29T11:38:30] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-05-29T11:38:30 #19)
 [2025-05-29T10:50:24] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-05-29T10:50:24 #20)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-05-30T11:12:34] [feat/be-inventory-bom-ledger] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-05-30T11:12:34 #1)
 [2025-05-30T09:19:25] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-30T09:19:25 #2)
@@ -1810,3 +1811,14 @@
 [2025-05-30T08:18:02] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-30T08:18:02 #13)
 [2025-05-30T21:10:35] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-05-30T21:10:35 #14)
 [2025-05-30T13:12:37] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-30T13:12:37 #15)
+=======
+[2025-05-31T18:07:30] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-31T18:07:30 #1)
+[2025-05-31T15:46:01] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-31T15:46:01 #2)
+[2025-05-31T13:20:01] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-05-31T13:20:01 #3)
+[2025-05-31T13:59:25] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-05-31T13:59:25 #4)
+[2025-05-31T16:23:48] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-05-31T16:23:48 #5)
+[2025-05-31T11:25:22] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-31T11:25:22 #6)
+[2025-05-31T08:18:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-31T08:18:28 #7)
+[2025-05-31T16:01:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-31T16:01:38 #8)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-06-02T15:18:04] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-02T15:18:04 #1)
