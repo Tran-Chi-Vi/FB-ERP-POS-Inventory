@@ -1822,3 +1822,4 @@
 [2025-05-31T16:01:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-31T16:01:38 #8)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-06-02T15:18:04] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-02T15:18:04 #1)
+[2025-06-02T16:47:17] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-02T16:47:17 #2)
