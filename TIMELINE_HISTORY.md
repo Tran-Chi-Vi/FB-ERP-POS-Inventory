@@ -1830,3 +1830,4 @@
 [2025-06-02T15:02:21] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-02T15:02:21 #7)
 [2025-06-02T15:46:53] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-02T15:46:53 #8)
 [2025-06-02T20:11:10] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-02T20:11:10 #9)
+[2025-06-02T11:08:54] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-02T11:08:54 #10)
