@@ -1824,3 +1824,4 @@
 [2025-06-02T15:18:04] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-02T15:18:04 #1)
 [2025-06-02T16:47:17] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-02T16:47:17 #2)
 [2025-06-02T16:53:25] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-02T16:53:25 #3)
+[2025-06-02T19:52:08] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-02T19:52:08 #4)
