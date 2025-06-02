@@ -1832,3 +1832,4 @@
 [2025-06-02T20:11:10] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-02T20:11:10 #9)
 [2025-06-02T11:08:54] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-02T11:08:54 #10)
 [2025-06-02T19:57:57] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-02T19:57:57 #11)
+[2025-06-02T09:30:59] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-02T09:30:59 #12)
