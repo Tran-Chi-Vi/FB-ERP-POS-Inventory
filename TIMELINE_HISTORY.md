@@ -1831,3 +1831,4 @@
 [2025-06-02T15:46:53] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-02T15:46:53 #8)
 [2025-06-02T20:11:10] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-02T20:11:10 #9)
 [2025-06-02T11:08:54] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-02T11:08:54 #10)
+[2025-06-02T19:57:57] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-02T19:57:57 #11)
