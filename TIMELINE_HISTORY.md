@@ -1834,3 +1834,4 @@
 [2025-06-02T19:57:57] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-02T19:57:57 #11)
 [2025-06-02T09:30:59] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-02T09:30:59 #12)
 [2025-06-02T20:38:11] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-02T20:38:11 #13)
+[2025-06-02T15:16:39] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-02T15:16:39 #14)
