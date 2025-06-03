@@ -393,3 +393,4 @@
 [2025-06-03T13:05:10] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-03T13:05:10 #7)
 [2025-06-03T18:15:11] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-03T18:15:11 #8)
 [2025-06-03T13:28:49] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-03T13:28:49 #9)
+[2025-06-03T15:56:22] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-03T15:56:22 #10)
