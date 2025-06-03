@@ -386,3 +386,4 @@
 [2025-05-31T16:01:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-31T16:01:38 #8)
 [2025-06-03T16:43:36] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-03T16:43:36 #1)
 [2025-06-03T15:33:42] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-03T15:33:42 #2)
+[2025-06-03T17:28:40] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-03T17:28:40 #3)
