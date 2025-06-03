@@ -390,3 +390,4 @@
 [2025-06-03T12:43:38] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-03T12:43:38 #4)
 [2025-06-03T14:46:00] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-03T14:46:00 #5)
 [2025-06-03T20:23:38] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-03T20:23:38 #6)
+[2025-06-03T13:05:10] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-03T13:05:10 #7)
