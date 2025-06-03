@@ -385,3 +385,4 @@
 [2025-05-31T08:18:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-31T08:18:28 #7)
 [2025-05-31T16:01:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-31T16:01:38 #8)
 [2025-06-03T16:43:36] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-03T16:43:36 #1)
+[2025-06-03T15:33:42] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-03T15:33:42 #2)
