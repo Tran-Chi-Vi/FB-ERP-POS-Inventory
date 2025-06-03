@@ -389,3 +389,4 @@
 [2025-06-03T17:28:40] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-03T17:28:40 #3)
 [2025-06-03T12:43:38] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-03T12:43:38 #4)
 [2025-06-03T14:46:00] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-03T14:46:00 #5)
+[2025-06-03T20:23:38] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-03T20:23:38 #6)
