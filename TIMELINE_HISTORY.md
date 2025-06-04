@@ -1861,3 +1861,4 @@
 [2025-06-04T15:32:56] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-04T15:32:56 #5)
 [2025-06-04T11:40:22] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-04T11:40:22 #6)
 [2025-06-04T18:17:05] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-04T18:17:05 #7)
+[2025-06-04T12:33:46] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-04T12:33:46 #8)
