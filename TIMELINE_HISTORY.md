@@ -1820,6 +1820,7 @@
 [2025-05-31T11:25:22] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-05-31T11:25:22 #6)
 [2025-05-31T08:18:28] [feat/be-inventory-bom-ledger] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-05-31T08:18:28 #7)
 [2025-05-31T16:01:38] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-05-31T16:01:38 #8)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-06-02T15:18:04] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-02T15:18:04 #1)
 [2025-06-02T16:47:17] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-02T16:47:17 #2)
@@ -1835,3 +1836,22 @@
 [2025-06-02T09:30:59] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-02T09:30:59 #12)
 [2025-06-02T20:38:11] [feat/be-inventory-bom-ledger] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-02T20:38:11 #13)
 [2025-06-02T15:16:39] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-02T15:16:39 #14)
+=======
+[2025-06-03T16:43:36] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-03T16:43:36 #1)
+[2025-06-03T15:33:42] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-03T15:33:42 #2)
+[2025-06-03T17:28:40] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-03T17:28:40 #3)
+[2025-06-03T12:43:38] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-03T12:43:38 #4)
+[2025-06-03T14:46:00] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-03T14:46:00 #5)
+[2025-06-03T20:23:38] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-03T20:23:38 #6)
+[2025-06-03T13:05:10] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-03T13:05:10 #7)
+[2025-06-03T18:15:11] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-03T18:15:11 #8)
+[2025-06-03T13:28:49] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-03T13:28:49 #9)
+[2025-06-03T15:56:22] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-03T15:56:22 #10)
+[2025-06-03T10:39:34] [feat/be-inventory-bom-ledger] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-03T10:39:34 #11)
+[2025-06-03T16:48:01] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-03T16:48:01 #12)
+[2025-06-03T09:02:27] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-03T09:02:27 #13)
+[2025-06-03T09:57:04] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-03T09:57:04 #14)
+[2025-06-03T20:33:32] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-03T20:33:32 #15)
+[2025-06-03T08:15:32] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-03T08:15:32 #16)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-06-04T19:03:55] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-04T19:03:55 #1)
