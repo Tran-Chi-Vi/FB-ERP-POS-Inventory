@@ -1855,3 +1855,4 @@
 [2025-06-03T08:15:32] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-03T08:15:32 #16)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-06-04T19:03:55] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-04T19:03:55 #1)
+[2025-06-04T10:51:23] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-04T10:51:23 #2)
