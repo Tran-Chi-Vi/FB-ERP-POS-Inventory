@@ -1857,3 +1857,4 @@
 [2025-06-04T19:03:55] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-04T19:03:55 #1)
 [2025-06-04T10:51:23] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-04T10:51:23 #2)
 [2025-06-04T14:13:35] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-04T14:13:35 #3)
+[2025-06-04T17:56:00] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-04T17:56:00 #4)
