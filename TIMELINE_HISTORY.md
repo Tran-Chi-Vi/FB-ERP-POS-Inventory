@@ -1860,3 +1860,4 @@
 [2025-06-04T17:56:00] [feat/be-inventory-bom-ledger] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-04T17:56:00 #4)
 [2025-06-04T15:32:56] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-04T15:32:56 #5)
 [2025-06-04T11:40:22] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-04T11:40:22 #6)
+[2025-06-04T18:17:05] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-04T18:17:05 #7)
