@@ -405,3 +405,4 @@
 [2025-06-05T11:20:57] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-05T11:20:57 #3)
 [2025-06-05T18:54:47] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-05T18:54:47 #4)
 [2025-06-05T08:11:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-05T08:11:35 #5)
+[2025-06-05T15:59:17] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-05T15:59:17 #6)
