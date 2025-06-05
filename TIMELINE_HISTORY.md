@@ -404,3 +404,4 @@
 [2025-06-05T13:48:06] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-05T13:48:06 #2)
 [2025-06-05T11:20:57] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-05T11:20:57 #3)
 [2025-06-05T18:54:47] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-05T18:54:47 #4)
+[2025-06-05T08:11:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-05T08:11:35 #5)
