@@ -407,3 +407,4 @@
 [2025-06-05T08:11:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-05T08:11:35 #5)
 [2025-06-05T15:59:17] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-05T15:59:17 #6)
 [2025-06-05T08:14:01] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-05T08:14:01 #7)
+[2025-06-05T09:54:35] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-05T09:54:35 #8)
