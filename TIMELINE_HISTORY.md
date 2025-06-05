@@ -401,3 +401,4 @@
 [2025-06-03T20:33:32] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-03T20:33:32 #15)
 [2025-06-03T08:15:32] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-03T08:15:32 #16)
 [2025-06-05T09:51:26] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-05T09:51:26 #1)
+[2025-06-05T13:48:06] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-05T13:48:06 #2)
