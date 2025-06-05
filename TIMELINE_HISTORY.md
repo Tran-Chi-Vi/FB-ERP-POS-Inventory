@@ -402,3 +402,4 @@
 [2025-06-03T08:15:32] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-03T08:15:32 #16)
 [2025-06-05T09:51:26] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-05T09:51:26 #1)
 [2025-06-05T13:48:06] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-05T13:48:06 #2)
+[2025-06-05T11:20:57] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-05T11:20:57 #3)
