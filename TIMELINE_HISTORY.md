@@ -409,3 +409,4 @@
 [2025-06-05T08:14:01] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-05T08:14:01 #7)
 [2025-06-05T09:54:35] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-05T09:54:35 #8)
 [2025-06-05T15:08:16] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-05T15:08:16 #9)
+[2025-06-05T13:44:44] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-05T13:44:44 #10)
