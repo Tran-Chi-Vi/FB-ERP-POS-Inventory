@@ -412,3 +412,4 @@
 [2025-06-05T13:44:44] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-05T13:44:44 #10)
 [2025-06-05T17:00:54] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-05T17:00:54 #11)
 [2025-06-05T12:10:52] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-05T12:10:52 #12)
+[2025-06-05T12:42:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-05T12:42:14 #13)
