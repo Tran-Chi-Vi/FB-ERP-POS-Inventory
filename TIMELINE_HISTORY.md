@@ -1889,3 +1889,4 @@
 [2025-06-06T18:07:15] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-06T18:07:15 #6)
 [2025-06-06T10:55:33] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-06T10:55:33 #7)
 [2025-06-06T13:55:28] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-06T13:55:28 #8)
+[2025-06-06T10:04:52] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-06T10:04:52 #9)
