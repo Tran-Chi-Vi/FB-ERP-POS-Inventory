@@ -1853,6 +1853,7 @@
 [2025-06-03T09:57:04] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-03T09:57:04 #14)
 [2025-06-03T20:33:32] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-03T20:33:32 #15)
 [2025-06-03T08:15:32] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-03T08:15:32 #16)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-06-04T19:03:55] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-04T19:03:55 #1)
 [2025-06-04T10:51:23] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-04T10:51:23 #2)
@@ -1863,3 +1864,21 @@
 [2025-06-04T18:17:05] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-04T18:17:05 #7)
 [2025-06-04T12:33:46] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-04T12:33:46 #8)
 [2025-06-04T19:01:45] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-04T19:01:45 #9)
+=======
+[2025-06-05T09:51:26] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-05T09:51:26 #1)
+[2025-06-05T13:48:06] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-05T13:48:06 #2)
+[2025-06-05T11:20:57] [feat/be-inventory-bom-ledger] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-05T11:20:57 #3)
+[2025-06-05T18:54:47] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-05T18:54:47 #4)
+[2025-06-05T08:11:35] [feat/be-inventory-bom-ledger] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-05T08:11:35 #5)
+[2025-06-05T15:59:17] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-05T15:59:17 #6)
+[2025-06-05T08:14:01] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-05T08:14:01 #7)
+[2025-06-05T09:54:35] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-05T09:54:35 #8)
+[2025-06-05T15:08:16] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-05T15:08:16 #9)
+[2025-06-05T13:44:44] [feat/be-inventory-bom-ledger] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-05T13:44:44 #10)
+[2025-06-05T17:00:54] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-05T17:00:54 #11)
+[2025-06-05T12:10:52] [feat/be-inventory-bom-ledger] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-05T12:10:52 #12)
+[2025-06-05T12:42:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-05T12:42:14 #13)
+[2025-06-05T16:27:38] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-05T16:27:38 #14)
+[2025-06-05T11:10:27] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-05T11:10:27 #15)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-06-06T14:32:38] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-06T14:32:38 #1)
