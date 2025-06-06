@@ -1882,3 +1882,4 @@
 [2025-06-05T11:10:27] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-05T11:10:27 #15)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-06-06T14:32:38] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-06T14:32:38 #1)
+[2025-06-06T16:15:25] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-06T16:15:25 #2)
