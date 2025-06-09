@@ -1899,3 +1899,4 @@
 [2025-06-07T20:00:42] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-07T20:00:42 #5)
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-06-09T09:23:49] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-09T09:23:49 #1)
+[2025-06-09T11:00:05] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-09T11:00:05 #2)
