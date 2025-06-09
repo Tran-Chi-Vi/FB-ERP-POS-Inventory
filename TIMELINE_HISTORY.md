@@ -1901,3 +1901,4 @@
 [2025-06-09T09:23:49] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-09T09:23:49 #1)
 [2025-06-09T11:00:05] [feat/be-inventory-bom-ledger] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-09T11:00:05 #2)
 [2025-06-09T12:51:05] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-09T12:51:05 #3)
+[2025-06-09T13:21:46] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-09T13:21:46 #4)
