@@ -1880,6 +1880,7 @@
 [2025-06-05T12:42:14] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-05T12:42:14 #13)
 [2025-06-05T16:27:38] [feat/be-inventory-bom-ledger] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-05T16:27:38 #14)
 [2025-06-05T11:10:27] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-05T11:10:27 #15)
+<<<<<<< HEAD
 >>>>>>> feat/be-inventory-bom-ledger
 [2025-06-06T14:32:38] [feat/be-inventory-bom-ledger] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-06T14:32:38 #1)
 [2025-06-06T16:15:25] [feat/be-inventory-bom-ledger] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-06T16:15:25 #2)
@@ -1890,3 +1891,11 @@
 [2025-06-06T10:55:33] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-06T10:55:33 #7)
 [2025-06-06T13:55:28] [feat/be-inventory-bom-ledger] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-06T13:55:28 #8)
 [2025-06-06T10:04:52] [feat/be-inventory-bom-ledger] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-06T10:04:52 #9)
+=======
+[2025-06-07T19:00:39] [feat/be-inventory-bom-ledger] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-07T19:00:39 #1)
+[2025-06-07T11:06:35] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-07T11:06:35 #2)
+[2025-06-07T18:00:59] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-07T18:00:59 #3)
+[2025-06-07T09:57:50] [feat/be-inventory-bom-ledger] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-07T09:57:50 #4)
+[2025-06-07T20:00:42] [feat/be-inventory-bom-ledger] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-07T20:00:42 #5)
+>>>>>>> feat/be-inventory-bom-ledger
+[2025-06-09T09:23:49] [feat/be-inventory-bom-ledger] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-09T09:23:49 #1)
