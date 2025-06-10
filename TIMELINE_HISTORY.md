@@ -15,3 +15,4 @@
 [2025-06-10T13:51:18] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-10T13:51:18 #15)
 [2025-06-10T16:23:39] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-10T16:23:39 #16)
 [2025-06-10T17:44:17] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-10T17:44:17 #17)
+[2025-06-10T16:41:33] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-10T16:41:33 #18)
