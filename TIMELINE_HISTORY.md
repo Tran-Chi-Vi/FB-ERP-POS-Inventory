@@ -8,3 +8,4 @@
 [2025-06-10T15:04:44] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-10T15:04:44 #8)
 [2025-06-10T15:49:30] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-10T15:49:30 #9)
 [2025-06-10T11:31:02] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-10T11:31:02 #10)
+[2025-06-10T19:19:12] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-10T19:19:12 #11)
