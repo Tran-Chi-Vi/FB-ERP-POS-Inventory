@@ -10,3 +10,4 @@
 [2025-06-10T11:31:02] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-10T11:31:02 #10)
 [2025-06-10T19:19:12] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-10T19:19:12 #11)
 [2025-06-10T16:52:37] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-10T16:52:37 #12)
+[2025-06-10T12:26:16] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-10T12:26:16 #13)
