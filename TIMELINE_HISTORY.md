@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿# F&B ERP POS System Development Timeline
 
 [2025-01-01T12:01:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-01T12:01:19 #1)
@@ -1909,3 +1910,24 @@
 [2025-06-09T09:14:44] [feat/be-inventory-bom-ledger] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-09T09:14:44 #9)
 [2025-06-09T14:16:40] [feat/be-inventory-bom-ledger] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-09T14:16:40 #10)
 [2025-06-09T10:24:27] [feat/be-inventory-bom-ledger] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-09T10:24:27 #11)
+=======
+﻿[2025-06-10T16:16:08] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-10T16:16:08 #1)
+[2025-06-10T10:31:20] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-10T10:31:20 #2)
+[2025-06-10T18:29:28] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-10T18:29:28 #3)
+[2025-06-10T10:06:42] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-10T10:06:42 #4)
+[2025-06-10T19:21:57] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-10T19:21:57 #5)
+[2025-06-10T16:35:09] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-10T16:35:09 #6)
+[2025-06-10T18:10:54] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-10T18:10:54 #7)
+[2025-06-10T15:04:44] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-10T15:04:44 #8)
+[2025-06-10T15:49:30] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-10T15:49:30 #9)
+[2025-06-10T11:31:02] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-10T11:31:02 #10)
+[2025-06-10T19:19:12] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-10T19:19:12 #11)
+[2025-06-10T16:52:37] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-10T16:52:37 #12)
+[2025-06-10T12:26:16] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-10T12:26:16 #13)
+[2025-06-10T16:35:09] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-10T16:35:09 #14)
+[2025-06-10T13:51:18] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-10T13:51:18 #15)
+[2025-06-10T16:23:39] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-10T16:23:39 #16)
+[2025-06-10T17:44:17] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-10T17:44:17 #17)
+[2025-06-10T16:41:33] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-10T16:41:33 #18)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-06-11T18:45:41] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-11T18:45:41 #1)
