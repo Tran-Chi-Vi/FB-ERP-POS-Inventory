@@ -23,3 +23,4 @@
 [2025-06-12T10:46:52] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-12T10:46:52 #5)
 [2025-06-12T14:51:56] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-12T14:51:56 #6)
 [2025-06-12T20:30:30] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-12T20:30:30 #7)
+[2025-06-12T11:32:52] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-12T11:32:52 #8)
