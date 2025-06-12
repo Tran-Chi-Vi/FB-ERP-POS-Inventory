@@ -29,3 +29,4 @@
 [2025-06-12T17:55:52] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-12T17:55:52 #11)
 [2025-06-12T10:00:15] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-12T10:00:15 #12)
 [2025-06-12T20:33:26] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-12T20:33:26 #13)
+[2025-06-12T13:00:41] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-12T13:00:41 #14)
