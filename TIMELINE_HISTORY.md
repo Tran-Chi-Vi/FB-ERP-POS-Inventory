@@ -18,3 +18,4 @@
 [2025-06-10T16:41:33] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-10T16:41:33 #18)
 [2025-06-12T08:17:58] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-12T08:17:58 #1)
 [2025-06-12T16:23:08] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-12T16:23:08 #2)
+[2025-06-12T21:28:59] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-12T21:28:59 #3)
