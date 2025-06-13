@@ -1957,3 +1957,4 @@
 [2025-06-12T13:00:41] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-12T13:00:41 #14)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-13T17:04:26] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-13T17:04:26 #1)
+[2025-06-13T18:53:58] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-13T18:53:58 #2)
