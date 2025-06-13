@@ -1929,6 +1929,7 @@
 [2025-06-10T16:23:39] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-10T16:23:39 #16)
 [2025-06-10T17:44:17] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-10T17:44:17 #17)
 [2025-06-10T16:41:33] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-10T16:41:33 #18)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-11T18:45:41] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-11T18:45:41 #1)
 [2025-06-11T14:04:06] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-11T14:04:06 #2)
@@ -1939,3 +1940,20 @@
 [2025-06-11T19:48:29] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-11T19:48:29 #7)
 [2025-06-11T20:26:11] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-11T20:26:11 #8)
 [2025-06-11T13:51:48] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-11T13:51:48 #9)
+=======
+[2025-06-12T08:17:58] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-12T08:17:58 #1)
+[2025-06-12T16:23:08] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-12T16:23:08 #2)
+[2025-06-12T21:28:59] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-12T21:28:59 #3)
+[2025-06-12T21:55:40] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-12T21:55:40 #4)
+[2025-06-12T10:46:52] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-12T10:46:52 #5)
+[2025-06-12T14:51:56] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-12T14:51:56 #6)
+[2025-06-12T20:30:30] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-12T20:30:30 #7)
+[2025-06-12T11:32:52] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-12T11:32:52 #8)
+[2025-06-12T21:04:57] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-12T21:04:57 #9)
+[2025-06-12T13:58:48] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-12T13:58:48 #10)
+[2025-06-12T17:55:52] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-12T17:55:52 #11)
+[2025-06-12T10:00:15] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-12T10:00:15 #12)
+[2025-06-12T20:33:26] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-12T20:33:26 #13)
+[2025-06-12T13:00:41] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-12T13:00:41 #14)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-06-13T17:04:26] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-13T17:04:26 #1)
