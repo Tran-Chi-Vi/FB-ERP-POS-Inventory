@@ -1960,3 +1960,4 @@
 [2025-06-13T18:53:58] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-13T18:53:58 #2)
 [2025-06-13T09:41:07] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-13T09:41:07 #3)
 [2025-06-13T13:14:30] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-13T13:14:30 #4)
+[2025-06-13T19:43:26] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-13T19:43:26 #5)
