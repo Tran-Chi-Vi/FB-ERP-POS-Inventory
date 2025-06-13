@@ -1967,3 +1967,4 @@
 [2025-06-13T14:21:03] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-13T14:21:03 #9)
 [2025-06-13T15:31:34] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-13T15:31:34 #10)
 [2025-06-13T15:58:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-13T15:58:39 #11)
+[2025-06-13T20:47:47] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-13T20:47:47 #12)
