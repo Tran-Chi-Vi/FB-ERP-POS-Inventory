@@ -39,3 +39,4 @@
 [2025-06-14T12:55:03] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-14T12:55:03 #7)
 [2025-06-14T11:29:55] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-14T11:29:55 #8)
 [2025-06-14T09:50:58] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-14T09:50:58 #9)
+[2025-06-14T08:23:08] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-14T08:23:08 #10)
