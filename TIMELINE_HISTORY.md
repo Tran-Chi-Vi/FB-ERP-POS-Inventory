@@ -32,3 +32,4 @@
 [2025-06-12T13:00:41] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-12T13:00:41 #14)
 [2025-06-14T20:51:42] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-14T20:51:42 #1)
 [2025-06-14T21:05:29] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-14T21:05:29 #2)
+[2025-06-14T21:40:21] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-14T21:40:21 #3)
