@@ -1955,6 +1955,7 @@
 [2025-06-12T10:00:15] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-12T10:00:15 #12)
 [2025-06-12T20:33:26] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-12T20:33:26 #13)
 [2025-06-12T13:00:41] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-12T13:00:41 #14)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-13T17:04:26] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-13T17:04:26 #1)
 [2025-06-13T18:53:58] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-13T18:53:58 #2)
@@ -1968,3 +1969,19 @@
 [2025-06-13T15:31:34] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-13T15:31:34 #10)
 [2025-06-13T15:58:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-13T15:58:39 #11)
 [2025-06-13T20:47:47] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-13T20:47:47 #12)
+=======
+[2025-06-14T20:51:42] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-14T20:51:42 #1)
+[2025-06-14T21:05:29] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-14T21:05:29 #2)
+[2025-06-14T21:40:21] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-14T21:40:21 #3)
+[2025-06-14T12:11:42] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-14T12:11:42 #4)
+[2025-06-14T11:58:35] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-14T11:58:35 #5)
+[2025-06-14T10:23:40] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-14T10:23:40 #6)
+[2025-06-14T12:55:03] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-14T12:55:03 #7)
+[2025-06-14T11:29:55] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-14T11:29:55 #8)
+[2025-06-14T09:50:58] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-06-14T09:50:58 #9)
+[2025-06-14T08:23:08] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-14T08:23:08 #10)
+[2025-06-14T09:52:42] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-14T09:52:42 #11)
+[2025-06-14T17:28:59] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-14T17:28:59 #12)
+[2025-06-14T20:53:11] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-14T20:53:11 #13)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-06-16T09:16:43] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-16T09:16:43 #1)
