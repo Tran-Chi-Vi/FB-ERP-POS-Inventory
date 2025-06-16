@@ -1988,3 +1988,4 @@
 [2025-06-16T11:45:15] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-16T11:45:15 #2)
 [2025-06-16T17:52:32] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-16T17:52:32 #3)
 [2025-06-16T13:13:55] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-16T13:13:55 #4)
+[2025-06-16T13:47:25] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-16T13:47:25 #5)
