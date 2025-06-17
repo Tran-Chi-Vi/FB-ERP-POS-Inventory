@@ -44,3 +44,4 @@
 [2025-06-14T17:28:59] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-14T17:28:59 #12)
 [2025-06-14T20:53:11] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-14T20:53:11 #13)
 [2025-06-17T12:10:58] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-17T12:10:58 #1)
+[2025-06-17T14:47:53] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-17T14:47:53 #2)
