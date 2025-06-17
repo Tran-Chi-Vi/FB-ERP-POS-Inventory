@@ -48,3 +48,4 @@
 [2025-06-17T11:50:51] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-17T11:50:51 #3)
 [2025-06-17T16:14:13] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-17T16:14:13 #4)
 [2025-06-17T08:54:21] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-17T08:54:21 #5)
+[2025-06-17T13:19:01] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-17T13:19:01 #6)
