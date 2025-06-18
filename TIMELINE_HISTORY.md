@@ -2005,3 +2005,4 @@
 [2025-06-18T14:31:35] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-18T14:31:35 #3)
 [2025-06-18T19:10:21] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-18T19:10:21 #4)
 [2025-06-18T13:56:59] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-18T13:56:59 #5)
+[2025-06-18T09:17:03] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-18T09:17:03 #6)
