@@ -1983,9 +1983,21 @@
 [2025-06-14T09:52:42] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-14T09:52:42 #11)
 [2025-06-14T17:28:59] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-14T17:28:59 #12)
 [2025-06-14T20:53:11] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-14T20:53:11 #13)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-16T09:16:43] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-16T09:16:43 #1)
 [2025-06-16T11:45:15] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-16T11:45:15 #2)
 [2025-06-16T17:52:32] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-16T17:52:32 #3)
 [2025-06-16T13:13:55] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-16T13:13:55 #4)
 [2025-06-16T13:47:25] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-16T13:47:25 #5)
+=======
+[2025-06-17T12:10:58] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-17T12:10:58 #1)
+[2025-06-17T14:47:53] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-17T14:47:53 #2)
+[2025-06-17T11:50:51] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-17T11:50:51 #3)
+[2025-06-17T16:14:13] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-17T16:14:13 #4)
+[2025-06-17T08:54:21] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-17T08:54:21 #5)
+[2025-06-17T13:19:01] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-17T13:19:01 #6)
+[2025-06-17T16:31:45] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-17T16:31:45 #7)
+[2025-06-17T12:55:37] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-17T12:55:37 #8)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-06-18T14:19:31] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-18T14:19:31 #1)
