@@ -58,3 +58,4 @@
 [2025-06-19T13:03:32] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-19T13:03:32 #5)
 [2025-06-19T19:49:42] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-19T19:49:42 #6)
 [2025-06-19T15:48:30] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-19T15:48:30 #7)
+[2025-06-19T19:25:28] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-19T19:25:28 #8)
