@@ -59,3 +59,4 @@
 [2025-06-19T19:49:42] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-19T19:49:42 #6)
 [2025-06-19T15:48:30] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-19T15:48:30 #7)
 [2025-06-19T19:25:28] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-19T19:25:28 #8)
+[2025-06-19T16:54:11] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-19T16:54:11 #9)
