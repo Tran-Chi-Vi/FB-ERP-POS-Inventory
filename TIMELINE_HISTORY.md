@@ -2039,3 +2039,4 @@
 [2025-06-20T13:55:47] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-20T13:55:47 #4)
 [2025-06-20T19:57:58] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-20T19:57:58 #5)
 [2025-06-20T17:58:49] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-20T17:58:49 #6)
+[2025-06-20T14:07:35] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-20T14:07:35 #7)
