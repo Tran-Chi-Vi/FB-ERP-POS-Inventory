@@ -74,3 +74,4 @@
 [2025-06-21T18:36:22] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-21T18:36:22 #2)
 [2025-06-21T11:39:49] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-21T11:39:49 #3)
 [2025-06-21T13:55:23] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-21T13:55:23 #4)
+[2025-06-21T20:45:05] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-21T20:45:05 #5)
