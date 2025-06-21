@@ -78,3 +78,4 @@
 [2025-06-21T16:00:30] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-21T16:00:30 #6)
 [2025-06-21T15:07:40] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-21T15:07:40 #7)
 [2025-06-21T08:24:20] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-21T08:24:20 #8)
+[2025-06-21T14:37:31] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-21T14:37:31 #9)
