@@ -2067,3 +2067,4 @@
 [2025-06-23T09:47:52] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-23T09:47:52 #8)
 [2025-06-23T11:11:34] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-23T11:11:34 #9)
 [2025-06-23T13:05:27] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-23T13:05:27 #10)
+[2025-06-23T10:13:38] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-23T10:13:38 #11)
