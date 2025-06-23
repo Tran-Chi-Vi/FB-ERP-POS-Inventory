@@ -2063,3 +2063,4 @@
 [2025-06-23T18:28:57] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-23T18:28:57 #4)
 [2025-06-23T18:20:57] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-23T18:20:57 #5)
 [2025-06-23T15:46:23] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-23T15:46:23 #6)
+[2025-06-23T08:31:28] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-23T08:31:28 #7)
