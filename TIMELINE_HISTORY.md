@@ -2032,6 +2032,7 @@
 [2025-06-19T20:11:27] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-19T20:11:27 #17)
 [2025-06-19T18:10:22] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-19T18:10:22 #18)
 [2025-06-19T19:30:07] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-19T19:30:07 #19)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-20T16:26:24] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-20T16:26:24 #1)
 [2025-06-20T13:00:52] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-06-20T13:00:52 #2)
@@ -2044,3 +2045,16 @@
 [2025-06-20T20:49:47] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-20T20:49:47 #9)
 [2025-06-20T12:20:53] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-20T12:20:53 #10)
 [2025-06-20T20:43:28] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-20T20:43:28 #11)
+=======
+[2025-06-21T11:56:23] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-21T11:56:23 #1)
+[2025-06-21T18:36:22] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-21T18:36:22 #2)
+[2025-06-21T11:39:49] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-21T11:39:49 #3)
+[2025-06-21T13:55:23] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-21T13:55:23 #4)
+[2025-06-21T20:45:05] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-21T20:45:05 #5)
+[2025-06-21T16:00:30] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-21T16:00:30 #6)
+[2025-06-21T15:07:40] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-21T15:07:40 #7)
+[2025-06-21T08:24:20] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-21T08:24:20 #8)
+[2025-06-21T14:37:31] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-21T14:37:31 #9)
+[2025-06-21T10:43:44] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-21T10:43:44 #10)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-06-23T19:32:52] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-23T19:32:52 #1)
