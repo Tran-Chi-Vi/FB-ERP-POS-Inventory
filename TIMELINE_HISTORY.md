@@ -87,3 +87,4 @@
 [2025-06-24T18:49:04] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-24T18:49:04 #5)
 [2025-06-24T11:12:53] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-24T11:12:53 #6)
 [2025-06-24T21:36:23] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-06-24T21:36:23 #7)
+[2025-06-24T14:41:10] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-06-24T14:41:10 #8)
