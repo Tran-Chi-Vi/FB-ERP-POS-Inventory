@@ -2092,3 +2092,4 @@
 [2025-06-24T10:27:04] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-24T10:27:04 #11)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-25T18:58:57] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-25T18:58:57 #1)
+[2025-06-25T19:09:24] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-25T19:09:24 #2)
