@@ -2097,3 +2097,4 @@
 [2025-06-25T14:51:06] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-25T14:51:06 #4)
 [2025-06-25T08:03:08] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-25T08:03:08 #5)
 [2025-06-25T20:27:09] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-25T20:27:09 #6)
+[2025-06-25T18:27:25] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-25T18:27:25 #7)
