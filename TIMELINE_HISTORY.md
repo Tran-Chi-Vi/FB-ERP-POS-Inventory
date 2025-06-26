@@ -94,3 +94,4 @@
 [2025-06-26T14:30:15] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-26T14:30:15 #1)
 [2025-06-26T20:22:08] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-26T20:22:08 #2)
 [2025-06-26T18:34:50] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-26T18:34:50 #3)
+[2025-06-26T11:56:44] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-26T11:56:44 #4)
