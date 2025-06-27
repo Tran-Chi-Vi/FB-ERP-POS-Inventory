@@ -2110,3 +2110,4 @@
 [2025-06-26T12:10:35] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-26T12:10:35 #7)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-27T16:47:53] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-27T16:47:53 #1)
+[2025-06-27T17:59:07] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-27T17:59:07 #2)
