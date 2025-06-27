@@ -2090,6 +2090,7 @@
 [2025-06-24T18:13:44] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-24T18:13:44 #9)
 [2025-06-24T15:22:41] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-24T15:22:41 #10)
 [2025-06-24T10:27:04] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-24T10:27:04 #11)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-25T18:58:57] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-25T18:58:57 #1)
 [2025-06-25T19:09:24] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-25T19:09:24 #2)
@@ -2099,3 +2100,13 @@
 [2025-06-25T20:27:09] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-25T20:27:09 #6)
 [2025-06-25T18:27:25] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-25T18:27:25 #7)
 [2025-06-25T16:16:43] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-06-25T16:16:43 #8)
+=======
+[2025-06-26T14:30:15] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-26T14:30:15 #1)
+[2025-06-26T20:22:08] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-26T20:22:08 #2)
+[2025-06-26T18:34:50] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-26T18:34:50 #3)
+[2025-06-26T11:56:44] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-26T11:56:44 #4)
+[2025-06-26T11:01:04] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-26T11:01:04 #5)
+[2025-06-26T09:05:02] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-26T09:05:02 #6)
+[2025-06-26T12:10:35] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-26T12:10:35 #7)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-06-27T16:47:53] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-27T16:47:53 #1)
