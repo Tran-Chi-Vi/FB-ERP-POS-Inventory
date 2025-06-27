@@ -2112,3 +2112,4 @@
 [2025-06-27T16:47:53] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-27T16:47:53 #1)
 [2025-06-27T17:59:07] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-27T17:59:07 #2)
 [2025-06-27T17:33:37] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-27T17:33:37 #3)
+[2025-06-27T10:14:11] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-27T10:14:11 #4)
