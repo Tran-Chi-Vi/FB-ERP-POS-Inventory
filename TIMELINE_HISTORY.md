@@ -2114,3 +2114,4 @@
 [2025-06-27T17:33:37] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-06-27T17:33:37 #3)
 [2025-06-27T10:14:11] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-27T10:14:11 #4)
 [2025-06-27T08:19:06] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-27T08:19:06 #5)
+[2025-06-27T10:49:10] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-27T10:49:10 #6)
