@@ -2120,3 +2120,4 @@
 [2025-06-27T21:42:14] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-27T21:42:14 #9)
 [2025-06-27T17:11:15] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-27T17:11:15 #10)
 [2025-06-27T17:53:50] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-27T17:53:50 #11)
+[2025-06-27T21:07:31] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-27T21:07:31 #12)
