@@ -2108,6 +2108,7 @@
 [2025-06-26T11:01:04] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-06-26T11:01:04 #5)
 [2025-06-26T09:05:02] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-06-26T09:05:02 #6)
 [2025-06-26T12:10:35] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-26T12:10:35 #7)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-27T16:47:53] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-06-27T16:47:53 #1)
 [2025-06-27T17:59:07] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-27T17:59:07 #2)
@@ -2125,3 +2126,12 @@
 [2025-06-27T20:02:15] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-27T20:02:15 #14)
 [2025-06-27T16:40:11] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-27T16:40:11 #15)
 [2025-06-27T15:17:58] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-06-27T15:17:58 #16)
+=======
+[2025-06-28T08:51:19] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-28T08:51:19 #1)
+[2025-06-28T19:27:17] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-06-28T19:27:17 #2)
+[2025-06-28T19:11:56] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-06-28T19:11:56 #3)
+[2025-06-28T21:33:10] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-28T21:33:10 #4)
+[2025-06-28T08:39:51] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-28T08:39:51 #5)
+[2025-06-28T09:51:56] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-28T09:51:56 #6)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-06-30T20:32:35] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-30T20:32:35 #1)
