@@ -2138,3 +2138,4 @@
 [2025-06-30T19:57:42] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-30T19:57:42 #2)
 [2025-06-30T18:23:46] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-30T18:23:46 #3)
 [2025-06-30T10:41:10] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-06-30T10:41:10 #4)
+[2025-06-30T16:58:48] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-30T16:58:48 #5)
