@@ -2141,3 +2141,4 @@
 [2025-06-30T16:58:48] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-06-30T16:58:48 #5)
 [2025-06-30T14:37:25] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-06-30T14:37:25 #6)
 [2025-06-30T21:03:37] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-30T21:03:37 #7)
+[2025-06-30T16:51:18] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-30T16:51:18 #8)
