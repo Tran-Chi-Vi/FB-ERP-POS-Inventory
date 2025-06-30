@@ -2144,3 +2144,4 @@
 [2025-06-30T16:51:18] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-06-30T16:51:18 #8)
 [2025-06-30T12:02:30] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-06-30T12:02:30 #9)
 [2025-06-30T18:58:03] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-30T18:58:03 #10)
+[2025-06-30T10:22:10] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-30T10:22:10 #11)
