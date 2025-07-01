@@ -119,3 +119,4 @@
 [2025-07-01T11:29:47] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-01T11:29:47 #13)
 [2025-07-01T10:22:46] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-01T10:22:46 #14)
 [2025-07-01T15:25:55] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T15:25:55 #15)
+[2025-07-01T13:38:03] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T13:38:03 #16)
