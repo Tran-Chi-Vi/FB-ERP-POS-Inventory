@@ -110,3 +110,4 @@
 [2025-07-01T16:27:54] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T16:27:54 #4)
 [2025-07-01T11:37:33] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-01T11:37:33 #5)
 [2025-07-01T12:38:47] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-01T12:38:47 #6)
+[2025-07-01T14:32:13] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-01T14:32:13 #7)
