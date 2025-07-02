@@ -2133,6 +2133,7 @@
 [2025-06-28T21:33:10] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-06-28T21:33:10 #4)
 [2025-06-28T08:39:51] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-28T08:39:51 #5)
 [2025-06-28T09:51:56] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-28T09:51:56 #6)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-06-30T20:32:35] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-06-30T20:32:35 #1)
 [2025-06-30T19:57:42] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-06-30T19:57:42 #2)
@@ -2147,3 +2148,23 @@
 [2025-06-30T10:22:10] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-30T10:22:10 #11)
 [2025-06-30T19:44:53] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-06-30T19:44:53 #12)
 [2025-06-30T19:45:03] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-06-30T19:45:03 #13)
+=======
+[2025-07-01T21:11:26] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-01T21:11:26 #1)
+[2025-07-01T10:17:22] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-01T10:17:22 #2)
+[2025-07-01T13:32:23] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-01T13:32:23 #3)
+[2025-07-01T16:27:54] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T16:27:54 #4)
+[2025-07-01T11:37:33] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-01T11:37:33 #5)
+[2025-07-01T12:38:47] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-01T12:38:47 #6)
+[2025-07-01T14:32:13] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-01T14:32:13 #7)
+[2025-07-01T15:43:00] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-01T15:43:00 #8)
+[2025-07-01T21:35:33] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-01T21:35:33 #9)
+[2025-07-01T12:45:42] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-01T12:45:42 #10)
+[2025-07-01T16:56:19] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-01T16:56:19 #11)
+[2025-07-01T09:22:26] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-01T09:22:26 #12)
+[2025-07-01T11:29:47] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-01T11:29:47 #13)
+[2025-07-01T10:22:46] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-01T10:22:46 #14)
+[2025-07-01T15:25:55] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T15:25:55 #15)
+[2025-07-01T13:38:03] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T13:38:03 #16)
+[2025-07-01T10:44:47] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-01T10:44:47 #17)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-02T12:19:57] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-02T12:19:57 #1)
