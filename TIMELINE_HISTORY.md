@@ -127,3 +127,4 @@
 [2025-07-03T15:51:59] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-03T15:51:59 #4)
 [2025-07-03T11:02:16] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-03T11:02:16 #5)
 [2025-07-03T12:43:29] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-03T12:43:29 #6)
+[2025-07-03T20:02:24] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-03T20:02:24 #7)
