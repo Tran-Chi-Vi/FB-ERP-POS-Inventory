@@ -138,3 +138,4 @@
 [2025-07-03T09:22:53] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-03T09:22:53 #15)
 [2025-07-03T11:44:17] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-03T11:44:17 #16)
 [2025-07-03T09:10:00] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-03T09:10:00 #17)
+[2025-07-03T11:03:10] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-03T11:03:10 #18)
