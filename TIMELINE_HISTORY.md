@@ -139,3 +139,4 @@
 [2025-07-03T11:44:17] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-03T11:44:17 #16)
 [2025-07-03T09:10:00] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-03T09:10:00 #17)
 [2025-07-03T11:03:10] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-03T11:03:10 #18)
+[2025-07-03T11:42:35] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-03T11:42:35 #19)
