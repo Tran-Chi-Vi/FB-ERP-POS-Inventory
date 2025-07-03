@@ -121,3 +121,4 @@
 [2025-07-01T15:25:55] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T15:25:55 #15)
 [2025-07-01T13:38:03] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T13:38:03 #16)
 [2025-07-01T10:44:47] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-01T10:44:47 #17)
+[2025-07-03T18:11:24] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-03T18:11:24 #1)
