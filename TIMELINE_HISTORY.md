@@ -131,3 +131,4 @@
 [2025-07-03T17:45:27] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-03T17:45:27 #8)
 [2025-07-03T20:00:55] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-03T20:00:55 #9)
 [2025-07-03T08:32:33] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-03T08:32:33 #10)
+[2025-07-03T10:38:36] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-03T10:38:36 #11)
