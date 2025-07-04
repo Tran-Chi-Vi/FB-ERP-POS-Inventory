@@ -2166,6 +2166,7 @@
 [2025-07-01T15:25:55] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T15:25:55 #15)
 [2025-07-01T13:38:03] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-01T13:38:03 #16)
 [2025-07-01T10:44:47] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-01T10:44:47 #17)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-02T12:19:57] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-02T12:19:57 #1)
 [2025-07-02T18:46:47] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-02T18:46:47 #2)
@@ -2174,3 +2175,25 @@
 [2025-07-02T19:11:56] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-02T19:11:56 #5)
 [2025-07-02T19:04:39] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-02T19:04:39 #6)
 [2025-07-02T20:49:58] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-02T20:49:58 #7)
+=======
+[2025-07-03T18:11:24] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-03T18:11:24 #1)
+[2025-07-03T17:40:50] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-03T17:40:50 #2)
+[2025-07-03T10:38:35] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-03T10:38:35 #3)
+[2025-07-03T15:51:59] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-03T15:51:59 #4)
+[2025-07-03T11:02:16] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-03T11:02:16 #5)
+[2025-07-03T12:43:29] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-03T12:43:29 #6)
+[2025-07-03T20:02:24] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-03T20:02:24 #7)
+[2025-07-03T17:45:27] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-03T17:45:27 #8)
+[2025-07-03T20:00:55] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-03T20:00:55 #9)
+[2025-07-03T08:32:33] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-03T08:32:33 #10)
+[2025-07-03T10:38:36] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-03T10:38:36 #11)
+[2025-07-03T12:42:51] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-03T12:42:51 #12)
+[2025-07-03T12:17:25] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-03T12:17:25 #13)
+[2025-07-03T09:16:54] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-03T09:16:54 #14)
+[2025-07-03T09:22:53] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-03T09:22:53 #15)
+[2025-07-03T11:44:17] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-03T11:44:17 #16)
+[2025-07-03T09:10:00] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-03T09:10:00 #17)
+[2025-07-03T11:03:10] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-03T11:03:10 #18)
+[2025-07-03T11:42:35] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-03T11:42:35 #19)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-04T19:18:22] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-04T19:18:22 #1)
