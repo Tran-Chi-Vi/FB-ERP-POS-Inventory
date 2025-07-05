@@ -145,3 +145,4 @@
 [2025-07-05T14:59:38] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-05T14:59:38 #3)
 [2025-07-05T17:16:38] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-05T17:16:38 #4)
 [2025-07-05T08:44:58] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-05T08:44:58 #5)
+[2025-07-05T16:33:29] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-05T16:33:29 #6)
