@@ -144,3 +144,4 @@
 [2025-07-05T15:32:56] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-05T15:32:56 #2)
 [2025-07-05T14:59:38] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-05T14:59:38 #3)
 [2025-07-05T17:16:38] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-05T17:16:38 #4)
+[2025-07-05T08:44:58] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-05T08:44:58 #5)
