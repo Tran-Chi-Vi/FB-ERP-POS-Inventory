@@ -2195,6 +2195,7 @@
 [2025-07-03T09:10:00] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-03T09:10:00 #17)
 [2025-07-03T11:03:10] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-03T11:03:10 #18)
 [2025-07-03T11:42:35] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-03T11:42:35 #19)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-04T19:18:22] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-04T19:18:22 #1)
 [2025-07-04T16:28:02] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-04T16:28:02 #2)
@@ -2208,3 +2209,16 @@
 [2025-07-04T16:45:37] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-04T16:45:37 #10)
 [2025-07-04T21:15:34] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-04T21:15:34 #11)
 [2025-07-04T19:53:03] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-04T19:53:03 #12)
+=======
+[2025-07-05T13:03:55] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-05T13:03:55 #1)
+[2025-07-05T15:32:56] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-05T15:32:56 #2)
+[2025-07-05T14:59:38] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-05T14:59:38 #3)
+[2025-07-05T17:16:38] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-05T17:16:38 #4)
+[2025-07-05T08:44:58] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-05T08:44:58 #5)
+[2025-07-05T16:33:29] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-05T16:33:29 #6)
+[2025-07-05T12:49:26] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-05T12:49:26 #7)
+[2025-07-05T12:06:26] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-05T12:06:26 #8)
+[2025-07-05T08:27:25] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-05T08:27:25 #9)
+[2025-07-05T15:12:06] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-05T15:12:06 #10)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-07T14:00:01] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-07T14:00:01 #1)
