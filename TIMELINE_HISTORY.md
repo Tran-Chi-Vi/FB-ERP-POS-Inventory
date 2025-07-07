@@ -2224,3 +2224,4 @@
 [2025-07-07T14:00:01] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-07T14:00:01 #1)
 [2025-07-07T09:02:04] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-07T09:02:04 #2)
 [2025-07-07T12:35:06] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-07T12:35:06 #3)
+[2025-07-07T12:28:06] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-07T12:28:06 #4)
