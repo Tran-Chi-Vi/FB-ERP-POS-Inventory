@@ -2254,3 +2254,4 @@
 [2025-07-09T13:57:12] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-09T13:57:12 #13)
 [2025-07-09T08:50:25] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-09T08:50:25 #14)
 [2025-07-09T19:52:11] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-09T19:52:11 #15)
+[2025-07-09T17:10:25] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-09T17:10:25 #16)
