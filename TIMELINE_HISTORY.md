@@ -2244,3 +2244,4 @@
 [2025-07-09T12:05:45] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-09T12:05:45 #3)
 [2025-07-09T18:17:06] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-09T18:17:06 #4)
 [2025-07-09T14:31:27] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-09T14:31:27 #5)
+[2025-07-09T12:15:05] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-09T12:15:05 #6)
