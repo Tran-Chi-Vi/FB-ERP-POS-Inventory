@@ -2242,3 +2242,4 @@
 [2025-07-09T19:10:02] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-09T19:10:02 #1)
 [2025-07-09T09:03:55] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-09T09:03:55 #2)
 [2025-07-09T12:05:45] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-09T12:05:45 #3)
+[2025-07-09T18:17:06] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-09T18:17:06 #4)
