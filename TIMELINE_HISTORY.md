@@ -169,3 +169,4 @@
 [2025-07-10T11:42:54] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-10T11:42:54 #9)
 [2025-07-10T14:36:35] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-10T14:36:35 #10)
 [2025-07-10T13:16:11] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-10T13:16:11 #11)
+[2025-07-10T17:03:52] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-10T17:03:52 #12)
