@@ -164,3 +164,4 @@
 [2025-07-10T17:06:16] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-10T17:06:16 #4)
 [2025-07-10T18:18:50] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-10T18:18:50 #5)
 [2025-07-10T13:04:43] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-10T13:04:43 #6)
+[2025-07-10T14:14:10] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-10T14:14:10 #7)
