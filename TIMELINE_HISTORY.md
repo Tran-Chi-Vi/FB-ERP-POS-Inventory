@@ -2283,3 +2283,4 @@
 [2025-07-11T20:47:42] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-11T20:47:42 #2)
 [2025-07-11T13:28:02] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-11T13:28:02 #3)
 [2025-07-11T11:10:33] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-11T11:10:33 #4)
+[2025-07-11T14:59:57] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-11T14:59:57 #5)
