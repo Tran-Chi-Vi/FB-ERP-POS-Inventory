@@ -2238,6 +2238,7 @@
 [2025-07-08T13:28:38] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-08T13:28:38 #6)
 [2025-07-08T10:19:16] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-08T10:19:16 #7)
 [2025-07-08T11:15:31] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-08T11:15:31 #8)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-09T19:10:02] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-09T19:10:02 #1)
 [2025-07-09T09:03:55] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-09T09:03:55 #2)
@@ -2257,3 +2258,25 @@
 [2025-07-09T17:10:25] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-09T17:10:25 #16)
 [2025-07-09T20:26:46] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-09T20:26:46 #17)
 [2025-07-09T19:33:58] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-09T19:33:58 #18)
+=======
+[2025-07-10T20:26:31] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-10T20:26:31 #1)
+[2025-07-10T13:42:22] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-10T13:42:22 #2)
+[2025-07-10T09:11:20] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-10T09:11:20 #3)
+[2025-07-10T17:06:16] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-10T17:06:16 #4)
+[2025-07-10T18:18:50] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-10T18:18:50 #5)
+[2025-07-10T13:04:43] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-10T13:04:43 #6)
+[2025-07-10T14:14:10] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-10T14:14:10 #7)
+[2025-07-10T09:04:31] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-10T09:04:31 #8)
+[2025-07-10T11:42:54] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-10T11:42:54 #9)
+[2025-07-10T14:36:35] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-10T14:36:35 #10)
+[2025-07-10T13:16:11] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-10T13:16:11 #11)
+[2025-07-10T17:03:52] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-10T17:03:52 #12)
+[2025-07-10T20:40:17] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-10T20:40:17 #13)
+[2025-07-10T09:29:29] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-10T09:29:29 #14)
+[2025-07-10T14:11:01] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-10T14:11:01 #15)
+[2025-07-10T18:20:35] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-10T18:20:35 #16)
+[2025-07-10T15:26:55] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-10T15:26:55 #17)
+[2025-07-10T10:14:43] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-10T10:14:43 #18)
+[2025-07-10T10:59:35] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-10T10:59:35 #19)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-11T12:55:53] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-11T12:55:53 #1)
