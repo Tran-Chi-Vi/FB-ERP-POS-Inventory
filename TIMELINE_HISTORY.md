@@ -2282,3 +2282,4 @@
 [2025-07-11T12:55:53] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-11T12:55:53 #1)
 [2025-07-11T20:47:42] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-11T20:47:42 #2)
 [2025-07-11T13:28:02] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-11T13:28:02 #3)
+[2025-07-11T11:10:33] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-11T11:10:33 #4)
