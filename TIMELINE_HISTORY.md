@@ -2285,3 +2285,4 @@
 [2025-07-11T11:10:33] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-11T11:10:33 #4)
 [2025-07-11T14:59:57] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-11T14:59:57 #5)
 [2025-07-11T08:29:21] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-11T08:29:21 #6)
+[2025-07-11T14:19:00] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-11T14:19:00 #7)
