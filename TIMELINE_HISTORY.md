@@ -185,3 +185,4 @@
 [2025-07-12T10:37:19] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-12T10:37:19 #6)
 [2025-07-12T09:00:39] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-12T09:00:39 #7)
 [2025-07-12T12:37:24] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-12T12:37:24 #8)
+[2025-07-12T09:57:48] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-12T09:57:48 #9)
