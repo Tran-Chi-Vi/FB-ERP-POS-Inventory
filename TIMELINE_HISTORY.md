@@ -182,3 +182,4 @@
 [2025-07-12T08:38:52] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-12T08:38:52 #3)
 [2025-07-12T14:03:01] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-12T14:03:01 #4)
 [2025-07-12T21:33:34] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-12T21:33:34 #5)
+[2025-07-12T10:37:19] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-12T10:37:19 #6)
