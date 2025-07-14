@@ -2278,6 +2278,7 @@
 [2025-07-10T15:26:55] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-10T15:26:55 #17)
 [2025-07-10T10:14:43] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-10T10:14:43 #18)
 [2025-07-10T10:59:35] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-10T10:59:35 #19)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-11T12:55:53] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-11T12:55:53 #1)
 [2025-07-11T20:47:42] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-11T20:47:42 #2)
@@ -2288,3 +2289,16 @@
 [2025-07-11T14:19:00] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-11T14:19:00 #7)
 [2025-07-11T13:52:39] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-11T13:52:39 #8)
 [2025-07-11T21:57:46] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-11T21:57:46 #9)
+=======
+[2025-07-12T14:54:24] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-12T14:54:24 #1)
+[2025-07-12T16:52:25] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-12T16:52:25 #2)
+[2025-07-12T08:38:52] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-12T08:38:52 #3)
+[2025-07-12T14:03:01] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-12T14:03:01 #4)
+[2025-07-12T21:33:34] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-12T21:33:34 #5)
+[2025-07-12T10:37:19] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-12T10:37:19 #6)
+[2025-07-12T09:00:39] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-12T09:00:39 #7)
+[2025-07-12T12:37:24] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-12T12:37:24 #8)
+[2025-07-12T09:57:48] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-12T09:57:48 #9)
+[2025-07-12T11:52:51] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-12T11:52:51 #10)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-14T15:55:31] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-14T15:55:31 #1)
