@@ -2303,3 +2303,4 @@
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-14T15:55:31] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-14T15:55:31 #1)
 [2025-07-14T18:49:35] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-14T18:49:35 #2)
+[2025-07-14T19:48:04] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-14T19:48:04 #3)
