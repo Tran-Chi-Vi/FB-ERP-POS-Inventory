@@ -2312,3 +2312,4 @@
 [2025-07-14T09:08:34] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-14T09:08:34 #9)
 [2025-07-14T19:15:14] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-14T19:15:14 #10)
 [2025-07-14T10:09:17] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-14T10:09:17 #11)
+[2025-07-14T19:54:18] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-14T19:54:18 #12)
