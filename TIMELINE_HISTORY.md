@@ -188,3 +188,4 @@
 [2025-07-12T09:57:48] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-12T09:57:48 #9)
 [2025-07-12T11:52:51] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-12T11:52:51 #10)
 [2025-07-15T17:28:53] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-15T17:28:53 #1)
+[2025-07-15T21:35:50] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-15T21:35:50 #2)
