@@ -197,3 +197,4 @@
 [2025-07-15T13:12:04] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-15T13:12:04 #8)
 [2025-07-15T10:12:06] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-15T10:12:06 #9)
 [2025-07-15T09:26:28] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-15T09:26:28 #10)
+[2025-07-15T11:21:42] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-15T11:21:42 #11)
