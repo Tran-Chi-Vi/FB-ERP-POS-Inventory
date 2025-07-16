@@ -2345,3 +2345,4 @@
 [2025-07-16T08:59:04] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-16T08:59:04 #9)
 [2025-07-16T12:43:07] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-16T12:43:07 #10)
 [2025-07-16T17:48:31] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-16T17:48:31 #11)
+[2025-07-16T12:11:01] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-16T12:11:01 #12)
