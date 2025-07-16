@@ -2300,6 +2300,7 @@
 [2025-07-12T12:37:24] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-12T12:37:24 #8)
 [2025-07-12T09:57:48] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-12T09:57:48 #9)
 [2025-07-12T11:52:51] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-12T11:52:51 #10)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-14T15:55:31] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-14T15:55:31 #1)
 [2025-07-14T18:49:35] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-14T18:49:35 #2)
@@ -2319,3 +2320,18 @@
 [2025-07-14T12:07:07] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-14T12:07:07 #16)
 [2025-07-14T19:40:56] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-14T19:40:56 #17)
 [2025-07-14T19:33:06] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-14T19:33:06 #18)
+=======
+[2025-07-15T17:28:53] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-15T17:28:53 #1)
+[2025-07-15T21:35:50] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-15T21:35:50 #2)
+[2025-07-15T19:20:18] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-15T19:20:18 #3)
+[2025-07-15T13:18:27] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-15T13:18:27 #4)
+[2025-07-15T13:48:10] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-15T13:48:10 #5)
+[2025-07-15T15:43:39] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-15T15:43:39 #6)
+[2025-07-15T10:29:57] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-15T10:29:57 #7)
+[2025-07-15T13:12:04] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-15T13:12:04 #8)
+[2025-07-15T10:12:06] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-15T10:12:06 #9)
+[2025-07-15T09:26:28] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-15T09:26:28 #10)
+[2025-07-15T11:21:42] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-15T11:21:42 #11)
+[2025-07-15T10:51:59] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-15T10:51:59 #12)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-16T16:46:54] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-16T16:46:54 #1)
