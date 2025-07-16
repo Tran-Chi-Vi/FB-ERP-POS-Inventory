@@ -2340,3 +2340,4 @@
 [2025-07-16T10:40:27] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-16T10:40:27 #4)
 [2025-07-16T20:35:33] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-16T20:35:33 #5)
 [2025-07-16T17:13:17] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-16T17:13:17 #6)
+[2025-07-16T12:00:16] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-16T12:00:16 #7)
