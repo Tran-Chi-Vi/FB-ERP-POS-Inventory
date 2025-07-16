@@ -2343,3 +2343,4 @@
 [2025-07-16T12:00:16] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-16T12:00:16 #7)
 [2025-07-16T10:06:35] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-16T10:06:35 #8)
 [2025-07-16T08:59:04] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-16T08:59:04 #9)
+[2025-07-16T12:43:07] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-16T12:43:07 #10)
