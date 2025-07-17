@@ -213,3 +213,4 @@
 [2025-07-17T17:26:59] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-17T17:26:59 #12)
 [2025-07-17T11:04:37] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-17T11:04:37 #13)
 [2025-07-17T12:57:08] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T12:57:08 #14)
+[2025-07-17T16:02:50] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-17T16:02:50 #15)
