@@ -211,3 +211,4 @@
 [2025-07-17T16:54:38] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-17T16:54:38 #10)
 [2025-07-17T15:02:01] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-17T15:02:01 #11)
 [2025-07-17T17:26:59] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-17T17:26:59 #12)
+[2025-07-17T11:04:37] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-17T11:04:37 #13)
