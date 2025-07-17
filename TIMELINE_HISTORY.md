@@ -206,3 +206,4 @@
 [2025-07-17T20:47:33] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-17T20:47:33 #5)
 [2025-07-17T14:35:49] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T14:35:49 #6)
 [2025-07-17T08:53:05] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-17T08:53:05 #7)
+[2025-07-17T14:46:28] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-17T14:46:28 #8)
