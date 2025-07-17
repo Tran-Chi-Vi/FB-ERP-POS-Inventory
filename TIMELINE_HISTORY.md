@@ -209,3 +209,4 @@
 [2025-07-17T14:46:28] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-17T14:46:28 #8)
 [2025-07-17T11:38:25] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T11:38:25 #9)
 [2025-07-17T16:54:38] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-17T16:54:38 #10)
+[2025-07-17T15:02:01] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-17T15:02:01 #11)
