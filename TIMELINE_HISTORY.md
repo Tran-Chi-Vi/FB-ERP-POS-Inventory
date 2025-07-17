@@ -202,3 +202,4 @@
 [2025-07-17T10:29:18] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T10:29:18 #1)
 [2025-07-17T14:47:23] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-17T14:47:23 #2)
 [2025-07-17T09:39:54] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-17T09:39:54 #3)
+[2025-07-17T19:00:08] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-17T19:00:08 #4)
