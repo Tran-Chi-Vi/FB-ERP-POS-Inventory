@@ -2333,6 +2333,7 @@
 [2025-07-15T09:26:28] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-15T09:26:28 #10)
 [2025-07-15T11:21:42] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-15T11:21:42 #11)
 [2025-07-15T10:51:59] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-15T10:51:59 #12)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-16T16:46:54] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-16T16:46:54 #1)
 [2025-07-16T13:01:54] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-16T13:01:54 #2)
@@ -2351,3 +2352,24 @@
 [2025-07-16T09:16:11] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-16T09:16:11 #15)
 [2025-07-16T21:17:53] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-16T21:17:53 #16)
 [2025-07-16T17:07:24] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-16T17:07:24 #17)
+=======
+[2025-07-17T10:29:18] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T10:29:18 #1)
+[2025-07-17T14:47:23] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-17T14:47:23 #2)
+[2025-07-17T09:39:54] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-17T09:39:54 #3)
+[2025-07-17T19:00:08] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-17T19:00:08 #4)
+[2025-07-17T20:47:33] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-17T20:47:33 #5)
+[2025-07-17T14:35:49] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T14:35:49 #6)
+[2025-07-17T08:53:05] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-17T08:53:05 #7)
+[2025-07-17T14:46:28] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-17T14:46:28 #8)
+[2025-07-17T11:38:25] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T11:38:25 #9)
+[2025-07-17T16:54:38] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-17T16:54:38 #10)
+[2025-07-17T15:02:01] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-17T15:02:01 #11)
+[2025-07-17T17:26:59] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-17T17:26:59 #12)
+[2025-07-17T11:04:37] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-17T11:04:37 #13)
+[2025-07-17T12:57:08] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-17T12:57:08 #14)
+[2025-07-17T16:02:50] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-17T16:02:50 #15)
+[2025-07-17T20:25:13] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-17T20:25:13 #16)
+[2025-07-17T09:17:24] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-17T09:17:24 #17)
+[2025-07-17T16:48:48] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-17T16:48:48 #18)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-18T16:20:19] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-18T16:20:19 #1)
