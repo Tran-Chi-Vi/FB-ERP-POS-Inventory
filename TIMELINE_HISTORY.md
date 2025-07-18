@@ -2375,3 +2375,4 @@
 [2025-07-18T16:20:19] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-18T16:20:19 #1)
 [2025-07-18T12:04:05] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-18T12:04:05 #2)
 [2025-07-18T20:50:25] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-18T20:50:25 #3)
+[2025-07-18T18:24:33] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-18T18:24:33 #4)
