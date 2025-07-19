@@ -230,3 +230,4 @@
 [2025-07-19T18:46:25] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-19T18:46:25 #11)
 [2025-07-19T11:30:11] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-19T11:30:11 #12)
 [2025-07-19T17:11:06] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-19T17:11:06 #13)
+[2025-07-19T20:41:24] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-19T20:41:24 #14)
