@@ -228,3 +228,4 @@
 [2025-07-19T21:12:55] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-19T21:12:55 #9)
 [2025-07-19T13:14:44] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-19T13:14:44 #10)
 [2025-07-19T18:46:25] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-19T18:46:25 #11)
+[2025-07-19T11:30:11] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-19T11:30:11 #12)
