@@ -221,3 +221,4 @@
 [2025-07-19T19:06:10] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-19T19:06:10 #2)
 [2025-07-19T20:19:49] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-19T20:19:49 #3)
 [2025-07-19T12:40:25] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-19T12:40:25 #4)
+[2025-07-19T16:28:42] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-19T16:28:42 #5)
