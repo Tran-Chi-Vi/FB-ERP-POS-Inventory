@@ -2371,6 +2371,7 @@
 [2025-07-17T20:25:13] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-17T20:25:13 #16)
 [2025-07-17T09:17:24] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-17T09:17:24 #17)
 [2025-07-17T16:48:48] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-17T16:48:48 #18)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-18T16:20:19] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-18T16:20:19 #1)
 [2025-07-18T12:04:05] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-18T12:04:05 #2)
@@ -2381,3 +2382,20 @@
 [2025-07-18T11:11:13] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-18T11:11:13 #7)
 [2025-07-18T15:26:20] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-18T15:26:20 #8)
 [2025-07-18T08:26:19] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-18T08:26:19 #9)
+=======
+[2025-07-19T20:44:45] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-19T20:44:45 #1)
+[2025-07-19T19:06:10] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-19T19:06:10 #2)
+[2025-07-19T20:19:49] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-19T20:19:49 #3)
+[2025-07-19T12:40:25] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-19T12:40:25 #4)
+[2025-07-19T16:28:42] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-19T16:28:42 #5)
+[2025-07-19T19:42:46] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-19T19:42:46 #6)
+[2025-07-19T19:07:04] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-19T19:07:04 #7)
+[2025-07-19T12:22:32] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-19T12:22:32 #8)
+[2025-07-19T21:12:55] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-19T21:12:55 #9)
+[2025-07-19T13:14:44] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-19T13:14:44 #10)
+[2025-07-19T18:46:25] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-19T18:46:25 #11)
+[2025-07-19T11:30:11] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-19T11:30:11 #12)
+[2025-07-19T17:11:06] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-19T17:11:06 #13)
+[2025-07-19T20:41:24] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-19T20:41:24 #14)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-21T12:38:03] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-21T12:38:03 #1)
