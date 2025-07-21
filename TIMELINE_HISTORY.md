@@ -2399,3 +2399,4 @@
 [2025-07-19T20:41:24] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-19T20:41:24 #14)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-21T12:38:03] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-21T12:38:03 #1)
+[2025-07-21T11:12:29] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-21T11:12:29 #2)
