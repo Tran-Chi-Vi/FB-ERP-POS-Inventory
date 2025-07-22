@@ -237,3 +237,4 @@
 [2025-07-22T16:47:09] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-22T16:47:09 #4)
 [2025-07-22T12:36:59] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T12:36:59 #5)
 [2025-07-22T18:08:29] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T18:08:29 #6)
+[2025-07-22T12:46:16] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-22T12:46:16 #7)
