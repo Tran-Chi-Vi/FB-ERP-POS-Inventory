@@ -234,3 +234,4 @@
 [2025-07-22T16:20:07] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T16:20:07 #1)
 [2025-07-22T12:11:35] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-22T12:11:35 #2)
 [2025-07-22T11:28:32] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-22T11:28:32 #3)
+[2025-07-22T16:47:09] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-22T16:47:09 #4)
