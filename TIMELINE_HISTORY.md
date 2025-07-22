@@ -238,3 +238,4 @@
 [2025-07-22T12:36:59] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T12:36:59 #5)
 [2025-07-22T18:08:29] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T18:08:29 #6)
 [2025-07-22T12:46:16] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-22T12:46:16 #7)
+[2025-07-22T19:58:22] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-22T19:58:22 #8)
