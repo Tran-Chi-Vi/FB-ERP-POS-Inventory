@@ -246,3 +246,4 @@
 [2025-07-22T14:22:51] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-22T14:22:51 #13)
 [2025-07-22T20:12:38] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-22T20:12:38 #14)
 [2025-07-22T10:35:10] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-22T10:35:10 #15)
+[2025-07-22T10:00:24] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-22T10:00:24 #16)
