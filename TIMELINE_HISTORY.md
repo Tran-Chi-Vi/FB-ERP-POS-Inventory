@@ -2441,3 +2441,4 @@
 [2025-07-23T16:19:24] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-23T16:19:24 #14)
 [2025-07-23T20:04:35] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-23T20:04:35 #15)
 [2025-07-23T16:06:51] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-23T16:06:51 #16)
+[2025-07-23T18:58:05] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-23T18:58:05 #17)
