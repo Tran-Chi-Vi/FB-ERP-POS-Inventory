@@ -2397,6 +2397,7 @@
 [2025-07-19T11:30:11] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-19T11:30:11 #12)
 [2025-07-19T17:11:06] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-19T17:11:06 #13)
 [2025-07-19T20:41:24] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-19T20:41:24 #14)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-21T12:38:03] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-21T12:38:03 #1)
 [2025-07-21T11:12:29] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-21T11:12:29 #2)
@@ -2405,3 +2406,23 @@
 [2025-07-21T16:07:22] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-21T16:07:22 #5)
 [2025-07-21T11:07:08] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-21T11:07:08 #6)
 [2025-07-21T18:24:56] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-07-21T18:24:56 #7)
+=======
+[2025-07-22T16:20:07] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T16:20:07 #1)
+[2025-07-22T12:11:35] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-22T12:11:35 #2)
+[2025-07-22T11:28:32] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-22T11:28:32 #3)
+[2025-07-22T16:47:09] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-22T16:47:09 #4)
+[2025-07-22T12:36:59] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T12:36:59 #5)
+[2025-07-22T18:08:29] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-22T18:08:29 #6)
+[2025-07-22T12:46:16] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-22T12:46:16 #7)
+[2025-07-22T19:58:22] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-07-22T19:58:22 #8)
+[2025-07-22T15:31:05] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-22T15:31:05 #9)
+[2025-07-22T09:15:50] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-22T09:15:50 #10)
+[2025-07-22T09:39:43] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-22T09:39:43 #11)
+[2025-07-22T13:41:18] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-22T13:41:18 #12)
+[2025-07-22T14:22:51] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-22T14:22:51 #13)
+[2025-07-22T20:12:38] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-22T20:12:38 #14)
+[2025-07-22T10:35:10] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-22T10:35:10 #15)
+[2025-07-22T10:00:24] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-22T10:00:24 #16)
+[2025-07-22T12:14:37] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-22T12:14:37 #17)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-23T10:29:07] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-23T10:29:07 #1)
