@@ -2438,3 +2438,4 @@
 [2025-07-23T21:36:49] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-23T21:36:49 #11)
 [2025-07-23T08:36:17] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-23T08:36:17 #12)
 [2025-07-23T13:47:40] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-23T13:47:40 #13)
+[2025-07-23T16:19:24] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-23T16:19:24 #14)
