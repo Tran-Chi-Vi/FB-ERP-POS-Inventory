@@ -2435,3 +2435,4 @@
 [2025-07-23T20:20:09] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-23T20:20:09 #8)
 [2025-07-23T17:59:04] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-23T17:59:04 #9)
 [2025-07-23T17:47:56] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-23T17:47:56 #10)
+[2025-07-23T21:36:49] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-23T21:36:49 #11)
