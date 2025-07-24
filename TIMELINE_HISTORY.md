@@ -249,3 +249,4 @@
 [2025-07-22T10:00:24] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-22T10:00:24 #16)
 [2025-07-22T12:14:37] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-22T12:14:37 #17)
 [2025-07-24T20:35:08] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-24T20:35:08 #1)
+[2025-07-24T18:53:44] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-24T18:53:44 #2)
