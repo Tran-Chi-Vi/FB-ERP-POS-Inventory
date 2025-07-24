@@ -260,3 +260,4 @@
 [2025-07-24T10:32:01] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-24T10:32:01 #10)
 [2025-07-24T12:17:48] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-24T12:17:48 #11)
 [2025-07-24T21:44:47] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-24T21:44:47 #12)
+[2025-07-24T20:35:47] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-24T20:35:47 #13)
