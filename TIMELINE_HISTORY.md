@@ -253,3 +253,4 @@
 [2025-07-24T16:46:19] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-24T16:46:19 #3)
 [2025-07-24T11:56:19] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-24T11:56:19 #4)
 [2025-07-24T21:43:17] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-24T21:43:17 #5)
+[2025-07-24T16:54:01] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-24T16:54:01 #6)
