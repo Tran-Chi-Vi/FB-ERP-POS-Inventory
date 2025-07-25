@@ -2463,3 +2463,4 @@
 [2025-07-24T20:12:06] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-24T20:12:06 #15)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-25T16:00:24] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-25T16:00:24 #1)
+[2025-07-25T11:23:59] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-25T11:23:59 #2)
