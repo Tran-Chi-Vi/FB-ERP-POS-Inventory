@@ -2468,3 +2468,4 @@
 [2025-07-25T11:22:46] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-25T11:22:46 #4)
 [2025-07-25T08:24:07] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-25T08:24:07 #5)
 [2025-07-25T16:45:41] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-25T16:45:41 #6)
+[2025-07-25T17:55:18] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-25T17:55:18 #7)
