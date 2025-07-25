@@ -2424,6 +2424,7 @@
 [2025-07-22T10:35:10] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-22T10:35:10 #15)
 [2025-07-22T10:00:24] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-22T10:00:24 #16)
 [2025-07-22T12:14:37] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-22T12:14:37 #17)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-23T10:29:07] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-23T10:29:07 #1)
 [2025-07-23T14:36:42] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-23T14:36:42 #2)
@@ -2444,3 +2445,21 @@
 [2025-07-23T18:58:05] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-23T18:58:05 #17)
 [2025-07-23T09:28:19] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-23T09:28:19 #18)
 [2025-07-23T20:49:21] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-23T20:49:21 #19)
+=======
+[2025-07-24T20:35:08] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-24T20:35:08 #1)
+[2025-07-24T18:53:44] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-24T18:53:44 #2)
+[2025-07-24T16:46:19] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-24T16:46:19 #3)
+[2025-07-24T11:56:19] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-24T11:56:19 #4)
+[2025-07-24T21:43:17] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-24T21:43:17 #5)
+[2025-07-24T16:54:01] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-24T16:54:01 #6)
+[2025-07-24T19:51:07] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-24T19:51:07 #7)
+[2025-07-24T15:08:26] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-24T15:08:26 #8)
+[2025-07-24T12:00:46] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-24T12:00:46 #9)
+[2025-07-24T10:32:01] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-24T10:32:01 #10)
+[2025-07-24T12:17:48] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-07-24T12:17:48 #11)
+[2025-07-24T21:44:47] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-24T21:44:47 #12)
+[2025-07-24T20:35:47] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-24T20:35:47 #13)
+[2025-07-24T14:40:08] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-24T14:40:08 #14)
+[2025-07-24T20:12:06] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-24T20:12:06 #15)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-07-25T16:00:24] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-25T16:00:24 #1)
