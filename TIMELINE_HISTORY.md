@@ -2470,3 +2470,4 @@
 [2025-07-25T16:45:41] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-25T16:45:41 #6)
 [2025-07-25T17:55:18] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-25T17:55:18 #7)
 [2025-07-25T18:29:41] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-25T18:29:41 #8)
+[2025-07-25T13:25:34] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-25T13:25:34 #9)
