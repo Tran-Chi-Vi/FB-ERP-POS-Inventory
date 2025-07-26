@@ -267,3 +267,4 @@
 [2025-07-26T20:34:06] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-26T20:34:06 #2)
 [2025-07-26T19:37:11] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-26T19:37:11 #3)
 [2025-07-26T16:47:47] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-26T16:47:47 #4)
+[2025-07-26T09:22:42] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-26T09:22:42 #5)
