@@ -263,3 +263,4 @@
 [2025-07-24T20:35:47] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-24T20:35:47 #13)
 [2025-07-24T14:40:08] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-07-24T14:40:08 #14)
 [2025-07-24T20:12:06] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-24T20:12:06 #15)
+[2025-07-26T11:52:03] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-07-26T11:52:03 #1)
