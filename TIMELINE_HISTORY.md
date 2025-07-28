@@ -2490,3 +2490,4 @@
 [2025-07-28T14:17:35] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-28T14:17:35 #2)
 [2025-07-28T21:54:21] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-28T21:54:21 #3)
 [2025-07-28T18:58:53] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-07-28T18:58:53 #4)
+[2025-07-28T19:05:43] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-28T19:05:43 #5)
