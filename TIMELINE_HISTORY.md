@@ -280,3 +280,4 @@
 [2025-07-29T12:54:50] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-29T12:54:50 #4)
 [2025-07-29T15:41:53] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-29T15:41:53 #5)
 [2025-07-29T18:44:55] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-29T18:44:55 #6)
+[2025-07-29T16:24:30] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-29T16:24:30 #7)
