@@ -275,3 +275,4 @@
 [2025-07-26T10:38:19] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-26T10:38:19 #10)
 [2025-07-26T13:07:45] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-07-26T13:07:45 #11)
 [2025-07-29T13:21:15] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-07-29T13:21:15 #1)
+[2025-07-29T14:03:20] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-29T14:03:20 #2)
