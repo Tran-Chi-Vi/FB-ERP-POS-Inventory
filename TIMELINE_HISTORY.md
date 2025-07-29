@@ -278,3 +278,4 @@
 [2025-07-29T14:03:20] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-29T14:03:20 #2)
 [2025-07-29T13:45:46] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-29T13:45:46 #3)
 [2025-07-29T12:54:50] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-07-29T12:54:50 #4)
+[2025-07-29T15:41:53] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-07-29T15:41:53 #5)
