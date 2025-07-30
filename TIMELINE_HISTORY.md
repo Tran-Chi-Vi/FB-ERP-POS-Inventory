@@ -2522,3 +2522,4 @@
 [2025-07-30T08:17:19] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-30T08:17:19 #7)
 [2025-07-30T16:43:35] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-07-30T16:43:35 #8)
 [2025-07-30T10:31:21] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-07-30T10:31:21 #9)
+[2025-07-30T15:12:53] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-30T15:12:53 #10)
