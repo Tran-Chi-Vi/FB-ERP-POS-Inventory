@@ -2514,3 +2514,4 @@
 [2025-07-29T21:22:47] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-29T21:22:47 #19)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-30T21:54:24] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-30T21:54:24 #1)
+[2025-07-30T08:00:41] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-30T08:00:41 #2)
