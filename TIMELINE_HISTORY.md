@@ -2530,3 +2530,4 @@
 [2025-07-30T08:45:07] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-30T08:45:07 #15)
 [2025-07-30T15:50:57] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-30T15:50:57 #16)
 [2025-07-30T18:27:00] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-30T18:27:00 #17)
+[2025-07-30T18:17:31] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-30T18:17:31 #18)
