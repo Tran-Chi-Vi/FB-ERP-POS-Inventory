@@ -296,3 +296,4 @@
 [2025-07-31T17:35:31] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-31T17:35:31 #1)
 [2025-07-31T14:08:46] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-31T14:08:46 #2)
 [2025-07-31T15:01:30] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-31T15:01:30 #3)
+[2025-07-31T10:36:14] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-31T10:36:14 #4)
