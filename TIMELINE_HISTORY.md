@@ -298,3 +298,4 @@
 [2025-07-31T15:01:30] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-31T15:01:30 #3)
 [2025-07-31T10:36:14] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-31T10:36:14 #4)
 [2025-07-31T08:08:05] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-31T08:08:05 #5)
+[2025-07-31T10:37:09] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-31T10:37:09 #6)
