@@ -2,3 +2,4 @@
 
 [2025-08-01T10:23:35] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-01T10:23:35 #1)
 [2025-08-01T09:30:05] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-01T09:30:05 #2)
+[2025-08-01T10:36:42] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-01T10:36:42 #3)
