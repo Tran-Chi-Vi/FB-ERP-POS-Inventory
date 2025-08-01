@@ -582,3 +582,4 @@
 [2025-08-01T09:07:52] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-01T09:07:52 #12)
 [2025-08-01T13:31:25] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-01T13:31:25 #13)
 [2025-08-01T15:44:03] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T15:44:03 #14)
+[2025-08-01T21:02:08] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-01T21:02:08 #15)
