@@ -578,3 +578,4 @@
 [2025-08-01T15:18:05] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-01T15:18:05 #8)
 [2025-08-01T20:06:44] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T20:06:44 #9)
 [2025-08-01T17:10:31] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-01T17:10:31 #10)
+[2025-08-01T21:32:31] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-01T21:32:31 #11)
