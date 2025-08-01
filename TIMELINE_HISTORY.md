@@ -2512,6 +2512,7 @@
 [2025-07-29T21:02:20] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-29T21:02:20 #17)
 [2025-07-29T21:38:31] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-29T21:38:31 #18)
 [2025-07-29T21:22:47] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-07-29T21:22:47 #19)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-07-30T21:54:24] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-07-30T21:54:24 #1)
 [2025-07-30T08:00:41] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-30T08:00:41 #2)
@@ -2531,3 +2532,13 @@
 [2025-07-30T15:50:57] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-30T15:50:57 #16)
 [2025-07-30T18:27:00] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-07-30T18:27:00 #17)
 [2025-07-30T18:17:31] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-07-30T18:17:31 #18)
+=======
+[2025-07-31T17:35:31] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-07-31T17:35:31 #1)
+[2025-07-31T14:08:46] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-31T14:08:46 #2)
+[2025-07-31T15:01:30] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-07-31T15:01:30 #3)
+[2025-07-31T10:36:14] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-07-31T10:36:14 #4)
+[2025-07-31T08:08:05] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-07-31T08:08:05 #5)
+[2025-07-31T10:37:09] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-31T10:37:09 #6)
+[2025-07-31T08:24:42] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-31T08:24:42 #7)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-01T16:36:45] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-01T16:36:45 #1)
