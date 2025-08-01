@@ -574,3 +574,4 @@
 [2025-08-01T16:46:32] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-01T16:46:32 #4)
 [2025-08-01T14:58:17] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T14:58:17 #5)
 [2025-08-01T11:49:02] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T11:49:02 #6)
+[2025-08-01T14:29:18] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-01T14:29:18 #7)
