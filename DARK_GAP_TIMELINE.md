@@ -13,3 +13,4 @@
 [2025-08-01T20:29:46] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-01T20:29:46 #11)
 [2025-08-01T10:04:59] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-01T10:04:59 #12)
 [2025-08-01T19:09:37] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-01T19:09:37 #13)
+[2025-08-01T15:27:41] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-01T15:27:41 #14)
