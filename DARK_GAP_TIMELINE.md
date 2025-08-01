@@ -567,3 +567,5 @@
 [2025-10-01T10:27:56] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-01T10:27:56 #1)
 [2025-10-01T15:27:26] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-01T15:27:26 #2)
 [2025-10-01T14:40:52] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-01T14:40:52 #3)
+[2025-10-01T09:38:07] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-01T09:38:07 #4)
+[2025-08-01T08:58:08] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-01T08:58:08 #1)
