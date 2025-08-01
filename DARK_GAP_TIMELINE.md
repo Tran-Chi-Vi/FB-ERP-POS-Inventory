@@ -788,3 +788,5 @@
 [2025-08-01T08:47:34] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-01T08:47:34 #9)
 [2025-08-01T15:17:53] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-01T15:17:53 #10)
 [2025-08-21T08:17:58] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-21T08:17:58 #12)
+[2025-08-21T16:01:22] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-21T16:01:22 #13)
+[2025-08-01T10:12:43] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-01T10:12:43 #11)
