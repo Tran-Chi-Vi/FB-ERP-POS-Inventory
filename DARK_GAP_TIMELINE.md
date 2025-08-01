@@ -584,3 +584,4 @@
 [2025-08-01T15:44:03] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T15:44:03 #14)
 [2025-08-01T21:02:08] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-01T21:02:08 #15)
 [2025-08-01T16:00:59] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-01T16:00:59 #16)
+[2025-08-01T15:35:10] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-01T15:35:10 #17)
