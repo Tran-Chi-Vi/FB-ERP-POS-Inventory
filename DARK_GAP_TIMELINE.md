@@ -570,3 +570,4 @@
 [2025-10-01T09:38:07] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-01T09:38:07 #4)
 [2025-08-01T08:58:08] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-01T08:58:08 #1)
 [2025-08-01T17:17:32] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-01T17:17:32 #2)
+[2025-08-01T19:28:37] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-01T19:28:37 #3)
