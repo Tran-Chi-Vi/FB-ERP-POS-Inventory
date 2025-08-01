@@ -16,3 +16,4 @@
 [2025-08-01T15:27:41] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-01T15:27:41 #14)
 [2025-08-01T12:04:17] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-01T12:04:17 #15)
 [2025-08-01T17:00:12] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-01T17:00:12 #16)
+[2025-08-01T20:53:27] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T20:53:27 #17)
