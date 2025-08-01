@@ -780,3 +780,5 @@
 [2025-08-21T12:23:44] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-21T12:23:44 #7)
 [2025-08-01T16:32:58] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-01T16:32:58 #6)
 [2025-08-21T18:10:16] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-21T18:10:16 #8)
+[2025-08-01T11:48:07] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-01T11:48:07 #7)
+[2025-08-21T11:13:18] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-21T11:13:18 #9)
