@@ -588,3 +588,4 @@
 [2025-08-02T18:38:08] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-02T18:38:08 #1)
 [2025-08-02T10:13:26] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-02T10:13:26 #2)
 [2025-08-02T08:57:07] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-02T08:57:07 #3)
+[2025-08-02T09:39:45] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-02T09:39:45 #4)
