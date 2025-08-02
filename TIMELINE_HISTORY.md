@@ -301,3 +301,4 @@
 [2025-07-31T10:37:09] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-07-31T10:37:09 #6)
 [2025-07-31T08:24:42] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-07-31T08:24:42 #7)
 [2025-08-02T17:47:51] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-02T17:47:51 #1)
+[2025-08-02T16:14:04] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-02T16:14:04 #2)
