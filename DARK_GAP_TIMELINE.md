@@ -975,3 +975,5 @@
 [2025-09-03T19:47:01] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-03T19:47:01 #13)
 [2025-09-03T21:07:21] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-03T21:07:21 #14)
 [2025-08-02T15:13:52] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-02T15:13:52 #2)
+[2025-08-02T09:12:09] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-02T09:12:09 #3)
+[2025-09-03T09:27:26] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-03T09:27:26 #15)
