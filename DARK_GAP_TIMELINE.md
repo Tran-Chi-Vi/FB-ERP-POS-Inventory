@@ -798,3 +798,5 @@
 [2025-08-01T19:29:07] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-01T19:29:07 #14)
 [2025-08-01T21:29:47] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-01T21:29:47 #15)
 [2025-08-22T10:15:40] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-22T10:15:40 #2)
+[2025-08-02T21:14:01] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-02T21:14:01 #1)
+[2025-08-22T16:52:46] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-22T16:52:46 #3)
