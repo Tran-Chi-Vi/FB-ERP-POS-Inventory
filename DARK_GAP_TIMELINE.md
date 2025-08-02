@@ -1065,3 +1065,4 @@
 [2025-09-12T13:07:31] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-12T13:07:31 #11)
 [2025-09-12T10:29:59] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-12T10:29:59 #12)
 [2025-09-12T16:48:44] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-12T16:48:44 #13)
+[2025-09-12T17:35:17] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-12T17:35:17 #14)
