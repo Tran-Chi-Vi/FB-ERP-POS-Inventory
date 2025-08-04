@@ -605,3 +605,4 @@
 [2025-08-04T11:58:50] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-04T11:58:50 #11)
 [2025-08-04T09:35:51] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-04T09:35:51 #12)
 [2025-08-04T15:47:02] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-04T15:47:02 #13)
+[2025-08-04T13:44:36] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-04T13:44:36 #14)
