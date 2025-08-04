@@ -814,3 +814,5 @@
 [2025-08-22T21:32:41] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-22T21:32:41 #9)
 [2025-08-22T09:11:32] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-22T09:11:32 #10)
 [2025-08-04T08:51:39] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-04T08:51:39 #2)
+[2025-08-04T21:01:06] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-04T21:01:06 #3)
+[2025-08-22T17:15:26] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-22T17:15:26 #11)
