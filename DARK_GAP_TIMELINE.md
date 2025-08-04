@@ -1068,3 +1068,4 @@
 [2025-09-12T17:35:17] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-12T17:35:17 #14)
 [2025-09-12T17:57:19] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-12T17:57:19 #15)
 [2025-09-12T08:53:22] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-12T08:53:22 #16)
+[2025-09-12T09:49:10] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-12T09:49:10 #17)
