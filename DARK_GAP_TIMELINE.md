@@ -822,3 +822,5 @@
 [2025-08-23T15:40:29] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-23T15:40:29 #1)
 [2025-08-23T12:24:47] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-23T12:24:47 #2)
 [2025-08-04T20:11:00] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-04T20:11:00 #6)
+[2025-08-04T11:29:04] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-04T11:29:04 #7)
+[2025-08-23T08:44:16] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-23T08:44:16 #3)
