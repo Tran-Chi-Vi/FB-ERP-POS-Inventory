@@ -810,3 +810,5 @@
 [2025-08-22T16:10:24] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-22T16:10:24 #7)
 [2025-08-22T09:58:15] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-22T09:58:15 #8)
 [2025-08-02T20:38:40] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-02T20:38:40 #6)
+[2025-08-04T09:02:34] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-04T09:02:34 #1)
+[2025-08-22T21:32:41] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-22T21:32:41 #9)
