@@ -1072,3 +1072,4 @@
 [2025-09-12T17:25:08] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-12T17:25:08 #18)
 [2025-09-12T10:43:37] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-12T10:43:37 #19)
 [2025-09-13T19:36:46] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-13T19:36:46 #1)
+[2025-09-13T09:27:34] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-13T09:27:34 #2)
