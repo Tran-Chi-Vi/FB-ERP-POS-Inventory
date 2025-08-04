@@ -818,3 +818,5 @@
 [2025-08-22T17:15:26] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-22T17:15:26 #11)
 [2025-08-22T11:44:38] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-22T11:44:38 #12)
 [2025-08-04T21:58:52] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-04T21:58:52 #4)
+[2025-08-04T08:56:34] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-04T08:56:34 #5)
+[2025-08-23T15:40:29] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-23T15:40:29 #1)
