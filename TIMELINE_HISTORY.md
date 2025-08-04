@@ -2576,3 +2576,4 @@
 [2025-08-04T16:49:00] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-04T16:49:00 #10)
 [2025-08-04T19:15:40] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-04T19:15:40 #11)
 [2025-08-04T21:22:29] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-04T21:22:29 #12)
+[2025-08-04T15:45:02] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-04T15:45:02 #13)
