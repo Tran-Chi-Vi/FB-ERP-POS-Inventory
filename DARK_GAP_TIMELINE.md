@@ -596,3 +596,4 @@
 [2025-08-04T21:35:33] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-04T21:35:33 #2)
 [2025-08-04T12:31:02] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-04T12:31:02 #3)
 [2025-08-04T08:54:41] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-04T08:54:41 #4)
+[2025-08-04T21:11:58] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-04T21:11:58 #5)
