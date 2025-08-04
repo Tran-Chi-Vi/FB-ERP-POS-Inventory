@@ -603,3 +603,4 @@
 [2025-08-04T11:11:14] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-04T11:11:14 #9)
 [2025-08-04T12:06:24] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-04T12:06:24 #10)
 [2025-08-04T11:58:50] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-04T11:58:50 #11)
+[2025-08-04T09:35:51] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-04T09:35:51 #12)
