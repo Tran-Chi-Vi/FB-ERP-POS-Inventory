@@ -25,3 +25,4 @@
 [2025-08-02T09:47:05] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-02T09:47:05 #5)
 [2025-08-04T20:04:42] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-04T20:04:42 #1)
 [2025-08-04T12:09:17] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-04T12:09:17 #2)
+[2025-08-04T17:45:28] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-04T17:45:28 #3)
