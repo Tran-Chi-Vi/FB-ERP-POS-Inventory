@@ -2578,3 +2578,4 @@
 [2025-08-04T21:22:29] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-04T21:22:29 #12)
 [2025-08-04T15:45:02] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-04T15:45:02 #13)
 [2025-08-04T14:16:21] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-04T14:16:21 #14)
+[2025-08-04T21:01:41] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-04T21:01:41 #15)
