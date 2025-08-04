@@ -2570,3 +2570,4 @@
 [2025-08-04T19:09:12] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-04T19:09:12 #4)
 [2025-08-04T20:47:48] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-04T20:47:48 #5)
 [2025-08-04T14:34:12] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-04T14:34:12 #6)
+[2025-08-04T16:57:22] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-04T16:57:22 #7)
