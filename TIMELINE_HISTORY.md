@@ -308,3 +308,4 @@
 [2025-08-02T20:59:15] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-02T20:59:15 #6)
 [2025-08-02T11:27:50] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-02T11:27:50 #7)
 [2025-08-02T11:02:29] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-02T11:02:29 #8)
+[2025-08-05T16:38:22] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-05T16:38:22 #1)
