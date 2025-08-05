@@ -828,3 +828,5 @@
 [2025-08-05T14:58:25] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-05T14:58:25 #1)
 [2025-08-05T18:55:30] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-05T18:55:30 #2)
 [2025-08-23T17:31:50] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-23T17:31:50 #5)
+[2025-08-05T21:41:10] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-05T21:41:10 #3)
+[2025-08-23T12:39:55] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-23T12:39:55 #6)
