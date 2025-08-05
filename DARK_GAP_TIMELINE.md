@@ -842,3 +842,5 @@
 [2025-08-23T18:35:40] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-23T18:35:40 #11)
 [2025-08-23T20:00:27] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-23T20:00:27 #12)
 [2025-08-05T11:02:54] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-05T11:02:54 #9)
+[2025-08-05T14:45:46] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-05T14:45:46 #10)
+[2025-08-23T16:46:41] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-23T16:46:41 #13)
