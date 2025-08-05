@@ -31,3 +31,4 @@
 [2025-08-04T13:18:49] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-04T13:18:49 #6)
 [2025-08-04T14:56:06] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-04T14:56:06 #7)
 [2025-08-05T20:03:47] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-05T20:03:47 #1)
+[2025-08-05T10:28:45] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-05T10:28:45 #2)
