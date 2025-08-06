@@ -622,3 +622,4 @@
 [2025-08-06T21:01:59] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-06T21:01:59 #4)
 [2025-08-06T20:17:15] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-06T20:17:15 #5)
 [2025-08-06T10:04:40] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-06T10:04:40 #6)
+[2025-08-06T09:21:30] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-06T09:21:30 #7)
