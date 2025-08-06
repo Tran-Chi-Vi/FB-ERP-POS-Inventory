@@ -626,3 +626,4 @@
 [2025-08-06T09:24:06] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-06T09:24:06 #8)
 [2025-08-06T21:17:46] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-06T21:17:46 #9)
 [2025-08-06T16:42:09] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-06T16:42:09 #10)
+[2025-08-06T15:37:44] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-06T15:37:44 #11)
