@@ -633,3 +633,4 @@
 [2025-08-06T16:09:02] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-06T16:09:02 #15)
 [2025-08-06T10:24:38] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-06T10:24:38 #16)
 [2025-08-06T14:33:50] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-06T14:33:50 #17)
+[2025-08-06T12:11:11] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-06T12:11:11 #18)
