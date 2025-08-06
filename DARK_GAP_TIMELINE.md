@@ -623,3 +623,4 @@
 [2025-08-06T20:17:15] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-06T20:17:15 #5)
 [2025-08-06T10:04:40] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-06T10:04:40 #6)
 [2025-08-06T09:21:30] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-06T09:21:30 #7)
+[2025-08-06T09:24:06] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-06T09:24:06 #8)
