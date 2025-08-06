@@ -2589,3 +2589,4 @@
 [2025-08-05T20:56:52] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-05T20:56:52 #6)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-06T16:37:58] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-06T16:37:58 #1)
+[2025-08-06T08:57:29] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-06T08:57:29 #2)
