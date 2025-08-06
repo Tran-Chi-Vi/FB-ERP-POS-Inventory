@@ -2591,3 +2591,4 @@
 [2025-08-06T16:37:58] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-06T16:37:58 #1)
 [2025-08-06T08:57:29] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-06T08:57:29 #2)
 [2025-08-06T18:40:57] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-06T18:40:57 #3)
+[2025-08-06T08:00:04] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-06T08:00:04 #4)
