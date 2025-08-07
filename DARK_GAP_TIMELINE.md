@@ -1105,3 +1105,4 @@
 [2025-09-16T15:19:20] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-16T15:19:20 #8)
 [2025-09-16T19:30:21] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-16T19:30:21 #9)
 [2025-09-16T17:52:27] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-16T17:52:27 #10)
+[2025-09-16T14:59:41] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-16T14:59:41 #11)
