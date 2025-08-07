@@ -314,3 +314,4 @@
 [2025-08-05T09:14:41] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-05T09:14:41 #4)
 [2025-08-05T17:24:37] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-05T17:24:37 #5)
 [2025-08-05T20:56:52] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-05T20:56:52 #6)
+[2025-08-07T16:42:24] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T16:42:24 #1)
