@@ -323,3 +323,4 @@
 [2025-08-07T21:44:01] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T21:44:01 #7)
 [2025-08-07T21:18:10] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T21:18:10 #8)
 [2025-08-07T17:51:00] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-07T17:51:00 #9)
+[2025-08-07T15:06:06] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-07T15:06:06 #10)
