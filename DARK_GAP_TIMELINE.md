@@ -47,3 +47,4 @@
 [2025-08-06T17:02:08] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-06T17:02:08 #6)
 [2025-08-06T11:27:57] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-06T11:27:57 #7)
 [2025-08-06T17:47:43] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-06T17:47:43 #8)
+[2025-08-07T18:28:42] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-07T18:28:42 #1)
