@@ -639,3 +639,4 @@
 [2025-08-07T11:37:12] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-07T11:37:12 #1)
 [2025-08-07T14:30:53] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-07T14:30:53 #2)
 [2025-08-07T17:53:55] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-07T17:53:55 #3)
+[2025-08-07T12:38:32] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-07T12:38:32 #4)
