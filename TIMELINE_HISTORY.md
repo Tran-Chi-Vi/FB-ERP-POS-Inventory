@@ -320,3 +320,4 @@
 [2025-08-07T11:45:00] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-07T11:45:00 #4)
 [2025-08-07T16:29:36] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-07T16:29:36 #5)
 [2025-08-07T09:33:42] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-07T09:33:42 #6)
+[2025-08-07T21:44:01] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T21:44:01 #7)
