@@ -316,3 +316,4 @@
 [2025-08-05T20:56:52] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-05T20:56:52 #6)
 [2025-08-07T16:42:24] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T16:42:24 #1)
 [2025-08-07T15:13:24] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-07T15:13:24 #2)
+[2025-08-07T16:41:58] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-07T16:41:58 #3)
