@@ -51,3 +51,4 @@
 [2025-08-07T10:25:39] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-07T10:25:39 #2)
 [2025-08-07T16:58:45] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-07T16:58:45 #3)
 [2025-08-07T17:04:36] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-07T17:04:36 #4)
+[2025-08-07T11:39:52] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-07T11:39:52 #5)
