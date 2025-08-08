@@ -2632,3 +2632,4 @@
 [2025-08-08T14:27:57] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-08T14:27:57 #15)
 [2025-08-08T18:50:33] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-08T18:50:33 #16)
 [2025-08-08T19:44:04] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-08T19:44:04 #17)
+[2025-08-08T21:08:35] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-08T21:08:35 #18)
