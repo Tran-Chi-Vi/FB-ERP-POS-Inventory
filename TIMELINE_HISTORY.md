@@ -2626,3 +2626,4 @@
 [2025-08-08T13:15:39] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-08T13:15:39 #9)
 [2025-08-08T14:56:38] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-08T14:56:38 #10)
 [2025-08-08T19:23:53] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-08T19:23:53 #11)
+[2025-08-08T11:05:30] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-08T11:05:30 #12)
