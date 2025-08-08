@@ -2616,3 +2616,4 @@
 [2025-08-07T13:19:46] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-07T13:19:46 #16)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-08T11:11:15] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-08T11:11:15 #1)
+[2025-08-08T13:46:30] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-08T13:46:30 #2)
