@@ -1116,3 +1116,4 @@
 [2025-09-16T11:36:59] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-16T11:36:59 #19)
 [2025-09-16T10:14:37] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-16T10:14:37 #20)
 [2025-09-17T14:47:31] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-17T14:47:31 #1)
+[2025-09-17T16:00:58] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-17T16:00:58 #2)
