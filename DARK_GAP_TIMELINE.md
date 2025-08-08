@@ -53,3 +53,8 @@
 [2025-08-07T17:04:36] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-07T17:04:36 #4)
 [2025-08-07T11:39:52] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-07T11:39:52 #5)
 [2025-08-07T21:47:35] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-07T21:47:35 #6)
+[2025-08-08T20:27:17] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-08T20:27:17 #1)
+[2025-08-08T09:02:06] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-08T09:02:06 #2)
+[2025-08-08T16:21:28] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-08T16:21:28 #3)
+[2025-08-08T19:01:11] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-08T19:01:11 #4)
+[2025-08-08T16:13:58] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-08T16:13:58 #5)
