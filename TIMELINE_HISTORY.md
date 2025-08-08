@@ -2621,3 +2621,4 @@
 [2025-08-08T15:10:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-08T15:10:39 #4)
 [2025-08-08T09:10:45] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-08T09:10:45 #5)
 [2025-08-08T21:13:59] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-08T21:13:59 #6)
+[2025-08-08T18:56:52] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-08T18:56:52 #7)
