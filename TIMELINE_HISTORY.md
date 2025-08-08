@@ -2587,6 +2587,7 @@
 [2025-08-05T09:14:41] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-05T09:14:41 #4)
 [2025-08-05T17:24:37] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-05T17:24:37 #5)
 [2025-08-05T20:56:52] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-05T20:56:52 #6)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-06T16:37:58] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-06T16:37:58 #1)
 [2025-08-06T08:57:29] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-06T08:57:29 #2)
@@ -2596,3 +2597,22 @@
 [2025-08-06T14:33:39] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-06T14:33:39 #6)
 [2025-08-06T08:41:08] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-06T08:41:08 #7)
 [2025-08-06T21:12:40] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-06T21:12:40 #8)
+=======
+[2025-08-07T16:42:24] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T16:42:24 #1)
+[2025-08-07T15:13:24] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-07T15:13:24 #2)
+[2025-08-07T16:41:58] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-07T16:41:58 #3)
+[2025-08-07T11:45:00] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-07T11:45:00 #4)
+[2025-08-07T16:29:36] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-07T16:29:36 #5)
+[2025-08-07T09:33:42] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-07T09:33:42 #6)
+[2025-08-07T21:44:01] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T21:44:01 #7)
+[2025-08-07T21:18:10] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-07T21:18:10 #8)
+[2025-08-07T17:51:00] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-07T17:51:00 #9)
+[2025-08-07T15:06:06] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-07T15:06:06 #10)
+[2025-08-07T13:32:01] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-07T13:32:01 #11)
+[2025-08-07T11:27:34] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-07T11:27:34 #12)
+[2025-08-07T14:35:38] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-07T14:35:38 #13)
+[2025-08-07T09:44:42] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-07T09:44:42 #14)
+[2025-08-07T19:06:37] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-07T19:06:37 #15)
+[2025-08-07T13:19:46] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-07T13:19:46 #16)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-08T11:11:15] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-08T11:11:15 #1)
