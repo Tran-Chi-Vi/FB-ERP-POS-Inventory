@@ -647,3 +647,4 @@
 [2025-08-08T11:07:21] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-08T11:07:21 #3)
 [2025-08-08T15:36:18] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-08T15:36:18 #4)
 [2025-08-08T13:35:05] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-08T13:35:05 #5)
+[2025-08-08T20:08:47] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-08T20:08:47 #6)
