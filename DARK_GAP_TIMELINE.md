@@ -1122,3 +1122,4 @@
 [2025-09-17T09:01:24] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-17T09:01:24 #5)
 [2025-09-17T14:50:15] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-17T14:50:15 #6)
 [2025-09-17T12:35:24] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-17T12:35:24 #7)
+[2025-09-17T13:30:48] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-17T13:30:48 #8)
