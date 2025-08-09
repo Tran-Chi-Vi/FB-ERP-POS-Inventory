@@ -338,3 +338,4 @@
 [2025-08-09T20:57:41] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-09T20:57:41 #6)
 [2025-08-09T17:35:34] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-09T17:35:34 #7)
 [2025-08-09T09:49:59] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-09T09:49:59 #8)
+[2025-08-09T16:50:30] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-09T16:50:30 #9)
