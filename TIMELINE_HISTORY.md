@@ -330,3 +330,4 @@
 [2025-08-07T09:44:42] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-07T09:44:42 #14)
 [2025-08-07T19:06:37] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-07T19:06:37 #15)
 [2025-08-07T13:19:46] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-07T13:19:46 #16)
+[2025-08-09T14:02:53] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-09T14:02:53 #1)
