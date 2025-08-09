@@ -336,3 +336,4 @@
 [2025-08-09T15:02:52] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-09T15:02:52 #4)
 [2025-08-09T09:34:02] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-09T09:34:02 #5)
 [2025-08-09T20:57:41] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-09T20:57:41 #6)
+[2025-08-09T17:35:34] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-09T17:35:34 #7)
