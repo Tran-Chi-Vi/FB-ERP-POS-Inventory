@@ -332,3 +332,4 @@
 [2025-08-07T13:19:46] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-07T13:19:46 #16)
 [2025-08-09T14:02:53] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-09T14:02:53 #1)
 [2025-08-09T09:44:13] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-09T09:44:13 #2)
+[2025-08-09T13:22:50] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-09T13:22:50 #3)
