@@ -2662,3 +2662,4 @@
 [2025-08-11T12:40:17] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-11T12:40:17 #9)
 [2025-08-11T15:10:32] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-11T15:10:32 #10)
 [2025-08-11T08:25:04] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-11T08:25:04 #11)
+[2025-08-11T09:26:26] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-11T09:26:26 #12)
