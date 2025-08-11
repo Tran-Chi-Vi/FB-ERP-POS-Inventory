@@ -71,3 +71,4 @@
 [2025-08-11T09:24:16] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T09:24:16 #6)
 [2025-08-11T12:23:27] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-11T12:23:27 #7)
 [2025-08-11T08:20:35] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-11T08:20:35 #8)
+[2025-08-11T19:13:03] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-11T19:13:03 #9)
