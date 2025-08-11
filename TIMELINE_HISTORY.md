@@ -2653,3 +2653,4 @@
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-11T21:17:00] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-11T21:17:00 #1)
 [2025-08-11T21:10:17] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-11T21:10:17 #2)
+[2025-08-11T15:40:49] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-11T15:40:49 #3)
