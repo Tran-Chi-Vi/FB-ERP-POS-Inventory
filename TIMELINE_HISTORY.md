@@ -2660,3 +2660,4 @@
 [2025-08-11T14:14:53] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-11T14:14:53 #7)
 [2025-08-11T08:55:48] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-11T08:55:48 #8)
 [2025-08-11T12:40:17] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-11T12:40:17 #9)
+[2025-08-11T15:10:32] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-11T15:10:32 #10)
