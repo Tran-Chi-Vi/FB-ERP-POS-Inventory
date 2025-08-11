@@ -667,3 +667,4 @@
 [2025-08-11T19:51:30] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T19:51:30 #3)
 [2025-08-11T09:40:11] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-11T09:40:11 #4)
 [2025-08-11T10:05:13] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-11T10:05:13 #5)
+[2025-08-11T16:54:20] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T16:54:20 #6)
