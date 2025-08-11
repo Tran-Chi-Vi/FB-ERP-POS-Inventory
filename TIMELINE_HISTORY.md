@@ -2657,3 +2657,4 @@
 [2025-08-11T10:41:40] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-11T10:41:40 #4)
 [2025-08-11T15:03:34] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-11T15:03:34 #5)
 [2025-08-11T17:21:01] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-11T17:21:01 #6)
+[2025-08-11T14:14:53] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-11T14:14:53 #7)
