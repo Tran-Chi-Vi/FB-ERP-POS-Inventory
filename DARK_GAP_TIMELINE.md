@@ -674,3 +674,4 @@
 [2025-08-11T21:55:00] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-11T21:55:00 #10)
 [2025-08-11T18:14:15] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-11T18:14:15 #11)
 [2025-08-11T16:05:37] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-11T16:05:37 #12)
+[2025-08-11T09:45:39] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-11T09:45:39 #13)
