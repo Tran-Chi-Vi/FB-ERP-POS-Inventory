@@ -65,3 +65,4 @@
 [2025-08-09T16:13:32] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-09T16:13:32 #5)
 [2025-08-11T19:01:33] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-11T19:01:33 #1)
 [2025-08-11T20:56:58] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-11T20:56:58 #2)
+[2025-08-11T16:07:02] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-11T16:07:02 #3)
