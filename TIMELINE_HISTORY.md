@@ -2655,3 +2655,4 @@
 [2025-08-11T21:10:17] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-11T21:10:17 #2)
 [2025-08-11T15:40:49] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-11T15:40:49 #3)
 [2025-08-11T10:41:40] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-11T10:41:40 #4)
+[2025-08-11T15:03:34] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-11T15:03:34 #5)
