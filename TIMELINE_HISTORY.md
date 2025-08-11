@@ -2668,3 +2668,4 @@
 [2025-08-11T18:23:50] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-11T18:23:50 #15)
 [2025-08-11T10:43:05] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-11T10:43:05 #16)
 [2025-08-11T09:28:24] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-11T09:28:24 #17)
+[2025-08-11T08:34:16] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-11T08:34:16 #18)
