@@ -675,3 +675,4 @@
 [2025-08-11T18:14:15] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-11T18:14:15 #11)
 [2025-08-11T16:05:37] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-11T16:05:37 #12)
 [2025-08-11T09:45:39] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-11T09:45:39 #13)
+[2025-08-11T21:31:08] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T21:31:08 #14)
