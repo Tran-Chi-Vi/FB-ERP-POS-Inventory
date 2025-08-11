@@ -2664,3 +2664,4 @@
 [2025-08-11T08:25:04] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-11T08:25:04 #11)
 [2025-08-11T09:26:26] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-11T09:26:26 #12)
 [2025-08-11T10:11:31] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-11T10:11:31 #13)
+[2025-08-11T21:23:14] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-11T21:23:14 #14)
