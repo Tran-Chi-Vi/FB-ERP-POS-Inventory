@@ -68,3 +68,4 @@
 [2025-08-11T16:07:02] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-11T16:07:02 #3)
 [2025-08-11T08:15:27] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-11T08:15:27 #4)
 [2025-08-11T08:56:54] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-11T08:56:54 #5)
+[2025-08-11T09:24:16] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T09:24:16 #6)
