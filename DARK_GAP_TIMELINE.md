@@ -665,3 +665,4 @@
 [2025-08-11T19:05:45] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-11T19:05:45 #1)
 [2025-08-11T10:11:31] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T10:11:31 #2)
 [2025-08-11T19:51:30] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T19:51:30 #3)
+[2025-08-11T09:40:11] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-11T09:40:11 #4)
