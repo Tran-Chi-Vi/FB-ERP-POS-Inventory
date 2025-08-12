@@ -1153,3 +1153,4 @@
 [2025-09-20T10:05:26] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T10:05:26 #3)
 [2025-09-20T20:00:46] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-20T20:00:46 #4)
 [2025-09-20T08:38:50] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T08:38:50 #5)
+[2025-09-20T11:26:19] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-20T11:26:19 #6)
