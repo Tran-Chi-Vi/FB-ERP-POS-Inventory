@@ -680,3 +680,4 @@
 [2025-08-11T08:33:46] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-11T08:33:46 #16)
 [2025-08-11T17:56:45] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-11T17:56:45 #17)
 [2025-08-11T11:05:02] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-11T11:05:02 #18)
+[2025-08-12T21:47:48] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-12T21:47:48 #1)
