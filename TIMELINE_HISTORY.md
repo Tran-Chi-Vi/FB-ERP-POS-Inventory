@@ -345,3 +345,4 @@
 [2025-08-09T12:28:20] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-09T12:28:20 #13)
 [2025-08-09T09:58:29] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-09T09:58:29 #14)
 [2025-08-09T11:26:22] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-09T11:26:22 #15)
+[2025-08-12T18:54:49] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-12T18:54:49 #1)
