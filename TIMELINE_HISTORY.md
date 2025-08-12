@@ -354,3 +354,4 @@
 [2025-08-12T19:38:34] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-12T19:38:34 #7)
 [2025-08-12T17:52:05] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-12T17:52:05 #8)
 [2025-08-12T13:31:30] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-12T13:31:30 #9)
+[2025-08-12T12:52:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-12T12:52:39 #10)
