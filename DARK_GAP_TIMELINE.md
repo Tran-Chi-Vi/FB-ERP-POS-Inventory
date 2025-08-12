@@ -1149,3 +1149,4 @@
 [2025-09-19T15:50:21] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-19T15:50:21 #9)
 [2025-09-19T12:12:29] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-19T12:12:29 #10)
 [2025-09-20T09:03:07] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T09:03:07 #1)
+[2025-09-20T17:13:36] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-20T17:13:36 #2)
