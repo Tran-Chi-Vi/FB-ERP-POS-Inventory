@@ -79,3 +79,4 @@
 [2025-08-11T21:02:22] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T21:02:22 #14)
 [2025-08-12T08:05:28] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-12T08:05:28 #1)
 [2025-08-12T16:54:59] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-12T16:54:59 #2)
+[2025-08-12T11:29:22] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-12T11:29:22 #3)
