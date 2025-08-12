@@ -77,3 +77,4 @@
 [2025-08-11T15:50:09] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T15:50:09 #12)
 [2025-08-11T08:20:41] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-11T08:20:41 #13)
 [2025-08-11T21:02:22] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-11T21:02:22 #14)
+[2025-08-12T08:05:28] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-12T08:05:28 #1)
