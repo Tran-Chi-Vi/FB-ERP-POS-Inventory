@@ -87,3 +87,4 @@
 [2025-08-13T12:25:01] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-13T12:25:01 #2)
 [2025-08-13T14:36:24] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-13T14:36:24 #3)
 [2025-08-13T12:02:37] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-13T12:02:37 #4)
+[2025-08-13T16:57:30] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-13T16:57:30 #5)
