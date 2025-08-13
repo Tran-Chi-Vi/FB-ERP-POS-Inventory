@@ -2684,3 +2684,4 @@
 [2025-08-12T12:52:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-12T12:52:39 #10)
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-13T17:36:07] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-13T17:36:07 #1)
+[2025-08-13T15:30:29] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-13T15:30:29 #2)
