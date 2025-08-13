@@ -83,3 +83,4 @@
 [2025-08-12T14:47:11] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-12T14:47:11 #4)
 [2025-08-12T20:16:16] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-12T20:16:16 #5)
 [2025-08-12T17:35:41] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-12T17:35:41 #6)
+[2025-08-13T20:07:50] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-13T20:07:50 #1)
