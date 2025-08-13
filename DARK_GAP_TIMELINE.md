@@ -1166,3 +1166,4 @@
 [2025-09-20T20:29:36] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T20:29:36 #16)
 [2025-09-20T09:02:52] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-20T09:02:52 #17)
 [2025-09-20T09:47:07] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-20T09:47:07 #18)
+[2025-09-22T17:02:43] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-22T17:02:43 #1)
