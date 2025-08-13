@@ -2650,6 +2650,7 @@
 [2025-08-09T12:28:20] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-09T12:28:20 #13)
 [2025-08-09T09:58:29] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-09T09:58:29 #14)
 [2025-08-09T11:26:22] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-09T11:26:22 #15)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-11T21:17:00] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-11T21:17:00 #1)
 [2025-08-11T21:10:17] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-11T21:10:17 #2)
@@ -2670,3 +2671,16 @@
 [2025-08-11T09:28:24] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-11T09:28:24 #17)
 [2025-08-11T08:34:16] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-11T08:34:16 #18)
 [2025-08-11T08:36:55] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-11T08:36:55 #19)
+=======
+[2025-08-12T18:54:49] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-12T18:54:49 #1)
+[2025-08-12T10:04:35] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-12T10:04:35 #2)
+[2025-08-12T11:48:37] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-08-12T11:48:37 #3)
+[2025-08-12T15:45:12] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-12T15:45:12 #4)
+[2025-08-12T17:05:42] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-12T17:05:42 #5)
+[2025-08-12T11:12:10] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-12T11:12:10 #6)
+[2025-08-12T19:38:34] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-12T19:38:34 #7)
+[2025-08-12T17:52:05] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-12T17:52:05 #8)
+[2025-08-12T13:31:30] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-12T13:31:30 #9)
+[2025-08-12T12:52:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-12T12:52:39 #10)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-13T17:36:07] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-13T17:36:07 #1)
