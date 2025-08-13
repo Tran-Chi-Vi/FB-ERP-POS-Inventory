@@ -2694,3 +2694,4 @@
 [2025-08-13T15:36:42] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-13T15:36:42 #9)
 [2025-08-13T19:15:33] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-13T19:15:33 #10)
 [2025-08-13T20:51:50] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-13T20:51:50 #11)
+[2025-08-13T12:31:50] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-13T12:31:50 #12)
