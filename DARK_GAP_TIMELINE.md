@@ -1164,3 +1164,4 @@
 [2025-09-20T08:29:13] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T08:29:13 #14)
 [2025-09-20T17:40:30] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T17:40:30 #15)
 [2025-09-20T20:29:36] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T20:29:36 #16)
+[2025-09-20T09:02:52] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-20T09:02:52 #17)
