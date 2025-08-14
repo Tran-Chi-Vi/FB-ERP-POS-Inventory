@@ -89,3 +89,4 @@
 [2025-08-13T12:02:37] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-13T12:02:37 #4)
 [2025-08-13T16:57:30] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-13T16:57:30 #5)
 [2025-08-14T15:31:32] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-14T15:31:32 #1)
+[2025-08-14T10:50:28] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-14T10:50:28 #2)
