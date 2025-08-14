@@ -357,3 +357,4 @@
 [2025-08-12T12:52:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-12T12:52:39 #10)
 [2025-08-14T17:52:35] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-14T17:52:35 #1)
 [2025-08-14T21:52:48] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-14T21:52:48 #2)
+[2025-08-14T13:41:04] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-14T13:41:04 #3)
