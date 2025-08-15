@@ -2725,3 +2725,4 @@
 [2025-08-15T13:09:39] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-15T13:09:39 #10)
 [2025-08-15T08:16:28] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-15T08:16:28 #11)
 [2025-08-15T14:27:46] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-15T14:27:46 #12)
+[2025-08-15T10:37:23] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-15T10:37:23 #13)
