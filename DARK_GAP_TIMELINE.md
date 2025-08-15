@@ -712,3 +712,4 @@
 [2025-08-14T16:36:39] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-14T16:36:39 #8)
 [2025-08-14T12:46:31] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-14T12:46:31 #9)
 [2025-08-15T09:44:29] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-15T09:44:29 #1)
+[2025-08-15T20:53:53] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-15T20:53:53 #2)
