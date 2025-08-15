@@ -102,3 +102,4 @@
 [2025-08-15T21:36:28] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-15T21:36:28 #6)
 [2025-08-15T11:43:06] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-15T11:43:06 #7)
 [2025-08-15T10:36:37] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-15T10:36:37 #8)
+[2025-08-15T12:51:45] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-15T12:51:45 #9)
