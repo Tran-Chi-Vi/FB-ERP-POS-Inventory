@@ -2718,3 +2718,4 @@
 [2025-08-15T11:41:34] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-15T11:41:34 #3)
 [2025-08-15T12:12:33] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-15T12:12:33 #4)
 [2025-08-15T20:15:40] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-15T20:15:40 #5)
+[2025-08-15T18:10:46] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-15T18:10:46 #6)
