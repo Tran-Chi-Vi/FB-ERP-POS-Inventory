@@ -2724,3 +2724,4 @@
 [2025-08-15T20:41:28] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-15T20:41:28 #9)
 [2025-08-15T13:09:39] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-15T13:09:39 #10)
 [2025-08-15T08:16:28] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-15T08:16:28 #11)
+[2025-08-15T14:27:46] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-15T14:27:46 #12)
