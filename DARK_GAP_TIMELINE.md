@@ -715,3 +715,4 @@
 [2025-08-15T20:53:53] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-15T20:53:53 #2)
 [2025-08-15T19:06:39] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-15T19:06:39 #3)
 [2025-08-15T12:50:43] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-15T12:50:43 #4)
+[2025-08-15T08:07:36] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-15T08:07:36 #5)
