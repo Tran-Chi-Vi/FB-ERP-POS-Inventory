@@ -2682,6 +2682,7 @@
 [2025-08-12T17:52:05] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-12T17:52:05 #8)
 [2025-08-12T13:31:30] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-12T13:31:30 #9)
 [2025-08-12T12:52:39] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-12T12:52:39 #10)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-13T17:36:07] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-13T17:36:07 #1)
 [2025-08-13T15:30:29] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-13T15:30:29 #2)
@@ -2703,3 +2704,13 @@
 [2025-08-13T17:27:07] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-08-13T17:27:07 #18)
 [2025-08-13T16:33:19] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-13T16:33:19 #19)
 [2025-08-13T10:19:27] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-13T10:19:27 #20)
+=======
+[2025-08-14T17:52:35] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-14T17:52:35 #1)
+[2025-08-14T21:52:48] [feat/be-ai-prompt-skills-optimizer] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-08-14T21:52:48 #2)
+[2025-08-14T13:41:04] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-14T13:41:04 #3)
+[2025-08-14T15:22:41] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-14T15:22:41 #4)
+[2025-08-14T17:53:32] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T17:53:32 #5)
+[2025-08-14T09:17:41] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-14T09:17:41 #6)
+[2025-08-14T11:37:26] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T11:37:26 #7)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-15T18:06:46] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-15T18:06:46 #1)
