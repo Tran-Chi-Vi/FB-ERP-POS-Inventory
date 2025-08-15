@@ -94,3 +94,4 @@
 [2025-08-14T08:09:19] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-14T08:09:19 #4)
 [2025-08-14T16:39:28] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-14T16:39:28 #5)
 [2025-08-14T10:20:03] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-14T10:20:03 #6)
+[2025-08-15T17:51:02] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-15T17:51:02 #1)
