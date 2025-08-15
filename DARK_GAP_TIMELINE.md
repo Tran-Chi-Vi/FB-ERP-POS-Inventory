@@ -98,3 +98,4 @@
 [2025-08-15T09:07:10] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-15T09:07:10 #2)
 [2025-08-15T11:54:40] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-15T11:54:40 #3)
 [2025-08-15T17:34:29] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-15T17:34:29 #4)
+[2025-08-15T08:28:17] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-15T08:28:17 #5)
