@@ -362,3 +362,4 @@
 [2025-08-14T17:53:32] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T17:53:32 #5)
 [2025-08-14T09:17:41] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-14T09:17:41 #6)
 [2025-08-14T11:37:26] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T11:37:26 #7)
+[2025-08-16T17:58:40] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-16T17:58:40 #1)
