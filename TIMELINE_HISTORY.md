@@ -363,3 +363,4 @@
 [2025-08-14T09:17:41] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-14T09:17:41 #6)
 [2025-08-14T11:37:26] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T11:37:26 #7)
 [2025-08-16T17:58:40] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-16T17:58:40 #1)
+[2025-08-16T13:10:29] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-16T13:10:29 #2)
