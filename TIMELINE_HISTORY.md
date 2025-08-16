@@ -366,3 +366,4 @@
 [2025-08-16T13:10:29] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-16T13:10:29 #2)
 [2025-08-16T12:10:56] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-16T12:10:56 #3)
 [2025-08-16T13:00:15] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-16T13:00:15 #4)
+[2025-08-16T18:33:52] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-16T18:33:52 #5)
