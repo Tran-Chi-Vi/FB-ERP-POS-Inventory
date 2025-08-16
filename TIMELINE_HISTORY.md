@@ -364,3 +364,4 @@
 [2025-08-14T11:37:26] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T11:37:26 #7)
 [2025-08-16T17:58:40] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-16T17:58:40 #1)
 [2025-08-16T13:10:29] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-16T13:10:29 #2)
+[2025-08-16T12:10:56] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-16T12:10:56 #3)
