@@ -114,3 +114,4 @@
 [2025-08-16T14:19:06] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-16T14:19:06 #3)
 [2025-08-16T15:04:59] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-16T15:04:59 #4)
 [2025-08-16T21:16:01] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-16T21:16:01 #5)
+[2025-08-16T08:16:13] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-16T08:16:13 #6)
