@@ -109,3 +109,4 @@
 [2025-08-15T20:26:17] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-15T20:26:17 #13)
 [2025-08-15T17:46:21] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-15T17:46:21 #14)
 [2025-08-15T09:26:07] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-15T09:26:07 #15)
+[2025-08-16T20:42:45] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-16T20:42:45 #1)
