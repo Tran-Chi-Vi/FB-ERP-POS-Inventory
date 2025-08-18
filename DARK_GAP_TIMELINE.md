@@ -1194,3 +1194,4 @@
 [2025-09-23T12:17:52] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-23T12:17:52 #13)
 [2025-09-23T14:20:22] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-23T14:20:22 #14)
 [2025-09-23T20:36:00] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-23T20:36:00 #15)
+[2025-09-23T19:12:08] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-23T19:12:08 #16)
