@@ -2712,6 +2712,7 @@
 [2025-08-14T17:53:32] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T17:53:32 #5)
 [2025-08-14T09:17:41] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-14T09:17:41 #6)
 [2025-08-14T11:37:26] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-14T11:37:26 #7)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-15T18:06:46] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-15T18:06:46 #1)
 [2025-08-15T19:34:09] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-15T19:34:09 #2)
@@ -2729,3 +2730,11 @@
 [2025-08-15T09:15:14] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-15T09:15:14 #14)
 [2025-08-15T08:27:12] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-15T08:27:12 #15)
 [2025-08-15T13:43:00] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-15T13:43:00 #16)
+=======
+[2025-08-16T17:58:40] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-16T17:58:40 #1)
+[2025-08-16T13:10:29] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-16T13:10:29 #2)
+[2025-08-16T12:10:56] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-16T12:10:56 #3)
+[2025-08-16T13:00:15] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-16T13:00:15 #4)
+[2025-08-16T18:33:52] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-16T18:33:52 #5)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-18T15:11:32] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-18T15:11:32 #1)
