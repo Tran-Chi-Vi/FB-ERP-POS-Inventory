@@ -733,3 +733,4 @@
 [2025-08-16T20:16:32] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-16T20:16:32 #8)
 [2025-08-16T19:10:26] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-16T19:10:26 #9)
 [2025-08-18T17:21:48] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-18T17:21:48 #1)
+[2025-08-18T14:04:36] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-18T14:04:36 #2)
