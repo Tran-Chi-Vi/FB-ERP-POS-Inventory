@@ -129,3 +129,4 @@
 [2025-08-18T08:04:25] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-18T08:04:25 #3)
 [2025-08-18T09:51:37] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-18T09:51:37 #4)
 [2025-08-18T12:23:41] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-18T12:23:41 #5)
+[2025-08-18T15:16:04] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-18T15:16:04 #6)
