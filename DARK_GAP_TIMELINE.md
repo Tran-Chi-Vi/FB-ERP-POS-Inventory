@@ -135,3 +135,4 @@
 [2025-08-18T10:32:20] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-18T10:32:20 #9)
 [2025-08-18T09:40:28] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-18T09:40:28 #10)
 [2025-08-18T09:30:35] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-18T09:30:35 #11)
+[2025-08-18T11:46:39] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-18T11:46:39 #12)
