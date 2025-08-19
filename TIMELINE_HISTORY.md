@@ -371,3 +371,4 @@
 [2025-08-19T17:11:03] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-19T17:11:03 #2)
 [2025-08-19T17:17:56] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-19T17:17:56 #3)
 [2025-08-19T11:56:59] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-19T11:56:59 #4)
+[2025-08-19T14:16:32] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-19T14:16:32 #5)
