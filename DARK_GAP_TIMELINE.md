@@ -147,3 +147,4 @@
 [2025-08-19T14:19:06] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-19T14:19:06 #9)
 [2025-08-19T21:06:52] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-19T21:06:52 #10)
 [2025-08-19T14:58:56] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-19T14:58:56 #11)
+[2025-08-19T15:46:48] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-19T15:46:48 #12)
