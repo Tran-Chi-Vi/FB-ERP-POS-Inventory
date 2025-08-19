@@ -137,3 +137,4 @@
 [2025-08-18T09:30:35] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-18T09:30:35 #11)
 [2025-08-18T11:46:39] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-18T11:46:39 #12)
 [2025-08-19T21:42:27] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-19T21:42:27 #1)
+[2025-08-19T08:23:59] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-19T08:23:59 #2)
