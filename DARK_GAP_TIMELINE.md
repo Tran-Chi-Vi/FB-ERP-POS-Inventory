@@ -1202,3 +1202,4 @@
 [2025-09-24T15:44:34] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-24T15:44:34 #3)
 [2025-09-24T11:16:31] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-24T11:16:31 #4)
 [2025-09-24T13:36:45] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-24T13:36:45 #5)
+[2025-09-24T17:24:40] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-24T17:24:40 #6)
