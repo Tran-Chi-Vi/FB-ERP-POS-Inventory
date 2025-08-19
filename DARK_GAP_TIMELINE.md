@@ -1206,3 +1206,4 @@
 [2025-09-24T15:54:55] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-24T15:54:55 #7)
 [2025-09-24T21:56:27] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-24T21:56:27 #8)
 [2025-09-24T17:34:28] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-24T17:34:28 #9)
+[2025-09-24T20:39:54] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-24T20:39:54 #10)
