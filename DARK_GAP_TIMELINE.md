@@ -149,3 +149,4 @@
 [2025-08-19T14:58:56] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-19T14:58:56 #11)
 [2025-08-19T15:46:48] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-19T15:46:48 #12)
 [2025-08-19T11:21:48] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-19T11:21:48 #13)
+[2025-08-19T20:46:32] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-19T20:46:32 #14)
