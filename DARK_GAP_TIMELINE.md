@@ -139,3 +139,4 @@
 [2025-08-19T21:42:27] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-19T21:42:27 #1)
 [2025-08-19T08:23:59] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-19T08:23:59 #2)
 [2025-08-19T14:29:32] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-19T14:29:32 #3)
+[2025-08-19T17:57:37] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-19T17:57:37 #4)
