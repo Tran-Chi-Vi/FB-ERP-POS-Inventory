@@ -378,3 +378,4 @@
 [2025-08-19T16:09:58] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-19T16:09:58 #9)
 [2025-08-19T08:55:32] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-19T08:55:32 #10)
 [2025-08-19T11:42:52] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-19T11:42:52 #11)
+[2025-08-19T16:17:28] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-19T16:17:28 #12)
