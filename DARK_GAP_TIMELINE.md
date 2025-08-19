@@ -141,3 +141,4 @@
 [2025-08-19T14:29:32] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-19T14:29:32 #3)
 [2025-08-19T17:57:37] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-19T17:57:37 #4)
 [2025-08-19T18:26:31] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-19T18:26:31 #5)
+[2025-08-19T12:32:09] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-19T12:32:09 #6)
