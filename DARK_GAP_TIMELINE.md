@@ -748,3 +748,4 @@
 [2025-08-19T17:11:33] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-19T17:11:33 #9)
 [2025-08-19T12:37:29] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-19T12:37:29 #10)
 [2025-08-20T20:46:37] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-20T20:46:37 #1)
+[2025-08-20T12:29:04] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-20T12:29:04 #2)
