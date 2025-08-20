@@ -2779,3 +2779,4 @@
 [2025-08-20T20:24:10] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-20T20:24:10 #8)
 [2025-08-20T18:02:28] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-20T18:02:28 #9)
 [2025-08-20T09:20:28] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-20T09:20:28 #10)
+[2025-08-20T17:58:03] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-20T17:58:03 #11)
