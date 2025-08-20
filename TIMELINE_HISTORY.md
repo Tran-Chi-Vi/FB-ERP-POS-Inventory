@@ -2774,3 +2774,4 @@
 [2025-08-20T20:54:37] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-20T20:54:37 #3)
 [2025-08-20T13:28:07] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-20T13:28:07 #4)
 [2025-08-20T20:37:21] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-20T20:37:21 #5)
+[2025-08-20T08:28:01] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-20T08:28:01 #6)
