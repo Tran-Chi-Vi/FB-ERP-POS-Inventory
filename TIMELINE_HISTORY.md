@@ -2777,3 +2777,4 @@
 [2025-08-20T08:28:01] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-20T08:28:01 #6)
 [2025-08-20T16:12:58] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-20T16:12:58 #7)
 [2025-08-20T20:24:10] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-20T20:24:10 #8)
+[2025-08-20T18:02:28] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-20T18:02:28 #9)
