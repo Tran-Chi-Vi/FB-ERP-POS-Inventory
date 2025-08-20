@@ -760,3 +760,4 @@
 [2025-08-20T09:54:12] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-20T09:54:12 #11)
 [2025-08-20T13:39:07] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-20T13:39:07 #12)
 [2025-08-20T20:01:41] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-20T20:01:41 #13)
+[2025-08-20T20:12:55] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-20T20:12:55 #14)
