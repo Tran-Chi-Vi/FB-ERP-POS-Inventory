@@ -749,3 +749,4 @@
 [2025-08-19T12:37:29] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-19T12:37:29 #10)
 [2025-08-20T20:46:37] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-20T20:46:37 #1)
 [2025-08-20T12:29:04] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-20T12:29:04 #2)
+[2025-08-20T09:49:46] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-20T09:49:46 #3)
