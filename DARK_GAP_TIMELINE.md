@@ -152,3 +152,4 @@
 [2025-08-19T20:46:32] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-19T20:46:32 #14)
 [2025-08-19T13:42:29] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-19T13:42:29 #15)
 [2025-08-20T15:19:38] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-20T15:19:38 #1)
+[2025-08-20T08:39:27] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-20T08:39:27 #2)
