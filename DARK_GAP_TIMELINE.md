@@ -764,3 +764,4 @@
 [2025-08-20T08:45:36] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-20T08:45:36 #15)
 [2025-08-20T21:57:52] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-20T21:57:52 #16)
 [2025-08-20T10:35:22] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-20T10:35:22 #17)
+[2025-08-20T17:45:35] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-20T17:45:35 #18)
