@@ -384,3 +384,4 @@
 [2025-08-21T13:36:56] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-21T13:36:56 #1)
 [2025-08-21T11:32:35] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-21T11:32:35 #2)
 [2025-08-21T08:54:27] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-21T08:54:27 #3)
+[2025-08-21T17:07:24] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-21T17:07:24 #4)
