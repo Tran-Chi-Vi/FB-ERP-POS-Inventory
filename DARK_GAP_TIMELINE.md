@@ -160,3 +160,4 @@
 [2025-08-20T16:44:55] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-20T16:44:55 #7)
 [2025-08-20T17:42:01] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-20T17:42:01 #8)
 [2025-08-21T11:27:55] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-21T11:27:55 #1)
+[2025-08-21T17:43:25] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-21T17:43:25 #2)
