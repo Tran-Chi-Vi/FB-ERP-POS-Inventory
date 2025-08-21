@@ -393,3 +393,4 @@
 [2025-08-21T10:56:33] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-21T10:56:33 #10)
 [2025-08-21T09:12:09] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-21T09:12:09 #11)
 [2025-08-21T12:36:38] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-21T12:36:38 #12)
+[2025-08-21T17:25:28] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-21T17:25:28 #13)
