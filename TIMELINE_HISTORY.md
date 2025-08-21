@@ -387,3 +387,4 @@
 [2025-08-21T17:07:24] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-21T17:07:24 #4)
 [2025-08-21T12:08:11] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-21T12:08:11 #5)
 [2025-08-21T10:23:02] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-21T10:23:02 #6)
+[2025-08-21T11:13:07] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-21T11:13:07 #7)
