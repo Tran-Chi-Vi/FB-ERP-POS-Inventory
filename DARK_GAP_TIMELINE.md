@@ -804,3 +804,5 @@
 [2025-08-22T16:32:28] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-22T16:32:28 #4)
 [2025-08-22T16:01:06] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-22T16:01:06 #5)
 [2025-08-02T17:25:27] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-02T17:25:27 #3)
+[2025-08-22T16:38:19] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-22T16:38:19 #6)
+[2025-08-02T08:27:49] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-02T08:27:49 #4)
