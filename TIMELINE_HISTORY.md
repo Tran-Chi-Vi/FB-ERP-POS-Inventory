@@ -2768,6 +2768,7 @@
 [2025-08-19T16:17:28] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-19T16:17:28 #12)
 [2025-08-19T18:16:33] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-19T18:16:33 #13)
 [2025-08-19T08:07:40] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-19T08:07:40 #14)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-20T19:35:59] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-20T19:35:59 #1)
 [2025-08-20T17:39:15] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-20T17:39:15 #2)
@@ -2782,3 +2783,24 @@
 [2025-08-20T17:58:03] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-20T17:58:03 #11)
 [2025-08-20T11:07:31] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-20T11:07:31 #12)
 [2025-08-20T16:16:31] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-20T16:16:31 #13)
+=======
+[2025-08-21T13:36:56] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-21T13:36:56 #1)
+[2025-08-21T11:32:35] [feat/be-ai-prompt-skills-optimizer] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-21T11:32:35 #2)
+[2025-08-21T08:54:27] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-21T08:54:27 #3)
+[2025-08-21T17:07:24] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-21T17:07:24 #4)
+[2025-08-21T12:08:11] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-21T12:08:11 #5)
+[2025-08-21T10:23:02] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-21T10:23:02 #6)
+[2025-08-21T11:13:07] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-21T11:13:07 #7)
+[2025-08-21T11:32:12] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-21T11:32:12 #8)
+[2025-08-21T20:09:19] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-21T20:09:19 #9)
+[2025-08-21T10:56:33] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-21T10:56:33 #10)
+[2025-08-21T09:12:09] [feat/be-ai-prompt-skills-optimizer] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-21T09:12:09 #11)
+[2025-08-21T12:36:38] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-21T12:36:38 #12)
+[2025-08-21T17:25:28] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-21T17:25:28 #13)
+[2025-08-21T17:38:26] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-21T17:38:26 #14)
+[2025-08-21T14:09:08] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-21T14:09:08 #15)
+[2025-08-21T14:23:30] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-21T14:23:30 #16)
+[2025-08-21T13:32:02] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-21T13:32:02 #17)
+[2025-08-21T11:57:51] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-21T11:57:51 #18)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-22T09:04:16] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-22T09:04:16 #1)
