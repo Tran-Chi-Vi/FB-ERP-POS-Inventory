@@ -2817,3 +2817,4 @@
 [2025-08-22T19:02:45] [feat/be-ai-prompt-skills-optimizer] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-08-22T19:02:45 #12)
 [2025-08-22T16:36:48] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-08-22T16:36:48 #13)
 [2025-08-22T12:06:26] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-22T12:06:26 #14)
+[2025-08-22T19:31:27] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-22T19:31:27 #15)
