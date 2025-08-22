@@ -166,3 +166,4 @@
 [2025-08-21T11:58:37] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-21T11:58:37 #5)
 [2025-08-21T20:59:25] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-21T20:59:25 #6)
 [2025-08-22T15:11:03] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-22T15:11:03 #1)
+[2025-08-22T12:54:42] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-22T12:54:42 #2)
