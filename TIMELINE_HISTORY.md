@@ -2806,3 +2806,4 @@
 [2025-08-22T09:04:16] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-22T09:04:16 #1)
 [2025-08-22T08:08:04] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-22T08:08:04 #2)
 [2025-08-22T13:15:58] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-22T13:15:58 #3)
+[2025-08-22T09:45:22] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-22T09:45:22 #4)
