@@ -2818,3 +2818,4 @@
 [2025-08-22T16:36:48] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-08-22T16:36:48 #13)
 [2025-08-22T12:06:26] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-22T12:06:26 #14)
 [2025-08-22T19:31:27] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-22T19:31:27 #15)
+[2025-08-22T08:17:25] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-22T08:17:25 #16)
