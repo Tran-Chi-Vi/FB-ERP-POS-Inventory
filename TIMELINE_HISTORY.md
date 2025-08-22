@@ -2808,3 +2808,4 @@
 [2025-08-22T13:15:58] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-22T13:15:58 #3)
 [2025-08-22T09:45:22] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-22T09:45:22 #4)
 [2025-08-22T15:02:52] [feat/be-ai-prompt-skills-optimizer] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-08-22T15:02:52 #5)
+[2025-08-22T20:43:45] [feat/be-ai-prompt-skills-optimizer] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-08-22T20:43:45 #6)
