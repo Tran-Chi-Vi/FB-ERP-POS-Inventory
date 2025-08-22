@@ -171,3 +171,4 @@
 [2025-08-22T14:01:45] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-22T14:01:45 #4)
 [2025-08-22T19:26:55] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-22T19:26:55 #5)
 [2025-08-22T16:20:31] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-22T16:20:31 #6)
+[2025-08-22T09:55:21] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-22T09:55:21 #7)
