@@ -167,3 +167,4 @@
 [2025-08-21T20:59:25] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-21T20:59:25 #6)
 [2025-08-22T15:11:03] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-22T15:11:03 #1)
 [2025-08-22T12:54:42] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-22T12:54:42 #2)
+[2025-08-22T10:18:23] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-22T10:18:23 #3)
