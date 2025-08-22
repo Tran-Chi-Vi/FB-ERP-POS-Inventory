@@ -796,3 +796,5 @@
 [2025-08-21T20:00:25] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-21T20:00:25 #15)
 [2025-08-22T17:46:01] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-22T17:46:01 #1)
 [2025-08-01T19:29:07] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-01T19:29:07 #14)
+[2025-08-01T21:29:47] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-01T21:29:47 #15)
+[2025-08-22T10:15:40] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-22T10:15:40 #2)
