@@ -183,3 +183,4 @@
 [2025-08-23T09:35:18] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-23T09:35:18 #3)
 [2025-08-23T13:06:47] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-23T13:06:47 #4)
 [2025-08-23T08:18:12] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-23T08:18:12 #5)
+[2025-08-23T15:20:50] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-23T15:20:50 #6)
