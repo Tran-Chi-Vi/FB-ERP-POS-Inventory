@@ -403,3 +403,4 @@
 [2025-08-23T09:39:42] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-23T09:39:42 #2)
 [2025-08-23T19:04:19] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-23T19:04:19 #3)
 [2025-08-23T11:37:03] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-23T11:37:03 #4)
+[2025-08-23T19:27:33] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-23T19:27:33 #5)
