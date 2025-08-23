@@ -188,3 +188,4 @@
 [2025-08-23T16:57:29] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-23T16:57:29 #8)
 [2025-08-23T08:27:17] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-23T08:27:17 #9)
 [2025-08-23T08:13:20] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-23T08:13:20 #10)
+[2025-08-23T11:11:04] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-23T11:11:04 #11)
