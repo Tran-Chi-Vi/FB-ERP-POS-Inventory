@@ -848,3 +848,5 @@
 [2025-08-06T21:31:46] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-06T21:31:46 #1)
 [2025-08-06T11:07:24] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-06T11:07:24 #2)
 [2025-08-23T21:12:12] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-23T21:12:12 #15)
+[2025-08-23T15:35:38] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-23T15:35:38 #16)
+[2025-08-06T17:36:07] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-06T17:36:07 #3)
