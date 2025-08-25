@@ -200,3 +200,4 @@
 [2025-08-25T08:01:13] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-25T08:01:13 #4)
 [2025-08-25T21:46:26] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-25T21:46:26 #5)
 [2025-08-25T17:20:35] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-25T17:20:35 #6)
+[2025-08-25T12:33:38] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-25T12:33:38 #7)
