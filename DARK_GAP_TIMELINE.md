@@ -204,3 +204,4 @@
 [2025-08-25T19:59:14] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-25T19:59:14 #8)
 [2025-08-25T12:56:45] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-25T12:56:45 #9)
 [2025-08-25T16:35:20] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-25T16:35:20 #10)
+[2025-08-25T09:23:26] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-25T09:23:26 #11)
