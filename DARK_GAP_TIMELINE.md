@@ -1247,3 +1247,4 @@
 [2025-09-29T09:30:06] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-29T09:30:06 #2)
 [2025-09-29T11:57:45] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-29T11:57:45 #3)
 [2025-09-29T13:23:17] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-29T13:23:17 #4)
+[2025-09-29T11:26:25] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-29T11:26:25 #5)
