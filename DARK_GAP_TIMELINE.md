@@ -856,3 +856,5 @@
 [2025-08-06T09:11:59] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-06T09:11:59 #5)
 [2025-08-06T18:56:06] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-06T18:56:06 #6)
 [2025-08-25T20:15:47] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-25T20:15:47 #2)
+[2025-08-06T16:05:40] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-06T16:05:40 #7)
+[2025-08-25T11:45:42] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-25T11:45:42 #3)
