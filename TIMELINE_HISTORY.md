@@ -2802,6 +2802,7 @@
 [2025-08-21T14:23:30] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-21T14:23:30 #16)
 [2025-08-21T13:32:02] [feat/be-ai-prompt-skills-optimizer] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-21T13:32:02 #17)
 [2025-08-21T11:57:51] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-21T11:57:51 #18)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-22T09:04:16] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-22T09:04:16 #1)
 [2025-08-22T08:08:04] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-22T08:08:04 #2)
@@ -2820,3 +2821,13 @@
 [2025-08-22T19:31:27] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-22T19:31:27 #15)
 [2025-08-22T08:17:25] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-22T08:17:25 #16)
 [2025-08-22T20:59:16] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-22T20:59:16 #17)
+=======
+[2025-08-23T13:15:47] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-23T13:15:47 #1)
+[2025-08-23T09:39:42] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-23T09:39:42 #2)
+[2025-08-23T19:04:19] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-23T19:04:19 #3)
+[2025-08-23T11:37:03] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-23T11:37:03 #4)
+[2025-08-23T19:27:33] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-23T19:27:33 #5)
+[2025-08-23T11:46:11] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-23T11:46:11 #6)
+[2025-08-23T10:27:03] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-23T10:27:03 #7)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-25T14:44:24] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-25T14:44:24 #1)
