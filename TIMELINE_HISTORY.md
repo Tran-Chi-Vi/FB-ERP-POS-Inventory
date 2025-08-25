@@ -2837,3 +2837,4 @@
 [2025-08-25T14:39:12] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-25T14:39:12 #5)
 [2025-08-25T19:49:08] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-25T19:49:08 #6)
 [2025-08-25T16:30:25] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-25T16:30:25 #7)
+[2025-08-25T10:59:51] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-25T10:59:51 #8)
