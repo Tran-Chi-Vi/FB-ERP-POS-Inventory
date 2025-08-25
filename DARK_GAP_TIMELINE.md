@@ -861,3 +861,4 @@
 [2025-08-06T19:45:55] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-06T19:45:55 #8)
 [2025-08-25T17:06:26] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-25T17:06:26 #4)
 [2025-08-25T18:02:11] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-25T18:02:11 #5)
+[2025-08-25T18:04:50] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-25T18:04:50 #6)
