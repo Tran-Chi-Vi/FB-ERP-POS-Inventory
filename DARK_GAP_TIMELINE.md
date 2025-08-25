@@ -195,3 +195,4 @@
 [2025-08-23T16:01:59] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-23T16:01:59 #15)
 [2025-08-23T15:53:38] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-23T15:53:38 #16)
 [2025-08-25T15:50:12] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-25T15:50:12 #1)
+[2025-08-25T08:02:02] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-25T08:02:02 #2)
