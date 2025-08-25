@@ -862,3 +862,4 @@
 [2025-08-25T17:06:26] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-25T17:06:26 #4)
 [2025-08-25T18:02:11] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-25T18:02:11 #5)
 [2025-08-25T18:04:50] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-25T18:04:50 #6)
+[2025-08-25T09:23:37] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-25T09:23:37 #7)
