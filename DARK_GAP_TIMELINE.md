@@ -209,3 +209,4 @@
 [2025-08-26T18:14:26] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-26T18:14:26 #2)
 [2025-08-26T09:54:28] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-26T09:54:28 #3)
 [2025-08-26T13:08:55] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-26T13:08:55 #4)
+[2025-08-26T19:44:15] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-26T19:44:15 #5)
