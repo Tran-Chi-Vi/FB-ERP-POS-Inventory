@@ -205,3 +205,8 @@
 [2025-08-25T12:56:45] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-25T12:56:45 #9)
 [2025-08-25T16:35:20] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-25T16:35:20 #10)
 [2025-08-25T09:23:26] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-25T09:23:26 #11)
+[2025-08-26T12:56:02] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-26T12:56:02 #1)
+[2025-08-26T18:14:26] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-26T18:14:26 #2)
+[2025-08-26T09:54:28] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-26T09:54:28 #3)
+[2025-08-26T13:08:55] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-26T13:08:55 #4)
+[2025-08-26T19:44:15] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-26T19:44:15 #5)
