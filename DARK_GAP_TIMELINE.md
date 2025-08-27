@@ -210,3 +210,4 @@
 [2025-08-26T09:54:28] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-26T09:54:28 #3)
 [2025-08-26T13:08:55] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-26T13:08:55 #4)
 [2025-08-26T19:44:15] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-26T19:44:15 #5)
+[2025-08-27T17:07:43] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-27T17:07:43 #1)
