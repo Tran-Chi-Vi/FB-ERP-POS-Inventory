@@ -2855,3 +2855,4 @@
 [2025-08-27T21:38:45] [feat/be-ai-prompt-skills-optimizer] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-27T21:38:45 #3)
 [2025-08-27T12:41:29] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-27T12:41:29 #4)
 [2025-08-27T18:18:10] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-27T18:18:10 #5)
+[2025-08-27T08:06:42] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-27T08:06:42 #6)
