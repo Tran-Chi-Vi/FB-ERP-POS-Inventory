@@ -212,3 +212,4 @@
 [2025-08-26T19:44:15] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-26T19:44:15 #5)
 [2025-08-27T17:07:43] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-27T17:07:43 #1)
 [2025-08-27T09:16:02] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-27T09:16:02 #2)
+[2025-08-27T17:17:05] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T17:17:05 #3)
