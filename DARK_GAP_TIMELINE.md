@@ -892,3 +892,4 @@
 [2025-08-27T14:49:39] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-27T14:49:39 #7)
 [2025-08-27T13:45:35] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T13:45:35 #8)
 [2025-08-27T10:21:38] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-27T10:21:38 #9)
+[2025-08-27T21:38:38] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T21:38:38 #10)
