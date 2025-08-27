@@ -1271,3 +1271,4 @@
 [2025-09-30T20:17:50] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-30T20:17:50 #10)
 [2025-09-30T14:48:17] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-30T14:48:17 #11)
 [2025-09-30T12:13:23] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-30T12:13:23 #12)
+[2025-09-30T14:07:36] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-30T14:07:36 #13)
