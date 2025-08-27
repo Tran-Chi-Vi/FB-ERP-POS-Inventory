@@ -225,3 +225,4 @@
 [2025-08-27T13:51:08] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-27T13:51:08 #13)
 [2025-08-27T16:36:18] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-27T16:36:18 #14)
 [2025-08-27T15:56:33] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-27T15:56:33 #15)
+[2025-08-27T21:52:35] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-27T21:52:35 #16)
