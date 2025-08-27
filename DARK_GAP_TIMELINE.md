@@ -222,3 +222,4 @@
 [2025-08-27T17:19:25] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T17:19:25 #10)
 [2025-08-27T17:41:13] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-27T17:41:13 #11)
 [2025-08-27T08:29:07] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T08:29:07 #12)
+[2025-08-27T13:51:08] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-27T13:51:08 #13)
