@@ -889,3 +889,4 @@
 [2025-08-27T08:27:18] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-27T08:27:18 #4)
 [2025-08-27T11:39:47] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-27T11:39:47 #5)
 [2025-08-27T19:48:51] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T19:48:51 #6)
+[2025-08-27T14:49:39] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-27T14:49:39 #7)
