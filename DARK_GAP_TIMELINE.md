@@ -897,3 +897,4 @@
 [2025-08-27T16:36:43] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-27T16:36:43 #12)
 [2025-08-27T19:40:45] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-27T19:40:45 #13)
 [2025-08-27T18:18:50] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T18:18:50 #14)
+[2025-08-27T08:25:33] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-27T08:25:33 #15)
