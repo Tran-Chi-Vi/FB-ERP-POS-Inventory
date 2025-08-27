@@ -213,3 +213,4 @@
 [2025-08-27T17:07:43] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-27T17:07:43 #1)
 [2025-08-27T09:16:02] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-27T09:16:02 #2)
 [2025-08-27T17:17:05] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-27T17:17:05 #3)
+[2025-08-27T08:40:29] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-27T08:40:29 #4)
