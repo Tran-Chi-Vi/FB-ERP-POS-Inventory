@@ -2829,6 +2829,7 @@
 [2025-08-23T19:27:33] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-23T19:27:33 #5)
 [2025-08-23T11:46:11] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-23T11:46:11 #6)
 [2025-08-23T10:27:03] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-23T10:27:03 #7)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-25T14:44:24] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-25T14:44:24 #1)
 [2025-08-25T11:10:33] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-25T11:10:33 #2)
@@ -2838,3 +2839,15 @@
 [2025-08-25T19:49:08] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-25T19:49:08 #6)
 [2025-08-25T16:30:25] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-25T16:30:25 #7)
 [2025-08-25T10:59:51] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-25T10:59:51 #8)
+=======
+[2025-08-26T12:59:43] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-26T12:59:43 #1)
+[2025-08-26T15:01:54] [feat/be-ai-prompt-skills-optimizer] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-08-26T15:01:54 #2)
+[2025-08-26T09:42:10] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-26T09:42:10 #3)
+[2025-08-26T19:14:30] [feat/be-ai-prompt-skills-optimizer] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-08-26T19:14:30 #4)
+[2025-08-26T17:40:50] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-26T17:40:50 #5)
+[2025-08-26T10:32:45] [feat/be-ai-prompt-skills-optimizer] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-08-26T10:32:45 #6)
+[2025-08-26T21:22:58] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-26T21:22:58 #7)
+[2025-08-26T21:30:58] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-26T21:30:58 #8)
+[2025-08-26T14:33:08] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-26T14:33:08 #9)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-27T12:37:47] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-27T12:37:47 #1)
