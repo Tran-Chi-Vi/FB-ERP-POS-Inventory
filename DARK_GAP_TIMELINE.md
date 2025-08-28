@@ -1273,3 +1273,4 @@
 [2025-09-30T12:13:23] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-30T12:13:23 #12)
 [2025-09-30T14:07:36] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-30T14:07:36 #13)
 [2025-09-30T19:49:27] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-30T19:49:27 #14)
+[2025-09-30T20:28:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-30T20:28:18 #15)
