@@ -1282,3 +1282,4 @@
 [2025-10-01T12:57:04] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-01T12:57:04 #5)
 [2025-10-01T17:47:17] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-01T17:47:17 #6)
 [2025-10-01T09:05:34] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-01T09:05:34 #7)
+[2025-10-01T18:43:40] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-01T18:43:40 #8)
