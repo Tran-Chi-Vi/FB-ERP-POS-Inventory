@@ -419,3 +419,4 @@
 [2025-08-28T14:51:37] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-28T14:51:37 #2)
 [2025-08-28T18:24:47] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-28T18:24:47 #3)
 [2025-08-28T17:46:13] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-28T17:46:13 #4)
+[2025-08-28T13:10:53] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-28T13:10:53 #5)
