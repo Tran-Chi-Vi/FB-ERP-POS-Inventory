@@ -232,3 +232,4 @@
 [2025-08-28T17:18:51] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-28T17:18:51 #3)
 [2025-08-28T17:24:27] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-28T17:24:27 #4)
 [2025-08-28T21:39:41] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-28T21:39:41 #5)
+[2025-08-28T11:52:11] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-28T11:52:11 #6)
