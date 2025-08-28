@@ -907,3 +907,4 @@
 [2025-08-28T16:20:42] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-28T16:20:42 #3)
 [2025-08-28T10:51:24] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-28T10:51:24 #4)
 [2025-08-28T16:37:32] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-28T16:37:32 #5)
+[2025-08-28T09:03:23] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-28T09:03:23 #6)
