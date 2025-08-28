@@ -421,3 +421,4 @@
 [2025-08-28T17:46:13] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-28T17:46:13 #4)
 [2025-08-28T13:10:53] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-28T13:10:53 #5)
 [2025-08-28T08:48:24] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-28T08:48:24 #6)
+[2025-08-28T14:20:23] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-28T14:20:23 #7)
