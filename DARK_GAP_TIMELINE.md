@@ -234,3 +234,4 @@
 [2025-08-28T21:39:41] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-28T21:39:41 #5)
 [2025-08-28T11:52:11] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-28T11:52:11 #6)
 [2025-08-28T08:28:31] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-28T08:28:31 #7)
+[2025-08-28T19:28:12] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-28T19:28:12 #8)
