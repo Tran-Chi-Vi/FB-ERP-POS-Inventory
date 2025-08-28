@@ -905,3 +905,4 @@
 [2025-08-28T10:47:33] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-28T10:47:33 #1)
 [2025-08-28T14:46:58] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-28T14:46:58 #2)
 [2025-08-28T16:20:42] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-28T16:20:42 #3)
+[2025-08-28T10:51:24] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-28T10:51:24 #4)
