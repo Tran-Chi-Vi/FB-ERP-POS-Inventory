@@ -416,3 +416,4 @@
 [2025-08-26T21:30:58] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-26T21:30:58 #8)
 [2025-08-26T14:33:08] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-26T14:33:08 #9)
 [2025-08-28T16:10:23] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-28T16:10:23 #1)
+[2025-08-28T14:51:37] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-28T14:51:37 #2)
