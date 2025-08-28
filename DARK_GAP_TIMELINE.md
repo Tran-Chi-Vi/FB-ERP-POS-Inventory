@@ -914,3 +914,4 @@
 [2025-08-28T18:52:55] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-28T18:52:55 #10)
 [2025-08-28T20:15:28] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-28T20:15:28 #11)
 [2025-08-28T10:35:22] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-28T10:35:22 #12)
+[2025-08-28T11:15:40] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-28T11:15:40 #13)
