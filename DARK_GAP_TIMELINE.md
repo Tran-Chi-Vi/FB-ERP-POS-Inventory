@@ -1274,3 +1274,4 @@
 [2025-09-30T14:07:36] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-30T14:07:36 #13)
 [2025-09-30T19:49:27] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-30T19:49:27 #14)
 [2025-09-30T20:28:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-30T20:28:18 #15)
+[2025-09-30T08:54:18] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-30T08:54:18 #16)
