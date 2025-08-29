@@ -919,3 +919,4 @@
 [2025-08-29T12:46:19] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-29T12:46:19 #2)
 [2025-08-29T12:07:28] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-29T12:07:28 #3)
 [2025-08-29T16:22:59] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-29T16:22:59 #4)
+[2025-08-29T17:04:54] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-29T17:04:54 #5)
