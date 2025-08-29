@@ -2870,3 +2870,4 @@
 [2025-08-29T10:01:45] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-29T10:01:45 #2)
 [2025-08-29T19:13:52] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-29T19:13:52 #3)
 [2025-08-29T18:53:54] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-29T18:53:54 #4)
+[2025-08-29T11:17:31] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-29T11:17:31 #5)
