@@ -2849,6 +2849,7 @@
 [2025-08-26T21:22:58] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-26T21:22:58 #7)
 [2025-08-26T21:30:58] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-26T21:30:58 #8)
 [2025-08-26T14:33:08] [feat/be-ai-prompt-skills-optimizer] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-26T14:33:08 #9)
+<<<<<<< HEAD
 >>>>>>> feat/be-ai-prompt-skills-optimizer
 [2025-08-27T12:37:47] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-27T12:37:47 #1)
 [2025-08-27T17:13:24] [feat/be-ai-prompt-skills-optimizer] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-08-27T17:13:24 #2)
@@ -2856,3 +2857,13 @@
 [2025-08-27T12:41:29] [feat/be-ai-prompt-skills-optimizer] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-27T12:41:29 #4)
 [2025-08-27T18:18:10] [feat/be-ai-prompt-skills-optimizer] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-27T18:18:10 #5)
 [2025-08-27T08:06:42] [feat/be-ai-prompt-skills-optimizer] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-08-27T08:06:42 #6)
+=======
+[2025-08-28T16:10:23] [feat/be-ai-prompt-skills-optimizer] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-28T16:10:23 #1)
+[2025-08-28T14:51:37] [feat/be-ai-prompt-skills-optimizer] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-08-28T14:51:37 #2)
+[2025-08-28T18:24:47] [feat/be-ai-prompt-skills-optimizer] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-28T18:24:47 #3)
+[2025-08-28T17:46:13] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-28T17:46:13 #4)
+[2025-08-28T13:10:53] [feat/be-ai-prompt-skills-optimizer] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-08-28T13:10:53 #5)
+[2025-08-28T08:48:24] [feat/be-ai-prompt-skills-optimizer] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-08-28T08:48:24 #6)
+[2025-08-28T14:20:23] [feat/be-ai-prompt-skills-optimizer] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-28T14:20:23 #7)
+>>>>>>> feat/be-ai-prompt-skills-optimizer
+[2025-08-29T17:09:32] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-08-29T17:09:32 #1)
