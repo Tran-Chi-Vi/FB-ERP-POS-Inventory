@@ -924,3 +924,4 @@
 [2025-08-29T17:32:07] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-29T17:32:07 #7)
 [2025-08-29T17:38:00] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-29T17:38:00 #8)
 [2025-08-29T16:25:25] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-29T16:25:25 #9)
+[2025-08-29T20:01:21] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-29T20:01:21 #10)
