@@ -917,3 +917,4 @@
 [2025-08-28T11:15:40] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-28T11:15:40 #13)
 [2025-08-29T08:07:44] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-29T08:07:44 #1)
 [2025-08-29T12:46:19] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-29T12:46:19 #2)
+[2025-08-29T12:07:28] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-29T12:07:28 #3)
