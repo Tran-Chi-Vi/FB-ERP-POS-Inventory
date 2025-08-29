@@ -915,3 +915,4 @@
 [2025-08-28T20:15:28] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-28T20:15:28 #11)
 [2025-08-28T10:35:22] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-08-28T10:35:22 #12)
 [2025-08-28T11:15:40] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-28T11:15:40 #13)
+[2025-08-29T08:07:44] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-29T08:07:44 #1)
