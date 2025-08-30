@@ -253,3 +253,4 @@
 [2025-08-30T19:44:37] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-30T19:44:37 #10)
 [2025-08-30T20:16:43] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-30T20:16:43 #11)
 [2025-08-30T18:41:43] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-30T18:41:43 #12)
+[2025-08-30T10:27:27] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-30T10:27:27 #13)
