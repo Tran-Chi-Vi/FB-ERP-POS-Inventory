@@ -260,3 +260,4 @@
 [2025-08-30T10:14:34] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-30T10:14:34 #17)
 [2025-08-30T10:35:19] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-30T10:35:19 #18)
 [2025-08-30T14:13:49] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-30T14:13:49 #19)
+[2025-08-30T17:53:36] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-30T17:53:36 #20)
