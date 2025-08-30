@@ -4,3 +4,4 @@
 [2025-08-30T11:45:42] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-30T11:45:42 #4)
 [2025-08-30T17:49:12] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-30T17:49:12 #5)
 [2025-08-30T12:46:11] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-30T12:46:11 #6)
+[2025-08-30T15:04:06] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T15:04:06 #7)
