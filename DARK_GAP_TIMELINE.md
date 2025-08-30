@@ -245,3 +245,4 @@
 [2025-08-30T20:32:42] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-30T20:32:42 #2)
 [2025-08-30T20:52:38] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-30T20:52:38 #3)
 [2025-08-30T15:55:55] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-30T15:55:55 #4)
+[2025-08-30T15:46:33] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-30T15:46:33 #5)
