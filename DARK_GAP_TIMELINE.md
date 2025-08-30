@@ -247,3 +247,4 @@
 [2025-08-30T15:55:55] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-30T15:55:55 #4)
 [2025-08-30T15:46:33] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-30T15:46:33 #5)
 [2025-08-30T14:18:12] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-30T14:18:12 #6)
+[2025-08-30T14:02:15] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-30T14:02:15 #7)
