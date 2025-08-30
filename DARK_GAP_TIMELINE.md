@@ -928,3 +928,4 @@
 [2025-08-30T20:24:43] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-30T20:24:43 #1)
 [2025-08-30T21:42:58] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-08-30T21:42:58 #2)
 [2025-08-30T15:52:05] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-30T15:52:05 #3)
+[2025-08-30T20:51:03] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-30T20:51:03 #4)
