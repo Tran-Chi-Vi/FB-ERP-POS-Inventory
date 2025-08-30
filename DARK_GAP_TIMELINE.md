@@ -252,3 +252,4 @@
 [2025-08-30T19:15:10] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-30T19:15:10 #9)
 [2025-08-30T19:44:37] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-08-30T19:44:37 #10)
 [2025-08-30T20:16:43] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-08-30T20:16:43 #11)
+[2025-08-30T18:41:43] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-08-30T18:41:43 #12)
