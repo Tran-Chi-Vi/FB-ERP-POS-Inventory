@@ -932,3 +932,4 @@
 [2025-08-30T21:43:50] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-30T21:43:50 #5)
 [2025-08-30T21:51:14] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-08-30T21:51:14 #6)
 [2025-08-30T21:00:00] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-08-30T21:00:00 #7)
+[2025-08-30T20:36:35] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-08-30T20:36:35 #8)
