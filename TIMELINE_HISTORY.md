@@ -2,3 +2,4 @@
 [2025-08-30T16:12:01] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-30T16:12:01 #2)
 [2025-08-30T09:23:01] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-30T09:23:01 #3)
 [2025-08-30T11:45:42] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-30T11:45:42 #4)
+[2025-08-30T17:49:12] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-30T17:49:12 #5)
