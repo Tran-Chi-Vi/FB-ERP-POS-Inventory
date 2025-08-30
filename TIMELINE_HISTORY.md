@@ -11,3 +11,4 @@
 [2025-08-30T15:07:24] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-30T15:07:24 #11)
 [2025-08-30T09:14:53] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-30T09:14:53 #12)
 [2025-08-30T17:00:21] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T17:00:21 #13)
+[2025-08-30T13:01:37] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T13:01:37 #14)
