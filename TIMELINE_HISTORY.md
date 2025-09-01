@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿# F&B ERP POS System Development Timeline
 
 [2025-01-01T12:01:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-01T12:01:19 #1)
@@ -2871,3 +2872,20 @@
 [2025-08-29T19:13:52] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-29T19:13:52 #3)
 [2025-08-29T18:53:54] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-08-29T18:53:54 #4)
 [2025-08-29T11:17:31] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-08-29T11:17:31 #5)
+=======
+﻿[2025-08-30T08:29:34] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-30T08:29:34 #1)
+[2025-08-30T16:12:01] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-08-30T16:12:01 #2)
+[2025-08-30T09:23:01] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-08-30T09:23:01 #3)
+[2025-08-30T11:45:42] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-08-30T11:45:42 #4)
+[2025-08-30T17:49:12] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-30T17:49:12 #5)
+[2025-08-30T12:46:11] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-30T12:46:11 #6)
+[2025-08-30T15:04:06] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T15:04:06 #7)
+[2025-08-30T16:46:16] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-08-30T16:46:16 #8)
+[2025-08-30T16:57:45] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-30T16:57:45 #9)
+[2025-08-30T21:27:59] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-08-30T21:27:59 #10)
+[2025-08-30T15:07:24] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-08-30T15:07:24 #11)
+[2025-08-30T09:14:53] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-30T09:14:53 #12)
+[2025-08-30T17:00:21] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T17:00:21 #13)
+[2025-08-30T13:01:37] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T13:01:37 #14)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-01T11:49:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-01T11:49:18 #1)
