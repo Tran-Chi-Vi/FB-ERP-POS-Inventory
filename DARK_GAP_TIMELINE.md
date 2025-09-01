@@ -944,3 +944,4 @@
 [2025-09-01T11:27:43] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-01T11:27:43 #9)
 [2025-09-01T11:30:41] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-01T11:30:41 #10)
 [2025-09-01T14:27:45] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-01T14:27:45 #11)
+[2025-09-01T20:28:19] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-01T20:28:19 #12)
