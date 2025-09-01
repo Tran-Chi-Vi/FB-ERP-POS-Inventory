@@ -941,3 +941,4 @@
 [2025-09-01T16:09:51] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-01T16:09:51 #6)
 [2025-09-01T13:07:43] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-01T13:07:43 #7)
 [2025-09-01T11:24:11] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-01T11:24:11 #8)
+[2025-09-01T11:27:43] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-01T11:27:43 #9)
