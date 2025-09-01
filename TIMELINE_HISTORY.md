@@ -2889,3 +2889,4 @@
 [2025-08-30T13:01:37] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T13:01:37 #14)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-01T11:49:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-01T11:49:18 #1)
+[2025-09-01T14:23:44] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-01T14:23:44 #2)
