@@ -2896,3 +2896,4 @@
 [2025-09-01T16:15:57] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-01T16:15:57 #6)
 [2025-09-01T08:02:30] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-01T08:02:30 #7)
 [2025-09-01T11:46:59] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-01T11:46:59 #8)
+[2025-09-01T16:44:54] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-01T16:44:54 #9)
