@@ -2893,3 +2893,4 @@
 [2025-09-01T20:39:25] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-01T20:39:25 #3)
 [2025-09-01T10:01:49] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-01T10:01:49 #4)
 [2025-09-01T16:33:00] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-01T16:33:00 #5)
+[2025-09-01T16:15:57] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-01T16:15:57 #6)
