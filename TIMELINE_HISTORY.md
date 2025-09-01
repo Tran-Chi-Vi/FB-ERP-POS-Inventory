@@ -2898,3 +2898,4 @@
 [2025-09-01T11:46:59] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-01T11:46:59 #8)
 [2025-09-01T16:44:54] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-01T16:44:54 #9)
 [2025-09-01T08:12:21] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-01T08:12:21 #10)
+[2025-09-01T16:16:41] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-01T16:16:41 #11)
