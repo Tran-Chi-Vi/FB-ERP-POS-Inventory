@@ -937,3 +937,4 @@
 [2025-09-01T19:25:30] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-01T19:25:30 #2)
 [2025-09-01T21:24:17] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-01T21:24:17 #3)
 [2025-09-01T19:21:36] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-01T19:21:36 #4)
+[2025-09-01T09:04:23] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-01T09:04:23 #5)
