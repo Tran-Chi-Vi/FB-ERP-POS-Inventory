@@ -13,3 +13,4 @@
 [2025-08-30T17:00:21] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T17:00:21 #13)
 [2025-08-30T13:01:37] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T13:01:37 #14)
 [2025-09-02T12:33:16] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-02T12:33:16 #1)
+[2025-09-02T16:24:21] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-02T16:24:21 #2)
