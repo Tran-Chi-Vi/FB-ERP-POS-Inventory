@@ -18,3 +18,4 @@
 [2025-09-02T09:32:53] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-02T09:32:53 #4)
 [2025-09-02T15:26:43] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-02T15:26:43 #5)
 [2025-09-02T08:04:03] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-02T08:04:03 #6)
+[2025-09-02T09:17:24] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-02T09:17:24 #7)
