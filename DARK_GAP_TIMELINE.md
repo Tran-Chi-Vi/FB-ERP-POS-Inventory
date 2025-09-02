@@ -1314,3 +1314,4 @@
 [2025-10-03T09:17:59] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-03T09:17:59 #17)
 [2025-10-03T16:56:09] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-03T16:56:09 #18)
 [2025-10-03T15:21:46] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-03T15:21:46 #19)
+[2025-10-03T09:45:35] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-03T09:45:35 #20)
