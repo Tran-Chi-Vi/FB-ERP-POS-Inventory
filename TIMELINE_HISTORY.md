@@ -2931,3 +2931,4 @@
 [2025-09-03T20:53:40] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-03T20:53:40 #13)
 [2025-09-03T18:41:26] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-03T18:41:26 #14)
 [2025-09-03T13:41:13] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-03T13:41:13 #15)
+[2025-09-03T14:16:04] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-03T14:16:04 #16)
