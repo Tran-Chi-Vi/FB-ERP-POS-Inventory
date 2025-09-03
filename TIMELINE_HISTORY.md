@@ -2887,6 +2887,7 @@
 [2025-08-30T09:14:53] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-08-30T09:14:53 #12)
 [2025-08-30T17:00:21] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T17:00:21 #13)
 [2025-08-30T13:01:37] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-08-30T13:01:37 #14)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-01T11:49:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-01T11:49:18 #1)
 [2025-09-01T14:23:44] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-01T14:23:44 #2)
@@ -2899,3 +2900,20 @@
 [2025-09-01T16:44:54] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-01T16:44:54 #9)
 [2025-09-01T08:12:21] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-01T08:12:21 #10)
 [2025-09-01T16:16:41] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-01T16:16:41 #11)
+=======
+[2025-09-02T12:33:16] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-02T12:33:16 #1)
+[2025-09-02T16:24:21] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-02T16:24:21 #2)
+[2025-09-02T08:21:07] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-02T08:21:07 #3)
+[2025-09-02T09:32:53] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-02T09:32:53 #4)
+[2025-09-02T15:26:43] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-02T15:26:43 #5)
+[2025-09-02T08:04:03] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-02T08:04:03 #6)
+[2025-09-02T09:17:24] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-02T09:17:24 #7)
+[2025-09-02T15:10:53] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-02T15:10:53 #8)
+[2025-09-02T08:02:27] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-02T08:02:27 #9)
+[2025-09-02T08:47:34] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-02T08:47:34 #10)
+[2025-09-02T09:33:27] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-02T09:33:27 #11)
+[2025-09-02T19:15:34] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-02T19:15:34 #12)
+[2025-09-02T20:09:07] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-02T20:09:07 #13)
+[2025-09-02T21:10:46] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-02T21:10:46 #14)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-03T20:10:58] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-03T20:10:58 #1)
