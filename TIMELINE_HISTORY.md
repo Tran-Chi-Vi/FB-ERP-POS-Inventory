@@ -2924,3 +2924,4 @@
 [2025-09-03T13:05:57] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-03T13:05:57 #6)
 [2025-09-03T15:29:42] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-03T15:29:42 #7)
 [2025-09-03T20:40:33] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-03T20:40:33 #8)
+[2025-09-03T18:16:20] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-03T18:16:20 #9)
