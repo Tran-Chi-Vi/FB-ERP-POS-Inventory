@@ -2922,3 +2922,4 @@
 [2025-09-03T13:19:59] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-03T13:19:59 #4)
 [2025-09-03T15:09:45] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-03T15:09:45 #5)
 [2025-09-03T13:05:57] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-03T13:05:57 #6)
+[2025-09-03T15:29:42] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-03T15:29:42 #7)
