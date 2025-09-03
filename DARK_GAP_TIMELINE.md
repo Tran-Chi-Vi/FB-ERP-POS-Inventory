@@ -959,3 +959,5 @@
 [2025-09-03T12:49:06] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-03T12:49:06 #5)
 [2025-08-01T19:50:03] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T19:50:03 #1)
 [2025-09-03T18:13:34] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-03T18:13:34 #6)
+[2025-09-03T20:34:46] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-03T20:34:46 #7)
+[2025-08-01T10:24:27] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-08-01T10:24:27 #2)
