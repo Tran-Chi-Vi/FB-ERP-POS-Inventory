@@ -956,3 +956,4 @@
 [2025-09-03T13:35:23] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-03T13:35:23 #2)
 [2025-09-03T19:52:32] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-03T19:52:32 #3)
 [2025-09-03T10:54:23] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-03T10:54:23 #4)
+[2025-09-03T12:49:06] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-03T12:49:06 #5)
