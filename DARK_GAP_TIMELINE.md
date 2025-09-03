@@ -965,3 +965,5 @@
 [2025-09-03T14:04:41] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-03T14:04:41 #8)
 [2025-08-01T15:20:38] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T15:20:38 #4)
 [2025-09-03T20:35:38] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-03T20:35:38 #9)
+[2025-09-03T08:26:56] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-03T08:26:56 #10)
+[2025-08-01T21:40:07] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-08-01T21:40:07 #5)
