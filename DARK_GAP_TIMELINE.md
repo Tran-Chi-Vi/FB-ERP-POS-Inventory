@@ -984,3 +984,4 @@
 [2025-09-04T15:57:58] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-04T15:57:58 #1)
 [2025-09-04T21:11:57] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-04T21:11:57 #2)
 [2025-09-04T19:49:35] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-04T19:49:35 #3)
+[2025-09-04T21:32:23] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-04T21:32:23 #4)
