@@ -27,3 +27,4 @@
 [2025-09-02T20:09:07] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-02T20:09:07 #13)
 [2025-09-02T21:10:46] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-02T21:10:46 #14)
 [2025-09-04T10:47:23] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-04T10:47:23 #1)
+[2025-09-04T19:05:12] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-04T19:05:12 #2)
