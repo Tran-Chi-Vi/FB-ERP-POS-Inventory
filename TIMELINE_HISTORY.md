@@ -30,3 +30,4 @@
 [2025-09-04T19:05:12] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-04T19:05:12 #2)
 [2025-09-04T13:56:16] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-04T13:56:16 #3)
 [2025-09-04T08:12:00] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-04T08:12:00 #4)
+[2025-09-04T14:47:09] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-04T14:47:09 #5)
