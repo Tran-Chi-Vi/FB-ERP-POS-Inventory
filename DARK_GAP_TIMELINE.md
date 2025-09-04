@@ -302,3 +302,4 @@
 [2025-09-04T17:52:20] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-04T17:52:20 #14)
 [2025-09-04T15:32:53] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-04T15:32:53 #15)
 [2025-09-04T09:29:04] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-04T09:29:04 #16)
+[2025-09-04T20:38:34] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-04T20:38:34 #17)
