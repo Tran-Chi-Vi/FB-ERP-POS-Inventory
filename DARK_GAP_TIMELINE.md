@@ -296,3 +296,4 @@
 [2025-09-04T09:02:30] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-04T09:02:30 #8)
 [2025-09-04T16:18:21] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-04T16:18:21 #9)
 [2025-09-04T20:45:37] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-04T20:45:37 #10)
+[2025-09-04T11:50:55] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-04T11:50:55 #11)
