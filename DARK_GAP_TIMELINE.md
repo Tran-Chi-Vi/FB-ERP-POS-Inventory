@@ -986,3 +986,4 @@
 [2025-09-04T19:49:35] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-04T19:49:35 #3)
 [2025-09-04T21:32:23] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-04T21:32:23 #4)
 [2025-09-04T13:21:25] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-04T13:21:25 #5)
+[2025-09-04T17:56:01] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-04T17:56:01 #6)
