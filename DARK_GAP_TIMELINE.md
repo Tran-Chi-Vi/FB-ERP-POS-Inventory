@@ -1342,3 +1342,4 @@
 [2025-10-06T18:26:56] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-06T18:26:56 #5)
 [2025-10-06T16:19:34] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-06T16:19:34 #6)
 [2025-10-06T17:23:20] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-06T17:23:20 #7)
+[2025-10-06T20:17:24] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-06T20:17:24 #8)
