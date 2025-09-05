@@ -311,3 +311,4 @@
 [2025-09-05T17:26:48] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-05T17:26:48 #3)
 [2025-09-05T19:28:56] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-05T19:28:56 #4)
 [2025-09-05T13:34:05] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-05T13:34:05 #5)
+[2025-09-05T15:51:35] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-05T15:51:35 #6)
