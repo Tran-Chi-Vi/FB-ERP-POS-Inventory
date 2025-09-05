@@ -993,3 +993,4 @@
 [2025-09-04T18:52:26] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-04T18:52:26 #10)
 [2025-09-04T16:22:56] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-04T16:22:56 #11)
 [2025-09-05T12:39:44] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-05T12:39:44 #1)
+[2025-09-05T13:56:39] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-05T13:56:39 #2)
