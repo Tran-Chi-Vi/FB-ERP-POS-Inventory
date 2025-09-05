@@ -2954,3 +2954,4 @@
 [2025-09-05T13:51:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-05T13:51:18 #3)
 [2025-09-05T21:59:07] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-05T21:59:07 #4)
 [2025-09-05T20:00:56] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-05T20:00:56 #5)
+[2025-09-05T13:04:01] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-05T13:04:01 #6)
