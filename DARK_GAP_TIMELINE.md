@@ -313,3 +313,4 @@
 [2025-09-05T13:34:05] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-05T13:34:05 #5)
 [2025-09-05T15:51:35] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-05T15:51:35 #6)
 [2025-09-05T13:44:46] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-05T13:44:46 #7)
+[2025-09-05T16:37:16] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-05T16:37:16 #8)
