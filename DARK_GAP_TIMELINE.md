@@ -1339,3 +1339,4 @@
 [2025-10-06T09:11:50] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-06T09:11:50 #2)
 [2025-10-06T16:15:06] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-06T16:15:06 #3)
 [2025-10-06T21:15:09] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-06T21:15:09 #4)
+[2025-10-06T18:26:56] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-06T18:26:56 #5)
