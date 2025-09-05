@@ -2915,6 +2915,7 @@
 [2025-09-02T19:15:34] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-02T19:15:34 #12)
 [2025-09-02T20:09:07] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-02T20:09:07 #13)
 [2025-09-02T21:10:46] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-02T21:10:46 #14)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-03T20:10:58] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-03T20:10:58 #1)
 [2025-09-03T10:35:43] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-03T10:35:43 #2)
@@ -2935,3 +2936,17 @@
 [2025-09-03T20:33:11] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-03T20:33:11 #17)
 [2025-09-03T09:52:53] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-03T09:52:53 #18)
 [2025-09-03T14:15:07] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-03T14:15:07 #19)
+=======
+[2025-09-04T10:47:23] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-04T10:47:23 #1)
+[2025-09-04T19:05:12] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-04T19:05:12 #2)
+[2025-09-04T13:56:16] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-04T13:56:16 #3)
+[2025-09-04T08:12:00] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-04T08:12:00 #4)
+[2025-09-04T14:47:09] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-04T14:47:09 #5)
+[2025-09-04T16:17:09] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-04T16:17:09 #6)
+[2025-09-04T11:45:21] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-04T11:45:21 #7)
+[2025-09-04T18:54:08] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-04T18:54:08 #8)
+[2025-09-04T21:52:45] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-04T21:52:45 #9)
+[2025-09-04T19:10:22] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-04T19:10:22 #10)
+[2025-09-04T16:59:19] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-04T16:59:19 #11)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-05T18:00:11] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-05T18:00:11 #1)
