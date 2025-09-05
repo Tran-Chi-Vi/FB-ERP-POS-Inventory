@@ -2953,3 +2953,4 @@
 [2025-09-05T14:18:41] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-05T14:18:41 #2)
 [2025-09-05T13:51:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-05T13:51:18 #3)
 [2025-09-05T21:59:07] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-05T21:59:07 #4)
+[2025-09-05T20:00:56] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-05T20:00:56 #5)
