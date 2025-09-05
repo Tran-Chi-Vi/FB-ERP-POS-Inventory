@@ -992,3 +992,4 @@
 [2025-09-04T10:09:44] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-04T10:09:44 #9)
 [2025-09-04T18:52:26] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-04T18:52:26 #10)
 [2025-09-04T16:22:56] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-04T16:22:56 #11)
+[2025-09-05T12:39:44] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-05T12:39:44 #1)
