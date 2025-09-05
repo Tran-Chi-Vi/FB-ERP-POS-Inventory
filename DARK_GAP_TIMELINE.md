@@ -318,3 +318,4 @@
 [2025-09-05T15:21:57] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-05T15:21:57 #10)
 [2025-09-05T18:09:47] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-05T18:09:47 #11)
 [2025-09-05T13:53:26] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-05T13:53:26 #12)
+[2025-09-05T09:45:06] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-05T09:45:06 #13)
