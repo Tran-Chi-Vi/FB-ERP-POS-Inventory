@@ -309,3 +309,4 @@
 [2025-09-05T12:52:42] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-05T12:52:42 #1)
 [2025-09-05T08:52:15] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-05T08:52:15 #2)
 [2025-09-05T17:26:48] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-05T17:26:48 #3)
+[2025-09-05T19:28:56] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-05T19:28:56 #4)
