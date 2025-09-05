@@ -1001,3 +1001,4 @@
 [2025-09-05T16:25:49] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-05T16:25:49 #7)
 [2025-09-05T15:20:19] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-05T15:20:19 #8)
 [2025-09-05T21:28:34] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-05T21:28:34 #9)
+[2025-09-05T09:28:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-05T09:28:18 #10)
