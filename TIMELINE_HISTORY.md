@@ -2950,3 +2950,4 @@
 [2025-09-04T16:59:19] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-04T16:59:19 #11)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-05T18:00:11] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-05T18:00:11 #1)
+[2025-09-05T14:18:41] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-05T14:18:41 #2)
