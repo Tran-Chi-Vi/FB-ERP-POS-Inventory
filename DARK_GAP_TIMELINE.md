@@ -315,3 +315,4 @@
 [2025-09-05T13:44:46] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-05T13:44:46 #7)
 [2025-09-05T16:37:16] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-05T16:37:16 #8)
 [2025-09-05T15:29:26] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-05T15:29:26 #9)
+[2025-09-05T15:21:57] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-05T15:21:57 #10)
