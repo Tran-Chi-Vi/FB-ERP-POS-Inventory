@@ -336,3 +336,4 @@
 [2025-09-06T13:31:42] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-06T13:31:42 #13)
 [2025-09-06T21:08:30] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-06T21:08:30 #14)
 [2025-09-06T09:32:52] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-06T09:32:52 #15)
+[2025-09-06T17:11:53] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-06T17:11:53 #16)
