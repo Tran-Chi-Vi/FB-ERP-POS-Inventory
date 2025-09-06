@@ -41,3 +41,4 @@
 [2025-09-06T21:33:23] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-06T21:33:23 #2)
 [2025-09-06T20:33:16] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-06T20:33:16 #3)
 [2025-09-06T08:55:50] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-06T08:55:50 #4)
+[2025-09-06T15:13:38] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-06T15:13:38 #5)
