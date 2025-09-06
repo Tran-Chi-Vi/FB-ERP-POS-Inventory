@@ -326,3 +326,4 @@
 [2025-09-06T10:23:39] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-06T10:23:39 #3)
 [2025-09-06T19:23:11] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-06T19:23:11 #4)
 [2025-09-06T16:56:05] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-06T16:56:05 #5)
+[2025-09-06T15:29:42] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-06T15:29:42 #6)
