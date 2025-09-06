@@ -1012,3 +1012,4 @@
 [2025-09-06T09:30:45] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-06T09:30:45 #6)
 [2025-09-06T21:20:02] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-06T21:20:02 #7)
 [2025-09-06T08:18:50] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-06T08:18:50 #8)
+[2025-09-06T13:15:23] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-06T13:15:23 #9)
