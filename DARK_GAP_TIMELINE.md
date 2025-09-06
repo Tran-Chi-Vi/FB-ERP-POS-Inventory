@@ -1006,3 +1006,4 @@
 [2025-09-05T21:24:55] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-05T21:24:55 #12)
 [2025-09-06T15:15:40] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-06T15:15:40 #1)
 [2025-09-06T13:15:18] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-06T13:15:18 #2)
+[2025-09-06T13:09:14] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-06T13:09:14 #3)
