@@ -1344,3 +1344,4 @@
 [2025-10-06T17:23:20] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-06T17:23:20 #7)
 [2025-10-06T20:17:24] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-06T20:17:24 #8)
 [2025-10-06T18:53:16] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-06T18:53:16 #9)
+[2025-10-06T21:58:56] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-06T21:58:56 #10)
