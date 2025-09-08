@@ -2948,6 +2948,7 @@
 [2025-09-04T21:52:45] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-04T21:52:45 #9)
 [2025-09-04T19:10:22] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-04T19:10:22 #10)
 [2025-09-04T16:59:19] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-04T16:59:19 #11)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-05T18:00:11] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-05T18:00:11 #1)
 [2025-09-05T14:18:41] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-05T14:18:41 #2)
@@ -2957,3 +2958,11 @@
 [2025-09-05T13:04:01] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-05T13:04:01 #6)
 [2025-09-05T16:05:47] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-05T16:05:47 #7)
 [2025-09-05T18:06:57] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-05T18:06:57 #8)
+=======
+[2025-09-06T10:54:13] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-06T10:54:13 #1)
+[2025-09-06T21:33:23] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-06T21:33:23 #2)
+[2025-09-06T20:33:16] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-06T20:33:16 #3)
+[2025-09-06T08:55:50] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-06T08:55:50 #4)
+[2025-09-06T15:13:38] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-06T15:13:38 #5)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-08T18:45:45] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-08T18:45:45 #1)
