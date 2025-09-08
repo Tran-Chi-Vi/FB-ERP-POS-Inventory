@@ -343,3 +343,4 @@
 [2025-09-08T12:33:46] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-08T12:33:46 #4)
 [2025-09-08T16:24:25] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-08T16:24:25 #5)
 [2025-09-08T19:36:49] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-08T19:36:49 #6)
+[2025-09-08T21:23:17] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-08T21:23:17 #7)
