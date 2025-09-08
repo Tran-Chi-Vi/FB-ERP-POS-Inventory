@@ -352,3 +352,4 @@
 [2025-09-08T11:41:34] [feat/crm-loyalty-promotions] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-08T11:41:34 #13)
 [2025-09-08T10:14:22] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-08T10:14:22 #14)
 [2025-09-08T18:14:36] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-08T18:14:36 #15)
+[2025-09-08T18:22:09] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-08T18:22:09 #16)
