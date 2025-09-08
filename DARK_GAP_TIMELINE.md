@@ -345,3 +345,4 @@
 [2025-09-08T19:36:49] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-08T19:36:49 #6)
 [2025-09-08T21:23:17] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-08T21:23:17 #7)
 [2025-09-08T13:01:51] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-08T13:01:51 #8)
+[2025-09-08T18:29:52] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-08T18:29:52 #9)
