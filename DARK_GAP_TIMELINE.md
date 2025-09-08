@@ -1353,3 +1353,4 @@
 [2025-10-07T14:16:31] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-07T14:16:31 #6)
 [2025-10-07T17:40:16] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-07T17:40:16 #7)
 [2025-10-07T12:57:15] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-07T12:57:15 #8)
+[2025-10-07T18:53:25] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-07T18:53:25 #9)
