@@ -2971,3 +2971,4 @@
 [2025-09-08T19:23:29] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-08T19:23:29 #4)
 [2025-09-08T15:22:25] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-08T15:22:25 #5)
 [2025-09-08T12:40:46] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-08T12:40:46 #6)
+[2025-09-08T14:47:27] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-08T14:47:27 #7)
