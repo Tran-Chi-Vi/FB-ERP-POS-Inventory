@@ -2966,3 +2966,4 @@
 [2025-09-06T15:13:38] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-06T15:13:38 #5)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-08T18:45:45] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-08T18:45:45 #1)
+[2025-09-08T10:21:16] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-08T10:21:16 #2)
