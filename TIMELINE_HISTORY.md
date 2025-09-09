@@ -51,3 +51,4 @@
 [2025-09-09T13:21:25] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-09T13:21:25 #7)
 [2025-09-09T20:23:22] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-09T20:23:22 #8)
 [2025-09-09T13:15:36] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-09T13:15:36 #9)
+[2025-09-09T08:06:24] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-09T08:06:24 #10)
