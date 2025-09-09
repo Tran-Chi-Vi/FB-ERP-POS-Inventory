@@ -44,3 +44,4 @@
 [2025-09-06T15:13:38] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-06T15:13:38 #5)
 [2025-09-09T13:54:27] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-09T13:54:27 #1)
 [2025-09-09T09:22:45] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-09T09:22:45 #2)
+[2025-09-09T09:59:22] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-09T09:59:22 #3)
