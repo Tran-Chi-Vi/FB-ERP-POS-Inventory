@@ -1025,3 +1025,4 @@
 [2025-09-08T21:19:28] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-08T21:19:28 #5)
 [2025-09-08T18:03:33] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-08T18:03:33 #6)
 [2025-09-09T19:02:21] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-09T19:02:21 #1)
+[2025-09-09T14:49:56] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-09T14:49:56 #2)
