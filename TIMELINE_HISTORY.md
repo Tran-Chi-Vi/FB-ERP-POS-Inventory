@@ -54,3 +54,4 @@
 [2025-09-09T08:06:24] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-09T08:06:24 #10)
 [2025-09-09T10:02:05] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-09T10:02:05 #11)
 [2025-09-09T08:15:07] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-09T08:15:07 #12)
+[2025-09-09T11:00:14] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-09T11:00:14 #13)
