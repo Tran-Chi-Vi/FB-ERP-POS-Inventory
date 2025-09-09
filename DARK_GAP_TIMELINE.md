@@ -357,3 +357,4 @@
 [2025-09-09T21:15:31] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-09T21:15:31 #2)
 [2025-09-09T20:13:44] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-09T20:13:44 #3)
 [2025-09-09T15:58:32] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-09T15:58:32 #4)
+[2025-09-09T18:43:11] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-09T18:43:11 #5)
