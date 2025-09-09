@@ -359,3 +359,4 @@
 [2025-09-09T15:58:32] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-09T15:58:32 #4)
 [2025-09-09T18:43:11] [feat/crm-loyalty-promotions] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-09T18:43:11 #5)
 [2025-09-09T09:28:06] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-09T09:28:06 #6)
+[2025-09-09T21:31:21] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-09T21:31:21 #7)
