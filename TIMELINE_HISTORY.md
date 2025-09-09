@@ -48,3 +48,4 @@
 [2025-09-09T15:40:32] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-09T15:40:32 #4)
 [2025-09-09T10:53:33] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-09T10:53:33 #5)
 [2025-09-09T15:18:23] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-09T15:18:23 #6)
+[2025-09-09T13:21:25] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-09T13:21:25 #7)
