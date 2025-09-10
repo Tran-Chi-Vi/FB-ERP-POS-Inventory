@@ -1375,3 +1375,4 @@
 [2025-10-09T10:02:30] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-09T10:02:30 #1)
 [2025-10-09T21:05:13] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-09T21:05:13 #2)
 [2025-10-09T17:35:39] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-09T17:35:39 #3)
+[2025-10-09T19:10:45] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-09T19:10:45 #4)
