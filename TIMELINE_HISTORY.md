@@ -3002,3 +3002,4 @@
 [2025-09-09T13:17:21] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-09T13:17:21 #19)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-10T11:04:28] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-10T11:04:28 #1)
+[2025-09-10T15:22:04] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-10T15:22:04 #2)
