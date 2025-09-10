@@ -3005,3 +3005,4 @@
 [2025-09-10T15:22:04] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-10T15:22:04 #2)
 [2025-09-10T09:34:49] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-10T09:34:49 #3)
 [2025-09-10T18:21:14] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-10T18:21:14 #4)
+[2025-09-10T08:02:56] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-10T08:02:56 #5)
