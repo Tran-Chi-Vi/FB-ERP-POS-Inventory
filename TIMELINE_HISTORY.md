@@ -3008,3 +3008,4 @@
 [2025-09-10T08:02:56] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-10T08:02:56 #5)
 [2025-09-10T09:33:13] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-10T09:33:13 #6)
 [2025-09-10T15:31:52] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-10T15:31:52 #7)
+[2025-09-10T18:31:39] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-10T18:31:39 #8)
