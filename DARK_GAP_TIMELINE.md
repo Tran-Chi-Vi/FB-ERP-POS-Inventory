@@ -361,3 +361,4 @@
 [2025-09-09T09:28:06] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-09T09:28:06 #6)
 [2025-09-09T21:31:21] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-09T21:31:21 #7)
 [2025-09-10T21:11:41] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-10T21:11:41 #1)
+[2025-09-10T20:40:07] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-10T20:40:07 #2)
