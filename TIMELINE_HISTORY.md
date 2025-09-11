@@ -64,3 +64,4 @@
 [2025-09-11T17:54:15] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-11T17:54:15 #1)
 [2025-09-11T17:39:24] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-11T17:39:24 #2)
 [2025-09-11T19:54:27] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-11T19:54:27 #3)
+[2025-09-11T20:05:03] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-11T20:05:03 #4)
