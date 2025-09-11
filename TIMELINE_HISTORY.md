@@ -70,3 +70,4 @@
 [2025-09-11T12:30:10] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-11T12:30:10 #7)
 [2025-09-11T16:32:13] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-11T16:32:13 #8)
 [2025-09-11T20:57:24] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-11T20:57:24 #9)
+[2025-09-11T11:25:09] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-11T11:25:09 #10)
