@@ -79,3 +79,4 @@
 [2025-09-11T10:45:09] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-11T10:45:09 #16)
 [2025-09-11T12:48:24] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-11T12:48:24 #17)
 [2025-09-11T11:55:24] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-11T11:55:24 #18)
+[2025-09-11T10:18:41] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-11T10:18:41 #19)
