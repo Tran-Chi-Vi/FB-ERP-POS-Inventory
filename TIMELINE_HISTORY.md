@@ -72,3 +72,4 @@
 [2025-09-11T20:57:24] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-11T20:57:24 #9)
 [2025-09-11T11:25:09] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-11T11:25:09 #10)
 [2025-09-11T19:12:18] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-11T19:12:18 #11)
+[2025-09-11T16:10:34] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-11T16:10:34 #12)
