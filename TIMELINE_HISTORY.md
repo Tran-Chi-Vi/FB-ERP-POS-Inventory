@@ -71,3 +71,4 @@
 [2025-09-11T16:32:13] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-11T16:32:13 #8)
 [2025-09-11T20:57:24] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-11T20:57:24 #9)
 [2025-09-11T11:25:09] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-11T11:25:09 #10)
+[2025-09-11T19:12:18] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-11T19:12:18 #11)
