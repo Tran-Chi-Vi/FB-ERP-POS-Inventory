@@ -67,3 +67,4 @@
 [2025-09-11T20:05:03] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-11T20:05:03 #4)
 [2025-09-11T19:47:57] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-11T19:47:57 #5)
 [2025-09-11T11:08:28] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-11T11:08:28 #6)
+[2025-09-11T12:30:10] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-11T12:30:10 #7)
