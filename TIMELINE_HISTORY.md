@@ -76,3 +76,4 @@
 [2025-09-11T13:16:34] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-11T13:16:34 #13)
 [2025-09-11T16:26:58] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-11T16:26:58 #14)
 [2025-09-11T14:53:00] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-11T14:53:00 #15)
+[2025-09-11T10:45:09] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-11T10:45:09 #16)
