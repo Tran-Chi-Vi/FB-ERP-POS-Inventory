@@ -1048,3 +1048,4 @@
 [2025-09-10T11:40:30] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-10T11:40:30 #6)
 [2025-09-11T15:26:51] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-11T15:26:51 #1)
 [2025-09-11T08:22:11] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-11T08:22:11 #2)
+[2025-09-11T13:08:59] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-11T13:08:59 #3)
