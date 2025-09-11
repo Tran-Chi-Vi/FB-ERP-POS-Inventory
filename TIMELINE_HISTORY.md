@@ -62,3 +62,4 @@
 [2025-09-09T19:59:38] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-09T19:59:38 #18)
 [2025-09-09T13:17:21] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-09T13:17:21 #19)
 [2025-09-11T17:54:15] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-11T17:54:15 #1)
+[2025-09-11T17:39:24] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-11T17:39:24 #2)
