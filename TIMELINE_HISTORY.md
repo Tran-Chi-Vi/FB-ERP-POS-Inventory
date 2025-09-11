@@ -80,3 +80,4 @@
 [2025-09-11T12:48:24] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-11T12:48:24 #17)
 [2025-09-11T11:55:24] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-11T11:55:24 #18)
 [2025-09-11T10:18:41] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-11T10:18:41 #19)
+[2025-09-11T13:20:34] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-11T13:20:34 #20)
