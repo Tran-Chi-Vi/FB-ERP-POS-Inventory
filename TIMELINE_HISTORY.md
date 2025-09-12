@@ -3036,3 +3036,4 @@
 [2025-09-11T13:20:34] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-11T13:20:34 #20)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-12T08:55:16] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-12T08:55:16 #1)
+[2025-09-12T10:12:06] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-12T10:12:06 #2)
