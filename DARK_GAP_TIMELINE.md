@@ -375,3 +375,4 @@
 [2025-09-11T08:27:54] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-11T08:27:54 #6)
 [2025-09-11T11:59:03] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-11T11:59:03 #7)
 [2025-09-12T14:11:34] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-12T14:11:34 #1)
+[2025-09-12T14:04:45] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-12T14:04:45 #2)
