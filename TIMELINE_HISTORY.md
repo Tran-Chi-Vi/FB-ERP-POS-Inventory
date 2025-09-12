@@ -3043,3 +3043,4 @@
 [2025-09-12T17:04:21] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-12T17:04:21 #6)
 [2025-09-12T13:22:40] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-12T13:22:40 #7)
 [2025-09-12T21:38:50] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-12T21:38:50 #8)
+[2025-09-12T21:49:18] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-12T21:49:18 #9)
