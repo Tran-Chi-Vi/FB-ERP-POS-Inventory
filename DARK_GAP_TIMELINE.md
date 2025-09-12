@@ -381,3 +381,4 @@
 [2025-09-12T16:37:44] [feat/crm-loyalty-promotions] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-12T16:37:44 #5)
 [2025-09-12T17:29:23] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-12T17:29:23 #6)
 [2025-09-12T21:02:21] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-12T21:02:21 #7)
+[2025-09-12T18:27:49] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-12T18:27:49 #8)
