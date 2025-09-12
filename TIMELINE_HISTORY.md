@@ -3040,3 +3040,4 @@
 [2025-09-12T11:31:43] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-12T11:31:43 #3)
 [2025-09-12T21:26:36] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-12T21:26:36 #4)
 [2025-09-12T14:13:56] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-12T14:13:56 #5)
+[2025-09-12T17:04:21] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-12T17:04:21 #6)
