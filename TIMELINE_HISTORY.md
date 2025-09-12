@@ -3038,3 +3038,4 @@
 [2025-09-12T08:55:16] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-12T08:55:16 #1)
 [2025-09-12T10:12:06] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-12T10:12:06 #2)
 [2025-09-12T11:31:43] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-12T11:31:43 #3)
+[2025-09-12T21:26:36] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-12T21:26:36 #4)
