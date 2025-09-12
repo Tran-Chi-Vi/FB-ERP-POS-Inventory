@@ -374,3 +374,4 @@
 [2025-09-11T19:06:50] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-11T19:06:50 #5)
 [2025-09-11T08:27:54] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-11T08:27:54 #6)
 [2025-09-11T11:59:03] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-11T11:59:03 #7)
+[2025-09-12T14:11:34] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-12T14:11:34 #1)
