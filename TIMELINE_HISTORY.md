@@ -81,3 +81,4 @@
 [2025-09-11T11:55:24] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-11T11:55:24 #18)
 [2025-09-11T10:18:41] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-11T10:18:41 #19)
 [2025-09-11T13:20:34] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-11T13:20:34 #20)
+[2025-09-13T21:31:35] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-13T21:31:35 #1)
