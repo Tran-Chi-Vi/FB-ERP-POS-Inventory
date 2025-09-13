@@ -84,3 +84,4 @@
 [2025-09-13T21:31:35] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-13T21:31:35 #1)
 [2025-09-13T12:35:21] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-13T12:35:21 #2)
 [2025-09-13T11:49:50] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-13T11:49:50 #3)
+[2025-09-13T18:17:35] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-13T18:17:35 #4)
