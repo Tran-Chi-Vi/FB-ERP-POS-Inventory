@@ -389,3 +389,4 @@
 [2025-09-13T15:27:24] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-13T15:27:24 #1)
 [2025-09-13T11:51:50] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-13T11:51:50 #2)
 [2025-09-13T11:23:22] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-13T11:23:22 #3)
+[2025-09-13T18:13:48] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-13T18:13:48 #4)
