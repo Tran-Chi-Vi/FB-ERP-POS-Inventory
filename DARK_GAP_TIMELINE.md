@@ -397,3 +397,4 @@
 [2025-09-13T16:08:28] [feat/crm-loyalty-promotions] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-13T16:08:28 #9)
 [2025-09-13T08:56:35] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-13T08:56:35 #10)
 [2025-09-13T09:30:43] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-13T09:30:43 #11)
+[2025-09-13T09:24:15] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-13T09:24:15 #12)
