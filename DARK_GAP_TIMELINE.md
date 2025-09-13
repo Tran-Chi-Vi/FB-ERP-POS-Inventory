@@ -391,3 +391,4 @@
 [2025-09-13T11:23:22] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-13T11:23:22 #3)
 [2025-09-13T18:13:48] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-13T18:13:48 #4)
 [2025-09-13T18:30:29] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-13T18:30:29 #5)
+[2025-09-13T12:11:17] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-13T12:11:17 #6)
