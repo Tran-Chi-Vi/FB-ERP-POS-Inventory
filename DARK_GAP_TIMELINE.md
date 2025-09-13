@@ -386,3 +386,4 @@
 [2025-09-12T16:22:45] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-12T16:22:45 #10)
 [2025-09-12T12:52:14] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-12T12:52:14 #11)
 [2025-09-12T09:45:22] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-12T09:45:22 #12)
+[2025-09-13T15:27:24] [feat/crm-loyalty-promotions] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-13T15:27:24 #1)
