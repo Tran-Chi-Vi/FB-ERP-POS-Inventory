@@ -390,3 +390,4 @@
 [2025-09-13T11:51:50] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-13T11:51:50 #2)
 [2025-09-13T11:23:22] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-13T11:23:22 #3)
 [2025-09-13T18:13:48] [feat/crm-loyalty-promotions] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-13T18:13:48 #4)
+[2025-09-13T18:30:29] [feat/crm-loyalty-promotions] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-13T18:30:29 #5)
