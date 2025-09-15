@@ -3054,3 +3054,4 @@
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-15T15:41:20] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-15T15:41:20 #1)
 [2025-09-15T17:37:17] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-15T17:37:17 #2)
+[2025-09-15T12:14:37] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-15T12:14:37 #3)
