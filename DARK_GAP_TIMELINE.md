@@ -4,3 +4,4 @@
 [2025-09-15T08:33:41] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-15T08:33:41 #4)
 [2025-09-15T21:43:18] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-15T21:43:18 #5)
 [2025-09-15T09:28:54] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-15T09:28:54 #6)
+[2025-09-15T11:22:46] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-15T11:22:46 #7)
