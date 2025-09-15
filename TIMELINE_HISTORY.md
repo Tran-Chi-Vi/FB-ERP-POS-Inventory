@@ -3063,3 +3063,4 @@
 [2025-09-15T17:55:13] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-15T17:55:13 #9)
 [2025-09-15T20:22:08] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-15T20:22:08 #10)
 [2025-09-15T15:48:06] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-15T15:48:06 #11)
+[2025-09-15T21:41:50] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-15T21:41:50 #12)
