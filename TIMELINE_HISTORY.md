@@ -3068,3 +3068,4 @@
 [2025-09-15T08:05:21] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-15T08:05:21 #14)
 [2025-09-15T13:10:06] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-15T13:10:06 #15)
 [2025-09-15T14:43:52] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-15T14:43:52 #16)
+[2025-09-15T21:53:03] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-15T21:53:03 #17)
