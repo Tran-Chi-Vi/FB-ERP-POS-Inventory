@@ -3061,3 +3061,4 @@
 [2025-09-15T13:43:41] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-15T13:43:41 #7)
 [2025-09-15T14:07:57] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-15T14:07:57 #8)
 [2025-09-15T17:55:13] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-15T17:55:13 #9)
+[2025-09-15T20:22:08] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-15T20:22:08 #10)
