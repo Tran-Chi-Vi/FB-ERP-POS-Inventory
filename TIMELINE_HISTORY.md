@@ -3053,3 +3053,4 @@
 [2025-09-13T12:59:48] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-13T12:59:48 #5)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-15T15:41:20] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-15T15:41:20 #1)
+[2025-09-15T17:37:17] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-15T17:37:17 #2)
