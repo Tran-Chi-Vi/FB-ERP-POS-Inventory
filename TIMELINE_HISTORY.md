@@ -3062,3 +3062,4 @@
 [2025-09-15T14:07:57] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-15T14:07:57 #8)
 [2025-09-15T17:55:13] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-15T17:55:13 #9)
 [2025-09-15T20:22:08] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-15T20:22:08 #10)
+[2025-09-15T15:48:06] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-15T15:48:06 #11)
