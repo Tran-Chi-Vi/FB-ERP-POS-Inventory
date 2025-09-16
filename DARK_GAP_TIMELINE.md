@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# F&B ERP POS Dark Gap Contributions Log
 
 [2025-08-01T10:23:35] [feat/crm-loyalty-promotions] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-08-01T10:23:35 #1)
@@ -401,3 +402,14 @@
 [2025-09-13T11:06:17] [feat/crm-loyalty-promotions] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-13T11:06:17 #13)
 [2025-09-13T08:54:26] [feat/crm-loyalty-promotions] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-13T08:54:26 #14)
 [2025-09-13T10:37:25] [feat/crm-loyalty-promotions] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-13T10:37:25 #15)
+=======
+﻿[2025-09-15T20:41:03] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-15T20:41:03 #1)
+[2025-09-15T14:53:03] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-15T14:53:03 #2)
+[2025-09-15T16:44:44] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-15T16:44:44 #3)
+[2025-09-15T08:33:41] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-15T08:33:41 #4)
+[2025-09-15T21:43:18] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-15T21:43:18 #5)
+[2025-09-15T09:28:54] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-15T09:28:54 #6)
+[2025-09-15T11:22:46] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-15T11:22:46 #7)
+[2025-09-15T16:49:18] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-15T16:49:18 #8)
+>>>>>>> feat/bi-menu-engineering-reports
+[2025-09-16T14:17:24] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-16T14:17:24 #1)
