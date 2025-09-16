@@ -417,3 +417,4 @@
 [2025-09-16T21:23:15] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-16T21:23:15 #3)
 [2025-09-16T20:51:33] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-16T20:51:33 #4)
 [2025-09-16T15:03:37] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-16T15:03:37 #5)
+[2025-09-16T12:12:12] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-16T12:12:12 #6)
