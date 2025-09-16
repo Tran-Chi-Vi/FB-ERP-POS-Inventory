@@ -92,3 +92,4 @@
 [2025-09-16T16:08:52] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-16T16:08:52 #4)
 [2025-09-16T10:53:03] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-16T10:53:03 #5)
 [2025-09-16T17:51:46] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-16T17:51:46 #6)
+[2025-09-16T09:57:20] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-16T09:57:20 #7)
