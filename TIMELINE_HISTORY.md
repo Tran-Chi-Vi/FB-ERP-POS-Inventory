@@ -98,3 +98,4 @@
 [2025-09-16T12:51:54] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-16T12:51:54 #10)
 [2025-09-16T21:36:20] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-16T21:36:20 #11)
 [2025-09-16T10:30:29] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-16T10:30:29 #12)
+[2025-09-16T15:15:09] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-16T15:15:09 #13)
