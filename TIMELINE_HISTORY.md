@@ -94,3 +94,4 @@
 [2025-09-16T17:51:46] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-16T17:51:46 #6)
 [2025-09-16T09:57:20] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-16T09:57:20 #7)
 [2025-09-16T19:40:21] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-16T19:40:21 #8)
+[2025-09-16T20:15:52] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-16T20:15:52 #9)
