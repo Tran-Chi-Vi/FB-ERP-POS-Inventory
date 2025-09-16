@@ -413,3 +413,4 @@
 [2025-09-15T16:49:18] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-15T16:49:18 #8)
 >>>>>>> feat/bi-menu-engineering-reports
 [2025-09-16T14:17:24] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-16T14:17:24 #1)
+[2025-09-16T20:44:36] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-16T20:44:36 #2)
