@@ -415,3 +415,4 @@
 [2025-09-16T14:17:24] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-16T14:17:24 #1)
 [2025-09-16T20:44:36] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-16T20:44:36 #2)
 [2025-09-16T21:23:15] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-16T21:23:15 #3)
+[2025-09-16T20:51:33] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-16T20:51:33 #4)
