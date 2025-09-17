@@ -19,3 +19,4 @@
 [2025-09-17T10:08:37] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-17T10:08:37 #11)
 [2025-09-17T10:29:30] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-17T10:29:30 #12)
 [2025-09-17T09:19:45] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-17T09:19:45 #13)
+[2025-09-17T20:26:16] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-17T20:26:16 #14)
