@@ -3096,3 +3096,4 @@
 [2025-09-17T09:35:38] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-17T09:35:38 #5)
 [2025-09-17T19:23:44] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-17T19:23:44 #6)
 [2025-09-17T09:19:17] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-17T09:19:17 #7)
+[2025-09-17T16:18:30] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-17T16:18:30 #8)
