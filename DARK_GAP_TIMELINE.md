@@ -12,3 +12,4 @@
 [2025-09-17T10:50:43] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-17T10:50:43 #4)
 [2025-09-17T15:40:00] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-17T15:40:00 #5)
 [2025-09-17T16:21:07] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-17T16:21:07 #6)
+[2025-09-17T15:53:19] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-17T15:53:19 #7)
