@@ -13,3 +13,4 @@
 [2025-09-17T15:40:00] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-17T15:40:00 #5)
 [2025-09-17T16:21:07] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-17T16:21:07 #6)
 [2025-09-17T15:53:19] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-17T15:53:19 #7)
+[2025-09-17T21:59:14] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-17T21:59:14 #8)
