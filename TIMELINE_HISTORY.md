@@ -3108,3 +3108,4 @@
 [2025-09-17T20:24:10] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-17T20:24:10 #17)
 [2025-09-17T16:01:16] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-17T16:01:16 #18)
 [2025-09-17T10:41:35] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-17T10:41:35 #19)
+[2025-09-17T21:01:32] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-17T21:01:32 #20)
