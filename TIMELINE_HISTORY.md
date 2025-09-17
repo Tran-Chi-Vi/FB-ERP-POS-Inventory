@@ -3107,3 +3107,4 @@
 [2025-09-17T11:33:39] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-17T11:33:39 #16)
 [2025-09-17T20:24:10] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-17T20:24:10 #17)
 [2025-09-17T16:01:16] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-17T16:01:16 #18)
+[2025-09-17T10:41:35] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-17T10:41:35 #19)
