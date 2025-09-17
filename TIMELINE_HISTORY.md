@@ -3094,3 +3094,4 @@
 [2025-09-17T16:38:26] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-17T16:38:26 #3)
 [2025-09-17T11:55:44] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-17T11:55:44 #4)
 [2025-09-17T09:35:38] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-17T09:35:38 #5)
+[2025-09-17T19:23:44] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-17T19:23:44 #6)
