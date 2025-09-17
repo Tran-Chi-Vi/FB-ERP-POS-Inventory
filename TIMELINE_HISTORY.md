@@ -3051,6 +3051,7 @@
 [2025-09-13T11:49:50] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-13T11:49:50 #3)
 [2025-09-13T18:17:35] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-13T18:17:35 #4)
 [2025-09-13T12:59:48] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-13T12:59:48 #5)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-15T15:41:20] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-15T15:41:20 #1)
 [2025-09-15T17:37:17] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-15T17:37:17 #2)
@@ -3069,3 +3070,23 @@
 [2025-09-15T13:10:06] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-15T13:10:06 #15)
 [2025-09-15T14:43:52] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-15T14:43:52 #16)
 [2025-09-15T21:53:03] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-15T21:53:03 #17)
+=======
+[2025-09-16T11:50:22] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-16T11:50:22 #1)
+[2025-09-16T18:55:20] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-16T18:55:20 #2)
+[2025-09-16T19:00:43] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-16T19:00:43 #3)
+[2025-09-16T16:08:52] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-16T16:08:52 #4)
+[2025-09-16T10:53:03] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-16T10:53:03 #5)
+[2025-09-16T17:51:46] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-16T17:51:46 #6)
+[2025-09-16T09:57:20] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-16T09:57:20 #7)
+[2025-09-16T19:40:21] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-16T19:40:21 #8)
+[2025-09-16T20:15:52] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-16T20:15:52 #9)
+[2025-09-16T12:51:54] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-16T12:51:54 #10)
+[2025-09-16T21:36:20] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-16T21:36:20 #11)
+[2025-09-16T10:30:29] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-16T10:30:29 #12)
+[2025-09-16T15:15:09] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-16T15:15:09 #13)
+[2025-09-16T12:33:36] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-16T12:33:36 #14)
+[2025-09-16T20:28:37] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-16T20:28:37 #15)
+[2025-09-16T20:07:47] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-16T20:07:47 #16)
+[2025-09-16T18:17:23] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-16T18:17:23 #17)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-17T18:02:27] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-17T18:02:27 #1)
