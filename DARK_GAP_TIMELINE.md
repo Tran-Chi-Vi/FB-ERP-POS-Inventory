@@ -441,3 +441,4 @@
 [2025-09-18T13:44:04] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-18T13:44:04 #1)
 [2025-09-18T16:50:14] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-18T16:50:14 #2)
 [2025-09-18T18:55:15] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-18T18:55:15 #3)
+[2025-09-18T15:49:22] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-18T15:49:22 #4)
