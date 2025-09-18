@@ -107,3 +107,4 @@
 [2025-09-18T14:55:49] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-18T14:55:49 #2)
 [2025-09-18T11:40:05] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-18T11:40:05 #3)
 [2025-09-18T16:09:25] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-18T16:09:25 #4)
+[2025-09-18T21:04:55] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-18T21:04:55 #5)
