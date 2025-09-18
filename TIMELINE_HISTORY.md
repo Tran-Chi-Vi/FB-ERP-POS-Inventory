@@ -105,3 +105,4 @@
 [2025-09-16T18:17:23] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-16T18:17:23 #17)
 [2025-09-18T15:41:02] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-18T15:41:02 #1)
 [2025-09-18T14:55:49] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-18T14:55:49 #2)
+[2025-09-18T11:40:05] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-18T11:40:05 #3)
