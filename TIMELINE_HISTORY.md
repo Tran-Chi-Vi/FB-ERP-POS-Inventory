@@ -103,3 +103,4 @@
 [2025-09-16T20:28:37] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-16T20:28:37 #15)
 [2025-09-16T20:07:47] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-16T20:07:47 #16)
 [2025-09-16T18:17:23] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-16T18:17:23 #17)
+[2025-09-18T15:41:02] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-18T15:41:02 #1)
