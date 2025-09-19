@@ -27,3 +27,4 @@
 [2025-09-19T11:47:24] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-19T11:47:24 #2)
 [2025-09-19T10:23:31] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-19T10:23:31 #3)
 [2025-09-19T20:06:35] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-19T20:06:35 #4)
+[2025-09-19T18:14:12] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-19T18:14:12 #5)
