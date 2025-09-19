@@ -3133,3 +3133,4 @@
 [2025-09-19T09:09:09] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-19T09:09:09 #13)
 [2025-09-19T17:38:30] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-19T17:38:30 #14)
 [2025-09-19T10:35:21] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-19T10:35:21 #15)
+[2025-09-19T19:03:29] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-19T19:03:29 #16)
