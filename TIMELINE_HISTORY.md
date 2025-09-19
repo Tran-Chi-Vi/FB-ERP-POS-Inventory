@@ -3129,3 +3129,4 @@
 [2025-09-19T13:17:56] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-19T13:17:56 #9)
 [2025-09-19T16:11:12] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-19T16:11:12 #10)
 [2025-09-19T08:37:43] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-19T08:37:43 #11)
+[2025-09-19T09:21:58] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-19T09:21:58 #12)
