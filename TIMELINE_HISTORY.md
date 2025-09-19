@@ -3088,6 +3088,7 @@
 [2025-09-16T20:28:37] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-16T20:28:37 #15)
 [2025-09-16T20:07:47] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-16T20:07:47 #16)
 [2025-09-16T18:17:23] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-16T18:17:23 #17)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-17T18:02:27] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-17T18:02:27 #1)
 [2025-09-17T21:13:03] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-17T21:13:03 #2)
@@ -3109,3 +3110,12 @@
 [2025-09-17T16:01:16] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-17T16:01:16 #18)
 [2025-09-17T10:41:35] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-17T10:41:35 #19)
 [2025-09-17T21:01:32] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-17T21:01:32 #20)
+=======
+[2025-09-18T15:41:02] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-18T15:41:02 #1)
+[2025-09-18T14:55:49] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-18T14:55:49 #2)
+[2025-09-18T11:40:05] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-18T11:40:05 #3)
+[2025-09-18T16:09:25] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-18T16:09:25 #4)
+[2025-09-18T21:04:55] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-18T21:04:55 #5)
+[2025-09-18T21:21:52] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-18T21:21:52 #6)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-19T15:51:57] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-19T15:51:57 #1)
