@@ -3119,3 +3119,4 @@
 [2025-09-18T21:21:52] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-18T21:21:52 #6)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-19T15:51:57] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-19T15:51:57 #1)
+[2025-09-19T12:47:56] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-19T12:47:56 #2)
