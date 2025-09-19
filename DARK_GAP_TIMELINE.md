@@ -23,3 +23,4 @@
 [2025-09-17T18:41:22] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-17T18:41:22 #15)
 [2025-09-17T13:10:44] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-17T13:10:44 #16)
 [2025-09-17T12:09:04] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-17T12:09:04 #17)
+[2025-09-19T10:56:18] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-19T10:56:18 #1)
