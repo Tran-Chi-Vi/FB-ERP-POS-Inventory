@@ -3122,3 +3122,4 @@
 [2025-09-19T12:47:56] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-19T12:47:56 #2)
 [2025-09-19T19:42:44] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-19T19:42:44 #3)
 [2025-09-19T09:10:03] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-19T09:10:03 #4)
+[2025-09-19T12:13:56] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-19T12:13:56 #5)
