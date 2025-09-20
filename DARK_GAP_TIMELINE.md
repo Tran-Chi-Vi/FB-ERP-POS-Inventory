@@ -456,3 +456,4 @@
 [2025-09-20T17:24:13] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-20T17:24:13 #3)
 [2025-09-20T13:28:21] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-20T13:28:21 #4)
 [2025-09-20T17:33:34] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-20T17:33:34 #5)
+[2025-09-20T19:20:35] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-20T19:20:35 #6)
