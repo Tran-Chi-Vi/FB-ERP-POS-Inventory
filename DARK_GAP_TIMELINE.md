@@ -1150,3 +1150,5 @@
 [2025-09-19T12:12:29] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-19T12:12:29 #10)
 [2025-09-20T09:03:07] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T09:03:07 #1)
 [2025-09-20T17:13:36] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-20T17:13:36 #2)
+[2025-09-20T10:05:26] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T10:05:26 #3)
+[2025-09-20T20:00:46] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-20T20:00:46 #4)
