@@ -470,3 +470,4 @@
 [2025-09-20T12:01:23] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-20T12:01:23 #17)
 [2025-09-20T13:37:03] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-20T13:37:03 #18)
 [2025-09-20T16:07:32] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T16:07:32 #19)
+[2025-09-20T12:07:04] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-20T12:07:04 #20)
