@@ -112,3 +112,4 @@
 [2025-09-20T17:35:11] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-20T17:35:11 #1)
 [2025-09-20T14:55:39] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-20T14:55:39 #2)
 [2025-09-20T21:13:13] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-20T21:13:13 #3)
+[2025-09-20T12:10:19] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-20T12:10:19 #4)
