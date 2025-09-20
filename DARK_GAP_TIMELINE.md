@@ -1163,3 +1163,4 @@
 [2025-09-20T19:06:56] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-20T19:06:56 #13)
 [2025-09-20T08:29:13] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T08:29:13 #14)
 [2025-09-20T17:40:30] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T17:40:30 #15)
+[2025-09-20T20:29:36] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T20:29:36 #16)
