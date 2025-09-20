@@ -462,3 +462,4 @@
 [2025-09-20T16:41:24] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T16:41:24 #9)
 [2025-09-20T21:44:39] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T21:44:39 #10)
 [2025-09-20T11:34:50] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T11:34:50 #11)
+[2025-09-20T20:31:26] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-20T20:31:26 #12)
