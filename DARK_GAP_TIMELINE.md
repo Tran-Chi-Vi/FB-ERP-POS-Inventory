@@ -437,9 +437,18 @@
 [2025-09-17T18:41:22] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-17T18:41:22 #15)
 [2025-09-17T13:10:44] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-17T13:10:44 #16)
 [2025-09-17T12:09:04] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-17T12:09:04 #17)
+<<<<<<< HEAD
 >>>>>>> feat/bi-menu-engineering-reports
 [2025-09-18T13:44:04] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-18T13:44:04 #1)
 [2025-09-18T16:50:14] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-18T16:50:14 #2)
 [2025-09-18T18:55:15] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-18T18:55:15 #3)
 [2025-09-18T15:49:22] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-18T15:49:22 #4)
 [2025-09-18T20:42:17] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-18T20:42:17 #5)
+=======
+[2025-09-19T10:56:18] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-19T10:56:18 #1)
+[2025-09-19T11:47:24] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-19T11:47:24 #2)
+[2025-09-19T10:23:31] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-19T10:23:31 #3)
+[2025-09-19T20:06:35] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-19T20:06:35 #4)
+[2025-09-19T18:14:12] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-19T18:14:12 #5)
+>>>>>>> feat/bi-menu-engineering-reports
+[2025-09-20T14:05:51] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-20T14:05:51 #1)
