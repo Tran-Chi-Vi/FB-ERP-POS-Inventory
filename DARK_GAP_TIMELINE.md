@@ -468,3 +468,4 @@
 [2025-09-20T20:25:07] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-20T20:25:07 #15)
 [2025-09-20T15:18:24] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-20T15:18:24 #16)
 [2025-09-20T12:01:23] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-20T12:01:23 #17)
+[2025-09-20T13:37:03] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-20T13:37:03 #18)
