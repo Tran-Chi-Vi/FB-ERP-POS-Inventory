@@ -1177,3 +1177,4 @@
 [2025-09-22T12:18:02] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-22T12:18:02 #9)
 [2025-09-22T19:52:39] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-22T19:52:39 #10)
 [2025-09-22T21:48:41] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-22T21:48:41 #11)
+[2025-09-22T13:06:01] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-22T13:06:01 #12)
