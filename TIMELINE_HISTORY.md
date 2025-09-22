@@ -3148,3 +3148,4 @@
 [2025-09-20T20:31:31] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-20T20:31:31 #10)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-22T09:55:12] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-22T09:55:12 #1)
+[2025-09-22T17:17:17] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-22T17:17:17 #2)
