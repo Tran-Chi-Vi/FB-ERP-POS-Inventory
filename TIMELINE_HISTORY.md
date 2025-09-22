@@ -3151,3 +3151,4 @@
 [2025-09-22T17:17:17] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-22T17:17:17 #2)
 [2025-09-22T13:42:06] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-22T13:42:06 #3)
 [2025-09-22T08:28:33] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-22T08:28:33 #4)
+[2025-09-22T18:30:36] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-22T18:30:36 #5)
