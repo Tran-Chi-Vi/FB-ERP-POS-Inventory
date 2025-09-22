@@ -3153,3 +3153,4 @@
 [2025-09-22T08:28:33] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-22T08:28:33 #4)
 [2025-09-22T18:30:36] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-22T18:30:36 #5)
 [2025-09-22T13:47:12] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-22T13:47:12 #6)
+[2025-09-22T17:22:09] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-22T17:22:09 #7)
