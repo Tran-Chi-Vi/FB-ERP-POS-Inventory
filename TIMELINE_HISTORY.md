@@ -3117,6 +3117,7 @@
 [2025-09-18T16:09:25] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-18T16:09:25 #4)
 [2025-09-18T21:04:55] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-18T21:04:55 #5)
 [2025-09-18T21:21:52] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-18T21:21:52 #6)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-19T15:51:57] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-19T15:51:57 #1)
 [2025-09-19T12:47:56] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-19T12:47:56 #2)
@@ -3134,3 +3135,16 @@
 [2025-09-19T17:38:30] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-19T17:38:30 #14)
 [2025-09-19T10:35:21] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-19T10:35:21 #15)
 [2025-09-19T19:03:29] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-19T19:03:29 #16)
+=======
+[2025-09-20T17:35:11] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-20T17:35:11 #1)
+[2025-09-20T14:55:39] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-20T14:55:39 #2)
+[2025-09-20T21:13:13] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-20T21:13:13 #3)
+[2025-09-20T12:10:19] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-20T12:10:19 #4)
+[2025-09-20T11:56:57] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-20T11:56:57 #5)
+[2025-09-20T13:15:18] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-20T13:15:18 #6)
+[2025-09-20T18:00:01] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-20T18:00:01 #7)
+[2025-09-20T10:15:31] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-20T10:15:31 #8)
+[2025-09-20T08:39:33] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-20T08:39:33 #9)
+[2025-09-20T20:31:31] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-20T20:31:31 #10)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-22T09:55:12] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-22T09:55:12 #1)
