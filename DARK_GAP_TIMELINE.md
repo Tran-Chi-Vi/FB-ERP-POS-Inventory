@@ -30,3 +30,4 @@
 [2025-09-19T18:14:12] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-19T18:14:12 #5)
 [2025-09-22T15:20:04] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-22T15:20:04 #1)
 [2025-09-22T15:22:23] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-22T15:22:23 #2)
+[2025-09-22T12:49:31] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-22T12:49:31 #3)
