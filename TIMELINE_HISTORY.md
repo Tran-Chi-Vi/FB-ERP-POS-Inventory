@@ -3160,3 +3160,4 @@
 [2025-09-22T09:20:24] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-22T09:20:24 #11)
 [2025-09-22T21:27:01] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-22T21:27:01 #12)
 [2025-09-22T15:04:04] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-22T15:04:04 #13)
+[2025-09-22T18:00:06] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-22T18:00:06 #14)
