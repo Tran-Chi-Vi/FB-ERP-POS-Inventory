@@ -3157,3 +3157,4 @@
 [2025-09-22T13:12:32] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-22T13:12:32 #8)
 [2025-09-22T18:11:03] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-22T18:11:03 #9)
 [2025-09-22T10:30:58] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-22T10:30:58 #10)
+[2025-09-22T09:20:24] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-22T09:20:24 #11)
