@@ -3159,3 +3159,4 @@
 [2025-09-22T10:30:58] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-22T10:30:58 #10)
 [2025-09-22T09:20:24] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-22T09:20:24 #11)
 [2025-09-22T21:27:01] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-22T21:27:01 #12)
+[2025-09-22T15:04:04] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-22T15:04:04 #13)
