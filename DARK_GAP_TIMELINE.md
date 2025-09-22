@@ -31,3 +31,4 @@
 [2025-09-22T15:20:04] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-22T15:20:04 #1)
 [2025-09-22T15:22:23] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-22T15:22:23 #2)
 [2025-09-22T12:49:31] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-22T12:49:31 #3)
+[2025-09-22T12:34:52] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-22T12:34:52 #4)
