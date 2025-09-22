@@ -3149,3 +3149,4 @@
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-22T09:55:12] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-22T09:55:12 #1)
 [2025-09-22T17:17:17] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-22T17:17:17 #2)
+[2025-09-22T13:42:06] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-22T13:42:06 #3)
