@@ -3162,3 +3162,4 @@
 [2025-09-22T15:04:04] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-22T15:04:04 #13)
 [2025-09-22T18:00:06] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-22T18:00:06 #14)
 [2025-09-22T14:53:43] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-22T14:53:43 #15)
+[2025-09-22T14:32:44] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-22T14:32:44 #16)
