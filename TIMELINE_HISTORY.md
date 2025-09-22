@@ -3164,3 +3164,4 @@
 [2025-09-22T14:53:43] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-22T14:53:43 #15)
 [2025-09-22T14:32:44] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-22T14:32:44 #16)
 [2025-09-22T10:07:53] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-22T10:07:53 #17)
+[2025-09-22T20:39:42] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-22T20:39:42 #18)
