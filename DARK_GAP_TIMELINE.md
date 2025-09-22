@@ -1168,3 +1168,4 @@
 [2025-09-20T09:47:07] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-20T09:47:07 #18)
 [2025-09-22T17:02:43] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-22T17:02:43 #1)
 [2025-09-22T11:43:09] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-22T11:43:09 #2)
+[2025-09-22T16:27:50] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-22T16:27:50 #3)
