@@ -3154,3 +3154,4 @@
 [2025-09-22T18:30:36] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-22T18:30:36 #5)
 [2025-09-22T13:47:12] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-22T13:47:12 #6)
 [2025-09-22T17:22:09] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-22T17:22:09 #7)
+[2025-09-22T13:12:32] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-22T13:12:32 #8)
