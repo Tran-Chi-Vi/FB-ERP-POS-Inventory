@@ -125,3 +125,4 @@
 [2025-09-23T09:22:41] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-23T09:22:41 #4)
 [2025-09-23T08:10:21] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-23T08:10:21 #5)
 [2025-09-23T20:30:51] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-23T20:30:51 #6)
+[2025-09-23T13:16:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-23T13:16:17 #7)
