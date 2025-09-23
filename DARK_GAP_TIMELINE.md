@@ -490,3 +490,4 @@
 [2025-09-23T09:15:03] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-23T09:15:03 #5)
 [2025-09-23T18:44:08] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-23T18:44:08 #6)
 [2025-09-23T15:16:46] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-23T15:16:46 #7)
+[2025-09-23T18:11:22] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-23T18:11:22 #8)
