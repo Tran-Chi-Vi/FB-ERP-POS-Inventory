@@ -1180,3 +1180,4 @@
 [2025-09-22T13:06:01] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-22T13:06:01 #12)
 [2025-09-22T13:45:19] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-22T13:45:19 #13)
 [2025-09-23T18:42:36] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-23T18:42:36 #1)
+[2025-09-23T15:37:01] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-23T15:37:01 #2)
