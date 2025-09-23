@@ -1192,3 +1192,5 @@
 [2025-09-23T13:44:22] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-23T13:44:22 #11)
 [2025-09-23T10:07:24] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-23T10:07:24 #12)
 [2025-09-23T12:17:52] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-23T12:17:52 #13)
+[2025-09-23T14:20:22] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-23T14:20:22 #14)
+[2025-09-23T20:36:00] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-23T20:36:00 #15)
