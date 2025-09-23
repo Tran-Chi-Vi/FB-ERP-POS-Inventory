@@ -488,3 +488,4 @@
 [2025-09-23T10:41:41] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-23T10:41:41 #3)
 [2025-09-23T12:30:34] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-23T12:30:34 #4)
 [2025-09-23T09:15:03] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-23T09:15:03 #5)
+[2025-09-23T18:44:08] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-23T18:44:08 #6)
