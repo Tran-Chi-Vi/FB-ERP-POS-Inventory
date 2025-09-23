@@ -484,3 +484,4 @@
 [2025-09-22T10:21:59] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-22T10:21:59 #9)
 >>>>>>> feat/bi-menu-engineering-reports
 [2025-09-23T10:21:22] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-23T10:21:22 #1)
+[2025-09-23T20:56:03] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-23T20:56:03 #2)
