@@ -30,6 +30,10 @@ namespace F_B_ERP_POS_Inventory.Infrastructure.Persistence
         public DbSet<Employee> Employees => Set<Employee>();
         public DbSet<Attendance> Attendances => Set<Attendance>();
         public DbSet<PayrollRecord> PayrollRecords => Set<PayrollRecord>();
+        public DbSet<Customer> Customers => Set<Customer>();
+        public DbSet<LoyaltyLedger> LoyaltyLedgers => Set<LoyaltyLedger>();
+        public DbSet<Promotion> Promotions => Set<Promotion>();
+        public DbSet<PurchaseOrder> PurchaseOrders => Set<PurchaseOrder>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -54,6 +58,10 @@ namespace F_B_ERP_POS_Inventory.Infrastructure.Persistence
             modelBuilder.Entity<Employee>().HasQueryFilter(e => CurrentBranchId == Guid.Empty || e.BranchId == CurrentBranchId);
             modelBuilder.Entity<Attendance>().HasQueryFilter(a => CurrentBranchId == Guid.Empty || a.BranchId == CurrentBranchId);
             modelBuilder.Entity<PayrollRecord>().HasQueryFilter(p => CurrentBranchId == Guid.Empty || p.BranchId == CurrentBranchId);
+            modelBuilder.Entity<Customer>().HasQueryFilter(c => CurrentBranchId == Guid.Empty || c.BranchId == CurrentBranchId);
+            modelBuilder.Entity<LoyaltyLedger>().HasQueryFilter(l => CurrentBranchId == Guid.Empty || l.BranchId == CurrentBranchId);
+            modelBuilder.Entity<Promotion>().HasQueryFilter(p => CurrentBranchId == Guid.Empty || p.BranchId == CurrentBranchId);
+            modelBuilder.Entity<PurchaseOrder>().HasQueryFilter(po => CurrentBranchId == Guid.Empty || po.BranchId == CurrentBranchId);
         }
     }
 }

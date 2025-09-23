@@ -450,6 +450,7 @@
 [2025-09-19T10:23:31] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-19T10:23:31 #3)
 [2025-09-19T20:06:35] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-19T20:06:35 #4)
 [2025-09-19T18:14:12] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-19T18:14:12 #5)
+<<<<<<< HEAD
 >>>>>>> feat/bi-menu-engineering-reports
 [2025-09-20T14:05:51] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-20T14:05:51 #1)
 [2025-09-20T09:48:41] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-20T09:48:41 #2)
@@ -471,3 +472,15 @@
 [2025-09-20T13:37:03] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-20T13:37:03 #18)
 [2025-09-20T16:07:32] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-20T16:07:32 #19)
 [2025-09-20T12:07:04] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-20T12:07:04 #20)
+=======
+[2025-09-22T15:20:04] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-22T15:20:04 #1)
+[2025-09-22T15:22:23] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-22T15:22:23 #2)
+[2025-09-22T12:49:31] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-22T12:49:31 #3)
+[2025-09-22T12:34:52] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-22T12:34:52 #4)
+[2025-09-22T20:27:05] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-22T20:27:05 #5)
+[2025-09-22T20:59:55] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-22T20:59:55 #6)
+[2025-09-22T13:17:46] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-22T13:17:46 #7)
+[2025-09-22T08:30:29] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-22T08:30:29 #8)
+[2025-09-22T10:21:59] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-22T10:21:59 #9)
+>>>>>>> feat/bi-menu-engineering-reports
+[2025-09-23T10:21:22] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-23T10:21:22 #1)
