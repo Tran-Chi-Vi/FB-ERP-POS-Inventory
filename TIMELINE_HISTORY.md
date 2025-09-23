@@ -122,3 +122,4 @@
 [2025-09-23T08:32:25] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-23T08:32:25 #1)
 [2025-09-23T19:12:27] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-23T19:12:27 #2)
 [2025-09-23T19:16:04] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-23T19:16:04 #3)
+[2025-09-23T09:22:41] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-23T09:22:41 #4)
