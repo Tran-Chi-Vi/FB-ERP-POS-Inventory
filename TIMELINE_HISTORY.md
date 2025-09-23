@@ -126,3 +126,4 @@
 [2025-09-23T08:10:21] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-23T08:10:21 #5)
 [2025-09-23T20:30:51] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-23T20:30:51 #6)
 [2025-09-23T13:16:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-23T13:16:17 #7)
+[2025-09-23T13:10:55] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-23T13:10:55 #8)
