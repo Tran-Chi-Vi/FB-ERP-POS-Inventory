@@ -44,3 +44,4 @@
 [2025-09-24T12:41:42] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-24T12:41:42 #5)
 [2025-09-24T17:54:32] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-24T17:54:32 #6)
 [2025-09-24T18:21:12] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-24T18:21:12 #7)
+[2025-09-24T13:24:13] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-24T13:24:13 #8)
