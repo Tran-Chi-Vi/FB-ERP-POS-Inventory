@@ -1207,3 +1207,4 @@
 [2025-09-24T21:56:27] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-24T21:56:27 #8)
 [2025-09-24T17:34:28] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-24T17:34:28 #9)
 [2025-09-24T20:39:54] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-24T20:39:54 #10)
+[2025-09-24T13:51:27] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-24T13:51:27 #11)
