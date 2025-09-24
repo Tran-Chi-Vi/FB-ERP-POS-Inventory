@@ -45,3 +45,4 @@
 [2025-09-24T17:54:32] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-24T17:54:32 #6)
 [2025-09-24T18:21:12] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-24T18:21:12 #7)
 [2025-09-24T13:24:13] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-24T13:24:13 #8)
+[2025-09-24T19:43:45] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-24T19:43:45 #9)
