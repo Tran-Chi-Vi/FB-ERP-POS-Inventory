@@ -3146,6 +3146,7 @@
 [2025-09-20T10:15:31] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-20T10:15:31 #8)
 [2025-09-20T08:39:33] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-20T08:39:33 #9)
 [2025-09-20T20:31:31] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-09-20T20:31:31 #10)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-22T09:55:12] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-22T09:55:12 #1)
 [2025-09-22T17:17:17] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-22T17:17:17 #2)
@@ -3166,3 +3167,17 @@
 [2025-09-22T10:07:53] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-22T10:07:53 #17)
 [2025-09-22T20:39:42] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-22T20:39:42 #18)
 [2025-09-22T13:33:59] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-22T13:33:59 #19)
+=======
+[2025-09-23T08:32:25] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-23T08:32:25 #1)
+[2025-09-23T19:12:27] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-23T19:12:27 #2)
+[2025-09-23T19:16:04] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-23T19:16:04 #3)
+[2025-09-23T09:22:41] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-23T09:22:41 #4)
+[2025-09-23T08:10:21] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-09-23T08:10:21 #5)
+[2025-09-23T20:30:51] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-23T20:30:51 #6)
+[2025-09-23T13:16:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-23T13:16:17 #7)
+[2025-09-23T13:10:55] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-09-23T13:10:55 #8)
+[2025-09-23T13:09:46] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-23T13:09:46 #9)
+[2025-09-23T13:50:41] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-23T13:50:41 #10)
+[2025-09-23T13:25:21] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-23T13:25:21 #11)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-24T12:55:10] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-24T12:55:10 #1)
