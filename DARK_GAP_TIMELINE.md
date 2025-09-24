@@ -1482,3 +1482,4 @@
 [2025-10-17T10:14:25] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-17T10:14:25 #17)
 [2025-10-17T09:26:34] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-17T09:26:34 #18)
 [2025-10-17T13:24:17] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-17T13:24:17 #19)
+[2025-10-18T15:58:47] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-18T15:58:47 #1)
