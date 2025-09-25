@@ -130,3 +130,4 @@
 [2025-09-23T13:09:46] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-23T13:09:46 #9)
 [2025-09-23T13:50:41] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-23T13:50:41 #10)
 [2025-09-23T13:25:21] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-23T13:25:21 #11)
+[2025-09-25T10:06:19] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-25T10:06:19 #1)
