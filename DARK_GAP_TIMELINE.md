@@ -59,3 +59,4 @@
 [2025-09-25T14:46:15] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-25T14:46:15 #11)
 [2025-09-25T17:03:00] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-25T17:03:00 #12)
 [2025-09-25T17:41:00] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-25T17:41:00 #13)
+[2025-09-25T11:59:33] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T11:59:33 #14)
