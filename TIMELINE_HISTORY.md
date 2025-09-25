@@ -132,3 +132,4 @@
 [2025-09-23T13:25:21] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-23T13:25:21 #11)
 [2025-09-25T10:06:19] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-25T10:06:19 #1)
 [2025-09-25T08:48:35] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-25T08:48:35 #2)
+[2025-09-25T14:01:14] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-25T14:01:14 #3)
