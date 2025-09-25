@@ -61,3 +61,4 @@
 [2025-09-25T17:41:00] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-25T17:41:00 #13)
 [2025-09-25T11:59:33] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T11:59:33 #14)
 [2025-09-25T11:08:00] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T11:08:00 #15)
+[2025-09-25T15:50:53] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-25T15:50:53 #16)
