@@ -58,3 +58,4 @@
 [2025-09-25T16:44:35] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-25T16:44:35 #10)
 [2025-09-25T14:46:15] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-25T14:46:15 #11)
 [2025-09-25T17:03:00] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-25T17:03:00 #12)
+[2025-09-25T17:41:00] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-25T17:41:00 #13)
