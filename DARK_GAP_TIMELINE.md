@@ -1486,3 +1486,4 @@
 [2025-10-18T16:47:10] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-18T16:47:10 #2)
 [2025-10-18T19:56:43] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-18T19:56:43 #3)
 [2025-10-18T09:50:44] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-18T09:50:44 #4)
+[2025-10-18T20:00:13] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-18T20:00:13 #5)
