@@ -1222,3 +1222,4 @@
 [2025-09-25T21:16:18] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T21:16:18 #12)
 [2025-09-25T13:39:21] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-25T13:39:21 #13)
 [2025-09-25T20:18:13] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-25T20:18:13 #14)
+[2025-09-25T21:04:25] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-25T21:04:25 #15)
