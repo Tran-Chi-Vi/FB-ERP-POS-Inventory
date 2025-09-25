@@ -55,3 +55,4 @@
 [2025-09-25T18:05:41] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T18:05:41 #7)
 [2025-09-25T20:33:34] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-25T20:33:34 #8)
 [2025-09-25T18:02:59] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T18:02:59 #9)
+[2025-09-25T16:44:35] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-25T16:44:35 #10)
