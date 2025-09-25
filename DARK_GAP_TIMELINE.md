@@ -50,3 +50,4 @@
 [2025-09-25T09:12:09] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-25T09:12:09 #2)
 [2025-09-25T19:02:42] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-25T19:02:42 #3)
 [2025-09-25T08:33:35] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-25T08:33:35 #4)
+[2025-09-25T13:35:29] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-25T13:35:29 #5)
