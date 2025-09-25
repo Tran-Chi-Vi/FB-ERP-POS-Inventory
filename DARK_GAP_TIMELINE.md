@@ -1220,3 +1220,5 @@
 [2025-09-25T18:48:45] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T18:48:45 #10)
 [2025-09-25T11:44:32] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-25T11:44:32 #11)
 [2025-09-25T21:16:18] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-25T21:16:18 #12)
+[2025-09-25T13:39:21] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-25T13:39:21 #13)
+[2025-09-25T20:18:13] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-25T20:18:13 #14)
