@@ -3179,6 +3179,7 @@
 [2025-09-23T13:09:46] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-23T13:09:46 #9)
 [2025-09-23T13:50:41] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-23T13:50:41 #10)
 [2025-09-23T13:25:21] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-09-23T13:25:21 #11)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-24T12:55:10] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-24T12:55:10 #1)
 [2025-09-24T19:53:41] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-24T19:53:41 #2)
@@ -3195,3 +3196,12 @@
 [2025-09-24T20:01:28] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-24T20:01:28 #13)
 [2025-09-24T09:20:31] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-24T09:20:31 #14)
 [2025-09-24T17:18:21] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-24T17:18:21 #15)
+=======
+[2025-09-25T10:06:19] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-25T10:06:19 #1)
+[2025-09-25T08:48:35] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-09-25T08:48:35 #2)
+[2025-09-25T14:01:14] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-25T14:01:14 #3)
+[2025-09-25T08:22:06] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-25T08:22:06 #4)
+[2025-09-25T17:39:01] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-25T17:39:01 #5)
+[2025-09-25T16:39:52] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-25T16:39:52 #6)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-09-26T17:23:10] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-26T17:23:10 #1)
