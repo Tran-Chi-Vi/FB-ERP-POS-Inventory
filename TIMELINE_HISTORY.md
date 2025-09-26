@@ -3205,3 +3205,4 @@
 [2025-09-25T16:39:52] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-25T16:39:52 #6)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-26T17:23:10] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-26T17:23:10 #1)
+[2025-09-26T08:01:30] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-26T08:01:30 #2)
