@@ -64,3 +64,4 @@
 [2025-09-25T15:50:53] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-25T15:50:53 #16)
 [2025-09-26T12:51:32] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-26T12:51:32 #1)
 [2025-09-26T18:43:45] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-26T18:43:45 #2)
+[2025-09-26T20:48:25] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T20:48:25 #3)
