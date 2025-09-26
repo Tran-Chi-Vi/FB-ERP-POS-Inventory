@@ -65,3 +65,4 @@
 [2025-09-26T12:51:32] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-26T12:51:32 #1)
 [2025-09-26T18:43:45] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-26T18:43:45 #2)
 [2025-09-26T20:48:25] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T20:48:25 #3)
+[2025-09-26T11:26:01] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T11:26:01 #4)
