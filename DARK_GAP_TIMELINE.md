@@ -71,3 +71,4 @@
 [2025-09-26T13:01:49] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T13:01:49 #7)
 [2025-09-26T19:54:23] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-26T19:54:23 #8)
 [2025-09-26T09:53:41] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-26T09:53:41 #9)
+[2025-09-26T18:49:30] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-26T18:49:30 #10)
