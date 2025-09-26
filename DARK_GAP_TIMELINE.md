@@ -1229,3 +1229,5 @@
 [2025-09-26T13:54:50] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-26T13:54:50 #3)
 [2025-09-26T20:35:05] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-26T20:35:05 #4)
 [2025-09-26T17:39:36] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T17:39:36 #5)
+[2025-09-26T17:48:07] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-26T17:48:07 #6)
+[2025-09-26T17:43:50] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-26T17:43:50 #7)
