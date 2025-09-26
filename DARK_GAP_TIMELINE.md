@@ -76,3 +76,4 @@
 [2025-09-26T15:45:34] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-26T15:45:34 #12)
 [2025-09-26T15:21:45] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-26T15:21:45 #13)
 [2025-09-26T20:29:56] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-26T20:29:56 #14)
+[2025-09-26T16:39:40] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-26T16:39:40 #15)
