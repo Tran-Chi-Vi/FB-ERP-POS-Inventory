@@ -3206,3 +3206,4 @@
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-26T17:23:10] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-26T17:23:10 #1)
 [2025-09-26T08:01:30] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-26T08:01:30 #2)
+[2025-09-26T21:09:11] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-26T21:09:11 #3)
