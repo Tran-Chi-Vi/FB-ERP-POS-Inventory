@@ -66,3 +66,4 @@
 [2025-09-26T18:43:45] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-26T18:43:45 #2)
 [2025-09-26T20:48:25] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T20:48:25 #3)
 [2025-09-26T11:26:01] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T11:26:01 #4)
+[2025-09-26T11:20:54] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-26T11:20:54 #5)
