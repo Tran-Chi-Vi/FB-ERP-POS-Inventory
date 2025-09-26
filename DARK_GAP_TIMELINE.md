@@ -1495,3 +1495,4 @@
 [2025-10-18T13:22:11] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-18T13:22:11 #11)
 [2025-10-18T21:47:20] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-18T21:47:20 #12)
 [2025-10-18T08:49:47] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-18T08:49:47 #13)
+[2025-10-20T12:11:21] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-20T12:11:21 #1)
