@@ -69,3 +69,4 @@
 [2025-09-26T11:20:54] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-26T11:20:54 #5)
 [2025-09-26T15:22:36] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-26T15:22:36 #6)
 [2025-09-26T13:01:49] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-26T13:01:49 #7)
+[2025-09-26T19:54:23] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-26T19:54:23 #8)
