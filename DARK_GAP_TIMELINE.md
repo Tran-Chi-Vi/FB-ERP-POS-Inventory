@@ -1513,3 +1513,4 @@
 [2025-10-21T09:29:35] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-21T09:29:35 #3)
 [2025-10-21T09:34:26] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-21T09:34:26 #4)
 [2025-10-21T19:33:18] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-21T19:33:18 #5)
+[2025-10-21T14:37:35] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-21T14:37:35 #6)
