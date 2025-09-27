@@ -136,3 +136,4 @@
 [2025-09-25T08:22:06] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-25T08:22:06 #4)
 [2025-09-25T17:39:01] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-25T17:39:01 #5)
 [2025-09-25T16:39:52] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-25T16:39:52 #6)
+[2025-09-27T11:16:43] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-27T11:16:43 #1)
