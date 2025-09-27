@@ -78,3 +78,4 @@
 [2025-09-26T20:29:56] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-26T20:29:56 #14)
 [2025-09-26T16:39:40] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-26T16:39:40 #15)
 [2025-09-26T20:18:00] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-26T20:18:00 #16)
+[2025-09-27T13:48:50] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-27T13:48:50 #1)
