@@ -84,3 +84,4 @@
 [2025-09-27T15:22:09] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-27T15:22:09 #8)
 [2025-09-27T19:47:11] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-27T19:47:11 #9)
 [2025-09-27T12:34:52] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-27T12:34:52 #10)
+[2025-09-27T21:49:46] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-27T21:49:46 #11)
