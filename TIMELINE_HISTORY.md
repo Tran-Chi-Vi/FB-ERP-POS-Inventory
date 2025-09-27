@@ -141,3 +141,4 @@
 [2025-09-27T17:24:29] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-27T17:24:29 #3)
 [2025-09-27T20:55:27] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-27T20:55:27 #4)
 [2025-09-27T14:03:24] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-09-27T14:03:24 #5)
+[2025-09-27T19:32:59] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-27T19:32:59 #6)
