@@ -81,3 +81,4 @@
 [2025-09-27T13:48:50] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-27T13:48:50 #1)
 [2025-09-27T19:03:03] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-27T19:03:03 #3)
 [2025-09-27T09:04:24] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-27T09:04:24 #7)
+[2025-09-27T15:22:09] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-27T15:22:09 #8)
