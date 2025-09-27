@@ -138,3 +138,4 @@
 [2025-09-25T16:39:52] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-25T16:39:52 #6)
 [2025-09-27T11:16:43] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-27T11:16:43 #1)
 [2025-09-27T21:48:11] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-27T21:48:11 #2)
+[2025-09-27T17:24:29] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-27T17:24:29 #3)
