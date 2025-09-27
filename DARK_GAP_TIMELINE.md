@@ -80,3 +80,4 @@
 [2025-09-26T20:18:00] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-26T20:18:00 #16)
 [2025-09-27T13:48:50] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-27T13:48:50 #1)
 [2025-09-27T19:03:03] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-27T19:03:03 #3)
+[2025-09-27T13:28:00] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-27T13:28:00 #4)
