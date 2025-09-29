@@ -3239,3 +3239,4 @@
 [2025-09-29T21:29:33] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-29T21:29:33 #8)
 [2025-09-29T21:15:43] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-29T21:15:43 #9)
 [2025-09-29T21:00:25] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-29T21:00:25 #10)
+[2025-09-29T13:48:32] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-29T13:48:32 #11)
