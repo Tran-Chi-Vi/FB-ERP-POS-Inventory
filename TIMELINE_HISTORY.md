@@ -3237,3 +3237,4 @@
 [2025-09-29T12:07:45] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-29T12:07:45 #6)
 [2025-09-29T17:57:51] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-09-29T17:57:51 #7)
 [2025-09-29T21:29:33] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-29T21:29:33 #8)
+[2025-09-29T21:15:43] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-29T21:15:43 #9)
