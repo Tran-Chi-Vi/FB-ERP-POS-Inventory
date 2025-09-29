@@ -3233,3 +3233,4 @@
 [2025-09-29T09:39:40] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-29T09:39:40 #2)
 [2025-09-29T08:44:51] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-29T08:44:51 #3)
 [2025-09-29T10:56:32] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-09-29T10:56:32 #4)
+[2025-09-29T15:27:19] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-09-29T15:27:19 #5)
