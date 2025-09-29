@@ -3230,3 +3230,4 @@
 [2025-09-27T14:33:22] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-27T14:33:22 #17)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-29T16:51:53] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-29T16:51:53 #1)
+[2025-09-29T09:39:40] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-29T09:39:40 #2)
