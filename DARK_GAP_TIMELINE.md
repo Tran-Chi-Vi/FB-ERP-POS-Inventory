@@ -552,3 +552,4 @@
 [2025-09-29T08:21:16] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-29T08:21:16 #7)
 [2025-09-29T12:43:03] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-09-29T12:43:03 #8)
 [2025-09-29T15:35:46] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-29T15:35:46 #9)
+[2025-09-29T18:30:08] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-29T18:30:08 #10)
