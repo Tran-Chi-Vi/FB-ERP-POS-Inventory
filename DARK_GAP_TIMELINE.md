@@ -547,3 +547,4 @@
 [2025-09-29T15:57:23] [feat/bi-menu-engineering-reports] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-29T15:57:23 #2)
 [2025-09-29T14:08:30] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-29T14:08:30 #3)
 [2025-09-29T14:52:36] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-29T14:52:36 #4)
+[2025-09-29T21:05:13] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-29T21:05:13 #5)
