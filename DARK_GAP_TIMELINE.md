@@ -554,3 +554,4 @@
 [2025-09-29T15:35:46] [feat/bi-menu-engineering-reports] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-29T15:35:46 #9)
 [2025-09-29T18:30:08] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-29T18:30:08 #10)
 [2025-09-29T11:41:40] [feat/bi-menu-engineering-reports] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-09-29T11:41:40 #11)
+[2025-09-29T19:24:49] [feat/bi-menu-engineering-reports] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-09-29T19:24:49 #12)
