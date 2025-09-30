@@ -558,3 +558,4 @@
 [2025-09-30T09:42:09] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-30T09:42:09 #1)
 [2025-09-30T21:38:51] [feat/bi-menu-engineering-reports] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-09-30T21:38:51 #2)
 [2025-09-30T12:54:25] [feat/bi-menu-engineering-reports] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-09-30T12:54:25 #3)
+[2025-09-30T18:11:22] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-30T18:11:22 #4)
