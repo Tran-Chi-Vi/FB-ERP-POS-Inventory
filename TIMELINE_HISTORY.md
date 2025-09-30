@@ -158,3 +158,4 @@
 [2025-09-30T18:22:46] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-30T18:22:46 #3)
 [2025-09-30T20:01:02] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-30T20:01:02 #4)
 [2025-09-30T14:39:00] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-30T14:39:00 #5)
+[2025-09-30T21:16:52] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-30T21:16:52 #6)
