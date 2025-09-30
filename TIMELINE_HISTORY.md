@@ -154,3 +154,4 @@
 [2025-09-27T14:09:32] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-27T14:09:32 #16)
 [2025-09-27T14:33:22] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-27T14:33:22 #17)
 [2025-09-30T15:28:14] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-30T15:28:14 #1)
+[2025-09-30T11:41:53] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-30T11:41:53 #2)
