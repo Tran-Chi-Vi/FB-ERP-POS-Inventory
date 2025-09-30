@@ -162,3 +162,4 @@
 [2025-09-30T14:29:08] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-30T14:29:08 #7)
 [2025-09-30T14:20:52] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-30T14:20:52 #8)
 [2025-09-30T21:19:00] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-30T21:19:00 #9)
+[2025-09-30T21:15:22] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-30T21:15:22 #10)
