@@ -1528,3 +1528,4 @@
 [2025-10-21T20:22:46] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-21T20:22:46 #18)
 [2025-10-22T14:20:10] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-22T14:20:10 #1)
 [2025-10-22T10:05:33] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-22T10:05:33 #2)
+[2025-10-22T10:31:20] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-22T10:31:20 #3)
