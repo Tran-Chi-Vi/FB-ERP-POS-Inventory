@@ -561,3 +561,4 @@
 [2025-09-30T18:11:22] [feat/bi-menu-engineering-reports] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-30T18:11:22 #4)
 [2025-09-30T10:17:18] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-30T10:17:18 #5)
 [2025-09-30T11:55:54] [feat/bi-menu-engineering-reports] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-09-30T11:55:54 #6)
+[2025-09-30T17:49:44] [feat/bi-menu-engineering-reports] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-09-30T17:49:44 #7)
