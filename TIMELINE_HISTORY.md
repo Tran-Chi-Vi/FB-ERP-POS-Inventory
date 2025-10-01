@@ -3228,6 +3228,7 @@
 [2025-09-27T19:07:06] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-09-27T19:07:06 #15)
 [2025-09-27T14:09:32] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-09-27T14:09:32 #16)
 [2025-09-27T14:33:22] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-27T14:33:22 #17)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-09-29T16:51:53] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-29T16:51:53 #1)
 [2025-09-29T09:39:40] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-09-29T09:39:40 #2)
@@ -3240,3 +3241,18 @@
 [2025-09-29T21:15:43] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-29T21:15:43 #9)
 [2025-09-29T21:00:25] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-29T21:00:25 #10)
 [2025-09-29T13:48:32] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-29T13:48:32 #11)
+=======
+[2025-09-30T15:28:14] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-09-30T15:28:14 #1)
+[2025-09-30T11:41:53] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-09-30T11:41:53 #2)
+[2025-09-30T18:22:46] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-09-30T18:22:46 #3)
+[2025-09-30T20:01:02] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-09-30T20:01:02 #4)
+[2025-09-30T14:39:00] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-30T14:39:00 #5)
+[2025-09-30T21:16:52] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-30T21:16:52 #6)
+[2025-09-30T14:29:08] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-09-30T14:29:08 #7)
+[2025-09-30T14:20:52] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-09-30T14:20:52 #8)
+[2025-09-30T21:19:00] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-09-30T21:19:00 #9)
+[2025-09-30T21:15:22] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-30T21:15:22 #10)
+[2025-09-30T17:31:54] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-30T17:31:54 #11)
+[2025-09-30T09:26:11] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-30T09:26:11 #12)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-01T08:11:36] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-01T08:11:36 #1)
