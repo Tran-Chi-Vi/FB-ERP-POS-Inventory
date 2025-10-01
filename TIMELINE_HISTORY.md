@@ -3263,3 +3263,4 @@
 [2025-10-01T15:10:20] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-01T15:10:20 #6)
 [2025-10-01T08:48:45] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-01T08:48:45 #7)
 [2025-10-01T17:21:13] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-01T17:21:13 #8)
+[2025-10-01T21:52:51] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-01T21:52:51 #9)
