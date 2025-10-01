@@ -565,3 +565,4 @@
 [2025-09-30T18:54:30] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-30T18:54:30 #8)
 [2025-09-30T19:28:58] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-09-30T19:28:58 #9)
 [2025-10-01T10:27:56] [feat/bi-menu-engineering-reports] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-01T10:27:56 #1)
+[2025-10-01T15:27:26] [feat/bi-menu-engineering-reports] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-01T15:27:26 #2)
