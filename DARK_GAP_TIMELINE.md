@@ -1285,3 +1285,4 @@
 [2025-10-01T18:43:40] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-01T18:43:40 #8)
 [2025-10-01T17:33:33] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-01T17:33:33 #9)
 [2025-10-02T10:00:53] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-02T10:00:53 #1)
+[2025-10-02T19:39:08] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-02T19:39:08 #2)
