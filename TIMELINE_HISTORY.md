@@ -166,3 +166,4 @@
 [2025-09-30T17:31:54] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-30T17:31:54 #11)
 [2025-09-30T09:26:11] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-30T09:26:11 #12)
 [2025-10-02T16:25:14] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-02T16:25:14 #1)
+[2025-10-02T20:22:14] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-02T20:22:14 #2)
