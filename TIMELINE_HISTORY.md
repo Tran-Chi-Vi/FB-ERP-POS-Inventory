@@ -170,3 +170,4 @@
 [2025-10-02T13:27:13] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-02T13:27:13 #3)
 [2025-10-02T13:48:20] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-02T13:48:20 #4)
 [2025-10-02T15:06:01] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-02T15:06:01 #5)
+[2025-10-02T09:37:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-02T09:37:17 #6)
