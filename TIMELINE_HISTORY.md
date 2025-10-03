@@ -3285,3 +3285,4 @@
 [2025-10-03T16:52:45] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-03T16:52:45 #10)
 [2025-10-03T19:39:01] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-03T19:39:01 #11)
 [2025-10-03T13:18:00] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-03T13:18:00 #12)
+[2025-10-03T20:53:12] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-03T20:53:12 #13)
