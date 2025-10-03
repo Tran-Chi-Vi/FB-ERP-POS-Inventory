@@ -3287,3 +3287,4 @@
 [2025-10-03T13:18:00] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-03T13:18:00 #12)
 [2025-10-03T20:53:12] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-03T20:53:12 #13)
 [2025-10-03T15:48:27] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-03T15:48:27 #14)
+[2025-10-03T20:39:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-03T20:39:30 #15)
