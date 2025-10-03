@@ -3254,6 +3254,7 @@
 [2025-09-30T21:15:22] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-09-30T21:15:22 #10)
 [2025-09-30T17:31:54] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-09-30T17:31:54 #11)
 [2025-09-30T09:26:11] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-09-30T09:26:11 #12)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-01T08:11:36] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-01T08:11:36 #1)
 [2025-10-01T17:12:06] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-01T17:12:06 #2)
@@ -3264,3 +3265,12 @@
 [2025-10-01T08:48:45] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-01T08:48:45 #7)
 [2025-10-01T17:21:13] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-01T17:21:13 #8)
 [2025-10-01T21:52:51] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-01T21:52:51 #9)
+=======
+[2025-10-02T16:25:14] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-02T16:25:14 #1)
+[2025-10-02T20:22:14] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-02T20:22:14 #2)
+[2025-10-02T13:27:13] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-02T13:27:13 #3)
+[2025-10-02T13:48:20] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-02T13:48:20 #4)
+[2025-10-02T15:06:01] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-02T15:06:01 #5)
+[2025-10-02T09:37:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-02T09:37:17 #6)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-03T09:48:40] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-03T09:48:40 #1)
