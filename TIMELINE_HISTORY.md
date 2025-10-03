@@ -3278,3 +3278,4 @@
 [2025-10-03T11:02:15] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-03T11:02:15 #3)
 [2025-10-03T10:31:01] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-03T10:31:01 #4)
 [2025-10-03T21:29:32] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-03T21:29:32 #5)
+[2025-10-03T16:55:19] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-03T16:55:19 #6)
