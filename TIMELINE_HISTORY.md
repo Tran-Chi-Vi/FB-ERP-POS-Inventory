@@ -3282,3 +3282,4 @@
 [2025-10-03T14:41:05] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-03T14:41:05 #7)
 [2025-10-03T10:50:58] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-03T10:50:58 #8)
 [2025-10-03T21:55:05] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-03T21:55:05 #9)
+[2025-10-03T16:52:45] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-03T16:52:45 #10)
