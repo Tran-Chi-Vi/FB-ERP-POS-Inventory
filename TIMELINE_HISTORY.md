@@ -3272,6 +3272,7 @@
 [2025-10-02T13:48:20] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-02T13:48:20 #4)
 [2025-10-02T15:06:01] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-02T15:06:01 #5)
 [2025-10-02T09:37:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-02T09:37:17 #6)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-03T09:48:40] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-03T09:48:40 #1)
 [2025-10-03T11:25:59] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-03T11:25:59 #2)
@@ -3288,3 +3289,23 @@
 [2025-10-03T20:53:12] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-03T20:53:12 #13)
 [2025-10-03T15:48:27] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-03T15:48:27 #14)
 [2025-10-03T20:39:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-03T20:39:30 #15)
+=======
+[2025-10-04T13:00:05] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-04T13:00:05 #1)
+[2025-10-04T09:22:33] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-04T09:22:33 #2)
+[2025-10-04T21:56:03] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-04T21:56:03 #3)
+[2025-10-04T17:17:32] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-04T17:17:32 #4)
+[2025-10-04T09:13:57] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-04T09:13:57 #5)
+[2025-10-04T17:51:29] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-04T17:51:29 #6)
+[2025-10-04T13:42:49] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-04T13:42:49 #7)
+[2025-10-04T20:29:11] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-04T20:29:11 #8)
+[2025-10-04T17:38:18] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-04T17:38:18 #9)
+[2025-10-04T19:16:45] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-04T19:16:45 #10)
+[2025-10-04T09:52:26] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-04T09:52:26 #11)
+[2025-10-04T17:17:16] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-04T17:17:16 #12)
+[2025-10-04T20:48:35] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-04T20:48:35 #13)
+[2025-10-04T21:11:27] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-04T21:11:27 #14)
+[2025-10-04T10:41:43] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-04T10:41:43 #15)
+[2025-10-04T19:38:40] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-04T19:38:40 #16)
+[2025-10-04T11:42:52] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-04T11:42:52 #17)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-06T20:28:41] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-06T20:28:41 #1)
