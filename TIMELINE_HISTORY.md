@@ -3313,3 +3313,4 @@
 [2025-10-06T15:39:37] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-06T15:39:37 #3)
 [2025-10-06T10:14:06] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-06T10:14:06 #4)
 [2025-10-06T21:14:38] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-06T21:14:38 #5)
+[2025-10-06T08:17:22] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-06T08:17:22 #6)
