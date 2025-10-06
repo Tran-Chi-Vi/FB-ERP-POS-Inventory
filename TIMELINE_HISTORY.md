@@ -3309,3 +3309,4 @@
 [2025-10-04T11:42:52] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-04T11:42:52 #17)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-06T20:28:41] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-06T20:28:41 #1)
+[2025-10-06T18:13:48] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-06T18:13:48 #2)
