@@ -200,3 +200,4 @@
 [2025-10-07T12:57:18] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-07T12:57:18 #10)
 [2025-10-07T08:55:49] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-07T08:55:49 #11)
 [2025-10-07T19:26:50] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-07T19:26:50 #12)
+[2025-10-07T15:32:07] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-07T15:32:07 #13)
