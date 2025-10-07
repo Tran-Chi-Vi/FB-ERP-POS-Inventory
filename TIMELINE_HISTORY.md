@@ -202,3 +202,4 @@
 [2025-10-07T19:26:50] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-07T19:26:50 #12)
 [2025-10-07T15:32:07] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-07T15:32:07 #13)
 [2025-10-07T17:03:47] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-07T17:03:47 #14)
+[2025-10-07T16:42:19] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-07T16:42:19 #15)
