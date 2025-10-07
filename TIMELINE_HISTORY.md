@@ -195,3 +195,4 @@
 [2025-10-07T13:42:17] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-07T13:42:17 #5)
 [2025-10-07T09:40:37] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-07T09:40:37 #6)
 [2025-10-07T14:24:14] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-07T14:24:14 #7)
+[2025-10-07T20:32:44] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-07T20:32:44 #8)
