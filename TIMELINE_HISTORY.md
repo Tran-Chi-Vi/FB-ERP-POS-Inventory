@@ -190,3 +190,4 @@
 [2025-10-04T11:42:52] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-04T11:42:52 #17)
 [2025-10-07T21:03:27] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-07T21:03:27 #1)
 [2025-10-07T10:56:28] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-07T10:56:28 #2)
+[2025-10-07T08:20:03] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-07T08:20:03 #3)
