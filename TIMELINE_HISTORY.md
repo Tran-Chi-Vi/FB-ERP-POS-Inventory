@@ -201,3 +201,4 @@
 [2025-10-07T08:55:49] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-07T08:55:49 #11)
 [2025-10-07T19:26:50] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-07T19:26:50 #12)
 [2025-10-07T15:32:07] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-07T15:32:07 #13)
+[2025-10-07T17:03:47] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-07T17:03:47 #14)
