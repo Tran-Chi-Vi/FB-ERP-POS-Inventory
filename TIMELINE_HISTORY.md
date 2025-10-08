@@ -3349,3 +3349,4 @@
 [2025-10-08T18:31:47] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-08T18:31:47 #11)
 [2025-10-08T21:54:46] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-08T21:54:46 #12)
 [2025-10-08T21:10:33] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-08T21:10:33 #13)
+[2025-10-08T11:49:47] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-08T11:49:47 #14)
