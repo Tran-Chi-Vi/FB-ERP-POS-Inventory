@@ -1570,3 +1570,4 @@
 [2025-10-25T12:37:47] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-25T12:37:47 #6)
 [2025-10-25T09:08:56] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-25T09:08:56 #7)
 [2025-10-25T20:33:08] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-25T20:33:08 #8)
+[2025-10-25T21:56:56] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-25T21:56:56 #9)
