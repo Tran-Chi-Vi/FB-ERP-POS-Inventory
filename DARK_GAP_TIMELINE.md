@@ -1365,3 +1365,4 @@
 [2025-10-07T08:36:37] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-07T08:36:37 #18)
 [2025-10-08T14:12:23] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-08T14:12:23 #1)
 [2025-10-08T12:17:56] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-08T12:17:56 #2)
+[2025-10-08T08:05:26] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-08T08:05:26 #3)
