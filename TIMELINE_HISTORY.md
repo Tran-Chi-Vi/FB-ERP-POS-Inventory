@@ -3339,3 +3339,4 @@
 [2025-10-08T17:08:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-08T17:08:30 #1)
 [2025-10-08T14:44:05] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-08T14:44:05 #2)
 [2025-10-08T10:51:20] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-08T10:51:20 #3)
+[2025-10-08T10:57:09] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-08T10:57:09 #4)
