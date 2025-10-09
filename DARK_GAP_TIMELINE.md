@@ -1374,3 +1374,4 @@
 [2025-10-08T20:35:19] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-08T20:35:19 #9)
 [2025-10-09T10:02:30] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-09T10:02:30 #1)
 [2025-10-09T21:05:13] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-09T21:05:13 #2)
+[2025-10-09T17:35:39] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-09T17:35:39 #3)
