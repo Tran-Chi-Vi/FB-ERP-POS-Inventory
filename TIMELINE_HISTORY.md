@@ -210,3 +210,4 @@
 [2025-10-09T08:17:57] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-09T08:17:57 #1)
 [2025-10-09T14:02:11] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-09T14:02:11 #2)
 [2025-10-09T11:53:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-09T11:53:17 #3)
+[2025-10-09T10:41:54] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-09T10:41:54 #4)
