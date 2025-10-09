@@ -1574,3 +1574,4 @@
 [2025-10-25T21:56:43] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-25T21:56:43 #10)
 [2025-10-25T13:21:02] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-25T13:21:02 #11)
 [2025-10-27T11:57:41] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-27T11:57:41 #1)
+[2025-10-27T10:59:09] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-27T10:59:09 #2)
