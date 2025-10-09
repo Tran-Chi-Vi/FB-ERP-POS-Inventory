@@ -222,3 +222,4 @@
 [2025-10-09T18:21:56] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-09T18:21:56 #13)
 [2025-10-09T14:54:39] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-09T14:54:39 #14)
 [2025-10-09T16:31:21] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-09T16:31:21 #15)
+[2025-10-09T08:01:41] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-09T08:01:41 #16)
