@@ -216,3 +216,4 @@
 [2025-10-09T17:46:14] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-09T17:46:14 #7)
 [2025-10-09T15:22:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-09T15:22:30 #8)
 [2025-10-09T18:03:44] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-09T18:03:44 #9)
+[2025-10-09T12:45:31] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-09T12:45:31 #10)
