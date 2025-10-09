@@ -214,3 +214,4 @@
 [2025-10-09T16:26:04] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-09T16:26:04 #5)
 [2025-10-09T16:23:50] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-09T16:23:50 #6)
 [2025-10-09T17:46:14] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-09T17:46:14 #7)
+[2025-10-09T15:22:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-09T15:22:30 #8)
