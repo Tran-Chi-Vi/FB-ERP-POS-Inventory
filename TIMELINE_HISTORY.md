@@ -208,3 +208,4 @@
 [2025-10-07T12:43:23] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-07T12:43:23 #18)
 [2025-10-07T20:43:32] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-07T20:43:32 #19)
 [2025-10-09T08:17:57] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-09T08:17:57 #1)
+[2025-10-09T14:02:11] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-09T14:02:11 #2)
