@@ -1378,3 +1378,4 @@
 [2025-10-09T19:10:45] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-09T19:10:45 #4)
 [2025-10-09T13:59:01] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-09T13:59:01 #5)
 [2025-10-09T16:21:46] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-09T16:21:46 #6)
+[2025-10-09T19:12:04] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-09T19:12:04 #7)
