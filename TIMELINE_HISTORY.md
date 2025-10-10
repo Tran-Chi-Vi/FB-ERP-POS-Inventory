@@ -3335,6 +3335,7 @@
 [2025-10-07T17:56:50] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-07T17:56:50 #17)
 [2025-10-07T12:43:23] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-07T12:43:23 #18)
 [2025-10-07T20:43:32] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-07T20:43:32 #19)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-08T17:08:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-08T17:08:30 #1)
 [2025-10-08T14:44:05] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-08T14:44:05 #2)
@@ -3350,3 +3351,22 @@
 [2025-10-08T21:54:46] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-08T21:54:46 #12)
 [2025-10-08T21:10:33] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-08T21:10:33 #13)
 [2025-10-08T11:49:47] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-08T11:49:47 #14)
+=======
+[2025-10-09T08:17:57] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-09T08:17:57 #1)
+[2025-10-09T14:02:11] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-09T14:02:11 #2)
+[2025-10-09T11:53:17] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-09T11:53:17 #3)
+[2025-10-09T10:41:54] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-09T10:41:54 #4)
+[2025-10-09T16:26:04] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-09T16:26:04 #5)
+[2025-10-09T16:23:50] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-09T16:23:50 #6)
+[2025-10-09T17:46:14] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-09T17:46:14 #7)
+[2025-10-09T15:22:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-09T15:22:30 #8)
+[2025-10-09T18:03:44] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-09T18:03:44 #9)
+[2025-10-09T12:45:31] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-09T12:45:31 #10)
+[2025-10-09T13:52:00] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-09T13:52:00 #11)
+[2025-10-09T18:13:25] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-09T18:13:25 #12)
+[2025-10-09T18:21:56] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-09T18:21:56 #13)
+[2025-10-09T14:54:39] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-09T14:54:39 #14)
+[2025-10-09T16:31:21] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-09T16:31:21 #15)
+[2025-10-09T08:01:41] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-09T08:01:41 #16)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-10T09:34:28] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-10T09:34:28 #1)
