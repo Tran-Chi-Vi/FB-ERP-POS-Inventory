@@ -1593,3 +1593,4 @@
 [2025-10-29T20:01:58] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-29T20:01:58 #2)
 [2025-10-29T09:48:30] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-29T09:48:30 #3)
 [2025-10-29T18:48:28] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-29T18:48:28 #4)
+[2025-10-29T13:00:23] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-29T13:00:23 #5)
