@@ -1590,3 +1590,4 @@
 [2025-10-28T21:12:46] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-28T21:12:46 #6)
 [2025-10-28T18:47:34] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-28T18:47:34 #7)
 [2025-10-29T16:52:03] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-29T16:52:03 #1)
+[2025-10-29T20:01:58] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-29T20:01:58 #2)
