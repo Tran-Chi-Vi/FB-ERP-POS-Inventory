@@ -3403,3 +3403,4 @@
 [2025-10-13T16:10:59] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-13T16:10:59 #12)
 [2025-10-13T15:27:27] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-13T15:27:27 #13)
 [2025-10-13T11:15:00] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-13T11:15:00 #14)
+[2025-10-13T13:59:05] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-13T13:59:05 #15)
