@@ -3393,3 +3393,4 @@
 [2025-10-13T12:31:23] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-13T12:31:23 #2)
 [2025-10-13T19:05:00] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-13T19:05:00 #3)
 [2025-10-13T15:21:57] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-13T15:21:57 #4)
+[2025-10-13T14:02:35] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-13T14:02:35 #5)
