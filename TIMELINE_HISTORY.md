@@ -3368,6 +3368,7 @@
 [2025-10-09T14:54:39] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-09T14:54:39 #14)
 [2025-10-09T16:31:21] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-09T16:31:21 #15)
 [2025-10-09T08:01:41] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-09T08:01:41 #16)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-10T09:34:28] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-10T09:34:28 #1)
 [2025-10-10T15:43:26] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-10T15:43:26 #2)
@@ -3378,3 +3379,14 @@
 [2025-10-10T18:10:26] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-10T18:10:26 #7)
 [2025-10-10T09:00:30] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-10T09:00:30 #8)
 [2025-10-10T10:00:05] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-10T10:00:05 #9)
+=======
+[2025-10-11T10:33:57] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-11T10:33:57 #1)
+[2025-10-11T20:10:40] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-11T20:10:40 #2)
+[2025-10-11T15:42:51] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-11T15:42:51 #3)
+[2025-10-11T10:39:14] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-11T10:39:14 #4)
+[2025-10-11T13:34:36] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-11T13:34:36 #5)
+[2025-10-11T13:41:35] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-11T13:41:35 #6)
+[2025-10-11T17:15:43] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-11T17:15:43 #7)
+[2025-10-11T16:37:29] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-11T16:37:29 #8)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-13T17:52:00] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-13T17:52:00 #1)
