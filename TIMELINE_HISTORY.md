@@ -3406,3 +3406,4 @@
 [2025-10-13T13:59:05] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-13T13:59:05 #15)
 [2025-10-13T11:04:44] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-13T11:04:44 #16)
 [2025-10-13T15:46:57] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-13T15:46:57 #17)
+[2025-10-13T12:29:07] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-13T12:29:07 #18)
