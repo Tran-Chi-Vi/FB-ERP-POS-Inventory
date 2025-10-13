@@ -3395,3 +3395,4 @@
 [2025-10-13T15:21:57] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-13T15:21:57 #4)
 [2025-10-13T14:02:35] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-13T14:02:35 #5)
 [2025-10-13T15:48:06] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-13T15:48:06 #6)
+[2025-10-13T18:20:32] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-13T18:20:32 #7)
