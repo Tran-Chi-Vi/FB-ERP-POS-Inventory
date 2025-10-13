@@ -3405,3 +3405,4 @@
 [2025-10-13T11:15:00] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-13T11:15:00 #14)
 [2025-10-13T13:59:05] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-13T13:59:05 #15)
 [2025-10-13T11:04:44] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-13T11:04:44 #16)
+[2025-10-13T15:46:57] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-13T15:46:57 #17)
