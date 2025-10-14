@@ -237,3 +237,4 @@
 [2025-10-14T10:51:42] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-14T10:51:42 #4)
 [2025-10-14T15:54:34] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-14T15:54:34 #5)
 [2025-10-14T18:38:31] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-14T18:38:31 #6)
+[2025-10-14T15:17:43] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-14T15:17:43 #7)
