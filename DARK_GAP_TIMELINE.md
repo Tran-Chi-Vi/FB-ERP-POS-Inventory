@@ -1434,3 +1434,4 @@
 [2025-10-14T15:45:09] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-14T15:45:09 #15)
 [2025-10-14T17:10:16] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-14T17:10:16 #16)
 [2025-10-14T10:23:48] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-14T10:23:48 #17)
+[2025-10-14T18:45:31] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-14T18:45:31 #18)
