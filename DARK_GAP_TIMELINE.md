@@ -1426,3 +1426,4 @@
 [2025-10-14T11:10:48] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-14T11:10:48 #7)
 [2025-10-14T19:15:38] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-14T19:15:38 #8)
 [2025-10-14T10:05:00] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-14T10:05:00 #9)
+[2025-10-14T08:46:49] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-14T08:46:49 #10)
