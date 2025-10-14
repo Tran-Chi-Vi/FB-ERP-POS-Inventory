@@ -231,3 +231,4 @@
 [2025-10-11T13:41:35] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-11T13:41:35 #6)
 [2025-10-11T17:15:43] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-11T17:15:43 #7)
 [2025-10-11T16:37:29] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-11T16:37:29 #8)
+[2025-10-14T21:12:29] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-14T21:12:29 #1)
