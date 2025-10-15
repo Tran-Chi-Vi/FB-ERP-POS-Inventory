@@ -3420,3 +3420,4 @@
 [2025-10-14T18:02:25] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-14T18:02:25 #9)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-15T21:29:13] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-15T21:29:13 #1)
+[2025-10-15T18:35:25] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-15T18:35:25 #2)
