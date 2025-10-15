@@ -3421,3 +3421,4 @@
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-15T21:29:13] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-15T21:29:13 #1)
 [2025-10-15T18:35:25] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-15T18:35:25 #2)
+[2025-10-15T10:51:19] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-15T10:51:19 #3)
