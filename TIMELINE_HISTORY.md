@@ -3434,3 +3434,4 @@
 [2025-10-15T08:35:01] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-15T08:35:01 #13)
 [2025-10-15T08:25:19] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-15T08:25:19 #14)
 [2025-10-15T13:22:44] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-15T13:22:44 #15)
+[2025-10-15T20:38:11] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-15T20:38:11 #16)
