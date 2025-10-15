@@ -3431,3 +3431,4 @@
 [2025-10-15T10:09:47] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-15T10:09:47 #10)
 [2025-10-15T19:40:00] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-15T19:40:00 #11)
 [2025-10-15T17:03:52] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-15T17:03:52 #12)
+[2025-10-15T08:35:01] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-15T08:35:01 #13)
