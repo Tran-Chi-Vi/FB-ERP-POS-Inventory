@@ -1439,3 +1439,4 @@
 [2025-10-15T17:47:51] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-15T17:47:51 #1)
 [2025-10-15T11:21:57] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-15T11:21:57 #2)
 [2025-10-15T18:58:43] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-15T18:58:43 #3)
+[2025-10-15T18:35:44] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-15T18:35:44 #4)
