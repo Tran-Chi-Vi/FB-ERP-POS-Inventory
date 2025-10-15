@@ -3428,3 +3428,4 @@
 [2025-10-15T14:29:46] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-15T14:29:46 #7)
 [2025-10-15T21:53:46] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-15T21:53:46 #8)
 [2025-10-15T10:14:39] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-15T10:14:39 #9)
+[2025-10-15T10:09:47] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-15T10:09:47 #10)
