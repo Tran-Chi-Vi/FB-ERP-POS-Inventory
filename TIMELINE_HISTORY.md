@@ -3423,3 +3423,4 @@
 [2025-10-15T18:35:25] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-15T18:35:25 #2)
 [2025-10-15T10:51:19] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-15T10:51:19 #3)
 [2025-10-15T11:26:05] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-15T11:26:05 #4)
+[2025-10-15T21:21:14] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-15T21:21:14 #5)
