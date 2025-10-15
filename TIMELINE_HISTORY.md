@@ -3388,6 +3388,7 @@
 [2025-10-11T13:41:35] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-11T13:41:35 #6)
 [2025-10-11T17:15:43] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-11T17:15:43 #7)
 [2025-10-11T16:37:29] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-11T16:37:29 #8)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-13T17:52:00] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-13T17:52:00 #1)
 [2025-10-13T12:31:23] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-13T12:31:23 #2)
@@ -3407,3 +3408,15 @@
 [2025-10-13T11:04:44] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-13T11:04:44 #16)
 [2025-10-13T15:46:57] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-13T15:46:57 #17)
 [2025-10-13T12:29:07] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-13T12:29:07 #18)
+=======
+[2025-10-14T21:12:29] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-14T21:12:29 #1)
+[2025-10-14T15:04:34] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-14T15:04:34 #2)
+[2025-10-14T08:38:12] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-14T08:38:12 #3)
+[2025-10-14T10:51:42] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-14T10:51:42 #4)
+[2025-10-14T15:54:34] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-14T15:54:34 #5)
+[2025-10-14T18:38:31] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-14T18:38:31 #6)
+[2025-10-14T15:17:43] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-14T15:17:43 #7)
+[2025-10-14T17:41:43] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-14T17:41:43 #8)
+[2025-10-14T18:02:25] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-14T18:02:25 #9)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-15T21:29:13] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-15T21:29:13 #1)
