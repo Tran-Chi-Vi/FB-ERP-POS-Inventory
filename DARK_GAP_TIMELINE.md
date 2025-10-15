@@ -1441,3 +1441,4 @@
 [2025-10-15T18:58:43] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-15T18:58:43 #3)
 [2025-10-15T18:35:44] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-15T18:35:44 #4)
 [2025-10-15T21:43:18] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-15T21:43:18 #5)
+[2025-10-15T08:30:58] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-15T08:30:58 #6)
