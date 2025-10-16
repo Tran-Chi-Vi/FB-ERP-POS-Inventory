@@ -1622,3 +1622,4 @@
 [2025-10-31T15:28:08] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-31T15:28:08 #4)
 [2025-10-31T15:06:49] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-31T15:06:49 #5)
 [2025-10-31T19:09:17] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-31T19:09:17 #6)
+[2025-10-31T19:57:58] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-31T19:57:58 #7)
