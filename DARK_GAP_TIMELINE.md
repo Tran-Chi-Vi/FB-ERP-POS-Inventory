@@ -1459,3 +1459,4 @@
 [2025-10-16T16:43:35] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-16T16:43:35 #7)
 [2025-10-16T09:29:43] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-16T09:29:43 #8)
 [2025-10-16T14:38:27] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-16T14:38:27 #9)
+[2025-10-16T18:44:44] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-16T18:44:44 #10)
