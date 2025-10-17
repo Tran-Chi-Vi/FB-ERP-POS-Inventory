@@ -3455,3 +3455,4 @@
 [2025-10-17T09:59:07] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-17T09:59:07 #10)
 [2025-10-17T17:57:42] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-17T17:57:42 #11)
 [2025-10-17T08:11:56] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-17T08:11:56 #12)
+[2025-10-17T21:44:13] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-17T21:44:13 #13)
