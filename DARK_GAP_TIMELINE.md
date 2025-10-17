@@ -1471,3 +1471,4 @@
 [2025-10-17T20:48:35] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-17T20:48:35 #6)
 [2025-10-17T09:27:02] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-17T09:27:02 #7)
 [2025-10-17T19:21:40] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-17T19:21:40 #8)
+[2025-10-17T17:32:43] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-17T17:32:43 #9)
