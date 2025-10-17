@@ -3446,3 +3446,4 @@
 [2025-10-17T14:31:14] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-17T14:31:14 #1)
 [2025-10-17T18:14:28] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-17T18:14:28 #2)
 [2025-10-17T14:14:32] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-17T14:14:32 #3)
+[2025-10-17T10:40:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-17T10:40:30 #4)
