@@ -3452,3 +3452,4 @@
 [2025-10-17T15:12:25] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-17T15:12:25 #7)
 [2025-10-17T15:50:50] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-17T15:50:50 #8)
 [2025-10-17T18:36:12] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-17T18:36:12 #9)
+[2025-10-17T09:59:07] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-17T09:59:07 #10)
