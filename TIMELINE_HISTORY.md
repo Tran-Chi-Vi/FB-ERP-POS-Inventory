@@ -3418,6 +3418,7 @@
 [2025-10-14T15:17:43] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-14T15:17:43 #7)
 [2025-10-14T17:41:43] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-14T17:41:43 #8)
 [2025-10-14T18:02:25] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-14T18:02:25 #9)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-15T21:29:13] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-15T21:29:13 #1)
 [2025-10-15T18:35:25] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-15T18:35:25 #2)
@@ -3435,3 +3436,11 @@
 [2025-10-15T08:25:19] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-15T08:25:19 #14)
 [2025-10-15T13:22:44] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-15T13:22:44 #15)
 [2025-10-15T20:38:11] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-15T20:38:11 #16)
+=======
+[2025-10-16T17:20:22] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-16T17:20:22 #1)
+[2025-10-16T20:47:46] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-16T20:47:46 #2)
+[2025-10-16T09:41:10] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-16T09:41:10 #3)
+[2025-10-16T19:40:15] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-16T19:40:15 #4)
+[2025-10-16T13:45:50] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-16T13:45:50 #5)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-17T14:31:14] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-17T14:31:14 #1)
