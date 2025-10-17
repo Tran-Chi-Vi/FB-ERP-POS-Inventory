@@ -3457,3 +3457,4 @@
 [2025-10-17T08:11:56] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-17T08:11:56 #12)
 [2025-10-17T21:44:13] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-17T21:44:13 #13)
 [2025-10-17T10:26:30] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-17T10:26:30 #14)
+[2025-10-17T13:06:19] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-17T13:06:19 #15)
