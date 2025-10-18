@@ -1492,3 +1492,4 @@
 [2025-10-18T14:38:36] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-18T14:38:36 #8)
 [2025-10-18T16:16:59] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-18T16:16:59 #9)
 [2025-10-18T17:56:38] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-18T17:56:38 #10)
+[2025-10-18T13:22:11] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-18T13:22:11 #11)
