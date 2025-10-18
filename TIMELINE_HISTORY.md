@@ -249,3 +249,4 @@
 [2025-10-18T14:02:17] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-18T14:02:17 #2)
 [2025-10-18T19:30:35] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-18T19:30:35 #3)
 [2025-10-18T16:40:36] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-18T16:40:36 #4)
+[2025-10-18T10:33:27] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-18T10:33:27 #5)
