@@ -256,3 +256,4 @@
 [2025-10-18T18:05:51] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-18T18:05:51 #9)
 [2025-10-18T20:25:44] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-18T20:25:44 #10)
 [2025-10-18T17:14:30] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-18T17:14:30 #11)
+[2025-10-18T08:52:00] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-18T08:52:00 #12)
