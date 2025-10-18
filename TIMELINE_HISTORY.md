@@ -247,3 +247,4 @@
 [2025-10-16T13:45:50] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-16T13:45:50 #5)
 [2025-10-18T10:13:12] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-18T10:13:12 #1)
 [2025-10-18T14:02:17] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-18T14:02:17 #2)
+[2025-10-18T19:30:35] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-18T19:30:35 #3)
