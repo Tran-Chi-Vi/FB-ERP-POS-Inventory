@@ -253,3 +253,4 @@
 [2025-10-18T09:38:47] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-18T09:38:47 #6)
 [2025-10-18T13:32:54] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-18T13:32:54 #7)
 [2025-10-18T10:35:51] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-18T10:35:51 #8)
+[2025-10-18T18:05:51] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-18T18:05:51 #9)
