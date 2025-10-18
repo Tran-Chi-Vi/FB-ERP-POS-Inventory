@@ -251,3 +251,4 @@
 [2025-10-18T16:40:36] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-18T16:40:36 #4)
 [2025-10-18T10:33:27] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-18T10:33:27 #5)
 [2025-10-18T09:38:47] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-18T09:38:47 #6)
+[2025-10-18T13:32:54] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-18T13:32:54 #7)
