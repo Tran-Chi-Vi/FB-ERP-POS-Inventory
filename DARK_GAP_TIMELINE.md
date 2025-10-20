@@ -1504,3 +1504,4 @@
 [2025-10-20T21:54:18] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-20T21:54:18 #7)
 [2025-10-20T12:33:12] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-20T12:33:12 #8)
 [2025-10-20T08:12:49] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-20T08:12:49 #9)
+[2025-10-20T14:42:51] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-20T14:42:51 #10)
