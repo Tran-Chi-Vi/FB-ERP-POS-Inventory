@@ -1506,3 +1506,5 @@
 [2025-10-20T08:12:49] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-20T08:12:49 #9)
 [2025-10-20T14:42:51] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-20T14:42:51 #10)
 [2025-10-20T13:08:13] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-20T13:08:13 #11)
+[2025-10-20T14:29:29] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-20T14:29:29 #12)
+[2025-10-20T17:10:53] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-20T17:10:53 #13)
