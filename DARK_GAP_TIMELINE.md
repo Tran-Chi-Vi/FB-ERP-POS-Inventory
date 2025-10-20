@@ -1499,3 +1499,4 @@
 [2025-10-20T10:24:15] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-20T10:24:15 #2)
 [2025-10-20T18:33:08] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-20T18:33:08 #3)
 [2025-10-20T13:58:12] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-20T13:58:12 #4)
+[2025-10-20T11:49:03] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-20T11:49:03 #5)
