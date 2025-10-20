@@ -3442,6 +3442,7 @@
 [2025-10-16T09:41:10] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-16T09:41:10 #3)
 [2025-10-16T19:40:15] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-16T19:40:15 #4)
 [2025-10-16T13:45:50] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-16T13:45:50 #5)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-17T14:31:14] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-17T14:31:14 #1)
 [2025-10-17T18:14:28] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-17T18:14:28 #2)
@@ -3459,3 +3460,19 @@
 [2025-10-17T10:26:30] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-17T10:26:30 #14)
 [2025-10-17T13:06:19] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-17T13:06:19 #15)
 [2025-10-17T10:18:59] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-17T10:18:59 #16)
+=======
+[2025-10-18T10:13:12] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-18T10:13:12 #1)
+[2025-10-18T14:02:17] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-18T14:02:17 #2)
+[2025-10-18T19:30:35] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-18T19:30:35 #3)
+[2025-10-18T16:40:36] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-18T16:40:36 #4)
+[2025-10-18T10:33:27] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-18T10:33:27 #5)
+[2025-10-18T09:38:47] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-18T09:38:47 #6)
+[2025-10-18T13:32:54] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-18T13:32:54 #7)
+[2025-10-18T10:35:51] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-18T10:35:51 #8)
+[2025-10-18T18:05:51] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-18T18:05:51 #9)
+[2025-10-18T20:25:44] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-18T20:25:44 #10)
+[2025-10-18T17:14:30] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-18T17:14:30 #11)
+[2025-10-18T08:52:00] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-18T08:52:00 #12)
+[2025-10-18T20:10:20] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-18T20:10:20 #13)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-20T08:04:26] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-20T08:04:26 #1)
