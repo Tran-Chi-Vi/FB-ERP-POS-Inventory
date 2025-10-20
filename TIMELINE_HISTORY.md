@@ -3476,3 +3476,4 @@
 [2025-10-18T20:10:20] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-18T20:10:20 #13)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-20T08:04:26] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-20T08:04:26 #1)
+[2025-10-20T16:25:42] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-20T16:25:42 #2)
