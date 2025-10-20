@@ -3478,3 +3478,4 @@
 [2025-10-20T08:04:26] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-20T08:04:26 #1)
 [2025-10-20T16:25:42] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-20T16:25:42 #2)
 [2025-10-20T12:42:07] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-20T12:42:07 #3)
+[2025-10-20T15:07:20] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-20T15:07:20 #4)
