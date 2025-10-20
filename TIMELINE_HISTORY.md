@@ -3480,3 +3480,4 @@
 [2025-10-20T12:42:07] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-20T12:42:07 #3)
 [2025-10-20T15:07:20] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-20T15:07:20 #4)
 [2025-10-20T18:26:43] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-20T18:26:43 #5)
+[2025-10-20T20:49:52] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-20T20:49:52 #6)
