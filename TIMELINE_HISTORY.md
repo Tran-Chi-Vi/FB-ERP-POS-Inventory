@@ -265,3 +265,4 @@
 [2025-10-21T17:10:06] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-21T17:10:06 #5)
 [2025-10-21T08:45:21] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-21T08:45:21 #6)
 [2025-10-21T19:40:48] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-21T19:40:48 #7)
+[2025-10-21T13:33:02] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-21T13:33:02 #8)
