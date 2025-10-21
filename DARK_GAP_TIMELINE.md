@@ -1508,3 +1508,4 @@
 [2025-10-20T13:08:13] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-20T13:08:13 #11)
 [2025-10-20T14:29:29] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-10-20T14:29:29 #12)
 [2025-10-20T17:10:53] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-20T17:10:53 #13)
+[2025-10-21T08:04:56] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-21T08:04:56 #1)
