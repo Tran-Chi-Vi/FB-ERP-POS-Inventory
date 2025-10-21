@@ -263,3 +263,4 @@
 [2025-10-21T20:03:39] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-21T20:03:39 #3)
 [2025-10-21T09:50:50] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-21T09:50:50 #4)
 [2025-10-21T17:10:06] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-21T17:10:06 #5)
+[2025-10-21T08:45:21] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-21T08:45:21 #6)
