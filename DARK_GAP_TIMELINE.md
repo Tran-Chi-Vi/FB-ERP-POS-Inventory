@@ -1525,3 +1525,4 @@
 [2025-10-21T15:01:25] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-21T15:01:25 #15)
 [2025-10-21T08:03:29] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-21T08:03:29 #16)
 [2025-10-21T12:06:04] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-10-21T12:06:04 #17)
+[2025-10-21T20:22:46] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-21T20:22:46 #18)
