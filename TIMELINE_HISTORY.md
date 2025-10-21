@@ -260,3 +260,4 @@
 [2025-10-18T20:10:20] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-18T20:10:20 #13)
 [2025-10-21T11:00:27] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-21T11:00:27 #1)
 [2025-10-21T09:24:41] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-21T09:24:41 #2)
+[2025-10-21T20:03:39] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-21T20:03:39 #3)
