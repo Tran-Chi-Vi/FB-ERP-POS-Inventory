@@ -269,3 +269,4 @@
 [2025-10-21T18:29:25] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-10-21T18:29:25 #9)
 [2025-10-21T17:12:03] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-21T17:12:03 #10)
 [2025-10-21T16:46:25] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-21T16:46:25 #11)
+[2025-10-21T18:23:12] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-21T18:23:12 #12)
