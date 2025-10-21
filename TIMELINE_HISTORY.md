@@ -262,3 +262,4 @@
 [2025-10-21T09:24:41] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-21T09:24:41 #2)
 [2025-10-21T20:03:39] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-21T20:03:39 #3)
 [2025-10-21T09:50:50] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-21T09:50:50 #4)
+[2025-10-21T17:10:06] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-21T17:10:06 #5)
