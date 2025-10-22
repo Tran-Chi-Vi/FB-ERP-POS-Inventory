@@ -3506,3 +3506,4 @@
 [2025-10-22T15:40:34] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-22T15:40:34 #8)
 [2025-10-22T10:38:09] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-22T10:38:09 #9)
 [2025-10-22T13:01:47] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-22T13:01:47 #10)
+[2025-10-22T17:01:04] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-22T17:01:04 #11)
