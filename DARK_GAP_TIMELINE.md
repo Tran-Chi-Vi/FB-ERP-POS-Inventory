@@ -1650,3 +1650,4 @@
 [2025-11-03T08:45:55] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-11-03T08:45:55 #1)
 [2025-11-03T12:49:46] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-11-03T12:49:46 #2)
 [2025-11-03T18:32:45] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-03T18:32:45 #3)
+[2025-11-03T20:22:08] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-03T20:22:08 #4)
