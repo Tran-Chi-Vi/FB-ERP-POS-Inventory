@@ -3503,3 +3503,4 @@
 [2025-10-22T12:14:58] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-22T12:14:58 #5)
 [2025-10-22T08:30:41] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-22T08:30:41 #6)
 [2025-10-22T10:01:30] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-22T10:01:30 #7)
+[2025-10-22T15:40:34] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-22T15:40:34 #8)
