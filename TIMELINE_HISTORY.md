@@ -3501,3 +3501,4 @@
 [2025-10-22T14:39:57] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-22T14:39:57 #3)
 [2025-10-22T16:10:42] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-22T16:10:42 #4)
 [2025-10-22T12:14:58] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-22T12:14:58 #5)
+[2025-10-22T08:30:41] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-22T08:30:41 #6)
