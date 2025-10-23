@@ -1540,3 +1540,4 @@
 [2025-10-23T11:21:36] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-10-23T11:21:36 #5)
 [2025-10-23T17:48:10] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-23T17:48:10 #6)
 [2025-10-23T15:49:10] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-23T15:49:10 #7)
+[2025-10-23T20:42:09] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-23T20:42:09 #8)
