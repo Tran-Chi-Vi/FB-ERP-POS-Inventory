@@ -1542,3 +1542,4 @@
 [2025-10-23T15:49:10] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-23T15:49:10 #7)
 [2025-10-23T20:42:09] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-10-23T20:42:09 #8)
 [2025-10-23T17:55:31] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-23T17:55:31 #9)
+[2025-10-23T20:33:12] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-23T20:33:12 #10)
