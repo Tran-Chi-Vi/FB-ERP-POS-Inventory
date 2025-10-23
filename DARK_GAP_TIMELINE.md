@@ -1544,3 +1544,4 @@
 [2025-10-23T17:55:31] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-23T17:55:31 #9)
 [2025-10-23T20:33:12] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-10-23T20:33:12 #10)
 [2025-10-23T11:14:20] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-10-23T11:14:20 #11)
+[2025-10-23T13:54:49] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-10-23T13:54:49 #12)
