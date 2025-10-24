@@ -3495,6 +3495,7 @@
 [2025-10-21T17:12:03] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-21T17:12:03 #10)
 [2025-10-21T16:46:25] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-21T16:46:25 #11)
 [2025-10-21T18:23:12] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-21T18:23:12 #12)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-22T19:17:59] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-22T19:17:59 #1)
 [2025-10-22T14:44:56] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-22T14:44:56 #2)
@@ -3507,3 +3508,11 @@
 [2025-10-22T10:38:09] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-22T10:38:09 #9)
 [2025-10-22T13:01:47] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-22T13:01:47 #10)
 [2025-10-22T17:01:04] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-22T17:01:04 #11)
+=======
+[2025-10-23T20:19:52] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-23T20:19:52 #1)
+[2025-10-23T12:12:24] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-23T12:12:24 #2)
+[2025-10-23T15:38:00] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-23T15:38:00 #3)
+[2025-10-23T18:43:33] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-23T18:43:33 #4)
+[2025-10-23T16:20:31] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-23T16:20:31 #5)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-24T12:27:03] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-24T12:27:03 #1)
