@@ -3523,3 +3523,4 @@
 [2025-10-24T13:13:07] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-24T13:13:07 #6)
 [2025-10-24T16:10:13] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-24T16:10:13 #7)
 [2025-10-24T17:02:27] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-24T17:02:27 #8)
+[2025-10-24T21:47:06] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-24T21:47:06 #9)
