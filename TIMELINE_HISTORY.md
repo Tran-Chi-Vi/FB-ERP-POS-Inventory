@@ -289,3 +289,4 @@
 [2025-10-25T19:57:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-25T19:57:18 #12)
 [2025-10-25T17:56:44] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-25T17:56:44 #13)
 [2025-10-25T13:28:57] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-25T13:28:57 #14)
+[2025-10-25T16:47:20] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-25T16:47:20 #15)
