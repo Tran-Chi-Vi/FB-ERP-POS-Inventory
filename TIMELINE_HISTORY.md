@@ -287,3 +287,4 @@
 [2025-10-25T14:02:10] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-25T14:02:10 #10)
 [2025-10-25T15:44:29] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-25T15:44:29 #11)
 [2025-10-25T19:57:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-25T19:57:18 #12)
+[2025-10-25T17:56:44] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-25T17:56:44 #13)
