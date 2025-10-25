@@ -280,3 +280,4 @@
 [2025-10-25T12:02:19] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-25T12:02:19 #3)
 [2025-10-25T16:18:27] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-25T16:18:27 #4)
 [2025-10-25T08:27:56] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-25T08:27:56 #5)
+[2025-10-25T10:00:44] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-25T10:00:44 #6)
