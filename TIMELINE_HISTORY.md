@@ -3549,3 +3549,4 @@
 [2025-10-27T16:57:34] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-27T16:57:34 #4)
 [2025-10-27T13:44:19] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-27T13:44:19 #5)
 [2025-10-27T14:07:45] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-27T14:07:45 #6)
+[2025-10-27T21:26:14] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-27T21:26:14 #7)
