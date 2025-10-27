@@ -3514,6 +3514,7 @@
 [2025-10-23T15:38:00] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-23T15:38:00 #3)
 [2025-10-23T18:43:33] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-10-23T18:43:33 #4)
 [2025-10-23T16:20:31] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-23T16:20:31 #5)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-24T12:27:03] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-24T12:27:03 #1)
 [2025-10-24T21:43:17] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-24T21:43:17 #2)
@@ -3524,3 +3525,22 @@
 [2025-10-24T16:10:13] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-24T16:10:13 #7)
 [2025-10-24T17:02:27] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-24T17:02:27 #8)
 [2025-10-24T21:47:06] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-24T21:47:06 #9)
+=======
+[2025-10-25T13:01:38] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-25T13:01:38 #1)
+[2025-10-25T13:13:23] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-25T13:13:23 #2)
+[2025-10-25T12:02:19] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-25T12:02:19 #3)
+[2025-10-25T16:18:27] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-25T16:18:27 #4)
+[2025-10-25T08:27:56] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-25T08:27:56 #5)
+[2025-10-25T10:00:44] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-25T10:00:44 #6)
+[2025-10-25T10:09:59] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-25T10:09:59 #7)
+[2025-10-25T17:00:03] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-25T17:00:03 #8)
+[2025-10-25T12:48:02] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-25T12:48:02 #9)
+[2025-10-25T14:02:10] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-25T14:02:10 #10)
+[2025-10-25T15:44:29] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-25T15:44:29 #11)
+[2025-10-25T19:57:18] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-25T19:57:18 #12)
+[2025-10-25T17:56:44] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-25T17:56:44 #13)
+[2025-10-25T13:28:57] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-25T13:28:57 #14)
+[2025-10-25T16:47:20] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-25T16:47:20 #15)
+[2025-10-25T14:37:44] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-25T14:37:44 #16)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-27T09:38:41] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-27T09:38:41 #1)
