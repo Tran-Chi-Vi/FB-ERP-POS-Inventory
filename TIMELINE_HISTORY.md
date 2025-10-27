@@ -3544,3 +3544,4 @@
 [2025-10-25T14:37:44] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-25T14:37:44 #16)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-27T09:38:41] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-27T09:38:41 #1)
+[2025-10-27T12:41:34] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-27T12:41:34 #2)
