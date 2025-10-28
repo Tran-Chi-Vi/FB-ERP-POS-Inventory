@@ -297,3 +297,4 @@
 [2025-10-28T11:22:32] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-28T11:22:32 #4)
 [2025-10-28T12:24:32] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-28T12:24:32 #5)
 [2025-10-28T11:21:05] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-28T11:21:05 #6)
+[2025-10-28T08:30:05] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-28T08:30:05 #7)
