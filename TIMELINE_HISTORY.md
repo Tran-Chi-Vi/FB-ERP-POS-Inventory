@@ -304,3 +304,4 @@
 [2025-10-28T15:17:01] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-28T15:17:01 #11)
 [2025-10-28T18:04:54] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-28T18:04:54 #12)
 [2025-10-28T10:42:38] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-28T10:42:38 #13)
+[2025-10-28T20:45:49] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-28T20:45:49 #14)
