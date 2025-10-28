@@ -294,3 +294,4 @@
 [2025-10-28T10:49:27] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-28T10:49:27 #1)
 [2025-10-28T12:13:05] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-28T12:13:05 #2)
 [2025-10-28T10:17:11] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-28T10:17:11 #3)
+[2025-10-28T11:22:32] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-28T11:22:32 #4)
