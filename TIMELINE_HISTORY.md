@@ -306,3 +306,4 @@
 [2025-10-28T10:42:38] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-28T10:42:38 #13)
 [2025-10-28T20:45:49] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-28T20:45:49 #14)
 [2025-10-28T13:01:35] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-28T13:01:35 #15)
+[2025-10-28T16:27:27] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-28T16:27:27 #16)
