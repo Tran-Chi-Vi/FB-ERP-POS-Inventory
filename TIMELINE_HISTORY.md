@@ -302,3 +302,4 @@
 [2025-10-28T14:40:56] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-28T14:40:56 #9)
 [2025-10-28T16:17:54] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-28T16:17:54 #10)
 [2025-10-28T15:17:01] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-28T15:17:01 #11)
+[2025-10-28T18:04:54] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-28T18:04:54 #12)
