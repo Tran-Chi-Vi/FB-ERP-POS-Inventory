@@ -1587,3 +1587,4 @@
 [2025-10-28T12:02:23] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-10-28T12:02:23 #3)
 [2025-10-28T17:52:47] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-10-28T17:52:47 #4)
 [2025-10-28T14:40:42] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-10-28T14:40:42 #5)
+[2025-10-28T21:12:46] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-10-28T21:12:46 #6)
