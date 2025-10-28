@@ -299,3 +299,4 @@
 [2025-10-28T11:21:05] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-28T11:21:05 #6)
 [2025-10-28T08:30:05] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-28T08:30:05 #7)
 [2025-10-28T12:56:49] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-28T12:56:49 #8)
+[2025-10-28T14:40:56] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-28T14:40:56 #9)
