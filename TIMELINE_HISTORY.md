@@ -3582,3 +3582,4 @@
 [2025-10-29T10:09:38] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-29T10:09:38 #3)
 [2025-10-29T08:18:23] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-29T08:18:23 #4)
 [2025-10-29T19:07:43] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-29T19:07:43 #5)
+[2025-10-29T20:14:07] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-29T20:14:07 #6)
