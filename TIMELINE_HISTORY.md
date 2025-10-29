@@ -3542,6 +3542,7 @@
 [2025-10-25T13:28:57] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-10-25T13:28:57 #14)
 [2025-10-25T16:47:20] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-25T16:47:20 #15)
 [2025-10-25T14:37:44] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-10-25T14:37:44 #16)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-27T09:38:41] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-27T09:38:41 #1)
 [2025-10-27T12:41:34] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-27T12:41:34 #2)
@@ -3558,3 +3559,22 @@
 [2025-10-27T20:19:02] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-27T20:19:02 #13)
 [2025-10-27T16:32:06] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-27T16:32:06 #14)
 [2025-10-27T21:08:59] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-10-27T21:08:59 #15)
+=======
+[2025-10-28T10:49:27] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-28T10:49:27 #1)
+[2025-10-28T12:13:05] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-28T12:13:05 #2)
+[2025-10-28T10:17:11] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-28T10:17:11 #3)
+[2025-10-28T11:22:32] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-28T11:22:32 #4)
+[2025-10-28T12:24:32] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-28T12:24:32 #5)
+[2025-10-28T11:21:05] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-28T11:21:05 #6)
+[2025-10-28T08:30:05] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-28T08:30:05 #7)
+[2025-10-28T12:56:49] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-28T12:56:49 #8)
+[2025-10-28T14:40:56] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-28T14:40:56 #9)
+[2025-10-28T16:17:54] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-28T16:17:54 #10)
+[2025-10-28T15:17:01] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-28T15:17:01 #11)
+[2025-10-28T18:04:54] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-28T18:04:54 #12)
+[2025-10-28T10:42:38] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-10-28T10:42:38 #13)
+[2025-10-28T20:45:49] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-28T20:45:49 #14)
+[2025-10-28T13:01:35] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-28T13:01:35 #15)
+[2025-10-28T16:27:27] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-28T16:27:27 #16)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-10-29T08:15:16] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-29T08:15:16 #1)
