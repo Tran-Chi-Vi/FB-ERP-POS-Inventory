@@ -3578,3 +3578,4 @@
 [2025-10-28T16:27:27] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-28T16:27:27 #16)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-29T08:15:16] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-29T08:15:16 #1)
+[2025-10-29T10:31:56] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-29T10:31:56 #2)
