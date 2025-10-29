@@ -3584,3 +3584,4 @@
 [2025-10-29T19:07:43] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-10-29T19:07:43 #5)
 [2025-10-29T20:14:07] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-29T20:14:07 #6)
 [2025-10-29T18:57:34] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-10-29T18:57:34 #7)
+[2025-10-29T16:17:33] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-29T16:17:33 #8)
