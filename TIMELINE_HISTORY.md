@@ -3580,3 +3580,4 @@
 [2025-10-29T08:15:16] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-29T08:15:16 #1)
 [2025-10-29T10:31:56] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-10-29T10:31:56 #2)
 [2025-10-29T10:09:38] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-29T10:09:38 #3)
+[2025-10-29T08:18:23] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-10-29T08:18:23 #4)
