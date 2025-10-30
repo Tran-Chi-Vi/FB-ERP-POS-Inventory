@@ -314,3 +314,4 @@
 [2025-10-30T19:55:48] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-30T19:55:48 #5)
 [2025-10-30T10:56:13] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-30T10:56:13 #6)
 [2025-10-30T13:26:48] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-30T13:26:48 #7)
+[2025-10-30T19:03:41] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-30T19:03:41 #8)
