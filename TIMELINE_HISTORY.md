@@ -318,3 +318,4 @@
 [2025-10-30T16:45:00] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-10-30T16:45:00 #9)
 [2025-10-30T17:13:39] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-30T17:13:39 #10)
 [2025-10-30T18:58:41] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-30T18:58:41 #11)
+[2025-10-30T11:23:27] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-30T11:23:27 #12)
