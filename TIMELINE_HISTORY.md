@@ -320,3 +320,4 @@
 [2025-10-30T18:58:41] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-10-30T18:58:41 #11)
 [2025-10-30T11:23:27] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-30T11:23:27 #12)
 [2025-10-30T14:40:11] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-30T14:40:11 #13)
+[2025-10-30T09:13:49] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-30T09:13:49 #14)
