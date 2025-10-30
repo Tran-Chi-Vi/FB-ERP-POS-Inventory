@@ -309,3 +309,4 @@
 [2025-10-28T16:27:27] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-10-28T16:27:27 #16)
 [2025-10-30T09:29:36] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-10-30T09:29:36 #1)
 [2025-10-30T18:20:07] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-10-30T18:20:07 #2)
+[2025-10-30T09:18:07] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-10-30T09:18:07 #3)
