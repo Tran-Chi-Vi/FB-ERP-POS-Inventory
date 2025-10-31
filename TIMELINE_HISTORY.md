@@ -3607,3 +3607,4 @@
 [2025-10-30T11:34:03] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-30T11:34:03 #16)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-31T14:14:51] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-31T14:14:51 #1)
+[2025-10-31T11:31:24] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-31T11:31:24 #2)
