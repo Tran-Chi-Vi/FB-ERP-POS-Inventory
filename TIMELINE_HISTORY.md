@@ -325,3 +325,4 @@
 [2025-10-30T11:34:03] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-30T11:34:03 #16)
 [2025-11-01T14:18:49] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-01T14:18:49 #1)
 [2025-11-01T15:52:27] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-01T15:52:27 #2)
+[2025-11-01T17:02:59] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-01T17:02:59 #3)
