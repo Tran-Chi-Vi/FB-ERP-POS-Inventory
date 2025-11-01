@@ -326,3 +326,4 @@
 [2025-11-01T14:18:49] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-01T14:18:49 #1)
 [2025-11-01T15:52:27] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-01T15:52:27 #2)
 [2025-11-01T17:02:59] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-01T17:02:59 #3)
+[2025-11-01T15:18:04] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-01T15:18:04 #4)
