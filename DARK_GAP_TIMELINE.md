@@ -1716,3 +1716,4 @@
 [2025-11-10T18:15:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-10T18:15:18 #2)
 [2025-11-10T12:12:18] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-10T12:12:18 #3)
 [2025-11-10T12:57:28] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-11-10T12:57:28 #4)
+[2025-11-10T20:15:58] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-10T20:15:58 #5)
