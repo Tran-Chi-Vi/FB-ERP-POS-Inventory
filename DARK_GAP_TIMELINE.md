@@ -1642,3 +1642,4 @@
 [2025-11-01T11:52:24] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-01T11:52:24 #8)
 [2025-11-01T15:50:11] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-01T15:50:11 #9)
 [2025-11-01T11:30:07] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-01T11:30:07 #10)
+[2025-11-01T21:44:28] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-01T21:44:28 #11)
