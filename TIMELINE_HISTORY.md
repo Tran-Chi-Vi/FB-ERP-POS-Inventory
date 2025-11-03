@@ -3630,3 +3630,4 @@
 [2025-11-03T10:47:00] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-03T10:47:00 #8)
 [2025-11-03T15:44:18] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-03T15:44:18 #9)
 [2025-11-03T09:37:11] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-03T09:37:11 #10)
+[2025-11-03T13:08:57] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-03T13:08:57 #11)
