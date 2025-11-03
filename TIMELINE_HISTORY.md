@@ -3605,9 +3605,19 @@
 [2025-10-30T09:13:49] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-30T09:13:49 #14)
 [2025-10-30T13:38:56] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-30T13:38:56 #15)
 [2025-10-30T11:34:03] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-10-30T11:34:03 #16)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-10-31T14:14:51] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-10-31T14:14:51 #1)
 [2025-10-31T11:31:24] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-10-31T11:31:24 #2)
 [2025-10-31T16:30:20] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-10-31T16:30:20 #3)
 [2025-10-31T19:02:42] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-10-31T19:02:42 #4)
 [2025-10-31T17:43:37] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-10-31T17:43:37 #5)
+=======
+[2025-11-01T14:18:49] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-01T14:18:49 #1)
+[2025-11-01T15:52:27] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-01T15:52:27 #2)
+[2025-11-01T17:02:59] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-01T17:02:59 #3)
+[2025-11-01T15:18:04] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-01T15:18:04 #4)
+[2025-11-01T08:20:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-01T08:20:30 #5)
+[2025-11-01T16:00:48] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-01T16:00:48 #6)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-03T20:25:51] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-03T20:25:51 #1)
