@@ -3621,3 +3621,4 @@
 [2025-11-01T16:00:48] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-01T16:00:48 #6)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-03T20:25:51] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-03T20:25:51 #1)
+[2025-11-03T21:40:05] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-03T21:40:05 #2)
