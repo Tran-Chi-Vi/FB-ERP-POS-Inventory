@@ -3636,3 +3636,4 @@
 [2025-11-03T16:18:43] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-03T16:18:43 #14)
 [2025-11-03T13:39:54] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-03T13:39:54 #15)
 [2025-11-03T18:25:00] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-03T18:25:00 #16)
+[2025-11-03T12:00:20] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-03T12:00:20 #17)
