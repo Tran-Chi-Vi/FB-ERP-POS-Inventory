@@ -1728,3 +1728,4 @@
 [2025-11-10T19:06:07] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-10T19:06:07 #14)
 [2025-11-10T18:10:57] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-10T18:10:57 #15)
 [2025-11-10T20:26:00] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-10T20:26:00 #16)
+[2025-11-10T15:01:45] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-11-10T15:01:45 #17)
