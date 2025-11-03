@@ -3626,3 +3626,4 @@
 [2025-11-03T18:33:16] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-03T18:33:16 #4)
 [2025-11-03T19:35:59] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-03T19:35:59 #5)
 [2025-11-03T17:07:12] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-03T17:07:12 #6)
+[2025-11-03T11:02:27] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-03T11:02:27 #7)
