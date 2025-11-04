@@ -338,3 +338,4 @@
 [2025-11-04T15:23:45] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-04T15:23:45 #7)
 [2025-11-04T15:09:29] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-04T15:09:29 #8)
 [2025-11-04T19:13:39] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-04T19:13:39 #9)
+[2025-11-04T13:02:38] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-04T13:02:38 #10)
