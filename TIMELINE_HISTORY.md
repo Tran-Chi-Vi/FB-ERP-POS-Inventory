@@ -332,3 +332,4 @@
 [2025-11-04T14:19:01] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-04T14:19:01 #1)
 [2025-11-04T16:05:37] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-04T16:05:37 #2)
 [2025-11-04T12:25:16] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-04T12:25:16 #3)
+[2025-11-04T11:11:42] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-04T11:11:42 #4)
