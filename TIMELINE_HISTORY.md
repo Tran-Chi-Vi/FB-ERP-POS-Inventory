@@ -330,3 +330,4 @@
 [2025-11-01T08:20:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-01T08:20:30 #5)
 [2025-11-01T16:00:48] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-01T16:00:48 #6)
 [2025-11-04T14:19:01] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-04T14:19:01 #1)
+[2025-11-04T16:05:37] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-04T16:05:37 #2)
