@@ -1740,3 +1740,4 @@
 [2025-11-11T12:26:48] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-11T12:26:48 #9)
 [2025-11-11T13:28:46] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-11T13:28:46 #10)
 [2025-11-11T19:54:06] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-11-11T19:54:06 #11)
+[2025-11-12T12:31:04] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-12T12:31:04 #1)
