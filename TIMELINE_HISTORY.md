@@ -3659,3 +3659,4 @@
 [2025-11-05T16:28:55] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-05T16:28:55 #1)
 [2025-11-05T13:53:50] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-05T13:53:50 #2)
 [2025-11-05T11:24:42] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-05T11:24:42 #3)
+[2025-11-05T08:58:40] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-05T08:58:40 #4)
