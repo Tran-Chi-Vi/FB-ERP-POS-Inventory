@@ -1681,3 +1681,4 @@
 [2025-11-05T10:42:34] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-05T10:42:34 #3)
 [2025-11-05T11:10:48] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-05T11:10:48 #4)
 [2025-11-05T17:15:18] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-11-05T17:15:18 #5)
+[2025-11-05T16:26:42] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-11-05T16:26:42 #6)
