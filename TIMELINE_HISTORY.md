@@ -3619,6 +3619,7 @@
 [2025-11-01T15:18:04] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-01T15:18:04 #4)
 [2025-11-01T08:20:30] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-01T08:20:30 #5)
 [2025-11-01T16:00:48] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-01T16:00:48 #6)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-03T20:25:51] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-03T20:25:51 #1)
 [2025-11-03T21:40:05] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-03T21:40:05 #2)
@@ -3637,3 +3638,22 @@
 [2025-11-03T13:39:54] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-03T13:39:54 #15)
 [2025-11-03T18:25:00] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-03T18:25:00 #16)
 [2025-11-03T12:00:20] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-03T12:00:20 #17)
+=======
+[2025-11-04T14:19:01] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-04T14:19:01 #1)
+[2025-11-04T16:05:37] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-04T16:05:37 #2)
+[2025-11-04T12:25:16] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-04T12:25:16 #3)
+[2025-11-04T11:11:42] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-04T11:11:42 #4)
+[2025-11-04T10:06:19] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-04T10:06:19 #5)
+[2025-11-04T11:22:20] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-04T11:22:20 #6)
+[2025-11-04T15:23:45] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-04T15:23:45 #7)
+[2025-11-04T15:09:29] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-04T15:09:29 #8)
+[2025-11-04T19:13:39] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-04T19:13:39 #9)
+[2025-11-04T13:02:38] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-04T13:02:38 #10)
+[2025-11-04T18:33:52] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-04T18:33:52 #11)
+[2025-11-04T09:53:47] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-04T09:53:47 #12)
+[2025-11-04T19:19:14] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-04T19:19:14 #13)
+[2025-11-04T15:18:54] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-04T15:18:54 #14)
+[2025-11-04T13:51:23] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-04T13:51:23 #15)
+[2025-11-04T14:23:55] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-04T14:23:55 #16)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-05T16:28:55] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-05T16:28:55 #1)
