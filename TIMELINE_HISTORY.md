@@ -3660,3 +3660,4 @@
 [2025-11-05T13:53:50] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-05T13:53:50 #2)
 [2025-11-05T11:24:42] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-05T11:24:42 #3)
 [2025-11-05T08:58:40] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-05T08:58:40 #4)
+[2025-11-05T20:13:58] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-05T20:13:58 #5)
