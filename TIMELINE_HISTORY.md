@@ -3662,3 +3662,4 @@
 [2025-11-05T08:58:40] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-05T08:58:40 #4)
 [2025-11-05T20:13:58] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-05T20:13:58 #5)
 [2025-11-05T08:16:04] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-05T08:16:04 #6)
+[2025-11-05T11:35:28] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-05T11:35:28 #7)
