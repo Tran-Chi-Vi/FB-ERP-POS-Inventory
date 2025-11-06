@@ -353,3 +353,4 @@
 [2025-11-06T11:31:51] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-06T11:31:51 #6)
 [2025-11-06T20:33:39] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-06T20:33:39 #7)
 [2025-11-06T19:56:08] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-06T19:56:08 #8)
+[2025-11-06T13:08:04] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-06T13:08:04 #9)
