@@ -350,3 +350,4 @@
 [2025-11-06T09:57:57] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-06T09:57:57 #3)
 [2025-11-06T18:47:51] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-06T18:47:51 #4)
 [2025-11-06T19:56:15] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-06T19:56:15 #5)
+[2025-11-06T11:31:51] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-06T11:31:51 #6)
