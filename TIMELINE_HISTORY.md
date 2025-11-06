@@ -357,3 +357,4 @@
 [2025-11-06T16:24:47] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-06T16:24:47 #10)
 [2025-11-06T19:19:40] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-06T19:19:40 #11)
 [2025-11-06T21:09:17] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-06T21:09:17 #12)
+[2025-11-06T13:33:41] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-06T13:33:41 #13)
