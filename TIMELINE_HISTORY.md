@@ -359,3 +359,4 @@
 [2025-11-06T21:09:17] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-06T21:09:17 #12)
 [2025-11-06T13:33:41] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-06T13:33:41 #13)
 [2025-11-06T19:39:34] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-06T19:39:34 #14)
+[2025-11-06T18:36:53] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-06T18:36:53 #15)
