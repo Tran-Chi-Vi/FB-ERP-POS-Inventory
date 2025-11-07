@@ -3687,3 +3687,4 @@
 [2025-11-07T08:07:37] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-07T08:07:37 #2)
 [2025-11-07T12:54:49] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-07T12:54:49 #3)
 [2025-11-07T18:44:03] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-07T18:44:03 #4)
+[2025-11-07T19:01:49] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-07T19:01:49 #5)
