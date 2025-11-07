@@ -3655,6 +3655,7 @@
 [2025-11-04T15:18:54] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-04T15:18:54 #14)
 [2025-11-04T13:51:23] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-04T13:51:23 #15)
 [2025-11-04T14:23:55] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-04T14:23:55 #16)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-05T16:28:55] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-05T16:28:55 #1)
 [2025-11-05T13:53:50] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-05T13:53:50 #2)
@@ -3663,3 +3664,23 @@
 [2025-11-05T20:13:58] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-05T20:13:58 #5)
 [2025-11-05T08:16:04] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-05T08:16:04 #6)
 [2025-11-05T11:35:28] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-05T11:35:28 #7)
+=======
+[2025-11-06T10:44:32] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-06T10:44:32 #1)
+[2025-11-06T08:17:22] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-06T08:17:22 #2)
+[2025-11-06T09:57:57] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-06T09:57:57 #3)
+[2025-11-06T18:47:51] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-06T18:47:51 #4)
+[2025-11-06T19:56:15] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-06T19:56:15 #5)
+[2025-11-06T11:31:51] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-06T11:31:51 #6)
+[2025-11-06T20:33:39] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-06T20:33:39 #7)
+[2025-11-06T19:56:08] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-06T19:56:08 #8)
+[2025-11-06T13:08:04] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-06T13:08:04 #9)
+[2025-11-06T16:24:47] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-06T16:24:47 #10)
+[2025-11-06T19:19:40] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-06T19:19:40 #11)
+[2025-11-06T21:09:17] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-06T21:09:17 #12)
+[2025-11-06T13:33:41] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-06T13:33:41 #13)
+[2025-11-06T19:39:34] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-06T19:39:34 #14)
+[2025-11-06T18:36:53] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-06T18:36:53 #15)
+[2025-11-06T17:27:35] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-06T17:27:35 #16)
+[2025-11-06T14:17:08] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-06T14:17:08 #17)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-07T09:10:58] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-07T09:10:58 #1)
