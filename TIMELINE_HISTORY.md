@@ -3689,3 +3689,4 @@
 [2025-11-07T18:44:03] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-07T18:44:03 #4)
 [2025-11-07T19:01:49] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-07T19:01:49 #5)
 [2025-11-07T14:32:33] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-07T14:32:33 #6)
+[2025-11-07T15:08:01] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-07T15:08:01 #7)
