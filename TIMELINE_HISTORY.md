@@ -3696,3 +3696,4 @@
 [2025-11-07T10:19:17] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-07T10:19:17 #11)
 [2025-11-07T16:22:43] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-07T16:22:43 #12)
 [2025-11-07T10:13:36] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-07T10:13:36 #13)
+[2025-11-07T21:37:49] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-07T21:37:49 #14)
