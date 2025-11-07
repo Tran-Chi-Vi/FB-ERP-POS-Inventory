@@ -3694,3 +3694,4 @@
 [2025-11-07T10:57:33] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-07T10:57:33 #9)
 [2025-11-07T08:49:59] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-07T08:49:59 #10)
 [2025-11-07T10:19:17] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-07T10:19:17 #11)
+[2025-11-07T16:22:43] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-07T16:22:43 #12)
