@@ -1708,3 +1708,4 @@
 [2025-11-07T17:14:48] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-07T17:14:48 #10)
 [2025-11-07T19:23:16] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-11-07T19:23:16 #11)
 [2025-11-08T21:54:06] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-08T21:54:06 #1)
+[2025-11-08T13:41:08] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-11-08T13:41:08 #2)
