@@ -3713,3 +3713,4 @@
 [2025-11-10T09:09:38] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-10T09:09:38 #6)
 [2025-11-10T20:09:37] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-10T20:09:37 #7)
 [2025-11-10T14:47:11] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-10T14:47:11 #8)
+[2025-11-10T08:07:20] [feat/fe-react-gsap-pos-ui] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-10T08:07:20 #9)
