@@ -1774,3 +1774,4 @@
 [2025-11-15T12:22:17] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-15T12:22:17 #2)
 [2025-11-15T11:20:27] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-11-15T11:20:27 #3)
 [2025-11-15T16:42:29] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-11-15T16:42:29 #4)
+[2025-11-15T19:51:22] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-11-15T19:51:22 #5)
