@@ -3682,6 +3682,7 @@
 [2025-11-06T18:36:53] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-06T18:36:53 #15)
 [2025-11-06T17:27:35] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-06T17:27:35 #16)
 [2025-11-06T14:17:08] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-06T14:17:08 #17)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-07T09:10:58] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-07T09:10:58 #1)
 [2025-11-07T08:07:37] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-07T08:07:37 #2)
@@ -3697,3 +3698,11 @@
 [2025-11-07T16:22:43] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-07T16:22:43 #12)
 [2025-11-07T10:13:36] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-07T10:13:36 #13)
 [2025-11-07T21:37:49] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-07T21:37:49 #14)
+=======
+[2025-11-08T12:59:46] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-08T12:59:46 #1)
+[2025-11-08T15:22:24] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-08T15:22:24 #2)
+[2025-11-08T10:55:16] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-08T10:55:16 #3)
+[2025-11-08T16:31:19] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-08T16:31:19 #4)
+[2025-11-08T19:47:04] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-08T19:47:04 #5)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-10T19:29:28] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-10T19:29:28 #1)
