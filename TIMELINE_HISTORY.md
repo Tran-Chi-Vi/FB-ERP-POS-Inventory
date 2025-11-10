@@ -3721,3 +3721,4 @@
 [2025-11-10T08:46:37] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-10T08:46:37 #14)
 [2025-11-10T11:52:10] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-10T11:52:10 #15)
 [2025-11-10T08:47:16] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-10T08:47:16 #16)
+[2025-11-10T18:45:30] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-10T18:45:30 #17)
