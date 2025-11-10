@@ -1723,3 +1723,4 @@
 [2025-11-10T17:23:09] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-10T17:23:09 #9)
 [2025-11-10T10:49:38] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-11-10T10:49:38 #10)
 [2025-11-10T16:06:36] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-10T16:06:36 #11)
+[2025-11-10T14:21:06] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-10T14:21:06 #12)
