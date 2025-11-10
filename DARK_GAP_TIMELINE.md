@@ -1719,3 +1719,4 @@
 [2025-11-10T20:15:58] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-10T20:15:58 #5)
 [2025-11-10T10:26:05] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-10T10:26:05 #6)
 [2025-11-10T18:20:30] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-10T18:20:30 #7)
+[2025-11-10T11:12:49] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-11-10T11:12:49 #8)
