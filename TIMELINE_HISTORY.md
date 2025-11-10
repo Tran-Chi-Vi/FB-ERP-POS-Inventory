@@ -3719,3 +3719,4 @@
 [2025-11-10T12:47:46] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-10T12:47:46 #12)
 [2025-11-10T20:18:22] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-10T20:18:22 #13)
 [2025-11-10T08:46:37] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-10T08:46:37 #14)
+[2025-11-10T11:52:10] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-10T11:52:10 #15)
