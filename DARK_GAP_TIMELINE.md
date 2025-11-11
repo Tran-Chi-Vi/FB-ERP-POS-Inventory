@@ -1780,3 +1780,4 @@
 [2025-11-17T08:52:25] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-17T08:52:25 #3)
 [2025-11-17T11:08:26] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-17T11:08:26 #4)
 [2025-11-17T16:05:25] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-17T16:05:25 #5)
+[2025-11-18T18:36:20] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-11-18T18:36:20 #1)
