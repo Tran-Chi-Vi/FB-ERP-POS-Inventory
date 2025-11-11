@@ -368,3 +368,4 @@
 [2025-11-08T16:31:19] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-08T16:31:19 #4)
 [2025-11-08T19:47:04] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-08T19:47:04 #5)
 [2025-11-11T13:59:03] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-11T13:59:03 #1)
+[2025-11-11T13:15:50] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-11T13:15:50 #2)
