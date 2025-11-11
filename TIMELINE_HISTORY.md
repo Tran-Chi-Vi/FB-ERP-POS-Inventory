@@ -372,3 +372,4 @@
 [2025-11-11T10:10:27] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-11T10:10:27 #3)
 [2025-11-11T14:32:28] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-11T14:32:28 #4)
 [2025-11-11T08:08:35] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-11T08:08:35 #5)
+[2025-11-11T21:37:15] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-11T21:37:15 #6)
