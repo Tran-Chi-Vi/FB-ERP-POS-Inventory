@@ -3736,3 +3736,4 @@
 [2025-11-11T14:09:14] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-11T14:09:14 #10)
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-12T20:50:03] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-12T20:50:03 #1)
+[2025-11-12T14:31:24] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-12T14:31:24 #2)
