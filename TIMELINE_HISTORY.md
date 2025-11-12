@@ -3740,3 +3740,4 @@
 [2025-11-12T11:09:08] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-12T11:09:08 #3)
 [2025-11-12T12:09:38] [feat/fe-react-gsap-pos-ui] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-12T12:09:38 #4)
 [2025-11-12T10:31:57] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-12T10:31:57 #5)
+[2025-11-12T15:11:15] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-12T15:11:15 #6)
