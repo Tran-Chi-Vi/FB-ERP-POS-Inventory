@@ -3704,6 +3704,7 @@
 [2025-11-08T10:55:16] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-08T10:55:16 #3)
 [2025-11-08T16:31:19] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-08T16:31:19 #4)
 [2025-11-08T19:47:04] [feat/fe-react-gsap-pos-ui] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-08T19:47:04 #5)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-10T19:29:28] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-10T19:29:28 #1)
 [2025-11-10T20:48:11] [feat/fe-react-gsap-pos-ui] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-10T20:48:11 #2)
@@ -3722,3 +3723,16 @@
 [2025-11-10T11:52:10] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-10T11:52:10 #15)
 [2025-11-10T08:47:16] [feat/fe-react-gsap-pos-ui] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-10T08:47:16 #16)
 [2025-11-10T18:45:30] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-10T18:45:30 #17)
+=======
+[2025-11-11T13:59:03] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-11T13:59:03 #1)
+[2025-11-11T13:15:50] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-11T13:15:50 #2)
+[2025-11-11T10:10:27] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-11T10:10:27 #3)
+[2025-11-11T14:32:28] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-11T14:32:28 #4)
+[2025-11-11T08:08:35] [feat/fe-react-gsap-pos-ui] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-11T08:08:35 #5)
+[2025-11-11T21:37:15] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-11T21:37:15 #6)
+[2025-11-11T19:01:30] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-11T19:01:30 #7)
+[2025-11-11T11:43:26] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-11T11:43:26 #8)
+[2025-11-11T21:47:48] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-11T21:47:48 #9)
+[2025-11-11T14:09:14] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-11T14:09:14 #10)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-12T20:50:03] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-12T20:50:03 #1)
