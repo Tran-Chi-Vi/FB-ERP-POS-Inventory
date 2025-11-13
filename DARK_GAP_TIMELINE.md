@@ -1799,3 +1799,4 @@
 [2025-11-19T10:52:06] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-11-19T10:52:06 #8)
 [2025-11-19T17:38:31] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-19T17:38:31 #9)
 [2025-11-19T19:28:04] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-11-19T19:28:04 #10)
+[2025-11-19T14:31:47] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-19T14:31:47 #11)
