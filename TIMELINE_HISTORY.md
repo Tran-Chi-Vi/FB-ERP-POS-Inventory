@@ -382,3 +382,4 @@
 [2025-11-13T19:08:55] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-13T19:08:55 #3)
 [2025-11-13T12:18:28] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-13T12:18:28 #4)
 [2025-11-13T15:59:21] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-13T15:59:21 #5)
+[2025-11-13T13:04:06] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-13T13:04:06 #6)
