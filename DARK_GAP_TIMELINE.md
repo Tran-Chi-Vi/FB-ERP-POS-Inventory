@@ -1802,3 +1802,4 @@
 [2025-11-19T14:31:47] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-19T14:31:47 #11)
 [2025-11-19T09:28:40] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-19T09:28:40 #12)
 [2025-11-19T16:15:36] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-19T16:15:36 #13)
+[2025-11-19T15:52:59] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-19T15:52:59 #14)
