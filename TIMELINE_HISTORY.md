@@ -380,3 +380,4 @@
 [2025-11-13T18:55:12] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-13T18:55:12 #1)
 [2025-11-13T16:29:36] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-13T16:29:36 #2)
 [2025-11-13T19:08:55] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-13T19:08:55 #3)
+[2025-11-13T12:18:28] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-13T12:18:28 #4)
