@@ -1763,3 +1763,4 @@
 [2025-11-13T20:58:26] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-13T20:58:26 #6)
 [2025-11-14T14:25:53] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-14T14:25:53 #1)
 [2025-11-14T20:28:27] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-14T20:28:27 #2)
+[2025-11-14T13:50:05] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-11-14T13:50:05 #3)
