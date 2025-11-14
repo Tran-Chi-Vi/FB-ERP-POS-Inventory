@@ -3734,6 +3734,7 @@
 [2025-11-11T11:43:26] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-11T11:43:26 #8)
 [2025-11-11T21:47:48] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-11T21:47:48 #9)
 [2025-11-11T14:09:14] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-11T14:09:14 #10)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-12T20:50:03] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-12T20:50:03 #1)
 [2025-11-12T14:31:24] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-12T14:31:24 #2)
@@ -3742,3 +3743,15 @@
 [2025-11-12T10:31:57] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-12T10:31:57 #5)
 [2025-11-12T15:11:15] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-12T15:11:15 #6)
 [2025-11-12T20:02:42] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-12T20:02:42 #7)
+=======
+[2025-11-13T18:55:12] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-13T18:55:12 #1)
+[2025-11-13T16:29:36] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-13T16:29:36 #2)
+[2025-11-13T19:08:55] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-13T19:08:55 #3)
+[2025-11-13T12:18:28] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-13T12:18:28 #4)
+[2025-11-13T15:59:21] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-13T15:59:21 #5)
+[2025-11-13T13:04:06] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-13T13:04:06 #6)
+[2025-11-13T12:22:19] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-13T12:22:19 #7)
+[2025-11-13T20:31:36] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-13T20:31:36 #8)
+[2025-11-13T13:15:36] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-13T13:15:36 #9)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-14T17:32:41] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-14T17:32:41 #1)
