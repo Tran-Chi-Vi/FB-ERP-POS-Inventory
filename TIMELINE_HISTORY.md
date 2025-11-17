@@ -3777,3 +3777,4 @@
 [2025-11-17T19:34:59] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-17T19:34:59 #3)
 [2025-11-17T12:06:55] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-17T12:06:55 #4)
 [2025-11-17T17:01:03] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-17T17:01:03 #5)
+[2025-11-17T11:35:21] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-17T11:35:21 #6)
