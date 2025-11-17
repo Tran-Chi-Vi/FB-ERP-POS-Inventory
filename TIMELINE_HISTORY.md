@@ -3783,3 +3783,4 @@
 [2025-11-17T11:36:55] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-17T11:36:55 #9)
 [2025-11-17T16:24:35] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-17T16:24:35 #10)
 [2025-11-17T18:43:35] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-17T18:43:35 #11)
+[2025-11-17T08:23:31] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-17T08:23:31 #12)
