@@ -2,3 +2,4 @@
 [2025-11-18T19:26:16] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-18T19:26:16 #2)
 [2025-11-18T15:04:20] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-18T15:04:20 #3)
 [2025-11-18T09:30:00] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-18T09:30:00 #4)
+[2025-11-18T17:51:48] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-18T17:51:48 #5)
