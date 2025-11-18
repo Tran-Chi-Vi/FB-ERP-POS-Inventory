@@ -1837,3 +1837,4 @@
 [2025-11-22T19:17:23] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-22T19:17:23 #1)
 [2025-11-22T12:58:07] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-22T12:58:07 #2)
 [2025-11-22T19:49:05] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-22T19:49:05 #3)
+[2025-11-22T19:29:03] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-22T19:29:03 #4)
