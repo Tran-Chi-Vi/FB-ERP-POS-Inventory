@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿# F&B ERP POS System Development Timeline
 
 [2025-01-01T12:01:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-01T12:01:19 #1)
@@ -3734,6 +3735,7 @@
 [2025-11-11T11:43:26] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-11T11:43:26 #8)
 [2025-11-11T21:47:48] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-11T21:47:48 #9)
 [2025-11-11T14:09:14] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-11T14:09:14 #10)
+<<<<<<< HEAD
 >>>>>>> feat/fe-react-gsap-pos-ui
 [2025-11-12T20:50:03] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-12T20:50:03 #1)
 [2025-11-12T14:31:24] [feat/fe-react-gsap-pos-ui] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-12T14:31:24 #2)
@@ -3742,3 +3744,65 @@
 [2025-11-12T10:31:57] [feat/fe-react-gsap-pos-ui] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-12T10:31:57 #5)
 [2025-11-12T15:11:15] [feat/fe-react-gsap-pos-ui] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-12T15:11:15 #6)
 [2025-11-12T20:02:42] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-12T20:02:42 #7)
+=======
+[2025-11-13T18:55:12] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-13T18:55:12 #1)
+[2025-11-13T16:29:36] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-13T16:29:36 #2)
+[2025-11-13T19:08:55] [feat/fe-react-gsap-pos-ui] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-13T19:08:55 #3)
+[2025-11-13T12:18:28] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-13T12:18:28 #4)
+[2025-11-13T15:59:21] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-13T15:59:21 #5)
+[2025-11-13T13:04:06] [feat/fe-react-gsap-pos-ui] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-13T13:04:06 #6)
+[2025-11-13T12:22:19] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-13T12:22:19 #7)
+[2025-11-13T20:31:36] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-13T20:31:36 #8)
+[2025-11-13T13:15:36] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-13T13:15:36 #9)
+<<<<<<< HEAD
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-14T17:32:41] [feat/fe-react-gsap-pos-ui] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-14T17:32:41 #1)
+[2025-11-14T14:34:49] [feat/fe-react-gsap-pos-ui] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-14T14:34:49 #2)
+[2025-11-14T17:24:27] [feat/fe-react-gsap-pos-ui] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-14T17:24:27 #3)
+[2025-11-14T11:55:41] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-14T11:55:41 #4)
+[2025-11-14T09:07:01] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-14T09:07:01 #5)
+[2025-11-14T12:18:28] [feat/fe-react-gsap-pos-ui] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-14T12:18:28 #6)
+[2025-11-14T09:28:38] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-14T09:28:38 #7)
+=======
+[2025-11-15T19:03:59] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-15T19:03:59 #1)
+[2025-11-15T18:59:49] [feat/fe-react-gsap-pos-ui] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-15T18:59:49 #2)
+[2025-11-15T15:28:42] [feat/fe-react-gsap-pos-ui] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-15T15:28:42 #3)
+[2025-11-15T09:11:19] [feat/fe-react-gsap-pos-ui] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-15T09:11:19 #4)
+[2025-11-15T17:15:58] [feat/fe-react-gsap-pos-ui] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-15T17:15:58 #5)
+[2025-11-15T11:30:35] [feat/fe-react-gsap-pos-ui] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-15T11:30:35 #6)
+[2025-11-15T15:04:23] [feat/fe-react-gsap-pos-ui] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-15T15:04:23 #7)
+[2025-11-15T19:06:09] [feat/fe-react-gsap-pos-ui] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-15T19:06:09 #8)
+>>>>>>> feat/fe-react-gsap-pos-ui
+[2025-11-17T17:54:31] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-17T17:54:31 #1)
+[2025-11-17T14:44:26] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-17T14:44:26 #2)
+[2025-11-17T19:34:59] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-17T19:34:59 #3)
+[2025-11-17T12:06:55] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-17T12:06:55 #4)
+[2025-11-17T17:01:03] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-17T17:01:03 #5)
+[2025-11-17T11:35:21] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-17T11:35:21 #6)
+[2025-11-17T21:19:15] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-17T21:19:15 #7)
+[2025-11-17T21:20:41] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-17T21:20:41 #8)
+[2025-11-17T11:36:55] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-17T11:36:55 #9)
+[2025-11-17T16:24:35] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-17T16:24:35 #10)
+[2025-11-17T18:43:35] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-17T18:43:35 #11)
+[2025-11-17T08:23:31] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-17T08:23:31 #12)
+=======
+﻿[2025-11-18T18:56:23] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-18T18:56:23 #1)
+[2025-11-18T19:26:16] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-18T19:26:16 #2)
+[2025-11-18T15:04:20] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-18T15:04:20 #3)
+[2025-11-18T09:30:00] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-18T09:30:00 #4)
+[2025-11-18T17:51:48] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-18T17:51:48 #5)
+[2025-11-18T08:26:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-18T08:26:07 #6)
+[2025-11-18T12:10:38] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-18T12:10:38 #7)
+[2025-11-18T12:22:06] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-18T12:22:06 #8)
+[2025-11-18T19:16:39] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-18T19:16:39 #9)
+[2025-11-18T15:41:11] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-18T15:41:11 #10)
+[2025-11-18T12:14:34] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-18T12:14:34 #11)
+>>>>>>> feat/system-integration-superpowers
+[2025-11-19T09:38:27] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-19T09:38:27 #1)
+[2025-11-19T10:10:19] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-19T10:10:19 #2)
+[2025-11-19T13:12:57] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-19T13:12:57 #3)
+[2025-11-19T15:30:02] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-19T15:30:02 #4)
+[2025-11-19T21:34:31] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-19T21:34:31 #5)
+[2025-11-19T09:58:32] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-19T09:58:32 #6)
+[2025-11-19T19:17:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-19T19:17:07 #7)
+[2025-11-19T21:08:03] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-19T21:08:03 #8)
