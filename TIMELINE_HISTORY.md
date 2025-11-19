@@ -3800,3 +3800,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2025-11-19T09:38:27] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-19T09:38:27 #1)
 [2025-11-19T10:10:19] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-19T10:10:19 #2)
+[2025-11-19T13:12:57] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-19T13:12:57 #3)
