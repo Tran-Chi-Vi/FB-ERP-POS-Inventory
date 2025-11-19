@@ -3805,3 +3805,4 @@
 [2025-11-19T21:34:31] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-19T21:34:31 #5)
 [2025-11-19T09:58:32] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-19T09:58:32 #6)
 [2025-11-19T19:17:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-19T19:17:07 #7)
+[2025-11-19T21:08:03] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-19T21:08:03 #8)
