@@ -3799,3 +3799,4 @@
 [2025-11-18T12:14:34] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-18T12:14:34 #11)
 >>>>>>> feat/system-integration-superpowers
 [2025-11-19T09:38:27] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-19T09:38:27 #1)
+[2025-11-19T10:10:19] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-19T10:10:19 #2)
