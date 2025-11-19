@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿# F&B ERP POS System Development Timeline
 
 [2025-01-01T12:01:19] [feat/be-auth-rbac-multi-branch] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-01-01T12:01:19 #1)
@@ -3784,3 +3785,17 @@
 [2025-11-17T16:24:35] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-17T16:24:35 #10)
 [2025-11-17T18:43:35] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-17T18:43:35 #11)
 [2025-11-17T08:23:31] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-17T08:23:31 #12)
+=======
+﻿[2025-11-18T18:56:23] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-18T18:56:23 #1)
+[2025-11-18T19:26:16] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-18T19:26:16 #2)
+[2025-11-18T15:04:20] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-18T15:04:20 #3)
+[2025-11-18T09:30:00] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-18T09:30:00 #4)
+[2025-11-18T17:51:48] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-18T17:51:48 #5)
+[2025-11-18T08:26:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-18T08:26:07 #6)
+[2025-11-18T12:10:38] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-18T12:10:38 #7)
+[2025-11-18T12:22:06] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-18T12:22:06 #8)
+[2025-11-18T19:16:39] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-18T19:16:39 #9)
+[2025-11-18T15:41:11] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-18T15:41:11 #10)
+[2025-11-18T12:14:34] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-18T12:14:34 #11)
+>>>>>>> feat/system-integration-superpowers
+[2025-11-19T09:38:27] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-19T09:38:27 #1)
