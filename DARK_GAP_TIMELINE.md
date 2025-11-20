@@ -1849,3 +1849,4 @@
 [2025-11-22T14:13:31] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-11-22T14:13:31 #13)
 [2025-11-22T12:46:28] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-22T12:46:28 #14)
 [2025-11-24T17:53:15] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-24T17:53:15 #1)
+[2025-11-24T19:47:44] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-24T19:47:44 #2)
