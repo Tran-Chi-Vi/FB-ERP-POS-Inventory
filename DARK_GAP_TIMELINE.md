@@ -1825,3 +1825,4 @@
 [2025-11-20T21:50:05] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-20T21:50:05 #14)
 [2025-11-21T11:52:22] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-21T11:52:22 #1)
 [2025-11-21T08:25:13] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-11-21T08:25:13 #2)
+[2025-11-21T12:44:44] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-21T12:44:44 #3)
