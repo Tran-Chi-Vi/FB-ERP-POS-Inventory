@@ -1827,3 +1827,5 @@
 [2025-11-21T08:25:13] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-11-21T08:25:13 #2)
 [2025-11-21T12:44:44] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-21T12:44:44 #3)
 [2025-11-21T14:06:42] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-21T14:06:42 #4)
+[2025-11-21T08:42:02] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-21T08:42:02 #5)
+[2025-11-21T19:15:29] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-21T19:15:29 #6)
