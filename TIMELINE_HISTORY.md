@@ -34,3 +34,4 @@
 [2025-11-22T11:31:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-22T11:31:30 #13)
 [2025-11-22T14:26:52] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-22T14:26:52 #14)
 [2025-11-22T10:38:53] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-22T10:38:53 #15)
+[2025-11-22T20:31:53] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-22T20:31:53 #16)
