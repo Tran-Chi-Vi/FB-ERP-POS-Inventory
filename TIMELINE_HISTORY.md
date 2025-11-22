@@ -19,3 +19,4 @@
 [2025-11-20T08:15:35] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-20T08:15:35 #8)
 [2025-11-20T15:25:26] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-20T15:25:26 #9)
 [2025-11-20T08:48:52] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-20T08:48:52 #10)
+[2025-11-22T16:37:51] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-22T16:37:51 #1)
