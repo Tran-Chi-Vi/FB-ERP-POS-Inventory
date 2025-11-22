@@ -1875,3 +1875,4 @@
 [2025-11-26T14:14:49] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-11-26T14:14:49 #10)
 [2025-11-27T17:23:24] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-27T17:23:24 #1)
 [2025-11-27T13:27:19] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-11-27T13:27:19 #2)
+[2025-11-27T19:38:12] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-27T19:38:12 #3)
