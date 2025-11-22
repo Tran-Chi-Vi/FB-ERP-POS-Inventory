@@ -31,3 +31,4 @@
 [2025-11-22T20:01:13] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-22T20:01:13 #10)
 [2025-11-22T13:42:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-22T13:42:30 #11)
 [2025-11-22T10:22:34] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-22T10:22:34 #12)
+[2025-11-22T11:31:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-22T11:31:30 #13)
