@@ -25,3 +25,4 @@
 [2025-11-22T13:17:34] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-22T13:17:34 #4)
 [2025-11-22T08:59:11] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-22T08:59:11 #5)
 [2025-11-22T10:45:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-22T10:45:43 #6)
+[2025-11-22T16:22:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-22T16:22:07 #7)
