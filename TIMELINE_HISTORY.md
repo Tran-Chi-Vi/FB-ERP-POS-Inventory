@@ -27,3 +27,4 @@
 [2025-11-22T10:45:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-22T10:45:43 #6)
 [2025-11-22T16:22:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-22T16:22:07 #7)
 [2025-11-22T17:47:19] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-22T17:47:19 #8)
+[2025-11-22T08:24:50] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-22T08:24:50 #9)
