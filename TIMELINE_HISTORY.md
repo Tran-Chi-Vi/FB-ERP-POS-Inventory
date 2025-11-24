@@ -3859,3 +3859,4 @@
 [2025-11-24T14:20:24] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-24T14:20:24 #6)
 [2025-11-24T20:43:57] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-24T20:43:57 #7)
 [2025-11-24T10:40:16] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-24T10:40:16 #8)
+[2025-11-24T12:56:11] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-24T12:56:11 #9)
