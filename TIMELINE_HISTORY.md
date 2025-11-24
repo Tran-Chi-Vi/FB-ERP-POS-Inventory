@@ -3818,6 +3818,7 @@
 [2025-11-20T08:15:35] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-20T08:15:35 #8)
 [2025-11-20T15:25:26] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-20T15:25:26 #9)
 [2025-11-20T08:48:52] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-20T08:48:52 #10)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-11-21T08:54:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-21T08:54:55 #1)
 [2025-11-21T19:40:13] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-21T19:40:13 #2)
@@ -3829,3 +3830,25 @@
 [2025-11-21T08:08:03] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-21T08:08:03 #8)
 [2025-11-21T11:09:11] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-21T11:09:11 #9)
 [2025-11-21T20:26:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-21T20:26:20 #10)
+=======
+[2025-11-22T16:37:51] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-22T16:37:51 #1)
+[2025-11-22T09:08:30] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-22T09:08:30 #2)
+[2025-11-22T16:36:07] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-22T16:36:07 #3)
+[2025-11-22T13:17:34] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-22T13:17:34 #4)
+[2025-11-22T08:59:11] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-22T08:59:11 #5)
+[2025-11-22T10:45:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-22T10:45:43 #6)
+[2025-11-22T16:22:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-22T16:22:07 #7)
+[2025-11-22T17:47:19] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-22T17:47:19 #8)
+[2025-11-22T08:24:50] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-22T08:24:50 #9)
+[2025-11-22T20:01:13] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-22T20:01:13 #10)
+[2025-11-22T13:42:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-22T13:42:30 #11)
+[2025-11-22T10:22:34] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-22T10:22:34 #12)
+[2025-11-22T11:31:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-22T11:31:30 #13)
+[2025-11-22T14:26:52] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-22T14:26:52 #14)
+[2025-11-22T10:38:53] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-22T10:38:53 #15)
+[2025-11-22T20:31:53] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-11-22T20:31:53 #16)
+[2025-11-22T16:13:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-22T16:13:04 #17)
+[2025-11-22T10:40:24] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-22T10:40:24 #18)
+[2025-11-22T11:35:34] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-22T11:35:34 #19)
+>>>>>>> feat/system-integration-superpowers
+[2025-11-24T09:55:57] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-24T09:55:57 #1)
