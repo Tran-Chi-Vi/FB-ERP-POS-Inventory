@@ -55,3 +55,4 @@
 [2025-11-25T19:40:50] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-25T19:40:50 #15)
 [2025-11-25T14:19:26] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-25T14:19:26 #16)
 [2025-11-25T18:01:10] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-25T18:01:10 #17)
+[2025-11-25T14:30:25] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-25T14:30:25 #18)
