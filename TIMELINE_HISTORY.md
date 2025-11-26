@@ -3850,6 +3850,7 @@
 [2025-11-22T16:13:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-11-22T16:13:04 #17)
 [2025-11-22T10:40:24] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-22T10:40:24 #18)
 [2025-11-22T11:35:34] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-22T11:35:34 #19)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-11-24T09:55:57] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-24T09:55:57 #1)
 [2025-11-24T11:40:20] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-24T11:40:20 #2)
@@ -3871,3 +3872,24 @@
 [2025-11-24T10:31:53] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-24T10:31:53 #18)
 [2025-11-24T08:00:42] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-24T08:00:42 #19)
 [2025-11-24T11:17:21] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-24T11:17:21 #20)
+=======
+[2025-11-25T20:15:21] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-25T20:15:21 #1)
+[2025-11-25T19:50:22] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-25T19:50:22 #2)
+[2025-11-25T17:47:51] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-25T17:47:51 #3)
+[2025-11-25T21:05:03] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-11-25T21:05:03 #4)
+[2025-11-25T15:45:35] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-11-25T15:45:35 #5)
+[2025-11-25T20:11:57] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-25T20:11:57 #6)
+[2025-11-25T16:54:23] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-25T16:54:23 #7)
+[2025-11-25T09:28:45] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-25T09:28:45 #8)
+[2025-11-25T16:44:55] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-11-25T16:44:55 #9)
+[2025-11-25T20:11:41] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-25T20:11:41 #10)
+[2025-11-25T11:57:22] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-25T11:57:22 #11)
+[2025-11-25T10:30:48] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-25T10:30:48 #12)
+[2025-11-25T17:10:24] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-25T17:10:24 #13)
+[2025-11-25T12:58:10] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-25T12:58:10 #14)
+[2025-11-25T19:40:50] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-11-25T19:40:50 #15)
+[2025-11-25T14:19:26] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-25T14:19:26 #16)
+[2025-11-25T18:01:10] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-25T18:01:10 #17)
+[2025-11-25T14:30:25] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-25T14:30:25 #18)
+>>>>>>> feat/system-integration-superpowers
+[2025-11-26T09:15:41] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-26T09:15:41 #1)
