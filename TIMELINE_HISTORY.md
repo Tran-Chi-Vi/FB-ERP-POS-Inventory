@@ -3895,3 +3895,4 @@
 [2025-11-26T09:15:41] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-26T09:15:41 #1)
 [2025-11-26T08:03:28] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-26T08:03:28 #2)
 [2025-11-26T17:35:16] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-26T17:35:16 #3)
+[2025-11-26T18:39:05] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-26T18:39:05 #4)
