@@ -3900,3 +3900,4 @@
 [2025-11-26T10:12:13] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-26T10:12:13 #6)
 [2025-11-26T19:05:38] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-26T19:05:38 #7)
 [2025-11-26T14:47:00] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-26T14:47:00 #8)
+[2025-11-26T19:02:07] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-11-26T19:02:07 #9)
