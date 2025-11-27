@@ -1904,3 +1904,4 @@
 [2025-11-28T20:43:33] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-28T20:43:33 #14)
 [2025-11-28T20:23:35] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-28T20:23:35 #15)
 [2025-11-29T17:37:42] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-11-29T17:37:42 #1)
+[2025-11-29T17:20:09] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-29T17:20:09 #2)
