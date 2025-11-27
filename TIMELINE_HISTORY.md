@@ -67,3 +67,4 @@
 [2025-11-27T15:13:42] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-27T15:13:42 #9)
 [2025-11-27T10:18:07] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-27T10:18:07 #10)
 [2025-11-27T17:16:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-27T17:16:11 #11)
+[2025-11-27T11:45:50] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-27T11:45:50 #12)
