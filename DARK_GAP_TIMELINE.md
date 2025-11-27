@@ -1908,3 +1908,4 @@
 [2025-11-29T15:45:24] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-29T15:45:24 #3)
 [2025-11-29T16:09:32] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-11-29T16:09:32 #4)
 [2025-11-29T17:02:33] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-11-29T17:02:33 #5)
+[2025-11-29T09:49:34] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-29T09:49:34 #6)
