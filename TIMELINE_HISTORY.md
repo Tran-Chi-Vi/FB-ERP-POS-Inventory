@@ -57,3 +57,4 @@
 [2025-11-25T18:01:10] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-25T18:01:10 #17)
 [2025-11-25T14:30:25] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-25T14:30:25 #18)
 [2025-11-27T11:37:57] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-11-27T11:37:57 #1)
+[2025-11-27T08:43:58] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-11-27T08:43:58 #2)
