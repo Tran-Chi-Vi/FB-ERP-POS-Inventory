@@ -1911,3 +1911,4 @@
 [2025-11-29T09:49:34] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-29T09:49:34 #6)
 [2025-11-29T09:35:32] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-29T09:35:32 #7)
 [2025-11-29T09:19:54] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-11-29T09:19:54 #8)
+[2025-11-29T08:19:50] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-11-29T08:19:50 #9)
