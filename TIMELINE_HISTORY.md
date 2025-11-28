@@ -3926,3 +3926,4 @@
 [2025-11-28T18:56:48] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-11-28T18:56:48 #5)
 [2025-11-28T10:15:11] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-28T10:15:11 #6)
 [2025-11-28T15:22:39] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-28T15:22:39 #7)
+[2025-11-28T10:42:44] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-28T10:42:44 #8)
