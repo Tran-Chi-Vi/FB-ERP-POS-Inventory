@@ -1900,3 +1900,4 @@
 [2025-11-28T12:34:43] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-11-28T12:34:43 #10)
 [2025-11-28T17:16:30] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-11-28T17:16:30 #11)
 [2025-11-28T19:14:07] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-11-28T19:14:07 #12)
+[2025-11-28T14:12:02] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-28T14:12:02 #13)
