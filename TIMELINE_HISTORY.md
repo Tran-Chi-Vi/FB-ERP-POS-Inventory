@@ -3928,3 +3928,4 @@
 [2025-11-28T15:22:39] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-11-28T15:22:39 #7)
 [2025-11-28T10:42:44] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-11-28T10:42:44 #8)
 [2025-11-28T09:48:56] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-28T09:48:56 #9)
+[2025-11-28T18:44:05] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-28T18:44:05 #10)
