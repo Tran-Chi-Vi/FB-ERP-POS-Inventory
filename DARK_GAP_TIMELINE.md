@@ -1903,3 +1903,4 @@
 [2025-11-28T14:12:02] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-11-28T14:12:02 #13)
 [2025-11-28T20:43:33] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-11-28T20:43:33 #14)
 [2025-11-28T20:23:35] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-11-28T20:23:35 #15)
+[2025-11-29T17:37:42] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-11-29T17:37:42 #1)
