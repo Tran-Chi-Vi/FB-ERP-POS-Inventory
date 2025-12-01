@@ -1914,3 +1914,4 @@
 [2025-11-29T08:19:50] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-11-29T08:19:50 #9)
 [2025-11-29T15:47:07] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-11-29T15:47:07 #10)
 [2025-11-29T09:07:01] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-11-29T09:07:01 #11)
+[2025-12-01T15:20:23] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-01T15:20:23 #1)
