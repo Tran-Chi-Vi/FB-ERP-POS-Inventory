@@ -3918,6 +3918,7 @@
 [2025-11-27T17:16:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-11-27T17:16:11 #11)
 [2025-11-27T11:45:50] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-27T11:45:50 #12)
 [2025-11-27T21:21:21] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-11-27T21:21:21 #13)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-11-28T08:06:33] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-28T08:06:33 #1)
 [2025-11-28T14:33:43] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-11-28T14:33:43 #2)
@@ -3930,3 +3931,12 @@
 [2025-11-28T09:48:56] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-28T09:48:56 #9)
 [2025-11-28T18:44:05] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-11-28T18:44:05 #10)
 [2025-11-28T16:51:27] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-28T16:51:27 #11)
+=======
+[2025-11-29T16:58:35] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-11-29T16:58:35 #1)
+[2025-11-29T13:31:14] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-11-29T13:31:14 #2)
+[2025-11-29T18:26:54] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-11-29T18:26:54 #3)
+[2025-11-29T20:26:55] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-29T20:26:55 #4)
+[2025-11-29T14:25:54] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-29T14:25:54 #5)
+[2025-11-29T19:53:12] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-29T19:53:12 #6)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-01T12:04:57] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-01T12:04:57 #1)
