@@ -3950,3 +3950,4 @@
 [2025-12-01T15:14:47] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-01T15:14:47 #9)
 [2025-12-01T14:23:55] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-01T14:23:55 #10)
 [2025-12-01T16:31:21] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-01T16:31:21 #11)
+[2025-12-01T11:06:06] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-01T11:06:06 #12)
