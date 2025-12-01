@@ -1923,3 +1923,4 @@
 [2025-12-01T16:48:21] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-01T16:48:21 #7)
 [2025-12-01T13:15:37] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-01T13:15:37 #8)
 [2025-12-01T08:05:47] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-01T08:05:47 #9)
+[2025-12-01T15:39:22] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-01T15:39:22 #10)
