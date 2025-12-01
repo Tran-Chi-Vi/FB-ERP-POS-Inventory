@@ -3949,3 +3949,4 @@
 [2025-12-01T14:20:31] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-01T14:20:31 #8)
 [2025-12-01T15:14:47] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-01T15:14:47 #9)
 [2025-12-01T14:23:55] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-01T14:23:55 #10)
+[2025-12-01T16:31:21] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-01T16:31:21 #11)
