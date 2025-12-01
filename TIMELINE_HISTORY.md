@@ -3943,3 +3943,4 @@
 [2025-12-01T15:33:12] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-01T15:33:12 #2)
 [2025-12-01T15:49:26] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-01T15:49:26 #3)
 [2025-12-01T18:03:01] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-01T18:03:01 #4)
+[2025-12-01T09:18:24] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-01T09:18:24 #5)
