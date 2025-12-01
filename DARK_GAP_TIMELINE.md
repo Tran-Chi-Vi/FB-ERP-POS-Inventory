@@ -1928,3 +1928,4 @@
 [2025-12-01T10:38:50] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-01T10:38:50 #12)
 [2025-12-01T15:28:16] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-01T15:28:16 #13)
 [2025-12-01T17:49:31] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-01T17:49:31 #14)
+[2025-12-01T11:47:08] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-01T11:47:08 #15)
