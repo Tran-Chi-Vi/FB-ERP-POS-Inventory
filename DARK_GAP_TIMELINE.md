@@ -1931,3 +1931,4 @@
 [2025-12-01T11:47:08] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-01T11:47:08 #15)
 [2025-12-02T19:06:56] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-02T19:06:56 #1)
 [2025-12-02T19:54:27] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-02T19:54:27 #2)
+[2025-12-02T08:49:14] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-02T08:49:14 #3)
