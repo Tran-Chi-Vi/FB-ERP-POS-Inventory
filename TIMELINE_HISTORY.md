@@ -3940,3 +3940,4 @@
 [2025-11-29T19:53:12] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-29T19:53:12 #6)
 >>>>>>> feat/system-integration-superpowers
 [2025-12-01T12:04:57] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-01T12:04:57 #1)
+[2025-12-01T15:33:12] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-01T15:33:12 #2)
