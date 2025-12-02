@@ -90,3 +90,4 @@
 [2025-12-02T09:33:55] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-02T09:33:55 #13)
 [2025-12-02T13:38:54] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-02T13:38:54 #14)
 [2025-12-02T18:15:57] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-02T18:15:57 #15)
+[2025-12-02T09:06:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-02T09:06:08 #16)
