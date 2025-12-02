@@ -83,3 +83,4 @@
 [2025-12-02T18:56:19] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-02T18:56:19 #6)
 [2025-12-02T13:46:45] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-02T13:46:45 #7)
 [2025-12-02T10:20:25] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-02T10:20:25 #8)
+[2025-12-02T14:21:29] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-02T14:21:29 #9)
