@@ -92,3 +92,4 @@
 [2025-12-02T18:15:57] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-02T18:15:57 #15)
 [2025-12-02T09:06:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-02T09:06:08 #16)
 [2025-12-02T15:16:39] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-02T15:16:39 #17)
+[2025-12-02T13:52:30] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-02T13:52:30 #18)
