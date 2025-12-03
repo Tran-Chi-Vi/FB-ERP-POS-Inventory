@@ -3984,3 +3984,4 @@
 [2025-12-03T13:04:20] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-03T13:04:20 #4)
 [2025-12-03T21:51:47] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-03T21:51:47 #5)
 [2025-12-03T15:43:16] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-03T15:43:16 #6)
+[2025-12-03T18:39:51] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-03T18:39:51 #7)
