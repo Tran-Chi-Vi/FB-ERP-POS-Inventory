@@ -3989,3 +3989,4 @@
 [2025-12-03T16:36:28] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-03T16:36:28 #9)
 [2025-12-03T10:25:43] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-03T10:25:43 #10)
 [2025-12-03T08:57:42] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-03T08:57:42 #11)
+[2025-12-03T17:23:20] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-03T17:23:20 #12)
