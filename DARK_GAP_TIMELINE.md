@@ -1950,3 +1950,4 @@
 [2025-12-03T15:34:29] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-03T15:34:29 #6)
 [2025-12-03T11:17:05] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-03T11:17:05 #7)
 [2025-12-03T13:38:00] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-03T13:38:00 #8)
+[2025-12-03T10:16:42] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-03T10:16:42 #9)
