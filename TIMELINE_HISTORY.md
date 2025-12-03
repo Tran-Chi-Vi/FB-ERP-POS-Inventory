@@ -3938,6 +3938,7 @@
 [2025-11-29T20:26:55] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-11-29T20:26:55 #4)
 [2025-11-29T14:25:54] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-11-29T14:25:54 #5)
 [2025-11-29T19:53:12] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-11-29T19:53:12 #6)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-01T12:04:57] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-01T12:04:57 #1)
 [2025-12-01T15:33:12] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-01T15:33:12 #2)
@@ -3956,3 +3957,25 @@
 [2025-12-01T13:47:04] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-01T13:47:04 #15)
 [2025-12-01T15:22:47] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-01T15:22:47 #16)
 [2025-12-01T11:40:19] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-01T11:40:19 #17)
+=======
+[2025-12-02T16:39:45] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-02T16:39:45 #1)
+[2025-12-02T09:29:41] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-02T09:29:41 #2)
+[2025-12-02T16:07:21] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-02T16:07:21 #3)
+[2025-12-02T10:52:31] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-02T10:52:31 #4)
+[2025-12-02T19:57:37] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-02T19:57:37 #5)
+[2025-12-02T18:56:19] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-02T18:56:19 #6)
+[2025-12-02T13:46:45] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-02T13:46:45 #7)
+[2025-12-02T10:20:25] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-02T10:20:25 #8)
+[2025-12-02T14:21:29] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-02T14:21:29 #9)
+[2025-12-02T11:21:17] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-02T11:21:17 #10)
+[2025-12-02T10:56:55] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-02T10:56:55 #11)
+[2025-12-02T17:56:36] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-02T17:56:36 #12)
+[2025-12-02T09:33:55] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-02T09:33:55 #13)
+[2025-12-02T13:38:54] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-02T13:38:54 #14)
+[2025-12-02T18:15:57] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-02T18:15:57 #15)
+[2025-12-02T09:06:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-02T09:06:08 #16)
+[2025-12-02T15:16:39] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-02T15:16:39 #17)
+[2025-12-02T13:52:30] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-02T13:52:30 #18)
+[2025-12-02T19:14:21] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-02T19:14:21 #19)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-03T16:27:46] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-03T16:27:46 #1)
