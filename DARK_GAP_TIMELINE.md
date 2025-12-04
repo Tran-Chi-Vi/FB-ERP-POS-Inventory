@@ -1969,3 +1969,4 @@
 [2025-12-04T12:44:22] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-04T12:44:22 #11)
 [2025-12-04T13:37:07] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-04T13:37:07 #12)
 [2025-12-04T08:50:49] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-04T08:50:49 #13)
+[2025-12-04T13:47:30] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-04T13:47:30 #14)
