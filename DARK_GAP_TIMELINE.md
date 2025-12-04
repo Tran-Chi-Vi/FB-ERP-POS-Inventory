@@ -1964,3 +1964,4 @@
 [2025-12-04T19:23:35] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-04T19:23:35 #6)
 [2025-12-04T20:03:37] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-04T20:03:37 #7)
 [2025-12-04T12:21:07] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-04T12:21:07 #8)
+[2025-12-04T21:28:22] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-04T21:28:22 #9)
