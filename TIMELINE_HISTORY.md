@@ -104,3 +104,4 @@
 [2025-12-04T08:17:45] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-04T08:17:45 #8)
 [2025-12-04T10:13:00] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-04T10:13:00 #9)
 [2025-12-04T19:03:27] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-04T19:03:27 #10)
+[2025-12-04T17:12:23] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-04T17:12:23 #11)
