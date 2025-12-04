@@ -103,3 +103,4 @@
 [2025-12-04T20:15:31] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-04T20:15:31 #7)
 [2025-12-04T08:17:45] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-04T08:17:45 #8)
 [2025-12-04T10:13:00] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-04T10:13:00 #9)
+[2025-12-04T19:03:27] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-04T19:03:27 #10)
