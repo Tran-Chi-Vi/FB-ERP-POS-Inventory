@@ -1966,3 +1966,4 @@
 [2025-12-04T12:21:07] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-04T12:21:07 #8)
 [2025-12-04T21:28:22] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-04T21:28:22 #9)
 [2025-12-04T12:35:04] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-04T12:35:04 #10)
+[2025-12-04T12:44:22] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-04T12:44:22 #11)
