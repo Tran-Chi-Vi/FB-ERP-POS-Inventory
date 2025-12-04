@@ -1970,3 +1970,4 @@
 [2025-12-04T13:37:07] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-04T13:37:07 #12)
 [2025-12-04T08:50:49] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-04T08:50:49 #13)
 [2025-12-04T13:47:30] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-04T13:47:30 #14)
+[2025-12-04T19:53:12] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-04T19:53:12 #15)
