@@ -1965,3 +1965,4 @@
 [2025-12-04T20:03:37] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-04T20:03:37 #7)
 [2025-12-04T12:21:07] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-04T12:21:07 #8)
 [2025-12-04T21:28:22] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-04T21:28:22 #9)
+[2025-12-04T12:35:04] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-04T12:35:04 #10)
