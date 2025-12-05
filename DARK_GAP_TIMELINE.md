@@ -1983,3 +1983,4 @@
 [2025-12-05T10:05:03] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-05T10:05:03 #6)
 [2025-12-05T21:17:42] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-05T21:17:42 #7)
 [2025-12-05T17:06:17] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-05T17:06:17 #8)
+[2025-12-05T15:10:18] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-05T15:10:18 #9)
