@@ -3977,6 +3977,7 @@
 [2025-12-02T15:16:39] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-02T15:16:39 #17)
 [2025-12-02T13:52:30] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-02T13:52:30 #18)
 [2025-12-02T19:14:21] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-02T19:14:21 #19)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-03T16:27:46] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-03T16:27:46 #1)
 [2025-12-03T17:41:22] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-03T17:41:22 #2)
@@ -3996,3 +3997,22 @@
 [2025-12-03T18:58:57] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-03T18:58:57 #16)
 [2025-12-03T13:21:23] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-03T13:21:23 #17)
 [2025-12-03T20:45:00] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-03T20:45:00 #18)
+=======
+[2025-12-04T11:50:51] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-04T11:50:51 #1)
+[2025-12-04T17:03:37] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-04T17:03:37 #2)
+[2025-12-04T20:45:27] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-04T20:45:27 #3)
+[2025-12-04T14:58:08] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-04T14:58:08 #4)
+[2025-12-04T11:29:08] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-04T11:29:08 #5)
+[2025-12-04T13:18:08] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-04T13:18:08 #6)
+[2025-12-04T20:15:31] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-04T20:15:31 #7)
+[2025-12-04T08:17:45] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-04T08:17:45 #8)
+[2025-12-04T10:13:00] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-04T10:13:00 #9)
+[2025-12-04T19:03:27] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-04T19:03:27 #10)
+[2025-12-04T17:12:23] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-04T17:12:23 #11)
+[2025-12-04T21:51:11] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-04T21:51:11 #12)
+[2025-12-04T14:04:24] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T14:04:24 #13)
+[2025-12-04T08:16:39] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T08:16:39 #14)
+[2025-12-04T20:04:40] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-04T20:04:40 #15)
+[2025-12-04T10:37:58] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T10:37:58 #16)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-05T09:21:17] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-05T09:21:17 #1)
