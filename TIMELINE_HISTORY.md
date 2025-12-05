@@ -4017,3 +4017,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2025-12-05T09:21:17] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-05T09:21:17 #1)
 [2025-12-05T08:48:25] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-05T08:48:25 #2)
+[2025-12-05T10:12:07] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-05T10:12:07 #3)
