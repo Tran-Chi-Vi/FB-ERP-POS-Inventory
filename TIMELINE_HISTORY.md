@@ -4016,3 +4016,4 @@
 [2025-12-04T10:37:58] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T10:37:58 #16)
 >>>>>>> feat/system-integration-superpowers
 [2025-12-05T09:21:17] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-05T09:21:17 #1)
+[2025-12-05T08:48:25] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-05T08:48:25 #2)
