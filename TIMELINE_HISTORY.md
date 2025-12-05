@@ -4019,3 +4019,4 @@
 [2025-12-05T08:48:25] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-05T08:48:25 #2)
 [2025-12-05T10:12:07] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-05T10:12:07 #3)
 [2025-12-05T18:48:49] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-05T18:48:49 #4)
+[2025-12-05T18:10:34] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-05T18:10:34 #5)
