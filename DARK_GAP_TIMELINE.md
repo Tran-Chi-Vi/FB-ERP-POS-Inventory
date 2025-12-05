@@ -1986,3 +1986,4 @@
 [2025-12-05T15:10:18] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-05T15:10:18 #9)
 [2025-12-05T18:10:47] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-05T18:10:47 #10)
 [2025-12-05T21:12:15] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-05T21:12:15 #11)
+[2025-12-05T21:03:10] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-05T21:03:10 #12)
