@@ -114,3 +114,4 @@
 [2025-12-06T19:36:16] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-06T19:36:16 #2)
 [2025-12-06T16:47:33] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-06T16:47:33 #3)
 [2025-12-06T15:00:24] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-06T15:00:24 #4)
+[2025-12-06T10:04:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-06T10:04:07 #5)
