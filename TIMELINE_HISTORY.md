@@ -112,3 +112,4 @@
 [2025-12-04T10:37:58] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T10:37:58 #16)
 [2025-12-06T16:14:31] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-06T16:14:31 #1)
 [2025-12-06T19:36:16] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-06T19:36:16 #2)
+[2025-12-06T16:47:33] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-06T16:47:33 #3)
