@@ -110,3 +110,4 @@
 [2025-12-04T08:16:39] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T08:16:39 #14)
 [2025-12-04T20:04:40] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-04T20:04:40 #15)
 [2025-12-04T10:37:58] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T10:37:58 #16)
+[2025-12-06T16:14:31] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-06T16:14:31 #1)
