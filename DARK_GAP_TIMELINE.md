@@ -2000,3 +2000,4 @@
 [2025-12-06T13:40:08] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-06T13:40:08 #10)
 [2025-12-06T20:35:55] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-06T20:35:55 #11)
 [2025-12-06T14:16:19] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-06T14:16:19 #12)
+[2025-12-06T20:44:05] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-06T20:44:05 #13)
