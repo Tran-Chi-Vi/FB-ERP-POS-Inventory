@@ -1982,3 +1982,4 @@
 [2025-12-05T09:30:05] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-05T09:30:05 #5)
 [2025-12-05T10:05:03] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-05T10:05:03 #6)
 [2025-12-05T21:17:42] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-05T21:17:42 #7)
+[2025-12-05T17:06:17] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-05T17:06:17 #8)
