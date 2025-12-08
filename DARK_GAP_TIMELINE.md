@@ -1989,3 +1989,4 @@
 [2025-12-05T21:03:10] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-05T21:03:10 #12)
 [2025-12-05T19:57:28] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-05T19:57:28 #13)
 [2025-12-06T12:15:49] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-06T12:15:49 #1)
+[2025-12-06T14:13:59] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-06T14:13:59 #2)
