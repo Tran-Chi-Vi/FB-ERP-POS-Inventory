@@ -2006,3 +2006,4 @@
 [2025-12-08T12:23:41] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-08T12:23:41 #3)
 [2025-12-08T18:26:23] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-08T18:26:23 #4)
 [2025-12-08T14:51:44] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-08T14:51:44 #5)
+[2025-12-08T09:37:41] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-08T09:37:41 #6)
