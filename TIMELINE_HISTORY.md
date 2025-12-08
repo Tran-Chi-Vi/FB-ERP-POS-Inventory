@@ -4032,3 +4032,4 @@
 [2025-12-06T12:04:08] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-06T12:04:08 #6)
 >>>>>>> feat/system-integration-superpowers
 [2025-12-08T09:50:48] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-08T09:50:48 #1)
+[2025-12-08T11:27:55] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-08T11:27:55 #2)
