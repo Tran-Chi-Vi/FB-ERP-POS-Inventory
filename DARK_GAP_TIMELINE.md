@@ -2015,3 +2015,4 @@
 [2025-12-08T11:27:45] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-08T11:27:45 #12)
 [2025-12-08T19:23:03] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-08T19:23:03 #13)
 [2025-12-08T11:45:03] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-08T11:45:03 #14)
+[2025-12-08T19:40:29] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-08T19:40:29 #15)
