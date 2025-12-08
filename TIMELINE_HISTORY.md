@@ -4014,6 +4014,7 @@
 [2025-12-04T08:16:39] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T08:16:39 #14)
 [2025-12-04T20:04:40] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-04T20:04:40 #15)
 [2025-12-04T10:37:58] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-04T10:37:58 #16)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-05T09:21:17] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-05T09:21:17 #1)
 [2025-12-05T08:48:25] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-05T08:48:25 #2)
@@ -4022,3 +4023,12 @@
 [2025-12-05T18:10:34] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-05T18:10:34 #5)
 [2025-12-05T08:55:42] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-05T08:55:42 #6)
 [2025-12-05T11:12:26] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-05T11:12:26 #7)
+=======
+[2025-12-06T16:14:31] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-06T16:14:31 #1)
+[2025-12-06T19:36:16] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-06T19:36:16 #2)
+[2025-12-06T16:47:33] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-06T16:47:33 #3)
+[2025-12-06T15:00:24] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-06T15:00:24 #4)
+[2025-12-06T10:04:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-06T10:04:07 #5)
+[2025-12-06T12:04:08] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-06T12:04:08 #6)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-08T09:50:48] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-08T09:50:48 #1)
