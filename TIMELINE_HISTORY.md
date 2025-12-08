@@ -4038,3 +4038,4 @@
 [2025-12-08T13:26:24] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-08T13:26:24 #5)
 [2025-12-08T15:32:13] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-08T15:32:13 #6)
 [2025-12-08T19:49:21] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-08T19:49:21 #7)
+[2025-12-08T17:27:58] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-08T17:27:58 #8)
