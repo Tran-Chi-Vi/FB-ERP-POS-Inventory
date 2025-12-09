@@ -2023,3 +2023,4 @@
 [2025-12-08T21:21:46] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-08T21:21:46 #20)
 [2025-12-09T11:54:42] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-09T11:54:42 #1)
 [2025-12-09T09:17:51] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-09T09:17:51 #2)
+[2025-12-09T15:27:10] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-09T15:27:10 #3)
