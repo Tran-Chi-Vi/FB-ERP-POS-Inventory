@@ -121,3 +121,4 @@
 [2025-12-09T20:54:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-09T20:54:56 #3)
 [2025-12-09T21:10:49] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-09T21:10:49 #4)
 [2025-12-09T10:11:41] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-09T10:11:41 #5)
+[2025-12-09T20:13:45] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-09T20:13:45 #6)
