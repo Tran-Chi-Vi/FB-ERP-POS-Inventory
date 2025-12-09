@@ -1993,3 +1993,4 @@
 [2025-12-06T18:00:22] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-06T18:00:22 #3)
 [2025-12-06T08:41:13] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-06T08:41:13 #4)
 [2025-12-06T08:35:06] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-06T08:35:06 #5)
+[2025-12-06T20:26:40] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-06T20:26:40 #6)
