@@ -123,3 +123,4 @@
 [2025-12-09T10:11:41] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-09T10:11:41 #5)
 [2025-12-09T20:13:45] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-09T20:13:45 #6)
 [2025-12-09T12:34:00] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-09T12:34:00 #7)
+[2025-12-09T11:23:16] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-09T11:23:16 #8)
