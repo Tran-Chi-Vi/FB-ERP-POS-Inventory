@@ -2003,3 +2003,4 @@
 [2025-12-06T20:44:05] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-06T20:44:05 #13)
 [2025-12-08T15:00:00] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-08T15:00:00 #1)
 [2025-12-08T09:55:18] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-08T09:55:18 #2)
+[2025-12-08T12:23:41] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-08T12:23:41 #3)
