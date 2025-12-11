@@ -2012,3 +2012,4 @@
 [2025-12-08T10:32:03] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-08T10:32:03 #9)
 [2025-12-08T21:13:52] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-08T21:13:52 #10)
 [2025-12-08T20:29:42] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-08T20:29:42 #11)
+[2025-12-08T11:27:45] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-08T11:27:45 #12)
