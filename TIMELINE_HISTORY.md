@@ -136,3 +136,4 @@
 [2025-12-11T15:16:27] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-11T15:16:27 #9)
 [2025-12-11T13:08:58] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-11T13:08:58 #10)
 [2025-12-11T09:41:22] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-11T09:41:22 #11)
+[2025-12-11T19:01:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-11T19:01:43 #12)
