@@ -134,3 +134,4 @@
 [2025-12-11T12:03:19] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-11T12:03:19 #7)
 [2025-12-11T08:27:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-11T08:27:04 #8)
 [2025-12-11T15:16:27] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-11T15:16:27 #9)
+[2025-12-11T13:08:58] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-11T13:08:58 #10)
