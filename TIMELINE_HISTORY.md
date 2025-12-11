@@ -135,3 +135,4 @@
 [2025-12-11T08:27:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-11T08:27:04 #8)
 [2025-12-11T15:16:27] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-11T15:16:27 #9)
 [2025-12-11T13:08:58] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-11T13:08:58 #10)
+[2025-12-11T09:41:22] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-11T09:41:22 #11)
