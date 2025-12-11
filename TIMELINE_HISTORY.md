@@ -127,3 +127,4 @@
 [2025-12-09T20:58:55] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-09T20:58:55 #9)
 [2025-12-11T19:45:00] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-11T19:45:00 #1)
 [2025-12-11T18:46:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-11T18:46:07 #2)
+[2025-12-11T19:26:46] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-11T19:26:46 #3)
