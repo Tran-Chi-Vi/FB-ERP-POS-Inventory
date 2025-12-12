@@ -4094,3 +4094,4 @@
 [2025-12-12T12:19:22] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-12T12:19:22 #3)
 [2025-12-12T19:25:57] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-12T19:25:57 #4)
 [2025-12-12T20:04:25] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-12T20:04:25 #5)
+[2025-12-12T12:33:25] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-12T12:33:25 #6)
