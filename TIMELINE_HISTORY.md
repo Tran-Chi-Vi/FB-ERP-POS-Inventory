@@ -4098,3 +4098,4 @@
 [2025-12-12T15:42:10] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-12T15:42:10 #7)
 [2025-12-12T19:17:31] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-12T19:17:31 #8)
 [2025-12-12T16:55:04] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-12T16:55:04 #9)
+[2025-12-12T09:22:08] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-12T09:22:08 #10)
