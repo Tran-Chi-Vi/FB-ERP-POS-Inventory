@@ -2057,3 +2057,4 @@
 [2025-12-12T18:18:14] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-12T18:18:14 #8)
 [2025-12-12T15:25:54] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-12T15:25:54 #9)
 [2025-12-12T10:09:59] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-12T10:09:59 #10)
+[2025-12-12T13:08:43] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-12T13:08:43 #11)
