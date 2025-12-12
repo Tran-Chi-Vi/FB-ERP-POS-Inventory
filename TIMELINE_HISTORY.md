@@ -4058,6 +4058,7 @@
 [2025-12-09T12:34:00] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-09T12:34:00 #7)
 [2025-12-09T11:23:16] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-09T11:23:16 #8)
 [2025-12-09T20:58:55] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-09T20:58:55 #9)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-10T12:43:57] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-10T12:43:57 #1)
 [2025-12-10T17:32:12] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-10T17:32:12 #2)
@@ -4072,3 +4073,20 @@
 [2025-12-10T12:20:56] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-10T12:20:56 #11)
 [2025-12-10T15:41:05] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-10T15:41:05 #12)
 [2025-12-10T13:48:14] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-10T13:48:14 #13)
+=======
+[2025-12-11T19:45:00] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-11T19:45:00 #1)
+[2025-12-11T18:46:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-11T18:46:07 #2)
+[2025-12-11T19:26:46] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-11T19:26:46 #3)
+[2025-12-11T08:31:55] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-11T08:31:55 #4)
+[2025-12-11T12:39:29] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-11T12:39:29 #5)
+[2025-12-11T17:48:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-11T17:48:09 #6)
+[2025-12-11T12:03:19] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-11T12:03:19 #7)
+[2025-12-11T08:27:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-11T08:27:04 #8)
+[2025-12-11T15:16:27] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-11T15:16:27 #9)
+[2025-12-11T13:08:58] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-11T13:08:58 #10)
+[2025-12-11T09:41:22] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-11T09:41:22 #11)
+[2025-12-11T19:01:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-11T19:01:43 #12)
+[2025-12-11T13:43:48] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-11T13:43:48 #13)
+[2025-12-11T19:29:04] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-11T19:29:04 #14)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-12T19:26:19] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-12T19:26:19 #1)
