@@ -4093,3 +4093,4 @@
 [2025-12-12T17:47:33] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-12T17:47:33 #2)
 [2025-12-12T12:19:22] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-12T12:19:22 #3)
 [2025-12-12T19:25:57] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-12T19:25:57 #4)
+[2025-12-12T20:04:25] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-12T20:04:25 #5)
