@@ -4090,3 +4090,4 @@
 [2025-12-11T19:29:04] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-11T19:29:04 #14)
 >>>>>>> feat/system-integration-superpowers
 [2025-12-12T19:26:19] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-12T19:26:19 #1)
+[2025-12-12T17:47:33] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-12T17:47:33 #2)
