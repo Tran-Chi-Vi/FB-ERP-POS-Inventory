@@ -2050,3 +2050,4 @@
 [2025-12-12T11:32:15] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-12T11:32:15 #1)
 [2025-12-12T19:45:57] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-12T19:45:57 #2)
 [2025-12-12T14:17:14] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-12T14:17:14 #3)
+[2025-12-12T13:56:06] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-12T13:56:06 #4)
