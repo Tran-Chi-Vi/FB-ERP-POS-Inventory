@@ -4100,3 +4100,4 @@
 [2025-12-12T16:55:04] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-12T16:55:04 #9)
 [2025-12-12T09:22:08] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-12T09:22:08 #10)
 [2025-12-12T16:24:08] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-12T16:24:08 #11)
+[2025-12-12T10:39:06] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-12T10:39:06 #12)
