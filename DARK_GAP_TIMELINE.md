@@ -2028,3 +2028,4 @@
 [2025-12-09T14:50:27] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-09T14:50:27 #5)
 [2025-12-09T13:25:43] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-09T13:25:43 #6)
 [2025-12-10T18:43:28] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-10T18:43:28 #1)
+[2025-12-10T19:38:03] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-10T19:38:03 #2)
