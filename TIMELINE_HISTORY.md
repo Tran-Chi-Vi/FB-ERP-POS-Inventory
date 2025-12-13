@@ -145,3 +145,4 @@
 [2025-12-13T11:30:39] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-13T11:30:39 #4)
 [2025-12-13T12:33:09] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-13T12:33:09 #5)
 [2025-12-13T14:18:05] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-13T14:18:05 #6)
+[2025-12-13T14:06:39] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-13T14:06:39 #7)
