@@ -2026,3 +2026,4 @@
 [2025-12-09T15:27:10] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-09T15:27:10 #3)
 [2025-12-09T20:36:39] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-09T20:36:39 #4)
 [2025-12-09T14:50:27] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-09T14:50:27 #5)
+[2025-12-09T13:25:43] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-09T13:25:43 #6)
