@@ -140,3 +140,4 @@
 [2025-12-11T13:43:48] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-11T13:43:48 #13)
 [2025-12-11T19:29:04] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-11T19:29:04 #14)
 [2025-12-13T18:14:36] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-13T18:14:36 #1)
+[2025-12-13T08:34:30] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-13T08:34:30 #2)
