@@ -2059,3 +2059,4 @@
 [2025-12-12T10:09:59] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-12T10:09:59 #10)
 [2025-12-12T13:08:43] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-12T13:08:43 #11)
 [2025-12-12T12:23:56] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-12T12:23:56 #12)
+[2025-12-13T11:42:33] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-13T11:42:33 #1)
