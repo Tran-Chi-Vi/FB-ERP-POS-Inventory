@@ -2062,3 +2062,5 @@
 [2025-12-13T11:42:33] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-13T11:42:33 #1)
 [2025-12-13T16:36:44] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-13T16:36:44 #2)
 [2025-12-13T21:25:48] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-13T21:25:48 #3)
+[2025-12-13T15:47:11] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-13T15:47:11 #4)
+[2025-12-13T10:33:04] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-13T10:33:04 #5)
