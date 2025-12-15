@@ -2064,3 +2064,4 @@
 [2025-12-13T21:25:48] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-13T21:25:48 #3)
 [2025-12-13T15:47:11] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-13T15:47:11 #4)
 [2025-12-13T10:33:04] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-13T10:33:04 #5)
+[2025-12-15T13:23:07] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-15T13:23:07 #1)
