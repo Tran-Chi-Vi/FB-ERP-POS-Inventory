@@ -2042,3 +2042,4 @@
 [2025-12-10T10:31:00] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-10T10:31:00 #13)
 [2025-12-10T19:41:23] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-10T19:41:23 #14)
 [2025-12-11T14:28:35] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-11T14:28:35 #1)
+[2025-12-11T12:29:28] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-11T12:29:28 #2)
