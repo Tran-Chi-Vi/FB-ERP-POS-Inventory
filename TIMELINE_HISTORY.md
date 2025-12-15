@@ -4120,3 +4120,4 @@
 [2025-12-15T18:36:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-15T18:36:22 #2)
 [2025-12-15T19:38:23] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-15T19:38:23 #3)
 [2025-12-15T18:26:53] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-15T18:26:53 #4)
+[2025-12-15T20:57:39] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-15T20:57:39 #5)
