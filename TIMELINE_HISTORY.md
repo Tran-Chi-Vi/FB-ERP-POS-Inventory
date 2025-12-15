@@ -4088,6 +4088,7 @@
 [2025-12-11T19:01:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-11T19:01:43 #12)
 [2025-12-11T13:43:48] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-11T13:43:48 #13)
 [2025-12-11T19:29:04] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-11T19:29:04 #14)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-12T19:26:19] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-12T19:26:19 #1)
 [2025-12-12T17:47:33] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-12T17:47:33 #2)
@@ -4101,3 +4102,18 @@
 [2025-12-12T09:22:08] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-12T09:22:08 #10)
 [2025-12-12T16:24:08] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-12T16:24:08 #11)
 [2025-12-12T10:39:06] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-12T10:39:06 #12)
+=======
+[2025-12-13T18:14:36] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-13T18:14:36 #1)
+[2025-12-13T08:34:30] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-13T08:34:30 #2)
+[2025-12-13T21:34:04] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-13T21:34:04 #3)
+[2025-12-13T11:30:39] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-13T11:30:39 #4)
+[2025-12-13T12:33:09] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-13T12:33:09 #5)
+[2025-12-13T14:18:05] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-13T14:18:05 #6)
+[2025-12-13T14:06:39] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-13T14:06:39 #7)
+[2025-12-13T14:33:16] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-13T14:33:16 #8)
+[2025-12-13T15:59:46] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-13T15:59:46 #9)
+[2025-12-13T14:04:34] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-13T14:04:34 #10)
+[2025-12-13T18:25:00] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-13T18:25:00 #11)
+[2025-12-13T09:51:46] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-13T09:51:46 #12)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-15T16:54:41] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-15T16:54:41 #1)
