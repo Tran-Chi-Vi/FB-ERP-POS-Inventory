@@ -2040,3 +2040,4 @@
 [2025-12-10T11:58:43] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-10T11:58:43 #11)
 [2025-12-10T16:38:39] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-10T16:38:39 #12)
 [2025-12-10T10:31:00] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-10T10:31:00 #13)
+[2025-12-10T19:41:23] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-10T19:41:23 #14)
