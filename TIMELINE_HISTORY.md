@@ -4117,3 +4117,4 @@
 [2025-12-13T09:51:46] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-13T09:51:46 #12)
 >>>>>>> feat/system-integration-superpowers
 [2025-12-15T16:54:41] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-15T16:54:41 #1)
+[2025-12-15T18:36:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-15T18:36:22 #2)
