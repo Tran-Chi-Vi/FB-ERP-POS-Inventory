@@ -152,3 +152,4 @@
 [2025-12-13T18:25:00] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-13T18:25:00 #11)
 [2025-12-13T09:51:46] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-13T09:51:46 #12)
 [2025-12-16T08:25:51] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-16T08:25:51 #1)
+[2025-12-16T17:36:35] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-16T17:36:35 #2)
