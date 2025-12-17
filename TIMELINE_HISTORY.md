@@ -4145,3 +4145,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2025-12-17T15:38:30] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-17T15:38:30 #1)
 [2025-12-17T12:07:48] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-17T12:07:48 #2)
+[2025-12-17T21:11:16] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-17T21:11:16 #3)
