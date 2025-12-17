@@ -4148,3 +4148,4 @@
 [2025-12-17T21:11:16] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-17T21:11:16 #3)
 [2025-12-17T13:10:08] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-17T13:10:08 #4)
 [2025-12-17T17:15:01] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-17T17:15:01 #5)
+[2025-12-17T20:22:29] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-17T20:22:29 #6)
