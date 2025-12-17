@@ -4115,6 +4115,7 @@
 [2025-12-13T14:04:34] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-13T14:04:34 #10)
 [2025-12-13T18:25:00] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-13T18:25:00 #11)
 [2025-12-13T09:51:46] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-13T09:51:46 #12)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-15T16:54:41] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-15T16:54:41 #1)
 [2025-12-15T18:36:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-15T18:36:22 #2)
@@ -4134,3 +4135,12 @@
 [2025-12-15T13:53:33] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-15T13:53:33 #16)
 [2025-12-15T13:01:19] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-15T13:01:19 #17)
 [2025-12-15T18:20:53] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-15T18:20:53 #18)
+=======
+[2025-12-16T08:25:51] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-16T08:25:51 #1)
+[2025-12-16T17:36:35] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-16T17:36:35 #2)
+[2025-12-16T17:18:43] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-16T17:18:43 #3)
+[2025-12-16T20:26:19] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-16T20:26:19 #4)
+[2025-12-16T11:30:57] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-16T11:30:57 #5)
+[2025-12-16T15:31:09] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-16T15:31:09 #6)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-17T15:38:30] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-17T15:38:30 #1)
