@@ -2089,3 +2089,4 @@
 [2025-12-18T13:16:02] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-18T13:16:02 #2)
 [2025-12-18T20:10:57] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-18T20:10:57 #3)
 [2025-12-18T17:12:36] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-18T17:12:36 #4)
+[2025-12-18T11:19:50] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-18T11:19:50 #5)
