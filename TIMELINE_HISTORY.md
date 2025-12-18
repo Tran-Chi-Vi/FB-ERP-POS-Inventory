@@ -161,3 +161,4 @@
 [2025-12-18T16:52:11] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-18T16:52:11 #2)
 [2025-12-18T12:02:03] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-18T12:02:03 #3)
 [2025-12-18T21:39:59] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-18T21:39:59 #4)
+[2025-12-18T16:27:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-18T16:27:10 #5)
