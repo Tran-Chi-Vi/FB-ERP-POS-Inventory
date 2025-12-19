@@ -4142,6 +4142,7 @@
 [2025-12-16T20:26:19] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-16T20:26:19 #4)
 [2025-12-16T11:30:57] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-16T11:30:57 #5)
 [2025-12-16T15:31:09] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-16T15:31:09 #6)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-17T15:38:30] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-17T15:38:30 #1)
 [2025-12-17T12:07:48] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-17T12:07:48 #2)
@@ -4154,3 +4155,13 @@
 [2025-12-17T08:56:52] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-17T08:56:52 #9)
 [2025-12-17T10:42:17] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-17T10:42:17 #10)
 [2025-12-17T18:49:01] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-17T18:49:01 #11)
+=======
+[2025-12-18T10:06:48] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-18T10:06:48 #1)
+[2025-12-18T16:52:11] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-18T16:52:11 #2)
+[2025-12-18T12:02:03] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-18T12:02:03 #3)
+[2025-12-18T21:39:59] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-18T21:39:59 #4)
+[2025-12-18T16:27:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-18T16:27:10 #5)
+[2025-12-18T21:20:21] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-18T21:20:21 #6)
+[2025-12-18T13:30:41] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-18T13:30:41 #7)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-19T17:00:13] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-19T17:00:13 #1)
