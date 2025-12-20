@@ -164,3 +164,4 @@
 [2025-12-18T16:27:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-18T16:27:10 #5)
 [2025-12-18T21:20:21] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-18T21:20:21 #6)
 [2025-12-18T13:30:41] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-18T13:30:41 #7)
+[2025-12-20T21:07:25] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-20T21:07:25 #1)
