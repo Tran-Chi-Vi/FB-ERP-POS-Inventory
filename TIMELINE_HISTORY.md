@@ -4197,3 +4197,4 @@
 [2025-12-22T08:32:53] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-22T08:32:53 #10)
 [2025-12-22T13:52:00] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-22T13:52:00 #11)
 [2025-12-22T16:04:36] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-22T16:04:36 #12)
+[2025-12-22T17:13:54] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-22T17:13:54 #13)
