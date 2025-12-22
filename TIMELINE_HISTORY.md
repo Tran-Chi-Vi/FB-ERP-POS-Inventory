@@ -4191,3 +4191,4 @@
 [2025-12-22T11:00:39] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-22T11:00:39 #4)
 [2025-12-22T09:26:34] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-22T09:26:34 #5)
 [2025-12-22T15:57:14] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-22T15:57:14 #6)
+[2025-12-22T21:30:22] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-22T21:30:22 #7)
