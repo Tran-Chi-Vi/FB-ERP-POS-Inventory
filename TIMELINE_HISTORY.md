@@ -4200,3 +4200,4 @@
 [2025-12-22T17:13:54] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-22T17:13:54 #13)
 [2025-12-22T18:27:57] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-22T18:27:57 #14)
 [2025-12-22T13:25:27] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-22T13:25:27 #15)
+[2025-12-22T09:48:46] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-22T09:48:46 #16)
