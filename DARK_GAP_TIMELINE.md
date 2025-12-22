@@ -2132,3 +2132,4 @@
 [2025-12-22T15:38:43] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-22T15:38:43 #6)
 [2025-12-22T08:33:23] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-22T08:33:23 #7)
 [2025-12-22T20:03:44] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-22T20:03:44 #8)
+[2025-12-22T19:21:57] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-22T19:21:57 #9)
