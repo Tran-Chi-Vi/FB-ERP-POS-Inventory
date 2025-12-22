@@ -4186,3 +4186,4 @@
 [2025-12-20T20:24:20] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-20T20:24:20 #7)
 >>>>>>> feat/system-integration-superpowers
 [2025-12-22T19:36:03] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-22T19:36:03 #1)
+[2025-12-22T10:48:03] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-22T10:48:03 #2)
