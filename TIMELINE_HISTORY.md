@@ -4163,6 +4163,7 @@
 [2025-12-18T16:27:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-18T16:27:10 #5)
 [2025-12-18T21:20:21] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-18T21:20:21 #6)
 [2025-12-18T13:30:41] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-18T13:30:41 #7)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-19T17:00:13] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-19T17:00:13 #1)
 [2025-12-19T08:45:38] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-19T08:45:38 #2)
@@ -4175,3 +4176,13 @@
 [2025-12-19T21:59:15] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-19T21:59:15 #9)
 [2025-12-19T21:05:31] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-19T21:05:31 #10)
 [2025-12-19T17:45:41] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-19T17:45:41 #11)
+=======
+[2025-12-20T21:07:25] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-20T21:07:25 #1)
+[2025-12-20T08:03:39] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-20T08:03:39 #2)
+[2025-12-20T09:01:28] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-20T09:01:28 #3)
+[2025-12-20T08:24:23] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-20T08:24:23 #4)
+[2025-12-20T19:57:02] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-20T19:57:02 #5)
+[2025-12-20T21:47:56] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-20T21:47:56 #6)
+[2025-12-20T20:24:20] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-20T20:24:20 #7)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-22T19:36:03] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-22T19:36:03 #1)
