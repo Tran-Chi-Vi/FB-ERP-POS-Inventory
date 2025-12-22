@@ -4189,3 +4189,4 @@
 [2025-12-22T10:48:03] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-22T10:48:03 #2)
 [2025-12-22T09:32:40] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-22T09:32:40 #3)
 [2025-12-22T11:00:39] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-22T11:00:39 #4)
+[2025-12-22T09:26:34] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-22T09:26:34 #5)
