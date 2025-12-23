@@ -2105,3 +2105,4 @@
 [2025-12-19T08:45:12] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-19T08:45:12 #8)
 [2025-12-19T12:19:29] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-19T12:19:29 #9)
 [2025-12-19T17:56:50] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-19T17:56:50 #10)
+[2025-12-19T17:11:59] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-19T17:11:59 #11)
