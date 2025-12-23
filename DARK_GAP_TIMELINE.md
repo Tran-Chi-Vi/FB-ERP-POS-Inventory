@@ -2095,3 +2095,4 @@
 [2025-12-18T18:28:15] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-18T18:28:15 #8)
 [2025-12-18T11:49:39] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-18T11:49:39 #9)
 [2025-12-18T20:04:28] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-18T20:04:28 #10)
+[2025-12-19T08:35:35] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-19T08:35:35 #1)
