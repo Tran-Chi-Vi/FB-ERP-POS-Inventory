@@ -2150,3 +2150,4 @@
 [2025-12-23T15:52:54] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-23T15:52:54 #8)
 [2025-12-23T16:46:06] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-23T16:46:06 #9)
 [2025-12-23T10:19:19] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-23T10:19:19 #10)
+[2025-12-23T11:57:50] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-23T11:57:50 #11)
