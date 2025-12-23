@@ -2144,3 +2144,4 @@
 [2025-12-23T20:03:01] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-23T20:03:01 #2)
 [2025-12-23T21:53:37] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-23T21:53:37 #3)
 [2025-12-23T09:57:36] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-23T09:57:36 #4)
+[2025-12-23T14:50:43] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-23T14:50:43 #5)
