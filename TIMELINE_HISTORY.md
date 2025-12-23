@@ -171,3 +171,4 @@
 [2025-12-20T19:57:02] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-20T19:57:02 #5)
 [2025-12-20T21:47:56] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-20T21:47:56 #6)
 [2025-12-20T20:24:20] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-20T20:24:20 #7)
+[2025-12-23T21:28:39] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-23T21:28:39 #1)
