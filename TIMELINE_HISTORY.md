@@ -174,3 +174,4 @@
 [2025-12-23T21:28:39] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-23T21:28:39 #1)
 [2025-12-23T17:20:43] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-23T17:20:43 #2)
 [2025-12-23T14:20:20] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-23T14:20:20 #3)
+[2025-12-23T12:31:47] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-23T12:31:47 #4)
