@@ -178,3 +178,4 @@
 [2025-12-23T21:38:25] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-23T21:38:25 #5)
 [2025-12-23T19:13:51] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-23T19:13:51 #6)
 [2025-12-23T13:46:40] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-23T13:46:40 #7)
+[2025-12-23T18:32:26] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-23T18:32:26 #8)
