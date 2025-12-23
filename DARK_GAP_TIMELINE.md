@@ -2142,3 +2142,4 @@
 [2025-12-22T10:06:17] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-22T10:06:17 #16)
 [2025-12-23T08:50:42] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-23T08:50:42 #1)
 [2025-12-23T20:03:01] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-23T20:03:01 #2)
+[2025-12-23T21:53:37] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-23T21:53:37 #3)
