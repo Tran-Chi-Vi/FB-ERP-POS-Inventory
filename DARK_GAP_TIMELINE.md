@@ -2148,3 +2148,4 @@
 [2025-12-23T15:39:34] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-23T15:39:34 #6)
 [2025-12-23T21:28:44] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-23T21:28:44 #7)
 [2025-12-23T15:52:54] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-23T15:52:54 #8)
+[2025-12-23T16:46:06] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-23T16:46:06 #9)
