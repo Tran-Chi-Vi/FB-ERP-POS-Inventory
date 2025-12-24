@@ -4226,3 +4226,4 @@
 [2025-12-24T17:21:03] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-24T17:21:03 #8)
 [2025-12-24T15:28:10] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-24T15:28:10 #9)
 [2025-12-24T16:47:43] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-24T16:47:43 #10)
+[2025-12-24T21:06:53] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-24T21:06:53 #11)
