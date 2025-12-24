@@ -4235,3 +4235,4 @@
 [2025-12-24T08:16:44] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-24T08:16:44 #17)
 [2025-12-24T15:32:24] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-24T15:32:24 #18)
 [2025-12-24T09:12:00] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-24T09:12:00 #19)
+[2025-12-24T08:40:58] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-24T08:40:58 #20)
