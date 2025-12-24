@@ -4224,3 +4224,4 @@
 [2025-12-24T17:15:37] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-24T17:15:37 #6)
 [2025-12-24T16:13:38] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-24T16:13:38 #7)
 [2025-12-24T17:21:03] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2025-12-24T17:21:03 #8)
+[2025-12-24T15:28:10] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-24T15:28:10 #9)
