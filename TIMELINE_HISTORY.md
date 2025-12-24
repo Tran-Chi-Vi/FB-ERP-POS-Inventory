@@ -4229,3 +4229,4 @@
 [2025-12-24T21:06:53] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-24T21:06:53 #11)
 [2025-12-24T20:38:31] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-24T20:38:31 #12)
 [2025-12-24T11:04:33] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-24T11:04:33 #13)
+[2025-12-24T14:24:45] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-24T14:24:45 #14)
