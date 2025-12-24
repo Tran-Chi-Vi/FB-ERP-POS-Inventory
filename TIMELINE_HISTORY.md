@@ -4184,6 +4184,7 @@
 [2025-12-20T19:57:02] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-20T19:57:02 #5)
 [2025-12-20T21:47:56] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-20T21:47:56 #6)
 [2025-12-20T20:24:20] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-20T20:24:20 #7)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-22T19:36:03] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-22T19:36:03 #1)
 [2025-12-22T10:48:03] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-22T10:48:03 #2)
@@ -4204,3 +4205,15 @@
 [2025-12-22T20:28:09] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-22T20:28:09 #17)
 [2025-12-22T08:48:27] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-22T08:48:27 #18)
 [2025-12-22T10:58:21] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2025-12-22T10:58:21 #19)
+=======
+[2025-12-23T21:28:39] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-23T21:28:39 #1)
+[2025-12-23T17:20:43] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-23T17:20:43 #2)
+[2025-12-23T14:20:20] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-23T14:20:20 #3)
+[2025-12-23T12:31:47] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-23T12:31:47 #4)
+[2025-12-23T21:38:25] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-23T21:38:25 #5)
+[2025-12-23T19:13:51] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-23T19:13:51 #6)
+[2025-12-23T13:46:40] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-23T13:46:40 #7)
+[2025-12-23T18:32:26] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-23T18:32:26 #8)
+[2025-12-23T13:36:10] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-23T13:36:10 #9)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-24T08:41:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-24T08:41:27 #1)
