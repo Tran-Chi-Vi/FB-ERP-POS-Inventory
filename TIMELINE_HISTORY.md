@@ -4233,3 +4233,4 @@
 [2025-12-24T18:53:05] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-24T18:53:05 #15)
 [2025-12-24T15:38:05] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-24T15:38:05 #16)
 [2025-12-24T08:16:44] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-24T08:16:44 #17)
+[2025-12-24T15:32:24] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-24T15:32:24 #18)
