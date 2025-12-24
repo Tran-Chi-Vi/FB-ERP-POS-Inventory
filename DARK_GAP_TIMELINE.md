@@ -2156,3 +2156,4 @@
 [2025-12-24T13:24:47] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-24T13:24:47 #1)
 [2025-12-24T13:12:00] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-24T13:12:00 #2)
 [2025-12-24T13:10:04] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-24T13:10:04 #3)
+[2025-12-24T11:23:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-24T11:23:18 #4)
