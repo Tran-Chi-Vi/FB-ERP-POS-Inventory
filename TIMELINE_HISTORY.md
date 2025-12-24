@@ -4227,3 +4227,4 @@
 [2025-12-24T15:28:10] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-24T15:28:10 #9)
 [2025-12-24T16:47:43] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-24T16:47:43 #10)
 [2025-12-24T21:06:53] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-24T21:06:53 #11)
+[2025-12-24T20:38:31] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-24T20:38:31 #12)
