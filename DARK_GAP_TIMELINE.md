@@ -2164,3 +2164,4 @@
 [2025-12-25T15:10:26] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-25T15:10:26 #3)
 [2025-12-25T08:53:35] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-25T08:53:35 #4)
 [2025-12-25T09:16:23] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-25T09:16:23 #5)
+[2025-12-25T11:52:45] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-25T11:52:45 #6)
