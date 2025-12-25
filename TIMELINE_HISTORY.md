@@ -187,3 +187,4 @@
 [2025-12-25T18:19:14] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T18:19:14 #5)
 [2025-12-25T14:14:36] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-25T14:14:36 #6)
 [2025-12-25T21:32:48] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-25T21:32:48 #7)
+[2025-12-25T12:31:34] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-25T12:31:34 #8)
