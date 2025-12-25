@@ -180,3 +180,4 @@
 [2025-12-23T13:46:40] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-23T13:46:40 #7)
 [2025-12-23T18:32:26] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-23T18:32:26 #8)
 [2025-12-23T13:36:10] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-23T13:36:10 #9)
+[2025-12-25T10:32:04] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-25T10:32:04 #1)
