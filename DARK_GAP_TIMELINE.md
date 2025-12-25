@@ -2159,3 +2159,4 @@
 [2025-12-24T11:23:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-24T11:23:18 #4)
 [2025-12-24T11:04:42] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-24T11:04:42 #5)
 [2025-12-24T18:29:47] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-24T18:29:47 #6)
+[2025-12-25T09:59:05] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-25T09:59:05 #1)
