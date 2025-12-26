@@ -4252,3 +4252,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2025-12-26T15:22:23] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-26T15:22:23 #1)
 [2025-12-26T09:11:13] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-26T09:11:13 #2)
+[2025-12-26T08:34:29] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-26T08:34:29 #3)
