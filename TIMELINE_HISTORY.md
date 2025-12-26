@@ -4215,6 +4215,7 @@
 [2025-12-23T13:46:40] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-23T13:46:40 #7)
 [2025-12-23T18:32:26] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-23T18:32:26 #8)
 [2025-12-23T13:36:10] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-23T13:36:10 #9)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-24T08:41:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-24T08:41:27 #1)
 [2025-12-24T19:02:06] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-24T19:02:06 #2)
@@ -4236,3 +4237,17 @@
 [2025-12-24T15:32:24] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-24T15:32:24 #18)
 [2025-12-24T09:12:00] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-24T09:12:00 #19)
 [2025-12-24T08:40:58] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-24T08:40:58 #20)
+=======
+[2025-12-25T10:32:04] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-25T10:32:04 #1)
+[2025-12-25T18:42:35] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T18:42:35 #2)
+[2025-12-25T17:46:01] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-25T17:46:01 #3)
+[2025-12-25T15:10:08] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-25T15:10:08 #4)
+[2025-12-25T18:19:14] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T18:19:14 #5)
+[2025-12-25T14:14:36] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2025-12-25T14:14:36 #6)
+[2025-12-25T21:32:48] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-25T21:32:48 #7)
+[2025-12-25T12:31:34] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-25T12:31:34 #8)
+[2025-12-25T18:52:49] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T18:52:49 #9)
+[2025-12-25T12:09:37] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T12:09:37 #10)
+[2025-12-25T16:19:43] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-25T16:19:43 #11)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-26T15:22:23] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-26T15:22:23 #1)
