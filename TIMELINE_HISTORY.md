@@ -191,3 +191,4 @@
 [2025-12-25T18:52:49] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T18:52:49 #9)
 [2025-12-25T12:09:37] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T12:09:37 #10)
 [2025-12-25T16:19:43] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-25T16:19:43 #11)
+[2025-12-27T21:44:36] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-27T21:44:36 #1)
