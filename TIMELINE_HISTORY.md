@@ -205,3 +205,4 @@
 [2025-12-27T19:18:59] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-27T19:18:59 #12)
 [2025-12-27T18:12:50] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-27T18:12:50 #13)
 [2025-12-27T21:32:54] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-27T21:32:54 #14)
+[2025-12-27T15:07:26] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-27T15:07:26 #15)
