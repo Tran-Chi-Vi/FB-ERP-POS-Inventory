@@ -198,3 +198,4 @@
 [2025-12-27T11:29:54] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-27T11:29:54 #5)
 [2025-12-27T16:14:37] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-27T16:14:37 #6)
 [2025-12-27T16:39:21] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-27T16:39:21 #7)
+[2025-12-27T12:35:12] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-27T12:35:12 #8)
