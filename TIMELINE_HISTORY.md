@@ -208,3 +208,4 @@
 [2025-12-27T15:07:26] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-27T15:07:26 #15)
 [2025-12-27T18:32:23] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-27T18:32:23 #16)
 [2025-12-27T15:32:02] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-27T15:32:02 #17)
+[2025-12-27T12:27:29] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-27T12:27:29 #18)
