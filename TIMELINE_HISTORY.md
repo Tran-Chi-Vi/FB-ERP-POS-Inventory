@@ -204,3 +204,4 @@
 [2025-12-27T14:13:02] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-27T14:13:02 #11)
 [2025-12-27T19:18:59] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-27T19:18:59 #12)
 [2025-12-27T18:12:50] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-27T18:12:50 #13)
+[2025-12-27T21:32:54] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-27T21:32:54 #14)
