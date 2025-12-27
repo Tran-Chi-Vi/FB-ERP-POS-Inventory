@@ -201,3 +201,4 @@
 [2025-12-27T12:35:12] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-27T12:35:12 #8)
 [2025-12-27T17:52:47] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-27T17:52:47 #9)
 [2025-12-27T15:37:07] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-27T15:37:07 #10)
+[2025-12-27T14:13:02] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-27T14:13:02 #11)
