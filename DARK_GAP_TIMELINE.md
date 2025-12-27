@@ -2181,3 +2181,4 @@
 [2025-12-26T08:16:00] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-26T08:16:00 #6)
 [2025-12-26T08:25:37] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-26T08:25:37 #7)
 [2025-12-27T10:28:33] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-27T10:28:33 #1)
+[2025-12-27T13:50:11] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-27T13:50:11 #2)
