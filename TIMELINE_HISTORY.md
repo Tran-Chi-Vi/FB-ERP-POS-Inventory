@@ -4249,6 +4249,7 @@
 [2025-12-25T18:52:49] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T18:52:49 #9)
 [2025-12-25T12:09:37] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2025-12-25T12:09:37 #10)
 [2025-12-25T16:19:43] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2025-12-25T16:19:43 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-26T15:22:23] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-26T15:22:23 #1)
 [2025-12-26T09:11:13] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-26T09:11:13 #2)
@@ -4263,3 +4264,25 @@
 [2025-12-26T09:30:50] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-26T09:30:50 #11)
 [2025-12-26T13:32:23] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-26T13:32:23 #12)
 [2025-12-26T18:56:51] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-26T18:56:51 #13)
+=======
+[2025-12-27T21:44:36] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-27T21:44:36 #1)
+[2025-12-27T10:10:22] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-27T10:10:22 #2)
+[2025-12-27T09:39:31] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-27T09:39:31 #3)
+[2025-12-27T14:18:48] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-27T14:18:48 #4)
+[2025-12-27T11:29:54] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-27T11:29:54 #5)
+[2025-12-27T16:14:37] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-27T16:14:37 #6)
+[2025-12-27T16:39:21] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-27T16:39:21 #7)
+[2025-12-27T12:35:12] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-27T12:35:12 #8)
+[2025-12-27T17:52:47] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-27T17:52:47 #9)
+[2025-12-27T15:37:07] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2025-12-27T15:37:07 #10)
+[2025-12-27T14:13:02] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-27T14:13:02 #11)
+[2025-12-27T19:18:59] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-27T19:18:59 #12)
+[2025-12-27T18:12:50] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-27T18:12:50 #13)
+[2025-12-27T21:32:54] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-27T21:32:54 #14)
+[2025-12-27T15:07:26] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2025-12-27T15:07:26 #15)
+[2025-12-27T18:32:23] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-27T18:32:23 #16)
+[2025-12-27T15:32:02] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-27T15:32:02 #17)
+[2025-12-27T12:27:29] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2025-12-27T12:27:29 #18)
+[2025-12-27T10:07:12] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-27T10:07:12 #19)
+>>>>>>> feat/system-integration-superpowers
+[2025-12-29T12:14:52] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2025-12-29T12:14:52 #1)
