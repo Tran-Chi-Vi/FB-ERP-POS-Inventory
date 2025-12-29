@@ -2195,3 +2195,4 @@
 [2025-12-29T21:47:14] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-29T21:47:14 #8)
 [2025-12-29T15:11:19] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-29T15:11:19 #9)
 [2025-12-29T19:32:58] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-29T19:32:58 #10)
+[2025-12-29T21:16:35] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-29T21:16:35 #11)
