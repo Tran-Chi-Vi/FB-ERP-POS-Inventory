@@ -2176,3 +2176,4 @@
 [2025-12-26T12:43:33] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-26T12:43:33 #1)
 [2025-12-26T13:34:02] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-26T13:34:02 #2)
 [2025-12-26T12:19:39] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-26T12:19:39 #3)
+[2025-12-26T15:46:28] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-26T15:46:28 #4)
