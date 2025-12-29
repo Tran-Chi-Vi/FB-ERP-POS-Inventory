@@ -2202,3 +2202,4 @@
 [2025-12-29T19:25:35] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-29T19:25:35 #15)
 [2025-12-29T14:37:43] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-29T14:37:43 #16)
 [2025-12-29T19:02:19] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2025-12-29T19:02:19 #17)
+[2025-12-29T09:05:14] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-12-29T09:05:14 #18)
