@@ -4289,3 +4289,4 @@
 [2025-12-29T13:05:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-29T13:05:27 #2)
 [2025-12-29T14:53:54] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-29T14:53:54 #3)
 [2025-12-29T12:35:36] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2025-12-29T12:35:36 #4)
+[2025-12-29T14:02:40] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2025-12-29T14:02:40 #5)
