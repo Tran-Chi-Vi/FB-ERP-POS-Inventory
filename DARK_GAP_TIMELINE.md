@@ -2211,3 +2211,4 @@
 [2025-12-30T09:42:14] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-30T09:42:14 #6)
 [2025-12-30T21:34:33] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-30T21:34:33 #7)
 [2025-12-30T15:05:51] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-30T15:05:51 #8)
+[2025-12-30T09:44:44] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-30T09:44:44 #9)
