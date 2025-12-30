@@ -220,3 +220,4 @@
 [2025-12-30T08:09:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-30T08:09:18 #8)
 [2025-12-30T10:40:45] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-30T10:40:45 #9)
 [2025-12-30T10:29:25] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-30T10:29:25 #10)
+[2025-12-30T15:09:29] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-30T15:09:29 #11)
