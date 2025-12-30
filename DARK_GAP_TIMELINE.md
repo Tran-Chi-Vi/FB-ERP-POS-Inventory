@@ -2185,3 +2185,4 @@
 [2025-12-27T20:41:57] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2025-12-27T20:41:57 #3)
 [2025-12-27T10:44:38] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-27T10:44:38 #4)
 [2025-12-27T12:41:26] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2025-12-27T12:41:26 #5)
+[2025-12-29T18:57:52] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-29T18:57:52 #1)
