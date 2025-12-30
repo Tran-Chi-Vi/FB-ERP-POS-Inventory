@@ -217,3 +217,4 @@
 [2025-12-30T20:23:10] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-30T20:23:10 #5)
 [2025-12-30T16:24:34] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-30T16:24:34 #6)
 [2025-12-30T09:41:41] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-30T09:41:41 #7)
+[2025-12-30T08:09:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-30T08:09:18 #8)
