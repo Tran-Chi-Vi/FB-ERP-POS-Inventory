@@ -219,3 +219,4 @@
 [2025-12-30T09:41:41] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2025-12-30T09:41:41 #7)
 [2025-12-30T08:09:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2025-12-30T08:09:18 #8)
 [2025-12-30T10:40:45] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2025-12-30T10:40:45 #9)
+[2025-12-30T10:29:25] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-30T10:29:25 #10)
