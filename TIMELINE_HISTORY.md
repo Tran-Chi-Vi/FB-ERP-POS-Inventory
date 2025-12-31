@@ -4316,3 +4316,4 @@
 [2025-12-31T19:48:43] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-31T19:48:43 #2)
 [2025-12-31T11:44:29] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-31T11:44:29 #3)
 [2025-12-31T09:10:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-31T09:10:56 #4)
+[2025-12-31T15:58:05] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-31T15:58:05 #5)
