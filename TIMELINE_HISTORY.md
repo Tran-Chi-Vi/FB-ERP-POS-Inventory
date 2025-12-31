@@ -4318,3 +4318,4 @@
 [2025-12-31T09:10:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-31T09:10:56 #4)
 [2025-12-31T15:58:05] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-31T15:58:05 #5)
 [2025-12-31T17:21:00] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-31T17:21:00 #6)
+[2025-12-31T19:13:57] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-31T19:13:57 #7)
