@@ -2199,3 +2199,4 @@
 [2025-12-29T16:04:42] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-29T16:04:42 #12)
 [2025-12-29T12:57:27] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-29T12:57:27 #13)
 [2025-12-29T11:04:19] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-29T11:04:19 #14)
+[2025-12-29T19:25:35] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2025-12-29T19:25:35 #15)
