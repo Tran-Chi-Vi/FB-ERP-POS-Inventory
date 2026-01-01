@@ -2236,3 +2236,4 @@
 [2025-12-31T14:24:50] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-31T14:24:50 #16)
 [2026-01-01T10:25:17] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-01T10:25:17 #1)
 [2026-01-01T13:58:34] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-01T13:58:34 #2)
+[2026-01-01T11:31:23] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-01T11:31:23 #3)
