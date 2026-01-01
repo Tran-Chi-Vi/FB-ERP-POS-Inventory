@@ -229,3 +229,4 @@
 [2025-12-30T17:20:31] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-30T17:20:31 #17)
 [2025-12-30T09:02:09] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-30T09:02:09 #18)
 [2025-12-30T20:39:11] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-30T20:39:11 #19)
+[2026-01-01T16:46:45] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-01T16:46:45 #1)
