@@ -2248,3 +2248,4 @@
 [2026-01-02T10:49:16] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-02T10:49:16 #7)
 [2026-01-02T08:54:24] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-02T08:54:24 #8)
 [2026-01-02T13:00:19] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-02T13:00:19 #9)
+[2026-01-02T20:34:47] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-02T20:34:47 #10)
