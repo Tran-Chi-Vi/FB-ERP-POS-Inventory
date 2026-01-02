@@ -4311,6 +4311,7 @@
 [2025-12-30T17:20:31] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2025-12-30T17:20:31 #17)
 [2025-12-30T09:02:09] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2025-12-30T09:02:09 #18)
 [2025-12-30T20:39:11] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2025-12-30T20:39:11 #19)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2025-12-31T15:58:43] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2025-12-31T15:58:43 #1)
 [2025-12-31T19:48:43] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2025-12-31T19:48:43 #2)
@@ -4319,3 +4320,11 @@
 [2025-12-31T15:58:05] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2025-12-31T15:58:05 #5)
 [2025-12-31T17:21:00] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2025-12-31T17:21:00 #6)
 [2025-12-31T19:13:57] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2025-12-31T19:13:57 #7)
+=======
+[2026-01-01T16:46:45] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-01T16:46:45 #1)
+[2026-01-01T12:15:57] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-01T12:15:57 #2)
+[2026-01-01T19:38:31] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-01T19:38:31 #3)
+[2026-01-01T10:39:29] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-01T10:39:29 #4)
+[2026-01-01T18:02:31] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-01T18:02:31 #5)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-02T20:47:19] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-02T20:47:19 #1)
