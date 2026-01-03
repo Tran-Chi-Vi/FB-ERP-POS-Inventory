@@ -2214,3 +2214,4 @@
 [2025-12-30T09:44:44] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-30T09:44:44 #9)
 [2025-12-30T09:09:38] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2025-12-30T09:09:38 #10)
 [2025-12-30T20:32:42] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-30T20:32:42 #11)
+[2025-12-30T13:37:30] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2025-12-30T13:37:30 #12)
