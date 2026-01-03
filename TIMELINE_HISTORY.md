@@ -241,3 +241,4 @@
 [2026-01-03T13:54:14] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-03T13:54:14 #5)
 [2026-01-03T08:40:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-03T08:40:52 #6)
 [2026-01-03T20:05:51] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-03T20:05:51 #7)
+[2026-01-03T13:24:26] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-03T13:24:26 #8)
