@@ -2258,3 +2258,4 @@
 [2026-01-03T10:42:16] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-03T10:42:16 #1)
 [2026-01-03T10:15:33] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-03T10:15:33 #2)
 [2026-01-03T16:55:58] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-03T16:55:58 #3)
+[2026-01-03T08:16:26] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-03T08:16:26 #4)
