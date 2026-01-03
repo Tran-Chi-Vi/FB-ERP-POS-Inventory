@@ -2262,3 +2262,4 @@
 [2026-01-03T16:55:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-03T16:55:18 #5)
 [2026-01-03T09:42:14] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-03T09:42:14 #6)
 [2026-01-03T21:42:05] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-03T21:42:05 #7)
+[2026-01-03T08:40:49] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-03T08:40:49 #8)
