@@ -2256,3 +2256,4 @@
 [2026-01-02T13:28:19] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-02T13:28:19 #15)
 [2026-01-02T15:16:00] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-02T15:16:00 #16)
 [2026-01-03T10:42:16] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-03T10:42:16 #1)
+[2026-01-03T10:15:33] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-03T10:15:33 #2)
