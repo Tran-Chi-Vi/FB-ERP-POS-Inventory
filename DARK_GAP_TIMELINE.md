@@ -2271,3 +2271,4 @@
 [2026-01-05T11:23:54] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-05T11:23:54 #3)
 [2026-01-05T19:39:32] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-05T19:39:32 #4)
 [2026-01-05T21:46:43] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-05T21:46:43 #5)
+[2026-01-05T08:52:13] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-05T08:52:13 #6)
