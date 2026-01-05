@@ -2273,3 +2273,4 @@
 [2026-01-05T21:46:43] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-05T21:46:43 #5)
 [2026-01-05T08:52:13] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-05T08:52:13 #6)
 [2026-01-05T20:32:53] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-05T20:32:53 #7)
+[2026-01-05T15:06:28] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-05T15:06:28 #8)
