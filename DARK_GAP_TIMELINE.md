@@ -2218,3 +2218,4 @@
 [2025-12-30T16:57:11] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2025-12-30T16:57:11 #13)
 [2025-12-30T09:10:13] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-12-30T09:10:13 #14)
 [2025-12-30T18:46:06] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2025-12-30T18:46:06 #15)
+[2025-12-31T08:18:27] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-12-31T08:18:27 #1)
