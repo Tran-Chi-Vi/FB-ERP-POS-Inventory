@@ -4380,3 +4380,4 @@
 [2026-01-07T08:32:22] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-07T08:32:22 #10)
 [2026-01-07T17:08:50] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-07T17:08:50 #11)
 [2026-01-07T20:39:44] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-07T20:39:44 #12)
+[2026-01-07T17:08:56] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-07T17:08:56 #13)
