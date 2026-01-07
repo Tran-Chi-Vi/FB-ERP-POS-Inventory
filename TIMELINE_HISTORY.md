@@ -4376,3 +4376,4 @@
 [2026-01-07T16:59:05] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-07T16:59:05 #6)
 [2026-01-07T10:43:09] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-07T10:43:09 #7)
 [2026-01-07T12:24:28] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-07T12:24:28 #8)
+[2026-01-07T13:18:41] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-07T13:18:41 #9)
