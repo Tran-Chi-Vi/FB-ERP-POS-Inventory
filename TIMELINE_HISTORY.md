@@ -4387,3 +4387,4 @@
 [2026-01-07T08:14:21] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-07T08:14:21 #17)
 [2026-01-07T14:24:40] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-07T14:24:40 #18)
 [2026-01-07T15:36:18] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-07T15:36:18 #19)
+[2026-01-07T18:07:18] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-07T18:07:18 #20)
