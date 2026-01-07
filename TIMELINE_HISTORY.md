@@ -4370,3 +4370,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-01-07T21:14:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-07T21:14:04 #1)
 [2026-01-07T15:57:39] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-07T15:57:39 #2)
+[2026-01-07T16:07:25] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-07T16:07:25 #3)
