@@ -4343,6 +4343,7 @@
 [2026-01-03T08:40:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-03T08:40:52 #6)
 [2026-01-03T20:05:51] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-03T20:05:51 #7)
 [2026-01-03T13:24:26] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-03T13:24:26 #8)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-05T19:06:23] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-05T19:06:23 #1)
 [2026-01-05T18:06:29] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-05T18:06:29 #2)
@@ -4352,3 +4353,19 @@
 [2026-01-05T11:07:31] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-05T11:07:31 #6)
 [2026-01-05T18:46:11] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-05T18:46:11 #7)
 [2026-01-05T14:00:50] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-05T14:00:50 #8)
+=======
+[2026-01-06T11:21:33] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-06T11:21:33 #1)
+[2026-01-06T16:44:05] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-06T16:44:05 #2)
+[2026-01-06T11:00:17] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-06T11:00:17 #3)
+[2026-01-06T17:16:16] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-06T17:16:16 #4)
+[2026-01-06T10:47:22] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-06T10:47:22 #5)
+[2026-01-06T16:01:44] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-06T16:01:44 #6)
+[2026-01-06T15:25:00] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-06T15:25:00 #7)
+[2026-01-06T16:20:14] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-06T16:20:14 #8)
+[2026-01-06T19:33:34] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-06T19:33:34 #9)
+[2026-01-06T10:03:21] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-06T10:03:21 #10)
+[2026-01-06T15:58:15] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-06T15:58:15 #11)
+[2026-01-06T09:30:19] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-06T09:30:19 #12)
+[2026-01-06T21:47:22] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-06T21:47:22 #13)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-07T21:14:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-07T21:14:04 #1)
