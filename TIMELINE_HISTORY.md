@@ -4369,3 +4369,4 @@
 [2026-01-06T21:47:22] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-06T21:47:22 #13)
 >>>>>>> feat/system-integration-superpowers
 [2026-01-07T21:14:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-07T21:14:04 #1)
+[2026-01-07T15:57:39] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-07T15:57:39 #2)
