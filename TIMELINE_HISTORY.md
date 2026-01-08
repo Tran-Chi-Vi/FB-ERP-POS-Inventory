@@ -262,3 +262,4 @@
 [2026-01-08T14:52:09] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-08T14:52:09 #5)
 [2026-01-08T10:02:19] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-08T10:02:19 #6)
 [2026-01-08T16:07:15] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-08T16:07:15 #7)
+[2026-01-08T14:43:05] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-08T14:43:05 #8)
