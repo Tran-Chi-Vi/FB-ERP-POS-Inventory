@@ -2314,3 +2314,4 @@
 [2026-01-08T14:27:51] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-08T14:27:51 #8)
 [2026-01-08T15:09:01] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-08T15:09:01 #9)
 [2026-01-08T16:57:47] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-08T16:57:47 #10)
+[2026-01-08T11:15:03] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-08T11:15:03 #11)
