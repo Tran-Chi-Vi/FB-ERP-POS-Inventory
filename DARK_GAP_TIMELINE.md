@@ -2244,3 +2244,4 @@
 [2026-01-02T20:25:12] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-02T20:25:12 #3)
 [2026-01-02T21:07:29] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-02T21:07:29 #4)
 [2026-01-02T18:03:05] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-02T18:03:05 #5)
+[2026-01-02T12:24:58] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-02T12:24:58 #6)
