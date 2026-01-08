@@ -271,3 +271,4 @@
 [2026-01-08T13:47:58] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-08T13:47:58 #14)
 [2026-01-08T20:05:05] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-08T20:05:05 #15)
 [2026-01-08T13:41:50] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-08T13:41:50 #16)
+[2026-01-08T13:10:14] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-08T13:10:14 #17)
