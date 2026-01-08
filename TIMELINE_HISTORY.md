@@ -266,3 +266,4 @@
 [2026-01-08T15:47:07] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-08T15:47:07 #9)
 [2026-01-08T09:50:57] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-08T09:50:57 #10)
 [2026-01-08T13:00:03] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-08T13:00:03 #11)
+[2026-01-08T20:23:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-08T20:23:44 #12)
