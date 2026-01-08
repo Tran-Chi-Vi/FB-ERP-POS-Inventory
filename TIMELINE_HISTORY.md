@@ -268,3 +268,4 @@
 [2026-01-08T13:00:03] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-08T13:00:03 #11)
 [2026-01-08T20:23:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-08T20:23:44 #12)
 [2026-01-08T11:59:41] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-08T11:59:41 #13)
+[2026-01-08T13:47:58] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-08T13:47:58 #14)
