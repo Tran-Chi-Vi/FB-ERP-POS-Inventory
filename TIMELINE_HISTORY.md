@@ -4367,6 +4367,7 @@
 [2026-01-06T15:58:15] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-06T15:58:15 #11)
 [2026-01-06T09:30:19] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-06T09:30:19 #12)
 [2026-01-06T21:47:22] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-06T21:47:22 #13)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-07T21:14:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-07T21:14:04 #1)
 [2026-01-07T15:57:39] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-07T15:57:39 #2)
@@ -4388,3 +4389,25 @@
 [2026-01-07T14:24:40] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-07T14:24:40 #18)
 [2026-01-07T15:36:18] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-07T15:36:18 #19)
 [2026-01-07T18:07:18] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-07T18:07:18 #20)
+=======
+[2026-01-08T17:26:48] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-08T17:26:48 #1)
+[2026-01-08T11:54:14] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-08T11:54:14 #2)
+[2026-01-08T17:08:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-08T17:08:20 #3)
+[2026-01-08T12:42:15] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-08T12:42:15 #4)
+[2026-01-08T14:52:09] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-08T14:52:09 #5)
+[2026-01-08T10:02:19] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-08T10:02:19 #6)
+[2026-01-08T16:07:15] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-08T16:07:15 #7)
+[2026-01-08T14:43:05] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-08T14:43:05 #8)
+[2026-01-08T15:47:07] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-08T15:47:07 #9)
+[2026-01-08T09:50:57] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-08T09:50:57 #10)
+[2026-01-08T13:00:03] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-08T13:00:03 #11)
+[2026-01-08T20:23:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-08T20:23:44 #12)
+[2026-01-08T11:59:41] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-08T11:59:41 #13)
+[2026-01-08T13:47:58] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-08T13:47:58 #14)
+[2026-01-08T20:05:05] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-08T20:05:05 #15)
+[2026-01-08T13:41:50] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-08T13:41:50 #16)
+[2026-01-08T13:10:14] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-08T13:10:14 #17)
+[2026-01-08T11:13:32] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-08T11:13:32 #18)
+[2026-01-08T18:28:07] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-08T18:28:07 #19)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-09T15:37:41] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-09T15:37:41 #1)
