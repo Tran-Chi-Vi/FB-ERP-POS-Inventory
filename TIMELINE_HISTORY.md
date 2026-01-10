@@ -278,3 +278,4 @@
 [2026-01-10T17:36:01] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-10T17:36:01 #2)
 [2026-01-10T10:32:43] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-10T10:32:43 #3)
 [2026-01-10T18:50:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-10T18:50:30 #4)
+[2026-01-10T16:43:50] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-10T16:43:50 #5)
