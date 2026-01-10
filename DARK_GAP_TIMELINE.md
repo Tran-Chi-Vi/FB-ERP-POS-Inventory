@@ -2348,3 +2348,4 @@
 [2026-01-10T09:15:26] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-10T09:15:26 #13)
 [2026-01-10T10:41:28] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-10T10:41:28 #14)
 [2026-01-10T08:39:54] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-10T08:39:54 #15)
+[2026-01-10T21:33:42] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-10T21:33:42 #16)
