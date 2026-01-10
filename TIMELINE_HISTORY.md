@@ -283,3 +283,4 @@
 [2026-01-10T12:39:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-10T12:39:09 #7)
 [2026-01-10T17:06:12] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-10T17:06:12 #8)
 [2026-01-10T12:35:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-10T12:35:19 #9)
+[2026-01-10T11:32:22] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-10T11:32:22 #10)
