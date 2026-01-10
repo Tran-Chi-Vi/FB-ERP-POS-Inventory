@@ -281,3 +281,4 @@
 [2026-01-10T16:43:50] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-10T16:43:50 #5)
 [2026-01-10T20:38:58] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-10T20:38:58 #6)
 [2026-01-10T12:39:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-10T12:39:09 #7)
+[2026-01-10T17:06:12] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-10T17:06:12 #8)
