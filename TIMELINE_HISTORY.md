@@ -4442,3 +4442,4 @@
 [2026-01-12T09:29:01] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-12T09:29:01 #7)
 [2026-01-12T18:55:32] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-12T18:55:32 #8)
 [2026-01-12T21:14:41] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-12T21:14:41 #9)
+[2026-01-12T11:58:31] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-12T11:58:31 #10)
