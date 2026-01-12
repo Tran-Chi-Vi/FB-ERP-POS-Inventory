@@ -4409,6 +4409,7 @@
 [2026-01-08T13:10:14] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-08T13:10:14 #17)
 [2026-01-08T11:13:32] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-08T11:13:32 #18)
 [2026-01-08T18:28:07] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-08T18:28:07 #19)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-09T15:37:41] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-09T15:37:41 #1)
 [2026-01-09T17:11:34] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-09T17:11:34 #2)
@@ -4419,3 +4420,17 @@
 [2026-01-09T16:36:21] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-09T16:36:21 #7)
 [2026-01-09T15:19:38] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-09T15:19:38 #8)
 [2026-01-09T13:20:15] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-09T13:20:15 #9)
+=======
+[2026-01-10T19:58:35] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-10T19:58:35 #1)
+[2026-01-10T17:36:01] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-10T17:36:01 #2)
+[2026-01-10T10:32:43] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-10T10:32:43 #3)
+[2026-01-10T18:50:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-10T18:50:30 #4)
+[2026-01-10T16:43:50] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-10T16:43:50 #5)
+[2026-01-10T20:38:58] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-10T20:38:58 #6)
+[2026-01-10T12:39:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-10T12:39:09 #7)
+[2026-01-10T17:06:12] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-10T17:06:12 #8)
+[2026-01-10T12:35:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-10T12:35:19 #9)
+[2026-01-10T11:32:22] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-10T11:32:22 #10)
+[2026-01-10T18:30:38] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-10T18:30:38 #11)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-12T11:54:32] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-12T11:54:32 #1)
