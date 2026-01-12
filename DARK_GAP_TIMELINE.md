@@ -2352,3 +2352,4 @@
 [2026-01-10T14:23:27] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-10T14:23:27 #17)
 [2026-01-10T20:03:57] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-10T20:03:57 #18)
 [2026-01-12T09:02:05] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-12T09:02:05 #1)
+[2026-01-12T15:06:55] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-12T15:06:55 #2)
