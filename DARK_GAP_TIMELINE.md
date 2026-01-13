@@ -2275,3 +2275,4 @@
 [2026-01-05T20:32:53] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-05T20:32:53 #7)
 [2026-01-05T15:06:28] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-05T15:06:28 #8)
 [2026-01-05T12:16:49] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-05T12:16:49 #9)
+[2026-01-05T08:37:36] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-05T08:37:36 #10)
