@@ -2371,3 +2371,4 @@
 [2026-01-13T17:44:38] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-13T17:44:38 #3)
 [2026-01-13T16:10:08] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-13T16:10:08 #4)
 [2026-01-13T21:47:18] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-13T21:47:18 #5)
+[2026-01-13T20:27:31] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-13T20:27:31 #6)
