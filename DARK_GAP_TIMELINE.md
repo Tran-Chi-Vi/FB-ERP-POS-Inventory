@@ -2279,3 +2279,4 @@
 [2026-01-05T20:24:38] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-05T20:24:38 #11)
 [2026-01-06T12:34:41] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-06T12:34:41 #1)
 [2026-01-06T18:27:15] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-06T18:27:15 #2)
+[2026-01-06T11:27:59] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-06T11:27:59 #3)
