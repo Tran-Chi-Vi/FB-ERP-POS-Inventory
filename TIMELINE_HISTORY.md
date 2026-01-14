@@ -4469,3 +4469,4 @@
 [2026-01-14T08:36:24] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-14T08:36:24 #9)
 [2026-01-14T12:38:02] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-14T12:38:02 #10)
 [2026-01-14T13:11:29] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-14T13:11:29 #11)
+[2026-01-14T14:39:47] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-14T14:39:47 #12)
