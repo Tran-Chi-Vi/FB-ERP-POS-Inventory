@@ -4459,3 +4459,4 @@
 [2026-01-13T13:56:13] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-13T13:56:13 #7)
 >>>>>>> feat/system-integration-superpowers
 [2026-01-14T20:21:10] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-14T20:21:10 #1)
+[2026-01-14T19:06:10] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-14T19:06:10 #2)
