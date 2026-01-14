@@ -4432,6 +4432,7 @@
 [2026-01-10T12:35:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-10T12:35:19 #9)
 [2026-01-10T11:32:22] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-10T11:32:22 #10)
 [2026-01-10T18:30:38] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-10T18:30:38 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-12T11:54:32] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-12T11:54:32 #1)
 [2026-01-12T15:05:35] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-12T15:05:35 #2)
@@ -4448,3 +4449,13 @@
 [2026-01-12T14:17:47] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-12T14:17:47 #13)
 [2026-01-12T12:17:33] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-12T12:17:33 #14)
 [2026-01-12T21:56:34] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-12T21:56:34 #15)
+=======
+[2026-01-13T15:49:14] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-13T15:49:14 #1)
+[2026-01-13T20:37:28] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-13T20:37:28 #2)
+[2026-01-13T21:39:14] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-13T21:39:14 #3)
+[2026-01-13T15:52:32] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-13T15:52:32 #4)
+[2026-01-13T16:13:57] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-13T16:13:57 #5)
+[2026-01-13T19:17:08] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-13T19:17:08 #6)
+[2026-01-13T13:56:13] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-13T13:56:13 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-14T20:21:10] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-14T20:21:10 #1)
