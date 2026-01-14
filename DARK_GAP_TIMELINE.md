@@ -2373,3 +2373,4 @@
 [2026-01-13T21:47:18] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-13T21:47:18 #5)
 [2026-01-13T20:27:31] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-13T20:27:31 #6)
 [2026-01-13T18:15:34] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-13T18:15:34 #7)
+[2026-01-14T11:19:55] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-14T11:19:55 #1)
