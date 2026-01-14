@@ -4460,3 +4460,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-01-14T20:21:10] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-14T20:21:10 #1)
 [2026-01-14T19:06:10] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-14T19:06:10 #2)
+[2026-01-14T18:34:45] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-14T18:34:45 #3)
