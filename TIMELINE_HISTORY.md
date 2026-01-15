@@ -292,3 +292,4 @@
 [2026-01-13T16:13:57] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-13T16:13:57 #5)
 [2026-01-13T19:17:08] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-13T19:17:08 #6)
 [2026-01-13T13:56:13] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-13T13:56:13 #7)
+[2026-01-15T15:52:07] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-15T15:52:07 #1)
