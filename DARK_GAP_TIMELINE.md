@@ -2300,3 +2300,4 @@
 [2026-01-07T08:51:51] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-07T08:51:51 #12)
 [2026-01-07T20:13:45] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-07T20:13:45 #13)
 [2026-01-07T08:18:31] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-07T08:18:31 #14)
+[2026-01-07T10:32:44] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-07T10:32:44 #15)
