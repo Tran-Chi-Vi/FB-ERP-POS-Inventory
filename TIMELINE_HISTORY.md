@@ -313,3 +313,4 @@
 [2026-01-17T08:31:30] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-17T08:31:30 #9)
 [2026-01-17T18:50:13] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-17T18:50:13 #10)
 [2026-01-17T12:15:07] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-17T12:15:07 #11)
+[2026-01-17T16:52:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-17T16:52:20 #12)
