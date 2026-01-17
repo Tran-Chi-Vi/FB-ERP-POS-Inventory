@@ -2305,3 +2305,4 @@
 [2026-01-07T18:11:40] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-07T18:11:40 #17)
 [2026-01-07T16:53:09] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-07T16:53:09 #18)
 [2026-01-08T12:14:33] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-08T12:14:33 #1)
+[2026-01-08T19:00:40] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-08T19:00:40 #2)
