@@ -315,3 +315,4 @@
 [2026-01-17T12:15:07] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-17T12:15:07 #11)
 [2026-01-17T16:52:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-17T16:52:20 #12)
 [2026-01-17T09:29:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T09:29:43 #13)
+[2026-01-17T13:39:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T13:39:10 #14)
