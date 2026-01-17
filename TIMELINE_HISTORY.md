@@ -304,3 +304,4 @@
 [2026-01-15T18:07:44] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-15T18:07:44 #10)
 [2026-01-17T13:03:07] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-17T13:03:07 #1)
 [2026-01-17T16:31:16] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-17T16:31:16 #2)
+[2026-01-17T16:55:01] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-17T16:55:01 #3)
