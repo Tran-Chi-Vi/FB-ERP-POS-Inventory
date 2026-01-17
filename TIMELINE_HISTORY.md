@@ -305,3 +305,4 @@
 [2026-01-17T13:03:07] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-17T13:03:07 #1)
 [2026-01-17T16:31:16] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-17T16:31:16 #2)
 [2026-01-17T16:55:01] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-17T16:55:01 #3)
+[2026-01-17T16:48:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T16:48:22 #4)
