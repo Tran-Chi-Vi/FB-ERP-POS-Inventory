@@ -307,3 +307,4 @@
 [2026-01-17T16:55:01] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-17T16:55:01 #3)
 [2026-01-17T16:48:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T16:48:22 #4)
 [2026-01-17T10:50:51] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-17T10:50:51 #5)
+[2026-01-17T17:00:48] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-17T17:00:48 #6)
