@@ -2309,3 +2309,4 @@
 [2026-01-08T12:11:18] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-08T12:11:18 #3)
 [2026-01-08T18:55:26] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-08T18:55:26 #4)
 [2026-01-08T14:45:10] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-08T14:45:10 #5)
+[2026-01-08T13:36:19] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-08T13:36:19 #6)
