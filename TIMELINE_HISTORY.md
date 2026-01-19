@@ -4482,6 +4482,7 @@
 [2026-01-15T19:45:25] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-15T19:45:25 #8)
 [2026-01-15T16:33:56] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-15T16:33:56 #9)
 [2026-01-15T18:07:44] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-15T18:07:44 #10)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-16T14:13:28] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-16T14:13:28 #1)
 [2026-01-16T20:28:55] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-16T20:28:55 #2)
@@ -4493,3 +4494,22 @@
 [2026-01-16T09:06:51] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-16T09:06:51 #8)
 [2026-01-16T11:35:48] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-16T11:35:48 #9)
 [2026-01-16T15:46:42] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-16T15:46:42 #10)
+=======
+[2026-01-17T13:03:07] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-17T13:03:07 #1)
+[2026-01-17T16:31:16] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-17T16:31:16 #2)
+[2026-01-17T16:55:01] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-17T16:55:01 #3)
+[2026-01-17T16:48:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T16:48:22 #4)
+[2026-01-17T10:50:51] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-17T10:50:51 #5)
+[2026-01-17T17:00:48] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-17T17:00:48 #6)
+[2026-01-17T20:01:26] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-17T20:01:26 #7)
+[2026-01-17T19:50:03] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T19:50:03 #8)
+[2026-01-17T08:31:30] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-17T08:31:30 #9)
+[2026-01-17T18:50:13] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-17T18:50:13 #10)
+[2026-01-17T12:15:07] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-17T12:15:07 #11)
+[2026-01-17T16:52:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-17T16:52:20 #12)
+[2026-01-17T09:29:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T09:29:43 #13)
+[2026-01-17T13:39:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T13:39:10 #14)
+[2026-01-17T13:47:17] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-17T13:47:17 #15)
+[2026-01-17T16:27:34] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-17T16:27:34 #16)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-19T08:53:45] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-19T08:53:45 #1)
