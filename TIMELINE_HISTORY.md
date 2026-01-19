@@ -4514,3 +4514,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-01-19T08:53:45] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-19T08:53:45 #1)
 [2026-01-19T18:07:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-19T18:07:22 #2)
+[2026-01-19T08:50:16] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-19T08:50:16 #3)
