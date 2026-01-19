@@ -2431,3 +2431,4 @@
 [2026-01-19T18:45:00] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-19T18:45:00 #4)
 [2026-01-19T15:39:37] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-19T15:39:37 #5)
 [2026-01-19T08:35:08] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-19T08:35:08 #6)
+[2026-01-19T21:22:33] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-19T21:22:33 #7)
