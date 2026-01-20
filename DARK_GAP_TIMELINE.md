@@ -2444,3 +2444,4 @@
 [2026-01-20T19:43:21] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-20T19:43:21 #9)
 [2026-01-20T13:16:47] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-20T13:16:47 #10)
 [2026-01-20T09:59:55] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-20T09:59:55 #11)
+[2026-01-20T21:40:24] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-20T21:40:24 #12)
