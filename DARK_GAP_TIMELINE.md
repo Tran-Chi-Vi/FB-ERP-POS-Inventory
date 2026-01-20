@@ -2323,3 +2323,4 @@
 [2026-01-09T10:36:27] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-09T10:36:27 #5)
 [2026-01-09T13:40:49] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-09T13:40:49 #6)
 [2026-01-09T10:10:05] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-09T10:10:05 #7)
+[2026-01-09T16:52:51] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-09T16:52:51 #8)
