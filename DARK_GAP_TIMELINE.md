@@ -2438,3 +2438,4 @@
 [2026-01-20T10:15:28] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-20T10:15:28 #3)
 [2026-01-20T17:10:56] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-20T17:10:56 #4)
 [2026-01-20T10:10:40] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-20T10:10:40 #5)
+[2026-01-20T15:05:24] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-20T15:05:24 #6)
