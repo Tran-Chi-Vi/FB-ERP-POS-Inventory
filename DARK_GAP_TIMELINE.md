@@ -2334,3 +2334,4 @@
 [2026-01-09T08:47:11] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-09T08:47:11 #16)
 [2026-01-09T20:53:02] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-09T20:53:02 #17)
 [2026-01-10T10:30:10] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-10T10:30:10 #1)
+[2026-01-10T09:31:27] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-10T09:31:27 #2)
