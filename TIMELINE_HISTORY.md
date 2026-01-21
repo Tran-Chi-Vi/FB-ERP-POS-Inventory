@@ -4550,3 +4550,4 @@
 [2026-01-21T09:33:23] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-21T09:33:23 #10)
 [2026-01-21T12:00:38] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-21T12:00:38 #11)
 [2026-01-21T16:47:59] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-21T16:47:59 #12)
+[2026-01-21T17:11:44] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-21T17:11:44 #13)
