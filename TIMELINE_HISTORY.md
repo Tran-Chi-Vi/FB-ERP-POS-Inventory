@@ -4511,6 +4511,7 @@
 [2026-01-17T13:39:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-17T13:39:10 #14)
 [2026-01-17T13:47:17] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-17T13:47:17 #15)
 [2026-01-17T16:27:34] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-17T16:27:34 #16)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-19T08:53:45] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-19T08:53:45 #1)
 [2026-01-19T18:07:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-19T18:07:22 #2)
@@ -4528,3 +4529,13 @@
 [2026-01-19T21:07:49] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-19T21:07:49 #14)
 [2026-01-19T16:38:27] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-19T16:38:27 #15)
 [2026-01-19T19:32:41] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-19T19:32:41 #16)
+=======
+[2026-01-20T20:45:22] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-20T20:45:22 #1)
+[2026-01-20T15:10:10] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-20T15:10:10 #2)
+[2026-01-20T10:12:59] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-20T10:12:59 #3)
+[2026-01-20T16:04:27] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-20T16:04:27 #4)
+[2026-01-20T20:49:13] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-20T20:49:13 #5)
+[2026-01-20T08:51:39] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-20T08:51:39 #6)
+[2026-01-20T13:31:41] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-20T13:31:41 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-21T17:34:51] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-21T17:34:51 #1)
