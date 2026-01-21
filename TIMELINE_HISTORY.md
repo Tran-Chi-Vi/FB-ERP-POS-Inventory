@@ -4540,3 +4540,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-01-21T17:34:51] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-21T17:34:51 #1)
 [2026-01-21T16:41:24] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-21T16:41:24 #2)
+[2026-01-21T09:10:47] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-21T09:10:47 #3)
