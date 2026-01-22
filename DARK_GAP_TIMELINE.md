@@ -2465,3 +2465,4 @@
 [2026-01-22T17:48:58] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-22T17:48:58 #9)
 [2026-01-22T10:20:14] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-22T10:20:14 #10)
 [2026-01-22T17:59:57] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-22T17:59:57 #11)
+[2026-01-22T20:31:12] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-22T20:31:12 #12)
