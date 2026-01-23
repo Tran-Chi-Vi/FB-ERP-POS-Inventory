@@ -4571,3 +4571,4 @@
 [2026-01-23T09:22:39] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-23T09:22:39 #4)
 [2026-01-23T16:49:46] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-23T16:49:46 #5)
 [2026-01-23T20:44:10] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-23T20:44:10 #6)
+[2026-01-23T20:06:22] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-23T20:06:22 #7)
