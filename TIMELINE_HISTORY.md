@@ -4576,3 +4576,4 @@
 [2026-01-23T18:19:41] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-23T18:19:41 #9)
 [2026-01-23T16:37:16] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-23T16:37:16 #10)
 [2026-01-23T21:44:57] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-23T21:44:57 #11)
+[2026-01-23T21:57:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-23T21:57:20 #12)
