@@ -4581,3 +4581,4 @@
 [2026-01-23T21:08:24] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-23T21:08:24 #14)
 [2026-01-23T17:03:27] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-23T17:03:27 #15)
 [2026-01-23T19:05:41] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-23T19:05:41 #16)
+[2026-01-23T09:21:23] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-23T09:21:23 #17)
