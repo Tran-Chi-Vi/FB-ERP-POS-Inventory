@@ -2351,3 +2351,4 @@
 [2026-01-10T21:33:42] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-10T21:33:42 #16)
 [2026-01-10T14:23:27] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-10T14:23:27 #17)
 [2026-01-10T20:03:57] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-10T20:03:57 #18)
+[2026-01-12T09:02:05] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-12T09:02:05 #1)
