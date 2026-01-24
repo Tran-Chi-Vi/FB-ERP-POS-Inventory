@@ -345,3 +345,4 @@
 [2026-01-24T12:14:42] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-24T12:14:42 #7)
 [2026-01-24T19:58:10] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-24T19:58:10 #8)
 [2026-01-24T16:18:18] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-24T16:18:18 #9)
+[2026-01-24T18:44:01] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-24T18:44:01 #10)
