@@ -2358,3 +2358,4 @@
 [2026-01-12T21:28:27] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-12T21:28:27 #5)
 [2026-01-12T10:17:41] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-12T10:17:41 #6)
 [2026-01-12T16:27:03] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-12T16:27:03 #7)
+[2026-01-12T16:44:41] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-12T16:44:41 #8)
