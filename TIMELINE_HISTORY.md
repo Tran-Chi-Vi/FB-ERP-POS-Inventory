@@ -342,3 +342,4 @@
 [2026-01-24T21:45:17] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-24T21:45:17 #4)
 [2026-01-24T18:22:16] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-24T18:22:16 #5)
 [2026-01-24T13:45:25] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-24T13:45:25 #6)
+[2026-01-24T12:14:42] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-24T12:14:42 #7)
