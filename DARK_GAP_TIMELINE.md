@@ -2361,3 +2361,4 @@
 [2026-01-12T16:44:41] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-12T16:44:41 #8)
 [2026-01-12T13:53:16] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-12T13:53:16 #9)
 [2026-01-12T20:00:43] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-12T20:00:43 #10)
+[2026-01-12T17:44:47] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-12T17:44:47 #11)
