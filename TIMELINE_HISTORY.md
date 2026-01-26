@@ -4601,3 +4601,4 @@
 [2026-01-26T10:48:50] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-26T10:48:50 #1)
 [2026-01-26T16:25:35] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-26T16:25:35 #2)
 [2026-01-26T19:45:27] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-26T19:45:27 #3)
+[2026-01-26T21:37:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-26T21:37:30 #4)
