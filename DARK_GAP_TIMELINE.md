@@ -2368,3 +2368,4 @@
 [2026-01-12T15:14:52] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-12T15:14:52 #15)
 [2026-01-13T12:43:53] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-13T12:43:53 #1)
 [2026-01-13T15:33:32] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-13T15:33:32 #2)
+[2026-01-13T17:44:38] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-13T17:44:38 #3)
