@@ -2365,3 +2365,4 @@
 [2026-01-12T08:01:27] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-12T08:01:27 #12)
 [2026-01-12T19:43:21] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-12T19:43:21 #13)
 [2026-01-12T11:42:45] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-12T11:42:45 #14)
+[2026-01-12T15:14:52] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-12T15:14:52 #15)
