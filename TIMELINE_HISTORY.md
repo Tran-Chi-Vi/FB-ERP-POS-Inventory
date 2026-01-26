@@ -4599,3 +4599,4 @@
 [2026-01-24T20:48:03] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-24T20:48:03 #11)
 >>>>>>> feat/system-integration-superpowers
 [2026-01-26T10:48:50] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-26T10:48:50 #1)
+[2026-01-26T16:25:35] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-26T16:25:35 #2)
