@@ -4564,6 +4564,7 @@
 [2026-01-22T10:01:06] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-22T10:01:06 #9)
 [2026-01-22T10:49:45] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-22T10:49:45 #10)
 [2026-01-22T10:23:31] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-22T10:23:31 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-23T14:40:40] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-23T14:40:40 #1)
 [2026-01-23T11:14:07] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-23T11:14:07 #2)
@@ -4584,3 +4585,17 @@
 [2026-01-23T09:21:23] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-23T09:21:23 #17)
 [2026-01-23T12:31:32] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-23T12:31:32 #18)
 [2026-01-23T12:24:47] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-23T12:24:47 #19)
+=======
+[2026-01-24T17:59:08] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-24T17:59:08 #1)
+[2026-01-24T08:25:39] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-24T08:25:39 #2)
+[2026-01-24T11:19:55] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-24T11:19:55 #3)
+[2026-01-24T21:45:17] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-24T21:45:17 #4)
+[2026-01-24T18:22:16] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-24T18:22:16 #5)
+[2026-01-24T13:45:25] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-24T13:45:25 #6)
+[2026-01-24T12:14:42] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-24T12:14:42 #7)
+[2026-01-24T19:58:10] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-01-24T19:58:10 #8)
+[2026-01-24T16:18:18] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-24T16:18:18 #9)
+[2026-01-24T18:44:01] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-24T18:44:01 #10)
+[2026-01-24T20:48:03] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-24T20:48:03 #11)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-26T10:48:50] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-26T10:48:50 #1)
