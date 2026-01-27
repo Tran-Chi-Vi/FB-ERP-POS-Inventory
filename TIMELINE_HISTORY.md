@@ -351,3 +351,4 @@
 [2026-01-27T08:08:37] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-27T08:08:37 #2)
 [2026-01-27T13:30:11] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-27T13:30:11 #3)
 [2026-01-27T19:00:40] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-27T19:00:40 #4)
+[2026-01-27T13:35:33] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-27T13:35:33 #5)
