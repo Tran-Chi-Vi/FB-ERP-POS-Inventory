@@ -2376,3 +2376,4 @@
 [2026-01-14T11:19:55] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-14T11:19:55 #1)
 [2026-01-14T17:32:23] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-14T17:32:23 #2)
 [2026-01-14T10:07:37] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-14T10:07:37 #3)
+[2026-01-14T11:57:48] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-14T11:57:48 #4)
