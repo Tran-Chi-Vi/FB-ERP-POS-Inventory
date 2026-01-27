@@ -347,3 +347,4 @@
 [2026-01-24T16:18:18] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-24T16:18:18 #9)
 [2026-01-24T18:44:01] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-24T18:44:01 #10)
 [2026-01-24T20:48:03] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-24T20:48:03 #11)
+[2026-01-27T13:50:58] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-27T13:50:58 #1)
