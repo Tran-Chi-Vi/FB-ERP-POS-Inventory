@@ -350,3 +350,4 @@
 [2026-01-27T13:50:58] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-27T13:50:58 #1)
 [2026-01-27T08:08:37] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-27T08:08:37 #2)
 [2026-01-27T13:30:11] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-27T13:30:11 #3)
+[2026-01-27T19:00:40] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-27T19:00:40 #4)
