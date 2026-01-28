@@ -4636,3 +4636,4 @@
 [2026-01-28T21:21:56] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-28T21:21:56 #10)
 [2026-01-28T14:57:04] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-28T14:57:04 #11)
 [2026-01-28T20:58:28] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-28T20:58:28 #12)
+[2026-01-28T20:14:41] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-28T20:14:41 #13)
