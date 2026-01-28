@@ -4597,6 +4597,7 @@
 [2026-01-24T16:18:18] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-24T16:18:18 #9)
 [2026-01-24T18:44:01] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-24T18:44:01 #10)
 [2026-01-24T20:48:03] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-24T20:48:03 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-26T10:48:50] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-26T10:48:50 #1)
 [2026-01-26T16:25:35] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-26T16:25:35 #2)
@@ -4614,3 +4615,13 @@
 [2026-01-26T10:23:14] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-26T10:23:14 #14)
 [2026-01-26T10:55:50] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-01-26T10:55:50 #15)
 [2026-01-26T08:05:12] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-26T08:05:12 #16)
+=======
+[2026-01-27T13:50:58] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-27T13:50:58 #1)
+[2026-01-27T08:08:37] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-27T08:08:37 #2)
+[2026-01-27T13:30:11] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-27T13:30:11 #3)
+[2026-01-27T19:00:40] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-27T19:00:40 #4)
+[2026-01-27T13:35:33] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-27T13:35:33 #5)
+[2026-01-27T20:14:37] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-27T20:14:37 #6)
+[2026-01-27T10:33:36] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-27T10:33:36 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-28T08:46:52] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-28T08:46:52 #1)
