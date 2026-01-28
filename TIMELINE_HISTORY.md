@@ -4637,3 +4637,4 @@
 [2026-01-28T14:57:04] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-28T14:57:04 #11)
 [2026-01-28T20:58:28] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-28T20:58:28 #12)
 [2026-01-28T20:14:41] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-28T20:14:41 #13)
+[2026-01-28T14:50:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-28T14:50:20 #14)
