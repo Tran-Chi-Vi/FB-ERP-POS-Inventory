@@ -2522,3 +2522,4 @@
 [2026-01-27T17:04:02] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-27T17:04:02 #17)
 [2026-01-27T18:05:33] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-27T18:05:33 #18)
 [2026-01-28T13:29:27] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-28T13:29:27 #1)
+[2026-01-28T09:53:52] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-28T09:53:52 #2)
