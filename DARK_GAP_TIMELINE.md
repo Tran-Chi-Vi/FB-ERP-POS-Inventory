@@ -2385,3 +2385,4 @@
 [2026-01-14T21:04:04] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-14T21:04:04 #10)
 [2026-01-14T17:47:26] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-14T17:47:26 #11)
 [2026-01-15T09:38:09] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-15T09:38:09 #1)
+[2026-01-15T20:11:22] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-15T20:11:22 #2)
