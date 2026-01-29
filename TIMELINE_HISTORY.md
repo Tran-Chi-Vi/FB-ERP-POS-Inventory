@@ -355,3 +355,4 @@
 [2026-01-27T20:14:37] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-27T20:14:37 #6)
 [2026-01-27T10:33:36] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-27T10:33:36 #7)
 [2026-01-29T21:37:17] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-29T21:37:17 #1)
+[2026-01-29T17:36:59] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-29T17:36:59 #2)
