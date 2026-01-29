@@ -358,3 +358,4 @@
 [2026-01-29T17:36:59] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-29T17:36:59 #2)
 [2026-01-29T10:04:53] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-29T10:04:53 #3)
 [2026-01-29T17:52:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T17:52:19 #4)
+[2026-01-29T08:40:05] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-29T08:40:05 #5)
