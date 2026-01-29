@@ -360,3 +360,4 @@
 [2026-01-29T17:52:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T17:52:19 #4)
 [2026-01-29T08:40:05] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-29T08:40:05 #5)
 [2026-01-29T11:06:15] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-29T11:06:15 #6)
+[2026-01-29T14:33:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T14:33:20 #7)
