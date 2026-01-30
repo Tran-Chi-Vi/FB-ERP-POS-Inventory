@@ -2549,3 +2549,4 @@
 [2026-01-30T18:03:37] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-30T18:03:37 #6)
 [2026-01-30T18:08:05] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-30T18:08:05 #7)
 [2026-01-30T17:50:08] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-30T17:50:08 #8)
+[2026-01-30T16:07:47] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-30T16:07:47 #9)
