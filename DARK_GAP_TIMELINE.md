@@ -2544,3 +2544,4 @@
 [2026-01-30T20:43:29] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-30T20:43:29 #1)
 [2026-01-30T21:22:18] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-30T21:22:18 #2)
 [2026-01-30T19:11:17] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-30T19:11:17 #3)
+[2026-01-30T10:14:14] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-30T10:14:14 #4)
