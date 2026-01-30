@@ -4623,6 +4623,7 @@
 [2026-01-27T13:35:33] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-27T13:35:33 #5)
 [2026-01-27T20:14:37] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-27T20:14:37 #6)
 [2026-01-27T10:33:36] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-27T10:33:36 #7)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-28T08:46:52] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-28T08:46:52 #1)
 [2026-01-28T09:36:34] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-28T09:36:34 #2)
@@ -4639,3 +4640,15 @@
 [2026-01-28T20:14:41] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-28T20:14:41 #13)
 [2026-01-28T14:50:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-28T14:50:20 #14)
 [2026-01-28T14:37:32] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-28T14:37:32 #15)
+=======
+[2026-01-29T21:37:17] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-29T21:37:17 #1)
+[2026-01-29T17:36:59] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-01-29T17:36:59 #2)
+[2026-01-29T10:04:53] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-01-29T10:04:53 #3)
+[2026-01-29T17:52:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T17:52:19 #4)
+[2026-01-29T08:40:05] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-29T08:40:05 #5)
+[2026-01-29T11:06:15] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-01-29T11:06:15 #6)
+[2026-01-29T14:33:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T14:33:20 #7)
+[2026-01-29T08:35:46] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-29T08:35:46 #8)
+[2026-01-29T14:19:46] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T14:19:46 #9)
+>>>>>>> feat/system-integration-superpowers
+[2026-01-30T19:22:47] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-30T19:22:47 #1)
