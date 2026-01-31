@@ -366,3 +366,4 @@
 [2026-01-31T17:43:43] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-31T17:43:43 #1)
 [2026-01-31T10:22:31] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-31T10:22:31 #2)
 [2026-01-31T17:43:19] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-31T17:43:19 #3)
+[2026-01-31T09:28:59] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-31T09:28:59 #4)
