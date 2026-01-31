@@ -364,3 +364,4 @@
 [2026-01-29T08:35:46] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-29T08:35:46 #8)
 [2026-01-29T14:19:46] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T14:19:46 #9)
 [2026-01-31T17:43:43] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-31T17:43:43 #1)
+[2026-01-31T10:22:31] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-31T10:22:31 #2)
