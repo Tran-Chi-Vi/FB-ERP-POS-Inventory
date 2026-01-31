@@ -2565,3 +2565,4 @@
 [2026-01-31T16:08:04] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-31T16:08:04 #2)
 [2026-01-31T10:56:51] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-31T10:56:51 #3)
 [2026-01-31T19:42:29] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-31T19:42:29 #4)
+[2026-01-31T14:47:34] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-31T14:47:34 #5)
