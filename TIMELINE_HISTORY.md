@@ -370,3 +370,4 @@
 [2026-01-31T21:56:20] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-31T21:56:20 #5)
 [2026-01-31T09:14:22] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-31T09:14:22 #6)
 [2026-01-31T10:00:31] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-31T10:00:31 #7)
+[2026-01-31T14:59:02] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-31T14:59:02 #8)
