@@ -375,3 +375,4 @@
 [2026-01-31T14:24:28] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-31T14:24:28 #10)
 [2026-01-31T10:54:54] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-31T10:54:54 #11)
 [2026-01-31T15:16:12] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-31T15:16:12 #12)
+[2026-01-31T13:07:46] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-31T13:07:46 #13)
