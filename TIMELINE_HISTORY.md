@@ -4650,6 +4650,7 @@
 [2026-01-29T14:33:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T14:33:20 #7)
 [2026-01-29T08:35:46] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-01-29T08:35:46 #8)
 [2026-01-29T14:19:46] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-29T14:19:46 #9)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-01-30T19:22:47] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-30T19:22:47 #1)
 [2026-01-30T09:59:21] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-01-30T09:59:21 #2)
@@ -4665,3 +4666,22 @@
 [2026-01-30T10:55:25] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-01-30T10:55:25 #12)
 [2026-01-30T09:34:24] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-01-30T09:34:24 #13)
 [2026-01-30T19:25:40] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-01-30T19:25:40 #14)
+=======
+[2026-01-31T17:43:43] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-01-31T17:43:43 #1)
+[2026-01-31T10:22:31] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-01-31T10:22:31 #2)
+[2026-01-31T17:43:19] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-31T17:43:19 #3)
+[2026-01-31T09:28:59] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-01-31T09:28:59 #4)
+[2026-01-31T21:56:20] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-31T21:56:20 #5)
+[2026-01-31T09:14:22] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-01-31T09:14:22 #6)
+[2026-01-31T10:00:31] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-31T10:00:31 #7)
+[2026-01-31T14:59:02] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-01-31T14:59:02 #8)
+[2026-01-31T13:13:51] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-31T13:13:51 #9)
+[2026-01-31T14:24:28] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-01-31T14:24:28 #10)
+[2026-01-31T10:54:54] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-01-31T10:54:54 #11)
+[2026-01-31T15:16:12] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-01-31T15:16:12 #12)
+[2026-01-31T13:07:46] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-01-31T13:07:46 #13)
+[2026-01-31T08:38:51] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-01-31T08:38:51 #14)
+[2026-01-31T20:38:33] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-01-31T20:38:33 #15)
+[2026-01-31T11:45:38] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-01-31T11:45:38 #16)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-02T21:24:21] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-02T21:24:21 #1)
