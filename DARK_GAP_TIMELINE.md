@@ -2578,3 +2578,4 @@
 [2026-02-02T12:16:03] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-02T12:16:03 #6)
 [2026-02-02T09:07:26] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-02T09:07:26 #7)
 [2026-02-02T08:19:41] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-02T08:19:41 #8)
+[2026-02-02T08:26:42] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-02T08:26:42 #9)
