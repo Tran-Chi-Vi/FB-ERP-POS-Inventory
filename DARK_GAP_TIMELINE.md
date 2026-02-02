@@ -2576,3 +2576,4 @@
 [2026-02-02T15:33:55] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-02T15:33:55 #4)
 [2026-02-02T10:15:48] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-02T10:15:48 #5)
 [2026-02-02T12:16:03] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-02T12:16:03 #6)
+[2026-02-02T09:07:26] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-02T09:07:26 #7)
