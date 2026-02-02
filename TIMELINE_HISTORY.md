@@ -4687,3 +4687,4 @@
 [2026-02-02T21:24:21] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-02T21:24:21 #1)
 [2026-02-02T18:34:00] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-02T18:34:00 #2)
 [2026-02-02T18:38:31] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-02T18:38:31 #3)
+[2026-02-02T11:25:55] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-02T11:25:55 #4)
