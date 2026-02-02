@@ -4700,3 +4700,4 @@
 [2026-02-02T08:57:41] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-02T08:57:41 #14)
 [2026-02-02T08:44:09] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-02T08:44:09 #15)
 [2026-02-02T14:51:37] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-02T14:51:37 #16)
+[2026-02-02T10:23:34] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-02T10:23:34 #17)
