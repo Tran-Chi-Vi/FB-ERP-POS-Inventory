@@ -2586,3 +2586,4 @@
 [2026-02-02T19:08:56] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-02T19:08:56 #14)
 [2026-02-03T19:16:08] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-03T19:16:08 #1)
 [2026-02-03T09:55:37] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-03T09:55:37 #2)
+[2026-02-03T19:21:01] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-03T19:21:01 #3)
