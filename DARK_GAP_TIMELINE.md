@@ -2421,3 +2421,4 @@
 [2026-01-17T13:00:01] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-17T13:00:01 #7)
 [2026-01-17T17:04:19] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-17T17:04:19 #8)
 [2026-01-17T17:49:43] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-17T17:49:43 #9)
+[2026-01-17T08:38:30] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-17T08:38:30 #10)
