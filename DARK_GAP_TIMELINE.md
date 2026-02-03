@@ -2593,3 +2593,4 @@
 [2026-02-03T08:15:35] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-03T08:15:35 #7)
 [2026-02-03T08:16:10] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-03T08:16:10 #8)
 [2026-02-03T13:01:49] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-03T13:01:49 #9)
+[2026-02-03T10:02:18] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-03T10:02:18 #10)
