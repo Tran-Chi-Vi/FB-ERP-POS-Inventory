@@ -392,3 +392,4 @@
 [2026-02-05T11:05:32] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-05T11:05:32 #3)
 [2026-02-05T10:23:01] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-05T10:23:01 #4)
 [2026-02-05T13:20:45] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-05T13:20:45 #5)
+[2026-02-05T19:19:59] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-05T19:19:59 #6)
