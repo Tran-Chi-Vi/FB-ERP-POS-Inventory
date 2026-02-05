@@ -401,3 +401,4 @@
 [2026-02-05T08:54:56] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-05T08:54:56 #7)
 [2026-02-05T18:59:51] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-05T18:59:51 #8)
 [2026-02-05T17:36:55] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-05T17:36:55 #9)
+[2026-02-05T20:18:04] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-05T20:18:04 #10)
