@@ -2448,3 +2448,4 @@
 [2026-01-20T09:24:40] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-20T09:24:40 #13)
 [2026-01-21T15:46:05] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-21T15:46:05 #1)
 [2026-01-21T09:25:08] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-21T09:25:08 #2)
+[2026-01-21T15:05:38] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-21T15:05:38 #3)
