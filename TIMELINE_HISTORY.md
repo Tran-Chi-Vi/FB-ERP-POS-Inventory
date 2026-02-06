@@ -4755,3 +4755,4 @@
 [2026-02-06T09:51:20] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-06T09:51:20 #5)
 [2026-02-06T15:39:35] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-06T15:39:35 #6)
 [2026-02-06T10:54:09] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-06T10:54:09 #7)
+[2026-02-06T15:49:40] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-06T15:49:40 #8)
