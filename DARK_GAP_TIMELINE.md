@@ -2454,3 +2454,4 @@
 [2026-01-21T09:43:47] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-21T09:43:47 #6)
 [2026-01-21T18:18:12] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-21T18:18:12 #7)
 [2026-01-21T12:46:40] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-21T12:46:40 #8)
+[2026-01-22T14:16:47] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-22T14:16:47 #1)
