@@ -2452,3 +2452,4 @@
 [2026-01-21T19:08:38] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-01-21T19:08:38 #4)
 [2026-01-21T10:17:12] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-21T10:17:12 #5)
 [2026-01-21T09:43:47] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-21T09:43:47 #6)
+[2026-01-21T18:18:12] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-21T18:18:12 #7)
