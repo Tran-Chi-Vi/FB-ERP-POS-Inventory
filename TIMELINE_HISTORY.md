@@ -4760,3 +4760,4 @@
 [2026-02-06T15:58:13] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-06T15:58:13 #10)
 [2026-02-06T15:28:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-06T15:28:11 #11)
 [2026-02-06T17:34:49] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-06T17:34:49 #12)
+[2026-02-06T16:54:21] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-06T16:54:21 #13)
