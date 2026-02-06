@@ -4754,3 +4754,4 @@
 [2026-02-06T14:38:11] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-06T14:38:11 #4)
 [2026-02-06T09:51:20] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-06T09:51:20 #5)
 [2026-02-06T15:39:35] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-06T15:39:35 #6)
+[2026-02-06T10:54:09] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-06T10:54:09 #7)
