@@ -409,3 +409,4 @@
 [2026-02-05T14:07:33] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-05T14:07:33 #20)
 [2026-02-07T19:14:07] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-07T19:14:07 #1)
 [2026-02-07T12:02:35] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-07T12:02:35 #2)
+[2026-02-07T18:46:39] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-07T18:46:39 #3)
