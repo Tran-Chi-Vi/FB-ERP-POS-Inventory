@@ -2458,3 +2458,4 @@
 [2026-01-22T13:13:17] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-22T13:13:17 #2)
 [2026-01-22T17:38:15] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-22T17:38:15 #3)
 [2026-01-22T20:48:38] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-22T20:48:38 #4)
+[2026-01-22T09:40:57] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-22T09:40:57 #5)
