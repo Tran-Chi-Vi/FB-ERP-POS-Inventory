@@ -416,3 +416,4 @@
 [2026-02-07T20:50:11] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-07T20:50:11 #7)
 [2026-02-07T11:16:07] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-07T11:16:07 #8)
 [2026-02-07T16:03:07] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-07T16:03:07 #9)
+[2026-02-07T14:15:01] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-07T14:15:01 #10)
