@@ -420,3 +420,4 @@
 [2026-02-07T14:47:15] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-07T14:47:15 #11)
 [2026-02-07T20:19:52] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-07T20:19:52 #12)
 [2026-02-07T08:31:14] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-07T08:31:14 #13)
+[2026-02-07T13:47:52] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-07T13:47:52 #14)
