@@ -2461,3 +2461,4 @@
 [2026-01-22T09:40:57] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-22T09:40:57 #5)
 [2026-01-22T20:42:17] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-22T20:42:17 #6)
 [2026-01-22T08:34:03] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-22T08:34:03 #7)
+[2026-01-22T12:28:44] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-22T12:28:44 #8)
