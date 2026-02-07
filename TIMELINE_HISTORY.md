@@ -415,3 +415,4 @@
 [2026-02-07T14:10:39] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-07T14:10:39 #6)
 [2026-02-07T20:50:11] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-07T20:50:11 #7)
 [2026-02-07T11:16:07] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-07T11:16:07 #8)
+[2026-02-07T16:03:07] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-07T16:03:07 #9)
