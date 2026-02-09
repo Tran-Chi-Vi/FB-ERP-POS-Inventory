@@ -4747,6 +4747,7 @@
 [2026-02-05T19:08:57] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-05T19:08:57 #18)
 [2026-02-05T20:27:00] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-05T20:27:00 #19)
 [2026-02-05T14:07:33] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-05T14:07:33 #20)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-06T11:38:59] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-06T11:38:59 #1)
 [2026-02-06T15:17:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-06T15:17:06 #2)
@@ -4768,3 +4769,22 @@
 [2026-02-06T09:29:33] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-06T09:29:33 #18)
 [2026-02-06T18:51:32] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-06T18:51:32 #19)
 [2026-02-06T12:07:03] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-06T12:07:03 #20)
+=======
+[2026-02-07T19:14:07] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-07T19:14:07 #1)
+[2026-02-07T12:02:35] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-07T12:02:35 #2)
+[2026-02-07T18:46:39] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-07T18:46:39 #3)
+[2026-02-07T11:33:35] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-07T11:33:35 #4)
+[2026-02-07T08:45:37] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-07T08:45:37 #5)
+[2026-02-07T14:10:39] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-07T14:10:39 #6)
+[2026-02-07T20:50:11] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-07T20:50:11 #7)
+[2026-02-07T11:16:07] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-07T11:16:07 #8)
+[2026-02-07T16:03:07] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-07T16:03:07 #9)
+[2026-02-07T14:15:01] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-07T14:15:01 #10)
+[2026-02-07T14:47:15] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-07T14:47:15 #11)
+[2026-02-07T20:19:52] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-07T20:19:52 #12)
+[2026-02-07T08:31:14] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-07T08:31:14 #13)
+[2026-02-07T13:47:52] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-07T13:47:52 #14)
+[2026-02-07T20:29:52] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-07T20:29:52 #15)
+[2026-02-07T16:50:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-07T16:50:27 #16)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-09T18:36:36] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-09T18:36:36 #1)
