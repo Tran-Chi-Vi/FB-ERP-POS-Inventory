@@ -432,3 +432,4 @@
 [2026-02-10T09:46:47] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-10T09:46:47 #1)
 [2026-02-10T13:43:16] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-10T13:43:16 #2)
 [2026-02-10T09:03:45] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-10T09:03:45 #3)
+[2026-02-10T16:50:29] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-10T16:50:29 #4)
