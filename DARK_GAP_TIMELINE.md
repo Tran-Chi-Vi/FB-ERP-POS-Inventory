@@ -2474,3 +2474,4 @@
 [2026-01-23T18:52:25] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-23T18:52:25 #1)
 [2026-01-23T18:46:19] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-23T18:46:19 #2)
 [2026-01-23T08:04:41] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-23T08:04:41 #3)
+[2026-01-23T13:11:07] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-23T13:11:07 #4)
