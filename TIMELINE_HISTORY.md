@@ -429,3 +429,4 @@
 [2026-02-10T10:01:02] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-10T10:01:02 #4)
 [2026-02-10T11:47:04] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-10T11:47:04 #5)
 [2026-02-10T19:57:09] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-10T19:57:09 #6)
+[2026-02-10T18:02:17] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-10T18:02:17 #7)
