@@ -4829,3 +4829,4 @@
 [2026-02-11T17:20:05] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-11T17:20:05 #14)
 [2026-02-11T18:59:44] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-11T18:59:44 #15)
 [2026-02-11T11:00:42] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-11T11:00:42 #16)
+[2026-02-11T12:38:29] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-11T12:38:29 #17)
