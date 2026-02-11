@@ -439,3 +439,4 @@
 [2026-02-11T19:03:34] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-11T19:03:34 #1)
 [2026-02-11T08:18:52] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-11T08:18:52 #2)
 [2026-02-11T14:14:22] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-11T14:14:22 #7)
+[2026-02-11T08:19:19] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-11T08:19:19 #8)
