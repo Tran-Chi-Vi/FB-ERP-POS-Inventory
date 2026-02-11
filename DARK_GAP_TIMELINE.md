@@ -2481,3 +2481,4 @@
 [2026-01-24T09:56:15] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-24T09:56:15 #1)
 [2026-01-24T13:43:31] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-24T13:43:31 #2)
 [2026-01-24T21:38:30] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-24T21:38:30 #3)
+[2026-01-24T18:19:13] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-24T18:19:13 #4)
