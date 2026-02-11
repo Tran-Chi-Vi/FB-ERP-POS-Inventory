@@ -442,3 +442,4 @@
 [2026-02-11T08:19:19] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-11T08:19:19 #8)
 [2026-02-11T21:07:05] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-11T21:07:05 #9)
 [2026-02-11T21:54:55] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-11T21:54:55 #10)
+[2026-02-11T08:30:14] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-11T08:30:14 #11)
