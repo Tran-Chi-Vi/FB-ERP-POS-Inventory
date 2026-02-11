@@ -4786,6 +4786,7 @@
 [2026-02-07T13:47:52] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-07T13:47:52 #14)
 [2026-02-07T20:29:52] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-07T20:29:52 #15)
 [2026-02-07T16:50:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-07T16:50:27 #16)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-09T18:36:36] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-09T18:36:36 #1)
 [2026-02-09T11:17:45] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-09T11:17:45 #2)
@@ -4793,3 +4794,23 @@
 [2026-02-09T15:59:56] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-09T15:59:56 #4)
 [2026-02-09T21:11:52] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-09T21:11:52 #5)
 [2026-02-09T09:58:18] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-09T09:58:18 #6)
+=======
+[2026-02-10T10:55:58] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-10T10:55:58 #1)
+[2026-02-10T16:04:06] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-10T16:04:06 #2)
+[2026-02-10T16:13:45] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-10T16:13:45 #3)
+[2026-02-10T10:01:02] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-10T10:01:02 #4)
+[2026-02-10T11:47:04] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-10T11:47:04 #5)
+[2026-02-10T19:57:09] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-10T19:57:09 #6)
+[2026-02-10T18:02:17] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-10T18:02:17 #7)
+[2026-02-10T11:54:38] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-10T11:54:38 #8)
+[2026-02-10T15:55:39] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-10T15:55:39 #9)
+[2026-02-10T10:48:38] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-10T10:48:38 #10)
+[2026-02-10T13:15:37] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-10T13:15:37 #11)
+[2026-02-10T08:38:49] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-10T08:38:49 #12)
+[2026-02-10T17:19:16] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-10T17:19:16 #13)
+[2026-02-10T21:03:31] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-10T21:03:31 #14)
+[2026-02-10T09:17:33] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-10T09:17:33 #15)
+[2026-02-10T14:04:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-10T14:04:06 #16)
+[2026-02-10T09:28:57] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-10T09:28:57 #17)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-11T09:48:21] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-11T09:48:21 #1)
