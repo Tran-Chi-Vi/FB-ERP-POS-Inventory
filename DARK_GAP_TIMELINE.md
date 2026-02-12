@@ -454,3 +454,4 @@
 [2026-02-12T12:42:50] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-12T12:42:50 #6)
 [2026-02-12T20:37:58] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-12T20:37:58 #7)
 [2026-02-12T12:26:52] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-12T12:26:52 #8)
+[2026-02-12T16:54:56] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-12T16:54:56 #9)
