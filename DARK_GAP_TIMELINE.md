@@ -2492,3 +2492,4 @@
 [2026-01-24T17:34:15] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-24T17:34:15 #12)
 [2026-01-24T18:37:09] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-24T18:37:09 #13)
 [2026-01-24T18:12:04] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-24T18:12:04 #14)
+[2026-01-24T11:39:35] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-24T11:39:35 #15)
