@@ -449,3 +449,4 @@
 [2026-02-12T10:37:18] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-12T10:37:18 #7)
 [2026-02-12T11:12:04] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-12T11:12:04 #8)
 [2026-02-12T20:55:12] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-12T20:55:12 #9)
+[2026-02-12T16:24:25] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-12T16:24:25 #10)
