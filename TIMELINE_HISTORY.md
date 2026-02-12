@@ -453,3 +453,4 @@
 [2026-02-12T18:37:18] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-12T18:37:18 #11)
 [2026-02-12T10:19:24] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-12T10:19:24 #12)
 [2026-02-12T16:47:33] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-12T16:47:33 #13)
+[2026-02-12T21:12:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-12T21:12:07 #14)
