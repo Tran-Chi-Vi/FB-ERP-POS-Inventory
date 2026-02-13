@@ -459,3 +459,4 @@
 [2026-02-13T13:38:53] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-13T13:38:53 #2)
 [2026-02-13T09:12:44] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-13T09:12:44 #3)
 [2026-02-13T16:26:36] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-13T16:26:36 #4)
+[2026-02-13T15:05:15] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-13T15:05:15 #5)
