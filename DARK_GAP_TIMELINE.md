@@ -457,3 +457,4 @@
 [2026-02-12T16:54:56] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-12T16:54:56 #9)
 [2026-02-13T19:58:14] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-13T19:58:14 #1)
 [2026-02-13T13:38:53] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-13T13:38:53 #2)
+[2026-02-13T09:12:44] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-13T09:12:44 #3)
