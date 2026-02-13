@@ -2506,3 +2506,4 @@
 [2026-01-27T19:27:52] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-27T19:27:52 #1)
 [2026-01-27T14:55:32] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-27T14:55:32 #2)
 [2026-01-27T21:29:52] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-27T21:29:52 #3)
+[2026-01-27T18:19:57] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-27T18:19:57 #4)
