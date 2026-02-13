@@ -2505,3 +2505,4 @@
 [2026-01-26T13:44:43] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-26T13:44:43 #9)
 [2026-01-27T19:27:52] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-27T19:27:52 #1)
 [2026-01-27T14:55:32] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-27T14:55:32 #2)
+[2026-01-27T21:29:52] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-27T21:29:52 #3)
