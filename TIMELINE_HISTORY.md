@@ -4849,3 +4849,4 @@
 [2026-02-12T21:12:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-12T21:12:07 #14)
 >>>>>>> feat/system-integration-superpowers
 [2026-02-13T09:59:45] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-13T09:59:45 #1)
+[2026-02-13T21:47:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-13T21:47:04 #2)
