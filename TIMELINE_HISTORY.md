@@ -4852,3 +4852,4 @@
 [2026-02-13T21:47:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-13T21:47:04 #2)
 [2026-02-13T16:57:17] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-13T16:57:17 #3)
 [2026-02-13T13:10:30] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-13T13:10:30 #4)
+[2026-02-13T15:33:45] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-13T15:33:45 #5)
