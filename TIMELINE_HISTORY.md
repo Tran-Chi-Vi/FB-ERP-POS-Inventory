@@ -4850,3 +4850,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-02-13T09:59:45] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-13T09:59:45 #1)
 [2026-02-13T21:47:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-13T21:47:04 #2)
+[2026-02-13T16:57:17] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-13T16:57:17 #3)
