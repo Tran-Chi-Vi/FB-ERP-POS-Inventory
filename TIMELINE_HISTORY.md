@@ -4812,6 +4812,7 @@
 [2026-02-10T09:17:33] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-10T09:17:33 #15)
 [2026-02-10T14:04:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-10T14:04:06 #16)
 [2026-02-10T09:28:57] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-10T09:28:57 #17)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-11T09:48:21] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-11T09:48:21 #1)
 [2026-02-11T20:41:53] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-11T20:41:53 #2)
@@ -4831,3 +4832,20 @@
 [2026-02-11T11:00:42] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-11T11:00:42 #16)
 [2026-02-11T12:38:29] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-11T12:38:29 #17)
 [2026-02-11T21:17:26] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-11T21:17:26 #18)
+=======
+[2026-02-12T20:32:52] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-12T20:32:52 #1)
+[2026-02-12T16:05:18] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-12T16:05:18 #2)
+[2026-02-12T12:20:21] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-12T12:20:21 #3)
+[2026-02-12T15:55:18] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-12T15:55:18 #4)
+[2026-02-12T08:49:11] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-12T08:49:11 #5)
+[2026-02-12T11:31:31] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-12T11:31:31 #6)
+[2026-02-12T10:37:18] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-12T10:37:18 #7)
+[2026-02-12T11:12:04] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-12T11:12:04 #8)
+[2026-02-12T20:55:12] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-12T20:55:12 #9)
+[2026-02-12T16:24:25] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-12T16:24:25 #10)
+[2026-02-12T18:37:18] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-12T18:37:18 #11)
+[2026-02-12T10:19:24] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-12T10:19:24 #12)
+[2026-02-12T16:47:33] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-12T16:47:33 #13)
+[2026-02-12T21:12:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-12T21:12:07 #14)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-13T09:59:45] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-13T09:59:45 #1)
