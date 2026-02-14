@@ -473,3 +473,4 @@
 [2026-02-13T19:34:00] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-13T19:34:00 #16)
 [2026-02-13T21:34:15] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-13T21:34:15 #17)
 [2026-02-13T21:36:48] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-13T21:36:48 #18)
+[2026-02-14T17:36:00] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-14T17:36:00 #1)
