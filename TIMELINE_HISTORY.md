@@ -468,3 +468,4 @@
 [2026-02-14T15:54:29] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-14T15:54:29 #12)
 [2026-02-14T18:29:43] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-14T18:29:43 #13)
 [2026-02-14T11:17:26] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-14T11:17:26 #14)
+[2026-02-14T16:26:56] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-14T16:26:56 #15)
