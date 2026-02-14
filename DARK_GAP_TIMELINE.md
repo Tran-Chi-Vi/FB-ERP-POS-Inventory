@@ -482,3 +482,4 @@
 [2026-02-14T08:12:58] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-14T08:12:58 #7)
 [2026-02-14T14:39:39] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-14T14:39:39 #10)
 [2026-02-14T19:51:32] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-14T19:51:32 #11)
+[2026-02-14T20:14:53] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-14T20:14:53 #12)
