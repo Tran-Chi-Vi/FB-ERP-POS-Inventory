@@ -2510,3 +2510,4 @@
 [2026-01-27T12:49:24] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-27T12:49:24 #5)
 [2026-01-27T11:07:06] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-01-27T11:07:06 #6)
 [2026-01-27T10:38:49] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-27T10:38:49 #7)
+[2026-01-27T16:46:51] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-27T16:46:51 #8)
