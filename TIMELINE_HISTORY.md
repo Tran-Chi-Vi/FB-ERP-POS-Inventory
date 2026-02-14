@@ -458,3 +458,4 @@
 [2026-02-14T15:08:26] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-14T15:08:26 #2)
 [2026-02-14T21:56:11] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-14T21:56:11 #3)
 [2026-02-14T13:52:24] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-14T13:52:24 #4)
+[2026-02-14T15:41:04] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-14T15:41:04 #5)
