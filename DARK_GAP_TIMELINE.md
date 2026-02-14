@@ -475,3 +475,4 @@
 [2026-02-13T21:36:48] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-13T21:36:48 #18)
 [2026-02-14T17:36:00] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-14T17:36:00 #1)
 [2026-02-14T13:58:56] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-14T13:58:56 #2)
+[2026-02-14T08:36:31] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-14T08:36:31 #3)
