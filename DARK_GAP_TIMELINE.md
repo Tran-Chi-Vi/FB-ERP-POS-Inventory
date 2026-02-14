@@ -480,3 +480,4 @@
 [2026-02-14T08:03:45] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-14T08:03:45 #5)
 [2026-02-14T13:44:04] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-14T13:44:04 #6)
 [2026-02-14T08:12:58] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-14T08:12:58 #7)
+[2026-02-14T20:57:51] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-14T20:57:51 #8)
