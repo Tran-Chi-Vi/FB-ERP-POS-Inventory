@@ -477,3 +477,4 @@
 [2026-02-14T13:58:56] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-14T13:58:56 #2)
 [2026-02-14T08:36:31] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-14T08:36:31 #3)
 [2026-02-14T10:45:57] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-14T10:45:57 #4)
+[2026-02-14T08:03:45] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-14T08:03:45 #5)
