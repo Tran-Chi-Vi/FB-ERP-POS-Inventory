@@ -501,3 +501,4 @@
 [2026-02-16T17:28:29] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-16T17:28:29 #9)
 [2026-02-16T16:26:38] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-16T16:26:38 #10)
 [2026-02-16T14:34:07] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-16T14:34:07 #11)
+[2026-02-16T21:43:43] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-16T21:43:43 #12)
