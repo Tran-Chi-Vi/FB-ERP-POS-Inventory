@@ -4847,6 +4847,7 @@
 [2026-02-12T10:19:24] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-12T10:19:24 #12)
 [2026-02-12T16:47:33] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-12T16:47:33 #13)
 [2026-02-12T21:12:07] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-12T21:12:07 #14)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-13T09:59:45] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-13T09:59:45 #1)
 [2026-02-13T21:47:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-13T21:47:04 #2)
@@ -4860,3 +4861,22 @@
 [2026-02-13T14:16:05] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-13T14:16:05 #10)
 [2026-02-13T09:38:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-13T09:38:41 #11)
 [2026-02-13T16:12:36] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-13T16:12:36 #12)
+=======
+[2026-02-14T12:46:04] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-14T12:46:04 #1)
+[2026-02-14T15:08:26] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-14T15:08:26 #2)
+[2026-02-14T21:56:11] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-14T21:56:11 #3)
+[2026-02-14T13:52:24] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-14T13:52:24 #4)
+[2026-02-14T15:41:04] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-14T15:41:04 #5)
+[2026-02-14T13:25:46] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-14T13:25:46 #6)
+[2026-02-14T18:24:23] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-14T18:24:23 #7)
+[2026-02-14T16:35:55] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-14T16:35:55 #8)
+[2026-02-14T19:31:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-14T19:31:44 #9)
+[2026-02-14T11:14:30] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-14T11:14:30 #10)
+[2026-02-14T12:23:35] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-14T12:23:35 #11)
+[2026-02-14T15:54:29] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-14T15:54:29 #12)
+[2026-02-14T18:29:43] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-14T18:29:43 #13)
+[2026-02-14T11:17:26] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-14T11:17:26 #14)
+[2026-02-14T16:26:56] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-14T16:26:56 #15)
+[2026-02-14T08:48:31] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-14T08:48:31 #16)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-16T19:41:04] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-16T19:41:04 #1)
