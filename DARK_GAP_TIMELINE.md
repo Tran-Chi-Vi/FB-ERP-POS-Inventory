@@ -2516,3 +2516,4 @@
 [2026-01-27T11:21:28] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-27T11:21:28 #11)
 [2026-01-27T11:28:48] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-27T11:28:48 #12)
 [2026-01-27T17:13:46] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-27T17:13:46 #13)
+[2026-01-27T20:28:26] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-27T20:28:26 #14)
