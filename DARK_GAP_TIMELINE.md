@@ -504,3 +504,4 @@
 [2026-02-16T21:43:43] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-16T21:43:43 #12)
 [2026-02-16T16:39:29] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-16T16:39:29 #13)
 [2026-02-16T08:25:46] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-16T08:25:46 #14)
+[2026-02-17T13:32:28] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-17T13:32:28 #1)
