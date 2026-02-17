@@ -506,3 +506,4 @@
 [2026-02-16T08:25:46] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-16T08:25:46 #14)
 [2026-02-17T13:32:28] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-17T13:32:28 #1)
 [2026-02-17T19:34:26] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-17T19:34:26 #2)
+[2026-02-17T11:19:29] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-17T11:19:29 #3)
