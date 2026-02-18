@@ -4915,3 +4915,4 @@
 [2026-02-18T09:11:40] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-18T09:11:40 #11)
 [2026-02-18T17:10:30] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-18T17:10:30 #12)
 [2026-02-18T13:46:06] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-18T13:46:06 #13)
+[2026-02-18T12:24:55] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-18T12:24:55 #14)
