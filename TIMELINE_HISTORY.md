@@ -4905,3 +4905,4 @@
 [2026-02-18T12:01:05] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-18T12:01:05 #1)
 [2026-02-18T21:02:58] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-18T21:02:58 #2)
 [2026-02-18T20:06:53] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-18T20:06:53 #3)
+[2026-02-18T13:56:53] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-18T13:56:53 #4)
