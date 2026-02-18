@@ -4878,6 +4878,7 @@
 [2026-02-14T11:17:26] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-14T11:17:26 #14)
 [2026-02-14T16:26:56] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-14T16:26:56 #15)
 [2026-02-14T08:48:31] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-14T08:48:31 #16)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-16T19:41:04] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-16T19:41:04 #1)
 [2026-02-16T18:26:29] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-16T18:26:29 #2)
@@ -4888,3 +4889,17 @@
 [2026-02-16T15:34:14] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-16T15:34:14 #7)
 [2026-02-16T08:35:05] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-16T08:35:05 #8)
 [2026-02-16T13:38:08] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-16T13:38:08 #9)
+=======
+[2026-02-17T20:01:27] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-17T20:01:27 #1)
+[2026-02-17T16:38:08] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-17T16:38:08 #2)
+[2026-02-17T18:56:09] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-17T18:56:09 #3)
+[2026-02-17T20:38:42] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-17T20:38:42 #4)
+[2026-02-17T14:50:39] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-17T14:50:39 #5)
+[2026-02-17T20:58:44] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-17T20:58:44 #6)
+[2026-02-17T17:39:54] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-17T17:39:54 #7)
+[2026-02-17T09:08:17] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-17T09:08:17 #8)
+[2026-02-17T08:53:31] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-17T08:53:31 #9)
+[2026-02-17T11:00:09] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-17T11:00:09 #10)
+[2026-02-17T19:29:25] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-17T19:29:25 #11)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-18T12:01:05] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-18T12:01:05 #1)
