@@ -4907,3 +4907,4 @@
 [2026-02-18T20:06:53] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-18T20:06:53 #3)
 [2026-02-18T13:56:53] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-18T13:56:53 #4)
 [2026-02-18T10:15:19] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-18T10:15:19 #5)
+[2026-02-18T15:55:12] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-18T15:55:12 #6)
