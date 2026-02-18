@@ -2527,3 +2527,4 @@
 [2026-01-28T09:54:49] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-01-28T09:54:49 #4)
 [2026-01-28T14:44:37] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-01-28T14:44:37 #5)
 [2026-01-28T09:53:35] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-28T09:53:35 #6)
+[2026-01-29T09:20:02] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-29T09:20:02 #1)
