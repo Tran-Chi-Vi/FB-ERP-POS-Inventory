@@ -2530,3 +2530,4 @@
 [2026-01-29T09:20:02] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-29T09:20:02 #1)
 [2026-01-29T16:39:16] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-01-29T16:39:16 #2)
 [2026-01-29T14:14:57] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-01-29T14:14:57 #3)
+[2026-01-29T10:29:41] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-01-29T10:29:41 #4)
