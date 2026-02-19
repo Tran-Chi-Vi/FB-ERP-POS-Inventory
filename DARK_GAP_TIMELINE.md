@@ -526,3 +526,4 @@
 [2026-02-19T20:46:57] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-19T20:46:57 #2)
 [2026-02-19T11:17:40] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-19T11:17:40 #3)
 [2026-02-19T10:09:31] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-19T10:09:31 #4)
+[2026-02-19T11:38:19] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-19T11:38:19 #5)
