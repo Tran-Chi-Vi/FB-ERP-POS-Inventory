@@ -482,3 +482,4 @@
 [2026-02-17T11:00:09] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-17T11:00:09 #10)
 [2026-02-17T19:29:25] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-17T19:29:25 #11)
 [2026-02-19T17:57:27] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-19T17:57:27 #1)
+[2026-02-19T19:30:11] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-19T19:30:11 #2)
