@@ -535,3 +535,4 @@
 [2026-02-19T17:33:28] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-19T17:33:28 #11)
 [2026-02-19T17:38:43] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-19T17:38:43 #12)
 [2026-02-19T13:01:17] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-19T13:01:17 #13)
+[2026-02-19T11:03:23] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-19T11:03:23 #14)
