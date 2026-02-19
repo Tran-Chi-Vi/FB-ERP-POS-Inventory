@@ -528,3 +528,4 @@
 [2026-02-19T10:09:31] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-19T10:09:31 #4)
 [2026-02-19T11:38:19] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-19T11:38:19 #5)
 [2026-02-19T11:56:44] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-19T11:56:44 #6)
+[2026-02-19T11:49:22] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-19T11:49:22 #7)
