@@ -544,3 +544,4 @@
 [2026-02-20T17:34:25] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-20T17:34:25 #3)
 [2026-02-20T15:32:06] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-20T15:32:06 #4)
 [2026-02-20T11:00:30] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-20T11:00:30 #5)
+[2026-02-20T11:36:50] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-20T11:36:50 #6)
