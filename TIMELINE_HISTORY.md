@@ -4933,3 +4933,4 @@
 [2026-02-20T13:53:47] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-20T13:53:47 #7)
 [2026-02-20T18:52:10] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-20T18:52:10 #8)
 [2026-02-20T20:25:40] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-20T20:25:40 #9)
+[2026-02-20T09:02:44] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-20T09:02:44 #10)
