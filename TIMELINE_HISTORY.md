@@ -4929,3 +4929,4 @@
 [2026-02-20T13:20:01] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-20T13:20:01 #3)
 [2026-02-20T20:34:20] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-20T20:34:20 #4)
 [2026-02-20T20:27:06] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-20T20:27:06 #5)
+[2026-02-20T11:41:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-20T11:41:09 #6)
