@@ -541,3 +541,4 @@
 [2026-02-19T15:24:21] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-19T15:24:21 #17)
 [2026-02-20T11:32:23] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-20T11:32:23 #1)
 [2026-02-20T16:23:28] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-20T16:23:28 #2)
+[2026-02-20T17:34:25] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-20T17:34:25 #3)
