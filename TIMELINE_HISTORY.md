@@ -4931,3 +4931,4 @@
 [2026-02-20T20:27:06] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-20T20:27:06 #5)
 [2026-02-20T11:41:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-20T11:41:09 #6)
 [2026-02-20T13:53:47] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-20T13:53:47 #7)
+[2026-02-20T18:52:10] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-20T18:52:10 #8)
