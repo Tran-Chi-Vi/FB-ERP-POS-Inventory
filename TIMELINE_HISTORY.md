@@ -4901,6 +4901,7 @@
 [2026-02-17T08:53:31] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-17T08:53:31 #9)
 [2026-02-17T11:00:09] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-02-17T11:00:09 #10)
 [2026-02-17T19:29:25] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-17T19:29:25 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-18T12:01:05] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-18T12:01:05 #1)
 [2026-02-18T21:02:58] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-18T21:02:58 #2)
@@ -4916,3 +4917,11 @@
 [2026-02-18T17:10:30] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-18T17:10:30 #12)
 [2026-02-18T13:46:06] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-18T13:46:06 #13)
 [2026-02-18T12:24:55] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-18T12:24:55 #14)
+=======
+[2026-02-19T17:57:27] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-19T17:57:27 #1)
+[2026-02-19T19:30:11] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-19T19:30:11 #2)
+[2026-02-19T17:35:33] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-19T17:35:33 #3)
+[2026-02-19T15:57:13] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-19T15:57:13 #4)
+[2026-02-19T08:02:58] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-19T08:02:58 #5)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-20T15:22:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-20T15:22:30 #1)
