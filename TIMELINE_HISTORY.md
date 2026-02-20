@@ -4937,3 +4937,4 @@
 [2026-02-20T15:52:43] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-20T15:52:43 #11)
 [2026-02-20T20:33:18] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-20T20:33:18 #12)
 [2026-02-20T13:05:58] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-20T13:05:58 #13)
+[2026-02-20T16:58:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-20T16:58:10 #14)
