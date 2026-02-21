@@ -559,3 +559,4 @@
 [2026-02-21T10:59:52] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-21T10:59:52 #7)
 [2026-02-21T16:53:07] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-21T16:53:07 #8)
 [2026-02-21T15:04:57] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-21T15:04:57 #9)
+[2026-02-21T16:42:51] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-21T16:42:51 #10)
