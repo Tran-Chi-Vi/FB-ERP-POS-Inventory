@@ -490,3 +490,4 @@
 [2026-02-21T11:51:23] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-21T11:51:23 #2)
 [2026-02-21T18:51:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-21T18:51:19 #3)
 [2026-02-21T09:37:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-21T09:37:18 #4)
+[2026-02-21T18:35:53] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-21T18:35:53 #5)
