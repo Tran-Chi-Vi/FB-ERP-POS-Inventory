@@ -556,3 +556,4 @@
 [2026-02-21T18:47:41] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-21T18:47:41 #4)
 [2026-02-21T12:32:05] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-21T12:32:05 #5)
 [2026-02-21T11:18:30] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-02-21T11:18:30 #6)
+[2026-02-21T10:59:52] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-21T10:59:52 #7)
