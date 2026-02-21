@@ -489,3 +489,4 @@
 [2026-02-21T17:58:33] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-21T17:58:33 #1)
 [2026-02-21T11:51:23] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-21T11:51:23 #2)
 [2026-02-21T18:51:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-21T18:51:19 #3)
+[2026-02-21T09:37:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-21T09:37:18 #4)
