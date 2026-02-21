@@ -552,3 +552,4 @@
 [2026-02-20T15:01:45] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-20T15:01:45 #11)
 [2026-02-21T17:13:17] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-21T17:13:17 #1)
 [2026-02-21T08:42:43] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-21T08:42:43 #2)
+[2026-02-21T08:38:21] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-21T08:38:21 #3)
