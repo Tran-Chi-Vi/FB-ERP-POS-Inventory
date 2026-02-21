@@ -494,3 +494,4 @@
 [2026-02-21T14:59:51] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-21T14:59:51 #6)
 [2026-02-21T17:26:11] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-21T17:26:11 #7)
 [2026-02-21T13:12:27] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-21T13:12:27 #8)
+[2026-02-21T21:33:44] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-21T21:33:44 #9)
