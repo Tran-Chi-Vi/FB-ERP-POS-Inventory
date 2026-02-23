@@ -569,3 +569,4 @@
 [2026-02-23T20:27:05] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-23T20:27:05 #4)
 [2026-02-23T16:17:32] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-23T16:17:32 #5)
 [2026-02-23T21:42:55] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-23T21:42:55 #6)
+[2026-02-23T08:41:42] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-23T08:41:42 #7)
