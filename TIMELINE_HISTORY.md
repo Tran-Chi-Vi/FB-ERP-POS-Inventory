@@ -4923,6 +4923,7 @@
 [2026-02-19T17:35:33] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-19T17:35:33 #3)
 [2026-02-19T15:57:13] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-19T15:57:13 #4)
 [2026-02-19T08:02:58] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-19T08:02:58 #5)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-20T15:22:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-20T15:22:30 #1)
 [2026-02-20T10:23:35] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-20T10:23:35 #2)
@@ -4938,3 +4939,23 @@
 [2026-02-20T20:33:18] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-20T20:33:18 #12)
 [2026-02-20T13:05:58] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-20T13:05:58 #13)
 [2026-02-20T16:58:10] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-20T16:58:10 #14)
+=======
+[2026-02-21T17:58:33] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-21T17:58:33 #1)
+[2026-02-21T11:51:23] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-21T11:51:23 #2)
+[2026-02-21T18:51:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-21T18:51:19 #3)
+[2026-02-21T09:37:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-21T09:37:18 #4)
+[2026-02-21T18:35:53] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-21T18:35:53 #5)
+[2026-02-21T14:59:51] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-21T14:59:51 #6)
+[2026-02-21T17:26:11] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-21T17:26:11 #7)
+[2026-02-21T13:12:27] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-21T13:12:27 #8)
+[2026-02-21T21:33:44] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-21T21:33:44 #9)
+[2026-02-21T11:34:49] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-21T11:34:49 #10)
+[2026-02-21T10:01:52] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-21T10:01:52 #11)
+[2026-02-21T19:59:38] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-21T19:59:38 #12)
+[2026-02-21T20:48:26] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-21T20:48:26 #13)
+[2026-02-21T19:29:10] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-21T19:29:10 #14)
+[2026-02-21T15:05:56] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-21T15:05:56 #15)
+[2026-02-21T15:48:43] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-21T15:48:43 #16)
+[2026-02-21T08:39:29] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-21T08:39:29 #17)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-23T08:30:05] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-23T08:30:05 #1)
