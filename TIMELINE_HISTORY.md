@@ -510,3 +510,4 @@
 [2026-02-24T09:05:38] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-02-24T09:05:38 #5)
 [2026-02-24T21:25:51] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-02-24T21:25:51 #6)
 [2026-02-24T21:28:03] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-24T21:28:03 #7)
+[2026-02-24T19:21:01] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-24T19:21:01 #8)
