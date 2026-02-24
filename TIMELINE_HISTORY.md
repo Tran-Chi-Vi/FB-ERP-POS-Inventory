@@ -505,3 +505,4 @@
 [2026-02-21T08:39:29] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-21T08:39:29 #17)
 [2026-02-24T17:11:24] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-24T17:11:24 #1)
 [2026-02-24T09:10:29] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-24T09:10:29 #2)
+[2026-02-24T11:00:19] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-24T11:00:19 #3)
