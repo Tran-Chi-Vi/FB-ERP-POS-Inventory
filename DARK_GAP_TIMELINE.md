@@ -2564,3 +2564,4 @@
 [2026-01-31T11:14:34] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-01-31T11:14:34 #1)
 [2026-01-31T16:08:04] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-01-31T16:08:04 #2)
 [2026-01-31T10:56:51] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-01-31T10:56:51 #3)
+[2026-01-31T19:42:29] feat(reports): add real-time P&L statement and cash flow analysis (Gap 2026-01-31T19:42:29 #4)
