@@ -2573,3 +2573,4 @@
 [2026-02-02T12:56:07] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-02T12:56:07 #1)
 [2026-02-02T19:48:53] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-02T19:48:53 #2)
 [2026-02-02T14:11:10] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-02T14:11:10 #3)
+[2026-02-02T15:33:55] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-02T15:33:55 #4)
