@@ -600,3 +600,4 @@
 [2026-02-25T10:35:10] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-25T10:35:10 #9)
 [2026-02-25T18:22:27] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-25T18:22:27 #10)
 [2026-02-25T17:27:41] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-25T17:27:41 #11)
+[2026-02-25T10:56:57] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-25T10:56:57 #12)
