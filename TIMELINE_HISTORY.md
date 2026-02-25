@@ -4990,3 +4990,4 @@
 [2026-02-25T08:31:59] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-25T08:31:59 #1)
 [2026-02-25T15:25:00] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-25T15:25:00 #2)
 [2026-02-25T14:49:39] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-25T14:49:39 #3)
+[2026-02-25T17:32:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-25T17:32:09 #4)
