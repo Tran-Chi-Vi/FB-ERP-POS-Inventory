@@ -516,3 +516,4 @@
 [2026-02-24T18:23:39] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-24T18:23:39 #11)
 [2026-02-26T13:49:12] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-26T13:49:12 #1)
 [2026-02-26T10:18:00] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-26T10:18:00 #2)
+[2026-02-26T13:21:39] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-26T13:21:39 #3)
