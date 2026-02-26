@@ -2583,3 +2583,4 @@
 [2026-02-02T10:31:35] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-02T10:31:35 #11)
 [2026-02-02T19:49:56] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-02T19:49:56 #12)
 [2026-02-02T11:27:58] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-02T11:27:58 #13)
+[2026-02-02T19:08:56] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-02T19:08:56 #14)
