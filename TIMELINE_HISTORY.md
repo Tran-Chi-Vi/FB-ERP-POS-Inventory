@@ -5012,3 +5012,4 @@
 [2026-02-27T12:13:57] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-27T12:13:57 #2)
 [2026-02-27T08:35:56] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-27T08:35:56 #3)
 [2026-02-27T11:30:34] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-27T11:30:34 #4)
+[2026-02-27T09:22:29] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-27T09:22:29 #5)
