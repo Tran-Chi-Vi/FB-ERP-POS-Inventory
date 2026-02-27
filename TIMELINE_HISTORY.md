@@ -4986,9 +4986,26 @@
 [2026-02-24T12:17:50] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-24T12:17:50 #9)
 [2026-02-24T11:59:29] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-24T11:59:29 #10)
 [2026-02-24T18:23:39] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-02-24T18:23:39 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-02-25T08:31:59] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-25T08:31:59 #1)
 [2026-02-25T15:25:00] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-25T15:25:00 #2)
 [2026-02-25T14:49:39] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-02-25T14:49:39 #3)
 [2026-02-25T17:32:09] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-02-25T17:32:09 #4)
 [2026-02-25T15:43:58] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-25T15:43:58 #5)
+=======
+[2026-02-26T13:49:12] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-26T13:49:12 #1)
+[2026-02-26T10:18:00] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-26T10:18:00 #2)
+[2026-02-26T13:21:39] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-26T13:21:39 #3)
+[2026-02-26T13:03:27] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-26T13:03:27 #4)
+[2026-02-26T09:52:46] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-26T09:52:46 #5)
+[2026-02-26T16:54:59] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-26T16:54:59 #6)
+[2026-02-26T20:53:50] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-02-26T20:53:50 #7)
+[2026-02-26T20:22:29] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-02-26T20:22:29 #8)
+[2026-02-26T14:12:41] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-02-26T14:12:41 #9)
+[2026-02-26T21:05:18] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-02-26T21:05:18 #10)
+[2026-02-26T11:56:44] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-26T11:56:44 #11)
+[2026-02-26T20:57:22] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-02-26T20:57:22 #12)
+[2026-02-26T18:53:51] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-02-26T18:53:51 #13)
+>>>>>>> feat/system-integration-superpowers
+[2026-02-27T16:40:03] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-02-27T16:40:03 #1)
