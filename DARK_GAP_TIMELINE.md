@@ -622,3 +622,4 @@
 [2026-02-27T09:08:51] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-27T09:08:51 #8)
 [2026-02-27T20:08:39] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-27T20:08:39 #9)
 [2026-02-27T18:18:31] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-27T18:18:31 #10)
+[2026-02-27T21:56:26] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-27T21:56:26 #11)
