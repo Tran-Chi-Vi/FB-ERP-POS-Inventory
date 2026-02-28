@@ -535,3 +535,4 @@
 [2026-02-28T16:31:03] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-02-28T16:31:03 #6)
 [2026-02-28T10:31:34] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-02-28T10:31:34 #7)
 [2026-02-28T16:08:45] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-02-28T16:08:45 #8)
+[2026-02-28T08:39:25] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-28T08:39:25 #9)
