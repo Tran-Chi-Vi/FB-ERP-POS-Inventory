@@ -2600,3 +2600,4 @@
 [2026-02-03T08:10:34] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-03T08:10:34 #14)
 [2026-02-03T19:22:26] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-03T19:22:26 #15)
 [2026-02-03T15:22:13] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-03T15:22:13 #16)
+[2026-02-03T17:58:40] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-03T17:58:40 #17)
