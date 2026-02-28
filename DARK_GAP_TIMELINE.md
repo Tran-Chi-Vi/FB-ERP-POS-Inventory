@@ -633,3 +633,4 @@
 [2026-02-28T20:50:08] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-28T20:50:08 #7)
 [2026-02-28T11:14:20] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2026-02-28T11:14:20 #8)
 [2026-02-28T14:30:41] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-28T14:30:41 #9)
+[2026-02-28T10:18:56] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2026-02-28T10:18:56 #10)
