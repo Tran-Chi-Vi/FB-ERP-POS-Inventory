@@ -637,3 +637,4 @@
 [2026-02-28T21:45:41] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-28T21:45:41 #11)
 [2026-02-28T09:56:10] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-28T09:56:10 #12)
 [2026-02-28T19:42:45] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-28T19:42:45 #13)
+[2026-02-28T08:52:47] feat(finance): integrate e-invoice compliance according to Decree 123/2020 (Gap 2026-02-28T08:52:47 #14)
