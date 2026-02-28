@@ -624,3 +624,4 @@
 [2026-02-27T18:18:31] feat(crm): implement Customer 360 profile and loyalty points ledger (Gap 2026-02-27T18:18:31 #10)
 [2026-02-27T21:56:26] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2026-02-27T21:56:26 #11)
 [2026-02-27T15:13:03] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-27T15:13:03 #12)
+[2026-02-28T19:19:36] feat(inventory): add FEFO/FIFO batch expiry tracking and intelligent reorder point alerts (Gap 2026-02-28T19:19:36 #1)
