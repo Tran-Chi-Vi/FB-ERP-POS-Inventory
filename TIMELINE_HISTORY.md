@@ -538,3 +538,4 @@
 [2026-02-28T08:39:25] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-02-28T08:39:25 #9)
 [2026-02-28T14:07:13] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-28T14:07:13 #10)
 [2026-02-28T13:56:30] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-28T13:56:30 #11)
+[2026-02-28T14:12:43] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-02-28T14:12:43 #12)
