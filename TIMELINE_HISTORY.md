@@ -543,3 +543,4 @@
 [2026-02-28T19:18:12] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-02-28T19:18:12 #14)
 [2026-02-28T16:09:41] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-02-28T16:09:41 #15)
 [2026-02-28T19:34:47] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-28T19:34:47 #16)
+[2026-02-28T09:59:01] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-28T09:59:01 #17)
