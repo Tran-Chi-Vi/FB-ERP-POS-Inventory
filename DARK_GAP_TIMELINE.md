@@ -630,3 +630,4 @@
 [2026-02-28T12:01:17] feat(promotions): add BOGO, Happy Hour pricing matrix, and voucher stacking rules (Gap 2026-02-28T12:01:17 #4)
 [2026-02-28T17:06:57] feat(bi-analytics): implement Menu Engineering Matrix (Star, Puzzle, Plowhorse, Dog) (Gap 2026-02-28T17:06:57 #5)
 [2026-02-28T18:06:15] feat(hr-payroll): add trusted WiFi BSSID check-in anti-fraud and automated payroll lock (Gap 2026-02-28T18:06:15 #6)
+[2026-02-28T20:50:08] test(integration): add E2E integration test suite for multi-branch data isolation (Gap 2026-02-28T20:50:08 #7)
