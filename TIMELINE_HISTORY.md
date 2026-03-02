@@ -5058,3 +5058,4 @@
 [2026-03-02T15:19:51] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-02T15:19:51 #9)
 [2026-03-02T13:02:22] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-02T13:02:22 #10)
 [2026-03-02T20:02:42] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-02T20:02:42 #11)
+[2026-03-02T10:57:18] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-02T10:57:18 #12)
