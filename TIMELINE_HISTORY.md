@@ -557,3 +557,4 @@
 [2026-03-03T19:06:56] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-03T19:06:56 #10)
 [2026-03-03T11:30:53] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-03T11:30:53 #11)
 [2026-03-03T18:46:24] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-03T18:46:24 #12)
+[2026-03-03T17:16:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-03T17:16:27 #13)
