@@ -559,3 +559,4 @@
 [2026-03-03T18:46:24] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-03T18:46:24 #12)
 [2026-03-03T17:16:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-03T17:16:27 #13)
 [2026-03-03T10:11:39] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-03T10:11:39 #14)
+[2026-03-03T15:35:37] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-03T15:35:37 #15)
