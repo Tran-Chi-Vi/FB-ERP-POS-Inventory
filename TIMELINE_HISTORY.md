@@ -548,3 +548,4 @@
 [2026-03-03T13:09:54] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-03T13:09:54 #1)
 [2026-03-03T17:49:31] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-03T17:49:31 #2)
 [2026-03-03T19:40:37] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-03T19:40:37 #3)
+[2026-03-03T11:05:36] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-03T11:05:36 #4)
