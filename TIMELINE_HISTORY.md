@@ -5084,3 +5084,4 @@
 [2026-03-04T09:39:47] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-04T09:39:47 #5)
 [2026-03-04T11:06:27] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-04T11:06:27 #6)
 [2026-03-04T20:17:25] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-04T20:17:25 #7)
+[2026-03-04T12:05:20] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-04T12:05:20 #8)
