@@ -5046,6 +5046,7 @@
 [2026-02-28T19:34:47] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-02-28T19:34:47 #16)
 [2026-02-28T09:59:01] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-28T09:59:01 #17)
 [2026-02-28T17:46:45] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-02-28T17:46:45 #18)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-02T10:22:10] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-02T10:22:10 #1)
 [2026-03-02T17:45:05] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-02T17:45:05 #2)
@@ -5059,3 +5060,21 @@
 [2026-03-02T13:02:22] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-02T13:02:22 #10)
 [2026-03-02T20:02:42] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-02T20:02:42 #11)
 [2026-03-02T10:57:18] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-02T10:57:18 #12)
+=======
+[2026-03-03T13:09:54] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-03T13:09:54 #1)
+[2026-03-03T17:49:31] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-03T17:49:31 #2)
+[2026-03-03T19:40:37] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-03T19:40:37 #3)
+[2026-03-03T11:05:36] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-03T11:05:36 #4)
+[2026-03-03T18:23:10] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-03T18:23:10 #5)
+[2026-03-03T18:51:11] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-03T18:51:11 #6)
+[2026-03-03T11:48:08] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-03T11:48:08 #7)
+[2026-03-03T19:48:49] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-03T19:48:49 #8)
+[2026-03-03T09:13:02] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-03T09:13:02 #9)
+[2026-03-03T19:06:56] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-03T19:06:56 #10)
+[2026-03-03T11:30:53] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-03T11:30:53 #11)
+[2026-03-03T18:46:24] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-03T18:46:24 #12)
+[2026-03-03T17:16:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-03T17:16:27 #13)
+[2026-03-03T10:11:39] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-03T10:11:39 #14)
+[2026-03-03T15:35:37] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-03T15:35:37 #15)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-04T10:54:27] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-04T10:54:27 #1)
