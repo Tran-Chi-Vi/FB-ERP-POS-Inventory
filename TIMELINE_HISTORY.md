@@ -563,3 +563,4 @@
 [2026-03-05T15:04:19] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-05T15:04:19 #1)
 [2026-03-05T09:00:54] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-05T09:00:54 #2)
 [2026-03-05T18:19:42] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-05T18:19:42 #3)
+[2026-03-05T09:44:11] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-05T09:44:11 #4)
