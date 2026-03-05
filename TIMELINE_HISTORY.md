@@ -574,3 +574,4 @@
 [2026-03-05T15:48:35] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-05T15:48:35 #12)
 [2026-03-05T16:44:08] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-05T16:44:08 #13)
 [2026-03-05T17:51:18] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-05T17:51:18 #14)
+[2026-03-05T12:25:47] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-05T12:25:47 #15)
