@@ -570,3 +570,4 @@
 [2026-03-05T19:56:46] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-05T19:56:46 #8)
 [2026-03-05T08:44:38] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-05T08:44:38 #9)
 [2026-03-05T18:32:05] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-05T18:32:05 #10)
+[2026-03-05T20:31:57] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-05T20:31:57 #11)
