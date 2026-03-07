@@ -581,3 +581,4 @@
 [2026-03-05T11:07:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-05T11:07:52 #19)
 [2026-03-05T17:27:21] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-05T17:27:21 #20)
 [2026-03-07T11:54:40] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-07T11:54:40 #1)
+[2026-03-07T17:19:27] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-07T17:19:27 #2)
