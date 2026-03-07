@@ -591,3 +591,4 @@
 [2026-03-07T11:35:36] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-07T11:35:36 #9)
 [2026-03-07T17:04:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-07T17:04:20 #10)
 [2026-03-07T11:54:23] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-07T11:54:23 #11)
+[2026-03-07T09:48:48] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-07T09:48:48 #12)
