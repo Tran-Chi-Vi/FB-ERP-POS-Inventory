@@ -590,3 +590,4 @@
 [2026-03-07T13:42:56] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-07T13:42:56 #8)
 [2026-03-07T11:35:36] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-07T11:35:36 #9)
 [2026-03-07T17:04:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-07T17:04:20 #10)
+[2026-03-07T11:54:23] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-07T11:54:23 #11)
