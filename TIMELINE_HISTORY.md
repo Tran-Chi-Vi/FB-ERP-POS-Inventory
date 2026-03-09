@@ -5108,6 +5108,7 @@
 [2026-03-05T09:35:35] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-05T09:35:35 #18)
 [2026-03-05T11:07:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-05T11:07:52 #19)
 [2026-03-05T17:27:21] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-05T17:27:21 #20)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-06T11:27:32] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-06T11:27:32 #1)
 [2026-03-06T21:45:08] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-06T21:45:08 #2)
@@ -5121,3 +5122,23 @@
 [2026-03-06T17:56:38] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-06T17:56:38 #10)
 [2026-03-06T20:15:36] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-06T20:15:36 #11)
 [2026-03-06T17:15:59] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-06T17:15:59 #12)
+=======
+[2026-03-07T11:54:40] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-07T11:54:40 #1)
+[2026-03-07T17:19:27] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-07T17:19:27 #2)
+[2026-03-07T08:45:20] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-07T08:45:20 #3)
+[2026-03-07T17:45:35] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-07T17:45:35 #4)
+[2026-03-07T15:02:48] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-07T15:02:48 #5)
+[2026-03-07T18:09:19] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-07T18:09:19 #6)
+[2026-03-07T21:49:28] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-07T21:49:28 #7)
+[2026-03-07T13:42:56] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-07T13:42:56 #8)
+[2026-03-07T11:35:36] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-07T11:35:36 #9)
+[2026-03-07T17:04:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-07T17:04:20 #10)
+[2026-03-07T11:54:23] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-07T11:54:23 #11)
+[2026-03-07T09:48:48] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-07T09:48:48 #12)
+[2026-03-07T18:55:23] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-07T18:55:23 #13)
+[2026-03-07T08:56:15] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-07T08:56:15 #14)
+[2026-03-07T19:00:37] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-07T19:00:37 #15)
+[2026-03-07T10:18:37] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-07T10:18:37 #16)
+[2026-03-07T18:50:31] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-07T18:50:31 #17)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-09T17:35:03] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-09T17:35:03 #1)
