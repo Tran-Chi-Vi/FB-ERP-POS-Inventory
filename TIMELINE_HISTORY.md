@@ -5143,3 +5143,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-03-09T17:35:03] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-09T17:35:03 #1)
 [2026-03-09T12:55:29] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-09T12:55:29 #2)
+[2026-03-09T13:32:59] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-09T13:32:59 #3)
