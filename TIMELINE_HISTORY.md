@@ -600,3 +600,4 @@
 [2026-03-10T13:54:54] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-10T13:54:54 #1)
 [2026-03-10T17:48:17] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-10T17:48:17 #2)
 [2026-03-10T09:35:13] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T09:35:13 #3)
+[2026-03-10T15:22:36] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-10T15:22:36 #4)
