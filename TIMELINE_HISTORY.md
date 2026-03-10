@@ -602,3 +602,4 @@
 [2026-03-10T09:35:13] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T09:35:13 #3)
 [2026-03-10T15:22:36] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-10T15:22:36 #4)
 [2026-03-10T19:19:59] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-10T19:19:59 #5)
+[2026-03-10T20:36:33] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T20:36:33 #6)
