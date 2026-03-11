@@ -5140,6 +5140,7 @@
 [2026-03-07T19:00:37] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-07T19:00:37 #15)
 [2026-03-07T10:18:37] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-07T10:18:37 #16)
 [2026-03-07T18:50:31] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-07T18:50:31 #17)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-09T17:35:03] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-09T17:35:03 #1)
 [2026-03-09T12:55:29] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-09T12:55:29 #2)
@@ -5150,3 +5151,17 @@
 [2026-03-09T18:29:38] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-09T18:29:38 #7)
 [2026-03-09T18:34:06] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-09T18:34:06 #8)
 [2026-03-09T21:36:36] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-09T21:36:36 #9)
+=======
+[2026-03-10T13:54:54] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-10T13:54:54 #1)
+[2026-03-10T17:48:17] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-10T17:48:17 #2)
+[2026-03-10T09:35:13] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T09:35:13 #3)
+[2026-03-10T15:22:36] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-10T15:22:36 #4)
+[2026-03-10T19:19:59] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-10T19:19:59 #5)
+[2026-03-10T20:36:33] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T20:36:33 #6)
+[2026-03-10T10:17:15] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-10T10:17:15 #7)
+[2026-03-10T13:20:56] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-10T13:20:56 #8)
+[2026-03-10T13:19:16] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T13:19:16 #9)
+[2026-03-10T12:05:10] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-10T12:05:10 #10)
+[2026-03-10T20:02:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T20:02:08 #11)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-11T14:41:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-11T14:41:18 #1)
