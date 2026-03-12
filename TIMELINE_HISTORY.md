@@ -610,3 +610,4 @@
 [2026-03-10T20:02:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T20:02:08 #11)
 [2026-03-12T09:16:15] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-12T09:16:15 #1)
 [2026-03-12T20:34:46] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-12T20:34:46 #2)
+[2026-03-12T16:21:12] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-12T16:21:12 #3)
