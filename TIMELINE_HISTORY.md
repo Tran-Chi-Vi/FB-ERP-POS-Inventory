@@ -5163,6 +5163,7 @@
 [2026-03-10T13:19:16] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T13:19:16 #9)
 [2026-03-10T12:05:10] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-10T12:05:10 #10)
 [2026-03-10T20:02:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-10T20:02:08 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-11T14:41:18] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-11T14:41:18 #1)
 [2026-03-11T17:29:58] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-11T17:29:58 #2)
@@ -5175,3 +5176,16 @@
 [2026-03-11T09:24:53] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-11T09:24:53 #9)
 [2026-03-11T08:22:59] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-11T08:22:59 #10)
 [2026-03-11T14:56:07] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-11T14:56:07 #11)
+=======
+[2026-03-12T09:16:15] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-12T09:16:15 #1)
+[2026-03-12T20:34:46] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-12T20:34:46 #2)
+[2026-03-12T16:21:12] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-12T16:21:12 #3)
+[2026-03-12T21:48:31] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-12T21:48:31 #4)
+[2026-03-12T08:28:01] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-12T08:28:01 #5)
+[2026-03-12T17:28:04] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-12T17:28:04 #6)
+[2026-03-12T12:31:05] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-12T12:31:05 #7)
+[2026-03-12T14:12:10] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-12T14:12:10 #8)
+[2026-03-12T16:47:44] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-12T16:47:44 #9)
+[2026-03-12T20:56:47] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-12T20:56:47 #10)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-13T18:38:51] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-13T18:38:51 #1)
