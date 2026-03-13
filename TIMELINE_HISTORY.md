@@ -5201,3 +5201,4 @@
 [2026-03-13T08:52:32] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-13T08:52:32 #11)
 [2026-03-13T15:56:24] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-13T15:56:24 #12)
 [2026-03-13T12:39:11] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-13T12:39:11 #13)
+[2026-03-13T11:21:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-13T11:21:22 #14)
