@@ -620,3 +620,4 @@
 [2026-03-12T20:56:47] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-12T20:56:47 #10)
 [2026-03-14T14:11:07] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-14T14:11:07 #1)
 [2026-03-14T12:50:49] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-14T12:50:49 #2)
+[2026-03-14T21:52:57] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-14T21:52:57 #3)
