@@ -622,3 +622,4 @@
 [2026-03-14T12:50:49] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-14T12:50:49 #2)
 [2026-03-14T21:52:57] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-14T21:52:57 #3)
 [2026-03-14T18:40:45] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-14T18:40:45 #4)
+[2026-03-14T10:56:45] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-14T10:56:45 #5)
