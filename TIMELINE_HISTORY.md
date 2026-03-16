@@ -5224,3 +5224,4 @@
 [2026-03-16T12:03:30] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-16T12:03:30 #8)
 [2026-03-16T18:45:41] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-16T18:45:41 #9)
 [2026-03-16T12:06:51] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-16T12:06:51 #10)
+[2026-03-16T19:48:49] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-16T19:48:49 #11)
