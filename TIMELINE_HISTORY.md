@@ -5187,6 +5187,7 @@
 [2026-03-12T14:12:10] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-12T14:12:10 #8)
 [2026-03-12T16:47:44] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-12T16:47:44 #9)
 [2026-03-12T20:56:47] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-12T20:56:47 #10)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-13T18:38:51] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-13T18:38:51 #1)
 [2026-03-13T18:07:38] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-13T18:07:38 #2)
@@ -5202,3 +5203,15 @@
 [2026-03-13T15:56:24] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-13T15:56:24 #12)
 [2026-03-13T12:39:11] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-13T12:39:11 #13)
 [2026-03-13T11:21:22] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-13T11:21:22 #14)
+=======
+[2026-03-14T14:11:07] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-14T14:11:07 #1)
+[2026-03-14T12:50:49] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-14T12:50:49 #2)
+[2026-03-14T21:52:57] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-14T21:52:57 #3)
+[2026-03-14T18:40:45] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-14T18:40:45 #4)
+[2026-03-14T10:56:45] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-14T10:56:45 #5)
+[2026-03-14T08:10:36] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-14T08:10:36 #6)
+[2026-03-14T18:31:16] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-14T18:31:16 #7)
+[2026-03-14T11:18:06] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-14T11:18:06 #8)
+[2026-03-14T08:52:12] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-14T08:52:12 #9)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-16T09:34:12] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-16T09:34:12 #1)
