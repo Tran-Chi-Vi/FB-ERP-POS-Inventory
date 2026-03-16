@@ -5220,3 +5220,4 @@
 [2026-03-16T13:31:49] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-16T13:31:49 #4)
 [2026-03-16T10:46:27] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-16T10:46:27 #5)
 [2026-03-16T14:28:58] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-16T14:28:58 #6)
+[2026-03-16T09:22:07] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-16T09:22:07 #7)
