@@ -635,3 +635,4 @@
 [2026-03-17T10:00:25] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-17T10:00:25 #6)
 [2026-03-17T16:58:59] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-17T16:58:59 #7)
 [2026-03-17T20:11:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-17T20:11:55 #8)
+[2026-03-17T14:50:46] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-17T14:50:46 #9)
