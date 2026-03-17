@@ -637,3 +637,4 @@
 [2026-03-17T20:11:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-17T20:11:55 #8)
 [2026-03-17T14:50:46] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-17T14:50:46 #9)
 [2026-03-17T21:42:43] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-17T21:42:43 #10)
+[2026-03-17T08:54:03] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-17T08:54:03 #11)
