@@ -632,3 +632,4 @@
 [2026-03-17T20:57:08] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-17T20:57:08 #3)
 [2026-03-17T13:31:06] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-17T13:31:06 #4)
 [2026-03-17T14:59:01] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-17T14:59:01 #5)
+[2026-03-17T10:00:25] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-17T10:00:25 #6)
