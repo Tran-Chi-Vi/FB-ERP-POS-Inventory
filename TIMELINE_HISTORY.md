@@ -660,3 +660,4 @@
 [2026-03-19T17:10:57] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-19T17:10:57 #11)
 [2026-03-19T11:52:09] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-19T11:52:09 #12)
 [2026-03-19T10:07:23] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-19T10:07:23 #13)
+[2026-03-19T11:53:39] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-19T11:53:39 #14)
