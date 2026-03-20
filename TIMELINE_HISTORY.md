@@ -5247,6 +5247,7 @@
 [2026-03-17T08:19:00] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-17T08:19:00 #18)
 [2026-03-17T17:27:20] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-17T17:27:20 #19)
 [2026-03-17T16:20:58] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-03-17T16:20:58 #20)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-18T20:43:39] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-18T20:43:39 #1)
 [2026-03-18T09:41:47] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-18T09:41:47 #2)
@@ -5257,3 +5258,23 @@
 [2026-03-18T08:55:19] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-18T08:55:19 #7)
 [2026-03-18T14:29:11] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-18T14:29:11 #8)
 [2026-03-18T09:04:06] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-18T09:04:06 #9)
+=======
+[2026-03-19T14:56:35] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-19T14:56:35 #1)
+[2026-03-19T10:09:28] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-19T10:09:28 #2)
+[2026-03-19T08:35:15] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-19T08:35:15 #3)
+[2026-03-19T09:47:00] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-19T09:47:00 #4)
+[2026-03-19T16:32:50] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-19T16:32:50 #5)
+[2026-03-19T08:26:09] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-19T08:26:09 #6)
+[2026-03-19T16:58:50] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-19T16:58:50 #7)
+[2026-03-19T21:39:04] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-19T21:39:04 #8)
+[2026-03-19T13:32:59] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-19T13:32:59 #9)
+[2026-03-19T20:15:11] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-19T20:15:11 #10)
+[2026-03-19T17:10:57] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-19T17:10:57 #11)
+[2026-03-19T11:52:09] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-19T11:52:09 #12)
+[2026-03-19T10:07:23] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-19T10:07:23 #13)
+[2026-03-19T11:53:39] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-19T11:53:39 #14)
+[2026-03-19T10:54:26] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-19T10:54:26 #15)
+[2026-03-19T09:21:24] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-19T09:21:24 #16)
+[2026-03-19T09:43:52] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-19T09:43:52 #17)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-20T08:11:52] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-20T08:11:52 #1)
