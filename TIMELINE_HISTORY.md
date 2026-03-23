@@ -5276,6 +5276,7 @@
 [2026-03-19T10:54:26] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-19T10:54:26 #15)
 [2026-03-19T09:21:24] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-19T09:21:24 #16)
 [2026-03-19T09:43:52] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-19T09:43:52 #17)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-20T08:11:52] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-20T08:11:52 #1)
 [2026-03-20T19:05:31] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-20T19:05:31 #2)
@@ -5290,3 +5291,20 @@
 [2026-03-20T09:25:40] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-20T09:25:40 #11)
 [2026-03-20T13:37:27] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-20T13:37:27 #12)
 [2026-03-20T15:27:21] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-03-20T15:27:21 #13)
+=======
+[2026-03-21T18:35:48] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-21T18:35:48 #1)
+[2026-03-21T21:18:49] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-21T21:18:49 #2)
+[2026-03-21T16:45:29] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-21T16:45:29 #3)
+[2026-03-21T20:23:57] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-21T20:23:57 #4)
+[2026-03-21T09:20:11] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-21T09:20:11 #5)
+[2026-03-21T17:32:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-21T17:32:20 #6)
+[2026-03-21T21:03:16] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-21T21:03:16 #7)
+[2026-03-21T12:28:51] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-21T12:28:51 #8)
+[2026-03-21T20:52:38] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-03-21T20:52:38 #9)
+[2026-03-21T18:58:21] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-21T18:58:21 #10)
+[2026-03-21T17:27:41] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-21T17:27:41 #11)
+[2026-03-21T19:31:29] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-21T19:31:29 #12)
+[2026-03-21T15:45:30] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-21T15:45:30 #13)
+[2026-03-21T20:18:06] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-21T20:18:06 #14)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-23T12:51:53] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-23T12:51:53 #1)
