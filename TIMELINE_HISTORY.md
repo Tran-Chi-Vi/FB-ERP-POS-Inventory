@@ -683,3 +683,4 @@
 [2026-03-24T16:22:06] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-24T16:22:06 #3)
 [2026-03-24T08:53:38] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-24T08:53:38 #4)
 [2026-03-24T09:43:32] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-24T09:43:32 #5)
+[2026-03-24T20:24:29] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-24T20:24:29 #6)
