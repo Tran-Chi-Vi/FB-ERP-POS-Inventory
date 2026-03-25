@@ -5345,3 +5345,4 @@
 [2026-03-25T13:51:13] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-03-25T13:51:13 #16)
 [2026-03-25T11:19:59] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-25T11:19:59 #17)
 [2026-03-25T12:57:14] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-03-25T12:57:14 #18)
+[2026-03-25T12:58:00] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-25T12:58:00 #19)
