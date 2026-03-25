@@ -5335,3 +5335,4 @@
 [2026-03-25T11:52:56] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-03-25T11:52:56 #6)
 [2026-03-25T13:48:24] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-25T13:48:24 #7)
 [2026-03-25T15:09:42] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-03-25T15:09:42 #8)
+[2026-03-25T12:25:11] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-25T12:25:11 #9)
