@@ -703,3 +703,4 @@
 [2026-03-26T17:09:58] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-26T17:09:58 #14)
 [2026-03-26T09:50:18] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-26T09:50:18 #15)
 [2026-03-26T21:01:36] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-26T21:01:36 #16)
+[2026-03-26T08:03:03] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-26T08:03:03 #17)
