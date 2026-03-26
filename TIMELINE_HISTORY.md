@@ -697,3 +697,4 @@
 [2026-03-26T13:08:10] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-26T13:08:10 #8)
 [2026-03-26T14:49:35] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-26T14:49:35 #9)
 [2026-03-26T21:51:42] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-03-26T21:51:42 #10)
+[2026-03-26T16:02:49] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-26T16:02:49 #11)
