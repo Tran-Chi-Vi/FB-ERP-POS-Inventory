@@ -699,3 +699,4 @@
 [2026-03-26T21:51:42] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-03-26T21:51:42 #10)
 [2026-03-26T16:02:49] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-26T16:02:49 #11)
 [2026-03-26T16:20:04] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-03-26T16:20:04 #12)
+[2026-03-26T15:15:34] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-03-26T15:15:34 #13)
