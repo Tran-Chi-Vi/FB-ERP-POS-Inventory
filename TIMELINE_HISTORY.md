@@ -694,3 +694,4 @@
 [2026-03-26T16:51:05] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-26T16:51:05 #5)
 [2026-03-26T14:03:42] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-26T14:03:42 #6)
 [2026-03-26T13:50:46] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-03-26T13:50:46 #7)
+[2026-03-26T13:08:10] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-26T13:08:10 #8)
