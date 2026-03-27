@@ -5370,3 +5370,4 @@
 [2026-03-26T21:47:22] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-26T21:47:22 #20)
 >>>>>>> feat/system-integration-superpowers
 [2026-03-27T11:46:26] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-27T11:46:26 #1)
+[2026-03-27T08:25:13] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-27T08:25:13 #2)
