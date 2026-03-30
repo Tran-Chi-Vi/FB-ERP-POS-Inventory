@@ -5368,6 +5368,7 @@
 [2026-03-26T10:39:57] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-26T10:39:57 #18)
 [2026-03-26T11:07:38] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-26T11:07:38 #19)
 [2026-03-26T21:47:22] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-26T21:47:22 #20)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-27T11:46:26] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-03-27T11:46:26 #1)
 [2026-03-27T08:25:13] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-27T08:25:13 #2)
@@ -5380,3 +5381,13 @@
 [2026-03-27T18:58:23] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-03-27T18:58:23 #9)
 [2026-03-27T15:42:31] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-03-27T15:42:31 #10)
 [2026-03-27T11:54:37] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-27T11:54:37 #11)
+=======
+[2026-03-28T09:46:16] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-03-28T09:46:16 #1)
+[2026-03-28T09:52:30] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-28T09:52:30 #2)
+[2026-03-28T18:17:14] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-28T18:17:14 #3)
+[2026-03-28T18:29:43] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-03-28T18:29:43 #4)
+[2026-03-28T08:19:00] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-28T08:19:00 #5)
+[2026-03-28T20:20:12] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-28T20:20:12 #6)
+[2026-03-28T08:24:31] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-28T08:24:31 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-03-30T17:46:23] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-30T17:46:23 #1)
