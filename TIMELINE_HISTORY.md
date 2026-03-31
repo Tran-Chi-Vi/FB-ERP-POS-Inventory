@@ -721,3 +721,4 @@
 [2026-03-31T21:07:54] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-31T21:07:54 #5)
 [2026-03-31T09:56:30] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-31T09:56:30 #6)
 [2026-03-31T17:37:49] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-31T17:37:49 #7)
+[2026-03-31T12:16:53] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-31T12:16:53 #8)
