@@ -5425,3 +5425,4 @@
 [2026-04-01T20:00:54] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-01T20:00:54 #9)
 [2026-04-01T13:00:11] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-01T13:00:11 #10)
 [2026-04-01T13:26:50] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-01T13:26:50 #11)
+[2026-04-01T13:47:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-01T13:47:20 #12)
