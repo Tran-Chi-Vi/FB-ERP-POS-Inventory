@@ -5427,3 +5427,4 @@
 [2026-04-01T13:26:50] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-01T13:26:50 #11)
 [2026-04-01T13:47:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-01T13:47:20 #12)
 [2026-04-01T16:13:25] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-01T16:13:25 #13)
+[2026-04-01T20:38:00] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-01T20:38:00 #14)
