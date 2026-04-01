@@ -5420,3 +5420,4 @@
 [2026-04-01T18:23:00] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-01T18:23:00 #4)
 [2026-04-01T13:45:07] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-01T13:45:07 #5)
 [2026-04-01T13:06:51] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-01T13:06:51 #6)
+[2026-04-01T21:12:06] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-01T21:12:06 #7)
