@@ -5426,3 +5426,4 @@
 [2026-04-01T13:00:11] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-01T13:00:11 #10)
 [2026-04-01T13:26:50] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-01T13:26:50 #11)
 [2026-04-01T13:47:20] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-01T13:47:20 #12)
+[2026-04-01T16:13:25] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-01T16:13:25 #13)
