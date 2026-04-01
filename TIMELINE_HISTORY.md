@@ -5389,6 +5389,7 @@
 [2026-03-28T08:19:00] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-28T08:19:00 #5)
 [2026-03-28T20:20:12] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-28T20:20:12 #6)
 [2026-03-28T08:24:31] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-03-28T08:24:31 #7)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-03-30T17:46:23] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-30T17:46:23 #1)
 [2026-03-30T09:55:28] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-30T09:55:28 #2)
@@ -5401,3 +5402,16 @@
 [2026-03-30T21:43:46] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-03-30T21:43:46 #9)
 [2026-03-30T12:09:05] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-30T12:09:05 #10)
 [2026-03-30T13:15:31] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-03-30T13:15:31 #11)
+=======
+[2026-03-31T10:48:08] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-03-31T10:48:08 #1)
+[2026-03-31T15:05:05] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-03-31T15:05:05 #2)
+[2026-03-31T12:14:44] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-31T12:14:44 #3)
+[2026-03-31T20:33:48] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-03-31T20:33:48 #4)
+[2026-03-31T21:07:54] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-03-31T21:07:54 #5)
+[2026-03-31T09:56:30] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-31T09:56:30 #6)
+[2026-03-31T17:37:49] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-03-31T17:37:49 #7)
+[2026-03-31T12:16:53] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-03-31T12:16:53 #8)
+[2026-03-31T12:06:34] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-03-31T12:06:34 #9)
+[2026-03-31T18:50:37] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-03-31T18:50:37 #10)
+>>>>>>> feat/system-integration-superpowers
+[2026-04-01T09:31:24] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-01T09:31:24 #1)
