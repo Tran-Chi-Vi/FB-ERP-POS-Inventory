@@ -5421,3 +5421,4 @@
 [2026-04-01T13:45:07] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-01T13:45:07 #5)
 [2026-04-01T13:06:51] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-01T13:06:51 #6)
 [2026-04-01T21:12:06] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-01T21:12:06 #7)
+[2026-04-01T18:17:52] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-01T18:17:52 #8)
