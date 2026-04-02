@@ -728,3 +728,4 @@
 [2026-04-02T15:38:56] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-02T15:38:56 #2)
 [2026-04-02T16:38:48] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-02T16:38:48 #3)
 [2026-04-02T14:51:57] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-02T14:51:57 #4)
+[2026-04-02T12:06:39] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-02T12:06:39 #5)
