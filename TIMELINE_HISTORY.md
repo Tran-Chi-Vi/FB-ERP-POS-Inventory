@@ -731,3 +731,4 @@
 [2026-04-02T12:06:39] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-02T12:06:39 #5)
 [2026-04-02T09:00:23] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-02T09:00:23 #6)
 [2026-04-02T18:18:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-02T18:18:04 #7)
+[2026-04-02T19:56:34] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-02T19:56:34 #8)
