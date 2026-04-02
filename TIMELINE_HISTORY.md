@@ -735,3 +735,4 @@
 [2026-04-02T14:39:27] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-04-02T14:39:27 #9)
 [2026-04-02T19:33:36] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-02T19:33:36 #10)
 [2026-04-02T19:08:12] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-02T19:08:12 #11)
+[2026-04-02T10:02:46] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-02T10:02:46 #12)
