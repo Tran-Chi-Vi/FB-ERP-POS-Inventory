@@ -730,3 +730,4 @@
 [2026-04-02T14:51:57] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-02T14:51:57 #4)
 [2026-04-02T12:06:39] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-02T12:06:39 #5)
 [2026-04-02T09:00:23] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-02T09:00:23 #6)
+[2026-04-02T18:18:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-02T18:18:04 #7)
