@@ -727,3 +727,4 @@
 [2026-04-02T14:34:59] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-02T14:34:59 #1)
 [2026-04-02T15:38:56] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-02T15:38:56 #2)
 [2026-04-02T16:38:48] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-02T16:38:48 #3)
+[2026-04-02T14:51:57] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-02T14:51:57 #4)
