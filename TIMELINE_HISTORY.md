@@ -732,3 +732,4 @@
 [2026-04-02T09:00:23] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-02T09:00:23 #6)
 [2026-04-02T18:18:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-02T18:18:04 #7)
 [2026-04-02T19:56:34] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-02T19:56:34 #8)
+[2026-04-02T14:39:27] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-04-02T14:39:27 #9)
