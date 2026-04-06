@@ -5444,6 +5444,7 @@
 [2026-04-02T19:08:12] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-02T19:08:12 #11)
 [2026-04-02T10:02:46] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-02T10:02:46 #12)
 [2026-04-02T16:35:09] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-04-02T16:35:09 #13)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-04-03T12:10:12] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-03T12:10:12 #1)
 [2026-04-03T11:04:47] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-03T11:04:47 #2)
@@ -5460,3 +5461,17 @@
 [2026-04-03T12:50:41] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-03T12:50:41 #13)
 [2026-04-03T12:27:17] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-03T12:27:17 #14)
 [2026-04-03T10:10:00] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-03T10:10:00 #15)
+=======
+[2026-04-04T21:49:22] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-04T21:49:22 #1)
+[2026-04-04T15:45:28] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-04T15:45:28 #2)
+[2026-04-04T20:40:44] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-04T20:40:44 #3)
+[2026-04-04T21:28:39] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-04T21:28:39 #4)
+[2026-04-04T09:33:15] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-04T09:33:15 #5)
+[2026-04-04T15:19:33] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-04T15:19:33 #6)
+[2026-04-04T08:19:52] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-04-04T08:19:52 #7)
+[2026-04-04T08:47:20] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-04T08:47:20 #8)
+[2026-04-04T11:51:27] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-04T11:51:27 #9)
+[2026-04-04T19:48:29] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-04T19:48:29 #10)
+[2026-04-04T11:30:46] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-04-04T11:30:46 #11)
+>>>>>>> feat/system-integration-superpowers
+[2026-04-06T16:20:46] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-06T16:20:46 #1)
