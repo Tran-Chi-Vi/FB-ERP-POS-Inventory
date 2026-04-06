@@ -5481,3 +5481,4 @@
 [2026-04-06T16:49:17] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-06T16:49:17 #5)
 [2026-04-06T19:07:34] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-06T19:07:34 #6)
 [2026-04-06T19:10:04] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-06T19:10:04 #7)
+[2026-04-06T18:27:27] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-06T18:27:27 #8)
