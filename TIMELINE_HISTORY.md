@@ -752,3 +752,4 @@
 [2026-04-07T09:42:51] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-07T09:42:51 #2)
 [2026-04-07T08:45:03] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-07T08:45:03 #3)
 [2026-04-07T13:25:33] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-07T13:25:33 #4)
+[2026-04-07T14:08:28] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-07T14:08:28 #5)
