@@ -5473,6 +5473,7 @@
 [2026-04-04T11:51:27] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-04T11:51:27 #9)
 [2026-04-04T19:48:29] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-04T19:48:29 #10)
 [2026-04-04T11:30:46] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-04-04T11:30:46 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-04-06T16:20:46] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-06T16:20:46 #1)
 [2026-04-06T17:52:17] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-06T17:52:17 #2)
@@ -5487,3 +5488,12 @@
 [2026-04-06T12:02:50] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-06T12:02:50 #11)
 [2026-04-06T20:29:13] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-06T20:29:13 #12)
 [2026-04-06T19:49:41] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-06T19:49:41 #13)
+=======
+[2026-04-07T13:11:50] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-07T13:11:50 #1)
+[2026-04-07T09:42:51] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-07T09:42:51 #2)
+[2026-04-07T08:45:03] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-07T08:45:03 #3)
+[2026-04-07T13:25:33] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-07T13:25:33 #4)
+[2026-04-07T14:08:28] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-07T14:08:28 #5)
+[2026-04-07T16:24:31] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-07T16:24:31 #6)
+>>>>>>> feat/system-integration-superpowers
+[2026-04-08T09:03:22] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-08T09:03:22 #1)
