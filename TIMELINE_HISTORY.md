@@ -5499,3 +5499,4 @@
 [2026-04-08T09:03:22] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-08T09:03:22 #1)
 [2026-04-08T18:17:38] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-08T18:17:38 #2)
 [2026-04-08T14:21:04] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-08T14:21:04 #3)
+[2026-04-08T16:38:25] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-08T16:38:25 #4)
