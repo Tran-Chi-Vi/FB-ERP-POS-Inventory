@@ -5497,3 +5497,4 @@
 [2026-04-07T16:24:31] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-07T16:24:31 #6)
 >>>>>>> feat/system-integration-superpowers
 [2026-04-08T09:03:22] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-08T09:03:22 #1)
+[2026-04-08T18:17:38] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-08T18:17:38 #2)
