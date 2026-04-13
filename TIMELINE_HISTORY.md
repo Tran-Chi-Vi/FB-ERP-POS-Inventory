@@ -5562,3 +5562,4 @@
 [2026-04-13T18:31:12] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-13T18:31:12 #10)
 [2026-04-13T14:44:14] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-13T14:44:14 #11)
 [2026-04-13T16:27:41] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-13T16:27:41 #12)
+[2026-04-13T20:31:51] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-13T20:31:51 #13)
