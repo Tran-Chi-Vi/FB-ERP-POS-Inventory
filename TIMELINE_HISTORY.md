@@ -784,3 +784,4 @@
 [2026-04-14T19:35:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-14T19:35:06 #11)
 [2026-04-14T08:12:14] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-14T08:12:14 #12)
 [2026-04-14T16:18:42] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-14T16:18:42 #13)
+[2026-04-14T14:48:10] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-14T14:48:10 #14)
