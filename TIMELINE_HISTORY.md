@@ -782,3 +782,4 @@
 [2026-04-14T14:33:37] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-14T14:33:37 #9)
 [2026-04-14T13:23:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-14T13:23:44 #10)
 [2026-04-14T19:35:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-14T19:35:06 #11)
+[2026-04-14T08:12:14] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-14T08:12:14 #12)
