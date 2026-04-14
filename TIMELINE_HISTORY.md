@@ -776,3 +776,4 @@
 [2026-04-14T21:03:23] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-14T21:03:23 #3)
 [2026-04-14T12:32:24] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-14T12:32:24 #4)
 [2026-04-14T08:45:20] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-14T08:45:20 #5)
+[2026-04-14T19:43:54] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-14T19:43:54 #6)
