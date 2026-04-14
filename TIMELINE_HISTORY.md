@@ -779,3 +779,4 @@
 [2026-04-14T19:43:54] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-14T19:43:54 #6)
 [2026-04-14T20:57:31] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-14T20:57:31 #7)
 [2026-04-14T15:46:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-14T15:46:56 #8)
+[2026-04-14T14:33:37] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-14T14:33:37 #9)
