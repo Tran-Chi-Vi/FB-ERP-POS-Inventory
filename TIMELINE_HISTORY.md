@@ -5586,3 +5586,4 @@
 [2026-04-15T10:33:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-15T10:33:08 #2)
 [2026-04-15T19:17:29] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-15T19:17:29 #3)
 [2026-04-15T17:41:09] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-15T17:41:09 #4)
+[2026-04-15T19:18:18] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-15T19:18:18 #5)
