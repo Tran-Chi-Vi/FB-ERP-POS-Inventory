@@ -5549,6 +5549,7 @@
 [2026-04-11T14:40:21] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-11T14:40:21 #10)
 [2026-04-11T18:49:14] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-04-11T18:49:14 #11)
 [2026-04-11T21:22:49] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-11T21:22:49 #12)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-04-13T10:07:43] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-13T10:07:43 #1)
 [2026-04-13T12:30:27] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-13T12:30:27 #2)
@@ -5563,3 +5564,22 @@
 [2026-04-13T14:44:14] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-13T14:44:14 #11)
 [2026-04-13T16:27:41] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-13T16:27:41 #12)
 [2026-04-13T20:31:51] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-13T20:31:51 #13)
+=======
+[2026-04-14T16:02:57] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-14T16:02:57 #1)
+[2026-04-14T13:33:22] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-04-14T13:33:22 #2)
+[2026-04-14T21:03:23] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-14T21:03:23 #3)
+[2026-04-14T12:32:24] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-14T12:32:24 #4)
+[2026-04-14T08:45:20] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-14T08:45:20 #5)
+[2026-04-14T19:43:54] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-14T19:43:54 #6)
+[2026-04-14T20:57:31] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-14T20:57:31 #7)
+[2026-04-14T15:46:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-14T15:46:56 #8)
+[2026-04-14T14:33:37] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-14T14:33:37 #9)
+[2026-04-14T13:23:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-14T13:23:44 #10)
+[2026-04-14T19:35:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-14T19:35:06 #11)
+[2026-04-14T08:12:14] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-14T08:12:14 #12)
+[2026-04-14T16:18:42] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-14T16:18:42 #13)
+[2026-04-14T14:48:10] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-14T14:48:10 #14)
+[2026-04-14T17:20:02] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-14T17:20:02 #15)
+[2026-04-14T20:43:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-14T20:43:06 #16)
+>>>>>>> feat/system-integration-superpowers
+[2026-04-15T12:19:36] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-15T12:19:36 #1)
