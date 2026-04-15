@@ -5584,3 +5584,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-04-15T12:19:36] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-15T12:19:36 #1)
 [2026-04-15T10:33:08] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-15T10:33:08 #2)
+[2026-04-15T19:17:29] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-15T19:17:29 #3)
