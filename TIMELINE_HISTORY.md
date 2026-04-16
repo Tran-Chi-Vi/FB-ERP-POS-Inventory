@@ -800,3 +800,4 @@
 [2026-04-16T18:58:09] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-16T18:58:09 #11)
 [2026-04-16T17:06:06] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-16T17:06:06 #12)
 [2026-04-16T20:29:59] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-16T20:29:59 #13)
+[2026-04-16T17:52:37] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-16T17:52:37 #14)
