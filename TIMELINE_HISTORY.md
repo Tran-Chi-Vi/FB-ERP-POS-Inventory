@@ -795,3 +795,4 @@
 [2026-04-16T19:05:47] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-16T19:05:47 #6)
 [2026-04-16T13:42:09] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-16T13:42:09 #7)
 [2026-04-16T10:24:43] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-16T10:24:43 #8)
+[2026-04-16T19:50:22] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-16T19:50:22 #9)
