@@ -802,3 +802,4 @@
 [2026-04-16T20:29:59] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-16T20:29:59 #13)
 [2026-04-16T17:52:37] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-16T17:52:37 #14)
 [2026-04-16T08:44:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-16T08:44:11 #15)
+[2026-04-16T19:37:50] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-16T19:37:50 #16)
