@@ -788,3 +788,4 @@
 [2026-04-14T17:20:02] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-14T17:20:02 #15)
 [2026-04-14T20:43:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-14T20:43:06 #16)
 [2026-04-16T17:42:23] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-16T17:42:23 #1)
+[2026-04-16T10:56:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-16T10:56:41 #2)
