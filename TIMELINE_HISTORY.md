@@ -791,3 +791,4 @@
 [2026-04-16T10:56:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-16T10:56:41 #2)
 [2026-04-16T19:21:54] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-16T19:21:54 #3)
 [2026-04-16T19:05:39] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-16T19:05:39 #4)
+[2026-04-16T15:42:22] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-16T15:42:22 #5)
