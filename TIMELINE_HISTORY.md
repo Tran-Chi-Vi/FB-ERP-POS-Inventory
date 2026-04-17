@@ -5609,3 +5609,4 @@
 [2026-04-16T15:31:01] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-16T15:31:01 #18)
 >>>>>>> feat/system-integration-superpowers
 [2026-04-17T21:07:35] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-17T21:07:35 #1)
+[2026-04-17T09:21:25] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-17T09:21:25 #2)
