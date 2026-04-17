@@ -5617,3 +5617,4 @@
 [2026-04-17T14:03:54] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-17T14:03:54 #7)
 [2026-04-17T10:52:26] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-17T10:52:26 #8)
 [2026-04-17T13:49:59] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-17T13:49:59 #9)
+[2026-04-17T20:23:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-17T20:23:44 #10)
