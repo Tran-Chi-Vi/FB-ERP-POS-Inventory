@@ -806,3 +806,4 @@
 [2026-04-16T10:41:24] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-16T10:41:24 #17)
 [2026-04-16T15:31:01] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-16T15:31:01 #18)
 [2026-04-18T13:52:38] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-18T13:52:38 #1)
+[2026-04-18T13:12:05] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-18T13:12:05 #2)
