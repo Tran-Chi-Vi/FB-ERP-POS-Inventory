@@ -817,3 +817,4 @@
 [2026-04-18T13:19:36] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-18T13:19:36 #10)
 [2026-04-18T09:06:02] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-18T09:06:02 #11)
 [2026-04-18T18:52:20] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-18T18:52:20 #12)
+[2026-04-18T09:20:23] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-18T09:20:23 #13)
