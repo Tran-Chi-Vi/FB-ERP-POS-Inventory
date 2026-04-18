@@ -815,3 +815,4 @@
 [2026-04-18T18:31:57] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-18T18:31:57 #8)
 [2026-04-18T08:16:18] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-18T08:16:18 #9)
 [2026-04-18T13:19:36] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-18T13:19:36 #10)
+[2026-04-18T09:06:02] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-18T09:06:02 #11)
