@@ -819,3 +819,4 @@
 [2026-04-18T18:52:20] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-18T18:52:20 #12)
 [2026-04-18T09:20:23] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-18T09:20:23 #13)
 [2026-04-18T17:15:28] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-18T17:15:28 #14)
+[2026-04-18T14:30:26] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-18T14:30:26 #15)
