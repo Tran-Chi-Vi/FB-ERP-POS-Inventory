@@ -808,3 +808,4 @@
 [2026-04-18T13:52:38] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-18T13:52:38 #1)
 [2026-04-18T13:12:05] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-18T13:12:05 #2)
 [2026-04-18T14:59:25] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-18T14:59:25 #3)
+[2026-04-18T21:41:58] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-04-18T21:41:58 #4)
