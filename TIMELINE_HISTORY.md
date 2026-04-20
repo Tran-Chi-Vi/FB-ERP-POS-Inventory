@@ -5640,3 +5640,4 @@
 [2026-04-20T11:12:01] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-20T11:12:01 #2)
 [2026-04-20T11:27:37] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-20T11:27:37 #3)
 [2026-04-20T19:44:01] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-20T19:44:01 #4)
+[2026-04-20T20:17:59] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-20T20:17:59 #5)
