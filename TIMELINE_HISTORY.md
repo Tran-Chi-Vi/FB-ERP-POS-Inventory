@@ -5642,3 +5642,4 @@
 [2026-04-20T19:44:01] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-20T19:44:01 #4)
 [2026-04-20T20:17:59] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-20T20:17:59 #5)
 [2026-04-20T13:40:06] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-20T13:40:06 #6)
+[2026-04-20T10:09:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-20T10:09:27 #7)
