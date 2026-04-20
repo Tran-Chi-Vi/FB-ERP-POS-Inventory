@@ -5638,3 +5638,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-04-20T20:51:43] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-20T20:51:43 #1)
 [2026-04-20T11:12:01] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-20T11:12:01 #2)
+[2026-04-20T11:27:37] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-20T11:27:37 #3)
