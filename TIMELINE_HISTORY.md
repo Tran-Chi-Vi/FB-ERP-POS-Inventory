@@ -5607,6 +5607,7 @@
 [2026-04-16T19:37:50] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-16T19:37:50 #16)
 [2026-04-16T10:41:24] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-16T10:41:24 #17)
 [2026-04-16T15:31:01] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-16T15:31:01 #18)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-04-17T21:07:35] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-17T21:07:35 #1)
 [2026-04-17T09:21:25] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-17T09:21:25 #2)
@@ -5618,3 +5619,21 @@
 [2026-04-17T10:52:26] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-17T10:52:26 #8)
 [2026-04-17T13:49:59] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-17T13:49:59 #9)
 [2026-04-17T20:23:44] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-17T20:23:44 #10)
+=======
+[2026-04-18T13:52:38] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-18T13:52:38 #1)
+[2026-04-18T13:12:05] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-18T13:12:05 #2)
+[2026-04-18T14:59:25] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-18T14:59:25 #3)
+[2026-04-18T21:41:58] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-04-18T21:41:58 #4)
+[2026-04-18T13:22:49] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-04-18T13:22:49 #5)
+[2026-04-18T18:08:50] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-18T18:08:50 #6)
+[2026-04-18T19:05:54] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-18T19:05:54 #7)
+[2026-04-18T18:31:57] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-18T18:31:57 #8)
+[2026-04-18T08:16:18] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-18T08:16:18 #9)
+[2026-04-18T13:19:36] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-18T13:19:36 #10)
+[2026-04-18T09:06:02] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-18T09:06:02 #11)
+[2026-04-18T18:52:20] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-18T18:52:20 #12)
+[2026-04-18T09:20:23] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-18T09:20:23 #13)
+[2026-04-18T17:15:28] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-18T17:15:28 #14)
+[2026-04-18T14:30:26] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-18T14:30:26 #15)
+>>>>>>> feat/system-integration-superpowers
+[2026-04-20T20:51:43] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-20T20:51:43 #1)
