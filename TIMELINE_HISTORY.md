@@ -5635,6 +5635,7 @@
 [2026-04-18T09:20:23] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-18T09:20:23 #13)
 [2026-04-18T17:15:28] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-18T17:15:28 #14)
 [2026-04-18T14:30:26] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-18T14:30:26 #15)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-04-20T20:51:43] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-20T20:51:43 #1)
 [2026-04-20T11:12:01] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-20T11:12:01 #2)
@@ -5643,3 +5644,11 @@
 [2026-04-20T20:17:59] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-20T20:17:59 #5)
 [2026-04-20T13:40:06] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-04-20T13:40:06 #6)
 [2026-04-20T10:09:27] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-20T10:09:27 #7)
+=======
+[2026-04-21T11:33:49] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-21T11:33:49 #1)
+[2026-04-21T14:23:29] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-21T14:23:29 #2)
+[2026-04-21T20:26:00] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-21T20:26:00 #3)
+[2026-04-21T19:06:56] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-04-21T19:06:56 #4)
+[2026-04-21T12:07:39] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-21T12:07:39 #5)
+>>>>>>> feat/system-integration-superpowers
+[2026-04-22T18:06:38] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-22T18:06:38 #1)
