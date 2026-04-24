@@ -5679,3 +5679,4 @@
 [2026-04-24T10:55:20] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-24T10:55:20 #8)
 [2026-04-24T18:12:06] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-24T18:12:06 #9)
 [2026-04-24T09:19:52] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-04-24T09:19:52 #10)
+[2026-04-24T13:53:41] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-24T13:53:41 #11)
