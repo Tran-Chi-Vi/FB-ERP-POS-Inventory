@@ -5671,3 +5671,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-04-24T10:45:24] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-24T10:45:24 #1)
 [2026-04-24T21:04:42] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-04-24T21:04:42 #2)
+[2026-04-24T12:47:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-24T12:47:43 #3)
