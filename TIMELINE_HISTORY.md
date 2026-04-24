@@ -5650,6 +5650,7 @@
 [2026-04-21T20:26:00] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-21T20:26:00 #3)
 [2026-04-21T19:06:56] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-04-21T19:06:56 #4)
 [2026-04-21T12:07:39] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-21T12:07:39 #5)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-04-22T18:06:38] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-22T18:06:38 #1)
 [2026-04-22T18:54:12] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-22T18:54:12 #2)
@@ -5659,3 +5660,13 @@
 [2026-04-22T13:19:24] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-04-22T13:19:24 #6)
 [2026-04-22T20:28:33] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-22T20:28:33 #7)
 [2026-04-22T16:11:21] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-22T16:11:21 #8)
+=======
+[2026-04-23T17:39:28] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-23T17:39:28 #1)
+[2026-04-23T10:14:25] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-23T10:14:25 #2)
+[2026-04-23T09:50:55] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-23T09:50:55 #3)
+[2026-04-23T15:41:53] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-23T15:41:53 #4)
+[2026-04-23T11:27:26] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-23T11:27:26 #5)
+[2026-04-23T14:39:34] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-23T14:39:34 #6)
+[2026-04-23T12:30:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-23T12:30:20 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-04-24T10:45:24] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-24T10:45:24 #1)
