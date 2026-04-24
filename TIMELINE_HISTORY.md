@@ -5674,3 +5674,4 @@
 [2026-04-24T12:47:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-24T12:47:43 #3)
 [2026-04-24T21:06:18] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-04-24T21:06:18 #4)
 [2026-04-24T14:12:33] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-24T14:12:33 #5)
+[2026-04-24T11:09:44] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-24T11:09:44 #6)
