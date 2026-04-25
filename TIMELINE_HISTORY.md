@@ -832,3 +832,4 @@
 [2026-04-23T11:27:26] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-23T11:27:26 #5)
 [2026-04-23T14:39:34] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-23T14:39:34 #6)
 [2026-04-23T12:30:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-23T12:30:20 #7)
+[2026-04-25T17:40:47] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-25T17:40:47 #1)
