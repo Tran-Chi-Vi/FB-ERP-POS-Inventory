@@ -849,3 +849,4 @@
 [2026-04-28T11:51:51] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-04-28T11:51:51 #10)
 [2026-04-28T21:41:00] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-28T21:41:00 #11)
 [2026-04-28T16:47:42] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-04-28T16:47:42 #12)
+[2026-04-28T16:15:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-28T16:15:43 #13)
