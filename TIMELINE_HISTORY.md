@@ -5725,3 +5725,4 @@
 [2026-04-29T11:18:32] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-29T11:18:32 #6)
 [2026-04-29T09:40:09] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-29T09:40:09 #7)
 [2026-04-29T16:17:52] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-29T16:17:52 #8)
+[2026-04-29T08:44:17] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-29T08:44:17 #9)
