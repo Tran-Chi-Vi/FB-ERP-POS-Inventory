@@ -5720,3 +5720,4 @@
 [2026-04-29T13:33:27] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-29T13:33:27 #1)
 [2026-04-29T17:27:32] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-29T17:27:32 #2)
 [2026-04-29T13:36:58] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-04-29T13:36:58 #3)
+[2026-04-29T15:10:38] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-29T15:10:38 #4)
