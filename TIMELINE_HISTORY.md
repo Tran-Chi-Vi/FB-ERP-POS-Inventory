@@ -5727,3 +5727,4 @@
 [2026-04-29T16:17:52] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-04-29T16:17:52 #8)
 [2026-04-29T08:44:17] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-04-29T08:44:17 #9)
 [2026-04-29T21:40:56] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-29T21:40:56 #10)
+[2026-04-29T17:43:51] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-04-29T17:43:51 #11)
