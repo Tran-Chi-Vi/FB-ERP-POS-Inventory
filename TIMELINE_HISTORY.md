@@ -5729,3 +5729,4 @@
 [2026-04-29T21:40:56] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-29T21:40:56 #10)
 [2026-04-29T17:43:51] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-04-29T17:43:51 #11)
 [2026-04-29T11:25:36] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-29T11:25:36 #12)
+[2026-04-29T20:16:41] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-29T20:16:41 #13)
