@@ -5723,3 +5723,4 @@
 [2026-04-29T15:10:38] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-29T15:10:38 #4)
 [2026-04-29T15:00:29] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-29T15:00:29 #5)
 [2026-04-29T11:18:32] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-29T11:18:32 #6)
+[2026-04-29T09:40:09] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-29T09:40:09 #7)
