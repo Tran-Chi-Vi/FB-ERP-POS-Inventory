@@ -858,3 +858,4 @@
 [2026-04-30T10:54:27] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-30T10:54:27 #4)
 [2026-04-30T15:25:04] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-30T15:25:04 #5)
 [2026-04-30T15:20:18] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-30T15:20:18 #6)
+[2026-04-30T14:56:20] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-30T14:56:20 #7)
