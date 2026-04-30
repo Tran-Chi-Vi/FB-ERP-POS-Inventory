@@ -854,3 +854,4 @@
 [2026-04-28T14:58:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-28T14:58:19 #15)
 [2026-04-30T15:13:25] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-30T15:13:25 #1)
 [2026-04-30T08:28:54] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-30T08:28:54 #2)
+[2026-04-30T18:39:31] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-30T18:39:31 #3)
