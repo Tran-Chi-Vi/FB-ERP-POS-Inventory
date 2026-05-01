@@ -5716,6 +5716,7 @@
 [2026-04-28T16:15:43] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-28T16:15:43 #13)
 [2026-04-28T16:54:53] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-04-28T16:54:53 #14)
 [2026-04-28T14:58:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-04-28T14:58:19 #15)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-04-29T13:33:27] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-29T13:33:27 #1)
 [2026-04-29T17:27:32] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-04-29T17:27:32 #2)
@@ -5733,3 +5734,14 @@
 [2026-04-29T14:49:50] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-29T14:49:50 #14)
 [2026-04-29T17:06:24] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-04-29T17:06:24 #15)
 [2026-04-29T16:25:54] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-04-29T16:25:54 #16)
+=======
+[2026-04-30T15:13:25] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-04-30T15:13:25 #1)
+[2026-04-30T08:28:54] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-04-30T08:28:54 #2)
+[2026-04-30T18:39:31] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-04-30T18:39:31 #3)
+[2026-04-30T10:54:27] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-04-30T10:54:27 #4)
+[2026-04-30T15:25:04] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-04-30T15:25:04 #5)
+[2026-04-30T15:20:18] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-30T15:20:18 #6)
+[2026-04-30T14:56:20] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-30T14:56:20 #7)
+[2026-04-30T16:46:09] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-30T16:46:09 #8)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-01T12:55:32] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-01T12:55:32 #1)
