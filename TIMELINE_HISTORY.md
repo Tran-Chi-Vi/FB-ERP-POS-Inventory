@@ -5748,3 +5748,4 @@
 [2026-05-01T12:56:00] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-01T12:56:00 #2)
 [2026-05-01T10:43:01] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-01T10:43:01 #3)
 [2026-05-01T08:19:54] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-01T08:19:54 #4)
+[2026-05-01T08:15:48] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-01T08:15:48 #5)
