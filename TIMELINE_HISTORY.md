@@ -875,3 +875,4 @@
 [2026-05-02T14:40:08] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-02T14:40:08 #13)
 [2026-05-02T16:18:28] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-02T16:18:28 #14)
 [2026-05-02T21:24:09] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-02T21:24:09 #15)
+[2026-05-02T19:13:01] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-02T19:13:01 #16)
