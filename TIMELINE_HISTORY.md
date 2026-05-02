@@ -874,3 +874,4 @@
 [2026-05-02T20:22:26] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-02T20:22:26 #12)
 [2026-05-02T14:40:08] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-02T14:40:08 #13)
 [2026-05-02T16:18:28] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-02T16:18:28 #14)
+[2026-05-02T21:24:09] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-02T21:24:09 #15)
