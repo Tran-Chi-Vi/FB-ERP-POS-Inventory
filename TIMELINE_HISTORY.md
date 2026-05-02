@@ -866,3 +866,4 @@
 [2026-05-02T17:53:07] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-02T17:53:07 #4)
 [2026-05-02T16:43:37] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-02T16:43:37 #5)
 [2026-05-02T21:38:43] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-02T21:38:43 #6)
+[2026-05-02T17:14:00] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-02T17:14:00 #7)
