@@ -867,3 +867,4 @@
 [2026-05-02T16:43:37] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-02T16:43:37 #5)
 [2026-05-02T21:38:43] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-02T21:38:43 #6)
 [2026-05-02T17:14:00] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-02T17:14:00 #7)
+[2026-05-02T18:38:41] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-02T18:38:41 #8)
