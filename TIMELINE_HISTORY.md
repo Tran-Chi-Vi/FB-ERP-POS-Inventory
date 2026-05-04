@@ -5777,3 +5777,4 @@
 [2026-05-04T20:18:31] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-04T20:18:31 #5)
 [2026-05-04T11:26:42] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-04T11:26:42 #6)
 [2026-05-04T18:11:51] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-04T18:11:51 #7)
+[2026-05-04T16:55:00] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-04T16:55:00 #8)
