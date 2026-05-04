@@ -5743,6 +5743,7 @@
 [2026-04-30T15:20:18] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-04-30T15:20:18 #6)
 [2026-04-30T14:56:20] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-04-30T14:56:20 #7)
 [2026-04-30T16:46:09] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-04-30T16:46:09 #8)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-01T12:55:32] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-01T12:55:32 #1)
 [2026-05-01T12:56:00] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-01T12:56:00 #2)
@@ -5750,3 +5751,23 @@
 [2026-05-01T08:19:54] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-01T08:19:54 #4)
 [2026-05-01T08:15:48] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-01T08:15:48 #5)
 [2026-05-01T09:00:35] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-01T09:00:35 #6)
+=======
+[2026-05-02T09:58:58] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-02T09:58:58 #1)
+[2026-05-02T13:44:18] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-02T13:44:18 #2)
+[2026-05-02T09:32:21] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-02T09:32:21 #3)
+[2026-05-02T17:53:07] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-02T17:53:07 #4)
+[2026-05-02T16:43:37] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-02T16:43:37 #5)
+[2026-05-02T21:38:43] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-02T21:38:43 #6)
+[2026-05-02T17:14:00] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-02T17:14:00 #7)
+[2026-05-02T18:38:41] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-02T18:38:41 #8)
+[2026-05-02T14:22:44] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-02T14:22:44 #9)
+[2026-05-02T08:00:44] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-02T08:00:44 #10)
+[2026-05-02T11:04:15] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-02T11:04:15 #11)
+[2026-05-02T20:22:26] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-02T20:22:26 #12)
+[2026-05-02T14:40:08] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-02T14:40:08 #13)
+[2026-05-02T16:18:28] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-02T16:18:28 #14)
+[2026-05-02T21:24:09] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-02T21:24:09 #15)
+[2026-05-02T19:13:01] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-02T19:13:01 #16)
+[2026-05-02T16:00:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-02T16:00:41 #17)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-04T21:41:28] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-04T21:41:28 #1)
