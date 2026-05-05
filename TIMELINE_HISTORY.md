@@ -880,3 +880,4 @@
 [2026-05-05T20:20:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T20:20:11 #1)
 [2026-05-05T11:27:03] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-05T11:27:03 #2)
 [2026-05-05T13:59:50] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T13:59:50 #3)
+[2026-05-05T21:38:42] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-05T21:38:42 #4)
