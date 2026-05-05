@@ -882,3 +882,4 @@
 [2026-05-05T13:59:50] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T13:59:50 #3)
 [2026-05-05T21:38:42] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-05T21:38:42 #4)
 [2026-05-05T17:39:09] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-05T17:39:09 #5)
+[2026-05-05T09:48:03] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-05T09:48:03 #6)
