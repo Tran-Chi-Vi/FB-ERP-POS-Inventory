@@ -879,3 +879,4 @@
 [2026-05-02T16:00:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-02T16:00:41 #17)
 [2026-05-05T20:20:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T20:20:11 #1)
 [2026-05-05T11:27:03] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-05T11:27:03 #2)
+[2026-05-05T13:59:50] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T13:59:50 #3)
