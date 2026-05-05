@@ -877,3 +877,4 @@
 [2026-05-02T21:24:09] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-02T21:24:09 #15)
 [2026-05-02T19:13:01] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-02T19:13:01 #16)
 [2026-05-02T16:00:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-02T16:00:41 #17)
+[2026-05-05T20:20:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T20:20:11 #1)
