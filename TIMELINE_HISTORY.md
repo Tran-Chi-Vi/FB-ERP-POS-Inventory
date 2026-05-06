@@ -5803,3 +5803,4 @@
 [2026-05-05T14:23:40] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-05T14:23:40 #9)
 >>>>>>> feat/system-integration-superpowers
 [2026-05-06T19:02:44] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-06T19:02:44 #1)
+[2026-05-06T19:19:56] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-06T19:19:56 #2)
