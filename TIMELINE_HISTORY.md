@@ -5807,3 +5807,4 @@
 [2026-05-06T15:59:31] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-06T15:59:31 #3)
 [2026-05-06T20:48:34] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-06T20:48:34 #4)
 [2026-05-06T11:18:12] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-06T11:18:12 #5)
+[2026-05-06T20:05:16] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-06T20:05:16 #6)
