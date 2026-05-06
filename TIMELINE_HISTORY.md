@@ -5769,6 +5769,7 @@
 [2026-05-02T21:24:09] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-02T21:24:09 #15)
 [2026-05-02T19:13:01] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-02T19:13:01 #16)
 [2026-05-02T16:00:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-02T16:00:41 #17)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-04T21:41:28] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-04T21:41:28 #1)
 [2026-05-04T14:43:27] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-04T14:43:27 #2)
@@ -5790,3 +5791,15 @@
 [2026-05-04T20:08:10] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-04T20:08:10 #18)
 [2026-05-04T20:05:46] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-04T20:05:46 #19)
 [2026-05-04T13:32:23] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-04T13:32:23 #20)
+=======
+[2026-05-05T20:20:11] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T20:20:11 #1)
+[2026-05-05T11:27:03] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-05T11:27:03 #2)
+[2026-05-05T13:59:50] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-05T13:59:50 #3)
+[2026-05-05T21:38:42] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-05T21:38:42 #4)
+[2026-05-05T17:39:09] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-05T17:39:09 #5)
+[2026-05-05T09:48:03] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-05T09:48:03 #6)
+[2026-05-05T14:10:25] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-05T14:10:25 #7)
+[2026-05-05T11:49:22] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-05T11:49:22 #8)
+[2026-05-05T14:23:40] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-05T14:23:40 #9)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-06T19:02:44] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-06T19:02:44 #1)
