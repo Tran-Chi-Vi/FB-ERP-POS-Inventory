@@ -5832,3 +5832,4 @@
 [2026-05-08T19:14:56] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-08T19:14:56 #5)
 [2026-05-08T16:27:17] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-08T16:27:17 #6)
 [2026-05-08T10:22:33] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-08T10:22:33 #7)
+[2026-05-08T21:28:37] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-08T21:28:37 #8)
