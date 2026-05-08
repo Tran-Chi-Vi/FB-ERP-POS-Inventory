@@ -5834,3 +5834,4 @@
 [2026-05-08T10:22:33] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-08T10:22:33 #7)
 [2026-05-08T21:28:37] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-08T21:28:37 #8)
 [2026-05-08T10:42:53] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-05-08T10:42:53 #9)
+[2026-05-08T10:35:21] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-08T10:35:21 #10)
