@@ -891,3 +891,4 @@
 [2026-05-07T15:33:36] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-07T15:33:36 #3)
 [2026-05-07T13:33:05] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-07T13:33:05 #4)
 [2026-05-07T17:09:18] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-07T17:09:18 #5)
+[2026-05-09T18:05:08] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-09T18:05:08 #1)
