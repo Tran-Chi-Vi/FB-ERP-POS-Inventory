@@ -5824,6 +5824,7 @@
 [2026-05-07T15:33:36] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-07T15:33:36 #3)
 [2026-05-07T13:33:05] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-07T13:33:05 #4)
 [2026-05-07T17:09:18] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-07T17:09:18 #5)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-08T20:07:30] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-08T20:07:30 #1)
 [2026-05-08T14:01:17] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-08T14:01:17 #2)
@@ -5835,3 +5836,13 @@
 [2026-05-08T21:28:37] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-08T21:28:37 #8)
 [2026-05-08T10:42:53] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-05-08T10:42:53 #9)
 [2026-05-08T10:35:21] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-08T10:35:21 #10)
+=======
+[2026-05-09T18:05:08] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-09T18:05:08 #1)
+[2026-05-09T20:35:37] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-09T20:35:37 #2)
+[2026-05-09T20:04:17] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-09T20:04:17 #3)
+[2026-05-09T21:53:44] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-05-09T21:53:44 #4)
+[2026-05-09T19:00:34] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-09T19:00:34 #5)
+[2026-05-09T20:01:39] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-09T20:01:39 #6)
+[2026-05-09T20:33:46] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-05-09T20:33:46 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-11T11:26:57] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-11T11:26:57 #1)
