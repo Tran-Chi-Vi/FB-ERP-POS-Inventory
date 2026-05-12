@@ -905,3 +905,4 @@
 [2026-05-12T21:11:36] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-12T21:11:36 #5)
 [2026-05-12T21:25:04] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-12T21:25:04 #6)
 [2026-05-12T10:59:57] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-12T10:59:57 #7)
+[2026-05-12T10:46:30] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-12T10:46:30 #8)
