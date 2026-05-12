@@ -910,3 +910,4 @@
 [2026-05-12T20:26:29] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-12T20:26:29 #10)
 [2026-05-12T16:50:42] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-12T16:50:42 #11)
 [2026-05-12T09:01:19] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-12T09:01:19 #12)
+[2026-05-12T14:45:53] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-12T14:45:53 #13)
