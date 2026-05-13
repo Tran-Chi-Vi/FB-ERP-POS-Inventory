@@ -5880,3 +5880,4 @@
 [2026-05-13T20:53:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-13T20:53:56 #2)
 [2026-05-13T12:26:13] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-13T12:26:13 #3)
 [2026-05-13T14:21:48] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-13T14:21:48 #4)
+[2026-05-13T10:41:17] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-13T10:41:17 #5)
