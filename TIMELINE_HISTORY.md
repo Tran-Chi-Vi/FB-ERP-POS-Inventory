@@ -5879,3 +5879,4 @@
 [2026-05-13T19:50:29] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-13T19:50:29 #1)
 [2026-05-13T20:53:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-13T20:53:56 #2)
 [2026-05-13T12:26:13] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-13T12:26:13 #3)
+[2026-05-13T14:21:48] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-13T14:21:48 #4)
