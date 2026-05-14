@@ -917,3 +917,4 @@
 [2026-05-14T12:04:18] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-14T12:04:18 #3)
 [2026-05-14T15:38:24] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-14T15:38:24 #4)
 [2026-05-14T11:31:09] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-14T11:31:09 #5)
+[2026-05-14T08:17:19] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-14T08:17:19 #6)
