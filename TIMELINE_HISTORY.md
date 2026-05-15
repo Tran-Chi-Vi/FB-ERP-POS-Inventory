@@ -5875,6 +5875,7 @@
 [2026-05-12T09:01:19] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-12T09:01:19 #12)
 [2026-05-12T14:45:53] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-12T14:45:53 #13)
 [2026-05-12T21:21:06] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-12T21:21:06 #14)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-13T19:50:29] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-13T19:50:29 #1)
 [2026-05-13T20:53:56] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-13T20:53:56 #2)
@@ -5882,3 +5883,17 @@
 [2026-05-13T14:21:48] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-13T14:21:48 #4)
 [2026-05-13T10:41:17] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-13T10:41:17 #5)
 [2026-05-13T17:15:20] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-13T17:15:20 #6)
+=======
+[2026-05-14T09:10:09] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-14T09:10:09 #1)
+[2026-05-14T10:50:44] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-14T10:50:44 #2)
+[2026-05-14T12:04:18] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-14T12:04:18 #3)
+[2026-05-14T15:38:24] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-14T15:38:24 #4)
+[2026-05-14T11:31:09] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-14T11:31:09 #5)
+[2026-05-14T08:17:19] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-14T08:17:19 #6)
+[2026-05-14T11:44:26] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-14T11:44:26 #7)
+[2026-05-14T12:08:45] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-14T12:08:45 #8)
+[2026-05-14T10:16:26] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-14T10:16:26 #9)
+[2026-05-14T18:36:41] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-14T18:36:41 #10)
+[2026-05-14T19:17:56] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-14T19:17:56 #11)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-15T12:59:47] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-15T12:59:47 #1)
