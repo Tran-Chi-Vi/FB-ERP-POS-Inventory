@@ -5900,3 +5900,4 @@
 [2026-05-15T08:25:21] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-15T08:25:21 #2)
 [2026-05-15T08:10:57] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-15T08:10:57 #3)
 [2026-05-15T18:59:08] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-15T18:59:08 #4)
+[2026-05-15T19:37:59] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-15T19:37:59 #5)
