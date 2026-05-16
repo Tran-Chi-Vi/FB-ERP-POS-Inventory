@@ -923,3 +923,4 @@
 [2026-05-14T10:16:26] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-14T10:16:26 #9)
 [2026-05-14T18:36:41] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-14T18:36:41 #10)
 [2026-05-14T19:17:56] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-14T19:17:56 #11)
+[2026-05-16T09:57:17] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-16T09:57:17 #1)
