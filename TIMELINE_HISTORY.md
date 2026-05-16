@@ -924,3 +924,4 @@
 [2026-05-14T18:36:41] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-14T18:36:41 #10)
 [2026-05-14T19:17:56] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-14T19:17:56 #11)
 [2026-05-16T09:57:17] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-16T09:57:17 #1)
+[2026-05-16T18:30:53] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-16T18:30:53 #2)
