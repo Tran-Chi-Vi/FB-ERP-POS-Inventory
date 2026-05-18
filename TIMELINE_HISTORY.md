@@ -5895,6 +5895,7 @@
 [2026-05-14T10:16:26] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-14T10:16:26 #9)
 [2026-05-14T18:36:41] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-14T18:36:41 #10)
 [2026-05-14T19:17:56] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-14T19:17:56 #11)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-15T12:59:47] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-15T12:59:47 #1)
 [2026-05-15T08:25:21] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-15T08:25:21 #2)
@@ -5908,3 +5909,15 @@
 [2026-05-15T16:28:19] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-15T16:28:19 #10)
 [2026-05-15T16:30:48] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-15T16:30:48 #11)
 [2026-05-15T09:49:51] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-15T09:49:51 #12)
+=======
+[2026-05-16T09:57:17] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-16T09:57:17 #1)
+[2026-05-16T18:30:53] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-16T18:30:53 #2)
+[2026-05-16T16:32:19] [feat/system-integration-superpowers] feat(impeccable): add pbakaus/impeccable GSAP design tokens and micro-interactions (Day 2026-05-16T16:32:19 #3)
+[2026-05-16T17:03:40] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-16T17:03:40 #4)
+[2026-05-16T15:21:05] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-16T15:21:05 #5)
+[2026-05-16T11:40:13] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-16T11:40:13 #6)
+[2026-05-16T13:12:06] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-16T13:12:06 #7)
+[2026-05-16T21:00:44] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-16T21:00:44 #8)
+[2026-05-16T13:42:49] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-16T13:42:49 #9)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-18T13:15:50] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-18T13:15:50 #1)
