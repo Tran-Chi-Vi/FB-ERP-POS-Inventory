@@ -5922,3 +5922,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-05-18T13:15:50] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-18T13:15:50 #1)
 [2026-05-18T18:18:46] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-18T18:18:46 #2)
+[2026-05-18T14:40:51] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-18T14:40:51 #3)
