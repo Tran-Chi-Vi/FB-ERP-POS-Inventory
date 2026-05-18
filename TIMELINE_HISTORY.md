@@ -5921,3 +5921,4 @@
 [2026-05-16T13:42:49] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-16T13:42:49 #9)
 >>>>>>> feat/system-integration-superpowers
 [2026-05-18T13:15:50] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-18T13:15:50 #1)
+[2026-05-18T18:18:46] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-18T18:18:46 #2)
