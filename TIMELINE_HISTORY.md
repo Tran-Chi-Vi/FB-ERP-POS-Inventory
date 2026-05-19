@@ -938,3 +938,4 @@
 [2026-05-19T17:27:43] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-19T17:27:43 #4)
 [2026-05-19T09:12:03] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-19T09:12:03 #5)
 [2026-05-19T20:24:26] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-19T20:24:26 #6)
+[2026-05-19T19:23:29] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-19T19:23:29 #7)
