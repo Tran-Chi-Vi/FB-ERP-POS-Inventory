@@ -941,3 +941,4 @@
 [2026-05-19T19:23:29] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-19T19:23:29 #7)
 [2026-05-19T18:13:58] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-19T18:13:58 #8)
 [2026-05-19T21:49:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-19T21:49:19 #9)
+[2026-05-19T11:49:45] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-19T11:49:45 #10)
