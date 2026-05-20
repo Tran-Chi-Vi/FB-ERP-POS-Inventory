@@ -5919,6 +5919,7 @@
 [2026-05-16T13:12:06] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-16T13:12:06 #7)
 [2026-05-16T21:00:44] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-16T21:00:44 #8)
 [2026-05-16T13:42:49] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-16T13:42:49 #9)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-18T13:15:50] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-18T13:15:50 #1)
 [2026-05-18T18:18:46] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-18T18:18:46 #2)
@@ -5930,3 +5931,20 @@
 [2026-05-18T14:28:32] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-18T14:28:32 #8)
 [2026-05-18T09:31:28] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-18T09:31:28 #9)
 [2026-05-18T14:55:38] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-18T14:55:38 #10)
+=======
+[2026-05-19T18:26:16] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-19T18:26:16 #1)
+[2026-05-19T20:26:56] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-19T20:26:56 #2)
+[2026-05-19T16:54:36] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-19T16:54:36 #3)
+[2026-05-19T17:27:43] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-19T17:27:43 #4)
+[2026-05-19T09:12:03] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-19T09:12:03 #5)
+[2026-05-19T20:24:26] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-19T20:24:26 #6)
+[2026-05-19T19:23:29] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-19T19:23:29 #7)
+[2026-05-19T18:13:58] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-19T18:13:58 #8)
+[2026-05-19T21:49:19] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-19T21:49:19 #9)
+[2026-05-19T11:49:45] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-19T11:49:45 #10)
+[2026-05-19T15:32:22] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-19T15:32:22 #11)
+[2026-05-19T13:19:53] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-19T13:19:53 #12)
+[2026-05-19T11:14:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-19T11:14:07 #13)
+[2026-05-19T14:18:29] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-19T14:18:29 #14)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-20T08:47:18] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-20T08:47:18 #1)
