@@ -5948,3 +5948,4 @@
 [2026-05-19T14:18:29] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-19T14:18:29 #14)
 >>>>>>> feat/system-integration-superpowers
 [2026-05-20T08:47:18] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-20T08:47:18 #1)
+[2026-05-20T19:46:04] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-20T19:46:04 #2)
