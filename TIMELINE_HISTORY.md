@@ -5956,3 +5956,4 @@
 [2026-05-20T10:42:15] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-20T10:42:15 #7)
 [2026-05-20T21:42:07] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-20T21:42:07 #8)
 [2026-05-20T19:45:20] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-20T19:45:20 #9)
+[2026-05-20T17:01:48] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-20T17:01:48 #10)
