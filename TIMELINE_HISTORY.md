@@ -5946,6 +5946,7 @@
 [2026-05-19T13:19:53] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-19T13:19:53 #12)
 [2026-05-19T11:14:07] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-19T11:14:07 #13)
 [2026-05-19T14:18:29] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-19T14:18:29 #14)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-20T08:47:18] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-20T08:47:18 #1)
 [2026-05-20T19:46:04] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-20T19:46:04 #2)
@@ -5960,3 +5961,13 @@
 [2026-05-20T21:38:12] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-20T21:38:12 #11)
 [2026-05-20T19:42:16] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-20T19:42:16 #12)
 [2026-05-20T08:21:15] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-20T08:21:15 #13)
+=======
+[2026-05-21T18:21:44] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-21T18:21:44 #1)
+[2026-05-21T19:46:45] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-21T19:46:45 #2)
+[2026-05-21T19:06:01] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-21T19:06:01 #3)
+[2026-05-21T09:37:48] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-21T09:37:48 #4)
+[2026-05-21T09:12:40] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-21T09:12:40 #5)
+[2026-05-21T16:55:51] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-21T16:55:51 #6)
+[2026-05-21T12:44:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-21T12:44:52 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-22T15:31:58] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-22T15:31:58 #1)
