@@ -5971,3 +5971,4 @@
 [2026-05-21T12:44:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-21T12:44:52 #7)
 >>>>>>> feat/system-integration-superpowers
 [2026-05-22T15:31:58] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-22T15:31:58 #1)
+[2026-05-22T20:45:55] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-22T20:45:55 #2)
