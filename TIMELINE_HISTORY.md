@@ -5981,3 +5981,4 @@
 [2026-05-22T15:09:41] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-22T15:09:41 #9)
 [2026-05-22T21:29:45] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-22T21:29:45 #10)
 [2026-05-22T14:05:16] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-22T14:05:16 #11)
+[2026-05-22T08:37:02] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-22T08:37:02 #12)
