@@ -955,3 +955,4 @@
 [2026-05-21T12:44:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-21T12:44:52 #7)
 [2026-05-23T11:12:29] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-23T11:12:29 #1)
 [2026-05-23T10:12:51] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-23T10:12:51 #2)
+[2026-05-23T14:55:32] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-23T14:55:32 #3)
