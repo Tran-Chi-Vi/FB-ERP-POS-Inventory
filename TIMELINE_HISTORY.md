@@ -958,3 +958,4 @@
 [2026-05-23T14:55:32] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-23T14:55:32 #3)
 [2026-05-23T11:24:10] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-23T11:24:10 #4)
 [2026-05-23T21:42:49] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-23T21:42:49 #5)
+[2026-05-23T13:25:43] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-23T13:25:43 #6)
