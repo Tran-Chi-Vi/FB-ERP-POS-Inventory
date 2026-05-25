@@ -5996,3 +5996,4 @@
 [2026-05-25T09:16:47] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-25T09:16:47 #1)
 [2026-05-25T21:37:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-25T21:37:55 #2)
 [2026-05-25T19:20:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-25T19:20:30 #3)
+[2026-05-25T16:48:54] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-25T16:48:54 #4)
