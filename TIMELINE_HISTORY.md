@@ -5994,3 +5994,4 @@
 [2026-05-23T17:22:08] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-23T17:22:08 #7)
 >>>>>>> feat/system-integration-superpowers
 [2026-05-25T09:16:47] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-25T09:16:47 #1)
+[2026-05-25T21:37:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-25T21:37:55 #2)
