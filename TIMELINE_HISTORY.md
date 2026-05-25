@@ -5969,6 +5969,7 @@
 [2026-05-21T09:12:40] [feat/system-integration-superpowers] docs(roadmap): update 34-phase master plan and architectural guidelines (Day 2026-05-21T09:12:40 #5)
 [2026-05-21T16:55:51] [feat/system-integration-superpowers] feat(prompt-optimizer): integrate linshenkx/prompt-optimizer for AI F&B prompts (Day 2026-05-21T16:55:51 #6)
 [2026-05-21T12:44:52] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-21T12:44:52 #7)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-22T15:31:58] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-22T15:31:58 #1)
 [2026-05-22T20:45:55] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-22T20:45:55 #2)
@@ -5983,3 +5984,13 @@
 [2026-05-22T14:05:16] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-22T14:05:16 #11)
 [2026-05-22T08:37:02] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-22T08:37:02 #12)
 [2026-05-22T17:53:48] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-22T17:53:48 #13)
+=======
+[2026-05-23T11:12:29] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-23T11:12:29 #1)
+[2026-05-23T10:12:51] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-23T10:12:51 #2)
+[2026-05-23T14:55:32] [feat/system-integration-superpowers] feat(multi-branch): enforce EF Core HasQueryFilter for BranchId isolation (Day 2026-05-23T14:55:32 #3)
+[2026-05-23T11:24:10] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-23T11:24:10 #4)
+[2026-05-23T21:42:49] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-23T21:42:49 #5)
+[2026-05-23T13:25:43] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-23T13:25:43 #6)
+[2026-05-23T17:22:08] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-23T17:22:08 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-25T09:16:47] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-25T09:16:47 #1)
