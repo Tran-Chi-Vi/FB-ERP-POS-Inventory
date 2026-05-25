@@ -5995,3 +5995,4 @@
 >>>>>>> feat/system-integration-superpowers
 [2026-05-25T09:16:47] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-25T09:16:47 #1)
 [2026-05-25T21:37:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-25T21:37:55 #2)
+[2026-05-25T19:20:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-25T19:20:30 #3)
