@@ -6009,3 +6009,4 @@
 [2026-05-26T18:51:11] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-26T18:51:11 #5)
 >>>>>>> feat/system-integration-superpowers
 [2026-05-27T08:31:00] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-27T08:31:00 #1)
+[2026-05-27T21:57:34] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-27T21:57:34 #2)
