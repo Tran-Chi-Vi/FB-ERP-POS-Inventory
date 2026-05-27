@@ -6015,3 +6015,4 @@
 [2026-05-27T18:51:18] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-27T18:51:18 #5)
 [2026-05-27T12:54:41] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-27T12:54:41 #6)
 [2026-05-27T11:03:13] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-27T11:03:13 #7)
+[2026-05-27T21:50:06] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-27T21:50:06 #8)
