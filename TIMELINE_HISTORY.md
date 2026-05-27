@@ -5992,6 +5992,7 @@
 [2026-05-23T21:42:49] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-23T21:42:49 #5)
 [2026-05-23T13:25:43] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-23T13:25:43 #6)
 [2026-05-23T17:22:08] [feat/system-integration-superpowers] feat(inventory): implement append-only ledger transaction architecture (Day 2026-05-23T17:22:08 #7)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-25T09:16:47] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-25T09:16:47 #1)
 [2026-05-25T21:37:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-25T21:37:55 #2)
@@ -6000,3 +6001,11 @@
 [2026-05-25T13:09:01] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-25T13:09:01 #5)
 [2026-05-25T08:38:06] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-25T08:38:06 #6)
 [2026-05-25T20:58:23] [feat/system-integration-superpowers] feat(delivery): integrate GrabFood and ShopeeFood menu sync API (Day 2026-05-25T20:58:23 #7)
+=======
+[2026-05-26T19:19:13] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-26T19:19:13 #1)
+[2026-05-26T20:15:49] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-26T20:15:49 #2)
+[2026-05-26T15:30:27] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-26T15:30:27 #3)
+[2026-05-26T09:25:36] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-26T09:25:36 #4)
+[2026-05-26T18:51:11] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-26T18:51:11 #5)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-27T08:31:00] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-27T08:31:00 #1)
