@@ -6007,6 +6007,7 @@
 [2026-05-26T15:30:27] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-26T15:30:27 #3)
 [2026-05-26T09:25:36] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-26T09:25:36 #4)
 [2026-05-26T18:51:11] [feat/system-integration-superpowers] feat(einvoice): add e-invoice compliance according to Decree 123/2020 (Day 2026-05-26T18:51:11 #5)
+<<<<<<< HEAD
 >>>>>>> feat/system-integration-superpowers
 [2026-05-27T08:31:00] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-27T08:31:00 #1)
 [2026-05-27T21:57:34] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-27T21:57:34 #2)
@@ -6020,3 +6021,13 @@
 [2026-05-27T08:19:59] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-27T08:19:59 #10)
 [2026-05-27T19:16:37] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-27T19:16:37 #11)
 [2026-05-27T12:34:31] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-27T12:34:31 #12)
+=======
+[2026-05-28T12:38:08] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-28T12:38:08 #1)
+[2026-05-28T08:19:11] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-28T08:19:11 #2)
+[2026-05-28T21:56:33] [feat/system-integration-superpowers] feat(payroll): automated payroll lock engine and payslip generator (Day 2026-05-28T21:56:33 #3)
+[2026-05-28T17:19:27] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-28T17:19:27 #4)
+[2026-05-28T12:32:03] [feat/system-integration-superpowers] feat(payment): add HMAC-SHA256 signature verification for payment webhooks (Day 2026-05-28T12:32:03 #5)
+[2026-05-28T21:51:04] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-28T21:51:04 #6)
+[2026-05-28T19:49:26] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-28T19:49:26 #7)
+>>>>>>> feat/system-integration-superpowers
+[2026-05-29T10:44:30] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-29T10:44:30 #1)
