@@ -6040,3 +6040,4 @@
 [2026-05-29T09:33:55] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-29T09:33:55 #8)
 [2026-05-29T10:12:24] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-29T10:12:24 #9)
 [2026-05-29T17:54:39] [feat/system-integration-superpowers] feat(skills): integrate mattpocock/skills and karpathy-skills standards (Day 2026-05-29T17:54:39 #10)
+[2026-05-29T14:18:06] [feat/system-integration-superpowers] test(concurrency): add pessimistic and optimistic row version concurrency tests (Day 2026-05-29T14:18:06 #11)
