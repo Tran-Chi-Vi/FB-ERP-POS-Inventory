@@ -980,3 +980,4 @@
 [2026-05-30T11:23:26] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-30T11:23:26 #6)
 [2026-05-30T08:28:46] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-30T08:28:46 #7)
 [2026-05-30T08:12:09] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-30T08:12:09 #8)
+[2026-05-30T13:44:26] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-30T13:44:26 #9)
