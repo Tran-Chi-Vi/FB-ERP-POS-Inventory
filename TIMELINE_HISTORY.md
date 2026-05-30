@@ -986,3 +986,4 @@
 [2026-05-30T18:56:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-30T18:56:30 #12)
 [2026-05-30T16:32:33] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-30T16:32:33 #13)
 [2026-05-30T12:52:47] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-30T12:52:47 #14)
+[2026-05-30T11:25:04] [feat/system-integration-superpowers] refactor(clean-code): optimize domain entities according to Karpathy guidelines (Day 2026-05-30T11:25:04 #15)
