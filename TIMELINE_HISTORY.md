@@ -984,3 +984,4 @@
 [2026-05-30T16:36:29] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-30T16:36:29 #10)
 [2026-05-30T08:42:58] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-30T08:42:58 #11)
 [2026-05-30T18:56:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-30T18:56:30 #12)
+[2026-05-30T16:32:33] [feat/system-integration-superpowers] fix(pos-offline): resolve IndexedDB sync revision conflict upon reconnection (Day 2026-05-30T16:32:33 #13)
