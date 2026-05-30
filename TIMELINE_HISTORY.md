@@ -983,3 +983,4 @@
 [2026-05-30T13:44:26] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-30T13:44:26 #9)
 [2026-05-30T16:36:29] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-30T16:36:29 #10)
 [2026-05-30T08:42:58] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-30T08:42:58 #11)
+[2026-05-30T18:56:30] [feat/system-integration-superpowers] feat(catalog): add topping matrix and multi-unit conversions (Day 2026-05-30T18:56:30 #12)
