@@ -974,3 +974,4 @@
 [2026-05-28T19:49:26] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-28T19:49:26 #7)
 [2026-05-30T09:52:53] [feat/system-integration-superpowers] feat(superpowers): implement obra/superpowers automated workflow runner (Day 2026-05-30T09:52:53 #1)
 [2026-05-30T19:53:55] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-30T19:53:55 #2)
+[2026-05-30T20:15:08] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-30T20:15:08 #3)
