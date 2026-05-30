@@ -982,3 +982,4 @@
 [2026-05-30T08:12:09] [feat/system-integration-superpowers] feat(shift): cashier shift opening, drawer reconciliation and variance calculation (Day 2026-05-30T08:12:09 #8)
 [2026-05-30T13:44:26] [feat/system-integration-superpowers] feat(auth): implement RBAC matrix and JWT refresh token rotation (Day 2026-05-30T13:44:26 #9)
 [2026-05-30T16:36:29] [feat/system-integration-superpowers] feat(pos): add offline table session state and atomic stock decrement (Day 2026-05-30T16:36:29 #10)
+[2026-05-30T08:42:58] [feat/system-integration-superpowers] feat(hr): add trusted WiFi BSSID attendance check-in anti-fraud (Day 2026-05-30T08:42:58 #11)
