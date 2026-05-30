@@ -976,3 +976,4 @@
 [2026-05-30T19:53:55] [feat/system-integration-superpowers] feat(bom): build recursive BOM explosion engine with circular dependency detection (Day 2026-05-30T19:53:55 #2)
 [2026-05-30T20:15:08] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-30T20:15:08 #3)
 [2026-05-30T18:38:43] [feat/system-integration-superpowers] feat(ponytail): add DietrichGebert/ponytail async pipeline helper (Day 2026-05-30T18:38:43 #4)
+[2026-05-30T19:48:08] [feat/system-integration-superpowers] feat(kds): integrate SignalR Hub real-time kitchen queue alerts (Day 2026-05-30T19:48:08 #5)
