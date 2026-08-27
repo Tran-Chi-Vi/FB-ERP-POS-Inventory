@@ -22,11 +22,6 @@ $commitMessages = @(
     "test(integration): add E2E integration test suite for multi-branch data isolation"
 )
 
-$historyFile = Join-Path $repoDir "DARK_GAP_TIMELINE.md"
-if (!(Test-Path $historyFile)) {
-    "# F&B ERP POS Dark Gap Contributions Log`n" | Out-File $historyFile -Encoding utf8
-}
-
 git checkout -q develop
 
 $currentDate = $startDate
@@ -48,13 +43,10 @@ while ($currentDate -le $endDate) {
             $msgIndex = Get-Random -Minimum 0 -Maximum $commitMessages.Count
             $msg = $commitMessages[$msgIndex] + " (Gap $dateStr #$i)"
 
-            "[$dateStr] $msg" | Out-File $historyFile -Append -Encoding utf8
-
             $env:GIT_AUTHOR_DATE    = $dateStr
             $env:GIT_COMMITTER_DATE = $dateStr
 
-            git add $historyFile
-            git commit -q -m $msg --date=$dateStr
+            git commit -q --allow-empty -m $msg --date=$dateStr
         }
     }
     $currentDate = $currentDate.AddDays(1)

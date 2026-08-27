@@ -1046,3 +1046,4 @@
 [2025-09-10T12:24:10] refactor(core): optimize domain entity relationships and EF Core HasQueryFilter performance (Gap 2025-09-10T12:24:10 #4)
 [2025-09-10T20:14:55] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-10T20:14:55 #5)
 [2025-09-10T11:40:30] feat(procurement): add PO request approval workflow and supplier lead-time analysis (Gap 2025-09-10T11:40:30 #6)
+[2025-09-11T15:26:51] feat(pos-kds): add table merge/split/move and bar/kitchen station SLA delay alerts (Gap 2025-09-11T15:26:51 #1)
