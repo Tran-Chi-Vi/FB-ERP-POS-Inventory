@@ -1,4 +1,5 @@
 using F_B_ERP_POS_Inventory.Application.Services;
+using F_B_ERP_POS_Inventory.BackgroundServices;
 using F_B_ERP_POS_Inventory.Hubs;
 using F_B_ERP_POS_Inventory.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +23,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseInMemoryDatabase("FbErpPosDb");
 });
 
-// Register Application & Domain Services (Integrating 6 GitHub Repositories)
+// Register Application & Domain Services (Integrating 6 GitHub Repositories + WebBanQuanAo Intelligence)
 builder.Services.AddScoped<InventoryLedgerService>();
 builder.Services.AddScoped<BomEngineService>();
 builder.Services.AddScoped<PosService>();
@@ -30,6 +31,14 @@ builder.Services.AddScoped<PromptOptimizerService>();
 builder.Services.AddScoped<SkillsEngineService>();
 builder.Services.AddScoped<SuperpowerWorkflowEngine>();
 builder.Services.AddSingleton<ImpeccableDesignService>();
+
+// WebBanQuanAo Data Mining & Recommendation Services
+builder.Services.AddScoped<AprioriService>();
+builder.Services.AddScoped<RecommendationService>();
+
+// Hosted Background Services
+builder.Services.AddHostedService<OrderAutoCancelBackgroundService>();
+builder.Services.AddHostedService<WeeklyChurnWinBackBackgroundService>();
 
 // SignalR Realtime Hubs
 builder.Services.AddSignalR();
@@ -54,6 +63,6 @@ app.MapControllers();
 app.MapHub<PosHub>("/hubs/pos");
 app.MapHub<KdsHub>("/hubs/kds");
 
-app.MapGet("/", () => "F&B ERP + POS + Inventory Engine with SignalR & AI Prompt/Skills System is Running!");
+app.MapGet("/", () => "F&B ERP + POS + Inventory Engine with Apriori AI & Background Workers is Running!");
 
 app.Run();

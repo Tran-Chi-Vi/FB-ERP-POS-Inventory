@@ -25,6 +25,8 @@ namespace F_B_ERP_POS_Inventory.Infrastructure.Persistence
         public DbSet<AuditLog> AuditLogs => Set<AuditLog>();
         public DbSet<PromptSkill> PromptSkills => Set<PromptSkill>();
         public DbSet<SuperpowerTask> SuperpowerTasks => Set<SuperpowerTask>();
+        public DbSet<AssociationRule> AssociationRules => Set<AssociationRule>();
+        public DbSet<UserBehaviorLog> UserBehaviorLogs => Set<UserBehaviorLog>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -44,6 +46,8 @@ namespace F_B_ERP_POS_Inventory.Infrastructure.Persistence
             modelBuilder.Entity<Order>().HasQueryFilter(o => CurrentBranchId == Guid.Empty || o.BranchId == CurrentBranchId);
             modelBuilder.Entity<CashierShift>().HasQueryFilter(s => CurrentBranchId == Guid.Empty || s.BranchId == CurrentBranchId);
             modelBuilder.Entity<AuditLog>().HasQueryFilter(a => CurrentBranchId == Guid.Empty || a.BranchId == CurrentBranchId);
+            modelBuilder.Entity<AssociationRule>().HasQueryFilter(r => CurrentBranchId == Guid.Empty || r.BranchId == CurrentBranchId);
+            modelBuilder.Entity<UserBehaviorLog>().HasQueryFilter(l => CurrentBranchId == Guid.Empty || l.BranchId == CurrentBranchId);
         }
     }
 }
