@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\F\u0026B-ERP-POS-Inventory\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0670088-FB29-460D-9561-162E6BA7385C}|F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory.csproj|d:\\f\u0026b-erp-pos-inventory\\f\u0026b-erp-pos-inventory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0670088-FB29-460D-9561-162E6BA7385C}|F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory.csproj|solutionrelative:f\u0026b-erp-pos-inventory\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0670088-FB29-460D-9561-162E6BA7385C}|F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory.csproj|d:\\f\u0026b-erp-pos-inventory\\f\u0026b-erp-pos-inventory\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B0670088-FB29-460D-9561-162E6BA7385C}|F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory.csproj|solutionrelative:f\u0026b-erp-pos-inventory\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory\\appsettings.json",
+              "RelativeDocumentMoniker": "F\u0026B-ERP-POS-Inventory\\appsettings.json",
+              "ToolTip": "D:\\F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory\\appsettings.json",
+              "RelativeToolTip": "F\u0026B-ERP-POS-Inventory\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-27T20:45:43.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "F\u0026B-ERP-POS-Inventory\\appsettings.Development.json",
+              "ToolTip": "D:\\F\u0026B-ERP-POS-Inventory\\F\u0026B-ERP-POS-Inventory\\appsettings.Development.json",
+              "RelativeToolTip": "F\u0026B-ERP-POS-Inventory\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-27T20:45:40.56Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -27,6 +27,9 @@ namespace F_B_ERP_POS_Inventory.Infrastructure.Persistence
         public DbSet<SuperpowerTask> SuperpowerTasks => Set<SuperpowerTask>();
         public DbSet<AssociationRule> AssociationRules => Set<AssociationRule>();
         public DbSet<UserBehaviorLog> UserBehaviorLogs => Set<UserBehaviorLog>();
+        public DbSet<Employee> Employees => Set<Employee>();
+        public DbSet<Attendance> Attendances => Set<Attendance>();
+        public DbSet<PayrollRecord> PayrollRecords => Set<PayrollRecord>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -48,6 +51,9 @@ namespace F_B_ERP_POS_Inventory.Infrastructure.Persistence
             modelBuilder.Entity<AuditLog>().HasQueryFilter(a => CurrentBranchId == Guid.Empty || a.BranchId == CurrentBranchId);
             modelBuilder.Entity<AssociationRule>().HasQueryFilter(r => CurrentBranchId == Guid.Empty || r.BranchId == CurrentBranchId);
             modelBuilder.Entity<UserBehaviorLog>().HasQueryFilter(l => CurrentBranchId == Guid.Empty || l.BranchId == CurrentBranchId);
+            modelBuilder.Entity<Employee>().HasQueryFilter(e => CurrentBranchId == Guid.Empty || e.BranchId == CurrentBranchId);
+            modelBuilder.Entity<Attendance>().HasQueryFilter(a => CurrentBranchId == Guid.Empty || a.BranchId == CurrentBranchId);
+            modelBuilder.Entity<PayrollRecord>().HasQueryFilter(p => CurrentBranchId == Guid.Empty || p.BranchId == CurrentBranchId);
         }
     }
 }
