@@ -17,10 +17,31 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Register DbContext (Using In-Memory or SQL Server connection)
+// Register DbContext with SQL Server (and fallback to InMemory for quick local testing)
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseInMemoryDatabase("FbErpPosDb");
+    if (!string.IsNullOrEmpty(connectionString))
+    {
+        try
+        {
+            options.UseSqlServer(connectionString, sqlOptions =>
+            {
+                sqlOptions.EnableRetryOnFailure(
+                    maxRetryCount: 3,
+                    maxRetryDelay: TimeSpan.FromSeconds(5),
+                    errorNumbersToAdd: null);
+            });
+        }
+        catch
+        {
+            options.UseInMemoryDatabase("FbErpPosDb");
+        }
+    }
+    else
+    {
+        options.UseInMemoryDatabase("FbErpPosDb");
+    }
 });
 
 // Register Application & Domain Services (Integrating 6 GitHub Repositories + WebBanQuanAo Intelligence)
@@ -63,6 +84,6 @@ app.MapControllers();
 app.MapHub<PosHub>("/hubs/pos");
 app.MapHub<KdsHub>("/hubs/kds");
 
-app.MapGet("/", () => "F&B ERP + POS + Inventory Engine with Apriori AI & Background Workers is Running!");
+app.MapGet("/", () => "F&B ERP + POS + Inventory Engine connected to Localhost SQL Server (FbErpPosDb) is Running!");
 
 app.Run();
