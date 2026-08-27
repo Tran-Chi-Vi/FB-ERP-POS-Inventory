@@ -22,9 +22,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
-        Title = "F&B ERP POS Inventory Engine API",
+        Title = "F&B ERP POS Inventory Super-App Engine API",
         Version = "v1",
-        Description = "API cho hệ thống F&B ERP + POS + Inventory tích hợp 6 Repos GitHub, Apriori AI & Quản Lý Nhân Sự (HR)"
+        Description = "API cho Siêu Ứng Dụng F&B ERP + POS + Inventory + CRM + BI Analytics + 6 Repos GitHub"
     });
 });
 
@@ -55,7 +55,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     }
 });
 
-// Register Application & Domain Services (6 GitHub Repos + WebBanQuanAo + HR)
+// Register Application & Domain Services
 builder.Services.AddScoped<InventoryLedgerService>();
 builder.Services.AddScoped<BomEngineService>();
 builder.Services.AddScoped<PosService>();
@@ -64,6 +64,8 @@ builder.Services.AddScoped<SkillsEngineService>();
 builder.Services.AddScoped<SuperpowerWorkflowEngine>();
 builder.Services.AddSingleton<ImpeccableDesignService>();
 builder.Services.AddScoped<HrManagementService>();
+builder.Services.AddScoped<CrmService>();
+builder.Services.AddScoped<BiAnalyticsService>();
 
 // WebBanQuanAo Data Mining & Recommendation Services
 builder.Services.AddScoped<AprioriService>();
