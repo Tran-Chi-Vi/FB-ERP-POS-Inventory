@@ -1,5 +1,6 @@
 using F_B_ERP_POS_Inventory.Application.Services;
 using F_B_ERP_POS_Inventory.BackgroundServices;
+using F_B_ERP_POS_Inventory.Domain.Entities;
 using F_B_ERP_POS_Inventory.Hubs;
 using F_B_ERP_POS_Inventory.Infrastructure.Persistence;
 using F_B_ERP_POS_Inventory.Middleware;
@@ -29,7 +30,7 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Register DbContext with SQL Server (and fallback to InMemory)
+// Register DbContext with SQL Server instance DESKTOP-JE3MPP4\ViDay
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -91,6 +92,40 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
+
+// Ensure Database & Tables are Created on SQL Server DESKTOP-JE3MPP4\ViDay with seed data
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var dbContext = services.GetRequiredService<AppDbContext>();
+        dbContext.Database.EnsureCreated();
+
+        // Seed Users across 8 roles if empty
+        if (!dbContext.Users.Any())
+        {
+            var defaultBranchId = Guid.NewGuid();
+            var seedUsers = new[]
+            {
+                new User { Username = "superadmin", FullName = "Nguyễn Văn Quảng", Email = "superadmin@fnb.com", Role = "SuperAdmin", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                new User { Username = "admin", FullName = "Trần Chí Vĩ", Email = "admin@fnb.com", Role = "Admin", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                new User { Username = "manager1", FullName = "Lê Hoàng Phúc", Email = "manager1@fnb.com", Role = "Manager", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                new User { Username = "warehouse1", FullName = "Phạm Quốc Bảo", Email = "warehouse1@fnb.com", Role = "Warehouse", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                new User { Username = "cashier1", FullName = "Nguyễn Thị Mai", Email = "cashier1@fnb.com", Role = "Cashier", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                new User { Username = "kitchen1", FullName = "Đặng Văn Lâm", Email = "kitchen1@fnb.com", Role = "Kitchen", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                new User { Username = "staff1", FullName = "Trần Thanh Tâm", Email = "staff1@fnb.com", Role = "Staff", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                new User { Username = "customer1", FullName = "Nguyễn Văn A", Email = "customer1@fnb.com", Role = "Customer", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." }
+            };
+            dbContext.Users.AddRange(seedUsers);
+            dbContext.SaveChanges();
+        }
+    }
+    catch (Exception ex)
+    {
+        Log.Warning("Automated SQL Server initialization notice: {Message}", ex.Message);
+    }
+}
 
 app.UseSerilogRequestLogging();
 app.UseCors("AllowReactApp");
