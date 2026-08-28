@@ -3,7 +3,13 @@ import gsap from 'gsap';
 import './styles/impeccable-theme.css';
 import { Sidebar } from './components/Sidebar';
 import { LoginPage } from './pages/auth/LoginPage';
-import { UserManagementPage } from './pages/admin/UserManagementPage';
+import { CustomerQrPage } from './pages/customer/CustomerQrPage';
+import { StaffRunnerPage } from './pages/staff/StaffRunnerPage';
+import { KdsKitchenPage } from './pages/kitchen/KdsKitchenPage';
+import { WarehousePage } from './pages/inventory/WarehousePage';
+import { ManagerOperationsPage } from './pages/manager/ManagerOperationsPage';
+import { AdminErpPage } from './pages/admin/AdminErpPage';
+import { SuperAdminConsolePage } from './pages/superadmin/SuperAdminConsolePage';
 
 interface Product {
   id: string;
@@ -34,7 +40,7 @@ export const App: React.FC = () => {
 
   const handleLoginSuccess = (user: { fullName: string; role: string }) => {
     setCurrentUser(user);
-    // Automatically route user to their dedicated role UI
+    // Route user to their dedicated role UI per RACI matrix
     switch (user.role) {
       case 'Kitchen':
         setActiveTab('kds');
@@ -52,6 +58,8 @@ export const App: React.FC = () => {
         setActiveTab('manager-dash');
         break;
       case 'Admin':
+        setActiveTab('users');
+        break;
       case 'SuperAdmin':
         setActiveTab('users');
         break;
@@ -102,7 +110,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      {/* LEFT VERTICAL SIDEBAR NAVIGATION (STRICT ROLE ISOLATED, NO EMOJI ICONS) */}
+      {/* LEFT VERTICAL SIDEBAR (STRICT ISOLATION, NO EMOJIS) */}
       <Sidebar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -112,52 +120,16 @@ export const App: React.FC = () => {
 
       {/* MAIN CONTENT WRAPPER */}
       <main className="main-wrapper" ref={mainRef}>
-        {/* 1. KITCHEN UI (Role: Kitchen) - NO PRICES / NO REVENUE */}
-        {activeTab === 'kds' && (
-          <div className="card">
-            <h2>KDS Kitchen Screen (Màn Hình Điều Phối Bếp)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
-              Dành riêng cho Đầu bếp & Pha chế. Chữ to, đếm giây SLA, tuyệt đối KHÔNG có giá tiền hay doanh thu.
-            </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', marginTop: '1.25rem' }}>
-              <div style={{ padding: '1.25rem', backgroundColor: '#0f172a', borderRadius: '0.5rem', borderLeft: '4px solid #f59e0b' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <h3 style={{ fontSize: '1.2rem' }}>Bàn 01 - Đơn #ORD-102</h3>
-                  <span style={{ color: '#f59e0b', fontWeight: 'bold' }}>03:45 SLA</span>
-                </div>
-                <ul style={{ margin: '1rem 0', fontSize: '1.1rem', lineHeight: '1.8' }}>
-                  <li>2x Cà Phê Sữa Đá (Đường 50%, Đá 100%)</li>
-                  <li>1x Bánh Croissant Bơ</li>
-                </ul>
-                <div style={{ display: 'flex', gap: '0.5rem' }}>
-                  <button className="btn-primary" style={{ padding: '0.5rem 1rem' }}>Xác Nhận Nấu</button>
-                  <button style={{ padding: '0.5rem 1rem', background: '#f43f5e', color: '#fff', border: 'none', borderRadius: '0.375rem', cursor: 'pointer', fontWeight: 'bold' }}>Báo Hết Món (86 List)</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* ROLE 1: CUSTOMER UI */}
+        {activeTab === 'customer-qr' && <CustomerQrPage />}
 
-        {/* 2. STAFF RUNNER UI (Role: Staff) */}
-        {activeTab === 'staff-runner' && (
-          <div className="card">
-            <h2>Staff Runner App (Phục Vụ Bàn & Gọi Món)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
-              Dành cho nhân viên chạy bàn. Xem tiến độ món trong bếp và trả món ra bàn. Không thu tiền hoặc sửa tồn kho.
-            </p>
-            <div style={{ marginTop: '1.25rem' }}>
-              <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', marginBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <h3 style={{ color: '#10b981' }}>Bàn 01 - Món Đã Xong (Ready to Serve)</h3>
-                  <p style={{ color: '#cbd5e1', marginTop: '0.25rem' }}>2x Cà Phê Sữa Đá -&gt; Trạm Bar 01</p>
-                </div>
-                <button className="btn-primary" style={{ width: 'auto', padding: '0.5rem 1.25rem' }}>Đã Phục Vụ (Served)</button>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* ROLE 2: STAFF UI */}
+        {activeTab === 'staff-runner' && <StaffRunnerPage />}
 
-        {/* 3. CASHIER UI (Role: Cashier) */}
+        {/* ROLE 3: KITCHEN UI */}
+        {activeTab === 'kds' && <KdsKitchenPage />}
+
+        {/* ROLE 4: CASHIER TOUCH POS UI */}
         {activeTab === 'pos' && (
           <div className="pos-layout">
             <div className="category-menu">
@@ -233,7 +205,7 @@ export const App: React.FC = () => {
                     style={{ marginTop: '1rem' }}
                     onClick={() => alert('Thanh toán thành công! Tự động trừ kho theo công thức BOM và phát hành HĐĐT.')}
                   >
-                    Thanh Toán VietQR / Tiền Mặt
+                    Thanh Toán VietQR / Tiền Mặt (Idempotency UUID)
                   </button>
                 </div>
               )}
@@ -241,141 +213,17 @@ export const App: React.FC = () => {
           </div>
         )}
 
-        {/* 4. WAREHOUSE UI (Role: Warehouse) */}
-        {activeTab === 'inventory' && (
-          <div className="card">
-            <h2>WMS Desktop (Quản Lý Kho & Lô Date FEFO)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Dành riêng cho Thủ kho. Quản lý PO, nhập kho, kiểm kê và theo dõi lô date FEFO.</p>
-            <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1.25rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid #334155', color: '#10b981', textAlign: 'left' }}>
-                  <th style={{ padding: '0.75rem' }}>Tên Nguyên Liệu</th>
-                  <th style={{ padding: '0.75rem' }}>Số Lượng Tồn</th>
-                  <th style={{ padding: '0.75rem' }}>Mã Lô Hạn Dùng</th>
-                  <th style={{ padding: '0.75rem' }}>Quy Tắc FEFO</th>
-                  <th style={{ padding: '0.75rem' }}>Thao Tác</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid #334155' }}>
-                  <td style={{ padding: '0.75rem' }}>Hạt Cà Phê Robusta</td>
-                  <td style={{ padding: '0.75rem' }}>50,000 g</td>
-                  <td style={{ padding: '0.75rem', color: '#38bdf8' }}>L01 (HSD: 2027-01-15)</td>
-                  <td style={{ padding: '0.75rem', color: '#10b981', fontWeight: 'bold' }}>Ưu tiên xuất trước</td>
-                  <td style={{ padding: '0.75rem' }}>
-                    <button className="btn-primary" style={{ padding: '0.3rem 0.75rem', fontSize: '0.8rem' }}>Tạo Phiếu Kiểm Kê</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        )}
+        {/* ROLE 5: WAREHOUSE UI */}
+        {activeTab === 'inventory' && <WarehousePage />}
 
-        {/* 5. MANAGER OPERATIONS VIEW (Role: Manager) */}
-        {activeTab === 'manager-dash' && (
-          <div>
-            <div className="card">
-              <h2>Manager Operations Dashboard (Giao Diện Giám Sát Ca Quản Lý)</h2>
-              <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
-                Cửa sổ kiểm soát chi nhánh: Soi thu ngân (chênh lệch ca), soi bếp (SLA nghẽn), soi kho (cận date).
-              </p>
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.25rem' }}>
-                <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem' }}>
-                  <h3>Soi Ca Thu Ngân (Dual-Blind Shift Audit)</h3>
-                  <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Két thu ngân ca sáng: Khai báo 5,000,000 đ | Thực tế: 4,980,000 đ</p>
-                  <span style={{ color: '#f43f5e', fontWeight: 'bold' }}>Lệch: -20,000 đ</span>
-                </div>
-                <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem' }}>
-                  <h3>Soi Nghẽn Bếp (Kitchen SLA Bottleneck)</h3>
-                  <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Trạm Bar 01: 0 đơn quá SLA | Bếp Nóng: 1 đơn quá 10 phút</p>
-                  <span style={{ color: '#10b981', fontWeight: 'bold' }}>Vận hành bình thường</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* ROLE 6: STORE MANAGER OPERATIONS UI */}
+        {(activeTab === 'manager-dash' || activeTab === 'manager-void') && <ManagerOperationsPage />}
 
-        {activeTab === 'manager-void' && (
-          <div className="card">
-            <h2>Duyệt Khẩn Cấp (Emergency Void & Discount Approvals)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Thẩm quyền sinh sát: Duyệt hủy món sau khi gửi bếp, duyệt bồi hoàn và xuất hủy kho.</p>
-            <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <div>
-                <h3>Yêu Cầu Hủy Món #ORD-102 (Thu Ngân: Nguyễn Thị Mai)</h3>
-                <p style={{ color: '#94a3b8' }}>Món: 1x Trà Đào Cam Sả | Lý do: Khách đổi ý sang Cà Phê</p>
-              </div>
-              <div style={{ display: 'flex', gap: '0.5rem' }}>
-                <button className="btn-primary" style={{ padding: '0.5rem 1rem' }}>Duyệt Hủy Món</button>
-                <button style={{ padding: '0.5rem 1rem', background: '#334155', color: '#fff', border: 'none', borderRadius: '0.375rem', cursor: 'pointer' }}>Từ Chối</button>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* ROLE 7: BRAND ADMIN ERP UI */}
+        {(activeTab === 'users' || activeTab === 'catalog-bom' || activeTab === 'finance-payroll' || activeTab === 'bi-reports') && currentUser.role === 'Admin' && <AdminErpPage />}
 
-        {/* 6. USER MANAGEMENT (Role: Admin & SuperAdmin) */}
-        {activeTab === 'users' && <UserManagementPage />}
-
-        {/* ADMIN ERP PANEL (Role: Admin) */}
-        {activeTab === 'catalog-bom' && (
-          <div className="card">
-            <h2>Cấu Hình Menu Master Data & Công Thức Định Lượng BOM</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Cài đặt công thức pha chế đa tầng (BOM Engine) và ma trận Topping.</p>
-            <ul style={{ lineHeight: '2', marginTop: '1rem' }}>
-              <li>☕ <strong>1 ly Cà Phê Sữa Đá BOM:</strong> 30ml Cà Phê cốt + 40ml Sữa đặc + 150g Đá viên.</li>
-              <li>🍰 <strong>1 bánh Tiramisu BOM:</strong> 50g Bột Mì + 30g Bơ + 20g Phô mai Mascarpone.</li>
-            </ul>
-          </div>
-        )}
-
-        {activeTab === 'finance-payroll' && (
-          <div className="card">
-            <h2>ERP Tài Chính, Khóa Sổ Lương & Hạch Toán P&L</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Phê duyệt bảng lương tháng và khóa sổ chống chỉnh sửa trực tiếp.</p>
-            <button className="btn-primary" style={{ width: 'auto', padding: '0.6rem 1.25rem', marginTop: '1rem' }}>
-              Khóa Sổ Bảng Lương Tháng Hiện Tại
-            </button>
-          </div>
-        )}
-
-        {/* 7. SUPERADMIN CONSOLE (Role: SuperAdmin) */}
-        {activeTab === 'branch-admin' && (
-          <div className="card">
-            <h2>System Console - Quản Lý Đa Chi Nhánh Hợp Nhất</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Quản lý chi nhánh trực thuộc & chi nhánh nhượng quyền (Franchise).</p>
-            <ul style={{ lineHeight: '2', marginTop: '1rem' }}>
-              <li>📍 <strong>Chi nhánh Q1 (Trực thuộc):</strong> Doanh thu hôm nay: 45,200,000 đ</li>
-              <li>📍 <strong>Chi nhánh Q7 (Franchise):</strong> Doanh thu hôm nay: 38,100,000 đ (Trích 5% phí bản quyền)</li>
-            </ul>
-          </div>
-        )}
-
-        {activeTab === 'audit-log' && (
-          <div className="card">
-            <h2>Centralized Audit Log (Nhật Ký Kiểm Toán Toàn Chuỗi)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Xem vết mọi hành động nhạy cảm toàn hệ thống có dấu thời gian nguyên tử.</p>
-            <ul style={{ lineHeight: '2', marginTop: '1rem', fontSize: '0.9rem', color: '#cbd5e1' }}>
-              <li>[2026-08-28 20:15:02] [ADMIN] [Trần Chí Vĩ] Tạo tài khoản mới 'manager1' role Manager.</li>
-              <li>[2026-08-28 20:20:11] [MANAGER] [Lê Hoàng Phúc] Duyệt hủy món ORD-102.</li>
-            </ul>
-          </div>
-        )}
-
-        {/* 8. CUSTOMER UI (Role: Customer) */}
-        {activeTab === 'customer-qr' && (
-          <div className="card">
-            <h2>Thực Đơn Điện Tử Dynamic QR (Giao Diện Khách Hàng)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Khách tự chọn món tại bàn, tùy biến đường/đá và gửi đơn trực tiếp vào bếp.</p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
-              {products.map((p) => (
-                <div key={p.id} style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', border: '1px solid #334155' }}>
-                  <h4>{p.name}</h4>
-                  <p style={{ color: '#10b981', fontWeight: 'bold', marginTop: '0.5rem' }}>{p.price.toLocaleString('vi-VN')} đ</p>
-                  <button className="btn-primary" style={{ padding: '0.3rem', fontSize: '0.8rem', marginTop: '0.5rem' }}>Thêm Vào Đơn</button>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+        {/* ROLE 8: SUPERADMIN CONSOLE UI */}
+        {(activeTab === 'users' || activeTab === 'branch-admin' || activeTab === 'audit-log' || activeTab === 'system-console') && currentUser.role === 'SuperAdmin' && <SuperAdminConsolePage />}
       </main>
     </div>
   );
