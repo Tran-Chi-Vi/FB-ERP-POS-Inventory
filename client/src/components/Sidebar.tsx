@@ -64,6 +64,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
             <>
               <NavItem active={activeTab === 'pos'} onClick={() => onTabChange('pos')} label="Màn Hình Thu Ngân Bán Hàng" />
               <NavItem active={activeTab === 'cashier-pending'} onClick={() => onTabChange('cashier-pending')} label="Hàng Đợi Đơn QR Chờ Xác Nhận" />
+              <NavItem active={activeTab === 'cashier-pagers'} onClick={() => onTabChange('cashier-pagers')} label="Quản Lý & Thu Hồi Thẻ Rung IoT" />
               <NavItem active={activeTab === 'cashier-shift'} onClick={() => onTabChange('cashier-shift')} label="Giao Ca & Kiểm Tiền Két" />
               <NavItem active={activeTab === 'cashier-orders'} onClick={() => onTabChange('cashier-orders')} label="Lịch Sử Hóa Đơn & In Vé" />
             </>
@@ -73,6 +74,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
           {role === 'Staff' && (
             <>
               <NavItem active={activeTab === 'staff-runner'} onClick={() => onTabChange('staff-runner')} label="Danh Sách Phục Vụ Trả Món" />
+              <NavItem active={activeTab === 'cashier-pagers'} onClick={() => onTabChange('cashier-pagers')} label="Quản Lý & Thu Hồi Thẻ Rung IoT" />
               <NavItem active={activeTab === 'staff-tables'} onClick={() => onTabChange('staff-tables')} label="Sơ Đồ Bàn & Trạng Thái" />
               <NavItem active={activeTab === 'staff-attendance'} onClick={() => onTabChange('staff-attendance')} label="Chấm Công Mạng Nội Bộ" />
             </>
@@ -175,3 +177,5 @@ const NavItem: React.FC<{ active: boolean; onClick: () => void; label: string }>
     {label}
   </button>
 );
+
+export default Sidebar;

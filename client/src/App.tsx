@@ -62,6 +62,9 @@ export const App: React.FC = () => {
   const [pendingBills, setPendingBills] = useState<PendingBill[]>([]);
   const [selectedPagerMap, setSelectedPagerMap] = useState<{ [billCode: string]: string }>({});
 
+  // BARCODE SCANNER SEARCH INPUT FOR PAGER RETURN PAGE
+  const [pagerScanInput, setPagerScanInput] = useState<string>('');
+
   const [paidInvoices, setPaidInvoices] = useState<PaidInvoice[]>(() => {
     const saved = localStorage.getItem('fnb_paid_invoices');
     return saved ? JSON.parse(saved) : [
@@ -121,7 +124,13 @@ export const App: React.FC = () => {
 
   // DYNAMIC TABLE OCCUPANCY & HOLD STATUS MAP
   const activeKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-  const busyPagersMap: { [pagerId: string]: { table: string; orderNo: string; ticketId: string } } = {};
+  
+  // ALL PAGERS CURRENTLY ASSIGNED & NOT RETURNED (FOR DISABLING IN POS SELECT DROPDOWNS)
+  const allBusyPagersMap: { [pagerId: string]: { table: string; orderNo: string } } = {};
+  
+  // PAGERS WHERE KITCHEN HAS CLICKED "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)" -> ELIGIBLE FOR RETURN IN CASHIER-PAGERS!
+  const rungReadyPagersMap: { [pagerId: string]: { table: string; orderNo: string; ticketId: string } } = {};
+  
   const tableStatusMap: { [table: string]: { status: 'Free' | 'PendingHold' | 'Occupied'; expiresAt?: number; billCode?: string } } = {};
 
   const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
@@ -129,7 +138,12 @@ export const App: React.FC = () => {
 
   activeKdsTickets.forEach((t: any) => {
     if (t.pagerId && !t.pagerReturned) {
-      busyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo, ticketId: t.id };
+      allBusyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo };
+      
+      // ONLY SHOW IN RETURN HUB IF KITCHEN HAS RUNG THE PAGER (isRungReady === true)!
+      if (t.isRungReady) {
+        rungReadyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo, ticketId: t.id };
+      }
     }
     if (t.table) tableStatusMap[t.table] = { status: 'Occupied' };
   });
@@ -146,7 +160,7 @@ export const App: React.FC = () => {
     const activeTicket = activeKdsTickets.find((t: any) => t.table === targetTable && !t.pagerReturned);
     if (activeTicket && activeTicket.pagerId) return activeTicket.pagerId;
 
-    const free = allPagers.find(p => !busyPagersMap[p]);
+    const free = allPagers.find(p => !allBusyPagersMap[p]);
     return free || 'PAGER-01';
   };
 
@@ -168,7 +182,22 @@ export const App: React.FC = () => {
 
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ THU HỒI THẺ RUNG IOT "${pagerIdToReturn}" THÀNH CÔNG!\nThẻ đã sẵn sàng trả về khay để cấp cho khách hàng tiếp theo.`);
+    alert(`ĐÃ QUÉT / THU HỒI THẺ RUNG IOT "${pagerIdToReturn}" THÀNH CÔNG!\nThẻ đã rảnh và sẵn sàng giao cho khách tiếp theo.`);
+  };
+
+  // ACTION: HANDLE BARCODE SCAN SUBMIT
+  const handleBarcodeScanSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const cleanId = pagerScanInput.trim().toUpperCase();
+    if (!cleanId) return;
+
+    if (rungReadyPagersMap[cleanId] || allBusyPagersMap[cleanId]) {
+      handleReturnIotPager(cleanId);
+      setPagerScanInput('');
+    } else {
+      alert(`Mã Thẻ IoT "${cleanId}" hiện đang ở trạng thái RẢNH (Không cần thu hồi).`);
+      setPagerScanInput('');
+    }
   };
 
   // CLEAR TABLE & RELEASE OCCUPANCY ACTION FOR CASHIER
@@ -310,6 +339,7 @@ export const App: React.FC = () => {
         orderNo: `${activeTicket.orderNo} + ${invoiceId}`,
         isAddOn: true,
         isAddOnNoticePending: true,
+        isRungReady: false, // Reset rung status so new item gets cooked
         items: [...activeTicket.items, ...newItemsFormatted]
       };
     } else {
@@ -324,6 +354,7 @@ export const App: React.FC = () => {
         slaStatus: 'Normal',
         isAddOn: isAddOnOrder,
         isAddOnNoticePending: isAddOnOrder,
+        isRungReady: false,
         items: cart.map(c => ({
           id: c.product.id,
           name: c.product.name,
@@ -384,6 +415,7 @@ export const App: React.FC = () => {
         orderNo: `${activeTicket.orderNo} + ${bill.billCode}`,
         isAddOn: true,
         isAddOnNoticePending: true,
+        isRungReady: false,
         items: [...activeTicket.items, ...newItemsFormatted]
       };
     } else {
@@ -398,6 +430,7 @@ export const App: React.FC = () => {
         slaStatus: 'Normal',
         isAddOn: isPagerBusy,
         isAddOnNoticePending: isPagerBusy,
+        isRungReady: false,
         items: bill.items.map((b, idx) => ({
           id: idx.toString(),
           name: b.name,
@@ -427,7 +460,7 @@ export const App: React.FC = () => {
     return <LoginPage onLoginSuccess={handleLoginSuccess} />;
   }
 
-  const busyPagersList = Object.keys(busyPagersMap);
+  const rungReadyPagersList = Object.keys(rungReadyPagersMap);
 
   return (
     <div className="app-layout">
@@ -443,7 +476,68 @@ export const App: React.FC = () => {
         {(activeTab.startsWith('staff-')) && <StaffRunnerPage activeTab={activeTab} />}
         {(activeTab.startsWith('kds-')) && <KdsKitchenPage activeTab={activeTab} />}
 
-        {/* CASHIER PENDING QR QUEUE WITH 15-MINUTE COUNTDOWN TIMER */}
+        {/* DEDICATED SIDEBAR ITEM: IOT PAGERS RETURN & BARCODE SCANNER HUB */}
+        {activeTab === 'cashier-pagers' && (
+          <div className="card">
+            <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Quản Lý & Thu Hồi Thẻ Rung IoT Chi Nhánh</h2>
+            <p style={{ color: '#475569', marginTop: '0.25rem', marginBottom: '1.5rem' }}>Quét mã Barcode hoặc bấm xác nhận thu hồi Thẻ Rung IoT sau khi Bếp làm xong và khách đã lên nhận món.</p>
+
+            {/* BARCODE SCANNER INPUT FORM */}
+            <form onSubmit={handleBarcodeScanSubmit} style={{ background: '#F8FAFC', padding: '18px', borderRadius: '8px', border: '1px solid #E2E8F0', marginBottom: '24px', display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+              <div style={{ flex: 1, minWidth: '260px' }}>
+                <label style={{ fontSize: '12px', fontWeight: 'bold', color: '#0F172A', display: 'block', marginBottom: '4px' }}>
+                  Quét Mã Barcode Thẻ IoT Hoặc Nhập ID (Ví dụ: PAGER-01):
+                </label>
+                <input
+                  type="text"
+                  placeholder="Quét mã thẻ IoT tại đây..."
+                  value={pagerScanInput}
+                  onChange={(e) => setPagerScanInput(e.target.value)}
+                  style={{ width: '100%', padding: '10px 14px', border: '2px solid #2563EB', borderRadius: '6px', fontWeight: 'bold', fontSize: '15px' }}
+                />
+              </div>
+              <button type="submit" style={{ padding: '12px 24px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '14px', marginTop: '18px' }}>
+                Quét Mã Giải Phóng Thẻ
+              </button>
+            </form>
+
+            <h3 style={{ color: '#0F172A', fontWeight: 'bold', fontSize: '16px', marginBottom: '12px' }}>
+              DANH SÁCH THẺ RUNG ĐÃ BỐP CHUÔNG (BẾP LÀM XONG & CHỜ THU HỒI):
+            </h3>
+
+            {rungReadyPagersList.length === 0 ? (
+              <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
+                Hiện không có Thẻ Rung nào đang phát chuông chờ thu hồi. (Thẻ chỉ xuất hiện ở đây SAU KHU BẾP BẤM "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)").
+              </div>
+            ) : (
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px' }}>
+                {rungReadyPagersList.map(pId => {
+                  const info = rungReadyPagersMap[pId];
+                  return (
+                    <div key={pId} style={{ background: '#ECFDF5', border: '2px solid #059669', padding: '16px', borderRadius: '8px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '12px' }}>
+                      <div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                          <h4 style={{ margin: 0, color: '#059669', fontSize: '20px', fontWeight: 'bold' }}>{pId}</h4>
+                          <span style={{ background: '#DCFCE7', color: '#166534', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 'bold' }}>🔔 Đang phát chuông</span>
+                        </div>
+                        <div style={{ fontSize: '14px', color: '#0F172A', fontWeight: 'bold', marginTop: '6px' }}>Vị trí: {info.table}</div>
+                        <div style={{ fontSize: '12px', color: '#475569' }}>Mã Bill: {info.orderNo}</div>
+                      </div>
+                      <button
+                        onClick={() => handleReturnIotPager(pId)}
+                        style={{ width: '100%', padding: '10px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
+                      >
+                        ✓ XÁC NHẬN ĐÃ THU HỒI THẺ {pId}
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* CASHIER PENDING QR QUEUE WITH CLEAN BUTTON TEXT */}
         {activeTab === 'cashier-pending' && (
           <div className="card">
             <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Hàng Đợi Đơn QR Chờ Xác Nhận Thanh Toán & Gán Thẻ Rung IoT</h2>
@@ -488,10 +582,10 @@ export const App: React.FC = () => {
                             style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.9rem' }}
                           >
                             {allPagers.map(p => {
-                              const isBusy = !!busyPagersMap[p] && busyPagersMap[p].table !== b.table;
+                              const isBusy = !!allBusyPagersMap[p] && allBusyPagersMap[p].table !== b.table;
                               return (
                                 <option key={p} value={p} disabled={isBusy}>
-                                  {p} {isBusy ? `(Đang bận - ${busyPagersMap[p].table})` : '(Đang rảnh)'}
+                                  {p} {isBusy ? `(Đang bận - ${allBusyPagersMap[p].table})` : '(Đang rảnh)'}
                                 </option>
                               );
                             })}
@@ -502,7 +596,7 @@ export const App: React.FC = () => {
                           onClick={() => handlePayPendingBillWithIotPager(b)}
                           style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.9rem' }}
                         >
-                          Xác Nhận Đã Thanh Toán & Lưu CSDL Gửi Bếp
+                          Xác Nhận Đã Thanh Toán & Gán Thẻ Gửi Bếp
                         </button>
                       </div>
                     </div>
@@ -579,36 +673,6 @@ export const App: React.FC = () => {
                   })}
                 </div>
 
-                {/* IOT PAGER RETURN & RECOVERY CONTROL PANEL */}
-                <div style={{ background: '#FEF3C7', padding: '14px', borderRadius: '8px', border: '1px solid #FDE68A', marginTop: '12px' }}>
-                  <h4 style={{ margin: '0 0 8px 0', color: '#92400E', fontSize: '14px', fontWeight: 'bold' }}>
-                    📲 BẢNG THU HỒI THẺ RUNG IOT KHI KHÁCH ĐÃ NHẬN ĐỒ UỐNG:
-                  </h4>
-                  {busyPagersList.length === 0 ? (
-                    <div style={{ fontSize: '13px', color: '#78350F' }}>Hiện không có Thẻ Rung IoT nào đang bận. Tất cả thẻ đang ở trạng thái RẢNH.</div>
-                  ) : (
-                    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                      {busyPagersList.map(pId => {
-                        const info = busyPagersMap[pId];
-                        return (
-                          <div key={pId} style={{ background: '#FFFFFF', border: '1px solid #F59E0B', padding: '10px 14px', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                            <div>
-                              <strong style={{ color: '#D97706', fontSize: '14px' }}>{pId}</strong>
-                              <div style={{ fontSize: '12px', color: '#475569' }}>{info.table} | Bill: {info.orderNo}</div>
-                            </div>
-                            <button
-                              onClick={() => handleReturnIotPager(pId)}
-                              style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
-                            >
-                              ✓ XÁC NHẬN ĐÃ THU HỒI THẺ {pId}
-                            </button>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
-
                 {/* CLEAR / RELEASE TABLE ACTION BOX */}
                 {Object.keys(tableStatusMap).some(t => tableStatusMap[t].status !== 'Free') && (
                   <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0', marginTop: '12px' }}>
@@ -676,10 +740,10 @@ export const App: React.FC = () => {
                       style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '4px', fontWeight: 'bold', color: '#0F172A' }}
                     >
                       {allPagers.map(p => {
-                        const isBusy = !!busyPagersMap[p] && busyPagersMap[p].table !== selectedTable;
+                        const isBusy = !!allBusyPagersMap[p] && allBusyPagersMap[p].table !== selectedTable;
                         return (
                           <option key={p} value={p} disabled={isBusy}>
-                            {p} {isBusy ? `(Đang bận tại ${busyPagersMap[p].table})` : '(Đang rảnh)'}
+                            {p} {isBusy ? `(Đang bận tại ${allBusyPagersMap[p].table})` : '(Đang rảnh)'}
                           </option>
                         );
                       })}

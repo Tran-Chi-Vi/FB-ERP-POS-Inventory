@@ -22,6 +22,8 @@ interface KdsTicket {
   slaStatus: 'Normal' | 'Warning' | 'Overdue';
   isAddOn?: boolean;
   isAddOnNoticePending?: boolean;
+  isRungReady?: boolean;
+  pagerReturned?: boolean;
   items: TicketItem[];
 }
 
@@ -84,7 +86,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     const saved = localStorage.getItem('fnb_kds_tickets');
     if (saved) {
       const parsed: KdsTicket[] = JSON.parse(saved);
-      // ONLY trigger popup if there is a ticket with isAddOnNoticePending === true!
       const unacknowledgedAddOn = parsed.find(t => t.isAddOn && t.isAddOnNoticePending);
       if (unacknowledgedAddOn && !addOnNotice) {
         playAddOnSoundChime();
@@ -110,7 +111,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     if (!addOnNotice) return;
     const ticketIdToAck = addOnNotice.id;
 
-    // Mark isAddOnNoticePending = false so the modal NEVER pops up again!
     const updatedTickets = tickets.map(t => {
       if (t.id === ticketIdToAck) {
         return { ...t, isAddOnNoticePending: false };
@@ -124,12 +124,11 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     window.dispatchEvent(new Event('fnb_data_updated'));
   };
 
-  // 2. DYNAMIC SMART BATCH ALGORITHM: COMPUTE EXCLUSIVELY FROM UNCOMPLETED ACTIVE TICKETS!
+  // 2. DYNAMIC SMART BATCH ALGORITHM
   const computeSmartBatches = () => {
     const itemMap: { [dishName: string]: { totalQty: number; unit: string; tablesMap: { [tbl: string]: number } } } = {};
 
-    // Filter ONLY currently active, uncompleted tickets on KDS screen
-    tickets.forEach(ticket => {
+    tickets.filter(t => !t.isRungReady).forEach(ticket => {
       ticket.items.forEach(item => {
         if (!itemMap[item.name]) {
           const unit = item.name.toLowerCase().includes('bánh') ? 'Cái' : 'Ly';
@@ -140,7 +139,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       });
     });
 
-    // Lọc trùng lặp từ 2 món trở lên (>= 2)
     return Object.keys(itemMap)
       .filter(dishName => itemMap[dishName].totalQty >= 2)
       .map(dishName => {
@@ -166,7 +164,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setTickets(updatedTickets);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! Các món trong mẻ đã làm xong và tự động xóa khỏi danh sách gom mẻ.`);
+    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! các món trong mẻ đã làm xong và tự động xóa khỏi danh sách gom mẻ.`);
   };
 
   // 3. 86-LIST MATRIX
@@ -199,8 +197,15 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(slaHistory));
   }, [slaHistory]);
 
+  // WHEN KITCHEN CLICKS "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)", MARK isRungReady = true SO THẺ RUNG DISPATCHES TO CASHIER RECOVERY!
   const handleBumpAndSaveToHistory = (ticket: KdsTicket) => {
-    const updatedTickets = tickets.filter(t => t.id !== ticket.id);
+    const updatedTickets = tickets.map(t => {
+      if (t.id === ticket.id) {
+        return { ...t, isRungReady: true };
+      }
+      return t;
+    });
+
     setTickets(updatedTickets);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
@@ -238,7 +243,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setItems86(items86.map(i => i.id === id ? { ...i, is86Locked: !i.is86Locked } : i));
   };
 
-  const filteredTickets = tickets.filter(t => t.station === activeStation);
+  const filteredTickets = tickets.filter(t => t.station === activeStation && !t.pagerReturned);
 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
@@ -288,21 +293,27 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '20px' }}>
             {filteredTickets.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px', gridColumn: '1 / -1' }}>
-                Hiện chưa có vé chế biến nào (Vé chỉ xuất hiện sau khi Thu Ngân bấm xác nhận đã thanh toán tại quầy).
+                Hiện chưa có vé chế biến nào.
               </div>
             ) : (
               filteredTickets.map((t) => (
                 <div
                   key={t.id}
                   style={{
-                    background: '#FFFFFF',
-                    border: t.isAddOn ? '3px solid #DC2626' : t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
+                    background: t.isRungReady ? '#ECFDF5' : '#FFFFFF',
+                    border: t.isRungReady ? '3px solid #059669' : t.isAddOn ? '3px solid #DC2626' : t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
                     borderRadius: '8px',
                     padding: '18px',
                     boxShadow: t.isAddOn ? '0 0 12px rgba(220, 38, 38, 0.3)' : '0 2px 4px rgba(0,0,0,0.05)'
                   }}
                 >
-                  {t.isAddOn && (
+                  {t.isRungReady && (
+                    <div style={{ background: '#059669', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center' }}>
+                      🔔 ĐÃ RUNG THẺ IOT {t.pagerId} - CHỜ KHÁCH ĐẾN NHẬN MÓN
+                    </div>
+                  )}
+
+                  {t.isAddOn && !t.isRungReady && (
                     <div style={{ background: '#DC2626', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
                       🚨 VÉ GỘP CÓ MÓN MỚI BỔ SUNG (THẺ RUNG {t.pagerId})
                     </div>
@@ -356,9 +367,19 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                     </button>
                     <button
                       onClick={() => handleBumpAndSaveToHistory(t)}
-                      style={{ flex: 2, padding: '8px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
+                      style={{
+                        flex: 2,
+                        padding: '8px',
+                        background: t.isRungReady ? '#2563EB' : '#059669',
+                        color: '#fff',
+                        border: 'none',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontWeight: 'bold',
+                        fontSize: '13px'
+                      }}
                     >
-                      HOÀN TẤT CHẾ BIẾN (RUNG THẺ)
+                      {t.isRungReady ? 'RUNG LẠI THẺ IOT' : 'HOÀN TẤT CHẾ BIẾN (RUNG THẺ)'}
                     </button>
                   </div>
                 </div>
@@ -368,7 +389,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* 2. VIEW 2: DYNAMIC SMART BATCH COOKING MATRIX (COMPUTED EXCLUSIVELY FROM ACTIVE TICKETS) */}
+      {/* 2. VIEW 2: DYNAMIC SMART BATCH COOKING MATRIX */}
       {activeTab === 'kds-batch' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Gom Món Chế Biến Mẻ Lớn (Smart Batch View - Tối Thiểu 2 Món Lặp Nổi)</h2>
