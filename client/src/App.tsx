@@ -120,12 +120,13 @@ export const App: React.FC = () => {
 
   // GET ALL AVAILABLE PAGERS THAT ARE NOT BUSY
   const allPagers = ['PAGER-01', 'PAGER-02', 'PAGER-03', 'PAGER-04', 'PAGER-05', 'PAGER-06', 'PAGER-07', 'PAGER-08', 'PAGER-09', 'PAGER-10'];
+  
   const getFirstAvailablePagerForTable = (targetTable: string) => {
-    // If table already has an active pager, reuse it!
+    // If targetTable already has an active ticket with a pager, reuse that pager for add-on!
     const activeTicket = activeKdsTickets.find((t: any) => t.table === targetTable);
     if (activeTicket && activeTicket.pagerId) return activeTicket.pagerId;
     
-    // Otherwise pick first free pager
+    // Otherwise pick first free pager not in busyPagersMap
     const free = allPagers.find(p => !busyPagersMap[p]);
     return free || 'PAGER-01';
   };
@@ -139,11 +140,9 @@ export const App: React.FC = () => {
 
   // CLEAR TABLE & RELEASE OCCUPANCY ACTION FOR CASHIER
   const handleReleaseTable = (tableToRelease: string) => {
-    // Remove active KDS tickets for this table
     const updatedTickets = activeKdsTickets.filter((t: any) => t.table !== tableToRelease);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
 
-    // Remove pending bills for this table
     const updatedPending = pendingBills.filter((p: any) => p.table !== tableToRelease);
     localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
 
@@ -417,6 +416,7 @@ export const App: React.FC = () => {
         {(activeTab.startsWith('staff-')) && <StaffRunnerPage activeTab={activeTab} />}
         {(activeTab.startsWith('kds-')) && <KdsKitchenPage activeTab={activeTab} />}
 
+        {/* CASHIER PENDING QR QUEUE WITH MATCHED DYNAMIC BUSY PAGER FILTERING */}
         {activeTab === 'cashier-pending' && (
           <div className="card">
             <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Hàng Đợi Đơn QR Chờ Xác Nhận Thanh Toán & Gán Thẻ Rung IoT</h2>
@@ -430,6 +430,8 @@ export const App: React.FC = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {pendingBills.map((b) => {
                   const defaultPager = selectedPagerMap[b.billCode] || getFirstAvailablePagerForTable(b.table);
+                  const currentSelectedPager = selectedPagerMap[b.billCode] || defaultPager;
+
                   return (
                     <div key={b.billCode} style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                       <div>
@@ -444,7 +446,7 @@ export const App: React.FC = () => {
                         <div>
                           <label style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#92400E', display: 'block', marginBottom: '2px' }}>Gán Thẻ Rung IoT Nhận Món:</label>
                           <select
-                            value={defaultPager}
+                            value={currentSelectedPager}
                             onChange={(e) => setSelectedPagerMap({ ...selectedPagerMap, [b.billCode]: e.target.value })}
                             style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.9rem' }}
                           >

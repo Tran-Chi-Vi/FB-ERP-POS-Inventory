@@ -28,15 +28,41 @@ interface PendingBill {
   timestamp: string;
 }
 
-interface LoyaltyTransaction {
-  date: string;
-  type: 'Earned' | 'Spent';
-  points: number;
-  orderNo: string;
-}
-
 export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => {
-  const [tableSession, setTableSession] = useState<string>('Bàn 04');
+  const tablesList = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
+
+  // TRACK OCCUPIED TABLES FROM LOCALSTORAGE REALTIME
+  const [occupiedTables, setOccupiedTables] = useState<string[]>([]);
+  const [tableSession, setTableSession] = useState<string>('Bàn 01');
+
+  const syncOccupiedTables = () => {
+    const activeKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+    const pendingBills = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
+    const occupiedSet = new Set<string>();
+
+    activeKdsTickets.forEach((t: any) => { if (t.table) occupiedSet.add(t.table); });
+    pendingBills.forEach((p: any) => { if (p.table) occupiedSet.add(p.table); });
+
+    const occupiedList = Array.from(occupiedSet);
+    setOccupiedTables(occupiedList);
+
+    // Auto-select first FREE table if current table is occupied
+    if (occupiedList.includes(tableSession)) {
+      const free = tablesList.find(t => !occupiedList.includes(t));
+      if (free) setTableSession(free);
+    }
+  };
+
+  useEffect(() => {
+    syncOccupiedTables();
+    window.addEventListener('fnb_data_updated', syncOccupiedTables);
+    const interval = setInterval(syncOccupiedTables, 1500);
+    return () => {
+      window.removeEventListener('fnb_data_updated', syncOccupiedTables);
+      clearInterval(interval);
+    };
+  }, [tableSession]);
+
   const currentUserFullName = 'Trần Chí Vĩ';
 
   // PERSISTENT GLOBAL SEQUENTIAL BILL ID GENERATOR
@@ -147,21 +173,27 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
   };
 
   const groupTotal = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
-  const tablesList = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
-      {/* HEADER BANNER WITH TABLE SWITCHER */}
+      {/* HEADER BANNER WITH DYNAMIC TABLE STATUS & SWITCHER */}
       <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '20px 24px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <div>
           <span style={{ fontSize: '11px', color: '#2563EB', fontWeight: 'bold', textTransform: 'uppercase' }}>GỌI MÓN MÃ QR TẠI BÀN</span>
           <h2 style={{ margin: '4px 0 0 0', fontSize: '22px', color: '#0F172A', fontWeight: 'bold' }}>Phiên Phục Vụ: {tableSession}</h2>
         </div>
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-          <label style={{ fontSize: '12px', color: '#475569', fontWeight: 'bold' }}>Đổi vị trí bàn:</label>
+          <label style={{ fontSize: '12px', color: '#475569', fontWeight: 'bold' }}>Vị trí bàn:</label>
           <select value={tableSession} onChange={(e) => setTableSession(e.target.value)} style={{ padding: '6px 12px', borderRadius: '6px', border: '1px solid #CBD5E1', fontWeight: 'bold' }}>
-            {tablesList.map(t => <option key={t} value={t}>{t}</option>)}
+            {tablesList.map(t => {
+              const isOccupied = occupiedTables.includes(t);
+              return (
+                <option key={t} value={t} disabled={isOccupied}>
+                  {t} {isOccupied ? '(🛑 Đang có khách)' : '(🟢 Trống)'}
+                </option>
+              );
+            })}
           </select>
           <div style={{ background: '#DCFCE7', color: '#166534', padding: '6px 12px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>
             WiFi Nội Bộ Verified
@@ -169,7 +201,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
         </div>
       </div>
 
-      {/* 1. TAB 1: MENU QR WITH RESTORED QUANTITY COUNTER BADGE */}
+      {/* 1. TAB 1: MENU QR WITH CLEAN SIMPLE QUANTITY COUNTER (e.g. "+ Thêm Vào Giỏ (2)") */}
       {activeTab === 'customer-menu' && (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
           <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '20px' }}>
@@ -212,23 +244,16 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
                       style={{
                         marginTop: '12px',
                         padding: '10px 12px',
-                        background: qtyCount > 0 ? '#047857' : '#059669',
+                        background: '#059669',
                         color: '#fff',
                         border: 'none',
                         borderRadius: '6px',
                         fontWeight: 'bold',
                         cursor: 'pointer',
-                        display: 'flex',
-                        justify: 'space-between',
-                        alignItems: 'center'
+                        textAlign: 'center'
                       }}
                     >
-                      <span>+ Thêm Vào Giỏ</span>
-                      {qtyCount > 0 && (
-                        <span style={{ background: '#FEF3C7', color: '#92400E', padding: '2px 8px', borderRadius: '12px', fontSize: '12px', fontWeight: 'bold' }}>
-                          Đã chọn: x{qtyCount}
-                        </span>
-                      )}
+                      {qtyCount > 0 ? `+ Thêm Vào Giỏ (${qtyCount})` : '+ Thêm Vào Giỏ'}
                     </button>
                   </div>
                 );
