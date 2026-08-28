@@ -140,7 +140,6 @@ export const App: React.FC = () => {
     if (t.pagerId && !t.pagerReturned) {
       allBusyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo };
       
-      // ONLY SHOW IN RETURN HUB IF KITCHEN HAS RUNG THE PAGER (isRungReady === true)!
       if (t.isRungReady) {
         rungReadyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo, ticketId: t.id };
       }
@@ -200,18 +199,6 @@ export const App: React.FC = () => {
     }
   };
 
-  // CLEAR TABLE & RELEASE OCCUPANCY ACTION FOR CASHIER
-  const handleReleaseTable = (tableToRelease: string) => {
-    const updatedTickets = activeKdsTickets.filter((t: any) => t.table !== tableToRelease);
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
-
-    const updatedPending = pendingBills.filter((p: any) => p.table !== tableToRelease);
-    localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
-
-    window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ DỌN BÀN & GIẢI PHÓNG "${tableToRelease}" THÀNH CÔNG! Bàn đã trở lại trạng thái TRỐNG.`);
-  };
-
   const mainRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -227,7 +214,7 @@ export const App: React.FC = () => {
         setActiveTab('kds-tickets');
         break;
       case 'Staff':
-        setActiveTab('staff-runner');
+        setActiveTab('staff-tables');
         break;
       case 'Cashier':
         setActiveTab('pos');
@@ -339,7 +326,7 @@ export const App: React.FC = () => {
         orderNo: `${activeTicket.orderNo} + ${invoiceId}`,
         isAddOn: true,
         isAddOnNoticePending: true,
-        isRungReady: false, // Reset rung status so new item gets cooked
+        isRungReady: false,
         items: [...activeTicket.items, ...newItemsFormatted]
       };
     } else {
@@ -507,7 +494,7 @@ export const App: React.FC = () => {
 
             {rungReadyPagersList.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
-                Hiện không có Thẻ Rung nào đang phát chuông chờ thu hồi. (Thẻ chỉ xuất hiện ở đây SAU KHU BẾP BẤM "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)").
+                Hiện không có Thẻ Rung nào đang phát chuông chờ thu hồi. (Thẻ chỉ xuất hiện ở đây SAU KHI BẾP BẤM "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)").
               </div>
             ) : (
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px' }}>
@@ -623,14 +610,14 @@ export const App: React.FC = () => {
             </div>
 
             <div>
-              {/* SƠ ĐỒ BÀN PHỤC VỤ SHOWING FREE, PENDING HOLD (15M), AND OCCUPIED */}
+              {/* SƠ ĐỒ BÀN PHỤC VỤ SHOWING FREE, PENDING HOLD (15M), AND OCCUPIED (NO CLEAR BUTTON AS CLEARED BY STAFF) */}
               <div className="card" style={{ marginBottom: '1rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
                   <h3 style={{ margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ (Trạng Thái Trống, Giữ Chỗ & Đã Có Chủ)</h3>
-                  <span style={{ fontSize: '12px', color: '#64748B' }}>Đã phân loại thời gian giữ bàn 15 phút</span>
+                  <span style={{ fontSize: '12px', color: '#64748B' }}>Dọn bàn & giải phóng bàn được thực hiện bởi Phục Vụ</span>
                 </div>
 
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.5rem' }}>
                   {tables.map((t) => {
                     const st = tableStatusMap[t]?.status || 'Free';
                     const isSelected = selectedTable === t;
@@ -672,24 +659,6 @@ export const App: React.FC = () => {
                     );
                   })}
                 </div>
-
-                {/* CLEAR / RELEASE TABLE ACTION BOX */}
-                {Object.keys(tableStatusMap).some(t => tableStatusMap[t].status !== 'Free') && (
-                  <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0', marginTop: '12px' }}>
-                    <span style={{ fontSize: '12px', color: '#0F172A', fontWeight: 'bold', display: 'block', marginBottom: '6px' }}>Thao Tác Dọn Bàn & Giải Phóng Ghế Cho Khách Mới:</span>
-                    <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                      {tables.filter(t => tableStatusMap[t].status !== 'Free').map(tbl => (
-                        <button
-                          key={tbl}
-                          onClick={() => handleReleaseTable(tbl)}
-                          style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
-                        >
-                          Dọn Bàn & Giải Phóng {tbl}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
 
               <div className="product-grid">

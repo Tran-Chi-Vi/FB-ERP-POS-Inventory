@@ -70,12 +70,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
             </>
           )}
 
-          {/* STAFF ROLE NAV ITEMS */}
+          {/* STAFF ROLE NAV ITEMS (FOCUSED ON TABLE MANAGEMENT & BEVERAGE COMPLAINT / ADJUSTMENT) */}
           {role === 'Staff' && (
             <>
-              <NavItem active={activeTab === 'staff-runner'} onClick={() => onTabChange('staff-runner')} label="Danh Sách Phục Vụ Trả Món" />
-              <NavItem active={activeTab === 'cashier-pagers'} onClick={() => onTabChange('cashier-pagers')} label="Quản Lý & Thu Hồi Thẻ Rung IoT" />
-              <NavItem active={activeTab === 'staff-tables'} onClick={() => onTabChange('staff-tables')} label="Sơ Đồ Bàn & Trạng Thái" />
+              <NavItem active={activeTab === 'staff-tables'} onClick={() => onTabChange('staff-tables')} label="Sơ Đồ Bàn & Dọn Dẹp Giải Phóng Bàn" />
+              <NavItem active={activeTab === 'staff-complaints'} onClick={() => onTabChange('staff-complaints')} label="Tiếp Nhận Khiếu Nại & Sửa Món Bếp" />
               <NavItem active={activeTab === 'staff-attendance'} onClick={() => onTabChange('staff-attendance')} label="Chấm Công Mạng Nội Bộ" />
             </>
           )}

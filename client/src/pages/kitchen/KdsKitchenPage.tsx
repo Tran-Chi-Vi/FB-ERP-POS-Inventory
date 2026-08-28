@@ -22,6 +22,7 @@ interface KdsTicket {
   slaStatus: 'Normal' | 'Warning' | 'Overdue';
   isAddOn?: boolean;
   isAddOnNoticePending?: boolean;
+  isAdjustment?: boolean;
   isRungReady?: boolean;
   pagerReturned?: boolean;
   items: TicketItem[];
@@ -53,7 +54,7 @@ interface SlaHistoryRecord {
 
 export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => {
   const [activeStation, setActiveStation] = useState<'Barista' | 'Kitchen'>('Barista');
-  const [activeIotAlert, setActiveIotAlert] = useState<{ pagerId: string; orderNo: string; table: string } | null>(null);
+  const [activeIotAlert, setActiveIotAlert] = useState<{ pagerId: string; orderNo: string; table: string; isAdjustment?: boolean } | null>(null);
   const [addOnNotice, setAddOnNotice] = useState<KdsTicket | null>(null);
 
   // 1. DYNAMIC REAL-TIME SLA TICKETS SYNCED FROM CASHIER POS PAYMENTS ONLY
@@ -128,7 +129,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
   const computeSmartBatches = () => {
     const itemMap: { [dishName: string]: { totalQty: number; unit: string; tablesMap: { [tbl: string]: number } } } = {};
 
-    tickets.filter(t => !t.isRungReady).forEach(ticket => {
+    tickets.filter(t => !t.isRungReady && !t.isAdjustment).forEach(ticket => {
       ticket.items.forEach(item => {
         if (!itemMap[item.name]) {
           const unit = item.name.toLowerCase().includes('bánh') ? 'Cái' : 'Ly';
@@ -197,10 +198,42 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(slaHistory));
   }, [slaHistory]);
 
-  // WHEN KITCHEN CLICKS "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)":
-  // 1. SET isRungReady = true (DISPATCHES PAGER TO CASHIER RECOVERY HUB)
-  // 2. IMMEDIATELY REMOVE TICKET FROM ACTIVE KITCHEN COOKING SCREEN (BUMP)
+  // WHEN KITCHEN COMPLETES A TICKET:
+  // 1. IF REGULAR ORDER: SET isRungReady = true (DISPATCHES PAGER TO CASHIER RECOVERY HUB) AND BUMP
+  // 2. IF ADJUSTMENT ORDER: UPDATE STAFF COMPLAINTS LIST (ReadyToDeliver) AND BUMP
   const handleBumpAndSaveToHistory = (ticket: KdsTicket) => {
+    if (ticket.isAdjustment) {
+      // Update complaint status for Staff
+      const savedComplaints = JSON.parse(localStorage.getItem('fnb_staff_complaints') || '[]');
+      const updatedComplaints = savedComplaints.map((c: any) => {
+        if (c.id === ticket.orderNo || c.table === ticket.table) {
+          return { ...c, status: 'ReadyToDeliver' };
+        }
+        return c;
+      });
+      localStorage.setItem('fnb_staff_complaints', JSON.stringify(updatedComplaints));
+
+      const updatedTickets = tickets.filter(t => t.id !== ticket.id);
+      setTickets(updatedTickets);
+      localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+
+      const newHistoryRecord: SlaHistoryRecord = {
+        ticketId: ticket.id,
+        orderNo: ticket.orderNo,
+        table: ticket.table,
+        station: ticket.station === 'Barista' ? 'Trạm Barista' : 'Trạm Bếp Nóng',
+        slaMinutes: ticket.timeElapsedMinutes || 3.0,
+        completedTime: new Date().toLocaleTimeString('vi-VN')
+      };
+      const updatedHistory = [newHistoryRecord, ...slaHistory];
+      setSlaHistory(updatedHistory);
+      localStorage.setItem('fnb_kds_sla_history', JSON.stringify(updatedHistory));
+
+      window.dispatchEvent(new Event('fnb_data_updated'));
+      setActiveIotAlert({ pagerId: 'PHỤC VỤ TẬN BÀN', orderNo: ticket.orderNo, table: ticket.table, isAdjustment: true });
+      return;
+    }
+
     const updatedTickets = tickets.map(t => {
       if (t.id === ticket.id) {
         return { ...t, isRungReady: true };
@@ -224,7 +257,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(updatedHistory));
 
     window.dispatchEvent(new Event('fnb_data_updated'));
-    setActiveIotAlert({ pagerId: ticket.pagerId, orderNo: ticket.orderNo, table: ticket.table });
+    setActiveIotAlert({ pagerId: ticket.pagerId, orderNo: ticket.orderNo, table: ticket.table, isAdjustment: false });
   };
 
   const handleTransferStation = (ticketId: string) => {
@@ -257,7 +290,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS & Kích Hoạt Thẻ Rung IoT</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Khi chế biến xong, bấm "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)" để rung thẻ và hoàn thành vé Bếp.</p>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Khi chế biến xong, bấm "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)" hoặc "XONG ĐIỀU CHỈNH (MANG RA BÀN)" để hoàn tất vé Bếp.</p>
             </div>
             <div style={{ display: 'flex', gap: '8px', background: '#F1F5F9', padding: '4px', borderRadius: '8px' }}>
               <button
@@ -296,57 +329,62 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '20px' }}>
             {filteredTickets.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px', gridColumn: '1 / -1' }}>
-                Hiện không có vé nào đang chế biến tại trạm này. Tất cả vé đã hoàn tất và rung thẻ!
+                Hiện không có vé nào đang chế biến tại trạm này. Tất cả vé đã hoàn tất!
               </div>
             ) : (
               filteredTickets.map((t) => (
                 <div
                   key={t.id}
                   style={{
-                    background: '#FFFFFF',
-                    border: t.isAddOn ? '3px solid #DC2626' : t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
+                    background: t.isAdjustment ? '#FFFBEB' : '#FFFFFF',
+                    border: t.isAdjustment ? '3px solid #D97706' : t.isAddOn ? '3px solid #DC2626' : t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
                     borderRadius: '8px',
                     padding: '18px',
-                    boxShadow: t.isAddOn ? '0 0 12px rgba(220, 38, 38, 0.3)' : '0 2px 4px rgba(0,0,0,0.05)'
+                    boxShadow: t.isAdjustment ? '0 0 12px rgba(217, 119, 6, 0.3)' : t.isAddOn ? '0 0 12px rgba(220, 38, 38, 0.3)' : '0 2px 4px rgba(0,0,0,0.05)'
                   }}
                 >
-                  {t.isAddOn && (
+                  {t.isAdjustment ? (
+                    <div style={{ background: '#D97706', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
+                      ⚠️ YÊU CẦU ĐIỀU CHỈNH / SỬA MÓN (PHỤC VỤ TẬN {t.table})
+                    </div>
+                  ) : t.isAddOn ? (
                     <div style={{ background: '#DC2626', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
                       🚨 VÉ GỘP CÓ MÓN MỚI BỔ SUNG (THẺ RUNG {t.pagerId})
                     </div>
-                  )}
+                  ) : null}
 
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', borderBottom: '1px solid #E2E8F0', paddingBottom: '10px' }}>
                     <div>
                       <h3 style={{ margin: 0, fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>{t.table}</h3>
-                      <span style={{ fontSize: '12px', color: '#64748B' }}>Các Bill: {t.orderNo}</span>
+                      <span style={{ fontSize: '12px', color: '#64748B' }}>Mã: {t.orderNo}</span>
                     </div>
                     <div>
-                      <span style={{ background: '#FEF3C7', color: '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold', border: '1px solid #FDE68A' }}>
-                        Thẻ Rung: {t.pagerId || 'PAGER-01'}
+                      <span style={{ background: t.isAdjustment ? '#FEF3C7' : '#FEF3C7', color: '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold', border: '1px solid #FDE68A' }}>
+                        {t.isAdjustment ? `Phục vụ: ${t.table}` : `Thẻ Rung: ${t.pagerId || 'PAGER-01'}`}
                       </span>
                     </div>
                   </div>
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
                     {t.items.map((item) => {
+                      const isAdjItem = t.isAdjustment;
                       const isNewItem = item.note && item.note.includes('MÓN MỚI');
                       return (
                         <div
                           key={item.id}
                           style={{
-                            background: isNewItem ? '#FEE2E2' : '#F8FAFC',
+                            background: isAdjItem ? '#FEF3C7' : isNewItem ? '#FEE2E2' : '#F8FAFC',
                             padding: '10px',
                             borderRadius: '6px',
-                            border: isNewItem ? '1px solid #EF4444' : '1px solid #E2E8F0'
+                            border: isAdjItem ? '1px solid #F59E0B' : isNewItem ? '1px solid #EF4444' : '1px solid #E2E8F0'
                           }}
                         >
-                          <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', color: isNewItem ? '#991B1B' : '#0F172A' }}>
+                          <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', color: isAdjItem ? '#92400E' : isNewItem ? '#991B1B' : '#0F172A' }}>
                             <span>{item.name}</span>
-                            <span style={{ color: isNewItem ? '#DC2626' : '#2563EB', fontSize: '16px' }}>x{item.quantity}</span>
+                            <span style={{ color: isAdjItem ? '#D97706' : isNewItem ? '#DC2626' : '#2563EB', fontSize: '16px' }}>x{item.quantity}</span>
                           </div>
                           {item.note && (
-                            <div style={{ fontSize: '12px', color: isNewItem ? '#DC2626' : '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
+                            <div style={{ fontSize: '12px', color: isAdjItem ? '#B45309' : isNewItem ? '#DC2626' : '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
                               Ghi chú: {item.note}
                             </div>
                           )}
@@ -367,7 +405,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                       style={{
                         flex: 2,
                         padding: '10px 12px',
-                        background: '#059669',
+                        background: t.isAdjustment ? '#D97706' : '#059669',
                         color: '#fff',
                         border: 'none',
                         borderRadius: '6px',
@@ -376,7 +414,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                         fontSize: '13px'
                       }}
                     >
-                      HOÀN TẤT CHẾ BIẾN (RUNG THẺ)
+                      {t.isAdjustment ? 'XONG ĐIỀU CHỈNH (MANG RA BÀN)' : 'HOÀN TẤT CHẾ BIẾN (RUNG THẺ)'}
                     </button>
                   </div>
                 </div>
@@ -488,7 +526,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
               <thead>
                 <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mã Vé</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Số Hóa Đơn</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Số Hóa Đơn / Khiếu Nại</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Bàn Phục Vụ</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Trạm Chế Biến</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thời Gian Hoàn Tất (SLA)</th>
@@ -517,13 +555,15 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
             <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
-              🔔 CẢNH BÁO BẾP: ĐƠN GỘP BỔ SUNG MÓN CHO THẺ RUNG {addOnNotice.pagerId}!
+              🔔 CẢNH BÁO BẾP: {addOnNotice.isAdjustment ? `YÊU CẦU ĐIỀU CHỈNH MÓN CHO ${addOnNotice.table}!` : `ĐƠN GỘP BỔ SUNG MÓN CHO THẺ RUNG ${addOnNotice.pagerId}!`}
             </div>
-            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>{addOnNotice.table} | Các Bill: {addOnNotice.orderNo}</h3>
-            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Món mới đã được GỘP TRỰC TIẾP vào Thẻ Đơn Hàng hiện tại của <strong>{addOnNotice.pagerId}</strong>.</p>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>{addOnNotice.table} | Mã: {addOnNotice.orderNo}</h3>
+            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>
+              {addOnNotice.isAdjustment ? `Yêu cầu chỉnh sửa món từ phục vụ bàn ${addOnNotice.table}.` : `Món mới đã được GỘP TRỰC TIẾP vào Thẻ Đơn Hàng hiện tại của ${addOnNotice.pagerId}.`}
+            </p>
             
             <button onClick={handleAcknowledgeAddOnNotice} style={{ padding: '10px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
-              ĐÃ XÁC NHẬN CHẾ BIẾN BỔ SUNG
+              ĐÃ XÁC NHẬN CHẾ BIẾN
             </button>
           </div>
         </div>
@@ -532,13 +572,16 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       {/* IOT PAGER SIGNAL MODAL */}
       {activeIotAlert && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #059669' }}>
-            <div style={{ background: '#DCFCE7', color: '#166534', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
-              🔔 KÍCH HOẠT RUNG THẺ IOT {activeIotAlert.pagerId} THÀNH CÔNG!
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: activeIotAlert.isAdjustment ? '3px solid #D97706' : '3px solid #059669' }}>
+            <div style={{ background: activeIotAlert.isAdjustment ? '#FEF3C7' : '#DCFCE7', color: activeIotAlert.isAdjustment ? '#92400E' : '#166534', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
+              {activeIotAlert.isAdjustment ? `ĐÃ HOÀN TẤT ĐIỀU CHỈNH CHO ${activeIotAlert.table}!` : `🔔 KÍCH HOẠT RUNG THẺ IOT ${activeIotAlert.pagerId} THÀNH CÔNG!`}
             </div>
-            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '22px', fontWeight: 'bold' }}>THẺ RUNG IOT: {activeIotAlert.pagerId}</h3>
-            <p style={{ fontSize: '14px', color: '#475569', margin: '0 0 16px 0' }}>Đơn hàng: <strong>{activeIotAlert.orderNo}</strong> | {activeIotAlert.table}</p>
-            <p style={{ fontSize: '12px', color: '#059669', fontWeight: 'bold' }}>Vé đã hoàn tất & tự động chuyển sang trang "Quản Lý & Thu Hồi Thẻ Rung IoT" bên Thu Ngân!</p>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '22px', fontWeight: 'bold' }}>
+              {activeIotAlert.isAdjustment ? `MANG MÓN RA ${activeIotAlert.table}` : `THẺ RUNG IOT: ${activeIotAlert.pagerId}`}
+            </h3>
+            <p style={{ fontSize: '14px', color: '#475569', margin: '0 0 16px 0' }}>
+              {activeIotAlert.isAdjustment ? `Mã yêu cầu: ${activeIotAlert.orderNo} | Phục vụ mang đồ uống đã sửa ra bàn.` : `Đơn hàng: ${activeIotAlert.orderNo} | ${activeIotAlert.table}`}
+            </p>
             <button onClick={() => setActiveIotAlert(null)} style={{ padding: '10px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
               ĐÓNG THÔNG BÁO
             </button>

@@ -4,20 +4,13 @@ interface StaffRunnerPageProps {
   activeTab: string;
 }
 
-interface RunnerQueueItem {
+interface BeverageComplaint {
   id: string;
-  orderNo: string;
   table: string;
-  itemNames: string;
-  station: string;
-  timeReady: string;
-}
-
-interface TableStatus {
-  id: string;
-  name: string;
-  status: 'Serving' | 'Empty' | 'WaitingPayment' | 'Reserved';
-  guests: number;
+  dishName: string;
+  issueNote: string;
+  status: 'InKitchen' | 'ReadyToDeliver' | 'Delivered';
+  createdAt: string;
 }
 
 interface AttendanceLog {
@@ -29,87 +22,148 @@ interface AttendanceLog {
 }
 
 export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) => {
-  // 1. MPOS RUNNER QUEUE
-  const [runnerQueue, setRunnerQueue] = useState<RunnerQueueItem[]>([
-    { id: 'RUN-101', orderNo: 'ORD-9921', table: 'Bàn 04', itemNames: '2x Cà Phê Sữa Đá, 1x Trà Đào', station: 'Trạm Barista', timeReady: '1 phút trước' },
-    { id: 'RUN-102', orderNo: 'ORD-9928', table: 'Bàn 03', itemNames: '2x Bánh Croissant Bơ', station: 'Trạm Bếp Nóng', timeReady: ' Vừa xong' },
-  ]);
+  const tablesList = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
+  const menuOptions = [
+    'Cà Phê Sữa Đá Sài Gòn',
+    'Bạc Xỉu Đá Ngọt Dịu',
+    'Espresso Intenso',
+    'Trà Đào Cam Sả Tươi',
+    'Trà Sữa Ô Long Kem Trứng',
+    'Bánh Croissant Bơ Bơ',
+    'Bánh Tiramisu Ý'
+  ];
 
-  // 2. TABLES MAP OVERVIEW
-  const [tables, setTables] = useState<TableStatus[]>([
-    { id: 'T1', name: 'Bàn 01', status: 'Serving', guests: 2 },
-    { id: 'T2', name: 'Bàn 02', status: 'Empty', guests: 0 },
-    { id: 'T3', name: 'Bàn 03', status: 'Serving', guests: 4 },
-    { id: 'T4', name: 'Bàn 04', status: 'WaitingPayment', guests: 3 },
-    { id: 'T5', name: 'Bàn 05', status: 'Empty', guests: 0 },
-    { id: 'TV1', name: 'VIP 01', status: 'Reserved', guests: 6 },
-    { id: 'TV2', name: 'VIP 02', status: 'Empty', guests: 0 },
-  ]);
-
-  // 3. IOT PAGERS RETURN MANAGEMENT STATE
+  // 1. TABLE OCCUPANCY STATE (REALTIME SYNC)
   const [activeKdsTickets, setActiveKdsTickets] = useState<any[]>([]);
+  const [pendingBills, setPendingBills] = useState<any[]>([]);
 
-  const syncKdsTickets = () => {
-    const saved = localStorage.getItem('fnb_kds_tickets');
-    if (saved) {
-      setActiveKdsTickets(JSON.parse(saved));
-    } else {
-      setActiveKdsTickets([]);
-    }
+  const syncData = () => {
+    const savedTickets = localStorage.getItem('fnb_kds_tickets');
+    setActiveKdsTickets(savedTickets ? JSON.parse(savedTickets) : []);
+
+    const savedPending = localStorage.getItem('fnb_pending_bills');
+    setPendingBills(savedPending ? JSON.parse(savedPending) : []);
   };
 
   useEffect(() => {
-    syncKdsTickets();
-    window.addEventListener('fnb_data_updated', syncKdsTickets);
-    const interval = setInterval(syncKdsTickets, 1500);
+    syncData();
+    window.addEventListener('fnb_data_updated', syncData);
+    const interval = setInterval(syncData, 1500);
     return () => {
-      window.removeEventListener('fnb_data_updated', syncKdsTickets);
+      window.removeEventListener('fnb_data_updated', syncData);
       clearInterval(interval);
     };
   }, []);
 
-  const busyPagersMap: { [pagerId: string]: { table: string; orderNo: string } } = {};
+  const tableStatusMap: { [table: string]: { status: 'Free' | 'PendingHold' | 'Occupied'; details?: string } } = {};
+  tablesList.forEach(t => { tableStatusMap[t] = { status: 'Free' }; });
+
   activeKdsTickets.forEach((t: any) => {
-    if (t.pagerId && !t.pagerReturned) {
-      busyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo };
+    if (t.table) tableStatusMap[t.table] = { status: 'Occupied', details: `Vé: ${t.orderNo} | Thẻ: ${t.pagerId || 'Đã giao'}` };
+  });
+
+  pendingBills.forEach((p: any) => {
+    if (p.table && tableStatusMap[p.table]?.status !== 'Occupied') {
+      tableStatusMap[p.table] = { status: 'PendingHold', details: `Bill: ${p.billCode} (Đang giữ chỗ)` };
     }
   });
 
-  const handleReturnIotPager = (pagerIdToReturn: string) => {
-    const updatedTickets = activeKdsTickets.map((t: any) => {
-      if (t.pagerId === pagerIdToReturn) {
-        return { ...t, pagerReturned: true, pagerId: '' };
-      }
-      return t;
-    });
-
+  // HANDLER: STAFF CLEANS AND RELEASES TABLE TO "TRỐNG"
+  const handleCleanAndReleaseTable = (tableToRelease: string) => {
+    const updatedTickets = activeKdsTickets.filter((t: any) => t.table !== tableToRelease);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+
+    const updatedPending = pendingBills.filter((p: any) => p.table !== tableToRelease);
+    localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
+
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ THU HỒI THẺ RUNG IOT "${pagerIdToReturn}" THÀNH CÔNG!\nThẻ đã sẵn sàng trả về khay để cấp cho khách hàng tiếp theo.`);
+    alert(`ĐÃ DỌN DẸP & GIẢI PHÓNG "${tableToRelease}" THÀNH CÔNG!\nBàn đã sẵn sàng ở trạng thái TRỐNG để đón lượt khách mới.`);
   };
 
-  // 4. WIFI ATTENDANCE LOGS
+  // 2. BEVERAGE COMPLAINTS & KITCHEN ADJUSTMENT SYSTEM
+  const [complaints, setComplaints] = useState<BeverageComplaint[]>(() => {
+    const saved = localStorage.getItem('fnb_staff_complaints');
+    return saved ? JSON.parse(saved) : [
+      {
+        id: 'ADJ-101',
+        table: 'Bàn 04',
+        dishName: 'Cà Phê Sữa Đá Sài Gòn',
+        issueNote: 'Khách xin bớt ngọt, cho thêm đá',
+        status: 'InKitchen',
+        createdAt: '02:30:15'
+      }
+    ];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('fnb_staff_complaints', JSON.stringify(complaints));
+  }, [complaints]);
+
+  const [selectedComplaintTable, setSelectedComplaintTable] = useState<string>('Bàn 01');
+  const [selectedComplaintDish, setSelectedComplaintDish] = useState<string>('Cà Phê Sữa Đá Sài Gòn');
+  const [complaintNote, setComplaintNote] = useState<string>('Khách xin bớt ngọt / ít đường');
+
+  const handleSendAdjustmentToKitchen = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!complaintNote.trim()) {
+      alert('Vui lòng nhập ghi chú khiếu nại của khách!');
+      return;
+    }
+
+    const complaintId = `ADJ-${Math.floor(100 + Math.random() * 900)}`;
+    const newComplaint: BeverageComplaint = {
+      id: complaintId,
+      table: selectedComplaintTable,
+      dishName: selectedComplaintDish,
+      issueNote: complaintNote.trim(),
+      status: 'InKitchen',
+      createdAt: new Date().toLocaleTimeString('vi-VN')
+    };
+
+    // PUSH AS ADJUSTMENT TICKET TO KITCHEN KDS
+    const adjustmentKdsTicket = {
+      id: `TK-${complaintId}`,
+      orderNo: complaintId,
+      table: selectedComplaintTable,
+      pagerId: 'PHỤC VỤ TẬN BÀN',
+      station: selectedComplaintDish.includes('Bánh') ? 'Kitchen' : 'Barista',
+      timeElapsedMinutes: 1,
+      slaStatus: 'Normal',
+      isAddOn: true,
+      isAddOnNoticePending: true,
+      isAdjustment: true,
+      items: [
+        {
+          id: `ADJ-ITEM-${Date.now()}`,
+          name: selectedComplaintDish,
+          quantity: 1,
+          note: `🚨 [YÊU CẦU ĐIỀU CHỈNH / SỬA MÓN]: ${complaintNote.trim()} (Bàn: ${selectedComplaintTable})`
+        }
+      ]
+    };
+
+    const existingKds = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify([adjustmentKdsTicket, ...existingKds]));
+
+    const updatedComplaints = [newComplaint, ...complaints];
+    setComplaints(updatedComplaints);
+
+    window.dispatchEvent(new Event('fnb_data_updated'));
+    alert(`ĐÃ GỬI LỆNH ĐIỀU CHỈNH "${selectedComplaintDish}" XUỐNG BẾP!\n- Bàn: ${selectedComplaintTable}\n- Ghi chú: ${complaintNote}\nBếp sẽ pha chế lại theo yêu cầu và báo phục vụ mang ra bàn.`);
+    setComplaintNote('Khách xin bớt ngọt / ít đường');
+  };
+
+  const handleDeliverAdjustedDrink = (id: string, table: string, dishName: string) => {
+    const updated = complaints.map(c => c.id === id ? { ...c, status: 'Delivered' as const } : c);
+    setComplaints(updated);
+    alert(`ĐÃ XÁC NHẬN MANG MÓN "${dishName}" ĐÃ SỬA RA PHỤC VỤ TẠI ${table}! Khiếu nại đã được giải quyết hài lòng.`);
+  };
+
+  // 3. WIFI ATTENDANCE LOGS
   const [attendanceLogs, setAttendanceLogs] = useState<AttendanceLog[]>([
     { date: '2026-08-28', type: 'IN', timestamp: '08:00:15 AM', bssid: '74:83:C2:9F:10:AB (WiFi_Q1_5G)', status: 'Hợp Lệ (Geofenced)' },
     { date: '2026-08-27', type: 'OUT', timestamp: '18:02:10 PM', bssid: '74:83:C2:9F:10:AB (WiFi_Q1_5G)', status: 'Hợp Lệ (Geofenced)' },
-    { date: '2026-08-27', type: 'IN', timestamp: '07:58:30 AM', bssid: '74:83:C2:9F:10:AB (WiFi_Q1_5G)', status: 'Hợp Lệ (Geofenced)' },
   ]);
-
-  // Handlers
-  const handleDeliverItem = (id: string) => {
-    setRunnerQueue(runnerQueue.filter(r => r.id !== id));
-    alert(`Đã xác nhận mang món ra bàn thành công! Hệ thống mPOS cập nhật trạng thái "Đã Phục Vụ".`);
-  };
-
-  const handleToggleTableStatus = (id: string) => {
-    setTables(tables.map(t => {
-      if (t.id === id) {
-        const nextStatus: TableStatus['status'] = t.status === 'Empty' ? 'Serving' : t.status === 'Serving' ? 'WaitingPayment' : 'Empty';
-        return { ...t, status: nextStatus, guests: nextStatus === 'Empty' ? 0 : 2 };
-      }
-      return t;
-    }));
-  };
 
   const handleClockInWifi = () => {
     const now = new Date();
@@ -121,7 +175,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
       status: 'Hợp Lệ (Geofenced)'
     };
     setAttendanceLogs([newLog, ...attendanceLogs]);
-    alert('CHẤM CÔNG VÀO LÀM THÀNH CÔNG! Đã xác thực mạng WiFi BSSID Chi Nhánh Quận 1!');
+    alert('CHẤM CÔNG VÀO LÀM THÀNH CÔNG! Đã xác thực mạng WiFi Chi Nhánh.');
   };
 
   const handleClockOutWifi = () => {
@@ -134,101 +188,147 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
       status: 'Hợp Lệ (Geofenced)'
     };
     setAttendanceLogs([newLog, ...attendanceLogs]);
-    alert('CHẤM CÔNG TAN LÀM THÀNH CÔNG! Ghi nhận số giờ làm ca hôm nay.');
+    alert('CHẤM CÔNG TAN LÀM THÀNH CÔNG!');
   };
-
-  const busyPagersList = Object.keys(busyPagersMap);
 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
-      {/* IOT PAGERS RETURN & RECOVERY PANEL FOR RUNNER STAFF */}
-      <div style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', marginBottom: '20px' }}>
-        <h3 style={{ margin: '0 0 8px 0', color: '#92400E', fontSize: '16px', fontWeight: 'bold' }}>
-          📲 THU HỒI THẺ RUNG IOT KHI KHÁCH NHẬN MÓN TẠI QUẦY:
-        </h3>
-        {busyPagersList.length === 0 ? (
-          <div style={{ fontSize: '13px', color: '#78350F' }}>Hiện không có Thẻ Rung nào đang bận. Tất cả thẻ đã thu hồi về khay.</div>
-        ) : (
-          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-            {busyPagersList.map(pId => {
-              const info = busyPagersMap[pId];
+      {/* 1. VIEW 1: SƠ ĐỒ BÀN & DỌN DẸP GIẢI PHÓNG BÀN */}
+      {(activeTab === 'staff-tables' || activeTab === 'staff') && (
+        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn & Dọn Dẹp Giải Phóng Bàn (Dành Cho Phục Vụ)</h2>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Theo dõi trạng thái các bàn. Khi khách đã dùng xong và rời đi, nhân viên phục vụ dọn dẹp bàn rồi bấm <strong>"Xác Nhận Đã Dọn Bàn & Giải Phóng"</strong> để trả bàn về trạng thái TRỐNG.</p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
+            {tablesList.map((tbl) => {
+              const info = tableStatusMap[tbl];
+              const isOccupied = info.status === 'Occupied';
+              const isPending = info.status === 'PendingHold';
+              const isFree = info.status === 'Free';
+
+              const bg = isOccupied ? '#FEE2E2' : isPending ? '#FEF3C7' : '#ECFDF5';
+              const border = isOccupied ? '2px solid #EF4444' : isPending ? '2px solid #F59E0B' : '1px solid #A7F3D0';
+              const badgeBg = isOccupied ? '#DC2626' : isPending ? '#D97706' : '#059669';
+              const label = isOccupied ? '🛑 ĐANG CÓ KHÁCH' : isPending ? '⏳ ĐANG GIỮ CHỖ QR' : '🟢 BÀN TRỐNG SẴN SÀNG';
+
               return (
-                <div key={pId} style={{ background: '#FFFFFF', border: '1px solid #F59E0B', padding: '10px 14px', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div key={tbl} style={{ border, background: bg, borderRadius: '8px', padding: '18px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '14px' }}>
                   <div>
-                    <strong style={{ color: '#D97706', fontSize: '15px' }}>{pId}</strong>
-                    <div style={{ fontSize: '12px', color: '#475569' }}>{info.table} | Bill: {info.orderNo}</div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <h3 style={{ margin: 0, fontSize: '20px', color: '#0F172A', fontWeight: 'bold' }}>{tbl}</h3>
+                      <span style={{ background: badgeBg, color: '#fff', padding: '3px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 'bold' }}>
+                        {label}
+                      </span>
+                    </div>
+                    {info.details && (
+                      <div style={{ fontSize: '12px', color: '#475569', marginTop: '8px', fontWeight: 'bold' }}>
+                        Chi tiết: {info.details}
+                      </div>
+                    )}
                   </div>
-                  <button
-                    onClick={() => handleReturnIotPager(pId)}
-                    style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
-                  >
-                    ✓ XÁC NHẬN THU HỒI {pId}
-                  </button>
+
+                  {!isFree ? (
+                    <button
+                      onClick={() => handleCleanAndReleaseTable(tbl)}
+                      style={{ width: '100%', padding: '10px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
+                    >
+                      🧹 XÁC NHẬN ĐÃ DỌN BÀN & GIẢI PHÓNG
+                    </button>
+                  ) : (
+                    <div style={{ textAlign: 'center', fontSize: '12px', color: '#059669', fontWeight: 'bold', padding: '8px', background: '#DCFCE7', borderRadius: '6px' }}>
+                      ✓ Bàn đã sạch sẽ, sẵn sàng đón khách
+                    </div>
+                  )}
                 </div>
               );
             })}
-          </div>
-        )}
-      </div>
-
-      {/* 1. VIEW 1: RUNNER QUEUE */}
-      {(activeTab === 'staff-runner' || activeTab === 'staff') && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Hàng Đợi Trả Món mPOS Runner Queue (Realtime)</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Danh sách các món đã được Bếp/Bar bóp chuông hoàn tất. Nhân viên chạy bàn nhận món và mang tới khách.</p>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {runnerQueue.length === 0 ? (
-              <div style={{ padding: '30px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
-                Không có món nào đang chờ mang ra bàn.
-              </div>
-            ) : (
-              runnerQueue.map((item) => (
-                <div key={item.id} style={{ border: '1px solid #E2E8F0', background: '#F8FAFC', padding: '18px', borderRadius: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-                  <div>
-                    <span style={{ background: '#DBEAFE', color: '#1E40AF', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{item.station}</span>
-                    <h3 style={{ margin: '8px 0 4px 0', fontSize: '20px', color: '#0F172A', fontWeight: 'bold' }}>{item.table} - {item.itemNames}</h3>
-                    <div style={{ fontSize: '13px', color: '#475569' }}>Mã đơn: {item.orderNo} | Báo xong: <strong style={{ color: '#059669' }}>{item.timeReady}</strong></div>
-                  </div>
-                  <button onClick={() => handleDeliverItem(item.id)} style={{ padding: '12px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
-                    XÁC NHẬN ĐÃ MANG RA BÀN
-                  </button>
-                </div>
-              ))
-            )}
           </div>
         </div>
       )}
 
-      {/* 2. VIEW 2: TABLES MAP OVERVIEW */}
-      {activeTab === 'staff-tables' && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn & Trạng Thái Phục Vụ Chi Nhánh</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Theo dõi trạng thái thời gian thực các bàn để hỗ trợ xếp chỗ và trả món cho khách.</p>
+      {/* 2. VIEW 2: TIẾP NHẬN KHIẾU NẠI & YÊU CẦU SỬA MÓN BẾP */}
+      {activeTab === 'staff-complaints' && (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+          
+          {/* FORM INTAKE COMPLAINT */}
+          <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+            <h2 style={{ fontSize: '18px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Ghi Nhận Khiếu Nại & Yêu Cầu Sửa Món Bếp</h2>
+            <p style={{ color: '#475569', fontSize: '13px', marginBottom: '16px' }}>Khi khách tại bàn phản hồi về chất lượng đồ uống (ít đường, quá đắng, đổi món...), phục vụ gửi lệnh trực tiếp xuống Bếp.</p>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '16px' }}>
-            {tables.map((t) => {
-              const bg = t.status === 'Serving' ? '#DCFCE7' : t.status === 'WaitingPayment' ? '#FEF3C7' : t.status === 'Reserved' ? '#DBEAFE' : '#F1F5F9';
-              const text = t.status === 'Serving' ? '#166534' : t.status === 'WaitingPayment' ? '#92400E' : t.status === 'Reserved' ? '#1E40AF' : '#475569';
-              const statusLabel = t.status === 'Serving' ? 'Đang Phục Vụ' : t.status === 'WaitingPayment' ? 'Chờ Thanh Toán' : t.status === 'Reserved' ? 'Đã Đặt Trước' : 'Bàn Trống';
+            <form onSubmit={handleSendAdjustmentToKitchen} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <div>
+                <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: '#0F172A', marginBottom: '4px' }}>Vị Trí Bàn Khiếu Nại:</label>
+                <select value={selectedComplaintTable} onChange={(e) => setSelectedComplaintTable(e.target.value)} style={{ width: '100%', padding: '10px', border: '1px solid #CBD5E1', borderRadius: '6px', fontWeight: 'bold' }}>
+                  {tablesList.map(t => <option key={t} value={t}>{t}</option>)}
+                </select>
+              </div>
 
-              return (
-                <div key={t.id} style={{ border: '1px solid #E2E8F0', background: '#F8FAFC', borderRadius: '8px', padding: '16px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '12px' }}>
-                  <div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <h3 style={{ margin: 0, fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>{t.name}</h3>
-                      <span style={{ background: bg, color: text, padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 'bold' }}>{statusLabel}</span>
-                    </div>
-                    <div style={{ fontSize: '13px', color: '#64748B', marginTop: '6px' }}>Khách: {t.guests} người</div>
-                  </div>
-                  <button onClick={() => handleToggleTableStatus(t.id)} style={{ padding: '8px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>
-                    Đổi Trạng Thái Bàn
-                  </button>
-                </div>
-              );
-            })}
+              <div>
+                <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: '#0F172A', marginBottom: '4px' }}>Món Cần Bếp Pha Chế Lại / Điều Chỉnh:</label>
+                <select value={selectedComplaintDish} onChange={(e) => setSelectedComplaintDish(e.target.value)} style={{ width: '100%', padding: '10px', border: '1px solid #CBD5E1', borderRadius: '6px', fontWeight: 'bold' }}>
+                  {menuOptions.map(m => <option key={m} value={m}>{m}</option>)}
+                </select>
+              </div>
+
+              <div>
+                <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: '#0F172A', marginBottom: '4px' }}>Ghi Chú Yêu Cầu Của Khách:</label>
+                <input
+                  type="text"
+                  placeholder="Ví dụ: Khách xin bớt ngọt, cho thêm đá..."
+                  value={complaintNote}
+                  onChange={(e) => setComplaintNote(e.target.value)}
+                  style={{ width: '100%', padding: '10px', border: '1px solid #CBD5E1', borderRadius: '6px', fontSize: '14px', fontWeight: 'bold' }}
+                />
+              </div>
+
+              <button
+                type="submit"
+                style={{ padding: '12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', fontSize: '14px', cursor: 'pointer', marginTop: '6px' }}
+              >
+                🚨 GỬI YÊU CẦU ĐIỀU CHỈNH XUỐNG BẾP
+              </button>
+            </form>
           </div>
+
+          {/* LIST OF ACTIVE ADJUSTMENTS & DELIVERY CONFIRMATION */}
+          <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+            <h2 style={{ fontSize: '18px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Tiến Độ Sửa Món & Mang Ra Bàn</h2>
+            <p style={{ color: '#475569', fontSize: '13px', marginBottom: '16px' }}>Theo dõi Bếp làm lại và xác nhận khi phục vụ đã mang đồ uống ra bàn khách.</p>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {complaints.length === 0 ? (
+                <div style={{ padding: '30px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
+                  Không có yêu cầu điều chỉnh món nào.
+                </div>
+              ) : (
+                complaints.map((c) => (
+                  <div key={c.id} style={{ border: '1px solid #E2E8F0', background: '#F8FAFC', padding: '16px', borderRadius: '8px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <strong style={{ color: '#0F172A', fontSize: '16px' }}>{c.table} - {c.dishName}</strong>
+                      <span style={{ background: c.status === 'Delivered' ? '#DCFCE7' : '#FEF3C7', color: c.status === 'Delivered' ? '#166534' : '#92400E', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 'bold' }}>
+                        {c.status === 'Delivered' ? '✓ Đã giao tại bàn' : '👨‍🍳 Bếp đang làm lại'}
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '13px', color: '#DC2626', fontWeight: 'bold', marginTop: '6px' }}>
+                      Ghi chú: {c.issueNote}
+                    </div>
+                    <div style={{ fontSize: '12px', color: '#64748B', marginTop: '4px' }}>Mã yêu cầu: {c.id} | Giờ tạo: {c.createdAt}</div>
+
+                    {c.status !== 'Delivered' && (
+                      <button
+                        onClick={() => handleDeliverAdjustedDrink(c.id, c.table, c.dishName)}
+                        style={{ marginTop: '10px', width: '100%', padding: '8px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
+                      >
+                        ✓ XÁC NHẬN ĐÃ MANG MÓN SỬA RA BÀN {c.table}
+                      </button>
+                    )}
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+
         </div>
       )}
 
