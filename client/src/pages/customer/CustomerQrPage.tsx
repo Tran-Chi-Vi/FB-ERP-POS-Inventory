@@ -100,101 +100,106 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
   const menuItems: MenuItem[] = [
     { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', price: 29000, category: 'Cà Phê' },
     { id: '2', name: 'Bạc Xỉu Đá Ngọt Dịu', price: 32000, category: 'Cà Phê' },
-    { id: '3', name: 'Trà Đào Cam Sả Tươi', price: 39000, category: 'Trà & Trà Sữa' },
-    { id: '4', name: 'Trà Sữa Ô Long Kem Trứng', price: 42000, category: 'Trà & Trà Sữa' },
-    { id: '5', name: 'Bánh Croissant Bơ Bơ', price: 25000, category: 'Bánh Ngọt' },
-    { id: '6', name: 'Bánh Tiramisu Ý', price: 38000, category: 'Bánh Ngọt' },
+    { id: '3', name: 'Espresso Intenso', price: 35000, category: 'Cà Phê' },
+    { id: '4', name: 'Trà Đào Cam Sả Tươi', price: 39000, category: 'Trà & Trà Sữa' },
+    { id: '5', name: 'Trà Sữa Ô Long Kem Trứng', price: 42000, category: 'Trà & Trà Sữa' },
+    { id: '6', name: 'Bánh Croissant Bơ Bơ', price: 25000, category: 'Bánh Ngọt' },
+    { id: '7', name: 'Bánh Tiramisu Ý', price: 38000, category: 'Bánh Ngọt' },
   ];
 
-  // 2. REALTIME GROUP CART
-  const [groupCart, setGroupCart] = useState<GroupCartItem[]>(() => {
-    const saved = localStorage.getItem('fnb_group_cart');
-    return saved ? JSON.parse(saved) : [];
-  });
+  const categories = ['Tất Cả', 'Cà Phê', 'Trà & Trà Sữa', 'Bánh Ngọt'];
 
-  useEffect(() => {
-    localStorage.setItem('fnb_group_cart', JSON.stringify(groupCart));
-  }, [groupCart]);
+  const filteredMenu = selectedCategory === 'Tất Cả'
+    ? menuItems
+    : menuItems.filter((item) => item.category === selectedCategory);
 
-  // 3. PENDING BILL CONFIRMATION MODAL
+  // 2. GROUP CART STATE
+  const [groupCart, setGroupCart] = useState<GroupCartItem[]>([
+    { id: 'gc-1', customerName: currentUserFullName, itemName: 'Cà Phê Sữa Đá Sài Gòn', quantity: 1, price: 29000 },
+    { id: 'gc-2', customerName: 'Bạn Đi Cùng A', itemName: 'Bạc Xỉu Đá Ngọt Dịu', quantity: 1, price: 32000 },
+  ]);
+
+  // 3. SPLIT BILL
+  const [splitPeople, setSplitPeople] = useState<number>(2);
+
+  // 4. LOYALTY POINTS
+  const [loyaltyPoints] = useState<number>(450);
+  const [membershipTier] = useState<string>('Vàng (Gold VIP)');
+
+  // 5. GENERATED BILL POPUP STATE
   const [generatedBill, setGeneratedBill] = useState<PendingBill | null>(null);
 
-  // 4. SPLIT BILL CALCULATOR
-  const [splitPeople, setSplitPeople] = useState<number>(1);
-
-  // 5. LOYALTY WALLET
-  const [loyaltyPoints] = useState<number>(1250);
-  const [membershipTier] = useState<string>('Hạng Vàng (Giảm 10%)');
-
-  const categories = ['Tất Cả', 'Cà Phê', 'Trà & Trà Sữa', 'Bánh Ngọt'];
-  const filteredMenu = selectedCategory === 'Tất Cả' ? menuItems : menuItems.filter(i => i.category === selectedCategory);
-
   const handleAddToCart = (item: MenuItem) => {
-    setCart(prev => ({ ...prev, [item.id]: (prev[item.id] || 0) + 1 }));
+    setCart((prev) => ({
+      ...prev,
+      [item.id]: (prev[item.id] || 0) + 1,
+    }));
 
-    setGroupCart(prev => {
-      const existing = prev.find(g => g.itemName === item.name);
-      if (existing) {
-        return prev.map(g => g.itemName === item.name ? { ...g, quantity: g.quantity + 1 } : g);
-      }
-      return [...prev, { id: Date.now().toString(), customerName: currentUserFullName, itemName: item.name, quantity: 1, price: item.price }];
-    });
+    const existingIndex = groupCart.findIndex((gc) => gc.itemName === item.name && gc.customerName === currentUserFullName);
+    if (existingIndex > -1) {
+      const updated = [...groupCart];
+      updated[existingIndex].quantity += 1;
+      setGroupCart(updated);
+    } else {
+      setGroupCart([
+        ...groupCart,
+        { id: `gc-${Date.now()}`, customerName: currentUserFullName, itemName: item.name, quantity: 1, price: item.price },
+      ]);
+    }
   };
 
   const handleIncreaseGroupQuantity = (id: string) => {
-    setGroupCart(prev => prev.map(item => item.id === id ? { ...item, quantity: item.quantity + 1 } : item));
+    setGroupCart(groupCart.map((item) => (item.id === id ? { ...item, quantity: item.quantity + 1 } : item)));
   };
 
   const handleDecreaseGroupQuantity = (id: string) => {
-    setGroupCart(prev => prev.map(item => {
-      if (item.id === id) {
-        return item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : null;
-      }
-      return item;
-    }).filter(Boolean) as GroupCartItem[]);
+    setGroupCart(
+      groupCart
+        .map((item) => (item.id === id ? { ...item, quantity: item.quantity - 1 } : item))
+        .filter((item) => item.quantity > 0)
+    );
   };
 
   const handleRemoveGroupItem = (id: string) => {
-    setGroupCart(prev => prev.filter(item => item.id !== id));
+    setGroupCart(groupCart.filter((item) => item.id !== id));
   };
 
+  // CHECKOUT GROUP CART: GENERATES UNIQUE SEQUENTIAL BILL AND PUSHES TO TEMPORARY HOLD QUEUE (EXPIRES IN 15 MINS)
   const handleCheckoutGroupCart = () => {
     if (groupCart.length === 0) {
-      alert('Giỏ hàng trống! Vui lòng chọn món trước khi chốt đơn.');
+      alert('Giỏ hàng trống! Vui lòng chọn món trước khi gửi đơn.');
       return;
     }
 
-    const totalAmount = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
     const billCode = getNextGlobalBillCode('BILL');
+    const totalAmount = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
     const now = Date.now();
-    const expiresAt = now + 15 * 60 * 1000; // 15 MINUTES EXPIRATION COUNTDOWN
+    const expiresAt = now + 15 * 60 * 1000; // 15-Minute Countdown
 
-    const newBill: PendingBill = {
-      billCode: billCode,
+    const newPendingBill: PendingBill = {
+      billCode,
       table: tableSession,
-      items: groupCart.map(g => ({ name: g.itemName, quantity: g.quantity, price: g.price })),
-      totalAmount: totalAmount,
+      items: groupCart.map((item) => ({
+        name: item.itemName,
+        quantity: item.quantity,
+        price: item.price,
+      })),
+      totalAmount,
       status: 'PendingPayment',
       createdAt: now,
       expiresAt: expiresAt,
-      timestamp: new Date().toLocaleTimeString('vi-VN')
+      timestamp: new Date().toLocaleTimeString('vi-VN'),
     };
 
-    // Save temporary pending bill to localStorage (NOT IN OFFICIAL REVENUE YET!)
-    const existingBills: PendingBill[] = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
-    const updatedBills = [newBill, ...existingBills];
-    localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedBills));
+    const existingPending = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
+    const updatedPending = [newPendingBill, ...existingPending];
+    localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
 
-    // Dispatch global data update event so Cashier POS picks it up in real time!
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    // Show modal bill confirmation
-    setGeneratedBill(newBill);
-
-    // Clear active group cart and local cart
+    setGeneratedBill(newPendingBill);
     setGroupCart([]);
     setCart({});
-    localStorage.removeItem('fnb_group_cart');
   };
 
   const groupTotal = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
@@ -214,7 +219,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
             {tablesList.map(t => {
               const st = tableStatusMap[t]?.status || 'Free';
               const isBlocked = st !== 'Free';
-              const label = st === 'Occupied' ? '🛑 Đã có chủ' : st === 'PendingHold' ? '⏳ Giữ chỗ chờ thanh toán' : '🟢 Trống';
+              const label = st === 'Occupied' ? 'Đã có chủ' : st === 'PendingHold' ? 'Giữ chỗ chờ thanh toán' : 'Trống';
               return (
                 <option key={t} value={t} disabled={isBlocked}>
                   {t} ({label})
@@ -228,7 +233,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
         </div>
       </div>
 
-      {/* 1. TAB 1: MENU QR WITH CLEAN SIMPLE QUANTITY COUNTER (e.g. "+ Thêm Vào Giỏ (2)") */}
+      {/* 1. TAB 1: MENU QR WITH CLEAN SIMPLE QUANTITY COUNTER */}
       {activeTab === 'customer-menu' && (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
           <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '20px' }}>
@@ -386,7 +391,6 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       {generatedBill && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '28px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '2px solid #059669' }}>
-            <div style={{ background: '#DCFCE7', color: '#166534', width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px auto', fontSize: '24px', fontWeight: 'bold' }}>✓</div>
             <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>ĐÃ ĐẶT ĐƠN GIỮ BÀN TẠI QUẦY THU NGÂN</h3>
             <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Vị trí giữ chỗ: <strong>{generatedBill.table}</strong> (Giữ bàn tối đa 15 phút)</p>
             
@@ -401,8 +405,8 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
               <ol style={{ margin: '4px 0 0 0', paddingLeft: '20px' }}>
                 <li>Hệ thống <strong>giữ chỗ {generatedBill.table} trong vòng 15 phút</strong> cho đơn hàng này.</li>
                 <li>Quý khách vui lòng đến Thu Ngân đọc Mã Bill <strong>{generatedBill.billCode}</strong> để thanh toán.</li>
-                <li>Sau khi thanh toán thành công, đơn mới được lưu vào hệ thống chính và gửi lệnh xuống Bếp!</li>
-                <li>Nếu quá 15 phút không thanh toán, đơn sẽ tự động bị HỦY và giải phóng bàn cho khách khác.</li>
+                <li>Sau khi thanh toán thành công, đơn mới được lưu vào hệ thống chính và gửi lệnh xuống Bếp.</li>
+                <li>Nếu quá 15 phút không thanh toán, đơn sẽ tự động bị hủy và giải phóng bàn cho khách khác.</li>
               </ol>
             </div>
 

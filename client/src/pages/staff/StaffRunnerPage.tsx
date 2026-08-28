@@ -33,6 +33,17 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
     'Bánh Tiramisu Ý'
   ];
 
+  const commonAdjustmentChips = [
+    'Bớt ngọt / Ít đường',
+    'Không đường',
+    'Ít đá',
+    'Nhiều đá / Thêm đá',
+    'Pha lại do quá đắng',
+    'Pha đậm vị hơn',
+    'Hâm nóng lại món',
+    'Đổi sang món khác'
+  ];
+
   // 1. TABLE OCCUPANCY STATE (REALTIME SYNC)
   const [activeKdsTickets, setActiveKdsTickets] = useState<any[]>([]);
   const [pendingBills, setPendingBills] = useState<any[]>([]);
@@ -77,22 +88,13 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
     localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
 
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ DỌN DẸP & GIẢI PHÓNG "${tableToRelease}" THÀNH CÔNG!\nBàn đã sẵn sàng ở trạng thái TRỐNG để đón lượt khách mới.`);
+    alert(`Đã dọn dẹp và giải phóng ${tableToRelease} thành công! Bàn đã sẵn sàng ở trạng thái Trống để đón lượt khách mới.`);
   };
 
-  // 2. BEVERAGE COMPLAINTS & KITCHEN ADJUSTMENT SYSTEM
+  // 2. BEVERAGE COMPLAINTS & KITCHEN ADJUSTMENT SYSTEM (NO HARDCODED DUMMIES)
   const [complaints, setComplaints] = useState<BeverageComplaint[]>(() => {
     const saved = localStorage.getItem('fnb_staff_complaints');
-    return saved ? JSON.parse(saved) : [
-      {
-        id: 'ADJ-101',
-        table: 'Bàn 04',
-        dishName: 'Cà Phê Sữa Đá Sài Gòn',
-        issueNote: 'Khách xin bớt ngọt, cho thêm đá',
-        status: 'InKitchen',
-        createdAt: '02:30:15'
-      }
-    ];
+    return saved ? JSON.parse(saved) : [];
   });
 
   useEffect(() => {
@@ -101,12 +103,12 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
 
   const [selectedComplaintTable, setSelectedComplaintTable] = useState<string>('Bàn 01');
   const [selectedComplaintDish, setSelectedComplaintDish] = useState<string>('Cà Phê Sữa Đá Sài Gòn');
-  const [complaintNote, setComplaintNote] = useState<string>('Khách xin bớt ngọt / ít đường');
+  const [complaintNote, setComplaintNote] = useState<string>('');
 
   const handleSendAdjustmentToKitchen = (e: React.FormEvent) => {
     e.preventDefault();
     if (!complaintNote.trim()) {
-      alert('Vui lòng nhập ghi chú khiếu nại của khách!');
+      alert('Vui lòng nhập hoặc chọn ghi chú yêu cầu điều chỉnh của khách!');
       return;
     }
 
@@ -125,7 +127,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
       id: `TK-${complaintId}`,
       orderNo: complaintId,
       table: selectedComplaintTable,
-      pagerId: 'PHỤC VỤ TẬN BÀN',
+      pagerId: 'Phục Vụ Tận Bàn',
       station: selectedComplaintDish.includes('Bánh') ? 'Kitchen' : 'Barista',
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
@@ -137,7 +139,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
           id: `ADJ-ITEM-${Date.now()}`,
           name: selectedComplaintDish,
           quantity: 1,
-          note: `🚨 [YÊU CẦU ĐIỀU CHỈNH / SỬA MÓN]: ${complaintNote.trim()} (Bàn: ${selectedComplaintTable})`
+          note: `Yêu cầu điều chỉnh: ${complaintNote.trim()} (Bàn: ${selectedComplaintTable})`
         }
       ]
     };
@@ -149,14 +151,14 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
     setComplaints(updatedComplaints);
 
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ GỬI LỆNH ĐIỀU CHỈNH "${selectedComplaintDish}" XUỐNG BẾP!\n- Bàn: ${selectedComplaintTable}\n- Ghi chú: ${complaintNote}\nBếp sẽ pha chế lại theo yêu cầu và báo phục vụ mang ra bàn.`);
-    setComplaintNote('Khách xin bớt ngọt / ít đường');
+    alert(`Đã gửi lệnh điều chỉnh món "${selectedComplaintDish}" xuống Bếp!\n- Vị trí: ${selectedComplaintTable}\n- Yêu cầu: ${complaintNote}\nBếp sẽ pha chế lại theo yêu cầu và báo phục vụ mang ra bàn.`);
+    setComplaintNote('');
   };
 
   const handleDeliverAdjustedDrink = (id: string, table: string, dishName: string) => {
     const updated = complaints.map(c => c.id === id ? { ...c, status: 'Delivered' as const } : c);
     setComplaints(updated);
-    alert(`ĐÃ XÁC NHẬN MANG MÓN "${dishName}" ĐÃ SỬA RA PHỤC VỤ TẠI ${table}! Khiếu nại đã được giải quyết hài lòng.`);
+    alert(`Đã xác nhận mang món "${dishName}" đã sửa ra phục vụ tại ${table}.`);
   };
 
   // 3. WIFI ATTENDANCE LOGS
@@ -175,7 +177,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
       status: 'Hợp Lệ (Geofenced)'
     };
     setAttendanceLogs([newLog, ...attendanceLogs]);
-    alert('CHẤM CÔNG VÀO LÀM THÀNH CÔNG! Đã xác thực mạng WiFi Chi Nhánh.');
+    alert('Chấm công vào làm thành công! Đã xác thực mạng WiFi Chi Nhánh.');
   };
 
   const handleClockOutWifi = () => {
@@ -188,7 +190,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
       status: 'Hợp Lệ (Geofenced)'
     };
     setAttendanceLogs([newLog, ...attendanceLogs]);
-    alert('CHẤM CÔNG TAN LÀM THÀNH CÔNG!');
+    alert('Chấm công tan làm thành công!');
   };
 
   return (
@@ -198,7 +200,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
       {(activeTab === 'staff-tables' || activeTab === 'staff') && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn & Dọn Dẹp Giải Phóng Bàn (Dành Cho Phục Vụ)</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Theo dõi trạng thái các bàn. Khi khách đã dùng xong và rời đi, nhân viên phục vụ dọn dẹp bàn rồi bấm <strong>"Xác Nhận Đã Dọn Bàn & Giải Phóng"</strong> để trả bàn về trạng thái TRỐNG.</p>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Theo dõi trạng thái các bàn. Khi khách đã dùng xong và rời đi, nhân viên phục vụ dọn dẹp bàn rồi bấm <strong>"Xác Nhận Đã Dọn Bàn & Giải Phóng"</strong> để trả bàn về trạng thái Trống.</p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
             {tablesList.map((tbl) => {
@@ -210,7 +212,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
               const bg = isOccupied ? '#FEE2E2' : isPending ? '#FEF3C7' : '#ECFDF5';
               const border = isOccupied ? '2px solid #EF4444' : isPending ? '2px solid #F59E0B' : '1px solid #A7F3D0';
               const badgeBg = isOccupied ? '#DC2626' : isPending ? '#D97706' : '#059669';
-              const label = isOccupied ? '🛑 ĐANG CÓ KHÁCH' : isPending ? '⏳ ĐANG GIỮ CHỖ QR' : '🟢 BÀN TRỐNG SẴN SÀNG';
+              const label = isOccupied ? 'ĐANG CÓ KHÁCH' : isPending ? 'ĐANG GIỮ CHỖ QR' : 'BÀN TRỐNG SẴN SÀNG';
 
               return (
                 <div key={tbl} style={{ border, background: bg, borderRadius: '8px', padding: '18px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', gap: '14px' }}>
@@ -233,11 +235,11 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
                       onClick={() => handleCleanAndReleaseTable(tbl)}
                       style={{ width: '100%', padding: '10px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
                     >
-                      🧹 XÁC NHẬN ĐÃ DỌN BÀN & GIẢI PHÓNG
+                      XÁC NHẬN ĐÃ DỌN BÀN & GIẢI PHÓNG
                     </button>
                   ) : (
                     <div style={{ textAlign: 'center', fontSize: '12px', color: '#059669', fontWeight: 'bold', padding: '8px', background: '#DCFCE7', borderRadius: '6px' }}>
-                      ✓ Bàn đã sạch sẽ, sẵn sàng đón khách
+                      Bàn đã sạch sẽ, sẵn sàng đón khách
                     </div>
                   )}
                 </div>
@@ -249,12 +251,12 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
 
       {/* 2. VIEW 2: TIẾP NHẬN KHIẾU NẠI & YÊU CẦU SỬA MÓN BẾP */}
       {activeTab === 'staff-complaints' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '20px' }}>
           
           {/* FORM INTAKE COMPLAINT */}
           <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
             <h2 style={{ fontSize: '18px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Ghi Nhận Khiếu Nại & Yêu Cầu Sửa Món Bếp</h2>
-            <p style={{ color: '#475569', fontSize: '13px', marginBottom: '16px' }}>Khi khách tại bàn phản hồi về chất lượng đồ uống (ít đường, quá đắng, đổi món...), phục vụ gửi lệnh trực tiếp xuống Bếp.</p>
+            <p style={{ color: '#475569', fontSize: '13px', marginBottom: '16px' }}>Khảo sát ý kiến của khách tại bàn, chọn món cần điều chỉnh và nhập nội dung yêu cầu gửi xuống Bếp.</p>
 
             <form onSubmit={handleSendAdjustmentToKitchen} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <div>
@@ -272,10 +274,25 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
               </div>
 
               <div>
-                <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: '#0F172A', marginBottom: '4px' }}>Ghi Chú Yêu Cầu Của Khách:</label>
+                <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: '#0F172A', marginBottom: '4px' }}>Ghi Chú Yêu Cầu Của Khách (Tự nhập hoặc chọn nhanh):</label>
+                
+                {/* QUICK SELECTION CHIPS */}
+                <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '8px' }}>
+                  {commonAdjustmentChips.map((chip) => (
+                    <button
+                      key={chip}
+                      type="button"
+                      onClick={() => setComplaintNote(prev => prev ? `${prev}, ${chip}` : chip)}
+                      style={{ padding: '4px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', fontSize: '11px', color: '#334155', cursor: 'pointer', fontWeight: '500' }}
+                    >
+                      + {chip}
+                    </button>
+                  ))}
+                </div>
+
                 <input
                   type="text"
-                  placeholder="Ví dụ: Khách xin bớt ngọt, cho thêm đá..."
+                  placeholder="Nhập yêu cầu của khách sau khi khảo sát..."
                   value={complaintNote}
                   onChange={(e) => setComplaintNote(e.target.value)}
                   style={{ width: '100%', padding: '10px', border: '1px solid #CBD5E1', borderRadius: '6px', fontSize: '14px', fontWeight: 'bold' }}
@@ -286,7 +303,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
                 type="submit"
                 style={{ padding: '12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', fontSize: '14px', cursor: 'pointer', marginTop: '6px' }}
               >
-                🚨 GỬI YÊU CẦU ĐIỀU CHỈNH XUỐNG BẾP
+                GỬI YÊU CẦU ĐIỀU CHỈNH XUỐNG BẾP
               </button>
             </form>
           </div>
@@ -299,7 +316,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {complaints.length === 0 ? (
                 <div style={{ padding: '30px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
-                  Không có yêu cầu điều chỉnh món nào.
+                  Hiện không có yêu cầu điều chỉnh món nào đang chờ xử lý.
                 </div>
               ) : (
                 complaints.map((c) => (
@@ -307,7 +324,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <strong style={{ color: '#0F172A', fontSize: '16px' }}>{c.table} - {c.dishName}</strong>
                       <span style={{ background: c.status === 'Delivered' ? '#DCFCE7' : '#FEF3C7', color: c.status === 'Delivered' ? '#166534' : '#92400E', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 'bold' }}>
-                        {c.status === 'Delivered' ? '✓ Đã giao tại bàn' : '👨‍🍳 Bếp đang làm lại'}
+                        {c.status === 'Delivered' ? 'Đã giao tại bàn' : 'Bếp đang làm lại'}
                       </span>
                     </div>
                     <div style={{ fontSize: '13px', color: '#DC2626', fontWeight: 'bold', marginTop: '6px' }}>
@@ -320,7 +337,7 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
                         onClick={() => handleDeliverAdjustedDrink(c.id, c.table, c.dishName)}
                         style={{ marginTop: '10px', width: '100%', padding: '8px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
                       >
-                        ✓ XÁC NHẬN ĐÃ MANG MÓN SỬA RA BÀN {c.table}
+                        XÁC NHẬN ĐÃ MANG MÓN SỬA RA BÀN {c.table}
                       </button>
                     )}
                   </div>

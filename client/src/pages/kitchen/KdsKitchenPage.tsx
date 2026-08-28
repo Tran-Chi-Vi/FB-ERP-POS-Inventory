@@ -165,7 +165,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setTickets(updatedTickets);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! Các món trong mẻ đã làm xong và tự động xóa khỏi danh sách gom mẻ.`);
+    alert(`Đã hoàn tất mẻ chế biến "${dishName}"! Các món trong mẻ đã làm xong và tự động xóa khỏi danh sách gom mẻ.`);
   };
 
   // 3. 86-LIST MATRIX
@@ -198,9 +198,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(slaHistory));
   }, [slaHistory]);
 
-  // WHEN KITCHEN COMPLETES A TICKET:
-  // 1. IF REGULAR ORDER: SET isRungReady = true (DISPATCHES PAGER TO CASHIER RECOVERY HUB) AND BUMP
-  // 2. IF ADJUSTMENT ORDER: UPDATE STAFF COMPLAINTS LIST (ReadyToDeliver) AND BUMP
   const handleBumpAndSaveToHistory = (ticket: KdsTicket) => {
     if (ticket.isAdjustment) {
       // Update complaint status for Staff
@@ -230,7 +227,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       localStorage.setItem('fnb_kds_sla_history', JSON.stringify(updatedHistory));
 
       window.dispatchEvent(new Event('fnb_data_updated'));
-      setActiveIotAlert({ pagerId: 'PHỤC VỤ TẬN BÀN', orderNo: ticket.orderNo, table: ticket.table, isAdjustment: true });
+      setActiveIotAlert({ pagerId: 'Phục Vụ Tận Bàn', orderNo: ticket.orderNo, table: ticket.table, isAdjustment: true });
       return;
     }
 
@@ -345,11 +342,11 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                 >
                   {t.isAdjustment ? (
                     <div style={{ background: '#D97706', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
-                      ⚠️ YÊU CẦU ĐIỀU CHỈNH / SỬA MÓN (PHỤC VỤ TẬN {t.table})
+                      YÊU CẦU ĐIỀU CHỈNH / SỬA MÓN (PHỤC VỤ TẬN {t.table})
                     </div>
                   ) : t.isAddOn ? (
                     <div style={{ background: '#DC2626', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
-                      🚨 VÉ GỘP CÓ MÓN MỚI BỔ SUNG (THẺ RUNG {t.pagerId})
+                      VÉ GỘP CÓ MÓN MỚI BỔ SUNG (THẺ RUNG {t.pagerId})
                     </div>
                   ) : null}
 
@@ -555,11 +552,11 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
             <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
-              🔔 CẢNH BÁO BẾP: {addOnNotice.isAdjustment ? `YÊU CẦU ĐIỀU CHỈNH MÓN CHO ${addOnNotice.table}!` : `ĐƠN GỘP BỔ SUNG MÓN CHO THẺ RUNG ${addOnNotice.pagerId}!`}
+              CẢNH BÁO BẾP: {addOnNotice.isAdjustment ? `Yêu cầu điều chỉnh món cho ${addOnNotice.table}` : `Đơn gộp bổ sung món cho thẻ rung ${addOnNotice.pagerId}`}
             </div>
             <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>{addOnNotice.table} | Mã: {addOnNotice.orderNo}</h3>
             <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>
-              {addOnNotice.isAdjustment ? `Yêu cầu chỉnh sửa món từ phục vụ bàn ${addOnNotice.table}.` : `Món mới đã được GỘP TRỰC TIẾP vào Thẻ Đơn Hàng hiện tại của ${addOnNotice.pagerId}.`}
+              {addOnNotice.isAdjustment ? `Yêu cầu chỉnh sửa món từ phục vụ bàn ${addOnNotice.table}.` : `Món mới đã được gộp trực tiếp vào Thẻ Đơn Hàng hiện tại của ${addOnNotice.pagerId}.`}
             </p>
             
             <button onClick={handleAcknowledgeAddOnNotice} style={{ padding: '10px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
@@ -574,10 +571,10 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: activeIotAlert.isAdjustment ? '3px solid #D97706' : '3px solid #059669' }}>
             <div style={{ background: activeIotAlert.isAdjustment ? '#FEF3C7' : '#DCFCE7', color: activeIotAlert.isAdjustment ? '#92400E' : '#166534', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
-              {activeIotAlert.isAdjustment ? `ĐÃ HOÀN TẤT ĐIỀU CHỈNH CHO ${activeIotAlert.table}!` : `🔔 KÍCH HOẠT RUNG THẺ IOT ${activeIotAlert.pagerId} THÀNH CÔNG!`}
+              {activeIotAlert.isAdjustment ? `Đã hoàn tất điều chỉnh cho ${activeIotAlert.table}` : `Kích hoạt rung thẻ IoT ${activeIotAlert.pagerId} thành công`}
             </div>
             <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '22px', fontWeight: 'bold' }}>
-              {activeIotAlert.isAdjustment ? `MANG MÓN RA ${activeIotAlert.table}` : `THẺ RUNG IOT: ${activeIotAlert.pagerId}`}
+              {activeIotAlert.isAdjustment ? `Mang món ra ${activeIotAlert.table}` : `Thẻ Rung IoT: ${activeIotAlert.pagerId}`}
             </h3>
             <p style={{ fontSize: '14px', color: '#475569', margin: '0 0 16px 0' }}>
               {activeIotAlert.isAdjustment ? `Mã yêu cầu: ${activeIotAlert.orderNo} | Phục vụ mang đồ uống đã sửa ra bàn.` : `Đơn hàng: ${activeIotAlert.orderNo} | ${activeIotAlert.table}`}

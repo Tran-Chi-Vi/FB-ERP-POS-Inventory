@@ -181,7 +181,7 @@ export const App: React.FC = () => {
 
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ QUÉT / THU HỒI THẺ RUNG IOT "${pagerIdToReturn}" THÀNH CÔNG!\nThẻ đã rảnh và sẵn sàng giao cho khách tiếp theo.`);
+    alert(`Đã thu hồi thẻ rung IoT "${pagerIdToReturn}" thành công!\nThẻ đã rảnh và sẵn sàng giao cho khách tiếp theo.`);
   };
 
   // ACTION: HANDLE BARCODE SCAN SUBMIT
@@ -194,7 +194,7 @@ export const App: React.FC = () => {
       handleReturnIotPager(cleanId);
       setPagerScanInput('');
     } else {
-      alert(`Mã Thẻ IoT "${cleanId}" hiện đang ở trạng thái RẢNH (Không cần thu hồi).`);
+      alert(`Mã Thẻ IoT "${cleanId}" hiện đang ở trạng thái Rảnh (Không cần thu hồi).`);
       setPagerScanInput('');
     }
   };
@@ -318,7 +318,7 @@ export const App: React.FC = () => {
         id: `NEW-${c.product.id}-${Date.now()}`,
         name: c.product.name,
         quantity: c.quantity,
-        note: `🚨 [MÓN MỚI BỔ SUNG] (Bill ${invoiceId})`
+        note: `[MÓN MỚI BỔ SUNG] (Bill ${invoiceId})`
       }));
 
       existingKdsTickets[existingTicketIndex] = {
@@ -346,7 +346,7 @@ export const App: React.FC = () => {
           id: c.product.id,
           name: c.product.name,
           quantity: c.quantity,
-          note: isAddOnOrder ? `🚨 [MÓN MỚI BỔ SUNG] (Bill ${invoiceId})` : `Thẻ Rung: ${selectedPosPagerId}`
+          note: isAddOnOrder ? `[MÓN MỚI BỔ SUNG] (Bill ${invoiceId})` : `Thẻ Rung: ${selectedPosPagerId}`
         }))
       };
       existingKdsTickets = [newKdsTicket, ...existingKdsTickets];
@@ -362,7 +362,7 @@ export const App: React.FC = () => {
     setShowPaymentConfirmModal(false);
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN ${invoiceId}!\n- Đã gán Thẻ Rung ${selectedPosPagerId} cho ${selectedTable}.`);
+    alert(`Thanh toán thành công hóa đơn ${invoiceId}!\n- Đã gán Thẻ Rung ${selectedPosPagerId} cho ${selectedTable}.`);
   };
 
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
@@ -394,7 +394,7 @@ export const App: React.FC = () => {
         id: `NEW-QR-${idx}-${Date.now()}`,
         name: b.name,
         quantity: b.quantity,
-        note: `🚨 [MÓN MỚI BỔ SUNG QR] (Bill ${bill.billCode})`
+        note: `[MÓN MỚI BỔ SUNG QR] (Bill ${bill.billCode})`
       }));
 
       existingKdsTickets[existingTicketIndex] = {
@@ -422,7 +422,7 @@ export const App: React.FC = () => {
           id: idx.toString(),
           name: b.name,
           quantity: b.quantity,
-          note: isPagerBusy ? `🚨 [MÓN MỚI BỔ SUNG QR] (Bill ${bill.billCode})` : `Thẻ Rung: ${assignedPager}`
+          note: isPagerBusy ? `[MÓN MỚI BỔ SUNG QR] (Bill ${bill.billCode})` : `Thẻ Rung: ${assignedPager}`
         }))
       };
       existingKdsTickets = [newKdsTicket, ...existingKdsTickets];
@@ -440,7 +440,7 @@ export const App: React.FC = () => {
 
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Gán Thẻ Rung ${assignedPager} cho ${bill.table}.`);
+    alert(`Xác nhận thanh toán mã Bill ${bill.billCode} thành công!\n- Gán Thẻ Rung ${assignedPager} cho ${bill.table}.`);
   };
 
   if (!currentUser) {
@@ -494,7 +494,7 @@ export const App: React.FC = () => {
 
             {rungReadyPagersList.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
-                Hiện không có Thẻ Rung nào đang phát chuông chờ thu hồi. (Thẻ chỉ xuất hiện ở đây SAU KHI BẾP BẤM "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)").
+                Hiện không có Thẻ Rung nào đang phát chuông chờ thu hồi. (Thẻ chỉ xuất hiện ở đây sau khi Bếp bấm "Hoàn Tất Chế Biến (Rung Thẻ)").
               </div>
             ) : (
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px' }}>
@@ -505,7 +505,7 @@ export const App: React.FC = () => {
                       <div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                           <h4 style={{ margin: 0, color: '#059669', fontSize: '20px', fontWeight: 'bold' }}>{pId}</h4>
-                          <span style={{ background: '#DCFCE7', color: '#166534', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 'bold' }}>🔔 Đang phát chuông</span>
+                          <span style={{ background: '#DCFCE7', color: '#166534', padding: '2px 8px', borderRadius: '4px', fontSize: '11px', fontWeight: 'bold' }}>Đang phát chuông</span>
                         </div>
                         <div style={{ fontSize: '14px', color: '#0F172A', fontWeight: 'bold', marginTop: '6px' }}>Vị trí: {info.table}</div>
                         <div style={{ fontSize: '12px', color: '#475569' }}>Mã Bill: {info.orderNo}</div>
@@ -514,7 +514,7 @@ export const App: React.FC = () => {
                         onClick={() => handleReturnIotPager(pId)}
                         style={{ width: '100%', padding: '10px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
                       >
-                        ✓ XÁC NHẬN ĐÃ THU HỒI THẺ {pId}
+                        XÁC NHẬN ĐÃ THU HỒI THẺ {pId}
                       </button>
                     </div>
                   );
@@ -552,7 +552,7 @@ export const App: React.FC = () => {
                           <span style={{ fontSize: '0.85rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
                           <strong style={{ color: '#0F172A', fontSize: '1.05rem' }}>{b.table}</strong>
                           <span style={{ background: '#DC2626', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 'bold' }}>
-                            ⏳ Giữ bàn: {timeFormatted} còn lại (Tự hủy sau 15p)
+                            Giữ bàn: {timeFormatted} còn lại (Tự hủy sau 15p)
                           </span>
                         </div>
                         <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
@@ -610,7 +610,7 @@ export const App: React.FC = () => {
             </div>
 
             <div>
-              {/* SƠ ĐỒ BÀN PHỤC VỤ SHOWING FREE, PENDING HOLD (15M), AND OCCUPIED (NO CLEAR BUTTON AS CLEARED BY STAFF) */}
+              {/* SƠ ĐỒ BÀN PHỤC VỤ */}
               <div className="card" style={{ marginBottom: '1rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
                   <h3 style={{ margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ (Trạng Thái Trống, Giữ Chỗ & Đã Có Chủ)</h3>
@@ -626,13 +626,13 @@ export const App: React.FC = () => {
                     const border = isSelected ? '1px solid #059669' : st === 'Occupied' ? '2px solid #EF4444' : st === 'PendingHold' ? '2px solid #F59E0B' : '1px solid #CBD5E1';
                     const color = isSelected ? '#fff' : st === 'Occupied' ? '#991B1B' : st === 'PendingHold' ? '#92400E' : '#0F172A';
 
-                    let label = '🟢 Trống';
-                    if (st === 'Occupied') label = '🛑 Đã Có Chủ';
+                    let label = 'Trống';
+                    if (st === 'Occupied') label = 'Đã Có Chủ';
                     if (st === 'PendingHold') {
                       const secsRem = Math.max(0, Math.floor(((tableStatusMap[t].expiresAt || 0) - Date.now()) / 1000));
                       const m = Math.floor(secsRem / 60);
                       const s = secsRem % 60;
-                      label = `⏳ Giữ chỗ (${m}:${s < 10 ? '0' : ''}${s})`;
+                      label = `Giữ chỗ (${m}:${s < 10 ? '0' : ''}${s})`;
                     }
 
                     return (
@@ -720,7 +720,7 @@ export const App: React.FC = () => {
 
                     {isAddOnOrder && (
                       <div style={{ marginTop: '6px', fontSize: '0.75rem', color: '#DC2626', fontWeight: 'bold', background: '#FEE2E2', padding: '6px', borderRadius: '4px' }}>
-                        ⚠️ {selectedTable} đang có khách ({selectedPosPagerId}). Đơn mới này sẽ tự động GỘP MÓN MỚI vào vé Bếp KDS hiện tại!
+                        Lưu ý: {selectedTable} đang có khách ({selectedPosPagerId}). Đơn mới này sẽ tự động gộp món mới vào vé Bếp KDS hiện tại.
                       </div>
                     )}
                   </div>
@@ -767,7 +767,7 @@ export const App: React.FC = () => {
 
               {isAddOnOrder && (
                 <div style={{ background: '#FEE2E2', border: '1px solid #EF4444', color: '#991B1B', padding: '10px 12px', borderRadius: '6px', fontSize: '13px', fontWeight: 'bold', marginBottom: '16px' }}>
-                  ⚠️ LƯU Ý THU NGÂN: Món mới sẽ được GỘP TRỰC TIẾP vào vé Bếp KDS của {selectedPosPagerId}. Bếp sẽ thấy cả món cũ & món mới trên 1 vé duy nhất!
+                  Lưu ý thu ngân: Món mới sẽ được gộp trực tiếp vào vé Bếp KDS của {selectedPosPagerId}. Bếp sẽ thấy cả món cũ & món mới trên 1 vé duy nhất.
                 </div>
               )}
 
