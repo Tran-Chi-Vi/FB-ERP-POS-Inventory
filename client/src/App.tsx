@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import './styles/impeccable-theme.css';
 import { Sidebar } from './components/Sidebar';
 import { LoginPage } from './pages/auth/LoginPage';
+import { UserManagementPage } from './pages/admin/UserManagementPage';
 
 interface Product {
   id: string;
@@ -19,7 +20,7 @@ interface CartItem {
 
 export const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<{ fullName: string; role: string } | null>(null);
-  const [activeTab, setActiveTab] = useState<'pos' | 'kds' | 'inventory' | 'crm' | 'finance' | 'bi' | 'hr' | 'prompt-skills'>('pos');
+  const [activeTab, setActiveTab] = useState<string>('pos');
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất Cả');
   const [selectedTable, setSelectedTable] = useState<string | null>('Bàn 01');
   const [cart, setCart] = useState<CartItem[]>([]);
@@ -33,6 +34,9 @@ export const App: React.FC = () => {
 
   const handleLoginSuccess = (user: { fullName: string; role: string }) => {
     setCurrentUser(user);
+    if (user.role === 'Admin' || user.role === 'SuperAdmin') {
+      setActiveTab('users');
+    }
   };
 
   const handleLogout = () => {
@@ -84,10 +88,65 @@ export const App: React.FC = () => {
 
       {/* MAIN CONTENT WRAPPER */}
       <main className="main-wrapper" ref={mainRef}>
-        {/* POS TAB WITH LEFT CATEGORY MENU & PRODUCT GRID */}
+        {/* ACCOUNT MANAGEMENT TAB (FOR ADMIN & SUPERADMIN) */}
+        {activeTab === 'users' && <UserManagementPage />}
+
+        {/* EXTENSIONS ROADMAP TAB */}
+        {activeTab === 'extensions' && (
+          <div>
+            <h2 style={{ marginBottom: '0.5rem' }}>FNB POS Roles & Feature Extensions Roadmap</h2>
+            <p style={{ color: '#94a3b8', marginBottom: '1.5rem' }}>
+              Đặc tả tính năng mở rộng theo file FNB_POS_Roles_And_Feature_Extensions.docx
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
+              <div className="card">
+                <h3 style={{ color: '#f43f5e' }}>👑 SuperAdmin Extensions</h3>
+                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
+                  <li>▫️ Cấu hình Franchise & Nhượng quyền (Royalty Fee %)</li>
+                  <li>▫️ Regional Dynamic Pricing (Giá theo vùng miền & sân bay)</li>
+                  <li>▫️ Session Revocation Dashboard & Force Logout từ xa</li>
+                  <li>▫️ AI-driven Anomaly Detection (Cảnh báo hủy món ca đêm)</li>
+                  <li>▫️ Financial Forecasting bằng Machine Learning</li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3 style={{ color: '#10b981' }}>🔑 Admin Extensions</h3>
+                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
+                  <li>▫️ <strong>Quản lý Tạo Tài Khoản & Gán 8 Roles (Đã hoàn thành)</strong></li>
+                  <li>▫️ Omnichannel Menu Matrix (In-store, Takeaway, GrabFood)</li>
+                  <li>▫️ Catch-weight Pricing (Bán món theo gram/kg thực tế)</li>
+                  <li>▫️ What-If Cost Simulation (Mô phỏng biến động giá vốn)</li>
+                  <li>▫️ Chi trả lương 1-click qua API Ngân hàng (VietinBank/MBBank)</li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3 style={{ color: '#38bdf8' }}>👔 Manager Extensions</h3>
+                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
+                  <li>▫️ Dual-blind Cash Count (Xác thực đóng ca đếm tiền kép)</li>
+                  <li>▫️ Cash Skimming Alert (Cảnh báo két tiền vượt 10 triệu)</li>
+                  <li>▫️ Remote Push-Notification Approval (Duyệt hủy món qua App)</li>
+                  <li>▫️ Smart Shift Swap Marketplace (Chợ đổi ca tự động)</li>
+                </ul>
+              </div>
+
+              <div className="card">
+                <h3 style={{ color: '#818cf8' }}>📦 Warehouse & Cashier Extensions</h3>
+                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
+                  <li>▫️ Automated PO Dispatch qua PDF Email</li>
+                  <li>▫️ Mobile Barcode Stocktaking (Kiểm kê kho bằng camera HP)</li>
+                  <li>▫️ P2P Local Mesh Sync (Đồng bộ ngang hàng khi mất mạng)</li>
+                  <li>▫️ Customer Facing Display (CFD Màn hình phụ hiển thị QR)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* POS TAB */}
         {activeTab === 'pos' && (
           <div className="pos-layout">
-            {/* CATEGORY MENU SIDEBAR */}
             <div className="category-menu">
               <h3 style={{ fontSize: '0.9rem', color: '#94a3b8', marginBottom: '0.5rem' }}>DANH MỤC MÓN</h3>
               {categories.map((cat) => (
@@ -101,7 +160,6 @@ export const App: React.FC = () => {
               ))}
             </div>
 
-            {/* PRODUCT GRID & TABLE MAP */}
             <div>
               <div className="card" style={{ marginBottom: '1rem' }}>
                 <h3 style={{ marginBottom: '0.75rem' }}>Sơ Đồ Bàn Phục Vụ (Branch: Quận 1)</h3>
@@ -141,7 +199,6 @@ export const App: React.FC = () => {
               </div>
             </div>
 
-            {/* ORDER CART DRAWER */}
             <div className="card">
               <h3>Đơn Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
               {cart.length === 0 ? (

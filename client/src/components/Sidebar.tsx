@@ -8,6 +8,8 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, currentUser, onLogout }) => {
+  const isManagementRole = currentUser?.role === 'Admin' || currentUser?.role === 'SuperAdmin';
+
   const menuItems = [
     { id: 'pos', label: 'POS Bán Hàng', icon: '🛒' },
     { id: 'kds', label: 'KDS Bếp / Bar', icon: '👨‍🍳' },
@@ -16,6 +18,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, curre
     { id: 'finance', label: 'ERP Tài Chính & PO', icon: '📊' },
     { id: 'bi', label: 'BI Menu Engineering', icon: '⭐' },
     { id: 'hr', label: 'HRM & WiFi Chấm Công', icon: '🆔' },
+    ...(isManagementRole ? [{ id: 'users', label: 'Quản Lý Tài Khoản (RBAC)', icon: '🔑' }] : []),
+    { id: 'extensions', label: 'FNB Roadmap Extensions', icon: '🚀' },
     { id: 'prompt-skills', label: 'AI Skills & Control', icon: '🤖' },
   ];
 
