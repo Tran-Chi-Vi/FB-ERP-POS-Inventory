@@ -33,12 +33,45 @@ interface PaidInvoice {
   timestamp: string;
 }
 
+interface PendingBill {
+  billCode: string;
+  table: string;
+  items: { name: string; quantity: number; price: number }[];
+  totalAmount: number;
+  status: 'PendingPayment' | 'Paid';
+  timestamp: string;
+}
+
 export const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<{ fullName: string; role: string } | null>(null);
   const [activeTab, setActiveTab] = useState<string>('pos');
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất Cả');
   const [selectedTable, setSelectedTable] = useState<string | null>('Bàn 01');
   const [cart, setCart] = useState<CartItem[]>([]);
+  
+  // PENDING QR BILLS WAITING FOR CASHIER PAYMENT FIRST
+  const [pendingBills, setPendingBills] = useState<PendingBill[]>(() => {
+    const saved = localStorage.getItem('fnb_pending_bills');
+    return saved ? JSON.parse(saved) : [
+      {
+        billCode: 'BILL-8942',
+        table: 'Bàn 04',
+        items: [
+          { name: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, price: 29000 },
+          { name: 'Trà Đào Cam Sả Tươi', quantity: 1, price: 39000 },
+          { name: 'Bánh Croissant Bơ Bơ', quantity: 1, price: 25000 }
+        ],
+        totalAmount: 122000,
+        status: 'PendingPayment',
+        timestamp: '21:30:15'
+      }
+    ];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('fnb_pending_bills', JSON.stringify(pendingBills));
+  }, [pendingBills]);
+
   const [paidInvoices, setPaidInvoices] = useState<PaidInvoice[]>([
     {
       id: 'HD-9921',
@@ -50,16 +83,6 @@ export const App: React.FC = () => {
       totalAmount: 97000,
       paymentMethod: 'Chuyển Khoản VietQR',
       timestamp: '21:15:30'
-    },
-    {
-      id: 'HD-9920',
-      table: 'Bàn 02',
-      items: [
-        { product: { id: '5', name: 'Trà Sữa Ô Long', price: 42000, category: 'Trà & Trà Sữa', unit: 'Ly' }, quantity: 2 }
-      ],
-      totalAmount: 84000,
-      paymentMethod: 'Tiền Mặt',
-      timestamp: '20:45:10'
     }
   ]);
 
@@ -160,9 +183,60 @@ export const App: React.FC = () => {
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
+    // Send ticket to KDS Kitchen ONLY AFTER PAYMENT CONFIRMED!
+    const kdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+    const newKdsTicket = {
+      id: `TK-${Math.floor(100 + Math.random() * 900)}`,
+      orderNo: newInvoice.id,
+      table: newInvoice.table,
+      station: 'Barista',
+      timeElapsedMinutes: 1,
+      slaStatus: 'Normal',
+      items: cart.map(c => ({ id: c.product.id, name: c.product.name, quantity: c.quantity, note: 'Đã thanh toán tại quầy' }))
+    };
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...kdsTickets]));
+
     setPaidInvoices([newInvoice, ...paidInvoices]);
     setCart([]); // Reset giỏ hàng ngay lập tức!
-    alert(`THANH TOÁN THÀNH CÔNG! Hóa đơn ${newInvoice.id} trị giá ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table} đã được ghi nhận vào Lịch Sử Hóa Đơn và trừ kho tự động!`);
+    alert(`THANH TOÁN THÀNH CÔNG!\n- Hóa đơn ${newInvoice.id} trị giá ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table} đã thanh toán thành công.\n- Lệnh chế biến đã được tự động chuyển sang Bếp / Barista theo số Bill!`);
+  };
+
+  const handlePayPendingBill = (bill: PendingBill) => {
+    // Pay pending bill from QR
+    const newInvoice: PaidInvoice = {
+      id: bill.billCode,
+      table: bill.table,
+      items: bill.items.map((b, idx) => ({
+        product: { id: idx.toString(), name: b.name, price: b.price, category: 'Món QR', unit: 'Phần' },
+        quantity: b.quantity
+      })),
+      totalAmount: bill.totalAmount,
+      paymentMethod: 'Chuyển Khoản VietQR Tại Quầy',
+      timestamp: new Date().toLocaleTimeString('vi-VN')
+    };
+
+    // Push new KDS ticket for Kitchen
+    const kdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+    const newKdsTicket = {
+      id: `TK-${Math.floor(100 + Math.random() * 900)}`,
+      orderNo: bill.billCode,
+      table: bill.table,
+      station: 'Barista',
+      timeElapsedMinutes: 1,
+      slaStatus: 'Normal',
+      items: bill.items.map((b, idx) => ({ id: idx.toString(), name: b.name, quantity: b.quantity, note: 'Đã thanh toán mã Bill' }))
+    };
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...kdsTickets]));
+
+    // Remove bill from pending list
+    const updatedPending = pendingBills.filter(p => p.billCode !== bill.billCode);
+    setPendingBills(updatedPending);
+    localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
+
+    // Save to paid invoices
+    setPaidInvoices([newInvoice, ...paidInvoices]);
+
+    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Tổng tiền: ${bill.totalAmount.toLocaleString('vi-VN')}đ tại ${bill.table}.\n- Bếp / Barista đã nhận lệnh chế biến và Phục vụ sẽ giao món theo Mã Bill!`);
   };
 
   const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
@@ -194,95 +268,127 @@ export const App: React.FC = () => {
 
         {/* ROLE 4: CASHIER TOUCH POS UI */}
         {activeTab === 'pos' && (
-          <div className="pos-layout">
-            <div className="category-menu">
-              <h3 style={{ fontSize: '0.85rem', color: '#475569', marginBottom: '0.5rem', fontWeight: 'bold' }}>DANH MỤC MÓN</h3>
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  className={`category-btn ${selectedCategory === cat ? 'active' : ''}`}
-                  onClick={() => setSelectedCategory(cat)}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-
-            <div>
-              <div className="card" style={{ marginBottom: '1rem' }}>
-                <h3 style={{ marginBottom: '0.75rem', color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ</h3>
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  {tables.map((t) => (
-                    <button
-                      key={t}
-                      style={{
-                        padding: '0.5rem 1rem',
-                        borderRadius: '0.375rem',
-                        border: '1px solid #CBD5E1',
-                        background: selectedTable === t ? '#059669' : '#FFFFFF',
-                        color: selectedTable === t ? '#fff' : '#0F172A',
-                        fontWeight: 'bold',
-                        cursor: 'pointer'
-                      }}
-                      onClick={() => setSelectedTable(t)}
-                    >
-                      {t}
-                    </button>
+          <div>
+            {/* PENDING QR BILLS QUEUE - PAY FIRST RULE */}
+            {pendingBills.length > 0 && (
+              <div className="card" style={{ marginBottom: '1.25rem', background: '#FEF3C7', border: '2px solid #F59E0B' }}>
+                <h3 style={{ margin: 0, color: '#92400E', fontWeight: 'bold' }}>Hàng Đợi Mã Bill QR Chờ Thanh Toán Tại Quầy (Thanh Toán Trước Ra Món)</h3>
+                <p style={{ margin: '4px 0 12px 0', fontSize: '0.85rem', color: '#78350F' }}>Khách hàng đã chốt đơn QR tại bàn. Thu ngân bấm xác nhận nhận tiền để Bếp bắt đầu pha chế!</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  {pendingBills.map((b) => (
+                    <div key={b.billCode} style={{ background: '#FFFFFF', padding: '12px 16px', borderRadius: '6px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                      <div>
+                        <span style={{ fontSize: '0.75rem', background: '#2563EB', color: '#fff', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
+                        <strong style={{ marginLeft: '8px', color: '#0F172A' }}>{b.table}</strong>
+                        <span style={{ marginLeft: '12px', fontSize: '0.85rem', color: '#475569' }}>
+                          Món: {b.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}
+                        </span>
+                      </div>
+                      <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+                        <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
+                        <button
+                          onClick={() => handlePayPendingBill(b)}
+                          style={{ padding: '8px 16px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
+                        >
+                          Xác Nhận Nhận Tiền & Chuyển Bếp
+                        </button>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
+            )}
 
-              <div className="product-grid">
-                {filteredProducts.map((p) => (
-                  <div key={p.id} className="product-card" onClick={() => addToCart(p)}>
-                    <div>
-                      <span style={{ fontSize: '0.75rem', color: '#1E40AF', background: '#DBEAFE', padding: '0.1rem 0.4rem', borderRadius: '0.2rem', fontWeight: 'bold' }}>
-                        {p.category}
-                      </span>
-                      <div className="product-title" style={{ marginTop: '0.5rem' }}>{p.name}</div>
-                    </div>
-                    <div className="product-price">{p.price.toLocaleString('vi-VN')} đ</div>
-                  </div>
+            <div className="pos-layout">
+              <div className="category-menu">
+                <h3 style={{ fontSize: '0.85rem', color: '#475569', marginBottom: '0.5rem', fontWeight: 'bold' }}>DANH MỤC MÓN</h3>
+                {categories.map((cat) => (
+                  <button
+                    key={cat}
+                    className={`category-btn ${selectedCategory === cat ? 'active' : ''}`}
+                    onClick={() => setSelectedCategory(cat)}
+                  >
+                    {cat}
+                  </button>
                 ))}
               </div>
-            </div>
 
-            <div className="card">
-              <h3 style={{ color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
-              {cart.length === 0 ? (
-                <p style={{ color: '#64748B', marginTop: '1rem' }}>Chưa chọn món nào</p>
-              ) : (
-                <div style={{ marginTop: '1rem' }}>
-                  {cart.map((item) => (
-                    <div key={item.product.id} style={{ borderBottom: '1px solid #E2E8F0', padding: '0.75rem 0' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', color: '#0F172A', fontWeight: 'bold' }}>
-                        <span>{item.product.name}</span>
-                        <span style={{ color: '#059669' }}>{(item.product.price * item.quantity).toLocaleString('vi-VN')} đ</span>
+              <div>
+                <div className="card" style={{ marginBottom: '1rem' }}>
+                  <h3 style={{ marginBottom: '0.75rem', color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ</h3>
+                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                    {tables.map((t) => (
+                      <button
+                        key={t}
+                        style={{
+                          padding: '0.5rem 1rem',
+                          borderRadius: '0.375rem',
+                          border: '1px solid #CBD5E1',
+                          background: selectedTable === t ? '#059669' : '#FFFFFF',
+                          color: selectedTable === t ? '#fff' : '#0F172A',
+                          fontWeight: 'bold',
+                          cursor: 'pointer'
+                        }}
+                        onClick={() => setSelectedTable(t)}
+                      >
+                        {t}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="product-grid">
+                  {filteredProducts.map((p) => (
+                    <div key={p.id} className="product-card" onClick={() => addToCart(p)}>
+                      <div>
+                        <span style={{ fontSize: '0.75rem', color: '#1E40AF', background: '#DBEAFE', padding: '0.1rem 0.4rem', borderRadius: '0.2rem', fontWeight: 'bold' }}>
+                          {p.category}
+                        </span>
+                        <div className="product-title" style={{ marginTop: '0.5rem' }}>{p.name}</div>
                       </div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.4rem' }}>
-                        <span style={{ fontSize: '0.85rem', color: '#475569' }}>Đơn giá: {item.product.price.toLocaleString('vi-VN')} đ</span>
-                        <div style={{ display: 'flex', gap: '0.3rem', alignItems: 'center' }}>
-                          <button onClick={() => decreaseQuantity(item.product.id)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>-</button>
-                          <span style={{ fontWeight: 'bold', width: '20px', textAlign: 'center' }}>{item.quantity}</span>
-                          <button onClick={() => addToCart(item.product)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>+</button>
-                          <button onClick={() => removeItem(item.product.id)} style={{ padding: '2px 8px', background: '#FEE2E2', color: '#DC2626', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.75rem', marginLeft: '0.4rem' }}>Xóa</button>
-                        </div>
-                      </div>
+                      <div className="product-price">{p.price.toLocaleString('vi-VN')} đ</div>
                     </div>
                   ))}
-                  <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '2px solid #059669', display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 'bold', color: '#0F172A' }}>
-                    <span>Tổng Tiền Hóa Đơn:</span>
-                    <span style={{ color: '#059669' }}>{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ</span>
-                  </div>
-                  <button
-                    className="btn-primary"
-                    style={{ marginTop: '1rem' }}
-                    onClick={handleCheckoutPayment}
-                  >
-                    Thanh Toán VietQR Hoặc Tiền Mặt
-                  </button>
                 </div>
-              )}
+              </div>
+
+              <div className="card">
+                <h3 style={{ color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
+                {cart.length === 0 ? (
+                  <p style={{ color: '#64748B', marginTop: '1rem' }}>Chưa chọn món nào</p>
+                ) : (
+                  <div style={{ marginTop: '1rem' }}>
+                    {cart.map((item) => (
+                      <div key={item.product.id} style={{ borderBottom: '1px solid #E2E8F0', padding: '0.75rem 0' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', color: '#0F172A', fontWeight: 'bold' }}>
+                          <span>{item.product.name}</span>
+                          <span style={{ color: '#059669' }}>{(item.product.price * item.quantity).toLocaleString('vi-VN')} đ</span>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.4rem' }}>
+                          <span style={{ fontSize: '0.85rem', color: '#475569' }}>Đơn giá: {item.product.price.toLocaleString('vi-VN')} đ</span>
+                          <div style={{ display: 'flex', gap: '0.3rem', alignItems: 'center' }}>
+                            <button onClick={() => decreaseQuantity(item.product.id)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>-</button>
+                            <span style={{ fontWeight: 'bold', width: '20px', textAlign: 'center' }}>{item.quantity}</span>
+                            <button onClick={() => addToCart(item.product)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>+</button>
+                            <button onClick={() => removeItem(item.product.id)} style={{ padding: '2px 8px', background: '#FEE2E2', color: '#DC2626', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.75rem', marginLeft: '0.4rem' }}>Xóa</button>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                    <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '2px solid #059669', display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 'bold', color: '#0F172A' }}>
+                      <span>Tổng Tiền Hóa Đơn:</span>
+                      <span style={{ color: '#059669' }}>{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ</span>
+                    </div>
+                    <button
+                      className="btn-primary"
+                      style={{ marginTop: '1rem' }}
+                      onClick={handleCheckoutPayment}
+                    >
+                      Thanh Toán VietQR Hoặc Tiền Mặt
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         )}

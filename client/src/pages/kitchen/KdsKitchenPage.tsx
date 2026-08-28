@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface KdsKitchenPageProps {
   activeTab: string;
@@ -55,43 +55,50 @@ interface SlaHistoryRecord {
 export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => {
   const [activeStation, setActiveStation] = useState<'Barista' | 'Kitchen'>('Barista');
 
-  // 1. ACTIVE SLA PREP TICKETS
-  const [tickets, setTickets] = useState<KdsTicket[]>([
-    {
-      id: 'TK-101',
-      orderNo: 'ORD-9921',
-      table: 'Bàn 04',
-      station: 'Barista',
-      timeElapsedMinutes: 14,
-      slaStatus: 'Overdue',
-      items: [
-        { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, note: 'Nhiều đá, 100% đường' },
-        { id: '2', name: 'Trà Đào Cam Sả Tươi', quantity: 1, note: '50% đường, 50% đá, Topping Trân Châu' },
-      ]
-    },
-    {
-      id: 'TK-102',
-      orderNo: 'ORD-9924',
-      table: 'Bàn 01',
-      station: 'Barista',
-      timeElapsedMinutes: 8,
-      slaStatus: 'Warning',
-      items: [
-        { id: '3', name: 'Trà Đào Cam Sả Tươi', quantity: 3, note: 'Ít đường, 100% đá' },
-      ]
-    },
-    {
-      id: 'TK-103',
-      orderNo: 'ORD-9928',
-      table: 'Bàn 03',
-      station: 'Kitchen',
-      timeElapsedMinutes: 4,
-      slaStatus: 'Normal',
-      items: [
-        { id: '4', name: 'Bánh Croissant Bơ Bơ', quantity: 2, note: 'Nướng nóng hổi' },
-      ]
-    }
-  ]);
+  // 1. ACTIVE SLA PREP TICKETS - READ FROM LOCALSTORAGE OR DEFAULT
+  const [tickets, setTickets] = useState<KdsTicket[]>(() => {
+    const saved = localStorage.getItem('fnb_kds_tickets');
+    return saved ? JSON.parse(saved) : [
+      {
+        id: 'TK-101',
+        orderNo: 'HD-9921',
+        table: 'Bàn 04',
+        station: 'Barista',
+        timeElapsedMinutes: 14,
+        slaStatus: 'Overdue',
+        items: [
+          { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, note: 'Nhiều đá, 100% đường' },
+          { id: '2', name: 'Trà Đào Cam Sả Tươi', quantity: 1, note: '50% đường, 50% đá, Topping Trân Châu' },
+        ]
+      },
+      {
+        id: 'TK-102',
+        orderNo: 'HD-9924',
+        table: 'Bàn 01',
+        station: 'Barista',
+        timeElapsedMinutes: 8,
+        slaStatus: 'Warning',
+        items: [
+          { id: '3', name: 'Trà Đào Cam Sả Tươi', quantity: 3, note: 'Ít đường, 100% đá' },
+        ]
+      },
+      {
+        id: 'TK-103',
+        orderNo: 'HD-9928',
+        table: 'Bàn 03',
+        station: 'Kitchen',
+        timeElapsedMinutes: 4,
+        slaStatus: 'Normal',
+        items: [
+          { id: '4', name: 'Bánh Croissant Bơ Bơ', quantity: 2, note: 'Nướng nóng hổi' },
+        ]
+      }
+    ];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(tickets));
+  }, [tickets]);
 
   // 2. BATCH COOKING MATRIX
   const [batchList] = useState<BatchItem[]>([
@@ -145,25 +152,29 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
 
   // 5. SLA HISTORY LOGS
   const [slaHistory] = useState<SlaHistoryRecord[]>([
-    { ticketId: 'TK-099', orderNo: 'ORD-9915', table: 'Bàn 02', station: 'Trạm Barista', slaMinutes: 5.2, completedTime: '20:45:10' },
-    { ticketId: 'TK-098', orderNo: 'ORD-9910', table: 'Bàn 03', station: 'Trạm Bếp Nóng', slaMinutes: 6.8, completedTime: '20:30:15' },
-    { ticketId: 'TK-097', orderNo: 'ORD-9908', table: 'VIP 01', station: 'Trạm Barista', slaMinutes: 4.5, completedTime: '20:15:00' },
+    { ticketId: 'TK-099', orderNo: 'HD-9915', table: 'Bàn 02', station: 'Trạm Barista', slaMinutes: 5.2, completedTime: '20:45:10' },
+    { ticketId: 'TK-098', orderNo: 'HD-9910', table: 'Bàn 03', station: 'Trạm Bếp Nóng', slaMinutes: 6.8, completedTime: '20:30:15' },
+    { ticketId: 'TK-097', orderNo: 'HD-9908', table: 'VIP 01', station: 'Trạm Barista', slaMinutes: 4.5, completedTime: '20:15:00' },
   ]);
 
   // Handlers
   const handleBumpTicket = (ticketId: string) => {
-    setTickets(tickets.filter(t => t.id !== ticketId));
-    alert(`BUMP SUCCESS: Vé ${ticketId} đã chế biến xong và gửi tín hiệu báo Staff Runner trả món!`);
+    const updated = tickets.filter(t => t.id !== ticketId);
+    setTickets(updated);
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updated));
+    alert(`XÁC NHẬN HOÀN TẤT: Vé ${ticketId} đã chế biến xong và gửi tín hiệu báo Phục Vụ trả món ra bàn!`);
   };
 
   const handleTransferStation = (ticketId: string) => {
-    setTickets(tickets.map(t => {
+    const updated = tickets.map(t => {
       if (t.id === ticketId) {
         const nextStation = t.station === 'Barista' ? 'Kitchen' : 'Barista';
         return { ...t, station: nextStation };
       }
       return t;
-    }));
+    });
+    setTickets(updated);
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updated));
     alert(`Đã chuyển vé ${ticketId} sang Trạm chế biến tương ứng!`);
   };
 
@@ -182,7 +193,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS Realtime (Kitchen Display System)</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Tự động làm mới realtime theo SignalR | Đếm ngược SLA chế biến theo từng bàn.</p>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Chỉ nhận vé chế biến SAU KHU THU NGÂN XÁC NHẬN THANH TOÁN | Đếm ngược SLA theo số Mã Bill.</p>
             </div>
             <div style={{ display: 'flex', gap: '8px', background: '#F1F5F9', padding: '4px', borderRadius: '8px' }}>
               <button
@@ -238,7 +249,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', borderBottom: '1px solid #E2E8F0', paddingBottom: '10px' }}>
                     <div>
                       <h3 style={{ margin: 0, fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>{t.table}</h3>
-                      <span style={{ fontSize: '12px', color: '#64748B' }}>Vé: {t.id} | Hóa đơn: {t.orderNo}</span>
+                      <span style={{ fontSize: '12px', color: '#64748B' }}>Vé: {t.id} | Mã Bill: {t.orderNo}</span>
                     </div>
                     <div>
                       {t.slaStatus === 'Overdue' && (
@@ -268,7 +279,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                         </div>
                         {item.note && (
                           <div style={{ fontSize: '12px', color: '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
-                            Ghi chú: {item.note}
+                            Trạng thái: {item.note}
                           </div>
                         )}
                       </div>
@@ -286,7 +297,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                       onClick={() => handleBumpTicket(t.id)}
                       style={{ flex: 2, padding: '8px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
                     >
-                      HOÀN TẤT (BUMP)
+                      HOÀN TẤT CHẾ BIẾN
                     </button>
                   </div>
                 </div>

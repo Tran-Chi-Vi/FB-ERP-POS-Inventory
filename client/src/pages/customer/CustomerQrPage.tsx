@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface CustomerQrPageProps {
   activeTab: string;
@@ -12,10 +12,20 @@ interface MenuItem {
 }
 
 interface GroupCartItem {
+  id: string;
   customerName: string;
   itemName: string;
   quantity: number;
   price: number;
+}
+
+interface PendingBill {
+  billCode: string;
+  table: string;
+  items: { name: string; quantity: number; price: number }[];
+  totalAmount: number;
+  status: 'PendingPayment' | 'Paid';
+  timestamp: string;
 }
 
 interface LoyaltyTransaction {
@@ -26,7 +36,8 @@ interface LoyaltyTransaction {
 }
 
 export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => {
-  const tableSession = 'Bàn 04 - Mạng WiFi Nội Bộ';
+  const tableSession = 'Bàn 04';
+  const currentUserFullName = 'Trần Chí Vĩ (Khách)';
 
   // 1. MENU ITEMS
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất Cả');
@@ -40,68 +51,92 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
     { id: '6', name: 'Bánh Tiramisu Ý', price: 38000, category: 'Bánh Ngọt' },
   ];
 
-  // 2. GROUP CART REALTIME & KDS INTEGRATION
-  const [groupCart, setGroupCart] = useState<GroupCartItem[]>([
-    { customerName: 'Khách 1 (Bạn)', itemName: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, price: 29000 },
-    { customerName: 'Khách 2 (Minh)', itemName: 'Trà Đào Cam Sả Tươi', quantity: 1, price: 39000 },
-    { customerName: 'Khách 3 (Lan)', itemName: 'Bánh Croissant Bơ', quantity: 1, price: 25000 },
-  ]);
+  // 2. REALTIME GROUP CART - NO HARDCODED FAKE USERS (MINH, LAN REMOVED!)
+  const [groupCart, setGroupCart] = useState<GroupCartItem[]>(() => {
+    const saved = localStorage.getItem('fnb_group_cart');
+    return saved ? JSON.parse(saved) : [];
+  });
 
-  // 3. SPLIT BILL CALCULATOR
-  const [splitPeople, setSplitPeople] = useState<number>(3);
+  useEffect(() => {
+    localStorage.setItem('fnb_group_cart', JSON.stringify(groupCart));
+  }, [groupCart]);
 
-  // 4. LOYALTY WALLET LINKED TO ORDERS
-  const [loyaltyPoints, setLoyaltyPoints] = useState<number>(1250);
+  // 3. PENDING BILL CREATION STATE & MODAL
+  const [generatedBill, setGeneratedBill] = useState<PendingBill | null>(null);
+
+  // 4. SPLIT BILL CALCULATOR
+  const [splitPeople, setSplitPeople] = useState<number>(1);
+
+  // 5. LOYALTY WALLET LINKED TO COMPLETED BILLS
+  const [loyaltyPoints] = useState<number>(1250);
   const [membershipTier] = useState<string>('Hạng Vàng (Giảm 10%)');
-  const [loyaltyHistory, setLoyaltyHistory] = useState<LoyaltyTransaction[]>([
-    { date: '2026-08-28', type: 'Earned', points: 185, orderNo: 'ORD-9921' },
-    { date: '2026-08-25', type: 'Earned', points: 120, orderNo: 'ORD-9910' },
-    { date: '2026-08-20', type: 'Spent', points: -500, orderNo: 'ORD-9850' },
+  const [loyaltyHistory] = useState<LoyaltyTransaction[]>([
+    { date: '2026-08-28', type: 'Earned', points: 185, orderNo: 'HD-9921' },
+    { date: '2026-08-25', type: 'Earned', points: 120, orderNo: 'HD-9910' },
   ]);
 
   const categories = ['Tất Cả', 'Cà Phê', 'Trà & Trà Sữa', 'Bánh Ngọt'];
   const filteredMenu = selectedCategory === 'Tất Cả' ? menuItems : menuItems.filter(i => i.category === selectedCategory);
 
-  const handleAddToCart = (id: string) => {
-    setCart({ ...cart, [id]: (cart[id] || 0) + 1 });
+  const handleAddToCart = (item: MenuItem) => {
+    setCart(prev => ({ ...prev, [item.id]: (prev[item.id] || 0) + 1 }));
+
+    // Add item directly into Group Cart
+    setGroupCart(prev => {
+      const existing = prev.find(g => g.itemName === item.name);
+      if (existing) {
+        return prev.map(g => g.itemName === item.name ? { ...g, quantity: g.quantity + 1 } : g);
+      }
+      return [...prev, { id: Date.now().toString(), customerName: currentUserFullName, itemName: item.name, quantity: 1, price: item.price }];
+    });
   };
 
-  const handleSendOrderToKitchen = () => {
-    const totalItems = Object.values(cart).reduce((a, b) => a + b, 0);
-    if (totalItems === 0) {
-      alert('Vui lòng chọn ít nhất 1 món trước khi gửi đơn!');
+  const handleIncreaseGroupQuantity = (id: string) => {
+    setGroupCart(prev => prev.map(item => item.id === id ? { ...item, quantity: item.quantity + 1 } : item));
+  };
+
+  const handleDecreaseGroupQuantity = (id: string) => {
+    setGroupCart(prev => prev.map(item => {
+      if (item.id === id) {
+        return item.quantity > 1 ? { ...item, quantity: item.quantity - 1 } : null;
+      }
+      return item;
+    }).filter(Boolean) as GroupCartItem[]);
+  };
+
+  const handleRemoveGroupItem = (id: string) => {
+    setGroupCart(prev => prev.filter(item => item.id !== id));
+  };
+
+  const handleCheckoutGroupCart = () => {
+    if (groupCart.length === 0) {
+      alert('Giỏ hàng trống! Vui lòng chọn món trước khi chốt đơn.');
       return;
     }
 
-    // Build new group cart items
-    const newItems: GroupCartItem[] = [];
-    let orderSubtotal = 0;
-    Object.keys(cart).forEach(id => {
-      const item = menuItems.find(m => m.id === id);
-      if (item) {
-        const qty = cart[id];
-        newItems.push({ customerName: 'Khách 1 (Bạn)', itemName: item.name, quantity: qty, price: item.price });
-        orderSubtotal += item.price * qty;
-      }
-    });
+    const totalAmount = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
+    const billCode = `BILL-${Math.floor(1000 + Math.random() * 9000)}`;
 
-    setGroupCart([...groupCart, ...newItems]);
-
-    // Calculate loyalty points earned (5% of order total)
-    const earnedPoints = Math.round((orderSubtotal * 0.05) / 100);
-    setLoyaltyPoints(prev => prev + earnedPoints);
-    const newHistory: LoyaltyTransaction = {
-      date: new Date().toISOString().split('T')[0],
-      type: 'Earned',
-      points: earnedPoints,
-      orderNo: `ORD-${Math.floor(1000 + Math.random() * 9000)}`
+    const newBill: PendingBill = {
+      billCode: billCode,
+      table: tableSession,
+      items: groupCart.map(g => ({ name: g.itemName, quantity: g.quantity, price: g.price })),
+      totalAmount: totalAmount,
+      status: 'PendingPayment',
+      timestamp: new Date().toLocaleTimeString('vi-VN')
     };
-    setLoyaltyHistory([newHistory, ...loyaltyHistory]);
 
-    // RESET CART IMMEDIATELY AFTER SENDING TO KITCHEN!
+    // Save pending bill to localStorage for Cashier POS to pick up
+    const existingBills: PendingBill[] = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
+    localStorage.setItem('fnb_pending_bills', JSON.stringify([newBill, ...existingBills]));
+
+    // Show modal bill confirmation
+    setGeneratedBill(newBill);
+
+    // Clear active group cart and local cart
+    setGroupCart([]);
     setCart({});
-
-    alert(`ĐÃ GỬI ${totalItems} MÓN XUỐNG BẾP THÀNH CÔNG!\n- Đơn hàng tại ${tableSession} đã chuyển sang màn hình KDS.\n- Giỏ hàng nhóm realtime đã chốt.\n- Bạn được cộng +${earnedPoints} điểm thưởng tích lũy vào Ví Hội Viên!`);
+    localStorage.removeItem('fnb_group_cart');
   };
 
   const groupTotal = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
@@ -153,7 +188,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
                   <div style={{ fontSize: '15px', color: '#059669', fontWeight: 'bold', marginBottom: '12px' }}>{item.price.toLocaleString('vi-VN')}đ</div>
                 </div>
                 <button
-                  onClick={() => handleAddToCart(item.id)}
+                  onClick={() => handleAddToCart(item)}
                   style={{ width: '100%', padding: '10px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
                 >
                   + Thêm Vào Giỏ {cart[item.id] ? `(${cart[item.id]})` : ''}
@@ -165,55 +200,73 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
           <div style={{ borderTop: '2px solid #E2E8F0', paddingTop: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <span style={{ fontSize: '14px', color: '#475569' }}>Tổng món đã chọn: </span>
-              <strong style={{ fontSize: '18px', color: '#059669' }}>{Object.values(cart).reduce((a, b) => a + b, 0)} món</strong>
+              <strong style={{ fontSize: '18px', color: '#059669' }}>{groupCart.reduce((sum, g) => sum + g.quantity, 0)} món</strong>
             </div>
             <button
-              onClick={handleSendOrderToKitchen}
+              onClick={handleCheckoutGroupCart}
               style={{ padding: '12px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '15px' }}
             >
-              GỬI ĐƠN XUỐNG BẾP VÀ BARISTA
+              XÁC NHẬN CHỐT ĐƠN & TẠO MÃ BILL THANH TOÁN
             </button>
           </div>
         </div>
       )}
 
-      {/* 2. VIEW 2: GROUP CART */}
+      {/* 2. VIEW 2: GROUP CART (NO HARDCODED MINH/LAN, HAS EDIT/DELETE CONTROLS) */}
       {activeTab === 'customer-group' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng Nhóm Thời Gian Thực Tại {tableSession}</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Tất cả mọi người tại bàn đều có thể thêm món vào giỏ hàng chung theo thời gian thực.</p>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Tất cả mọi người tại bàn đều có thể thêm, chỉnh sửa hoặc xóa món trong giỏ hàng chung trước khi chốt đơn thanh toán.</p>
 
-          <div style={{ width: '100%', overflowX: 'auto', marginBottom: '20px' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-              <thead>
-                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thành Viên</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Món Đã Chọn</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Số Lượng</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Đơn Giá</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thành Tiền</th>
-                </tr>
-              </thead>
-              <tbody>
-                {groupCart.map((item, idx) => (
-                  <tr key={idx} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{item.customerName}</td>
-                    <td style={{ padding: '14px 12px', color: '#0F172A', fontWeight: 'bold' }}>{item.itemName}</td>
-                    <td style={{ padding: '14px 12px', color: '#0F172A' }}>x{item.quantity}</td>
-                    <td style={{ padding: '14px 12px', color: '#475569' }}>{item.price.toLocaleString('vi-VN')}đ</td>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669' }}>{(item.quantity * item.price).toLocaleString('vi-VN')}đ</td>
+          {groupCart.length === 0 ? (
+            <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px', marginBottom: '20px' }}>
+              Giỏ hàng nhóm đang trống. Vui lòng quay lại Menu để chọn món!
+            </div>
+          ) : (
+            <div style={{ width: '100%', overflowX: 'auto', marginBottom: '20px' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thành Viên</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Món Đã Chọn</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Đơn Giá</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tăng / Giảm Số Lượng</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thành Tiền</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {groupCart.map((item) => (
+                    <tr key={item.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{item.customerName}</td>
+                      <td style={{ padding: '14px 12px', color: '#0F172A', fontWeight: 'bold' }}>{item.itemName}</td>
+                      <td style={{ padding: '14px 12px', color: '#475569' }}>{item.price.toLocaleString('vi-VN')}đ</td>
+                      <td style={{ padding: '14px 12px' }}>
+                        <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                          <button onClick={() => handleDecreaseGroupQuantity(item.id)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>-</button>
+                          <span style={{ fontWeight: 'bold', width: '24px', textAlign: 'center', color: '#0F172A' }}>{item.quantity}</span>
+                          <button onClick={() => handleIncreaseGroupQuantity(item.id)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>+</button>
+                        </div>
+                      </td>
+                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669' }}>{(item.quantity * item.price).toLocaleString('vi-VN')}đ</td>
+                      <td style={{ padding: '14px 12px' }}>
+                        <button onClick={() => handleRemoveGroupItem(item.id)} style={{ padding: '6px 12px', background: '#FEE2E2', color: '#DC2626', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>Xóa Món</button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
 
-          <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '8px', border: '1px solid #E2E8F0', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '8px', border: '1px solid #E2E8F0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <span style={{ fontSize: '14px', color: '#475569' }}>TỔNG TIỀN BÀN GỘP: </span>
               <strong style={{ fontSize: '22px', color: '#059669' }}>{groupTotal.toLocaleString('vi-VN')}đ</strong>
             </div>
-            <button onClick={() => alert('Đã chốt giỏ hàng nhóm thành công!')} style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>XÁC NHẬN CHỐT GIỎ HÀNG NHÓM</button>
+            <button onClick={handleCheckoutGroupCart} style={{ padding: '12px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
+              XÁC NHẬN CHỐT GIỎ HÀNG & TẠO MÃ BILL THANH TOÁN
+            </button>
           </div>
         </div>
       )}
@@ -242,7 +295,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
             <div style={{ background: '#DBEAFE', padding: '16px', borderRadius: '6px', border: '1px solid #BFDBFE' }}>
               <div style={{ fontSize: '13px', color: '#1E40AF' }}>Mỗi Người Cần Trả (Mỗi Phần):</div>
               <div style={{ fontSize: '26px', fontWeight: 'bold', color: '#1E40AF', marginTop: '4px' }}>
-                {Math.round(groupTotal / splitPeople).toLocaleString('vi-VN')}đ / người
+                {groupTotal > 0 ? Math.round(groupTotal / splitPeople).toLocaleString('vi-VN') : 0}đ / người
               </div>
             </div>
           </div>
@@ -253,7 +306,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       {activeTab === 'customer-loyalty' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Ví Điểm Thưởng & Hạng Thẻ Hội Viên</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Mọi giao dịch thanh toán hoặc gửi đơn đều tích điểm 5% giá trị hóa đơn vào ví hội viên.</p>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Mọi giao dịch thanh toán thành công tại thu ngân đều tự động tích điểm 5% giá trị hóa đơn vào ví hội viên.</p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '24px' }}>
             <div style={{ background: '#FEF3C7', border: '1px solid #F59E0B', padding: '20px', borderRadius: '8px' }}>
@@ -265,7 +318,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
             <div style={{ background: '#ECFDF5', border: '1px solid #10B981', padding: '20px', borderRadius: '8px' }}>
               <span style={{ fontSize: '12px', color: '#065F46', fontWeight: 'bold' }}>TỔNG ĐIỂM TÍCH LŨY</span>
               <h3 style={{ margin: '8px 0 4px 0', fontSize: '28px', color: '#047857', fontWeight: 'bold' }}>{loyaltyPoints} Điểm</h3>
-              <p style={{ margin: 0, fontSize: '12px', color: '#065F46' }}>Tương đương {loyaltyPoints * 100}đ khi đổi quà/thanh toán</p>
+              <p style={{ margin: 0, fontSize: '12px', color: '#065F46' }}>Tương đương {(loyaltyPoints * 100).toLocaleString('vi-VN')}đ khi đổi quà/thanh toán</p>
             </div>
           </div>
 
@@ -297,6 +350,36 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      )}
+
+      {/* PENDING BILL CREATION CONFIRMATION MODAL */}
+      {generatedBill && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '500px', width: '100%', textAlign: 'center' }}>
+            <div style={{ background: '#DCFCE7', color: '#166534', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px auto', fontSize: '24px', fontWeight: 'bold' }}>✓</div>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>ĐÃ TẠO MÃ BILL THANH TOÁN TẠI QUẦY</h3>
+            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Bàn phục vụ: <strong>{generatedBill.table}</strong> | Thời gian: {generatedBill.timestamp}</p>
+
+            <div style={{ background: '#F8FAFC', border: '2px dashed #2563EB', padding: '16px', borderRadius: '8px', marginBottom: '16px' }}>
+              <span style={{ fontSize: '12px', color: '#2563EB', fontWeight: 'bold' }}>MÃ BILL THANH TOÁN CỦA BẠN:</span>
+              <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#0F172A', letterSpacing: '2px', margin: '4px 0' }}>{generatedBill.billCode}</div>
+              <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#059669' }}>Tổng tiền: {generatedBill.totalAmount.toLocaleString('vi-VN')} đ</div>
+            </div>
+
+            <div style={{ background: '#FEF3C7', border: '1px solid #FDE68A', padding: '12px', borderRadius: '6px', textAlign: 'left', marginBottom: '20px', fontSize: '12px', color: '#92400E' }}>
+              <strong>QUY TRÌNH THANH TOÁN TRƯỚC NHẬN NƯỚC/MÓN:</strong>
+              <ol style={{ margin: '4px 0 0 0', paddingLeft: '20px' }}>
+                <li>Quý khách vui lòng đưa <strong>Mã Bill {generatedBill.billCode}</strong> cho Thu Ngân tại quầy.</li>
+                <li>Thu Ngân nhận tiền mặt hoặc quét VietQR để xác nhận <strong>ĐÃ THANH TOÁN</strong>.</li>
+                <li>Ngay sau khi thanh toán, Bếp sẽ nhận lệnh chế biến và Phục vụ mang đồ ra bàn!</li>
+              </ol>
+            </div>
+
+            <button onClick={() => setGeneratedBill(null)} style={{ padding: '10px 24px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
+              ĐÃ HIỂU & ĐÓNG THÔNG BÁO
+            </button>
           </div>
         </div>
       )}
