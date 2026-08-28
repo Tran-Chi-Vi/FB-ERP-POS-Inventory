@@ -63,6 +63,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
           {role === 'Cashier' && (
             <>
               <NavItem active={activeTab === 'pos'} onClick={() => onTabChange('pos')} label="Màn Hình Thu Ngân Bán Hàng" />
+              <NavItem active={activeTab === 'cashier-pending'} onClick={() => onTabChange('cashier-pending')} label="Hàng Đợi Đơn QR Chờ Xác Nhận" />
               <NavItem active={activeTab === 'cashier-shift'} onClick={() => onTabChange('cashier-shift')} label="Giao Ca & Kiểm Tiền Két" />
               <NavItem active={activeTab === 'cashier-orders'} onClick={() => onTabChange('cashier-orders')} label="Lịch Sử Hóa Đơn & In Vé" />
             </>

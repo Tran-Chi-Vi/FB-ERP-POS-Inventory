@@ -49,6 +49,9 @@ export const App: React.FC = () => {
   const [selectedTable, setSelectedTable] = useState<string | null>('Bàn 01');
   const [cart, setCart] = useState<CartItem[]>([]);
   
+  // CASHIER COUNTER ORDERING IOT PAGER ID SELECTION
+  const [selectedPosPagerId, setSelectedPosPagerId] = useState<string>('PAGER-05');
+
   // PENDING QR BILLS QUEUE FOR CASHIER TO VERIFY PAYMENT AND ASSIGN IOT PAGER ID
   const [pendingBills, setPendingBills] = useState<PendingBill[]>([]);
   const [selectedPagerMap, setSelectedPagerMap] = useState<{ [billCode: string]: string }>({});
@@ -176,11 +179,18 @@ export const App: React.FC = () => {
     setCart((prev) => prev.filter((item) => item.product.id !== productId));
   };
 
+  // CHECK IF SELECTED PAGER ID IS ALREADY ACTIVE FOR AN ONGOING KDS ORDER
+  const existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+  const activePagerTicket = existingKdsTickets.find((t: any) => t.pagerId === selectedPosPagerId);
+  const isAddOnOrder = !!activePagerTicket;
+
   const handleCheckoutPayment = () => {
     if (cart.length === 0) return;
     const totalAmount = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
+    const invoiceId = `HD-${Math.floor(1000 + Math.random() * 9000)}`;
+
     const newInvoice: PaidInvoice = {
-      id: `HD-${Math.floor(1000 + Math.random() * 9000)}`,
+      id: invoiceId,
       table: selectedTable || 'Bàn Thu Ngân',
       items: [...cart],
       totalAmount: totalAmount,
@@ -188,19 +198,24 @@ export const App: React.FC = () => {
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Send ticket to KDS Kitchen ONLY AFTER PAYMENT CONFIRMED!
-    const kdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+    // Send ticket to KDS Kitchen with Pager ID & Add-On alert flag if re-using an active pager!
     const newKdsTicket = {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
-      orderNo: newInvoice.id,
-      table: newInvoice.table,
-      pagerId: 'PAGER-05',
+      orderNo: invoiceId,
+      table: selectedTable || 'Bàn Thu Ngân',
+      pagerId: selectedPosPagerId,
       station: 'Barista',
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
-      items: cart.map(c => ({ id: c.product.id, name: c.product.name, quantity: c.quantity, note: 'Đã thanh toán tại quầy' }))
+      isAddOn: isAddOnOrder,
+      items: cart.map(c => ({
+        id: c.product.id,
+        name: c.product.name,
+        quantity: c.quantity,
+        note: isAddOnOrder ? `🚨 ĐƠN GỘP BỔ SUNG MÓN (Thẻ ${selectedPosPagerId})` : `Thẻ Rung: ${selectedPosPagerId}`
+      }))
     };
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...kdsTickets]));
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...existingKdsTickets]));
 
     const updatedPaid = [newInvoice, ...paidInvoices];
     setPaidInvoices(updatedPaid);
@@ -208,11 +223,17 @@ export const App: React.FC = () => {
 
     setCart([]);
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`THANH TOÁN THÀNH CÔNG!\n- Hóa đơn ${newInvoice.id} trị giá ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table} đã thanh toán thành công.\n- Lệnh chế biến đã được tự động chuyển sang Bếp / Barista theo số Bill!`);
+
+    if (isAddOnOrder) {
+      alert(`ĐÃ THANH TOÁN ĐƠN BỔ SUNG ${invoiceId} THÀNH CÔNG!\n- Đơn được tự động ĐỔI NỔI ÂM THÀNH VÀ CẢNH BÁO BỔ SUNG MÓN sang Bếp cho Thẻ Rung ${selectedPosPagerId}!`);
+    } else {
+      alert(`THANH TOÁN THÀNH CÔNG!\n- Hóa đơn ${invoiceId} trị giá ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table}.\n- Đã gán ${selectedPosPagerId} và chuyển lệnh chế biến xuống Bếp!`);
+    }
   };
 
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
     const assignedPager = selectedPagerMap[bill.billCode] || 'PAGER-05';
+    const isPagerBusy = existingKdsTickets.some((t: any) => t.pagerId === assignedPager);
 
     const newInvoice: PaidInvoice = {
       id: bill.billCode,
@@ -227,7 +248,6 @@ export const App: React.FC = () => {
     };
 
     // Push new KDS ticket for Kitchen with assigned IoT Pager ID!
-    const kdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
     const newKdsTicket = {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
       orderNo: bill.billCode,
@@ -236,9 +256,15 @@ export const App: React.FC = () => {
       station: 'Barista',
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
-      items: bill.items.map((b, idx) => ({ id: idx.toString(), name: b.name, quantity: b.quantity, note: `Thẻ Rung: ${assignedPager}` }))
+      isAddOn: isPagerBusy,
+      items: bill.items.map((b, idx) => ({
+        id: idx.toString(),
+        name: b.name,
+        quantity: b.quantity,
+        note: isPagerBusy ? `🚨 ĐƠN GỘP BỔ SUNG MÓN (Thẻ ${assignedPager})` : `Thẻ Rung: ${assignedPager}`
+      }))
     };
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...kdsTickets]));
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...existingKdsTickets]));
 
     // Remove bill from pending list
     const updatedPending = pendingBills.filter(p => p.billCode !== bill.billCode);
@@ -282,145 +308,174 @@ export const App: React.FC = () => {
         {/* ROLE 3: KITCHEN UI */}
         {(activeTab.startsWith('kds-')) && <KdsKitchenPage activeTab={activeTab} />}
 
-        {/* ROLE 4: CASHIER TOUCH POS UI */}
-        {activeTab === 'pos' && (
-          <div>
-            {/* PENDING QR BILLS QUEUE FOR CASHIER PAYMENT AND IOT PAGER ALLOCATION */}
-            {pendingBills.length > 0 && (
-              <div className="card" style={{ marginBottom: '1.25rem', background: '#FEF3C7', border: '2px solid #F59E0B' }}>
-                <h3 style={{ margin: 0, color: '#92400E', fontWeight: 'bold' }}>Hàng Đợi Mã Bill QR Chờ Thanh Toán Tại Quầy & Gán Thẻ Rung IoT</h3>
-                <p style={{ margin: '4px 0 12px 0', fontSize: '0.85rem', color: '#78350F' }}>Khách hàng mang mã Bill tới quầy. Thu ngân xác nhận thanh toán và gán Thẻ Rung IoT nhận món trước khi chuyển lệnh sang Bếp!</p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  {pendingBills.map((b) => (
-                    <div key={b.billCode} style={{ background: '#FFFFFF', padding: '14px 16px', borderRadius: '6px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-                      <div>
-                        <span style={{ fontSize: '0.8rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
-                        <strong style={{ marginLeft: '8px', color: '#0F172A' }}>{b.table}</strong>
-                        <div style={{ marginTop: '4px', fontSize: '0.85rem', color: '#475569' }}>
-                          Món: {b.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}
-                        </div>
-                      </div>
-                      
-                      <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
-                        <div>
-                          <label style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#92400E', display: 'block', marginBottom: '2px' }}>Gán Thẻ Rung IoT:</label>
-                          <select
-                            value={selectedPagerMap[b.billCode] || 'PAGER-05'}
-                            onChange={(e) => setSelectedPagerMap({ ...selectedPagerMap, [b.billCode]: e.target.value })}
-                            style={{ padding: '6px 10px', border: '1px solid #CBD5E1', borderRadius: '4px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.85rem' }}
-                          >
-                            <option value="PAGER-01">Thẻ Rung IoT #01</option>
-                            <option value="PAGER-02">Thẻ Rung IoT #02</option>
-                            <option value="PAGER-03">Thẻ Rung IoT #03</option>
-                            <option value="PAGER-04">Thẻ Rung IoT #04</option>
-                            <option value="PAGER-05">Thẻ Rung IoT #05</option>
-                            <option value="PAGER-06">Thẻ Rung IoT #06</option>
-                          </select>
-                        </div>
-                        <span style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
-                        <button
-                          onClick={() => handlePayPendingBillWithIotPager(b)}
-                          style={{ padding: '9px 18px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.85rem' }}
-                        >
-                          Xác Nhận Đã Thanh Toán & Gán Thẻ Gửi Bếp
-                        </button>
+        {/* ROLE 4: SEPARATE PENDING QR BILLS QUEUE PAGE */}
+        {activeTab === 'cashier-pending' && (
+          <div className="card">
+            <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Hàng Đợi Đơn QR Chờ Xác Nhận Thanh Toán & Gán Thẻ Rung IoT</h2>
+            <p style={{ color: '#475569', marginTop: '0.25rem', marginBottom: '1.25rem' }}>Danh sách các mã Bill do khách chốt qua QR tại bàn. Thu ngân xác nhận nhận tiền và gán Thẻ Rung trước khi gửi xuống Bếp.</p>
+
+            {pendingBills.length === 0 ? (
+              <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
+                Hiện không có mã Bill QR nào đang chờ xác nhận thanh toán.
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {pendingBills.map((b) => (
+                  <div key={b.billCode} style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
+                    <div>
+                      <span style={{ fontSize: '0.85rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
+                      <strong style={{ marginLeft: '8px', color: '#0F172A', fontSize: '1.05rem' }}>{b.table}</strong>
+                      <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
+                        Món ăn: {b.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="pos-layout">
-              <div className="category-menu">
-                <h3 style={{ fontSize: '0.85rem', color: '#475569', marginBottom: '0.5rem', fontWeight: 'bold' }}>DANH MỤC MÓN</h3>
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    className={`category-btn ${selectedCategory === cat ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory(cat)}
-                  >
-                    {cat}
-                  </button>
+                    
+                    <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+                      <div>
+                        <label style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#92400E', display: 'block', marginBottom: '2px' }}>Gán Thẻ Rung IoT Nhận Món:</label>
+                        <select
+                          value={selectedPagerMap[b.billCode] || 'PAGER-05'}
+                          onChange={(e) => setSelectedPagerMap({ ...selectedPagerMap, [b.billCode]: e.target.value })}
+                          style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.9rem' }}
+                        >
+                          <option value="PAGER-01">Thẻ Rung IoT #01</option>
+                          <option value="PAGER-02">Thẻ Rung IoT #02</option>
+                          <option value="PAGER-03">Thẻ Rung IoT #03</option>
+                          <option value="PAGER-04">Thẻ Rung IoT #04</option>
+                          <option value="PAGER-05">Thẻ Rung IoT #05</option>
+                          <option value="PAGER-06">Thẻ Rung IoT #06</option>
+                        </select>
+                      </div>
+                      <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
+                      <button
+                        onClick={() => handlePayPendingBillWithIotPager(b)}
+                        style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.9rem' }}
+                      >
+                        Xác Nhận Đã Thanh Toán & Gán Thẻ Gửi Bếp
+                      </button>
+                    </div>
+                  </div>
                 ))}
               </div>
+            )}
+          </div>
+        )}
 
-              <div>
-                <div className="card" style={{ marginBottom: '1rem' }}>
-                  <h3 style={{ marginBottom: '0.75rem', color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ</h3>
-                  <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                    {tables.map((t) => (
-                      <button
-                        key={t}
-                        style={{
-                          padding: '0.5rem 1rem',
-                          borderRadius: '0.375rem',
-                          border: '1px solid #CBD5E1',
-                          background: selectedTable === t ? '#059669' : '#FFFFFF',
-                          color: selectedTable === t ? '#fff' : '#0F172A',
-                          fontWeight: 'bold',
-                          cursor: 'pointer'
-                        }}
-                        onClick={() => setSelectedTable(t)}
-                      >
-                        {t}
-                      </button>
-                    ))}
-                  </div>
-                </div>
+        {/* ROLE 4: PURE CASHIER TOUCH POS UI */}
+        {activeTab === 'pos' && (
+          <div className="pos-layout">
+            <div className="category-menu">
+              <h3 style={{ fontSize: '0.85rem', color: '#475569', marginBottom: '0.5rem', fontWeight: 'bold' }}>DANH MỤC MÓN</h3>
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  className={`category-btn ${selectedCategory === cat ? 'active' : ''}`}
+                  onClick={() => setSelectedCategory(cat)}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
 
-                <div className="product-grid">
-                  {filteredProducts.map((p) => (
-                    <div key={p.id} className="product-card" onClick={() => addToCart(p)}>
-                      <div>
-                        <span style={{ fontSize: '0.75rem', color: '#1E40AF', background: '#DBEAFE', padding: '0.1rem 0.4rem', borderRadius: '0.2rem', fontWeight: 'bold' }}>
-                          {p.category}
-                        </span>
-                        <div className="product-title" style={{ marginTop: '0.5rem' }}>{p.name}</div>
-                      </div>
-                      <div className="product-price">{p.price.toLocaleString('vi-VN')} đ</div>
-                    </div>
+            <div>
+              <div className="card" style={{ marginBottom: '1rem' }}>
+                <h3 style={{ marginBottom: '0.75rem', color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ</h3>
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                  {tables.map((t) => (
+                    <button
+                      key={t}
+                      style={{
+                        padding: '0.5rem 1rem',
+                        borderRadius: '0.375rem',
+                        border: '1px solid #CBD5E1',
+                        background: selectedTable === t ? '#059669' : '#FFFFFF',
+                        color: selectedTable === t ? '#fff' : '#0F172A',
+                        fontWeight: 'bold',
+                        cursor: 'pointer'
+                      }}
+                      onClick={() => setSelectedTable(t)}
+                    >
+                      {t}
+                    </button>
                   ))}
                 </div>
               </div>
 
-              <div className="card">
-                <h3 style={{ color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
-                {cart.length === 0 ? (
-                  <p style={{ color: '#64748B', marginTop: '1rem' }}>Chưa chọn món nào</p>
-                ) : (
-                  <div style={{ marginTop: '1rem' }}>
-                    {cart.map((item) => (
-                      <div key={item.product.id} style={{ borderBottom: '1px solid #E2E8F0', padding: '0.75rem 0' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', color: '#0F172A', fontWeight: 'bold' }}>
-                          <span>{item.product.name}</span>
-                          <span style={{ color: '#059669' }}>{(item.product.price * item.quantity).toLocaleString('vi-VN')} đ</span>
-                        </div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.4rem' }}>
-                          <span style={{ fontSize: '0.85rem', color: '#475569' }}>Đơn giá: {item.product.price.toLocaleString('vi-VN')} đ</span>
-                          <div style={{ display: 'flex', gap: '0.3rem', alignItems: 'center' }}>
-                            <button onClick={() => decreaseQuantity(item.product.id)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>-</button>
-                            <span style={{ fontWeight: 'bold', width: '20px', textAlign: 'center' }}>{item.quantity}</span>
-                            <button onClick={() => addToCart(item.product)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>+</button>
-                            <button onClick={() => removeItem(item.product.id)} style={{ padding: '2px 8px', background: '#FEE2E2', color: '#DC2626', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.75rem', marginLeft: '0.4rem' }}>Xóa</button>
-                          </div>
+              <div className="product-grid">
+                {filteredProducts.map((p) => (
+                  <div key={p.id} className="product-card" onClick={() => addToCart(p)}>
+                    <div>
+                      <span style={{ fontSize: '0.75rem', color: '#1E40AF', background: '#DBEAFE', padding: '0.1rem 0.4rem', borderRadius: '0.2rem', fontWeight: 'bold' }}>
+                        {p.category}
+                      </span>
+                      <div className="product-title" style={{ marginTop: '0.5rem' }}>{p.name}</div>
+                    </div>
+                    <div className="product-price">{p.price.toLocaleString('vi-VN')} đ</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="card">
+              <h3 style={{ color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
+              {cart.length === 0 ? (
+                <p style={{ color: '#64748B', marginTop: '1rem' }}>Chưa chọn món nào</p>
+              ) : (
+                <div style={{ marginTop: '1rem' }}>
+                  {cart.map((item) => (
+                    <div key={item.product.id} style={{ borderBottom: '1px solid #E2E8F0', padding: '0.75rem 0' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', color: '#0F172A', fontWeight: 'bold' }}>
+                        <span>{item.product.name}</span>
+                        <span style={{ color: '#059669' }}>{(item.product.price * item.quantity).toLocaleString('vi-VN')} đ</span>
+                      </div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '0.4rem' }}>
+                        <span style={{ fontSize: '0.85rem', color: '#475569' }}>Đơn giá: {item.product.price.toLocaleString('vi-VN')} đ</span>
+                        <div style={{ display: 'flex', gap: '0.3rem', alignItems: 'center' }}>
+                          <button onClick={() => decreaseQuantity(item.product.id)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>-</button>
+                          <span style={{ fontWeight: 'bold', width: '20px', textAlign: 'center' }}>{item.quantity}</span>
+                          <button onClick={() => addToCart(item.product)} style={{ padding: '2px 8px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>+</button>
+                          <button onClick={() => removeItem(item.product.id)} style={{ padding: '2px 8px', background: '#FEE2E2', color: '#DC2626', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.75rem', marginLeft: '0.4rem' }}>Xóa</button>
                         </div>
                       </div>
-                    ))}
-                    <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '2px solid #059669', display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 'bold', color: '#0F172A' }}>
-                      <span>Tổng Tiền Hóa Đơn:</span>
-                      <span style={{ color: '#059669' }}>{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ</span>
                     </div>
-                    <button
-                      className="btn-primary"
-                      style={{ marginTop: '1rem' }}
-                      onClick={handleCheckoutPayment}
+                  ))}
+
+                  {/* COUNTER ORDERING IOT PAGER ALLOCATION DROPDOWN */}
+                  <div style={{ marginTop: '1rem', background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
+                    <label style={{ fontSize: '0.8rem', fontWeight: 'bold', color: '#0F172A', display: 'block', marginBottom: '4px' }}>Gán Thẻ Rung IoT Nhận Món Cho Khách Quầy:</label>
+                    <select
+                      value={selectedPosPagerId}
+                      onChange={(e) => setSelectedPosPagerId(e.target.value)}
+                      style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '4px', fontWeight: 'bold', color: '#0F172A' }}
                     >
-                      Thanh Toán VietQR Hoặc Tiền Mặt
-                    </button>
+                      <option value="PAGER-01">Thẻ Rung IoT #01</option>
+                      <option value="PAGER-02">Thẻ Rung IoT #02</option>
+                      <option value="PAGER-03">Thẻ Rung IoT #03</option>
+                      <option value="PAGER-04">Thẻ Rung IoT #04</option>
+                      <option value="PAGER-05">Thẻ Rung IoT #05</option>
+                      <option value="PAGER-06">Thẻ Rung IoT #06</option>
+                    </select>
+
+                    {isAddOnOrder && (
+                      <div style={{ marginTop: '6px', fontSize: '0.75rem', color: '#DC2626', fontWeight: 'bold', background: '#FEE2E2', padding: '6px', borderRadius: '4px' }}>
+                        ⚠️ Thẻ Rung {selectedPosPagerId} đang hoạt động tại {activePagerTicket.table}. Đơn này sẽ tự động GỘP BỔ SUNG MÓN & phát cảnh báo âm thanh tới Bếp!
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
+
+                  <div style={{ marginTop: '1.2rem', paddingTop: '0.75rem', borderTop: '2px solid #059669', display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 'bold', color: '#0F172A' }}>
+                    <span>Tổng Tiền Hóa Đơn:</span>
+                    <span style={{ color: '#059669' }}>{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ</span>
+                  </div>
+                  <button
+                    className="btn-primary"
+                    style={{ marginTop: '1rem' }}
+                    onClick={handleCheckoutPayment}
+                  >
+                    Thanh Toán VietQR Hoặc Tiền Mặt
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         )}
@@ -438,10 +493,6 @@ export const App: React.FC = () => {
                 <label style={{ color: '#0F172A', fontWeight: 'bold' }}>Tiền Mặt Thực Đếm (VNĐ)</label>
                 <input type="number" className="form-control" defaultValue={4980000} style={{ border: '1px solid #CBD5E1', color: '#0F172A' }} />
               </div>
-              <div className="form-group">
-                <label style={{ color: '#0F172A', fontWeight: 'bold' }}>Giải Trình Chênh Lệch (Bắt Buộc Khi Lệch Tiền)</label>
-                <input type="text" className="form-control" placeholder="Ví dụ: Thối nhầm tiền lẻ 20.000đ cho đơn #104" style={{ border: '1px solid #CBD5E1', color: '#0F172A' }} />
-              </div>
               <button className="btn-primary" style={{ width: 'auto', padding: '0.75rem 1.5rem', marginTop: '0.5rem' }} onClick={() => alert('Đã chốt sổ giao ca thu ngân và chuyển báo cáo chênh lệch tới Quản Lý!')}>
                 Xác Nhận Chốt Ca Thu Ngân
               </button>
@@ -453,8 +504,7 @@ export const App: React.FC = () => {
         {activeTab === 'cashier-orders' && (
           <div className="card">
             <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Lịch Sử Hóa Đơn & In Vé Thu Ngân</h2>
-            <p style={{ color: '#475569', marginTop: '0.25rem', marginBottom: '1.25rem' }}>Danh sách tất cả các hóa đơn đã thanh toán thành công trong ca làm việc.</p>
-            <div style={{ width: '100%', overflowX: 'auto' }}>
+            <div style={{ width: '100%', overflowX: 'auto', marginTop: '1rem' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>

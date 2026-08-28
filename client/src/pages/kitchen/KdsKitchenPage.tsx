@@ -19,6 +19,7 @@ interface KdsTicket {
   station: 'Barista' | 'Kitchen';
   timeElapsedMinutes: number;
   slaStatus: 'Normal' | 'Warning' | 'Overdue';
+  isAddOn?: boolean;
   items: TicketItem[];
 }
 
@@ -49,13 +50,48 @@ interface SlaHistoryRecord {
 export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => {
   const [activeStation, setActiveStation] = useState<'Barista' | 'Kitchen'>('Barista');
   const [activeIotAlert, setActiveIotAlert] = useState<{ pagerId: string; orderNo: string; table: string } | null>(null);
+  const [addOnNotice, setAddOnNotice] = useState<KdsTicket | null>(null);
 
   // 1. DYNAMIC REAL-TIME SLA TICKETS SYNCED FROM CASHIER POS PAYMENTS ONLY
   const [tickets, setTickets] = useState<KdsTicket[]>([]);
 
+  // WEB AUDIO SYNTH CHIME FOR ADD-ON ORDER NOTIFICATION
+  const playAddOnSoundChime = () => {
+    try {
+      const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
+      if (AudioContext) {
+        const ctx = new AudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(880, ctx.currentTime); // Note A5
+        osc.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime + 0.3); // Note E6
+        gain.gain.setValueAtTime(0.5, ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.5);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.5);
+      }
+    } catch (e) {
+      console.log('Audio chime error:', e);
+    }
+  };
+
   const syncKdsTickets = () => {
     const saved = localStorage.getItem('fnb_kds_tickets');
-    setTickets(saved ? JSON.parse(saved) : []);
+    if (saved) {
+      const parsed: KdsTicket[] = JSON.parse(saved);
+      // Check if new add-on ticket arrived
+      const newAddOn = parsed.find(t => t.isAddOn);
+      if (newAddOn && tickets.length < parsed.length) {
+        playAddOnSoundChime();
+        setAddOnNotice(newAddOn);
+      }
+      setTickets(parsed);
+    } else {
+      setTickets([]);
+    }
   };
 
   useEffect(() => {
@@ -68,7 +104,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     };
   }, [activeTab]);
 
-  // 2. DYNAMIC SMART BATCH ALGORITHM: AGGREGATE UNPROCESSED TICKETS FOR ITEMS WITH TOTAL QTY >= 2
+  // 2. DYNAMIC SMART BATCH ALGORITHM (ITEMS WITH TOTAL QTY >= 2)
   const computeSmartBatches = () => {
     const itemMap: { [dishName: string]: { totalQty: number; unit: string; tablesMap: { [tbl: string]: number } } } = {};
 
@@ -83,7 +119,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       });
     });
 
-    // Filter ONLY items with totalQty >= 2 as per user directive!
     return Object.keys(itemMap)
       .filter(dishName => itemMap[dishName].totalQty >= 2)
       .map(dishName => {
@@ -101,7 +136,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
   const smartBatches = computeSmartBatches();
 
   const handleCompleteBatchItem = (dishName: string) => {
-    // Remove completed batch items from active tickets
     const updatedTickets = tickets.map(t => ({
       ...t,
       items: t.items.filter(i => i.name !== dishName)
@@ -110,7 +144,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setTickets(updatedTickets);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! Các món trong mẻ đã được làm xong và tự động làm sạch khỏi danh sách gom mẻ.`);
+    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! Các món trong mẻ đã làm xong và tự động xóa khỏi danh sách gom mẻ.`);
   };
 
   // 3. 86-LIST MATRIX
@@ -131,12 +165,11 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     }
   ]);
 
-  // 5. PERSISTENT SLA HISTORY LOGS FOR ADMIN MONTHLY STATS
+  // 5. PERSISTENT SLA HISTORY LOGS
   const [slaHistory, setSlaHistory] = useState<SlaHistoryRecord[]>(() => {
     const saved = localStorage.getItem('fnb_kds_sla_history');
     return saved ? JSON.parse(saved) : [
       { ticketId: 'TK-099', orderNo: 'HD-9915', table: 'Bàn 02', station: 'Trạm Barista', slaMinutes: 5.2, completedTime: '20:45:10' },
-      { ticketId: 'TK-098', orderNo: 'HD-9910', table: 'Bàn 03', station: 'Trạm Bếp Nóng', slaMinutes: 6.8, completedTime: '20:30:15' },
     ];
   });
 
@@ -144,15 +177,12 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(slaHistory));
   }, [slaHistory]);
 
-  // Handlers
   const handleBumpAndSaveToHistory = (ticket: KdsTicket) => {
-    // 1. Remove ticket from active KDS tickets
     const updatedTickets = tickets.filter(t => t.id !== ticket.id);
     setTickets(updatedTickets);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    // 2. Append completed ticket to persistent SLA History Log!
     const newHistoryRecord: SlaHistoryRecord = {
       ticketId: ticket.id,
       orderNo: ticket.orderNo,
@@ -165,20 +195,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setSlaHistory(updatedHistory);
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(updatedHistory));
 
-    // 3. Push ready notification for Staff Runner
-    const runnerItems = JSON.parse(localStorage.getItem('fnb_runner_queue') || '[]');
-    const newRunnerItem = {
-      id: `RUN-${Math.floor(100 + Math.random() * 900)}`,
-      orderNo: ticket.orderNo,
-      table: ticket.table,
-      pagerId: ticket.pagerId,
-      itemNames: ticket.items.map(i => `${i.name} (x${i.quantity})`).join(', '),
-      station: ticket.station,
-      timeReady: 'Vừa xong'
-    };
-    localStorage.setItem('fnb_runner_queue', JSON.stringify([newRunnerItem, ...runnerItems]));
-
-    // 4. Trigger IoT Pager alert modal
     setActiveIotAlert({ pagerId: ticket.pagerId, orderNo: ticket.orderNo, table: ticket.table });
   };
 
@@ -258,12 +274,19 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                   key={t.id}
                   style={{
                     background: '#FFFFFF',
-                    border: t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
+                    border: t.isAddOn ? '3px solid #DC2626' : t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
                     borderRadius: '8px',
                     padding: '18px',
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+                    boxShadow: t.isAddOn ? '0 0 12px rgba(220, 38, 38, 0.3)' : '0 2px 4px rgba(0,0,0,0.05)'
                   }}
                 >
+                  {/* ADD-ON ORDER BADGE ALERT FOR KITCHEN */}
+                  {t.isAddOn && (
+                    <div style={{ background: '#DC2626', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
+                      🚨 ĐƠN GỘP BỔ SUNG MÓN (THẺ RUNG {t.pagerId})
+                    </div>
+                  )}
+
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', borderBottom: '1px solid #E2E8F0', paddingBottom: '10px' }}>
                     <div>
                       <h3 style={{ margin: 0, fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>{t.table}</h3>
@@ -284,7 +307,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                           <span style={{ color: '#2563EB', fontSize: '16px' }}>x{item.quantity}</span>
                         </div>
                         {item.note && (
-                          <div style={{ fontSize: '12px', color: '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
+                          <div style={{ fontSize: '12px', color: item.note.includes('ĐƠN GỘP') ? '#DC2626' : '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
                             Ghi chú: {item.note}
                           </div>
                         )}
@@ -313,7 +336,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* 2. VIEW 2: DYNAMIC SMART BATCH COOKING MATRIX (ITEMS WITH TOTAL QTY >= 2 ONLY) */}
+      {/* 2. VIEW 2: DYNAMIC SMART BATCH COOKING MATRIX */}
       {activeTab === 'kds-batch' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Gom Món Chế Biến Mẻ Lớn (Smart Batch View - Tối Thiểu 2 Món Lặp Nổi)</h2>
@@ -400,25 +423,17 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                     {rg.ingredients.map((ing, i) => <li key={i}>{ing}</li>)}
                   </ul>
                 </div>
-                <div style={{ marginBottom: '12px' }}>
-                  <strong style={{ color: '#0F172A', fontSize: '13px' }}>2. Quy trình các bước thực hiện:</strong>
-                  <ul style={{ margin: '4px 0 0 0', paddingLeft: '20px', fontSize: '13px', color: '#475569' }}>
-                    {rg.prepSteps.map((step, i) => <li key={i}>{step}</li>)}
-                  </ul>
-                </div>
               </div>
             ))}
           </div>
         </div>
       )}
 
-      {/* 5. VIEW 5: PERSISTENT SLA HISTORY REPORT FOR ADMIN MONTHLY STATS */}
+      {/* 5. VIEW 5: PERSISTENT SLA HISTORY REPORT */}
       {activeTab === 'kds-history' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Lịch Sử Vé Bếp Đã Chế Biến & Báo Cáo SLA</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Lưu trữ toàn bộ các vé đã chế biến xong trong ca để phục vụ thống kê báo cáo hàng tháng cho Admin.</p>
-
-          <div style={{ width: '100%', overflowX: 'auto' }}>
+          <div style={{ width: '100%', overflowX: 'auto', marginTop: '16px' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
@@ -447,6 +462,23 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
+      {/* ADD-ON ORDER AUDIO / VISUAL POPUP NOTIFICATION FOR KITCHEN */}
+      {addOnNotice && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
+            <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
+              🔔 CẢNH BÁO BẾP: ĐƠN GỘP BỔ SUNG MÓN CHO THẺ RUNG {addOnNotice.pagerId}!
+            </div>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>{addOnNotice.table} | Mã HD: {addOnNotice.orderNo}</h3>
+            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Khách hàng tại bàn vừa thanh toán thêm món bổ sung cho Thẻ Rung <strong>{addOnNotice.pagerId}</strong>.</p>
+            
+            <button onClick={() => setAddOnNotice(null)} style={{ padding: '10px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
+              ĐÃ XÁC NHẬN CHẾ BIẾN BỔ SUNG
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* IOT PAGER SIGNAL MODAL */}
       {activeIotAlert && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
@@ -456,15 +488,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
             </div>
             <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '22px', fontWeight: 'bold' }}>THẺ RUNG IOT: {activeIotAlert.pagerId}</h3>
             <p style={{ fontSize: '14px', color: '#475569', margin: '0 0 16px 0' }}>Đơn hàng: <strong>{activeIotAlert.orderNo}</strong> | {activeIotAlert.table}</p>
-            
-            <div style={{ background: '#FEF3C7', padding: '14px', borderRadius: '8px', marginBottom: '20px', border: '1px solid #FDE68A', textAlign: 'left', fontSize: '13px', color: '#92400E' }}>
-              <strong>THÔNG BÁO HỆ THỐNG:</strong>
-              <ul style={{ margin: '4px 0 0 0', paddingLeft: '20px' }}>
-                <li>Vé {activeIotAlert.orderNo} đã được lưu vào Lịch Sử Vé Chế Biến & Báo Cáo SLA.</li>
-                <li>Thẻ Rung {activeIotAlert.pagerId} đang phát chuông rung báo khách lên quầy nhận nước.</li>
-              </ul>
-            </div>
-
             <button onClick={() => setActiveIotAlert(null)} style={{ padding: '10px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
               ĐÓNG THÔNG BÁO
             </button>
