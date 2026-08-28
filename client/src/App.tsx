@@ -49,7 +49,7 @@ export const App: React.FC = () => {
   const [selectedTable, setSelectedTable] = useState<string | null>('Bàn 01');
   const [cart, setCart] = useState<CartItem[]>([]);
   
-  // PENDING QR BILLS WAITING FOR CASHIER PAYMENT FIRST
+  // PENDING QR BILLS QUEUE FOR CASHIER TO VERIFY PAYMENT AND ASSIGN IOT PAGER ID
   const [pendingBills, setPendingBills] = useState<PendingBill[]>(() => {
     const saved = localStorage.getItem('fnb_pending_bills');
     return saved ? JSON.parse(saved) : [
@@ -58,15 +58,19 @@ export const App: React.FC = () => {
         table: 'Bàn 04',
         items: [
           { name: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, price: 29000 },
-          { name: 'Trà Đào Cam Sả Tươi', quantity: 1, price: 39000 },
-          { name: 'Bánh Croissant Bơ Bơ', quantity: 1, price: 25000 }
+          { name: 'Trà Đào Cam Sả Tươi', quantity: 2, price: 39000 },
+          { name: 'Trà Sữa Ô Long Kem Trứng', quantity: 2, price: 42000 },
+          { name: 'Bánh Croissant Bơ Bơ', quantity: 1, price: 25000 },
+          { name: 'Bánh Tiramisu Ý', quantity: 1, price: 38000 }
         ],
-        totalAmount: 122000,
+        totalAmount: 347000,
         status: 'PendingPayment',
         timestamp: '21:30:15'
       }
     ];
   });
+
+  const [selectedPagerMap, setSelectedPagerMap] = useState<{ [billCode: string]: string }>({});
 
   useEffect(() => {
     localStorage.setItem('fnb_pending_bills', JSON.stringify(pendingBills));
@@ -189,6 +193,7 @@ export const App: React.FC = () => {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
       orderNo: newInvoice.id,
       table: newInvoice.table,
+      pagerId: 'PAGER-05',
       station: 'Barista',
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
@@ -197,12 +202,13 @@ export const App: React.FC = () => {
     localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...kdsTickets]));
 
     setPaidInvoices([newInvoice, ...paidInvoices]);
-    setCart([]); // Reset giỏ hàng ngay lập tức!
+    setCart([]);
     alert(`THANH TOÁN THÀNH CÔNG!\n- Hóa đơn ${newInvoice.id} trị giá ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table} đã thanh toán thành công.\n- Lệnh chế biến đã được tự động chuyển sang Bếp / Barista theo số Bill!`);
   };
 
-  const handlePayPendingBill = (bill: PendingBill) => {
-    // Pay pending bill from QR
+  const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
+    const assignedPager = selectedPagerMap[bill.billCode] || 'PAGER-05';
+
     const newInvoice: PaidInvoice = {
       id: bill.billCode,
       table: bill.table,
@@ -211,20 +217,21 @@ export const App: React.FC = () => {
         quantity: b.quantity
       })),
       totalAmount: bill.totalAmount,
-      paymentMethod: 'Chuyển Khoản VietQR Tại Quầy',
+      paymentMethod: 'Chuyển Khoản VietQR / Tiền Mặt Tại Quầy',
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Push new KDS ticket for Kitchen
+    // Push new KDS ticket for Kitchen with assigned IoT Pager ID!
     const kdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
     const newKdsTicket = {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
       orderNo: bill.billCode,
       table: bill.table,
+      pagerId: assignedPager, // Mã Thẻ Rung IoT do Thu Ngân gán!
       station: 'Barista',
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
-      items: bill.items.map((b, idx) => ({ id: idx.toString(), name: b.name, quantity: b.quantity, note: 'Đã thanh toán mã Bill' }))
+      items: bill.items.map((b, idx) => ({ id: idx.toString(), name: b.name, quantity: b.quantity, note: `Thẻ Rung: ${assignedPager}` }))
     };
     localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...kdsTickets]));
 
@@ -236,7 +243,7 @@ export const App: React.FC = () => {
     // Save to paid invoices
     setPaidInvoices([newInvoice, ...paidInvoices]);
 
-    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Tổng tiền: ${bill.totalAmount.toLocaleString('vi-VN')}đ tại ${bill.table}.\n- Bếp / Barista đã nhận lệnh chế biến và Phục vụ sẽ giao món theo Mã Bill!`);
+    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Đã gán ${assignedPager} cho khách tại ${bill.table}.\n- Bếp / Barista đã nhận lệnh chế biến và sẽ kích hoạt thẻ rung ${assignedPager} khi xong!`);
   };
 
   const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
@@ -269,28 +276,44 @@ export const App: React.FC = () => {
         {/* ROLE 4: CASHIER TOUCH POS UI */}
         {activeTab === 'pos' && (
           <div>
-            {/* PENDING QR BILLS QUEUE - PAY FIRST RULE */}
+            {/* PENDING QR BILLS QUEUE FOR CASHIER PAYMENT AND IOT PAGER ALLOCATION */}
             {pendingBills.length > 0 && (
               <div className="card" style={{ marginBottom: '1.25rem', background: '#FEF3C7', border: '2px solid #F59E0B' }}>
-                <h3 style={{ margin: 0, color: '#92400E', fontWeight: 'bold' }}>Hàng Đợi Mã Bill QR Chờ Thanh Toán Tại Quầy (Thanh Toán Trước Ra Món)</h3>
-                <p style={{ margin: '4px 0 12px 0', fontSize: '0.85rem', color: '#78350F' }}>Khách hàng đã chốt đơn QR tại bàn. Thu ngân bấm xác nhận nhận tiền để Bếp bắt đầu pha chế!</p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <h3 style={{ margin: 0, color: '#92400E', fontWeight: 'bold' }}>Hàng Đợi Mã Bill QR Chờ Thanh Toán Tại Quầy & Gán Thẻ Rung IoT</h3>
+                <p style={{ margin: '4px 0 12px 0', fontSize: '0.85rem', color: '#78350F' }}>Khách hàng mang mã Bill tới quầy. Thu ngân xác nhận thanh toán và gán Thẻ Rung IoT nhận món trước khi chuyển lệnh sang Bếp!</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {pendingBills.map((b) => (
-                    <div key={b.billCode} style={{ background: '#FFFFFF', padding: '12px 16px', borderRadius: '6px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+                    <div key={b.billCode} style={{ background: '#FFFFFF', padding: '14px 16px', borderRadius: '6px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                       <div>
-                        <span style={{ fontSize: '0.75rem', background: '#2563EB', color: '#fff', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
+                        <span style={{ fontSize: '0.8rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
                         <strong style={{ marginLeft: '8px', color: '#0F172A' }}>{b.table}</strong>
-                        <span style={{ marginLeft: '12px', fontSize: '0.85rem', color: '#475569' }}>
+                        <div style={{ marginTop: '4px', fontSize: '0.85rem', color: '#475569' }}>
                           Món: {b.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}
-                        </span>
+                        </div>
                       </div>
-                      <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                        <span style={{ fontSize: '1.1rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
+                      
+                      <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+                        <div>
+                          <label style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#92400E', display: 'block', marginBottom: '2px' }}>Gán Thẻ Rung IoT:</label>
+                          <select
+                            value={selectedPagerMap[b.billCode] || 'PAGER-05'}
+                            onChange={(e) => setSelectedPagerMap({ ...selectedPagerMap, [b.billCode]: e.target.value })}
+                            style={{ padding: '6px 10px', border: '1px solid #CBD5E1', borderRadius: '4px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.85rem' }}
+                          >
+                            <option value="PAGER-01">Thẻ Rung IoT #01</option>
+                            <option value="PAGER-02">Thẻ Rung IoT #02</option>
+                            <option value="PAGER-03">Thẻ Rung IoT #03</option>
+                            <option value="PAGER-04">Thẻ Rung IoT #04</option>
+                            <option value="PAGER-05">Thẻ Rung IoT #05</option>
+                            <option value="PAGER-06">Thẻ Rung IoT #06</option>
+                          </select>
+                        </div>
+                        <span style={{ fontSize: '1.2rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
                         <button
-                          onClick={() => handlePayPendingBill(b)}
-                          style={{ padding: '8px 16px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}
+                          onClick={() => handlePayPendingBillWithIotPager(b)}
+                          style={{ padding: '9px 18px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.85rem' }}
                         >
-                          Xác Nhận Nhận Tiền & Chuyển Bếp
+                          Xác Nhận Đã Thanh Toán & Gán Thẻ Gửi Bếp
                         </button>
                       </div>
                     </div>

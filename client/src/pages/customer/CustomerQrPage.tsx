@@ -19,13 +19,20 @@ interface GroupCartItem {
   price: number;
 }
 
-interface PaidOrderConfirmation {
-  orderId: string;
+interface PendingBill {
+  billCode: string;
   table: string;
   items: { name: string; quantity: number; price: number }[];
   totalAmount: number;
-  pagerId: string; // Mã Thẻ Rung IoT
+  status: 'PendingPayment' | 'Paid';
   timestamp: string;
+}
+
+interface LoyaltyTransaction {
+  date: string;
+  type: 'Earned' | 'Spent';
+  points: number;
+  orderNo: string;
 }
 
 export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => {
@@ -44,7 +51,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
     { id: '6', name: 'Bánh Tiramisu Ý', price: 38000, category: 'Bánh Ngọt' },
   ];
 
-  // 2. REALTIME GROUP CART
+  // 2. REALTIME GROUP CART - NO HARDCODED MINH/LAN
   const [groupCart, setGroupCart] = useState<GroupCartItem[]>(() => {
     const saved = localStorage.getItem('fnb_group_cart');
     return saved ? JSON.parse(saved) : [];
@@ -54,16 +61,19 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_group_cart', JSON.stringify(groupCart));
   }, [groupCart]);
 
-  // 3. IOT PAGER DEVICE ASSIGNMENT & ORDER CONFIRMATION MODAL
-  const [selectedPagerId, setSelectedPagerId] = useState<string>('PAGER-05');
-  const [confirmedOrder, setConfirmedOrder] = useState<PaidOrderConfirmation | null>(null);
+  // 3. PENDING BILL CONFIRMATION MODAL
+  const [generatedBill, setGeneratedBill] = useState<PendingBill | null>(null);
 
   // 4. SPLIT BILL CALCULATOR
   const [splitPeople, setSplitPeople] = useState<number>(1);
 
   // 5. LOYALTY WALLET
-  const [loyaltyPoints, setLoyaltyPoints] = useState<number>(1250);
+  const [loyaltyPoints] = useState<number>(1250);
   const [membershipTier] = useState<string>('Hạng Vàng (Giảm 10%)');
+  const [loyaltyHistory] = useState<LoyaltyTransaction[]>([
+    { date: '2026-08-28', type: 'Earned', points: 185, orderNo: 'HD-9921' },
+    { date: '2026-08-25', type: 'Earned', points: 120, orderNo: 'HD-9910' },
+  ]);
 
   const categories = ['Tất Cả', 'Cà Phê', 'Trà & Trà Sữa', 'Bánh Ngọt'];
   const filteredMenu = selectedCategory === 'Tất Cả' ? menuItems : menuItems.filter(i => i.category === selectedCategory);
@@ -97,46 +107,32 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
     setGroupCart(prev => prev.filter(item => item.id !== id));
   };
 
-  const handlePayAndSendToKitchenWithIotPager = () => {
+  const handleCheckoutGroupCart = () => {
     if (groupCart.length === 0) {
-      alert('Giỏ hàng trống! Vui lòng chọn món trước khi đặt đơn.');
+      alert('Giỏ hàng trống! Vui lòng chọn món trước khi chốt đơn.');
       return;
     }
 
     const totalAmount = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
-    const orderId = `HD-${Math.floor(1000 + Math.random() * 9000)}`;
+    const billCode = `BILL-${Math.floor(1000 + Math.random() * 9000)}`;
 
-    const newOrder: PaidOrderConfirmation = {
-      orderId: orderId,
+    const newBill: PendingBill = {
+      billCode: billCode,
       table: tableSession,
       items: groupCart.map(g => ({ name: g.itemName, quantity: g.quantity, price: g.price })),
       totalAmount: totalAmount,
-      pagerId: selectedPagerId,
+      status: 'PendingPayment',
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // 1. Direct-push ticket to KDS Kitchen
-    const existingKds = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-    const newKdsTicket = {
-      id: `TK-${Math.floor(100 + Math.random() * 900)}`,
-      orderNo: orderId,
-      table: tableSession,
-      pagerId: selectedPagerId, // Mã Thẻ Rung IoT
-      station: 'Barista',
-      timeElapsedMinutes: 1,
-      slaStatus: 'Normal',
-      items: groupCart.map(g => ({ id: g.id, name: g.itemName, quantity: g.quantity, note: `Thẻ Rung IoT: ${selectedPagerId}` }))
-    };
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...existingKds]));
+    // Save pending bill to localStorage for Cashier POS to pick up & assign IoT Pager
+    const existingBills: PendingBill[] = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
+    localStorage.setItem('fnb_pending_bills', JSON.stringify([newBill, ...existingBills]));
 
-    // 2. Add 5% loyalty points
-    const earnedPoints = Math.round((totalAmount * 0.05) / 100);
-    setLoyaltyPoints(prev => prev + earnedPoints);
+    // Show modal bill confirmation
+    setGeneratedBill(newBill);
 
-    // 3. Open order & IoT Pager confirmation modal
-    setConfirmedOrder(newOrder);
-
-    // 4. Clear active group cart & local cart
+    // Clear active group cart and local cart
     setGroupCart([]);
     setCart({});
     localStorage.removeItem('fnb_group_cart');
@@ -158,7 +154,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
         </div>
       </div>
 
-      {/* 1. VIEW 1: QR MENU (NO BOTTOM CONFIRM BUTTON - MOVED EXCLUSIVELY TO CART) */}
+      {/* 1. VIEW 1: QR MENU (NO BOTTOM CONFIRM BUTTON) */}
       {(activeTab === 'customer-menu' || activeTab === 'customer') && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <div style={{ display: 'flex', gap: '8px', marginBottom: '20px', overflowX: 'auto', paddingBottom: '4px' }}>
@@ -202,11 +198,11 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* 2. VIEW 2: GROUP CART & IOT PAGER WORKFLOW */}
+      {/* 2. VIEW 2: GROUP CART */}
       {activeTab === 'customer-group' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng Nhóm Thời Gian Thực & Thẻ Rung IoT</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Kiểm tra các món trong giỏ, điều chỉnh số lượng và chọn Thẻ Rung IoT để hoàn tất đặt đơn & thanh toán.</p>
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng Nhóm Thời Gian Thực Tại {tableSession}</h2>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Tất cả mọi người tại bàn đều có thể thêm, chỉnh sửa hoặc xóa món trong giỏ hàng chung trước khi chốt đơn thanh toán.</p>
 
           {groupCart.length === 0 ? (
             <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px', marginBottom: '20px' }}>
@@ -249,26 +245,13 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
             </div>
           )}
 
-          {/* IOT PAGER SELECTION BLOCK */}
-          <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '8px', border: '1px solid #E2E8F0', marginBottom: '20px', display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <label style={{ fontSize: '14px', fontWeight: 'bold', color: '#0F172A' }}>Gán Thẻ Rung IoT Nhận Món (Wireless Pager ID):</label>
-            <select value={selectedPagerId} onChange={(e) => setSelectedPagerId(e.target.value)} style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold' }}>
-              <option value="PAGER-01">Thẻ Rung IoT #01</option>
-              <option value="PAGER-02">Thẻ Rung IoT #02</option>
-              <option value="PAGER-03">Thẻ Rung IoT #03</option>
-              <option value="PAGER-04">Thẻ Rung IoT #04</option>
-              <option value="PAGER-05">Thẻ Rung IoT #05 (Mặc Định)</option>
-              <option value="PAGER-06">Thẻ Rung IoT #06</option>
-            </select>
-          </div>
-
           <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '8px', border: '1px solid #E2E8F0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <span style={{ fontSize: '14px', color: '#475569' }}>TỔNG TIỀN THANH TOÁN: </span>
               <strong style={{ fontSize: '22px', color: '#059669' }}>{groupTotal.toLocaleString('vi-VN')}đ</strong>
             </div>
-            <button onClick={handlePayAndSendToKitchenWithIotPager} style={{ padding: '12px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
-              XÁC NHẬN ĐẶT ĐƠN & THANH TOÁN VỚI THẺ RUNG IOT
+            <button onClick={handleCheckoutGroupCart} style={{ padding: '12px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
+              XÁC NHẬN ĐẶT ĐƠN & TẠO MÃ BILL THANH TOÁN
             </button>
           </div>
         </div>
@@ -309,7 +292,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       {activeTab === 'customer-loyalty' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Ví Điểm Thưởng & Hạng Thẻ Hội Viên</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Mọi giao dịch thanh toán thành công đều tự động tích điểm 5% giá trị hóa đơn vào ví hội viên.</p>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Mọi giao dịch thanh toán thành công tại thu ngân đều tự động tích điểm 5% giá trị hóa đơn vào ví hội viên.</p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
             <div style={{ background: '#FEF3C7', border: '1px solid #F59E0B', padding: '20px', borderRadius: '8px' }}>
@@ -327,31 +310,31 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* CONFIRMED ORDER & IOT PAGER MODAL */}
-      {confirmedOrder && (
+      {/* PENDING BILL CONFIRMATION MODAL */}
+      {generatedBill && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '520px', width: '100%', textAlign: 'center' }}>
             <div style={{ background: '#DCFCE7', color: '#166534', width: '50px', height: '50px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px auto', fontSize: '24px', fontWeight: 'bold' }}>✓</div>
-            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>ĐÃ THANH TOÁN & TẠO ĐƠN CHẾ BIẾN BẾP</h3>
-            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Mã hóa đơn: <strong>{confirmedOrder.orderId}</strong> | {confirmedOrder.table} | {confirmedOrder.timestamp}</p>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>ĐÃ ĐẶT ĐƠN THANH TOÁN TẠI QUẦY THU NGÂN</h3>
+            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Bàn phục vụ: <strong>{generatedBill.table}</strong> | Thời gian: {generatedBill.timestamp}</p>
 
-            <div style={{ background: '#FEF3C7', border: '2px solid #F59E0B', padding: '16px', borderRadius: '8px', marginBottom: '16px' }}>
-              <span style={{ fontSize: '12px', color: '#92400E', fontWeight: 'bold' }}>MÃ THẺ RUNG IOT CỦA QUÝ KHÁCH:</span>
-              <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#DC2626', letterSpacing: '2px', margin: '4px 0' }}>{confirmedOrder.pagerId}</div>
-              <div style={{ fontSize: '15px', fontWeight: 'bold', color: '#059669' }}>Tổng tiền đã trả: {confirmedOrder.totalAmount.toLocaleString('vi-VN')} đ (In Hóa Đơn ESC/POS)</div>
+            <div style={{ background: '#F8FAFC', border: '2px dashed #2563EB', padding: '16px', borderRadius: '8px', marginBottom: '16px' }}>
+              <span style={{ fontSize: '12px', color: '#2563EB', fontWeight: 'bold' }}>MÃ BILL ĐƠN HÀNG CỦA BẠN:</span>
+              <div style={{ fontSize: '32px', fontWeight: 'bold', color: '#0F172A', letterSpacing: '2px', margin: '4px 0' }}>{generatedBill.billCode}</div>
+              <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#059669' }}>Tổng tiền: {generatedBill.totalAmount.toLocaleString('vi-VN')} đ</div>
             </div>
 
-            <div style={{ background: '#F8FAFC', border: '1px solid #CBD5E1', padding: '12px', borderRadius: '6px', textAlign: 'left', marginBottom: '20px', fontSize: '12px', color: '#475569' }}>
-              <strong>QUY TRÌNH NHẬN MÓN BẰNG THẺ RUNG IOT:</strong>
+            <div style={{ background: '#FEF3C7', border: '1px solid #FDE68A', padding: '12px', borderRadius: '6px', textAlign: 'left', marginBottom: '20px', fontSize: '12px', color: '#92400E' }}>
+              <strong>BƯỚC THANH TOÁN & GÁN THẺ RUNG IOT TẠI QUẦY:</strong>
               <ol style={{ margin: '4px 0 0 0', paddingLeft: '20px' }}>
-                <li>Đơn hàng đã được tự động chuyển đến màn hình <strong>Bếp / Barista</strong>.</li>
-                <li>Khi Bếp chế biến xong và bấm hoàn tất, <strong>Thẻ Rung IoT {confirmedOrder.pagerId}</strong> sẽ phát chuông kêu Beep Beep và nhấp nháy đèn.</li>
-                <li>Quý khách vui lòng cầm <strong>{confirmedOrder.pagerId}</strong> đến quầy để nhận món!</li>
+                <li>Quý khách vui lòng đến quầy Thu Ngân đọc <strong>Mã Bill {generatedBill.billCode}</strong>.</li>
+                <li>Thu Ngân xác nhận thanh toán (Tiền mặt / VietQR) và <strong>gán Thẻ Rung IoT Nhận Món</strong>.</li>
+                <li>Đơn hàng sẽ chuyển xuống Bếp chế biến. Khi xong Thẻ Rung sẽ phát chuông báo quý khách lên nhận món!</li>
               </ol>
             </div>
 
-            <button onClick={() => setConfirmedOrder(null)} style={{ padding: '10px 24px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
-              ĐÓNG THÔNG BÁO & GIỮ THẺ RUNG
+            <button onClick={() => setGeneratedBill(null)} style={{ padding: '10px 24px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
+              ĐÓNG THÔNG BÁO
             </button>
           </div>
         </div>

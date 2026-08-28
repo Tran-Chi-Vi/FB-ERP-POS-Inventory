@@ -23,6 +23,7 @@ interface KdsTicket {
 }
 
 interface BatchItem {
+  id: string;
   dishName: string;
   totalQuantity: number;
   unit: string;
@@ -93,11 +94,18 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(tickets));
   }, [tickets]);
 
-  // 2. BATCH COOKING MATRIX
-  const [batchList] = useState<BatchItem[]>([
-    { dishName: 'Trà Đào Cam Sả Tươi', totalQuantity: 4, unit: 'Ly', tables: ['Bàn 04 (x1)', 'Bàn 01 (x3)'] },
-    { dishName: 'Cà Phê Sữa Đá Sài Gòn', totalQuantity: 2, unit: 'Ly', tables: ['Bàn 04 (x2)'] },
-  ]);
+  // 2. DYNAMIC BATCH COOKING MATRIX WITH ROW DELETION UPON COMPLETION
+  const [batchList, setBatchList] = useState<BatchItem[]>(() => {
+    const saved = localStorage.getItem('fnb_kds_batch');
+    return saved ? JSON.parse(saved) : [
+      { id: 'B-1', dishName: 'Trà Đào Cam Sả Tươi', totalQuantity: 4, unit: 'Ly', tables: ['Bàn 04 (x1)', 'Bàn 01 (x3)'] },
+      { id: 'B-2', dishName: 'Cà Phê Sữa Đá Sài Gòn', totalQuantity: 2, unit: 'Ly', tables: ['Bàn 04 (x2)'] },
+    ];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('fnb_kds_batch', JSON.stringify(batchList));
+  }, [batchList]);
 
   // 3. 86-LIST MATRIX
   const [items86, setItems86] = useState<Item86[]>([
@@ -117,18 +125,37 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     }
   ]);
 
-  // 5. SLA HISTORY LOGS
-  const [slaHistory] = useState<SlaHistoryRecord[]>([
-    { ticketId: 'TK-099', orderNo: 'HD-9915', table: 'Bàn 02', station: 'Trạm Barista', slaMinutes: 5.2, completedTime: '20:45:10' }
-  ]);
+  // 5. PERSISTENT SLA HISTORY LOGS FOR ADMIN MONTHLY STATS
+  const [slaHistory, setSlaHistory] = useState<SlaHistoryRecord[]>(() => {
+    const saved = localStorage.getItem('fnb_kds_sla_history');
+    return saved ? JSON.parse(saved) : [
+      { ticketId: 'TK-099', orderNo: 'HD-9915', table: 'Bàn 02', station: 'Trạm Barista', slaMinutes: 5.2, completedTime: '20:45:10' },
+      { ticketId: 'TK-098', orderNo: 'HD-9910', table: 'Bàn 03', station: 'Trạm Bếp Nóng', slaMinutes: 6.8, completedTime: '20:30:15' },
+    ];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('fnb_kds_sla_history', JSON.stringify(slaHistory));
+  }, [slaHistory]);
 
   // Handlers
-  const handleBumpAndTriggerIotPager = (ticket: KdsTicket) => {
-    const updated = tickets.filter(t => t.id !== ticket.id);
-    setTickets(updated);
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updated));
+  const handleBumpAndSaveToHistory = (ticket: KdsTicket) => {
+    // 1. Remove ticket from active KDS tickets
+    const updatedTickets = tickets.filter(t => t.id !== ticket.id);
+    setTickets(updatedTickets);
 
-    // Push ready notification for Staff Runner
+    // 2. Append completed ticket to persistent SLA History Log!
+    const newHistoryRecord: SlaHistoryRecord = {
+      ticketId: ticket.id,
+      orderNo: ticket.orderNo,
+      table: ticket.table,
+      station: ticket.station === 'Barista' ? 'Trạm Barista' : 'Trạm Bếp Nóng',
+      slaMinutes: ticket.timeElapsedMinutes || 5.0,
+      completedTime: new Date().toLocaleTimeString('vi-VN')
+    };
+    setSlaHistory([newHistoryRecord, ...slaHistory]);
+
+    // 3. Push ready notification for Staff Runner
     const runnerItems = JSON.parse(localStorage.getItem('fnb_runner_queue') || '[]');
     const newRunnerItem = {
       id: `RUN-${Math.floor(100 + Math.random() * 900)}`,
@@ -141,8 +168,14 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     };
     localStorage.setItem('fnb_runner_queue', JSON.stringify([newRunnerItem, ...runnerItems]));
 
-    // Trigger IoT Pager alert animation modal
+    // 4. Trigger IoT Pager alert modal
     setActiveIotAlert({ pagerId: ticket.pagerId, orderNo: ticket.orderNo, table: ticket.table });
+  };
+
+  const handleCompleteBatchItem = (batchId: string) => {
+    const updatedBatch = batchList.filter(b => b.id !== batchId);
+    setBatchList(updatedBatch);
+    alert('ĐÃ HOÀN TẤT MẺ CHẾ BIẾN! Mẻ chế biến đã được xóa khỏi danh sách gom món.');
   };
 
   const handleTransferStation = (ticketId: string) => {
@@ -154,7 +187,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       return t;
     });
     setTickets(updated);
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updated));
     alert(`Đã chuyển vé ${ticketId} sang Trạm chế biến tương ứng!`);
   };
 
@@ -167,13 +199,13 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
-      {/* 1. VIEW 1: KDS ACTIVE TICKETS SCREEN WITH IOT PAGER BUMP */}
+      {/* 1. VIEW 1: KDS ACTIVE TICKETS SCREEN */}
       {(activeTab === 'kds-tickets' || activeTab === 'kitchen') && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS & Kích Hoạt Thẻ Rung IoT</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Bếp chế biến xong bấm BUMP để kích hoạt Thẻ Rung IoT phát chuông kêu Beep Beep báo khách lên quầy nhận món.</p>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Bếp chế biến xong bấm HOÀN TẤT CHẾ BIẾN để lưu lịch sử SLA và rung thẻ IoT báo khách lên quầy nhận món.</p>
             </div>
             <div style={{ display: 'flex', gap: '8px', background: '#F1F5F9', padding: '4px', borderRadius: '8px' }}>
               <button
@@ -233,7 +265,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                     </div>
                     <div>
                       <span style={{ background: '#FEF3C7', color: '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold', border: '1px solid #FDE68A' }}>
-                        IoT Pager: {t.pagerId || 'PAGER-05'}
+                        Thẻ Rung: {t.pagerId || 'PAGER-05'}
                       </span>
                     </div>
                   </div>
@@ -262,10 +294,10 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                       Chuyển Trạm
                     </button>
                     <button
-                      onClick={() => handleBumpAndTriggerIotPager(t)}
+                      onClick={() => handleBumpAndSaveToHistory(t)}
                       style={{ flex: 2, padding: '8px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
                     >
-                      HOÀN TẤT & RUNG THẺ IOT
+                      HOÀN TẤT CHẾ BIẾN
                     </button>
                   </div>
                 </div>
@@ -275,36 +307,44 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* 2. VIEW 2: SMART BATCH COOKING MATRIX */}
+      {/* 2. VIEW 2: SMART BATCH COOKING MATRIX WITH AUTO-REMOVE ROW */}
       {activeTab === 'kds-batch' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Gom Món Chế Biến Đồng Thời (Smart Batch View)</h2>
-          <div style={{ width: '100%', overflowX: 'auto', marginTop: '16px' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-              <thead>
-                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tên Món Chế Biến</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Số Lượng Cần Pha</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Tiết Các Bàn Đang Đợi</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác Mẻ</th>
-                </tr>
-              </thead>
-              <tbody>
-                {batchList.map((b, idx) => (
-                  <tr key={idx} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{b.dishName}</td>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '16px' }}>{b.totalQuantity} {b.unit}</td>
-                    <td style={{ padding: '14px 12px', color: '#475569' }}>{b.tables.join(', ')}</td>
-                    <td style={{ padding: '14px 12px' }}>
-                      <button onClick={() => alert(`Đã bấm hoàn tất mẻ ${b.totalQuantity} ${b.unit} món "${b.dishName}"!`)} style={{ padding: '6px 14px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>
-                        Xong Mẻ {b.totalQuantity} {b.unit}
-                      </button>
-                    </td>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Khi làm xong mẻ nào, bấm nút hoàn tất mẻ đó sẽ tự động xóa dòng mẻ khỏi danh sách gom món.</p>
+
+          {batchList.length === 0 ? (
+            <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
+              Hiện không còn mẻ gom món nào đang chờ chế biến. Tất cả các mẻ đã hoàn tất!
+            </div>
+          ) : (
+            <div style={{ width: '100%', overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tên Món Chế Biến</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Số Lượng Cần Pha</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Tiết Các Bàn Đang Đợi</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác Mẻ</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {batchList.map((b) => (
+                    <tr key={b.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{b.dishName}</td>
+                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '16px' }}>{b.totalQuantity} {b.unit}</td>
+                      <td style={{ padding: '14px 12px', color: '#475569' }}>{b.tables.join(', ')}</td>
+                      <td style={{ padding: '14px 12px' }}>
+                        <button onClick={() => handleCompleteBatchItem(b.id)} style={{ padding: '6px 14px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>
+                          Xong Mẻ {b.totalQuantity} {b.unit}
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </div>
       )}
 
@@ -366,11 +406,13 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* 5. VIEW 5: SLA HISTORY REPORT */}
+      {/* 5. VIEW 5: PERSISTENT SLA HISTORY REPORT FOR ADMIN MONTHLY STATS */}
       {activeTab === 'kds-history' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Lịch Sử Vé Bếp Đã Chế Biến & Báo Cáo SLA</h2>
-          <div style={{ width: '100%', overflowX: 'auto', marginTop: '16px' }}>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Lưu trữ toàn bộ các vé đã chế biến xong trong ca để phục vụ thống kê báo cáo hàng tháng cho Admin.</p>
+
+          <div style={{ width: '100%', overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
@@ -399,26 +441,26 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* IOT PAGER ALERT SIGNAL ANIMATED MODAL */}
+      {/* IOT PAGER SIGNAL MODAL */}
       {activeIotAlert && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
-            <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px', animation: 'pulse 1s infinite' }}>
-              TÍN HIỆU REALTIME SIGNALR: THẺ RUNG IOT ĐANG RUNG & PHÁT CHUÔNG BEEP BEEP!
+            <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
+              KÍCH HOẠT THẺ RUNG IOT {activeIotAlert.pagerId} THÀNH CÔNG!
             </div>
             <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '22px', fontWeight: 'bold' }}>THẺ RUNG IOT: {activeIotAlert.pagerId}</h3>
             <p style={{ fontSize: '14px', color: '#475569', margin: '0 0 16px 0' }}>Đơn hàng: <strong>{activeIotAlert.orderNo}</strong> | {activeIotAlert.table}</p>
             
             <div style={{ background: '#FEF3C7', padding: '14px', borderRadius: '8px', marginBottom: '20px', border: '1px solid #FDE68A', textAlign: 'left', fontSize: '13px', color: '#92400E' }}>
-              <strong>TRẠNG THÁI THẾ RUNG IOT:</strong>
+              <strong>THÔNG BÁO HỆ THỐNG:</strong>
               <ul style={{ margin: '4px 0 0 0', paddingLeft: '20px' }}>
-                <li>Thẻ Rung {activeIotAlert.pagerId} tại quầy đang kêu chuông Beep Beep & nhấp nháy đèn LED.</li>
-                <li>Khách hàng tại {activeIotAlert.table} đang tiến tới Quầy Thu Ngân để trao thẻ rung và nhận nước/món.</li>
+                <li>Vé {activeIotAlert.orderNo} đã được lưu vào Lịch Sử Vé Chế Biến & Báo Cáo SLA.</li>
+                <li>Thẻ Rung {activeIotAlert.pagerId} đang phát chuông rung báo khách lên quầy nhận nước.</li>
               </ul>
             </div>
 
             <button onClick={() => setActiveIotAlert(null)} style={{ padding: '10px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
-              ĐÃ HIỂU & TẮT TÍN HIỆU CHUÔNG IOT
+              ĐÓNG THÔNG BÁO
             </button>
           </div>
         </div>
