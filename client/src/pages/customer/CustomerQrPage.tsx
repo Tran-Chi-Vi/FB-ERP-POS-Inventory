@@ -26,7 +26,7 @@ interface LoyaltyTransaction {
 }
 
 export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => {
-  const tableSession = 'Bàn 04 (WiFi_Q1_5G Verified)';
+  const tableSession = 'Bàn 04 - Mạng WiFi Nội Bộ';
 
   // 1. MENU ITEMS
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất Cả');
@@ -40,8 +40,8 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
     { id: '6', name: 'Bánh Tiramisu Ý', price: 38000, category: 'Bánh Ngọt' },
   ];
 
-  // 2. GROUP CART REALTIME
-  const [groupCart] = useState<GroupCartItem[]>([
+  // 2. GROUP CART REALTIME & KDS INTEGRATION
+  const [groupCart, setGroupCart] = useState<GroupCartItem[]>([
     { customerName: 'Khách 1 (Bạn)', itemName: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, price: 29000 },
     { customerName: 'Khách 2 (Minh)', itemName: 'Trà Đào Cam Sả Tươi', quantity: 1, price: 39000 },
     { customerName: 'Khách 3 (Lan)', itemName: 'Bánh Croissant Bơ', quantity: 1, price: 25000 },
@@ -50,13 +50,13 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
   // 3. SPLIT BILL CALCULATOR
   const [splitPeople, setSplitPeople] = useState<number>(3);
 
-  // 4. LOYALTY WALLET
-  const [loyaltyPoints] = useState<number>(1250);
-  const [membershipTier] = useState<string>('Hạng Vàng (Gold Member - Giảm 10%)');
-  const [loyaltyHistory] = useState<LoyaltyTransaction[]>([
+  // 4. LOYALTY WALLET LINKED TO ORDERS
+  const [loyaltyPoints, setLoyaltyPoints] = useState<number>(1250);
+  const [membershipTier] = useState<string>('Hạng Vàng (Giảm 10%)');
+  const [loyaltyHistory, setLoyaltyHistory] = useState<LoyaltyTransaction[]>([
+    { date: '2026-08-28', type: 'Earned', points: 185, orderNo: 'ORD-9921' },
     { date: '2026-08-25', type: 'Earned', points: 120, orderNo: 'ORD-9910' },
     { date: '2026-08-20', type: 'Spent', points: -500, orderNo: 'ORD-9850' },
-    { date: '2026-08-15', type: 'Earned', points: 250, orderNo: 'ORD-9780' },
   ]);
 
   const categories = ['Tất Cả', 'Cà Phê', 'Trà & Trà Sữa', 'Bánh Ngọt'];
@@ -72,8 +72,36 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       alert('Vui lòng chọn ít nhất 1 món trước khi gửi đơn!');
       return;
     }
+
+    // Build new group cart items
+    const newItems: GroupCartItem[] = [];
+    let orderSubtotal = 0;
+    Object.keys(cart).forEach(id => {
+      const item = menuItems.find(m => m.id === id);
+      if (item) {
+        const qty = cart[id];
+        newItems.push({ customerName: 'Khách 1 (Bạn)', itemName: item.name, quantity: qty, price: item.price });
+        orderSubtotal += item.price * qty;
+      }
+    });
+
+    setGroupCart([...groupCart, ...newItems]);
+
+    // Calculate loyalty points earned (5% of order total)
+    const earnedPoints = Math.round((orderSubtotal * 0.05) / 100);
+    setLoyaltyPoints(prev => prev + earnedPoints);
+    const newHistory: LoyaltyTransaction = {
+      date: new Date().toISOString().split('T')[0],
+      type: 'Earned',
+      points: earnedPoints,
+      orderNo: `ORD-${Math.floor(1000 + Math.random() * 9000)}`
+    };
+    setLoyaltyHistory([newHistory, ...loyaltyHistory]);
+
+    // RESET CART IMMEDIATELY AFTER SENDING TO KITCHEN!
     setCart({});
-    alert(`ĐÃ GỬI ĐƠN THÀNH CÔNG! Đơn hàng của bạn tại ${tableSession} đã được gửi thẳng xuống trạm Bếp/Barista!`);
+
+    alert(`ĐÃ GỬI ${totalItems} MÓN XUỐNG BẾP THÀNH CÔNG!\n- Đơn hàng tại ${tableSession} đã chuyển sang màn hình KDS.\n- Giỏ hàng nhóm realtime đã chốt.\n- Bạn được cộng +${earnedPoints} điểm thưởng tích lũy vào Ví Hội Viên!`);
   };
 
   const groupTotal = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
@@ -84,11 +112,11 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       {/* HEADER BANNER */}
       <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '16px 24px', marginBottom: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <div>
-          <span style={{ fontSize: '11px', color: '#2563EB', fontWeight: 'bold', textTransform: 'uppercase' }}>QR ORDERING AT TABLE</span>
+          <span style={{ fontSize: '11px', color: '#2563EB', fontWeight: 'bold', textTransform: 'uppercase' }}>GỌI MÓN MÃ QR TẠI BÀN</span>
           <h2 style={{ margin: '2px 0 0 0', fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>Phiên Phục Vụ: {tableSession}</h2>
         </div>
         <div style={{ background: '#DCFCE7', color: '#166534', padding: '6px 12px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', border: '1px solid #A7F3D0' }}>
-          Đã xác thực WiFi BSSID Nội Bộ
+          Đã xác thực WiFi nội bộ
         </div>
       </div>
 
@@ -143,7 +171,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
               onClick={handleSendOrderToKitchen}
               style={{ padding: '12px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '15px' }}
             >
-              GỬI ĐƠN XUỐNG BẾP / BARISTA
+              GỬI ĐƠN XUỐNG BẾP VÀ BARISTA
             </button>
           </div>
         </div>
@@ -152,7 +180,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       {/* 2. VIEW 2: GROUP CART */}
       {activeTab === 'customer-group' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng Nhóm Realtime Tại {tableSession}</h2>
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng Nhóm Thời Gian Thực Tại {tableSession}</h2>
           <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Tất cả mọi người tại bàn đều có thể thêm món vào giỏ hàng chung theo thời gian thực.</p>
 
           <div style={{ width: '100%', overflowX: 'auto', marginBottom: '20px' }}>
@@ -193,7 +221,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       {/* 3. VIEW 3: SPLIT BILL CALCULATOR */}
       {activeTab === 'customer-split' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Công Cụ Tính Tách Tiền Hóa Đơn (Equal Split Bill)</h2>
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Công Cụ Tính Tách Tiền Hóa Đơn Chia Đều</h2>
           <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Chia đều tổng tiền hóa đơn cho số lượng người tại bàn một cách công bằng.</p>
 
           <div style={{ background: '#F8FAFC', padding: '20px', borderRadius: '8px', border: '1px solid #E2E8F0', maxWidth: '500px' }}>
@@ -225,7 +253,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       {activeTab === 'customer-loyalty' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Ví Điểm Thưởng & Hạng Thẻ Hội Viên</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Mọi giao dịch thanh toán đều tích điểm 5% giá trị hóa đơn vào ví hội viên.</p>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Mọi giao dịch thanh toán hoặc gửi đơn đều tích điểm 5% giá trị hóa đơn vào ví hội viên.</p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '24px' }}>
             <div style={{ background: '#FEF3C7', border: '1px solid #F59E0B', padding: '20px', borderRadius: '8px' }}>
@@ -237,11 +265,11 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
             <div style={{ background: '#ECFDF5', border: '1px solid #10B981', padding: '20px', borderRadius: '8px' }}>
               <span style={{ fontSize: '12px', color: '#065F46', fontWeight: 'bold' }}>TỔNG ĐIỂM TÍCH LŨY</span>
               <h3 style={{ margin: '8px 0 4px 0', fontSize: '28px', color: '#047857', fontWeight: 'bold' }}>{loyaltyPoints} Điểm</h3>
-              <p style={{ margin: 0, fontSize: '12px', color: '#065F46' }}>Tương đương 125.000đ khi đổi quà/thanh toán</p>
+              <p style={{ margin: 0, fontSize: '12px', color: '#065F46' }}>Tương đương {loyaltyPoints * 100}đ khi đổi quà/thanh toán</p>
             </div>
           </div>
 
-          <h3 style={{ fontSize: '16px', color: '#0F172A', fontWeight: 'bold', marginBottom: '12px' }}>Lịch Sử Bút Toán Điểm Thưởng (Loyalty Ledger):</h3>
+          <h3 style={{ fontSize: '16px', color: '#0F172A', fontWeight: 'bold', marginBottom: '12px' }}>Lịch Sử Bút Toán Điểm Thưởng Tự Động (Loyalty Ledger):</h3>
           <div style={{ width: '100%', overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
@@ -259,7 +287,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
                     <td style={{ padding: '14px 12px', color: '#475569' }}>{h.orderNo}</td>
                     <td style={{ padding: '14px 12px' }}>
                       <span style={{ background: h.type === 'Earned' ? '#DCFCE7' : '#FEE2E2', color: h.type === 'Earned' ? '#166534' : '#991B1B', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>
-                        {h.type === 'Earned' ? 'Tích Điểm' : 'Tiêu Điểm'}
+                        {h.type === 'Earned' ? 'Tích Điểm Tự Động' : 'Tiêu Điểm'}
                       </span>
                     </td>
                     <td style={{ padding: '14px 12px', fontWeight: 'bold', color: h.points > 0 ? '#059669' : '#DC2626', fontSize: '15px' }}>
