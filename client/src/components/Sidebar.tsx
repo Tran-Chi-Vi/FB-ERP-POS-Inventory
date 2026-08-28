@@ -33,6 +33,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           { id: 'kds-tickets', label: 'Màn Hình Chế Biến KDS' },
           { id: 'kds-batch', label: 'Gom Món Batch Cooking' },
           { id: 'kds-86', label: 'Khóa Món 86-List Matrix' },
+          { id: 'kds-recipe', label: 'Quy Trình & Định Lượng BOM' },
+          { id: 'kds-history', label: 'Lịch Sử Vé & SLA Chế Biến' },
         ];
       case 'Cashier':
         return [
@@ -78,10 +80,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const tabs = getTabsForRole(currentUser.role);
 
   return (
-    <aside style={{ width: '280px', background: '#111827', color: '#F3F4F6', height: '100vh', display: 'flex', flexDirection: 'column', borderRight: '1px solid #1F2937', position: 'fixed', left: 0, top: 0, overflowY: 'auto' }}>
+    <aside style={{ width: '280px', background: '#111827', color: '#F3F4F6', height: '100vh', display: 'flex', flexDirection: 'column', borderRight: '1px solid #1F2937', position: 'fixed', left: 0, top: 0, overflowY: 'auto', zIndex: 100 }}>
       {/* App Branding */}
       <div style={{ padding: '20px', borderBottom: '1px solid #1F2937' }}>
-        <div style={{ fontSize: '11px', background: '#374151', color: '#9CA3AF', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase', tracking: '1px', width: 'fit-content', marginBottom: '6px' }}>
+        <div style={{ fontSize: '11px', background: '#374151', color: '#9CA3AF', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase', width: 'fit-content', marginBottom: '6px' }}>
           ENTERPRISE ERP POS
         </div>
         <h2 style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', color: '#FFFFFF' }}>F&B SUPER-APP</h2>
@@ -110,7 +112,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 style={{
                   width: '100%',
                   textAlign: 'left',
-                  padding: '10px 14px',
+                  padding: '12px 14px',
                   background: isActive ? '#2563EB' : 'transparent',
                   color: isActive ? '#FFFFFF' : '#9CA3AF',
                   border: 'none',
