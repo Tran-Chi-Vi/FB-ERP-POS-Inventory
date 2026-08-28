@@ -52,19 +52,19 @@ export const App: React.FC = () => {
         setActiveTab('pos');
         break;
       case 'Warehouse':
-        setActiveTab('wh-receipt');
+        setActiveTab('wh-inventory');
         break;
       case 'Manager':
         setActiveTab('manager-approvals');
         break;
       case 'Admin':
-        setActiveTab('users');
+        setActiveTab('admin-users');
         break;
       case 'SuperAdmin':
-        setActiveTab('users');
+        setActiveTab('superadmin-users');
         break;
       case 'Customer':
-        setActiveTab('customer-qr');
+        setActiveTab('customer-menu');
         break;
       default:
         setActiveTab('pos');
@@ -110,10 +110,10 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      {/* LEFT VERTICAL SIDEBAR (CLEAN, NO EMOJIS, NO TOP BANNER SUB-BUTTONS) */}
+      {/* LEFT VERTICAL SIDEBAR */}
       <Sidebar
         activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        onTabChange={setActiveTab}
         currentUser={currentUser}
         onLogout={handleLogout}
       />
@@ -133,7 +133,7 @@ export const App: React.FC = () => {
         {activeTab === 'pos' && (
           <div className="pos-layout">
             <div className="category-menu">
-              <h3 style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '0.5rem' }}>DANH MỤC MÓN</h3>
+              <h3 style={{ fontSize: '0.85rem', color: '#475569', marginBottom: '0.5rem', fontWeight: 'bold' }}>DANH MỤC MÓN</h3>
               {categories.map((cat) => (
                 <button
                   key={cat}
@@ -147,7 +147,7 @@ export const App: React.FC = () => {
 
             <div>
               <div className="card" style={{ marginBottom: '1rem' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Sơ Đồ Bàn Phục Vụ</h3>
+                <h3 style={{ marginBottom: '0.75rem', color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ</h3>
                 <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                   {tables.map((t) => (
                     <button
@@ -155,9 +155,9 @@ export const App: React.FC = () => {
                       style={{
                         padding: '0.5rem 1rem',
                         borderRadius: '0.375rem',
-                        border: '1px solid #334155',
-                        background: selectedTable === t ? '#10b981' : '#0f172a',
-                        color: selectedTable === t ? '#fff' : '#94a3b8',
+                        border: '1px solid #CBD5E1',
+                        background: selectedTable === t ? '#059669' : '#FFFFFF',
+                        color: selectedTable === t ? '#fff' : '#0F172A',
                         fontWeight: 'bold',
                         cursor: 'pointer'
                       }}
@@ -173,7 +173,7 @@ export const App: React.FC = () => {
                 {filteredProducts.map((p) => (
                   <div key={p.id} className="product-card" onClick={() => addToCart(p)}>
                     <div>
-                      <span style={{ fontSize: '0.75rem', color: '#38bdf8', background: 'rgba(56,189,248,0.1)', padding: '0.1rem 0.4rem', borderRadius: '0.2rem' }}>
+                      <span style={{ fontSize: '0.75rem', color: '#1E40AF', background: '#DBEAFE', padding: '0.1rem 0.4rem', borderRadius: '0.2rem', fontWeight: 'bold' }}>
                         {p.category}
                       </span>
                       <div className="product-title" style={{ marginTop: '0.5rem' }}>{p.name}</div>
@@ -185,20 +185,20 @@ export const App: React.FC = () => {
             </div>
 
             <div className="card">
-              <h3>Giỏ Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
+              <h3 style={{ color: '#0F172A', fontWeight: 'bold' }}>Giỏ Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
               {cart.length === 0 ? (
-                <p style={{ color: '#94a3b8', marginTop: '1rem' }}>Chưa chọn món nào</p>
+                <p style={{ color: '#64748B', marginTop: '1rem' }}>Chưa chọn món nào</p>
               ) : (
                 <div style={{ marginTop: '1rem' }}>
                   {cart.map((item) => (
-                    <div key={item.product.id} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid #334155' }}>
+                    <div key={item.product.id} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.5rem 0', borderBottom: '1px solid #E2E8F0', color: '#0F172A' }}>
                       <div>{item.product.name} x {item.quantity}</div>
-                      <div style={{ fontWeight: 'bold', color: '#10b981' }}>{(item.product.price * item.quantity).toLocaleString('vi-VN')} đ</div>
+                      <div style={{ fontWeight: 'bold', color: '#059669' }}>{(item.product.price * item.quantity).toLocaleString('vi-VN')} đ</div>
                     </div>
                   ))}
-                  <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '2px solid #10b981', display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 'bold' }}>
+                  <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '2px solid #059669', display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 'bold', color: '#0F172A' }}>
                     <span>Tổng Tiền:</span>
-                    <span>{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ</span>
+                    <span style={{ color: '#059669' }}>{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ</span>
                   </div>
                   <button
                     className="btn-primary"
@@ -215,20 +215,20 @@ export const App: React.FC = () => {
 
         {activeTab === 'cashier-shift' && (
           <div className="card">
-            <h2>Đóng / Mở Ca & Kiểm Tiền Két (Cashier Shift Reconciliation)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Đếm chi tiết số lượng từng mệnh giá tiền mặt thực tế khi bàn giao ca trực.</p>
-            <div style={{ marginTop: '1.25rem', padding: '1.25rem', background: '#0f172a', borderRadius: '0.5rem' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+            <h2 style={{ color: '#0F172A', fontWeight: 'bold' }}>Đóng / Mở Ca & Kiểm Tiền Két (Cashier Shift Reconciliation)</h2>
+            <p style={{ color: '#475569', marginTop: '0.25rem' }}>Đếm chi tiết số lượng từng mệnh giá tiền mặt thực tế khi bàn giao ca trực.</p>
+            <div style={{ marginTop: '1.25rem', padding: '1.25rem', background: '#F8FAFC', borderRadius: '0.5rem', border: '1px solid #E2E8F0' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', color: '#0F172A' }}>
                 <span>Tiền mặt kỳ vọng trong két:</span>
-                <span style={{ fontWeight: 'bold', color: '#10b981' }}>5.000.000 đ</span>
+                <span style={{ fontWeight: 'bold', color: '#059669' }}>5.000.000 đ</span>
               </div>
               <div className="form-group" style={{ marginTop: '1rem' }}>
-                <label>Tiền Mặt Thực Đếm (VNĐ)</label>
-                <input type="number" className="form-control" defaultValue={4980000} />
+                <label style={{ color: '#0F172A', fontWeight: 'bold' }}>Tiền Mặt Thực Đếm (VNĐ)</label>
+                <input type="number" className="form-control" defaultValue={4980000} style={{ border: '1px solid #CBD5E1', color: '#0F172A' }} />
               </div>
               <div className="form-group">
-                <label>Giải Trình Chênh Lệch (Bắt Buộc Khi Lệch Tiền)</label>
-                <input type="text" className="form-control" placeholder="Ví dụ: Thối nhầm tiền lẻ 20.000đ cho đơn #104" />
+                <label style={{ color: '#0F172A', fontWeight: 'bold' }}>Giải Trình Chênh Lệch (Bắt Buộc Khi Lệch Tiền)</label>
+                <input type="text" className="form-control" placeholder="Ví dụ: Thối nhầm tiền lẻ 20.000đ cho đơn #104" style={{ border: '1px solid #CBD5E1', color: '#0F172A' }} />
               </div>
               <button className="btn-primary" style={{ width: 'auto', padding: '0.75rem 1.5rem', marginTop: '0.5rem' }} onClick={() => alert('Đã chốt sổ giao ca thu ngân và chuyển báo cáo chênh lệch tới Quản Lý!')}>
                 Xác Nhận Chốt Ca Thu Ngân
@@ -244,12 +244,12 @@ export const App: React.FC = () => {
         {(activeTab.startsWith('manager-')) && <ManagerOperationsPage activeTab={activeTab} />}
 
         {/* ROLE 7: BRAND ADMIN ERP UI */}
-        {(activeTab === 'users' || activeTab.startsWith('admin-')) && currentUser.role === 'Admin' && (
+        {(activeTab.startsWith('admin-')) && currentUser.role === 'Admin' && (
           <AdminErpPage activeTab={activeTab} />
         )}
 
         {/* ROLE 8: SUPERADMIN CONSOLE UI */}
-        {(activeTab === 'users' || activeTab.startsWith('super-')) && currentUser.role === 'SuperAdmin' && (
+        {(activeTab.startsWith('superadmin-') || activeTab.startsWith('super-')) && currentUser.role === 'SuperAdmin' && (
           <SuperAdminConsolePage activeTab={activeTab} />
         )}
       </main>
