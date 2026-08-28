@@ -3,119 +3,152 @@ import React from 'react';
 interface SidebarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
-  currentUser: { fullName: string; role: string } | null;
+  currentUser: { fullName: string; role: string };
   onLogout: () => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, currentUser, onLogout }) => {
-  const role = currentUser?.role || 'Staff';
-
-  // Comprehensive, Strict Role-Isolated Left Menu Items (NO Top Banners, NO Emoji Icons)
-  const getMenuItems = () => {
+export const Sidebar: React.FC<SidebarProps> = ({
+  activeTab,
+  setActiveTab,
+  currentUser,
+  onLogout,
+}) => {
+  const getTabsForRole = (role: string) => {
     switch (role) {
       case 'Customer':
         return [
-          { id: 'customer-qr', label: 'Menu Điện Tử Gọi Món' },
-          { id: 'customer-service', label: 'Tiện Ích Yêu Cầu Tại Bàn' },
-          { id: 'customer-loyalty', label: 'Ví Tích Điểm Loyalty' },
+          { id: 'customer-menu', label: 'Menu Điện Tử & Đặt Món' },
+          { id: 'customer-group', label: 'Giỏ Hàng Nhóm Realtime' },
+          { id: 'customer-split', label: 'Chia Hóa Đơn Bàn' },
+          { id: 'customer-loyalty', label: 'Ví Điểm & Đổi Quà' },
         ];
-
       case 'Staff':
         return [
-          { id: 'staff-runner', label: 'Hàng Đợi Trả Món (Runner)' },
-          { id: 'staff-kitchen-status', label: 'Soi Trạng Thái Bếp (Read-Only)' },
-          { id: 'staff-checkin', label: 'Tự Chấm Công Selfie WiFi' },
+          { id: 'staff-tables', label: 'Sơ Đồ Bàn Ăn & mPOS' },
+          { id: 'staff-runner', label: 'Hàng Đợi Trả Món Ready' },
+          { id: 'staff-attendance', label: 'Chấm Công Selfie WiFi' },
         ];
-
       case 'Kitchen':
         return [
-          { id: 'kds-tickets', label: 'KDS Phiếu Order Bếp' },
-          { id: 'kds-batch', label: 'Chế Độ Gom Món Nhanh' },
-          { id: 'kds-86list', label: 'Khóa Món Tức Thì (86 List)' },
+          { id: 'kds-tickets', label: 'Màn Hình Chế Biến KDS' },
+          { id: 'kds-batch', label: 'Gom Món Batch Cooking' },
+          { id: 'kds-86', label: 'Khóa Món 86-List Matrix' },
         ];
-
       case 'Cashier':
         return [
-          { id: 'pos', label: 'POS Bán Hàng & Thu Tiền' },
-          { id: 'cashier-shift', label: 'Đóng / Mở Ca & Đếm Két' },
+          { id: 'pos', label: 'Thu Ngân POS & Sơ Đồ Bàn' },
+          { id: 'cashier-shift', label: 'Đóng / Mở Ca Thu Ngân' },
         ];
-
       case 'Warehouse':
         return [
-          { id: 'wh-receipt', label: 'Nhập Hàng (Goods Receipt)' },
-          { id: 'wh-fefo', label: 'Quản Lý Lô Date FEFO' },
-          { id: 'wh-production', label: 'Lệnh Chế Biến Sơ Chế' },
-          { id: 'wh-stockcount', label: 'Kiểm Kê Kho & Phiếu Xuất Hủy' },
+          { id: 'wh-inventory', label: 'Tồn Kho Thực Tế' },
+          { id: 'wh-fefo', label: 'Bảng Theo Dõi Date Lô FEFO' },
+          { id: 'wh-receipt', label: 'Nhập Kho Goods Receipt' },
+          { id: 'wh-transfer', label: 'Điều Chuyển Kho Chi Nhánh' },
+          { id: 'wh-srm', label: 'Danh Bạ Nhà Cung Cấp SRM' },
         ];
-
       case 'Manager':
         return [
-          { id: 'manager-approvals', label: 'Hộp Thư Phê Duyệt Khẩn Cấp' },
-          { id: 'manager-live-monitor', label: 'Giám Sát Vận Hành Chi Nhánh' },
-          { id: 'manager-scheduling', label: 'Xếp Lịch Ca & Duyệt Phép' },
+          { id: 'manager-approvals', label: 'Hộp Thư Phê Duyệt PIN' },
+          { id: 'manager-telemetry', label: 'Branch Live Monitor' },
+          { id: 'manager-eod', label: 'Checklist Đóng Cửa EOD' },
+          { id: 'manager-incidents', label: 'Nhật Ký Sự Cố Khiếu Nại' },
         ];
-
       case 'Admin':
         return [
-          { id: 'users', label: 'Quản Lý Tài Khoản (Tạo & Xóa User)' },
-          { id: 'admin-bom', label: 'Cấu Hình Menu & BOM Builder' },
-          { id: 'admin-promotions', label: 'Khuyến Mãi & Conflict Matrix' },
+          { id: 'users', label: 'Quản Lý Tài Khoản Nhân Sự' },
+          { id: 'admin-bom', label: 'BOM Recipe Engine & DFS' },
+          { id: 'admin-happyhour', label: 'Happy Hour Dynamic Pricing' },
           { id: 'admin-payroll', label: 'Khóa Sổ Bảng Lương' },
-          { id: 'admin-pnl', label: 'Báo Cáo Food Cost P&L' },
+          { id: 'admin-menu-eng', label: 'Food Cost & Menu Engineering' },
         ];
-
       case 'SuperAdmin':
         return [
-          { id: 'users', label: 'Quản Lý Tài Khoản Toàn Hệ Thống' },
-          { id: 'super-branch', label: 'Quản Lý Chi Nhánh Nhượng Quyền' },
-          { id: 'super-audit', label: 'Centralized Audit Log (JSON Diff)' },
-          { id: 'super-console', label: 'System Console & Backup DR' },
+          { id: 'users', label: 'Tài Khoản Toàn Chuỗi' },
+          { id: 'super-branches', label: 'Quản Lý Chi Nhánh & Phí' },
+          { id: 'super-audit', label: 'Centralized Audit Log JSON' },
+          { id: 'super-dr', label: 'Disaster Recovery Console' },
+          { id: 'super-broadcast', label: 'Phát Thông Báo Khẩn Cấp' },
         ];
-
       default:
-        return [{ id: 'pos', label: 'Giao Diện Phục Vụ' }];
+        return [];
     }
   };
 
-  const menuItems = getMenuItems();
+  const tabs = getTabsForRole(currentUser.role);
 
   return (
-    <aside className="sidebar">
-      <div>
-        <div className="sidebar-header">
-          <div>
-            <div className="sidebar-title">F&B ERP POS</div>
-            <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Enterprise RBAC Matrix</span>
-          </div>
+    <aside style={{ width: '280px', background: '#111827', color: '#F3F4F6', height: '100vh', display: 'flex', flexDirection: 'column', borderRight: '1px solid #1F2937', position: 'fixed', left: 0, top: 0, overflowY: 'auto' }}>
+      {/* App Branding */}
+      <div style={{ padding: '20px', borderBottom: '1px solid #1F2937' }}>
+        <div style={{ fontSize: '11px', background: '#374151', color: '#9CA3AF', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase', tracking: '1px', width: 'fit-content', marginBottom: '6px' }}>
+          ENTERPRISE ERP POS
         </div>
+        <h2 style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', color: '#FFFFFF' }}>F&B SUPER-APP</h2>
+        <p style={{ margin: '4px 0 0 0', fontSize: '12px', color: '#9CA3AF' }}>System Engine v2.0</p>
+      </div>
 
-        <nav className="sidebar-menu">
-          {menuItems.map((item) => (
-            <button
-              key={item.id}
-              className={`sidebar-item ${activeTab === item.id ? 'active' : ''}`}
-              onClick={() => setActiveTab(item.id)}
-            >
-              <span>{item.label}</span>
-            </button>
-          ))}
+      {/* User Info Header */}
+      <div style={{ padding: '16px', borderBottom: '1px solid #1F2937', background: '#1F2937' }}>
+        <div style={{ fontSize: '12px', color: '#9CA3AF' }}>TÀI KHOẢN ĐANG ĐĂNG NHẬP:</div>
+        <div style={{ fontSize: '15px', fontWeight: 'bold', color: '#FFFFFF', marginTop: '2px' }}>{currentUser.fullName}</div>
+        <div style={{ fontSize: '12px', color: '#10B981', marginTop: '2px' }}>Vai trò: <strong>{currentUser.role}</strong></div>
+      </div>
+
+      {/* Feature Menu List */}
+      <div style={{ padding: '16px 12px', flex: 1 }}>
+        <div style={{ fontSize: '11px', textTransform: 'uppercase', color: '#6B7280', marginBottom: '10px', paddingLeft: '8px', fontWeight: 'bold' }}>
+          DANH MỤC CHỨC NĂNG {currentUser.role.toUpperCase()}
+        </div>
+        <nav style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+          {tabs.map((tab) => {
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                style={{
+                  width: '100%',
+                  textAlign: 'left',
+                  padding: '10px 14px',
+                  background: isActive ? '#2563EB' : 'transparent',
+                  color: isActive ? '#FFFFFF' : '#9CA3AF',
+                  border: 'none',
+                  borderRadius: '6px',
+                  fontSize: '13px',
+                  fontWeight: isActive ? 'bold' : 'normal',
+                  cursor: 'pointer',
+                  transition: 'all 0.15s ease-in-out',
+                }}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
         </nav>
       </div>
 
-      {currentUser && (
-        <div className="sidebar-user">
-          <div className="user-info">
-            <div className="user-avatar">{currentUser.fullName.charAt(0)}</div>
-            <div className="user-details">
-              <h4>{currentUser.fullName}</h4>
-              <span>{currentUser.role}</span>
-            </div>
-          </div>
-          <button className="btn-logout" onClick={onLogout} title="Đăng Xuất">
-            Thoát
-          </button>
-        </div>
-      )}
+      {/* Logout Button */}
+      <div style={{ padding: '16px', borderTop: '1px solid #1F2937' }}>
+        <button
+          onClick={onLogout}
+          style={{
+            width: '100%',
+            padding: '10px',
+            background: '#DC2626',
+            color: '#FFFFFF',
+            border: 'none',
+            borderRadius: '6px',
+            fontSize: '13px',
+            fontWeight: 'bold',
+            cursor: 'pointer',
+          }}
+        >
+          Đăng Xuất Tài Khoản
+        </button>
+      </div>
     </aside>
   );
 };
+
+export default Sidebar;

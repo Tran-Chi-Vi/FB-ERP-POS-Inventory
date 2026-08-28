@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export const SuperAdminConsolePage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'users' | 'branches' | 'audit' | 'dr' | 'broadcast'>('users');
+  const [activeSubTab, setActiveSubTab] = useState<'users' | 'branches' | 'audit' | 'dr' | 'broadcast'>('users');
   
   // System-Wide Users State
   const [allUsers, setAllUsers] = useState([
@@ -43,39 +43,38 @@ export const SuperAdminConsolePage: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
-      {/* Top Header */}
-      <div style={{ background: '#111827', color: '#fff', padding: '20px', borderRadius: '12px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div style={{ padding: '24px', maxWidth: '1100px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
+      {/* Page Title Header */}
+      <div style={{ marginBottom: '20px', borderBottom: '1px solid #E5E7EB', paddingBottom: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <span style={{ background: '#DC2626', color: '#fff', fontSize: '11px', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase', tracking: '1px' }}>ROLE: SUPERADMIN (QUẢN TRỊ VIÊN HẠ TẦNG TOÀN CHUỖI)</span>
-          <h1 style={{ margin: '8px 0 4px 0', fontSize: '24px' }}>System Master Control & Disaster Recovery Console</h1>
-          <p style={{ margin: 0, fontSize: '14px', color: '#9CA3AF' }}>Tài khoản: <strong>Nguyễn Văn Quảng (SuperAdmin)</strong> | Scope: All Tenants (`IgnoreQueryFilters()` Active)</p>
+          <h1 style={{ margin: 0, fontSize: '22px', fontWeight: 'bold', color: '#111827' }}>System Master Control & Disaster Recovery Console</h1>
+          <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#6B7280' }}>Tài khoản: Nguyễn Văn Quảng (SuperAdmin) | Scope: All Tenants (IgnoreQueryFilters Active)</p>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: '13px', color: '#10B981' }}>SignalR Sockets: <strong>42 Active Connections</strong></div>
-          <div style={{ fontSize: '13px', color: '#60A5FA' }}>DB Latency: <strong>4ms (SQL Server Local)</strong></div>
+          <div style={{ fontSize: '13px', color: '#10B981', fontWeight: 'bold' }}>SignalR Sockets: 42 Active Connections</div>
+          <div style={{ fontSize: '12px', color: '#6B7280' }}>DB Latency: 4ms (SQL Server Local)</div>
         </div>
       </div>
 
       {/* Broadcast Banner */}
       {activeBroadcast && (
         <div style={{ background: '#DC2626', color: '#fff', padding: '12px 20px', borderRadius: '8px', marginBottom: '24px', fontWeight: 'bold', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span>📢 THÔNG BÁO KHẨN CẤP TOÀN HỆ THỐNG: {activeBroadcast}</span>
+          <span>THÔNG BÁO KHẨN CẤP TOÀN HỆ THỐNG: {activeBroadcast}</span>
           <button onClick={() => setActiveBroadcast(null)} style={{ background: 'transparent', border: '1px solid #fff', color: '#fff', padding: '4px 8px', borderRadius: '4px', cursor: 'pointer' }}>Tắt thông báo</button>
         </div>
       )}
 
-      {/* Tabs */}
+      {/* Dynamic Sub Tabs */}
       <div style={{ display: 'flex', gap: '8px', borderBottom: '2px solid #E5E7EB', marginBottom: '24px' }}>
-        <button onClick={() => setActiveTab('users')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'users' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'users' ? '#2563EB' : '#4B5563' }}>👑 Quản Lý Tài Khoản Toàn Chuỗi ({allUsers.length})</button>
-        <button onClick={() => setActiveTab('branches')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'branches' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'branches' ? '#2563EB' : '#4B5563' }}>🏢 Quản Lý Chi Nhánh & Phí Bản Quyền</button>
-        <button onClick={() => setActiveTab('audit')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'audit' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'audit' ? '#2563EB' : '#4B5563' }}>🔍 Centralized Audit Log & JSON Diff</button>
-        <button onClick={() => setActiveTab('dr')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'dr' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'dr' ? '#2563EB' : '#4B5563' }}>🛡️ Disaster Recovery (RTO/RPO Drill)</button>
-        <button onClick={() => setActiveTab('broadcast')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'broadcast' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'broadcast' ? '#2563EB' : '#4B5563' }}>📢 Phát Thông Báo Khẩn Cấp</button>
+        <button onClick={() => setActiveSubTab('users')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'users' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'users' ? '#2563EB' : '#4B5563' }}>Tài Khoản Toàn Chuỗi ({allUsers.length})</button>
+        <button onClick={() => setActiveSubTab('branches')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'branches' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'branches' ? '#2563EB' : '#4B5563' }}>Quản Lý Chi Nhánh & Phí</button>
+        <button onClick={() => setActiveSubTab('audit')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'audit' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'audit' ? '#2563EB' : '#4B5563' }}>Centralized Audit Log JSON</button>
+        <button onClick={() => setActiveSubTab('dr')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'dr' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'dr' ? '#2563EB' : '#4B5563' }}>Disaster Recovery Console</button>
+        <button onClick={() => setActiveSubTab('broadcast')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'broadcast' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'broadcast' ? '#2563EB' : '#4B5563' }}>Phát Thông Báo Khẩn Cấp</button>
       </div>
 
-      {/* Tab 1: System-Wide Users Management */}
-      {activeTab === 'users' && (
+      {/* Sub Tab 1: System-Wide Users Management */}
+      {activeSubTab === 'users' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
             <h2 style={{ fontSize: '18px', margin: 0 }}>Danh Sách Tất Cả Tài Khoản Hệ Thống (SuperAdmin Scope)</h2>
@@ -103,7 +102,7 @@ export const SuperAdminConsolePage: React.FC = () => {
                   <td style={{ padding: '12px 10px' }}>{u.email}</td>
                   <td style={{ padding: '12px 10px' }}>
                     {u.role !== 'SuperAdmin' && (
-                      <button onClick={() => handleDeleteUser(u.id, u.username)} style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>❌ Xóa Vĩnh Viễn</button>
+                      <button onClick={() => handleDeleteUser(u.id, u.username)} style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>Xóa Vĩnh Viễn</button>
                     )}
                   </td>
                 </tr>
@@ -116,7 +115,7 @@ export const SuperAdminConsolePage: React.FC = () => {
       {/* Add User Modal */}
       {showAddUserModal && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '450px', width: '100%' }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '450px', width: '100%' }}>
             <h3 style={{ marginTop: 0 }}>SuperAdmin Tạo Tài Khoản Mới</h3>
             <form onSubmit={handleAddUser}>
               <div style={{ marginBottom: '12px' }}>
@@ -149,8 +148,8 @@ export const SuperAdminConsolePage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 2: Branches Management */}
-      {activeTab === 'branches' && (
+      {/* Sub Tab 2: Branches Management */}
+      {activeSubTab === 'branches' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Danh Sách Chi Nhánh & Phí Bản Quyền Royalty Fee (%)</h2>
           <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '16px' }}>
@@ -183,8 +182,8 @@ export const SuperAdminConsolePage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 3: Audit Log & JSON Diff */}
-      {activeTab === 'audit' && (
+      {/* Sub Tab 3: Audit Log & JSON Diff */}
+      {activeSubTab === 'audit' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Centralized Audit Log & Trình So Sánh JSON Diff Viewer</h2>
           <div style={{ background: '#1F2937', color: '#10B981', padding: '16px', borderRadius: '8px', fontFamily: 'monospace', fontSize: '13px', lineHeight: '1.6' }}>
@@ -195,30 +194,30 @@ export const SuperAdminConsolePage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 4: Disaster Recovery */}
-      {activeTab === 'dr' && (
+      {/* Sub Tab 4: Disaster Recovery */}
+      {activeSubTab === 'dr' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Disaster Recovery Console (RTO/RPO Metrics & 1-Click Restore Drill)</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', margin: '16px 0' }}>
             <div style={{ background: '#F3F4F6', padding: '16px', borderRadius: '8px' }}>
               <div style={{ fontSize: '13px', color: '#4B5563' }}>Cam kết RTO (Recovery Time Objective):</div>
-              <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#059669' }}>&lt; 30 Phút</div>
+              <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#059669' }}>Dưới 30 Phút</div>
             </div>
             <div style={{ background: '#F3F4F6', padding: '16px', borderRadius: '8px' }}>
               <div style={{ fontSize: '13px', color: '#4B5563' }}>Cam kết RPO (Recovery Point Objective):</div>
-              <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#059669' }}>&lt; 5 Phút</div>
+              <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#059669' }}>Dưới 5 Phút</div>
             </div>
           </div>
-          <button onClick={() => alert('Đã khởi chạy diễn tập Restore Drill dữ liệu SQL Server sang Database thử nghiệm thành công!')} style={{ padding: '12px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>🚀 1-CLICK CHẠY DIỄN TẬP KHÔI PHỤC DỮ LIỆU (RESTORE DRILL)</button>
+          <button onClick={() => alert('Đã khởi chạy diễn tập Restore Drill dữ liệu SQL Server sang Database thử nghiệm thành công!')} style={{ padding: '12px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>1-CLICK CHẠY DIỄN TẬP KHÔI PHỤC DỮ LIỆU (RESTORE DRILL)</button>
         </div>
       )}
 
-      {/* Tab 5: Broadcast Message */}
-      {activeTab === 'broadcast' && (
+      {/* Sub Tab 5: Broadcast Message */}
+      {activeSubTab === 'broadcast' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Phát Thông Báo Khẩn Cấp Toàn Chuỗi qua WebSocket</h2>
           <textarea value={broadcastMsg} onChange={(e) => setBroadcastMsg(e.target.value)} placeholder="Nhập nội dung thông báo khẩn cấp (ví dụ: Hệ thống bảo trì trong 15 phút)..." style={{ width: '100%', height: '100px', padding: '12px', border: '1px solid #D1D5DB', borderRadius: '6px', marginBottom: '16px' }} />
-          <button onClick={handleSendBroadcast} style={{ padding: '12px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>📢 PHÁT THÔNG BÁO TOÀN HỆ THỐNG</button>
+          <button onClick={handleSendBroadcast} style={{ padding: '12px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>PHÁT THÔNG BÁO TOÀN HỆ THỐNG</button>
         </div>
       )}
     </div>

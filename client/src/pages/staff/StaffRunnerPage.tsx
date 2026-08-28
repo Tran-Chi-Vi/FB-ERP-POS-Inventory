@@ -10,10 +10,10 @@ interface TableStatus {
 }
 
 export const StaffRunnerPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'tables' | 'runner' | 'attendance'>('tables');
+  const [activeSubTab, setActiveSubTab] = useState<'tables' | 'runner' | 'attendance'>('tables');
   const [selectedTable, setSelectedTable] = useState<TableStatus | null>(null);
   const [tipAmount, setTipAmount] = useState<number>(0);
-  const [transferTarget, setTransferTarget] = useState<string>('');
+  const [transferTarget] = useState<string>('');
 
   const [tables] = useState<TableStatus[]>([
     { id: 'T01', name: 'Bàn 01', area: 'Tầng 1', status: 'occupied', seatedMinutes: 12, currentOrderTotal: 145000 },
@@ -28,8 +28,6 @@ export const StaffRunnerPage: React.FC = () => {
     { id: 'R-102', table: 'Bàn 01', item: 'Bánh Tiramisu Ý (x1)', readyTime: 'Vừa xong', note: 'Kèm dĩa nhỏ' },
   ]);
 
-  const [attendanceVerified, setAttendanceVerified] = useState<boolean>(true);
-
   const getStatusColor = (status: TableStatus['status']) => {
     switch (status) {
       case 'empty': return '#9CA3AF';
@@ -40,29 +38,28 @@ export const StaffRunnerPage: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
-      {/* Top Header */}
-      <div style={{ background: '#1F2937', color: '#fff', padding: '20px', borderRadius: '12px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div style={{ padding: '24px', maxWidth: '1100px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
+      {/* Page Title Header */}
+      <div style={{ marginBottom: '20px', borderBottom: '1px solid #E5E7EB', paddingBottom: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <span style={{ background: '#059669', color: '#fff', fontSize: '11px', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase' }}>ROLE: PHỤC VỤ (STAFF RUNNER)</span>
-          <h1 style={{ margin: '8px 0 4px 0', fontSize: '24px' }}>Màn Hình Phục Vụ mPOS & Bàn Ăn Realtime</h1>
-          <p style={{ margin: 0, fontSize: '14px', color: '#9CA3AF' }}>Nhân viên: <strong>Trần Thanh Tâm (EMP001)</strong> | Ca làm: Ca Sáng (07:00 - 15:00)</p>
+          <h1 style={{ margin: 0, fontSize: '22px', fontWeight: 'bold', color: '#111827' }}>Màn Hình Phục Vụ mPOS & Bàn Ăn Realtime</h1>
+          <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#6B7280' }}>Nhân viên: Trần Thanh Tâm (EMP001) | Ca Sáng (07:00 - 15:00)</p>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: '13px', color: '#10B981' }}>WiFi Check-in: <strong>a4:b2:c8:99:11:00 (Hợp lệ)</strong></div>
-          <div style={{ fontSize: '13px', color: '#9CA3AF' }}>Thiết bị: Handheld Tablet #DEV-TAB-01</div>
+          <div style={{ fontSize: '13px', color: '#10B981', fontWeight: 'bold' }}>WiFi Check-in: a4:b2:c8:99:11:00 (Hợp lệ)</div>
+          <div style={{ fontSize: '12px', color: '#6B7280' }}>Thiết bị: Handheld Tablet #DEV-TAB-01</div>
         </div>
       </div>
 
-      {/* Tabs */}
+      {/* Dynamic Sub Tabs */}
       <div style={{ display: 'flex', gap: '8px', borderBottom: '2px solid #E5E7EB', marginBottom: '24px' }}>
-        <button onClick={() => setActiveTab('tables')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'tables' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'tables' ? '#2563EB' : '#4B5563' }}>🪑 Sơ Đồ Bàn Ăn & mPOS</button>
-        <button onClick={() => setActiveTab('runner')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'runner' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'runner' ? '#2563EB' : '#4B5563' }}>🏃 Hàng Đợi Trả Món Ready ({runnerQueue.length})</button>
-        <button onClick={() => setActiveTab('attendance')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'attendance' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'attendance' ? '#2563EB' : '#4B5563' }}>📸 Selfie WiFi Chấm Công</button>
+        <button onClick={() => setActiveSubTab('tables')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'tables' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'tables' ? '#2563EB' : '#4B5563' }}>Sơ Đồ Bàn Ăn & mPOS</button>
+        <button onClick={() => setActiveSubTab('runner')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'runner' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'runner' ? '#2563EB' : '#4B5563' }}>Hàng Đợi Trả Món Ready ({runnerQueue.length})</button>
+        <button onClick={() => setActiveSubTab('attendance')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'attendance' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'attendance' ? '#2563EB' : '#4B5563' }}>Selfie WiFi Chấm Công</button>
       </div>
 
-      {/* Tab 1: Interactive Table Map */}
-      {activeTab === 'tables' && (
+      {/* Sub Tab 1: Interactive Table Map */}
+      {activeSubTab === 'tables' && (
         <div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '16px', marginBottom: '24px' }}>
             {tables.map((tbl) => (
@@ -71,7 +68,7 @@ export const StaffRunnerPage: React.FC = () => {
                 onClick={() => setSelectedTable(tbl)}
                 style={{ 
                   border: `2px solid ${getStatusColor(tbl.status)}`, 
-                  borderRadius: '10px', 
+                  borderRadius: '8px', 
                   padding: '16px', 
                   background: '#fff', 
                   cursor: 'pointer',
@@ -80,9 +77,9 @@ export const StaffRunnerPage: React.FC = () => {
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <span style={{ fontSize: '12px', color: '#6B7280' }}>{tbl.area}</span>
-                  {tbl.seatedMinutes > 20 && <span style={{ background: '#FEE2E2', color: '#DC2626', fontSize: '11px', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }}>⚠️ Chờ lâu ({tbl.seatedMinutes}m)</span>}
+                  {tbl.seatedMinutes > 20 && <span style={{ background: '#FEE2E2', color: '#DC2626', fontSize: '11px', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }}>Chờ lâu ({tbl.seatedMinutes}m)</span>}
                 </div>
-                <h3 style={{ margin: '8px 0 4px 0', fontSize: '20px' }}>{tbl.name}</h3>
+                <h3 style={{ margin: '8px 0 4px 0', fontSize: '18px' }}>{tbl.name}</h3>
                 <div style={{ fontSize: '13px', color: getStatusColor(tbl.status), fontWeight: 'bold' }}>
                   {tbl.status === 'empty' && 'Trống'}
                   {tbl.status === 'occupied' && 'Đang có khách'}
@@ -105,10 +102,10 @@ export const StaffRunnerPage: React.FC = () => {
               <p style={{ fontSize: '14px', color: '#4B5563' }}>Thời gian ngồi: <strong>{selectedTable.seatedMinutes} phút</strong> | Giá trị đơn hiện tại: <strong>{selectedTable.currentOrderTotal.toLocaleString('vi-VN')}đ</strong></p>
               
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '16px 0' }}>
-                <button onClick={() => alert(`Đã mở giao diện gọi món mPOS cho ${selectedTable.name}`)} style={{ padding: '10px 18px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>➕ Thêm Món Vào Bàn</button>
-                <button onClick={() => alert(`Đã chuyển ${selectedTable.name} sang ${transferTarget || 'Bàn 02'}`)} style={{ padding: '10px 18px', background: '#4F46E5', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>🔀 Chuyển Bàn Sang Bàn 02</button>
-                <button onClick={() => alert(`Đã gộp đơn ${selectedTable.name} vào Bàn 04`)} style={{ padding: '10px 18px', background: '#D97706', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>🔗 Gộp Vào Bàn 04</button>
-                <button onClick={() => alert('Đã gửi yêu cầu in tạm tính xuống máy in thu ngân!')} style={{ padding: '10px 18px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>🖨️ In Phiếu Tạm Tính</button>
+                <button onClick={() => alert(`Đã mở giao diện gọi món mPOS cho ${selectedTable.name}`)} style={{ padding: '10px 18px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>+ Thêm Món Vào Bàn</button>
+                <button onClick={() => alert(`Đã chuyển ${selectedTable.name} sang ${transferTarget || 'Bàn 02'}`)} style={{ padding: '10px 18px', background: '#4F46E5', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Chuyển Bàn Sang Bàn 02</button>
+                <button onClick={() => alert(`Đã gộp đơn ${selectedTable.name} vào Bàn 04`)} style={{ padding: '10px 18px', background: '#D97706', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Gộp Vào Bàn 04</button>
+                <button onClick={() => alert('Đã gửi yêu cầu in tạm tính xuống máy in thu ngân!')} style={{ padding: '10px 18px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>In Phiếu Tạm Tính</button>
               </div>
 
               {/* Staff Tip Addition */}
@@ -122,8 +119,8 @@ export const StaffRunnerPage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 2: Runner Queue */}
-      {activeTab === 'runner' && (
+      {/* Sub Tab 2: Runner Queue */}
+      {activeSubTab === 'runner' && (
         <div>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Hàng Đợi Trả Món Ready Bếp (SignalR Realtime)</h2>
           <p style={{ color: '#6B7280', fontSize: '14px' }}>Các món bếp đã chế biến xong cần được nhân viên mang ra bàn cho khách ngay lập tức.</p>
@@ -136,7 +133,7 @@ export const StaffRunnerPage: React.FC = () => {
                   <h3 style={{ margin: '4px 0', fontSize: '18px', color: '#065F46' }}>{item.item}</h3>
                   <div style={{ fontSize: '13px', color: '#047857' }}>Ghi chú: {item.note} | Xong lúc: {item.readyTime}</div>
                 </div>
-                <button onClick={() => setRunnerQueue(runnerQueue.filter(r => r.id !== item.id))} style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>✔ ĐÃ MANG RA BÀN</button>
+                <button onClick={() => setRunnerQueue(runnerQueue.filter(r => r.id !== item.id))} style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>ĐÃ MANG RA BÀN</button>
               </div>
             ))}
 
@@ -147,20 +144,20 @@ export const StaffRunnerPage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 3: Attendance */}
-      {activeTab === 'attendance' && (
+      {/* Sub Tab 3: Attendance */}
+      {activeSubTab === 'attendance' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Selfie WiFi BSSID Check-in Chống Gian Lận</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '16px' }}>
             <div style={{ border: '1px solid #E5E7EB', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
               <div style={{ width: '100%', height: '200px', background: '#374151', color: '#9CA3AF', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '6px', marginBottom: '16px' }}>
-                [ MÀN HÌNH CAMERA SELFIE CAMERA VIEW ]
+                [ MÀN HÌNH CAMERA SELFIE VIEW ]
               </div>
-              <button onClick={() => alert('Đã chụp ảnh selfie và đối soát thành công!')} style={{ padding: '10px 20px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>📸 Chụp Ảnh Selfie Xóa Vết</button>
+              <button onClick={() => alert('Đã chụp ảnh selfie và đối soát thành công!')} style={{ padding: '10px 20px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Chụp Ảnh Selfie Xóa Vết</button>
             </div>
 
             <div style={{ border: '1px solid #E5E7EB', borderRadius: '8px', padding: '16px' }}>
-              <h3>Thông Tin Xác Thực Mạng:</h3>
+              <h3 style={{ marginTop: 0 }}>Thông Tin Xác Thực Mạng:</h3>
               <ul style={{ paddingLeft: '20px', fontSize: '14px', lineHeight: '1.8' }}>
                 <li>Mạng WiFi Kết Nối: <strong>FnB_Store_Quoc_1</strong></li>
                 <li>Địa Chỉ BSSID: <strong style={{ color: '#059669' }}>a4:b2:c8:99:11:00 (KÍCH HOẠT HỢP LỆ)</strong></li>

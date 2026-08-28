@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 export const AdminErpPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'users' | 'bom' | 'happyhour' | 'payroll' | 'menu_eng'>('users');
+  const [activeSubTab, setActiveSubTab] = useState<'users' | 'bom' | 'happyhour' | 'payroll' | 'menu_eng'>('users');
   
-  // User Management State (Admin creates & deletes store users)
+  // User Management State
   const [users, setUsers] = useState([
     { id: '1', username: 'manager1', fullName: 'Lê Hoàng Phúc', role: 'Manager', email: 'manager1@fnb.com', status: 'Active' },
     { id: '2', username: 'warehouse1', fullName: 'Phạm Quốc Bảo', role: 'Warehouse', email: 'warehouse1@fnb.com', status: 'Active' },
@@ -13,9 +13,6 @@ export const AdminErpPage: React.FC = () => {
 
   const [newUser, setNewUser] = useState({ username: '', fullName: '', role: 'Cashier', email: '' });
   const [showAddUserModal, setShowAddUserModal] = useState(false);
-
-  // DFS Cycle Check State
-  const [dfsCheckPassed, setDfsCheckPassed] = useState<boolean>(true);
 
   // Happy Hour Dynamic Pricing Rules
   const [happyHourRules] = useState([
@@ -50,27 +47,26 @@ export const AdminErpPage: React.FC = () => {
   };
 
   return (
-    <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
-      {/* Top Header */}
-      <div style={{ background: '#1F2937', color: '#fff', padding: '20px', borderRadius: '12px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div style={{ padding: '24px', maxWidth: '1100px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
+      {/* Page Title Header */}
+      <div style={{ marginBottom: '20px', borderBottom: '1px solid #E5E7EB', paddingBottom: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <span style={{ background: '#7C3AED', color: '#fff', fontSize: '11px', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase' }}>ROLE: BRAND ADMIN (CHỦ THƯƠNG HIỆU / ERP ADMIN)</span>
-          <h1 style={{ margin: '8px 0 4px 0', fontSize: '24px' }}>Back-Office Master Control Panel & P&L Analytics</h1>
-          <p style={{ margin: 0, fontSize: '14px', color: '#9CA3AF' }}>Quản trị viên: <strong>Trần Chí Vĩ (Admin)</strong> | Quyền Hạn: CRUD Master Data & User Account Management</p>
+          <h1 style={{ margin: 0, fontSize: '22px', fontWeight: 'bold', color: '#111827' }}>Back-Office Master Control Panel & P&L Analytics</h1>
+          <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#6B7280' }}>Quản trị viên: Trần Chí Vĩ (Admin) | Quyền Hạn: CRUD Master Data & User Account Management</p>
         </div>
       </div>
 
-      {/* Tabs */}
+      {/* Dynamic Sub Tabs */}
       <div style={{ display: 'flex', gap: '8px', borderBottom: '2px solid #E5E7EB', marginBottom: '24px' }}>
-        <button onClick={() => setActiveTab('users')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'users' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'users' ? '#2563EB' : '#4B5563' }}>👥 Quản Lý Tài Khoản Nhân Sự ({users.length})</button>
-        <button onClick={() => setActiveTab('bom')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'bom' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'bom' ? '#2563EB' : '#4B5563' }}>🌿 BOM Recipe Engine & DFS Cycle Check</button>
-        <button onClick={() => setActiveTab('happyhour')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'happyhour' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'happyhour' ? '#2563EB' : '#4B5563' }}>⚡ Happy Hour Dynamic Pricing</button>
-        <button onClick={() => setActiveTab('payroll')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'payroll' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'payroll' ? '#2563EB' : '#4B5563' }}>🔒 Khóa Sổ Bảng Lương (Payroll Lock)</button>
-        <button onClick={() => setActiveTab('menu_eng')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'menu_eng' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'menu_eng' ? '#2563EB' : '#4B5563' }}>📊 Food Cost & Menu Engineering Matrix</button>
+        <button onClick={() => setActiveSubTab('users')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'users' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'users' ? '#2563EB' : '#4B5563' }}>Quản Lý Tài Khoản Nhân Sự ({users.length})</button>
+        <button onClick={() => setActiveSubTab('bom')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'bom' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'bom' ? '#2563EB' : '#4B5563' }}>BOM Recipe Engine & DFS</button>
+        <button onClick={() => setActiveSubTab('happyhour')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'happyhour' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'happyhour' ? '#2563EB' : '#4B5563' }}>Happy Hour Dynamic Pricing</button>
+        <button onClick={() => setActiveSubTab('payroll')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'payroll' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'payroll' ? '#2563EB' : '#4B5563' }}>Khóa Sổ Bảng Lương</button>
+        <button onClick={() => setActiveSubTab('menu_eng')} style={{ padding: '10px 18px', fontWeight: 'bold', border: 'none', borderBottom: activeSubTab === 'menu_eng' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeSubTab === 'menu_eng' ? '#2563EB' : '#4B5563' }}>Food Cost & Menu Engineering</button>
       </div>
 
-      {/* Tab 1: User Account Management (Admin Creates & Deletes Users) */}
-      {activeTab === 'users' && (
+      {/* Sub Tab 1: User Account Management */}
+      {activeSubTab === 'users' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
             <h2 style={{ fontSize: '18px', margin: 0 }}>Quản Lý & Phân Quyền Tài Khoản Nhân Sự Chi Nhánh</h2>
@@ -97,7 +93,7 @@ export const AdminErpPage: React.FC = () => {
                   <td style={{ padding: '12px 10px' }}>{u.email}</td>
                   <td style={{ padding: '12px 10px' }}><span style={{ background: '#D1FAE5', color: '#065F46', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{u.status}</span></td>
                   <td style={{ padding: '12px 10px' }}>
-                    <button onClick={() => handleDeleteUser(u.id, u.fullName)} style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>❌ Xóa Tài Khoản</button>
+                    <button onClick={() => handleDeleteUser(u.id, u.fullName)} style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>Xóa Tài Khoản</button>
                   </td>
                 </tr>
               ))}
@@ -109,7 +105,7 @@ export const AdminErpPage: React.FC = () => {
       {/* Add User Modal */}
       {showAddUserModal && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '450px', width: '100%' }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '450px', width: '100%' }}>
             <h3 style={{ marginTop: 0 }}>Tạo Tài Khoản Nhân Sự Mới</h3>
             <form onSubmit={handleAddUser}>
               <div style={{ marginBottom: '12px' }}>
@@ -143,12 +139,12 @@ export const AdminErpPage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 2: BOM Recipe & DFS Check */}
-      {activeTab === 'bom' && (
+      {/* Sub Tab 2: BOM Recipe & DFS Check */}
+      {activeSubTab === 'bom' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>BOM Recipe Builder & Kiểm Tra Đồ Thị Đệ Quy DFS Cycle Check</h2>
           <div style={{ background: '#D1FAE5', padding: '12px', borderRadius: '6px', color: '#065F46', marginBottom: '16px' }}>
-            ✓ Thuật toán DFS (Depth-First Search) đã xác thực: <strong>Không phát hiện lặp đệ quy công thức (Graph A ➔ B ➔ A Cycle Free).</strong>
+            Thuật toán DFS (Depth-First Search) đã xác thực: <strong>Không phát hiện lặp đệ quy công thức (Graph Cycle Free).</strong>
           </div>
           <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
             <li>Cà Phê Sữa Đá ➔ 18g Hạt Cà Phê Robusta + 30ml Sữa Đặc Ngôi Sao (Cost: 12.000đ | Margin: 65.7%)</li>
@@ -157,8 +153,8 @@ export const AdminErpPage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 3: Happy Hour */}
-      {activeTab === 'happyhour' && (
+      {/* Sub Tab 3: Happy Hour */}
+      {activeSubTab === 'happyhour' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Cấu Hình Tự Động Đổi Giá Giờ Vàng (Happy Hour Dynamic Pricing)</h2>
           <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '16px' }}>
@@ -186,13 +182,13 @@ export const AdminErpPage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 4: Payroll Lock */}
-      {activeTab === 'payroll' && (
+      {/* Sub Tab 4: Payroll Lock */}
+      {activeSubTab === 'payroll' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
           <h2 style={{ fontSize: '18px', marginTop: 0 }}>Bảng Lương Nhân Sự & Khóa Sổ Immutable Payroll Lock</h2>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-            <span style={{ fontSize: '15px' }}>Trạng thái bảng lương tháng 8/2026: <strong style={{ color: payrollLocked ? '#DC2626' : '#059669' }}>{payrollLocked ? '🔒 ĐÃ KHÓA SỔ (IMMUTABLE)' : '🔓 Đang mở chỉnh sửa'}</strong></span>
-            {!payrollLocked && <button onClick={handleLockPayroll} style={{ padding: '10px 18px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>🔒 KHÓA SỔ BẢNG LƯƠNG THÁNG 8</button>}
+            <span style={{ fontSize: '15px' }}>Trạng thái bảng lương tháng 8/2026: <strong style={{ color: payrollLocked ? '#DC2626' : '#059669' }}>{payrollLocked ? 'ĐÃ KHÓA SỔ (IMMUTABLE)' : 'Đang mở chỉnh sửa'}</strong></span>
+            {!payrollLocked && <button onClick={handleLockPayroll} style={{ padding: '10px 18px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>KHÓA SỔ BẢNG LƯƠNG THÁNG 8</button>}
           </div>
 
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
@@ -220,17 +216,17 @@ export const AdminErpPage: React.FC = () => {
         </div>
       )}
 
-      {/* Tab 5: Menu Engineering Matrix */}
-      {activeTab === 'menu_eng' && (
+      {/* Sub Tab 5: Menu Engineering Matrix */}
+      {activeSubTab === 'menu_eng' && (
         <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
-          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Ma Trận Phân Tích Menu Engineering (Stars ⭐, Plowhorses 🐴, Puzzles 🧩, Dogs 🐕)</h2>
+          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Ma Trận Phân Tích Menu Engineering (Stars, Plowhorses, Puzzles, Dogs)</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '16px' }}>
             <div style={{ background: '#ECFDF5', border: '1px solid #A7F3D0', padding: '16px', borderRadius: '8px' }}>
-              <h3 style={{ margin: 0, color: '#065F46' }}>⭐ STARS (Lãi Cao, Bán Chạy)</h3>
+              <h3 style={{ margin: 0, color: '#065F46' }}>STARS (Lãi Cao, Bán Chạy)</h3>
               <p style={{ fontSize: '13px', color: '#047857' }}>Cà Phê Sữa Đá Sài Gòn (35.000đ, Lãi 65.7%)</p>
             </div>
             <div style={{ background: '#EFF6FF', border: '1px solid #BFDBFE', padding: '16px', borderRadius: '8px' }}>
-              <h3 style={{ margin: 0, color: '#1E40AF' }}>🐴 PLOWHORSES (Lãi Thấp, Bán Chạy)</h3>
+              <h3 style={{ margin: 0, color: '#1E40AF' }}>PLOWHORSES (Lãi Thấp, Bán Chạy)</h3>
               <p style={{ fontSize: '13px', color: '#1E3A8A' }}>Trà Đào Cam Sả (45.000đ, Lãi 66.6%)</p>
             </div>
           </div>

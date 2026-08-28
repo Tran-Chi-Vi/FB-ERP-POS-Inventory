@@ -55,17 +55,17 @@ export const KdsKitchenPage: React.FC = () => {
   const [outOfStockItems, setOutOfStockItems] = useState<{ [key: string]: boolean }>({
     'Cà Phê Sữa Đá Sài Gòn': false,
     'Trà Đào Cam Sả Tươi': false,
-    'Bánh Tiramisu Ý': true, // Currently 86'd
+    'Bánh Tiramisu Ý': true,
   });
 
   const getSlaBadge = (minutes: number) => {
     if (minutes > 12) {
-      return <span style={{ background: '#DC2626', color: '#fff', padding: '4px 8px', borderRadius: '4px', fontWeight: 'bold', animation: 'pulse 1s infinite' }}>🚨 TRỄ SLA BẾP ({minutes} phút)</span>;
+      return <span style={{ background: '#DC2626', color: '#fff', padding: '4px 8px', borderRadius: '4px', fontWeight: 'bold' }}>TRỄ SLA BẾP ({minutes} phút)</span>;
     }
     if (minutes >= 7) {
-      return <span style={{ background: '#D97706', color: '#fff', padding: '4px 8px', borderRadius: '4px', fontWeight: 'bold' }}>⚠️ CẢNH BÁO SLA ({minutes} phút)</span>;
+      return <span style={{ background: '#D97706', color: '#fff', padding: '4px 8px', borderRadius: '4px', fontWeight: 'bold' }}>CẢNH BÁO SLA ({minutes} phút)</span>;
     }
-    return <span style={{ background: '#059669', color: '#fff', padding: '4px 8px', borderRadius: '4px', fontWeight: 'bold' }}>✓ ĐÚNG HẠN ({minutes} phút)</span>;
+    return <span style={{ background: '#059669', color: '#fff', padding: '4px 8px', borderRadius: '4px', fontWeight: 'bold' }}>ĐÚNG HẠN ({minutes} phút)</span>;
   };
 
   const handleBumpTicket = (ticketId: string) => {
@@ -81,33 +81,33 @@ export const KdsKitchenPage: React.FC = () => {
   const filteredTickets = tickets.filter(t => t.station === currentStation);
 
   return (
-    <div style={{ padding: '24px', maxWidth: '1400px', margin: '0 auto', background: '#111827', color: '#F9FAFB', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' }}>
-      {/* KDS Station Bar */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: '#1F2937', padding: '20px', borderRadius: '12px', marginBottom: '24px' }}>
+    <div style={{ padding: '24px', maxWidth: '1300px', margin: '0 auto', background: '#111827', color: '#F9FAFB', minHeight: '100vh', fontFamily: 'system-ui, sans-serif' }}>
+      {/* Page Title Header */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', borderBottom: '1px solid #374151', paddingBottom: '16px' }}>
         <div>
-          <span style={{ background: '#374151', padding: '4px 8px', borderRadius: '4px', fontSize: '11px', textTransform: 'uppercase', tracking: '1px' }}>KITCHEN DISPLAY SYSTEM (KDS TOUCH)</span>
-          <h1 style={{ margin: '8px 0 0 0', fontSize: '26px' }}>
-            Trạm Chế Biến: <strong style={{ color: '#60A5FA' }}>{currentStation === 'bar' ? '☕ TRẠM PHA CHẾ (BARISTA)' : '🍳 TRẠM BẾP NÓNG (KITCHEN)'}</strong>
+          <h1 style={{ margin: 0, fontSize: '24px', fontWeight: 'bold' }}>
+            Trạm Chế Biến: <strong style={{ color: '#60A5FA' }}>{currentStation === 'bar' ? 'TRẠM PHA CHẾ (BARISTA)' : 'TRẠM BẾP NÓNG (KITCHEN)'}</strong>
           </h1>
+          <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#9CA3AF' }}>KDS Touch Screen Mode | Tự động làm mới theo thời gian thực (SignalR 3s)</p>
         </div>
         <div style={{ display: 'flex', gap: '12px' }}>
-          <button onClick={() => setCurrentStation('bar')} style={{ padding: '12px 24px', background: currentStation === 'bar' ? '#2563EB' : '#374151', color: '#fff', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold' }}>Trạm Pha Chế Bar</button>
-          <button onClick={() => setCurrentStation('kitchen')} style={{ padding: '12px 24px', background: currentStation === 'kitchen' ? '#2563EB' : '#374151', color: '#fff', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold' }}>Trạm Bếp Nóng</button>
+          <button onClick={() => setCurrentStation('bar')} style={{ padding: '10px 20px', background: currentStation === 'bar' ? '#2563EB' : '#374151', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Trạm Pha Chế Bar</button>
+          <button onClick={() => setCurrentStation('kitchen')} style={{ padding: '10px 20px', background: currentStation === 'kitchen' ? '#2563EB' : '#374151', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Trạm Bếp Nóng</button>
         </div>
       </div>
 
       {/* Smart Batch Cooking View Bar */}
       <div style={{ background: '#1F2937', border: '1px solid #374151', borderRadius: '8px', padding: '16px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <strong style={{ color: '#F59E0B', fontSize: '16px' }}>⚡ BẢNG GOM MÓN CHẾ BIẾN ĐỒNG THỜI (SMART BATCH VIEW):</strong>
-          <div style={{ display: 'flex', gap: '16px', marginTop: '8px', fontSize: '14px' }}>
-            <span>• Trà Đào Cam Sả Tươi: <strong style={{ color: '#10B981', fontSize: '16px' }}>4 ly</strong></span>
-            <span>• Cà Phê Sữa Đá: <strong style={{ color: '#10B981', fontSize: '16px' }}>2 ly</strong></span>
+          <strong style={{ color: '#F59E0B', fontSize: '15px' }}>BẢNG GOM MÓN CHẾ BIẾN ĐỒNG THỜI (SMART BATCH VIEW):</strong>
+          <div style={{ display: 'flex', gap: '16px', marginTop: '6px', fontSize: '14px' }}>
+            <span>Trà Đào Cam Sả Tươi: <strong style={{ color: '#10B981', fontSize: '16px' }}>4 ly</strong></span>
+            <span>Cà Phê Sữa Đá: <strong style={{ color: '#10B981', fontSize: '16px' }}>2 ly</strong></span>
           </div>
         </div>
         <div>
           {recalledTickets.length > 0 && (
-            <button onClick={() => alert(`Khôi phục vé ${recalledTickets[0]} thành công!`)} style={{ padding: '8px 16px', background: '#4F46E5', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>↺ Khôi Phục Vé Bấm Nhầm ({recalledTickets.length})</button>
+            <button onClick={() => alert(`Khôi phục vé ${recalledTickets[0]} thành công!`)} style={{ padding: '8px 16px', background: '#4F46E5', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Khôi Phục Vé Bấm Nhầm ({recalledTickets.length})</button>
           )}
         </div>
       </div>
@@ -115,7 +115,7 @@ export const KdsKitchenPage: React.FC = () => {
       {/* KDS Active Tickets Grid */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '20px', marginBottom: '32px' }}>
         {filteredTickets.map((ticket) => (
-          <div key={ticket.id} style={{ background: '#1F2937', border: ticket.elapsedMinutes > 12 ? '2px solid #EF4444' : '1px solid #374151', borderRadius: '10px', padding: '20px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.5)' }}>
+          <div key={ticket.id} style={{ background: '#1F2937', border: ticket.elapsedMinutes > 12 ? '2px solid #EF4444' : '1px solid #374151', borderRadius: '8px', padding: '20px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
               <span style={{ fontSize: '18px', fontWeight: 'bold', color: '#60A5FA' }}>{ticket.tableName}</span>
               {getSlaBadge(ticket.elapsedMinutes)}
@@ -133,23 +133,23 @@ export const KdsKitchenPage: React.FC = () => {
                   <div style={{ fontSize: '13px', color: '#FBBF24', background: '#374151', padding: '4px 8px', borderRadius: '4px', marginTop: '4px' }}>
                     {item.modifier}
                   </div>
-                  <button onClick={() => setSelectedRecipeItem(item.name)} style={{ marginTop: '4px', fontSize: '11px', background: 'transparent', color: '#9CA3AF', border: '1px underline #6B7280', cursor: 'pointer' }}>🔍 Xem quy trình định lượng BOM</button>
+                  <button onClick={() => setSelectedRecipeItem(item.name)} style={{ marginTop: '4px', fontSize: '11px', background: 'transparent', color: '#9CA3AF', border: '1px underline #6B7280', cursor: 'pointer' }}>Xem quy trình định lượng BOM</button>
                 </div>
               ))}
             </div>
 
             {/* Station Action Controls */}
             <div style={{ display: 'flex', gap: '8px', marginTop: '16px' }}>
-              <button onClick={() => alert(`Chuyển vé ${ticket.id} sang Trạm Bếp Nóng`)} style={{ flex: 1, padding: '10px', background: '#4B5563', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '12px' }}>🔀 Chuyển Trạm</button>
-              <button onClick={() => handleBumpTicket(ticket.id)} style={{ flex: 2, padding: '10px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>✔ HOÀN TẤT (BUMP TICKET)</button>
+              <button onClick={() => alert(`Chuyển vé ${ticket.id} sang Trạm Bếp Nóng`)} style={{ flex: 1, padding: '10px', background: '#4B5563', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '12px' }}>Chuyển Trạm</button>
+              <button onClick={() => handleBumpTicket(ticket.id)} style={{ flex: 2, padding: '10px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>HOÀN TẤT (BUMP TICKET)</button>
             </div>
           </div>
         ))}
       </div>
 
       {/* 86-List Quick Lock Matrix Section */}
-      <div style={{ background: '#1F2937', border: '1px solid #374151', borderRadius: '10px', padding: '20px' }}>
-        <h3 style={{ marginTop: 0, color: '#EF4444' }}>🚫 BẢNG KHÓA MÓN BÁO HẾT NGUYÊN LIỆU ĐỘT XUẤT (86-LIST TOGGLE MATRIX):</h3>
+      <div style={{ background: '#1F2937', border: '1px solid #374151', borderRadius: '8px', padding: '20px' }}>
+        <h3 style={{ marginTop: 0, color: '#EF4444' }}>BẢNG KHÓA MÓN BÁO HẾT NGUYÊN LIỆU (86-LIST TOGGLE MATRIX):</h3>
         <p style={{ fontSize: '13px', color: '#9CA3AF' }}>Khi món bị bật khóa 86-List, menu điện tử QR của khách và máy thu ngân POS sẽ tự động gán cờ Hết Hàng trong vòng 3 giây.</p>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '12px', marginTop: '16px' }}>
@@ -167,7 +167,7 @@ export const KdsKitchenPage: React.FC = () => {
       {/* BOM Recipe Modal */}
       {selectedRecipeItem && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#1F2937', border: '1px solid #4B5563', borderRadius: '12px', padding: '24px', maxWidth: '500px', width: '100%', color: '#fff' }}>
+          <div style={{ background: '#1F2937', border: '1px solid #4B5563', borderRadius: '8px', padding: '24px', maxWidth: '500px', width: '100%', color: '#fff' }}>
             <h3 style={{ marginTop: 0, color: '#60A5FA' }}>Công Thức Pha Chế Chuẩn (BOM): {selectedRecipeItem}</h3>
             <ul style={{ paddingLeft: '20px', lineHeight: '1.8', fontSize: '14px' }}>
               <li>Hạt Cà Phê Espresso: <strong>18 gram</strong> (Xay mịn Mức 2)</li>
