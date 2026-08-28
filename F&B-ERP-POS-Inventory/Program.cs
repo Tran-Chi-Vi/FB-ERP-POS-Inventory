@@ -2,6 +2,7 @@ using F_B_ERP_POS_Inventory.Application.Services;
 using F_B_ERP_POS_Inventory.BackgroundServices;
 using F_B_ERP_POS_Inventory.Hubs;
 using F_B_ERP_POS_Inventory.Infrastructure.Persistence;
+using F_B_ERP_POS_Inventory.Middleware;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -17,14 +18,14 @@ builder.Host.UseSerilog();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Swagger Documentation setup
+// Swagger Documentation setup per Caythumuc spec
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
-        Title = "F&B ERP POS Inventory Super-App Engine API",
+        Title = "FnbPos.Api - F&B ERP POS Inventory System Engine API",
         Version = "v1",
-        Description = "API cho Siêu Ứng Dụng F&B ERP + POS + Inventory + CRM + BI Analytics + 6 Repos GitHub"
+        Description = "API chuẩn hóa theo Caythumuc.docx (8 Roles RBAC, Multi-Branch Isolation, FEFO Inventory, Apriori AI & SignalR Hubs)"
     });
 });
 
@@ -66,14 +67,14 @@ builder.Services.AddSingleton<ImpeccableDesignService>();
 builder.Services.AddScoped<HrManagementService>();
 builder.Services.AddScoped<CrmService>();
 builder.Services.AddScoped<BiAnalyticsService>();
-
-// WebBanQuanAo Data Mining & Recommendation Services
 builder.Services.AddScoped<AprioriService>();
 builder.Services.AddScoped<RecommendationService>();
 
-// Hosted Background Services
+// Hosted Background Workers per Caythumuc spec
 builder.Services.AddHostedService<OrderAutoCancelBackgroundService>();
 builder.Services.AddHostedService<WeeklyChurnWinBackBackgroundService>();
+builder.Services.AddHostedService<StockReservationTtlWorker>();
+builder.Services.AddHostedService<BatchExpiryScannerWorker>();
 
 // SignalR Realtime Hubs
 builder.Services.AddSignalR();
@@ -94,11 +95,16 @@ var app = builder.Build();
 app.UseSerilogRequestLogging();
 app.UseCors("AllowReactApp");
 
+// Custom Middlewares per Caythumuc spec
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseMiddleware<TenantContextMiddleware>();
+app.UseMiddleware<HmacValidationMiddleware>();
+
 // Enable Swagger UI at /swagger
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "F&B ERP POS API v1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "FnbPos API v1");
     c.RoutePrefix = "swagger";
 });
 
@@ -110,7 +116,7 @@ app.MapControllers();
 app.MapHub<PosHub>("/hubs/pos");
 app.MapHub<KdsHub>("/hubs/kds");
 
-// Fallback to React SPA index.html for all non-API web routes
+// Fallback to React SPA index.html
 app.MapFallbackToFile("index.html");
 
 app.Run();
