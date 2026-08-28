@@ -86,7 +86,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     const saved = localStorage.getItem('fnb_kds_tickets');
     if (saved) {
       const parsed: KdsTicket[] = JSON.parse(saved);
-      const unacknowledgedAddOn = parsed.find(t => t.isAddOn && t.isAddOnNoticePending);
+      const unacknowledgedAddOn = parsed.find(t => t.isAddOn && t.isAddOnNoticePending && !t.isRungReady);
       if (unacknowledgedAddOn && !addOnNotice) {
         playAddOnSoundChime();
         setAddOnNotice(unacknowledgedAddOn);
@@ -164,7 +164,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setTickets(updatedTickets);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
     window.dispatchEvent(new Event('fnb_data_updated'));
-    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! các món trong mẻ đã làm xong và tự động xóa khỏi danh sách gom mẻ.`);
+    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! Các món trong mẻ đã làm xong và tự động xóa khỏi danh sách gom mẻ.`);
   };
 
   // 3. 86-LIST MATRIX
@@ -197,7 +197,9 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(slaHistory));
   }, [slaHistory]);
 
-  // WHEN KITCHEN CLICKS "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)", MARK isRungReady = true SO THẺ RUNG DISPATCHES TO CASHIER RECOVERY!
+  // WHEN KITCHEN CLICKS "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)":
+  // 1. SET isRungReady = true (DISPATCHES PAGER TO CASHIER RECOVERY HUB)
+  // 2. IMMEDIATELY REMOVE TICKET FROM ACTIVE KITCHEN COOKING SCREEN (BUMP)
   const handleBumpAndSaveToHistory = (ticket: KdsTicket) => {
     const updatedTickets = tickets.map(t => {
       if (t.id === ticket.id) {
@@ -208,7 +210,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
 
     setTickets(updatedTickets);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
-    window.dispatchEvent(new Event('fnb_data_updated'));
 
     const newHistoryRecord: SlaHistoryRecord = {
       ticketId: ticket.id,
@@ -222,6 +223,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setSlaHistory(updatedHistory);
     localStorage.setItem('fnb_kds_sla_history', JSON.stringify(updatedHistory));
 
+    window.dispatchEvent(new Event('fnb_data_updated'));
     setActiveIotAlert({ pagerId: ticket.pagerId, orderNo: ticket.orderNo, table: ticket.table });
   };
 
@@ -243,7 +245,8 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     setItems86(items86.map(i => i.id === id ? { ...i, is86Locked: !i.is86Locked } : i));
   };
 
-  const filteredTickets = tickets.filter(t => t.station === activeStation && !t.pagerReturned);
+  // FILTER ONLY ACTIVE UNCOMPLETED COOKING TICKETS FOR KITCHEN (EXCLUDE COMPLETED/RUNG TICKETS!)
+  const filteredTickets = tickets.filter(t => t.station === activeStation && !t.isRungReady && !t.pagerReturned);
 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
@@ -254,7 +257,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS & Kích Hoạt Thẻ Rung IoT</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Mỗi Bàn / Thẻ Rung được hiển thị trên 1 Thẻ Đơn Hàng duy nhất (Món mới bổ sung tự động gộp vào thẻ này).</p>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Khi chế biến xong, bấm "HOÀN TẤT CHẾ BIẾN (RUNG THẺ)" để rung thẻ và hoàn thành vé Bếp.</p>
             </div>
             <div style={{ display: 'flex', gap: '8px', background: '#F1F5F9', padding: '4px', borderRadius: '8px' }}>
               <button
@@ -293,27 +296,21 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '20px' }}>
             {filteredTickets.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px', gridColumn: '1 / -1' }}>
-                Hiện chưa có vé chế biến nào.
+                Hiện không có vé nào đang chế biến tại trạm này. Tất cả vé đã hoàn tất và rung thẻ!
               </div>
             ) : (
               filteredTickets.map((t) => (
                 <div
                   key={t.id}
                   style={{
-                    background: t.isRungReady ? '#ECFDF5' : '#FFFFFF',
-                    border: t.isRungReady ? '3px solid #059669' : t.isAddOn ? '3px solid #DC2626' : t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
+                    background: '#FFFFFF',
+                    border: t.isAddOn ? '3px solid #DC2626' : t.slaStatus === 'Overdue' ? '2px solid #EF4444' : t.slaStatus === 'Warning' ? '2px solid #F59E0B' : '1px solid #CBD5E1',
                     borderRadius: '8px',
                     padding: '18px',
                     boxShadow: t.isAddOn ? '0 0 12px rgba(220, 38, 38, 0.3)' : '0 2px 4px rgba(0,0,0,0.05)'
                   }}
                 >
-                  {t.isRungReady && (
-                    <div style={{ background: '#059669', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center' }}>
-                      🔔 ĐÃ RUNG THẺ IOT {t.pagerId} - CHỜ KHÁCH ĐẾN NHẬN MÓN
-                    </div>
-                  )}
-
-                  {t.isAddOn && !t.isRungReady && (
+                  {t.isAddOn && (
                     <div style={{ background: '#DC2626', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
                       🚨 VÉ GỘP CÓ MÓN MỚI BỔ SUNG (THẺ RUNG {t.pagerId})
                     </div>
@@ -369,8 +366,8 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                       onClick={() => handleBumpAndSaveToHistory(t)}
                       style={{
                         flex: 2,
-                        padding: '8px',
-                        background: t.isRungReady ? '#2563EB' : '#059669',
+                        padding: '10px 12px',
+                        background: '#059669',
                         color: '#fff',
                         border: 'none',
                         borderRadius: '6px',
@@ -379,7 +376,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                         fontSize: '13px'
                       }}
                     >
-                      {t.isRungReady ? 'RUNG LẠI THẺ IOT' : 'HOÀN TẤT CHẾ BIẾN (RUNG THẺ)'}
+                      HOÀN TẤT CHẾ BIẾN (RUNG THẺ)
                     </button>
                   </div>
                 </div>
@@ -535,12 +532,13 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       {/* IOT PAGER SIGNAL MODAL */}
       {activeIotAlert && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
-            <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
-              KÍCH HOẠT THẺ RUNG IOT {activeIotAlert.pagerId} THÀNH CÔNG!
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #059669' }}>
+            <div style={{ background: '#DCFCE7', color: '#166534', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
+              🔔 KÍCH HOẠT RUNG THẺ IOT {activeIotAlert.pagerId} THÀNH CÔNG!
             </div>
             <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '22px', fontWeight: 'bold' }}>THẺ RUNG IOT: {activeIotAlert.pagerId}</h3>
             <p style={{ fontSize: '14px', color: '#475569', margin: '0 0 16px 0' }}>Đơn hàng: <strong>{activeIotAlert.orderNo}</strong> | {activeIotAlert.table}</p>
+            <p style={{ fontSize: '12px', color: '#059669', fontWeight: 'bold' }}>Vé đã hoàn tất & tự động chuyển sang trang "Quản Lý & Thu Hồi Thẻ Rung IoT" bên Thu Ngân!</p>
             <button onClick={() => setActiveIotAlert(null)} style={{ padding: '10px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
               ĐÓNG THÔNG BÁO
             </button>
