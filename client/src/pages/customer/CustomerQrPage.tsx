@@ -36,11 +36,16 @@ interface LoyaltyTransaction {
 }
 
 export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => {
-  const tableSession = 'Bàn 04';
+  const [tableSession, setTableSession] = useState<string>('Bàn 04');
   const currentUserFullName = 'Trần Chí Vĩ';
 
-  // SEQUENTIAL QR BILL ID COUNTER
-  const [nextQrBillNum, setNextQrBillNum] = useState<number>(1001);
+  // PERSISTENT GLOBAL SEQUENTIAL BILL ID GENERATOR
+  const getNextGlobalBillCode = (prefix: 'BILL' | 'HD') => {
+    const currentSeq = parseInt(localStorage.getItem('fnb_global_bill_seq') || '1001', 10);
+    const nextSeq = currentSeq + 1;
+    localStorage.setItem('fnb_global_bill_seq', nextSeq.toString());
+    return `${prefix}-${currentSeq}`;
+  };
 
   // 1. MENU ITEMS
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất Cả');
@@ -73,10 +78,6 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
   // 5. LOYALTY WALLET
   const [loyaltyPoints] = useState<number>(1250);
   const [membershipTier] = useState<string>('Hạng Vàng (Giảm 10%)');
-  const [loyaltyHistory] = useState<LoyaltyTransaction[]>([
-    { date: '2026-08-28', type: 'Earned', points: 185, orderNo: 'HD-9921' },
-    { date: '2026-08-25', type: 'Earned', points: 120, orderNo: 'HD-9910' },
-  ]);
 
   const categories = ['Tất Cả', 'Cà Phê', 'Trà & Trà Sữa', 'Bánh Ngọt'];
   const filteredMenu = selectedCategory === 'Tất Cả' ? menuItems : menuItems.filter(i => i.category === selectedCategory);
@@ -117,8 +118,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
     }
 
     const totalAmount = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
-    const billCode = `BILL-${nextQrBillNum}`;
-    setNextQrBillNum(prev => prev + 1);
+    const billCode = getNextGlobalBillCode('BILL');
 
     const newBill: PendingBill = {
       billCode: billCode,
@@ -147,22 +147,29 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
   };
 
   const groupTotal = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
+  const tablesList = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
-      {/* HEADER BANNER */}
+      {/* HEADER BANNER WITH TABLE SWITCHER */}
       <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '20px 24px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <div>
           <span style={{ fontSize: '11px', color: '#2563EB', fontWeight: 'bold', textTransform: 'uppercase' }}>GỌI MÓN MÃ QR TẠI BÀN</span>
           <h2 style={{ margin: '4px 0 0 0', fontSize: '22px', color: '#0F172A', fontWeight: 'bold' }}>Phiên Phục Vụ: {tableSession}</h2>
         </div>
-        <div style={{ background: '#DCFCE7', color: '#166534', padding: '8px 14px', borderRadius: '6px', fontSize: '13px', fontWeight: 'bold' }}>
-          Đã xác thực WiFi nội bộ
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+          <label style={{ fontSize: '12px', color: '#475569', fontWeight: 'bold' }}>Đổi vị trí bàn:</label>
+          <select value={tableSession} onChange={(e) => setTableSession(e.target.value)} style={{ padding: '6px 12px', borderRadius: '6px', border: '1px solid #CBD5E1', fontWeight: 'bold' }}>
+            {tablesList.map(t => <option key={t} value={t}>{t}</option>)}
+          </select>
+          <div style={{ background: '#DCFCE7', color: '#166534', padding: '6px 12px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>
+            WiFi Nội Bộ Verified
+          </div>
         </div>
       </div>
 
-      {/* 1. TAB 1: MENU QR */}
+      {/* 1. TAB 1: MENU QR WITH RESTORED QUANTITY COUNTER BADGE */}
       {activeTab === 'customer-menu' && (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
           <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '20px' }}>
@@ -192,20 +199,40 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
           <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '20px' }}>
             <h3 style={{ margin: '0 0 16px 0', fontSize: '16px', color: '#0F172A', fontWeight: 'bold' }}>SẢN PHẨM {selectedCategory.toUpperCase()}</h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '16px' }}>
-              {filteredMenu.map((item) => (
-                <div key={item.id} style={{ border: '1px solid #E2E8F0', borderRadius: '8px', padding: '16px', background: '#F8FAFC', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                  <div>
-                    <div style={{ fontWeight: 'bold', color: '#0F172A', fontSize: '15px' }}>{item.name}</div>
-                    <div style={{ color: '#059669', fontWeight: 'bold', marginTop: '6px', fontSize: '16px' }}>{item.price.toLocaleString('vi-VN')} đ</div>
+              {filteredMenu.map((item) => {
+                const qtyCount = cart[item.id] || 0;
+                return (
+                  <div key={item.id} style={{ border: '1px solid #E2E8F0', borderRadius: '8px', padding: '16px', background: '#F8FAFC', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                    <div>
+                      <div style={{ fontWeight: 'bold', color: '#0F172A', fontSize: '15px' }}>{item.name}</div>
+                      <div style={{ color: '#059669', fontWeight: 'bold', marginTop: '6px', fontSize: '16px' }}>{item.price.toLocaleString('vi-VN')} đ</div>
+                    </div>
+                    <button
+                      onClick={() => handleAddToCart(item)}
+                      style={{
+                        marginTop: '12px',
+                        padding: '10px 12px',
+                        background: qtyCount > 0 ? '#047857' : '#059669',
+                        color: '#fff',
+                        border: 'none',
+                        borderRadius: '6px',
+                        fontWeight: 'bold',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        justify: 'space-between',
+                        alignItems: 'center'
+                      }}
+                    >
+                      <span>+ Thêm Vào Giỏ</span>
+                      {qtyCount > 0 && (
+                        <span style={{ background: '#FEF3C7', color: '#92400E', padding: '2px 8px', borderRadius: '12px', fontSize: '12px', fontWeight: 'bold' }}>
+                          Đã chọn: x{qtyCount}
+                        </span>
+                      )}
+                    </button>
                   </div>
-                  <button
-                    onClick={() => handleAddToCart(item)}
-                    style={{ marginTop: '12px', padding: '8px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}
-                  >
-                    + Thêm Vào Giỏ Nhóm
-                  </button>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

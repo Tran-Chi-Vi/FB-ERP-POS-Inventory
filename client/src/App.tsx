@@ -49,12 +49,9 @@ export const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<{ fullName: string; role: string } | null>(null);
   const [activeTab, setActiveTab] = useState<string>('pos');
   const [selectedCategory, setSelectedCategory] = useState<string>('Tất Cả');
-  const [selectedTable, setSelectedTable] = useState<string | null>('Bàn 01');
+  const [selectedTable, setSelectedTable] = useState<string>('Bàn 01');
   const [cart, setCart] = useState<CartItem[]>([]);
   
-  // SEQUENTIAL BILL ID COUNTER
-  const [nextInvoiceNum, setNextInvoiceNum] = useState<number>(1001);
-
   // CASHIER COUNTER ORDERING IOT PAGER ID SELECTION
   const [selectedPosPagerId, setSelectedPosPagerId] = useState<string>('PAGER-01');
   const [showPaymentConfirmModal, setShowPaymentConfirmModal] = useState<boolean>(false);
@@ -72,14 +69,21 @@ export const App: React.FC = () => {
         pagerId: 'PAGER-05',
         items: [
           { product: { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', price: 29000, category: 'Cà Phê', unit: 'Ly' }, quantity: 2 },
-          { product: { id: '4', name: 'Trà Đào Cam Sả Tươi', price: 39000, category: 'Trà & Trà Sữa', unit: 'Ly' }, quantity: 1 }
         ],
-        totalAmount: 97000,
+        totalAmount: 58000,
         paymentMethod: 'Chuyển Khoản VietQR',
         timestamp: '21:15:30'
       }
     ];
   });
+
+  // PERSISTENT GLOBAL SEQUENTIAL BILL GENERATOR
+  const getNextGlobalBillCode = (prefix: 'BILL' | 'HD') => {
+    const currentSeq = parseInt(localStorage.getItem('fnb_global_bill_seq') || '1002', 10);
+    const nextSeq = currentSeq + 1;
+    localStorage.setItem('fnb_global_bill_seq', nextSeq.toString());
+    return `${prefix}-${currentSeq}`;
+  };
 
   const syncLocalState = () => {
     const savedPending = localStorage.getItem('fnb_pending_bills');
@@ -101,34 +105,51 @@ export const App: React.FC = () => {
     };
   }, [activeTab]);
 
-  // SMART PAGER ALLOCATION: FIND FIRST AVAILABLE UNASSIGNED PAGER FOR TABLE
+  // SMART PAGER & TABLE OCCUPANCY TRACKING FROM ACTIVE KDS TICKETS & PENDING BILLS
   const activeKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-  
-  const getFirstAvailablePager = (targetTable: string) => {
-    // If targetTable already has an active ticket with a pager, reuse that pager!
-    const existingTableTicket = activeKdsTickets.find((t: any) => t.table === targetTable);
-    if (existingTableTicket && existingTableTicket.pagerId) {
-      return existingTableTicket.pagerId;
-    }
-    // Otherwise find first pager not in activeKdsTickets
-    const usedPagers = activeKdsTickets.map((t: any) => t.pagerId);
-    for (let i = 1; i <= 10; i++) {
-      const pId = `PAGER-0${i}`.slice(-8);
-      const fullId = `PAGER-${i < 10 ? '0' + i : i}`;
-      if (!usedPagers.includes(fullId)) {
-        return fullId;
-      }
-    }
-    return 'PAGER-01';
+  const busyPagersMap: { [pagerId: string]: string } = {}; // pagerId -> table
+  const occupiedTablesSet = new Set<string>();
+
+  activeKdsTickets.forEach((t: any) => {
+    if (t.pagerId) busyPagersMap[t.pagerId] = t.table;
+    if (t.table) occupiedTablesSet.add(t.table);
+  });
+  pendingBills.forEach((p: any) => {
+    if (p.table) occupiedTablesSet.add(p.table);
+  });
+
+  // GET ALL AVAILABLE PAGERS THAT ARE NOT BUSY
+  const allPagers = ['PAGER-01', 'PAGER-02', 'PAGER-03', 'PAGER-04', 'PAGER-05', 'PAGER-06', 'PAGER-07', 'PAGER-08', 'PAGER-09', 'PAGER-10'];
+  const getFirstAvailablePagerForTable = (targetTable: string) => {
+    // If table already has an active pager, reuse it!
+    const activeTicket = activeKdsTickets.find((t: any) => t.table === targetTable);
+    if (activeTicket && activeTicket.pagerId) return activeTicket.pagerId;
+    
+    // Otherwise pick first free pager
+    const free = allPagers.find(p => !busyPagersMap[p]);
+    return free || 'PAGER-01';
   };
 
-  // Update selectedPosPagerId when selectedTable changes
   useEffect(() => {
     if (selectedTable) {
-      const autoPager = getFirstAvailablePager(selectedTable);
+      const autoPager = getFirstAvailablePagerForTable(selectedTable);
       setSelectedPosPagerId(autoPager);
     }
   }, [selectedTable]);
+
+  // CLEAR TABLE & RELEASE OCCUPANCY ACTION FOR CASHIER
+  const handleReleaseTable = (tableToRelease: string) => {
+    // Remove active KDS tickets for this table
+    const updatedTickets = activeKdsTickets.filter((t: any) => t.table !== tableToRelease);
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+
+    // Remove pending bills for this table
+    const updatedPending = pendingBills.filter((p: any) => p.table !== tableToRelease);
+    localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
+
+    window.dispatchEvent(new Event('fnb_data_updated'));
+    alert(`ĐÃ DỌN BÀN & GIẢI PHÓNG "${tableToRelease}" THÀNH CÔNG! Bàn đã trở lại trạng thái TRỐNG.`);
+  };
 
   const mainRef = useRef<HTMLDivElement>(null);
 
@@ -217,7 +238,7 @@ export const App: React.FC = () => {
 
   // FIND IF PAGER ID / TABLE ALREADY HAS AN ACTIVE UNCOMPLETED PARENT INVOICE
   const parentInvoiceForPager = paidInvoices.find(inv => inv.pagerId === selectedPosPagerId || inv.table === selectedTable);
-  const isAddOnOrder = !!parentInvoiceForPager;
+  const isAddOnOrder = !!parentInvoiceForPager && activeKdsTickets.some((t: any) => t.table === selectedTable);
 
   const handleOpenPaymentConfirm = () => {
     if (cart.length === 0) return;
@@ -227,8 +248,7 @@ export const App: React.FC = () => {
   const handleFinalizePosCheckout = () => {
     if (cart.length === 0) return;
     const totalAmount = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
-    const invoiceId = `HD-${nextInvoiceNum}`;
-    setNextInvoiceNum(prev => prev + 1);
+    const invoiceId = getNextGlobalBillCode('HD');
 
     const newInvoice: PaidInvoice = {
       id: invoiceId,
@@ -247,7 +267,6 @@ export const App: React.FC = () => {
     const existingTicketIndex = existingKdsTickets.findIndex((t: any) => t.pagerId === selectedPosPagerId || t.table === selectedTable);
 
     if (existingTicketIndex !== -1) {
-      // MERGE INTO EXISTING ACTIVE TICKET CARD SO KITCHEN SEES OLD & NEW ITEMS TOGETHER!
       const activeTicket = existingKdsTickets[existingTicketIndex];
       const newItemsFormatted = cart.map(c => ({
         id: `NEW-${c.product.id}-${Date.now()}`,
@@ -264,7 +283,6 @@ export const App: React.FC = () => {
         items: [...activeTicket.items, ...newItemsFormatted]
       };
     } else {
-      // CREATE NEW KDS TICKET CARD
       const newKdsTicket = {
         id: `TK-${Math.floor(100 + Math.random() * 900)}`,
         orderNo: invoiceId,
@@ -297,16 +315,16 @@ export const App: React.FC = () => {
     window.dispatchEvent(new Event('fnb_data_updated'));
 
     if (isAddOnOrder) {
-      alert(`ĐÃ THANH TOÁN HÓA ĐƠN BỔ SUNG ${invoiceId}!\n- Đã GỘP MÓN MỚI vào Thẻ Rung ${selectedPosPagerId} trên Màn hình Bếp KDS!\n- Bếp thấy cả món cũ và món mới trên 1 vé duy nhất. Thẻ rung chỉ phát chuông 1 lần khi làm xong.`);
+      alert(`ĐÃ THANH TOÁN HÓA ĐƠN BỔ SUNG ${invoiceId}!\n- Đã GỘP MÓN MỚI vào Thẻ Rung ${selectedPosPagerId} trên Màn hình Bếp KDS!\n- Bếp thấy cả món cũ và món mới trên 1 vé duy nhất.`);
     } else {
       alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN GỐC ${invoiceId}!\n- Trị giá: ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table}.\n- Đã gán ${selectedPosPagerId} và chuyển lệnh xuống Bếp!`);
     }
   };
 
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
-    const assignedPager = selectedPagerMap[bill.billCode] || getFirstAvailablePager(bill.table);
+    const assignedPager = selectedPagerMap[bill.billCode] || getFirstAvailablePagerForTable(bill.table);
     const parentInv = paidInvoices.find(inv => inv.pagerId === assignedPager || inv.table === bill.table);
-    const isPagerBusy = !!parentInv;
+    const isPagerBusy = !!parentInv && activeKdsTickets.some((t: any) => t.table === bill.table);
 
     const newInvoice: PaidInvoice = {
       id: bill.billCode,
@@ -327,7 +345,6 @@ export const App: React.FC = () => {
     const existingTicketIndex = existingKdsTickets.findIndex((t: any) => t.pagerId === assignedPager || t.table === bill.table);
 
     if (existingTicketIndex !== -1) {
-      // MERGE NEW QR ITEMS DIRECTLY INTO EXISTING ACTIVE CARD
       const activeTicket = existingKdsTickets[existingTicketIndex];
       const newItemsFormatted = bill.items.map((b, idx) => ({
         id: `NEW-QR-${idx}-${Date.now()}`,
@@ -412,7 +429,7 @@ export const App: React.FC = () => {
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 {pendingBills.map((b) => {
-                  const defaultPager = selectedPagerMap[b.billCode] || getFirstAvailablePager(b.table);
+                  const defaultPager = selectedPagerMap[b.billCode] || getFirstAvailablePagerForTable(b.table);
                   return (
                     <div key={b.billCode} style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                       <div>
@@ -431,12 +448,14 @@ export const App: React.FC = () => {
                             onChange={(e) => setSelectedPagerMap({ ...selectedPagerMap, [b.billCode]: e.target.value })}
                             style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.9rem' }}
                           >
-                            <option value="PAGER-01">Thẻ Rung IoT #01</option>
-                            <option value="PAGER-02">Thẻ Rung IoT #02</option>
-                            <option value="PAGER-03">Thẻ Rung IoT #03</option>
-                            <option value="PAGER-04">Thẻ Rung IoT #04</option>
-                            <option value="PAGER-05">Thẻ Rung IoT #05</option>
-                            <option value="PAGER-06">Thẻ Rung IoT #06</option>
+                            {allPagers.map(p => {
+                              const isBusy = !!busyPagersMap[p] && busyPagersMap[p] !== b.table;
+                              return (
+                                <option key={p} value={p} disabled={isBusy}>
+                                  {p} {isBusy ? `(Đang bận - ${busyPagersMap[p]})` : '(Đang rảnh)'}
+                                </option>
+                              );
+                            })}
                           </select>
                         </div>
                         <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
@@ -471,27 +490,62 @@ export const App: React.FC = () => {
             </div>
 
             <div>
+              {/* SƠ ĐỒ BÀN PHỤC VỤ WITH TABLE STATUS BADGES & CLEAR ACTION */}
               <div className="card" style={{ marginBottom: '1rem' }}>
-                <h3 style={{ marginBottom: '0.75rem', color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ</h3>
-                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  {tables.map((t) => (
-                    <button
-                      key={t}
-                      style={{
-                        padding: '0.5rem 1rem',
-                        borderRadius: '0.375rem',
-                        border: '1px solid #CBD5E1',
-                        background: selectedTable === t ? '#059669' : '#FFFFFF',
-                        color: selectedTable === t ? '#fff' : '#0F172A',
-                        fontWeight: 'bold',
-                        cursor: 'pointer'
-                      }}
-                      onClick={() => setSelectedTable(t)}
-                    >
-                      {t}
-                    </button>
-                  ))}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+                  <h3 style={{ margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ (Trạng Thái Trống & Đang Có Khách)</h3>
+                  <span style={{ fontSize: '12px', color: '#64748B' }}>Đã bôi xám các bàn đang có khách</span>
                 </div>
+
+                <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
+                  {tables.map((t) => {
+                    const isOccupied = occupiedTablesSet.has(t);
+                    const isSelected = selectedTable === t;
+
+                    return (
+                      <button
+                        key={t}
+                        style={{
+                          padding: '0.6rem 1rem',
+                          borderRadius: '0.375rem',
+                          border: isOccupied ? '2px solid #EF4444' : '1px solid #CBD5E1',
+                          background: isSelected ? '#059669' : isOccupied ? '#FEE2E2' : '#FFFFFF',
+                          color: isSelected ? '#fff' : isOccupied ? '#991B1B' : '#0F172A',
+                          fontWeight: 'bold',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          gap: '2px'
+                        }}
+                        onClick={() => setSelectedTable(t)}
+                      >
+                        <span>{t}</span>
+                        <span style={{ fontSize: '10px', fontWeight: 'normal' }}>
+                          {isOccupied ? '🛑 Đang Có Khách' : '🟢 Trống'}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* CLEAR / RELEASE TABLE ACTION BOX */}
+                {occupiedTablesSet.size > 0 && (
+                  <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0', marginTop: '8px' }}>
+                    <span style={{ fontSize: '12px', color: '#0F172A', fontWeight: 'bold', display: 'block', marginBottom: '6px' }}>Thao Tác Dọn Bàn & Giải Phóng Ghế Cho Khách Mới:</span>
+                    <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                      {Array.from(occupiedTablesSet).map(tbl => (
+                        <button
+                          key={tbl}
+                          onClick={() => handleReleaseTable(tbl)}
+                          style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
+                        >
+                          Dọn Bàn & Giải Phóng {tbl}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="product-grid">
@@ -533,6 +587,7 @@ export const App: React.FC = () => {
                     </div>
                   ))}
 
+                  {/* DYNAMIC SMART PAGER SELECTOR EXCLUDING BUSY PAGERS */}
                   <div style={{ marginTop: '1rem', background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
                     <label style={{ fontSize: '0.8rem', fontWeight: 'bold', color: '#0F172A', display: 'block', marginBottom: '4px' }}>Gán Thẻ Rung IoT Nhận Món Cho Khách Quầy:</label>
                     <select
@@ -540,17 +595,19 @@ export const App: React.FC = () => {
                       onChange={(e) => setSelectedPosPagerId(e.target.value)}
                       style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '4px', fontWeight: 'bold', color: '#0F172A' }}
                     >
-                      <option value="PAGER-01">Thẻ Rung IoT #01</option>
-                      <option value="PAGER-02">Thẻ Rung IoT #02</option>
-                      <option value="PAGER-03">Thẻ Rung IoT #03</option>
-                      <option value="PAGER-04">Thẻ Rung IoT #04</option>
-                      <option value="PAGER-05">Thẻ Rung IoT #05</option>
-                      <option value="PAGER-06">Thẻ Rung IoT #06</option>
+                      {allPagers.map(p => {
+                        const isBusy = !!busyPagersMap[p] && busyPagersMap[p] !== selectedTable;
+                        return (
+                          <option key={p} value={p} disabled={isBusy}>
+                            {p} {isBusy ? `(Đang bận tại ${busyPagersMap[p]})` : '(Đang rảnh)'}
+                          </option>
+                        );
+                      })}
                     </select>
 
                     {isAddOnOrder && (
                       <div style={{ marginTop: '6px', fontSize: '0.75rem', color: '#DC2626', fontWeight: 'bold', background: '#FEE2E2', padding: '6px', borderRadius: '4px' }}>
-                        ⚠️ Thẻ Rung {selectedPosPagerId} đang hoạt động tại {parentInvoiceForPager.table}. Đơn mới này sẽ tự động GỘP MÓN MỚI vào vé Bếp KDS hiện tại!
+                        ⚠️ {selectedTable} đang có khách ({selectedPosPagerId}). Đơn mới này sẽ tự động GỘP MÓN MỚI vào vé Bếp KDS hiện tại!
                       </div>
                     )}
                   </div>
