@@ -50,45 +50,46 @@ export const App: React.FC = () => {
   const [cart, setCart] = useState<CartItem[]>([]);
   
   // PENDING QR BILLS QUEUE FOR CASHIER TO VERIFY PAYMENT AND ASSIGN IOT PAGER ID
-  const [pendingBills, setPendingBills] = useState<PendingBill[]>(() => {
-    const saved = localStorage.getItem('fnb_pending_bills');
+  const [pendingBills, setPendingBills] = useState<PendingBill[]>([]);
+  const [selectedPagerMap, setSelectedPagerMap] = useState<{ [billCode: string]: string }>({});
+
+  // DYNAMICALLY SYNC PENDING BILLS & PAID INVOICES FROM LOCALSTORAGE REALTIME
+  const syncLocalState = () => {
+    const savedPending = localStorage.getItem('fnb_pending_bills');
+    setPendingBills(savedPending ? JSON.parse(savedPending) : []);
+
+    const savedPaid = localStorage.getItem('fnb_paid_invoices');
+    if (savedPaid) {
+      setPaidInvoices(JSON.parse(savedPaid));
+    }
+  };
+
+  useEffect(() => {
+    syncLocalState();
+    window.addEventListener('fnb_data_updated', syncLocalState);
+    const interval = setInterval(syncLocalState, 1500);
+    return () => {
+      window.removeEventListener('fnb_data_updated', syncLocalState);
+      clearInterval(interval);
+    };
+  }, [activeTab]);
+
+  const [paidInvoices, setPaidInvoices] = useState<PaidInvoice[]>(() => {
+    const saved = localStorage.getItem('fnb_paid_invoices');
     return saved ? JSON.parse(saved) : [
       {
-        billCode: 'BILL-8942',
+        id: 'HD-9921',
         table: 'Bàn 04',
         items: [
-          { name: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, price: 29000 },
-          { name: 'Trà Đào Cam Sả Tươi', quantity: 2, price: 39000 },
-          { name: 'Trà Sữa Ô Long Kem Trứng', quantity: 2, price: 42000 },
-          { name: 'Bánh Croissant Bơ Bơ', quantity: 1, price: 25000 },
-          { name: 'Bánh Tiramisu Ý', quantity: 1, price: 38000 }
+          { product: { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', price: 29000, category: 'Cà Phê', unit: 'Ly' }, quantity: 2 },
+          { product: { id: '4', name: 'Trà Đào Cam Sả Tươi', price: 39000, category: 'Trà & Trà Sữa', unit: 'Ly' }, quantity: 1 }
         ],
-        totalAmount: 347000,
-        status: 'PendingPayment',
-        timestamp: '21:30:15'
+        totalAmount: 97000,
+        paymentMethod: 'Chuyển Khoản VietQR',
+        timestamp: '21:15:30'
       }
     ];
   });
-
-  const [selectedPagerMap, setSelectedPagerMap] = useState<{ [billCode: string]: string }>({});
-
-  useEffect(() => {
-    localStorage.setItem('fnb_pending_bills', JSON.stringify(pendingBills));
-  }, [pendingBills]);
-
-  const [paidInvoices, setPaidInvoices] = useState<PaidInvoice[]>([
-    {
-      id: 'HD-9921',
-      table: 'Bàn 04',
-      items: [
-        { product: { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', price: 29000, category: 'Cà Phê', unit: 'Ly' }, quantity: 2 },
-        { product: { id: '4', name: 'Trà Đào Cam Sả Tươi', price: 39000, category: 'Trà & Trà Sữa', unit: 'Ly' }, quantity: 1 }
-      ],
-      totalAmount: 97000,
-      paymentMethod: 'Chuyển Khoản VietQR',
-      timestamp: '21:15:30'
-    }
-  ]);
 
   const mainRef = useRef<HTMLDivElement>(null);
 
@@ -201,8 +202,12 @@ export const App: React.FC = () => {
     };
     localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...kdsTickets]));
 
-    setPaidInvoices([newInvoice, ...paidInvoices]);
+    const updatedPaid = [newInvoice, ...paidInvoices];
+    setPaidInvoices(updatedPaid);
+    localStorage.setItem('fnb_paid_invoices', JSON.stringify(updatedPaid));
+
     setCart([]);
+    window.dispatchEvent(new Event('fnb_data_updated'));
     alert(`THANH TOÁN THÀNH CÔNG!\n- Hóa đơn ${newInvoice.id} trị giá ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table} đã thanh toán thành công.\n- Lệnh chế biến đã được tự động chuyển sang Bếp / Barista theo số Bill!`);
   };
 
@@ -227,7 +232,7 @@ export const App: React.FC = () => {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
       orderNo: bill.billCode,
       table: bill.table,
-      pagerId: assignedPager, // Mã Thẻ Rung IoT do Thu Ngân gán!
+      pagerId: assignedPager,
       station: 'Barista',
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
@@ -241,7 +246,11 @@ export const App: React.FC = () => {
     localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
 
     // Save to paid invoices
-    setPaidInvoices([newInvoice, ...paidInvoices]);
+    const updatedPaid = [newInvoice, ...paidInvoices];
+    setPaidInvoices(updatedPaid);
+    localStorage.setItem('fnb_paid_invoices', JSON.stringify(updatedPaid));
+
+    window.dispatchEvent(new Event('fnb_data_updated'));
 
     alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Đã gán ${assignedPager} cho khách tại ${bill.table}.\n- Bếp / Barista đã nhận lệnh chế biến và sẽ kích hoạt thẻ rung ${assignedPager} khi xong!`);
   };

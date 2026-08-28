@@ -58,41 +58,23 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
   const [activeStation, setActiveStation] = useState<'Barista' | 'Kitchen'>('Barista');
   const [activeIotAlert, setActiveIotAlert] = useState<{ pagerId: string; orderNo: string; table: string } | null>(null);
 
-  // 1. ACTIVE SLA PREP TICKETS WITH IOT PAGER ID
-  const [tickets, setTickets] = useState<KdsTicket[]>(() => {
+  // 1. DYNAMIC REAL-TIME SLA TICKETS SYNCED FROM CASHIER POS PAYMENTS ONLY
+  const [tickets, setTickets] = useState<KdsTicket[]>([]);
+
+  const syncKdsTickets = () => {
     const saved = localStorage.getItem('fnb_kds_tickets');
-    return saved ? JSON.parse(saved) : [
-      {
-        id: 'TK-101',
-        orderNo: 'HD-9921',
-        table: 'Bàn 04',
-        pagerId: 'PAGER-05',
-        station: 'Barista',
-        timeElapsedMinutes: 14,
-        slaStatus: 'Overdue',
-        items: [
-          { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, note: 'Nhiều đá, 100% đường' },
-          { id: '2', name: 'Trà Đào Cam Sả Tươi', quantity: 1, note: '50% đường, 50% đá' },
-        ]
-      },
-      {
-        id: 'TK-102',
-        orderNo: 'HD-9924',
-        table: 'Bàn 01',
-        pagerId: 'PAGER-02',
-        station: 'Barista',
-        timeElapsedMinutes: 8,
-        slaStatus: 'Warning',
-        items: [
-          { id: '3', name: 'Trà Đào Cam Sả Tươi', quantity: 3, note: 'Ít đường, 100% đá' },
-        ]
-      }
-    ];
-  });
+    setTickets(saved ? JSON.parse(saved) : []);
+  };
 
   useEffect(() => {
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify(tickets));
-  }, [tickets]);
+    syncKdsTickets();
+    window.addEventListener('fnb_data_updated', syncKdsTickets);
+    const interval = setInterval(syncKdsTickets, 1500);
+    return () => {
+      window.removeEventListener('fnb_data_updated', syncKdsTickets);
+      clearInterval(interval);
+    };
+  }, [activeTab]);
 
   // 2. DYNAMIC BATCH COOKING MATRIX WITH ROW DELETION UPON COMPLETION
   const [batchList, setBatchList] = useState<BatchItem[]>(() => {
@@ -143,6 +125,8 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     // 1. Remove ticket from active KDS tickets
     const updatedTickets = tickets.filter(t => t.id !== ticket.id);
     setTickets(updatedTickets);
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+    window.dispatchEvent(new Event('fnb_data_updated'));
 
     // 2. Append completed ticket to persistent SLA History Log!
     const newHistoryRecord: SlaHistoryRecord = {
@@ -153,7 +137,9 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       slaMinutes: ticket.timeElapsedMinutes || 5.0,
       completedTime: new Date().toLocaleTimeString('vi-VN')
     };
-    setSlaHistory([newHistoryRecord, ...slaHistory]);
+    const updatedHistory = [newHistoryRecord, ...slaHistory];
+    setSlaHistory(updatedHistory);
+    localStorage.setItem('fnb_kds_sla_history', JSON.stringify(updatedHistory));
 
     // 3. Push ready notification for Staff Runner
     const runnerItems = JSON.parse(localStorage.getItem('fnb_runner_queue') || '[]');
@@ -187,6 +173,8 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       return t;
     });
     setTickets(updated);
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updated));
+    window.dispatchEvent(new Event('fnb_data_updated'));
     alert(`Đã chuyển vé ${ticketId} sang Trạm chế biến tương ứng!`);
   };
 
@@ -205,7 +193,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS & Kích Hoạt Thẻ Rung IoT</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Bếp chế biến xong bấm HOÀN TẤT CHẾ BIẾN để lưu lịch sử SLA và rung thẻ IoT báo khách lên quầy nhận món.</p>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Chỉ hiển thị vé chế biến SAU KHU THU NGÂN XÁC NHẬN THANH TOÁN & GÁN THẺ RUNG.</p>
             </div>
             <div style={{ display: 'flex', gap: '8px', background: '#F1F5F9', padding: '4px', borderRadius: '8px' }}>
               <button
@@ -244,7 +232,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '20px' }}>
             {filteredTickets.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px', gridColumn: '1 / -1' }}>
-                Hiện không có vé chế biến nào đang chờ tại {activeStation === 'Barista' ? 'Trạm Barista' : 'Trạm Bếp Nóng'}.
+                Hiện chưa có vé chế biến nào (Vé chỉ xuất hiện sau khi Thu Ngân bấm xác nhận đã thanh toán tại quầy).
               </div>
             ) : (
               filteredTickets.map((t) => (

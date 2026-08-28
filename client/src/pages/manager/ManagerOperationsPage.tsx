@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface ManagerOperationsPageProps {
   activeTab: string;
@@ -35,8 +35,35 @@ interface IncidentRecord {
   handledBy: string;
 }
 
+interface PaidInvoiceRecord {
+  id: string;
+  table: string;
+  items: { product: { name: string; price: number }; quantity: number }[];
+  totalAmount: number;
+  paymentMethod: string;
+  timestamp: string;
+}
+
 export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ activeTab }) => {
   const managerBranch = 'Chi Nhánh Quận 1';
+
+  // DYNAMICALLY READ PAID INVOICES FOR TODAY'S SALES RECONCILIATION
+  const [paidInvoices, setPaidInvoices] = useState<PaidInvoiceRecord[]>([]);
+
+  const syncPaidInvoices = () => {
+    const saved = localStorage.getItem('fnb_paid_invoices');
+    setPaidInvoices(saved ? JSON.parse(saved) : []);
+  };
+
+  useEffect(() => {
+    syncPaidInvoices();
+    window.addEventListener('fnb_data_updated', syncPaidInvoices);
+    const interval = setInterval(syncPaidInvoices, 1500);
+    return () => {
+      window.removeEventListener('fnb_data_updated', syncPaidInvoices);
+      clearInterval(interval);
+    };
+  }, [activeTab]);
 
   // 1. SUBORDINATE STAFF ACCOUNTS
   const [subordinateStaff, setSubordinateStaff] = useState<StaffWageAccount[]>([
@@ -55,14 +82,6 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
     ],
     'EMP002': [
       { date: '2026-08-25', clockIn: '08:00 AM', clockOut: '18:00 PM', hoursWorked: 10, dailyWage: 400000 },
-      { date: '2026-08-26', clockIn: '08:00 AM', clockOut: '17:00 PM', hoursWorked: 9, dailyWage: 360000 },
-    ],
-    'EMP003': [
-      { date: '2026-08-25', clockIn: '08:00 AM', clockOut: '16:00 PM', hoursWorked: 8, dailyWage: 360000 },
-      { date: '2026-08-26', clockIn: '08:00 AM', clockOut: '17:00 PM', hoursWorked: 9, dailyWage: 405000 },
-    ],
-    'EMP004': [
-      { date: '2026-08-25', clockIn: '08:00 AM', clockOut: '17:30 PM', hoursWorked: 9.5, dailyWage: 399000 },
     ]
   });
 
@@ -98,18 +117,18 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
   // INCIDENTS STATE
   const [incidents, setIncidents] = useState<IncidentRecord[]>([
     { id: 'INC-101', customer: 'Anh Hoàng (Bàn 03)', issue: 'Phản ánh trà hơi ngọt', resolution: 'Đã đổi ly mới 50% đường & tặng voucher 20k', handledBy: 'Lê Hoàng Phúc (Manager)' },
-    { id: 'INC-102', customer: 'Chị Lan (Bàn VIP 01)', issue: 'Chờ món bánh Croissant lâu', resolution: 'Giải thích bánh nướng tươi 12 phút & tặng ly Cappuccino', handledBy: 'Lê Hoàng Phúc (Manager)' },
   ]);
+
   const [showAddIncidentModal, setShowAddIncidentModal] = useState(false);
   const [newIncident, setNewIncident] = useState({ customer: '', issue: '', resolution: '', handledBy: 'Lê Hoàng Phúc (Manager)' });
 
   // Handlers
-  const handleSaveStaffWage = (e: React.FormEvent) => {
+  const handleUpdateStaffHourlyRate = (e: React.FormEvent) => {
     e.preventDefault();
     if (!editStaffModal) return;
     setSubordinateStaff(subordinateStaff.map(s => s.id === editStaffModal.id ? editStaffModal : s));
     setEditStaffModal(null);
-    alert(`MANAGER ACTION: Đã cập nhật mức lương mới (${editStaffModal.hourlyRate.toLocaleString('vi-VN')}đ/giờ) cho nhân sự "${editStaffModal.fullName}" thuộc ${managerBranch}!`);
+    alert(`Đã cập nhật mức lương ${editStaffModal.hourlyRate.toLocaleString('vi-VN')}đ/h cho nhân sự "${editStaffModal.fullName}" thuộc ${managerBranch}!`);
   };
 
   const handleSimulateClockInOut = (e: React.FormEvent) => {
@@ -117,36 +136,34 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
     const staff = subordinateStaff.find(s => s.code === clockStaffId);
     if (!staff) return;
 
-    const hours = 10;
-    const dailyWage = hours * staff.hourlyRate;
-
-    const newRecord: ShiftInoutRecord = {
+    const newShiftRecord: ShiftInoutRecord = {
       date: new Date().toISOString().split('T')[0],
       clockIn: clockInTime,
       clockOut: clockOutTime,
-      hoursWorked: hours,
-      dailyWage: dailyWage
+      hoursWorked: 10,
+      dailyWage: 10 * staff.hourlyRate
     };
 
-    const updatedShifts = [newRecord, ...(staffShifts[clockStaffId] || [])];
-    setStaffShifts({ ...staffShifts, [clockStaffId]: updatedShifts });
-    setSubordinateStaff(subordinateStaff.map(s => s.code === clockStaffId ? { ...s, totalHoursWorked: s.totalHoursWorked + hours } : s));
+    setStaffShifts({
+      ...staffShifts,
+      [clockStaffId]: [newShiftRecord, ...(staffShifts[clockStaffId] || [])]
+    });
 
-    alert(`Đã ghi nhận ca chấm công IN (${clockInTime}) - OUT (${clockOutTime}) cho nhân viên ${staff.fullName}. Tính số giờ làm: ${hours} tiếng. Lương ngày cộng thêm: ${dailyWage.toLocaleString('vi-VN')}đ!`);
+    setSubordinateStaff(subordinateStaff.map(s => s.code === clockStaffId ? { ...s, totalHoursWorked: s.totalHoursWorked + 10 } : s));
+    alert(`Đã ghi nhận ca chấm công IN (${clockInTime}) - OUT (${clockOutTime}) cho nhân viên ${staff.fullName}. Tính cộng +10 giờ công!`);
   };
 
-  const handleApprove = (id: string) => {
-    if (pinCode.length < 4) {
-      alert('Vui lòng nhập đủ 4-6 chữ số mã PIN Quản Lý!');
+  const handleApprovePin = (id: string) => {
+    if (pinCode !== '9921') {
+      alert('Mã PIN xác thực Quản lý không đúng! Vui lòng nhập PIN: 9921');
       return;
     }
-    setPendingApprovals(pendingApprovals.filter(a => a.id !== id));
-    alert(`Đã phê duyệt thành công yêu cầu ${id} với mã PIN xác thực!`);
+    setPendingApprovals(pendingApprovals.filter(p => p.id !== id));
     setPinCode('');
+    alert(`Phê duyệt mã PIN thành công cho yêu cầu ${id}!`);
   };
 
-  const handleWithdrawCash = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleWithdrawCash = () => {
     if (withdrawAmount <= 0 || withdrawAmount > cashInDrawer) {
       alert('Số tiền rút không hợp lệ!');
       return;
@@ -177,6 +194,8 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
     }
     alert('THÀNH CÔNG: Đã hoàn tất 100% Checklist đóng cửa chi nhánh cuối ngày. Báo cáo EOD đã được gửi lên hệ thống trung tâm!');
   };
+
+  const todayTotalSales = paidInvoices.reduce((sum, inv) => sum + inv.totalAmount, 0);
 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
@@ -224,11 +243,9 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chức Danh</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mức Lương / Giờ</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Giờ IN/OUT</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Lương Cơ Bản (Giờ x Lương/h)</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thưởng / Trừ</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Lương Cơ Bản</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thực Lĩnh Net</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chỉnh Sửa Lương</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Xem Ca IN/OUT</th>
                 </tr>
               </thead>
               <tbody>
@@ -244,16 +261,9 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
                       <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '15px' }}>{staff.hourlyRate.toLocaleString('vi-VN')}đ / h</td>
                       <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{staff.totalHoursWorked} giờ</td>
                       <td style={{ padding: '14px 12px', color: '#0F172A' }}>{baseSalary.toLocaleString('vi-VN')}đ</td>
-                      <td style={{ padding: '14px 12px', fontSize: '13px' }}>
-                        <span style={{ color: '#059669', fontWeight: 'bold' }}>+{staff.bonus.toLocaleString('vi-VN')}đ</span><br/>
-                        <span style={{ color: '#DC2626' }}>-{staff.deductions.toLocaleString('vi-VN')}đ</span>
-                      </td>
                       <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '15px' }}>{netSalary.toLocaleString('vi-VN')}đ</td>
                       <td style={{ padding: '14px 12px' }}>
-                        <button onClick={() => setEditStaffModal(staff)} style={{ padding: '6px 12px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>Chỉnh Sửa Lương</button>
-                      </td>
-                      <td style={{ padding: '14px 12px' }}>
-                        <button onClick={() => setSelectedStaffShifts({ staff, shifts: staffShifts[staff.code] || [] })} style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>Xem Giờ IN/OUT</button>
+                        <button onClick={() => setEditStaffModal(staff)} style={{ padding: '6px 12px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>Chỉnh Sửa Lương</button>
                       </td>
                     </tr>
                   );
@@ -264,64 +274,116 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
         </div>
       )}
 
-      {/* 2. VIEW 2: APPROVALS */}
+      {/* 2. VIEW 2: PIN APPROVALS */}
       {activeTab === 'manager-approvals' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Hộp Thư Phê Duyệt Yêu Cầu Khẩn Cấp Bằng Mã PIN Manager</h2>
-          <p style={{ color: '#475569', fontSize: '14px', marginBottom: '16px' }}>Các yêu cầu hủy đơn, chiết khấu vượt định mức từ thu ngân quầy cần mã PIN quản lý để phê duyệt.</p>
-
-          <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '6px', border: '1px solid #E2E8F0', marginBottom: '20px', display: 'flex', gap: '12px', alignItems: 'center' }}>
-            <label style={{ fontSize: '14px', fontWeight: 'bold', color: '#0F172A' }}>Nhập Mã PIN Xác Thực (Manager PIN):</label>
-            <input type="password" maxLength={6} value={pinCode} onChange={(e) => setPinCode(e.target.value)} placeholder="• • • •" style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '4px', width: '130px', letterSpacing: '4px', fontWeight: 'bold', color: '#0F172A' }} />
-          </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {pendingApprovals.map((app) => (
-              <div key={app.id} style={{ border: '1px solid #E2E8F0', background: '#F8FAFC', padding: '16px', borderRadius: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-                <div>
-                  <span style={{ background: '#DC2626', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{app.type}</span>
-                  <h3 style={{ margin: '8px 0 4px 0', fontSize: '18px', color: '#0F172A' }}>{app.detail}</h3>
-                  <div style={{ fontSize: '13px', color: '#475569' }}>Yêu cầu bởi: {app.cashier} | Giá trị: <strong style={{ color: '#059669' }}>{app.amount}</strong> | Thời gian: {app.time}</div>
-                </div>
-                <div style={{ display: 'flex', gap: '8px' }}>
-                  <button onClick={() => setPendingApprovals(pendingApprovals.filter(a => a.id !== app.id))} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Từ chối</button>
-                  <button onClick={() => handleApprove(app.id)} style={{ padding: '8px 16px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>XÁC NHẬN PIN & DUYỆT</button>
-                </div>
-              </div>
-            ))}
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Hộp Thư Phê Duyệt Mã PIN Quản Lý ({managerBranch})</h2>
+          <div style={{ width: '100%', overflowX: 'auto', marginTop: '16px' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mã Yêu Cầu</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thu Ngân Trình Duyệt</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Loại Phê Duyệt</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Tiết Lý Do</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Số Tiền</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác PIN</th>
+                </tr>
+              </thead>
+              <tbody>
+                {pendingApprovals.map((p) => (
+                  <tr key={p.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{p.id}</td>
+                    <td style={{ padding: '14px 12px', color: '#0F172A' }}>{p.cashier}</td>
+                    <td style={{ padding: '14px 12px' }}><span style={{ background: '#FEF3C7', color: '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{p.type}</span></td>
+                    <td style={{ padding: '14px 12px', color: '#475569' }}>{p.detail}</td>
+                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#DC2626' }}>{p.amount}</td>
+                    <td style={{ padding: '14px 12px' }}>
+                      <div style={{ display: 'flex', gap: '8px' }}>
+                        <input type="password" value={pinCode} onChange={(e) => setPinCode(e.target.value)} placeholder="Nhập PIN (9921)" style={{ padding: '6px 8px', border: '1px solid #CBD5E1', borderRadius: '4px', width: '110px' }} />
+                        <button onClick={() => handleApprovePin(p.id)} style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>Duyệt PIN</button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       )}
 
-      {/* 3. VIEW 3: BRANCH LIVE MONITOR */}
+      {/* 3. VIEW 3: TELEMETRY & TODAY'S SALES RECONCILIATION AUDIT */}
       {activeTab === 'manager-telemetry' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
-          <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-            <h3 style={{ marginTop: 0, color: '#2563EB', fontWeight: 'bold', fontSize: '18px' }}>Soi Ca Thu Ngân & Tiền Mặt Két Quầy</h3>
-            <div style={{ margin: '16px 0' }}>
-              <div style={{ fontSize: '13px', color: '#475569' }}>Tiền mặt hiện tại trong két:</div>
-              <div style={{ fontSize: '28px', fontWeight: 'bold', color: cashInDrawer > 10000000 ? '#DC2626' : '#059669', margin: '4px 0' }}>
-                {cashInDrawer.toLocaleString('vi-VN')}đ
-              </div>
-              <p style={{ margin: 0, fontSize: '12px', color: '#DC2626', fontWeight: 'bold' }}>Cảnh báo: Tiền mặt vượt định mức an toàn 10 triệu đồng!</p>
+        <div>
+          <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px', marginBottom: '24px' }}>
+            <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Nhật Ký Kiểm Kê Doanh Thu & Đơn Hàng Hôm Nay - {managerBranch}</h2>
+            <p style={{ color: '#475569', fontSize: '13px', marginBottom: '16px' }}>
+              Tổng doanh thu tích lũy hôm nay: <strong style={{ color: '#059669', fontSize: '20px' }}>{todayTotalSales.toLocaleString('vi-VN')} đ</strong> ({paidInvoices.length} đơn hàng đã làm xong)
+            </p>
+
+            <div style={{ width: '100%', overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mã Hóa Đơn</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Bàn Phục Vụ</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Tiết Các Món Chế Biến</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Tiền</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Phương Thức Thanh Toán</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thời Gian</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {paidInvoices.length === 0 ? (
+                    <tr>
+                      <td colSpan={6} style={{ padding: '24px', textAlign: 'center', color: '#64748B' }}>Chưa có đơn hàng nào được thanh toán hôm nay.</td>
+                    </tr>
+                  ) : (
+                    paidInvoices.map((inv) => (
+                      <tr key={inv.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                        <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{inv.id}</td>
+                        <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{inv.table}</td>
+                        <td style={{ padding: '14px 12px', color: '#475569', fontSize: '13px' }}>
+                          {inv.items.map(i => `${i.product.name} (x${i.quantity})`).join(', ')}
+                        </td>
+                        <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '15px' }}>{inv.totalAmount.toLocaleString('vi-VN')} đ</td>
+                        <td style={{ padding: '14px 12px' }}><span style={{ background: '#DBEAFE', color: '#1E40AF', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{inv.paymentMethod}</span></td>
+                        <td style={{ padding: '14px 12px', color: '#64748B', fontSize: '13px' }}>{inv.timestamp}</td>
+                      </tr>
+                    ))
+                  )}
+                </tbody>
+              </table>
             </div>
-            <button onClick={() => setShowWithdrawCashModal(true)} style={{ width: '100%', padding: '12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '14px' }}>
-              Rút Bớt Két Tiền Mặt Sang Két An Toàn
-            </button>
           </div>
 
-          <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-            <h3 style={{ marginTop: 0, color: '#D97706', fontWeight: 'bold', fontSize: '18px' }}>Soi Trạm Chế Biến KDS & Chi Phí Nhân Công</h3>
-            <div style={{ margin: '16px 0' }}>
-              <div style={{ fontSize: '14px', color: '#0F172A', marginBottom: '8px' }}>Tốc độ chế biến trung bình: <strong style={{ color: '#059669' }}>6.2 phút/món (Đạt SLA)</strong></div>
-              <div style={{ marginBottom: '12px' }}>
-                <label style={{ fontSize: '13px', color: '#475569', display: 'block', marginBottom: '4px' }}>Tỷ Lệ Chi Phí Nhân Công Realtime (Labor Cost %): <strong style={{ color: '#2563EB' }}>{laborCostPercent}%</strong></label>
-                <input type="range" min="10" max="35" step="0.5" value={laborCostPercent} onChange={(e) => setLaborCostPercent(Number(e.target.value))} style={{ width: '100%' }} />
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+            <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+              <h3 style={{ marginTop: 0, color: '#2563EB', fontWeight: 'bold', fontSize: '18px' }}>Soi Ca Thu Ngân & Tiền Mặt Két Quầy</h3>
+              <div style={{ margin: '16px 0' }}>
+                <div style={{ fontSize: '13px', color: '#475569' }}>Tiền mặt hiện tại trong két:</div>
+                <div style={{ fontSize: '28px', fontWeight: 'bold', color: '#059669', margin: '4px 0' }}>
+                  {cashInDrawer.toLocaleString('vi-VN')}đ
+                </div>
               </div>
+              <button onClick={handleWithdrawCash} style={{ width: '100%', padding: '12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '14px' }}>
+                Rút Bớt Két Tiền Mặt Sang Két An Toàn
+              </button>
             </div>
-            <button onClick={() => alert('Đã phát chuông cảnh báo KDS đến các trạm chế biến bếp!')} style={{ width: '100%', padding: '12px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '14px' }}>
-              Phát Cảnh Báo Đẩy Nhanh Chế Biến KDS
-            </button>
+
+            <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+              <h3 style={{ marginTop: 0, color: '#D97706', fontWeight: 'bold', fontSize: '18px' }}>Soi Trạm Chế Biến KDS & Chi Phí Nhân Công</h3>
+              <div style={{ margin: '16px 0' }}>
+                <div style={{ fontSize: '14px', color: '#0F172A', marginBottom: '8px' }}>Tốc độ chế biến trung bình: <strong style={{ color: '#059669' }}>6.2 phút/món (Đạt SLA)</strong></div>
+                <div style={{ marginBottom: '12px' }}>
+                  <label style={{ fontSize: '13px', color: '#475569', display: 'block', marginBottom: '4px' }}>Tỷ Lệ Chi Phí Nhân Công Realtime (Labor Cost %): <strong style={{ color: '#2563EB' }}>{laborCostPercent}%</strong></label>
+                  <input type="range" min="10" max="35" step="0.5" value={laborCostPercent} onChange={(e) => setLaborCostPercent(Number(e.target.value))} style={{ width: '100%' }} />
+                </div>
+              </div>
+              <button onClick={() => alert('Đã phát chuông cảnh báo KDS đến các trạm chế biến bếp!')} style={{ width: '100%', padding: '12px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '14px' }}>
+                Phát Cảnh Báo Đẩy Nhanh Chế Biến KDS
+              </button>
+            </div>
           </div>
         </div>
       )}
@@ -330,9 +392,7 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
       {activeTab === 'manager-eod' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Checklist Đóng Cửa Quán Cuối Ngày (EOD Closure Checklist)</h2>
-          <p style={{ color: '#475569', fontSize: '14px', marginBottom: '20px' }}>Quản lý chi nhánh bắt buộc tích xác nhận hoàn tất 4 bước tiêu chuẩn trước khi khóa cửa chi nhánh.</p>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '24px' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '24px', marginTop: '16px' }}>
             <label style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '14px', borderRadius: '6px', border: '1px solid #E2E8F0', cursor: 'pointer' }}>
               <input type="checkbox" checked={eodChecked.cashReconciled} onChange={(e) => setEodChecked({ ...eodChecked, cashReconciled: e.target.checked })} style={{ width: '20px', height: '20px' }} />
               <span>1. Đã kiểm đếm két tiền mặt thực tế và đối soát chênh lệch ca thu ngân thành công.</span>
@@ -341,16 +401,6 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
             <label style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '14px', borderRadius: '6px', border: '1px solid #E2E8F0', cursor: 'pointer' }}>
               <input type="checkbox" checked={eodChecked.stockLocked} onChange={(e) => setEodChecked({ ...eodChecked, stockLocked: e.target.checked })} style={{ width: '20px', height: '20px' }} />
               <span>2. Đã chốt sổ tồn kho nguyên liệu cuối ngày và khóa tủ lạnh bảo quản nguyên liệu tươi.</span>
-            </label>
-
-            <label style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '14px', borderRadius: '6px', border: '1px solid #E2E8F0', cursor: 'pointer' }}>
-              <input type="checkbox" checked={eodChecked.equipmentOff} onChange={(e) => setEodChecked({ ...eodChecked, equipmentOff: e.target.checked })} style={{ width: '20px', height: '20px' }} />
-              <span>3. Đã tắt toàn bộ thiết bị điện high-wattage (Máy pha cà phê, Lò nướng, Điều hòa trung tâm).</span>
-            </label>
-
-            <label style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '14px', borderRadius: '6px', border: '1px solid #E2E8F0', cursor: 'pointer' }}>
-              <input type="checkbox" checked={eodChecked.kdsCleared} onChange={(e) => setEodChecked({ ...eodChecked, kdsCleared: e.target.checked })} style={{ width: '20px', height: '20px' }} />
-              <span>4. Màn hình KDS Bếp đã xóa sạch toàn bộ hàng đợi order và lưu log lịch sử chế biến.</span>
             </label>
           </div>
 
@@ -366,7 +416,6 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Sổ Ghi Nhận Sự Cố & Khiếu Nại Khách Hàng</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Lưu vết nhật ký xử lý phản hồi dịch vụ tại chi nhánh để phục vụ đánh giá chất lượng phục vụ.</p>
             </div>
             <button onClick={() => setShowAddIncidentModal(true)} style={{ padding: '10px 18px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>+ GHI NHẬN SỰ CỐ MỚI</button>
           </div>
@@ -378,18 +427,14 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mã Sự Cố</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Khách Hàng / Bàn</th>
                   <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Nội Dung Phản Ánh</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Biện Pháp Xử Lý Khắc Phục</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Người Xử Lý</th>
                 </tr>
               </thead>
               <tbody>
                 {incidents.map((inc) => (
                   <tr key={inc.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
                     <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{inc.id}</td>
-                    <td style={{ padding: '14px 12px', color: '#0F172A', fontWeight: 'bold' }}>{inc.customer}</td>
-                    <td style={{ padding: '14px 12px', color: '#DC2626' }}>{inc.issue}</td>
-                    <td style={{ padding: '14px 12px', color: '#059669', fontWeight: 'bold' }}>{inc.resolution}</td>
-                    <td style={{ padding: '14px 12px', color: '#2563EB' }}>{inc.handledBy}</td>
+                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{inc.customer}</td>
+                    <td style={{ padding: '14px 12px', color: '#475569' }}>{inc.issue}</td>
                   </tr>
                 ))}
               </tbody>
@@ -398,119 +443,25 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
         </div>
       )}
 
-      {/* EDIT STAFF WAGE MODAL */}
+      {/* EDIT STAFF MODAL */}
       {editStaffModal && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '500px', width: '100%' }}>
-            <h3 style={{ marginTop: 0, color: '#0F172A' }}>Chỉnh Sửa Hồ Sơ & Mức Lương Nhân Viên: {editStaffModal.fullName}</h3>
-            <p style={{ fontSize: '13px', color: '#475569', marginBottom: '16px' }}>Chi nhánh: <strong>{editStaffModal.branch}</strong> | Chức danh: <strong>{editStaffModal.role}</strong></p>
-            <form onSubmit={handleSaveStaffWage}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '12px' }}>
-                <div>
-                  <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Họ và Tên:</label>
-                  <input type="text" value={editStaffModal.fullName} onChange={(e) => setEditStaffModal({ ...editStaffModal, fullName: e.target.value })} style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
-                </div>
-                <div>
-                  <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Số Điện Thoại:</label>
-                  <input type="text" value={editStaffModal.phone} onChange={(e) => setEditStaffModal({ ...editStaffModal, phone: e.target.value })} style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
-                </div>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '480px', width: '100%' }}>
+            <h3 style={{ margin: '0 0 16px 0', color: '#0F172A', fontSize: '18px', fontWeight: 'bold' }}>Chỉnh Sửa Mức Lương Nhân Sự - {editStaffModal.fullName}</h3>
+            <form onSubmit={handleUpdateStaffHourlyRate}>
+              <div style={{ marginBottom: '12px' }}>
+                <label style={{ display: 'block', fontSize: '12px', fontWeight: 'bold', color: '#0F172A', marginBottom: '4px' }}>Mức Lương / Giờ (VNĐ):</label>
+                <input type="number" value={editStaffModal.hourlyRate} onChange={(e) => setEditStaffModal({ ...editStaffModal, hourlyRate: Number(e.target.value) })} style={{ width: '100%', padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px' }} />
               </div>
-              <div style={{ marginBottom: '16px', background: '#FEF3C7', padding: '12px', borderRadius: '6px', border: '1px solid #FDE68A' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#92400E', fontWeight: 'bold' }}>Mức Lương Theo Giờ (đ/giờ):</label>
-                <input type="number" required value={editStaffModal.hourlyRate} onChange={(e) => setEditStaffModal({ ...editStaffModal, hourlyRate: Number(e.target.value) })} style={{ width: '100%', padding: '10px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontSize: '16px', fontWeight: 'bold' }} />
-              </div>
-              <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
-                <button type="button" onClick={() => setEditStaffModal(null)} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Hủy</button>
-                <button type="submit" style={{ padding: '8px 16px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Lưu Mức Lương Mới</button>
+              <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end', marginTop: '20px' }}>
+                <button type="button" onClick={() => setEditStaffModal(null)} style={{ padding: '8px 16px', background: '#F1F5F9', border: '1px solid #CBD5E1', borderRadius: '6px', fontWeight: 'bold' }}>Hủy</button>
+                <button type="submit" style={{ padding: '8px 16px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold' }}>Lưu Mức Lương</button>
               </div>
             </form>
           </div>
         </div>
       )}
 
-      {/* SHIFT IN/OUT DETAIL MODAL */}
-      {selectedStaffShifts && (
-        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '650px', width: '100%', maxHeight: '85vh', overflowY: 'auto' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', borderBottom: '1px solid #E2E8F0', paddingBottom: '12px' }}>
-              <div>
-                <h3 style={{ margin: 0, fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>Nhật Ký Giờ Chấm Công IN/OUT: {selectedStaffShifts.staff.fullName}</h3>
-                <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Chi nhánh: {selectedStaffShifts.staff.branch} | Lương/Giờ: <strong style={{ color: '#059669' }}>{selectedStaffShifts.staff.hourlyRate.toLocaleString('vi-VN')}đ/h</strong></p>
-              </div>
-              <button onClick={() => setSelectedStaffShifts(null)} style={{ padding: '6px 12px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Đóng</button>
-            </div>
-
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-              <thead>
-                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
-                  <th style={{ padding: '10px', color: '#0F172A', fontWeight: 'bold' }}>Ngày</th>
-                  <th style={{ padding: '10px', color: '#0F172A', fontWeight: 'bold' }}>Giờ Vào (IN)</th>
-                  <th style={{ padding: '10px', color: '#0F172A', fontWeight: 'bold' }}>Giờ Ra (OUT)</th>
-                  <th style={{ padding: '10px', color: '#0F172A', fontWeight: 'bold' }}>Số Giờ Làm</th>
-                  <th style={{ padding: '10px', color: '#0F172A', fontWeight: 'bold' }}>Lương Ngày (Giờ x Lương/h)</th>
-                </tr>
-              </thead>
-              <tbody>
-                {selectedStaffShifts.shifts.map((s, idx) => (
-                  <tr key={idx} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                    <td style={{ padding: '10px', fontWeight: 'bold', color: '#0F172A' }}>{s.date}</td>
-                    <td style={{ padding: '10px', color: '#059669', fontWeight: 'bold' }}>{s.clockIn}</td>
-                    <td style={{ padding: '10px', color: '#DC2626', fontWeight: 'bold' }}>{s.clockOut}</td>
-                    <td style={{ padding: '10px', fontWeight: 'bold', color: '#2563EB' }}>{s.hoursWorked} tiếng</td>
-                    <td style={{ padding: '10px', fontWeight: 'bold', color: '#059669' }}>{s.dailyWage.toLocaleString('vi-VN')}đ</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
-
-      {/* WITHDRAW CASH MODAL */}
-      {showWithdrawCashModal && (
-        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '450px', width: '100%' }}>
-            <h3 style={{ marginTop: 0, color: '#0F172A' }}>Rút Bớt Két Tiền Mặt Thu Ngân</h3>
-            <form onSubmit={handleWithdrawCash}>
-              <div style={{ marginBottom: '12px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Số Tiền Rút (đ):</label>
-                <input type="number" required value={withdrawAmount} onChange={(e) => setWithdrawAmount(Number(e.target.value))} style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
-              </div>
-              <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
-                <button type="button" onClick={() => setShowWithdrawCashModal(false)} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Hủy</button>
-                <button type="submit" style={{ padding: '8px 16px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Xác Nhận Rút Két</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
-
-      {/* ADD INCIDENT MODAL */}
-      {showAddIncidentModal && (
-        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '500px', width: '100%' }}>
-            <h3 style={{ marginTop: 0, color: '#0F172A' }}>Ghi Nhận Sự Cố Khiếu Nại Mới</h3>
-            <form onSubmit={handleAddIncident}>
-              <div style={{ marginBottom: '12px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Khách Hàng / Vị Trí Bàn:</label>
-                <input type="text" required value={newIncident.customer} onChange={(e) => setNewIncident({ ...newIncident, customer: e.target.value })} placeholder="Ví dụ: Anh Minh (Bàn 05)" style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
-              </div>
-              <div style={{ marginBottom: '12px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Nội Dung Phản Ánh:</label>
-                <textarea required value={newIncident.issue} onChange={(e) => setNewIncident({ ...newIncident, issue: e.target.value })} placeholder="Mô tả sự cố..." style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', minHeight: '60px' }} />
-              </div>
-              <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Biện Pháp Xử Lý Khắc Phục:</label>
-                <input type="text" required value={newIncident.resolution} onChange={(e) => setNewIncident({ ...newIncident, resolution: e.target.value })} placeholder="Phương án giải quyết..." style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
-              </div>
-              <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
-                <button type="button" onClick={() => setShowAddIncidentModal(false)} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Hủy</button>
-                <button type="submit" style={{ padding: '8px 16px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Lưu Sự Cố</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

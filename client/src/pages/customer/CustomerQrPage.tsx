@@ -51,7 +51,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
     { id: '6', name: 'Bánh Tiramisu Ý', price: 38000, category: 'Bánh Ngọt' },
   ];
 
-  // 2. REALTIME GROUP CART - NO HARDCODED MINH/LAN
+  // 2. REALTIME GROUP CART
   const [groupCart, setGroupCart] = useState<GroupCartItem[]>(() => {
     const saved = localStorage.getItem('fnb_group_cart');
     return saved ? JSON.parse(saved) : [];
@@ -125,9 +125,13 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Save pending bill to localStorage for Cashier POS to pick up & assign IoT Pager
+    // Save pending bill to localStorage
     const existingBills: PendingBill[] = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
-    localStorage.setItem('fnb_pending_bills', JSON.stringify([newBill, ...existingBills]));
+    const updatedBills = [newBill, ...existingBills];
+    localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedBills));
+
+    // Dispatch global data update event so Cashier POS picks it up in real time!
+    window.dispatchEvent(new Event('fnb_data_updated'));
 
     // Show modal bill confirmation
     setGeneratedBill(newBill);
@@ -154,7 +158,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
         </div>
       </div>
 
-      {/* 1. VIEW 1: QR MENU (NO BOTTOM CONFIRM BUTTON) */}
+      {/* 1. VIEW 1: QR MENU */}
       {(activeTab === 'customer-menu' || activeTab === 'customer') && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <div style={{ display: 'flex', gap: '8px', marginBottom: '20px', overflowX: 'auto', paddingBottom: '4px' }}>
