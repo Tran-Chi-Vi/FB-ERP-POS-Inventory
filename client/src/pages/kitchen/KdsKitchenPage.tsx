@@ -15,6 +15,7 @@ interface KdsTicket {
   id: string;
   orderNo: string;
   table: string;
+  pagerId: string; // Mã Thẻ Rung IoT
   station: 'Barista' | 'Kitchen';
   timeElapsedMinutes: number;
   slaStatus: 'Normal' | 'Warning' | 'Overdue';
@@ -54,8 +55,9 @@ interface SlaHistoryRecord {
 
 export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => {
   const [activeStation, setActiveStation] = useState<'Barista' | 'Kitchen'>('Barista');
+  const [activeIotAlert, setActiveIotAlert] = useState<{ pagerId: string; orderNo: string; table: string } | null>(null);
 
-  // 1. ACTIVE SLA PREP TICKETS - READ FROM LOCALSTORAGE OR DEFAULT
+  // 1. ACTIVE SLA PREP TICKETS WITH IOT PAGER ID
   const [tickets, setTickets] = useState<KdsTicket[]>(() => {
     const saved = localStorage.getItem('fnb_kds_tickets');
     return saved ? JSON.parse(saved) : [
@@ -63,34 +65,25 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         id: 'TK-101',
         orderNo: 'HD-9921',
         table: 'Bàn 04',
+        pagerId: 'PAGER-05',
         station: 'Barista',
         timeElapsedMinutes: 14,
         slaStatus: 'Overdue',
         items: [
           { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', quantity: 2, note: 'Nhiều đá, 100% đường' },
-          { id: '2', name: 'Trà Đào Cam Sả Tươi', quantity: 1, note: '50% đường, 50% đá, Topping Trân Châu' },
+          { id: '2', name: 'Trà Đào Cam Sả Tươi', quantity: 1, note: '50% đường, 50% đá' },
         ]
       },
       {
         id: 'TK-102',
         orderNo: 'HD-9924',
         table: 'Bàn 01',
+        pagerId: 'PAGER-02',
         station: 'Barista',
         timeElapsedMinutes: 8,
         slaStatus: 'Warning',
         items: [
           { id: '3', name: 'Trà Đào Cam Sả Tươi', quantity: 3, note: 'Ít đường, 100% đá' },
-        ]
-      },
-      {
-        id: 'TK-103',
-        orderNo: 'HD-9928',
-        table: 'Bàn 03',
-        station: 'Kitchen',
-        timeElapsedMinutes: 4,
-        slaStatus: 'Normal',
-        items: [
-          { id: '4', name: 'Bánh Croissant Bơ Bơ', quantity: 2, note: 'Nướng nóng hổi' },
         ]
       }
     ];
@@ -104,7 +97,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
   const [batchList] = useState<BatchItem[]>([
     { dishName: 'Trà Đào Cam Sả Tươi', totalQuantity: 4, unit: 'Ly', tables: ['Bàn 04 (x1)', 'Bàn 01 (x3)'] },
     { dishName: 'Cà Phê Sữa Đá Sài Gòn', totalQuantity: 2, unit: 'Ly', tables: ['Bàn 04 (x2)'] },
-    { dishName: 'Bánh Croissant Bơ', totalQuantity: 2, unit: 'Cái', tables: ['Bàn 03 (x2)'] },
   ]);
 
   // 3. 86-LIST MATRIX
@@ -112,7 +104,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     { id: '86-1', name: 'Cà Phê Sữa Đá Sài Gòn', category: 'Cà Phê', is86Locked: false },
     { id: '86-2', name: 'Trà Đào Cam Sả Tươi', category: 'Trà & Trà Sữa', is86Locked: false },
     { id: '86-3', name: 'Bánh Tiramisu Ý', category: 'Bánh Ngọt', is86Locked: true },
-    { id: '86-4', name: 'Sinh Tố Bơ Nếp', category: 'Sinh Tố', is86Locked: true },
   ]);
 
   // 4. BOM RECIPE GUIDES
@@ -120,49 +111,38 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     {
       id: 'REC-1',
       name: 'Cà Phê Sữa Đá Sài Gòn',
-      ingredients: [
-        'Hạt Cà Phê Espresso: 18g (Xay mịn mức 2)',
-        'Sữa Đặc Ngôi Sao: 30ml',
-        'Đá Viên Tinh Khiết: 150g'
-      ],
-      prepSteps: [
-        'Bước 1: Nén lực 15kg vào tay pha Portafilter',
-        'Bước 2: Chiết xuất 30ml cốt Espresso trong 25 giây',
-        'Bước 3: Khuấy đều với sữa đặc, thêm đá và ra món'
-      ],
-      standardTempPressure: 'Nhiệt độ pha: 92°C | Áp suất: 9 Bar'
-    },
-    {
-      id: 'REC-2',
-      name: 'Trà Đào Cam Sả Tươi',
-      ingredients: [
-        'Trà Sả Ủ Nóng: 120ml',
-        'Syrup Đào Monin: 20ml',
-        'Nước Cốt Cam Tươi: 15ml',
-        'Đào Miếng Giòn: 2 Miếng'
-      ],
-      prepSteps: [
-        'Bước 1: Lấy 120ml cốt trà sả ấm vào bình Shaker',
-        'Bước 2: Thêm 20ml syrup đào + 15ml cốt cam',
-        'Bước 3: Lắc mạnh 10 nhịp với đá viên và trang trí đào miếng'
-      ],
-      standardTempPressure: 'Nhiệt độ trà ủ: 85°C | Thời gian ủ: 10 phút'
+      ingredients: ['Hạt Cà Phê Espresso: 18g', 'Sữa Đặc: 30ml', 'Đá Viên: 150g'],
+      prepSteps: ['Bước 1: Nén lực 15kg', 'Bước 2: Chiết xuất 30ml cốt Espresso 25s', 'Bước 3: Khuấy đều với sữa đặc'],
+      standardTempPressure: 'Nhiệt độ: 92°C | Áp suất: 9 Bar'
     }
   ]);
 
   // 5. SLA HISTORY LOGS
   const [slaHistory] = useState<SlaHistoryRecord[]>([
-    { ticketId: 'TK-099', orderNo: 'HD-9915', table: 'Bàn 02', station: 'Trạm Barista', slaMinutes: 5.2, completedTime: '20:45:10' },
-    { ticketId: 'TK-098', orderNo: 'HD-9910', table: 'Bàn 03', station: 'Trạm Bếp Nóng', slaMinutes: 6.8, completedTime: '20:30:15' },
-    { ticketId: 'TK-097', orderNo: 'HD-9908', table: 'VIP 01', station: 'Trạm Barista', slaMinutes: 4.5, completedTime: '20:15:00' },
+    { ticketId: 'TK-099', orderNo: 'HD-9915', table: 'Bàn 02', station: 'Trạm Barista', slaMinutes: 5.2, completedTime: '20:45:10' }
   ]);
 
   // Handlers
-  const handleBumpTicket = (ticketId: string) => {
-    const updated = tickets.filter(t => t.id !== ticketId);
+  const handleBumpAndTriggerIotPager = (ticket: KdsTicket) => {
+    const updated = tickets.filter(t => t.id !== ticket.id);
     setTickets(updated);
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(updated));
-    alert(`XÁC NHẬN HOÀN TẤT: Vé ${ticketId} đã chế biến xong và gửi tín hiệu báo Phục Vụ trả món ra bàn!`);
+
+    // Push ready notification for Staff Runner
+    const runnerItems = JSON.parse(localStorage.getItem('fnb_runner_queue') || '[]');
+    const newRunnerItem = {
+      id: `RUN-${Math.floor(100 + Math.random() * 900)}`,
+      orderNo: ticket.orderNo,
+      table: ticket.table,
+      pagerId: ticket.pagerId,
+      itemNames: ticket.items.map(i => `${i.name} (x${i.quantity})`).join(', '),
+      station: ticket.station,
+      timeReady: 'Vừa xong'
+    };
+    localStorage.setItem('fnb_runner_queue', JSON.stringify([newRunnerItem, ...runnerItems]));
+
+    // Trigger IoT Pager alert animation modal
+    setActiveIotAlert({ pagerId: ticket.pagerId, orderNo: ticket.orderNo, table: ticket.table });
   };
 
   const handleTransferStation = (ticketId: string) => {
@@ -187,13 +167,13 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
-      {/* 1. VIEW 1: KDS ACTIVE TICKETS SCREEN */}
+      {/* 1. VIEW 1: KDS ACTIVE TICKETS SCREEN WITH IOT PAGER BUMP */}
       {(activeTab === 'kds-tickets' || activeTab === 'kitchen') && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
-              <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS Realtime (Kitchen Display System)</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Chỉ nhận vé chế biến SAU KHU THU NGÂN XÁC NHẬN THANH TOÁN | Đếm ngược SLA theo số Mã Bill.</p>
+              <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS & Kích Hoạt Thẻ Rung IoT</h2>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Bếp chế biến xong bấm BUMP để kích hoạt Thẻ Rung IoT phát chuông kêu Beep Beep báo khách lên quầy nhận món.</p>
             </div>
             <div style={{ display: 'flex', gap: '8px', background: '#F1F5F9', padding: '4px', borderRadius: '8px' }}>
               <button
@@ -249,24 +229,12 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', borderBottom: '1px solid #E2E8F0', paddingBottom: '10px' }}>
                     <div>
                       <h3 style={{ margin: 0, fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>{t.table}</h3>
-                      <span style={{ fontSize: '12px', color: '#64748B' }}>Vé: {t.id} | Mã Bill: {t.orderNo}</span>
+                      <span style={{ fontSize: '12px', color: '#64748B' }}>Vé: {t.id} | Hóa đơn: {t.orderNo}</span>
                     </div>
                     <div>
-                      {t.slaStatus === 'Overdue' && (
-                        <span style={{ background: '#FEE2E2', color: '#991B1B', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>
-                          TRỄ SLA ({t.timeElapsedMinutes} phút)
-                        </span>
-                      )}
-                      {t.slaStatus === 'Warning' && (
-                        <span style={{ background: '#FEF3C7', color: '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>
-                          CẢNH BÁO SLA ({t.timeElapsedMinutes} phút)
-                        </span>
-                      )}
-                      {t.slaStatus === 'Normal' && (
-                        <span style={{ background: '#DCFCE7', color: '#166534', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>
-                          SLA ({t.timeElapsedMinutes} phút)
-                        </span>
-                      )}
+                      <span style={{ background: '#FEF3C7', color: '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold', border: '1px solid #FDE68A' }}>
+                        IoT Pager: {t.pagerId || 'PAGER-05'}
+                      </span>
                     </div>
                   </div>
 
@@ -279,7 +247,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                         </div>
                         {item.note && (
                           <div style={{ fontSize: '12px', color: '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
-                            Trạng thái: {item.note}
+                            Ghi chú: {item.note}
                           </div>
                         )}
                       </div>
@@ -294,10 +262,10 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                       Chuyển Trạm
                     </button>
                     <button
-                      onClick={() => handleBumpTicket(t.id)}
+                      onClick={() => handleBumpAndTriggerIotPager(t)}
                       style={{ flex: 2, padding: '8px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
                     >
-                      HOÀN TẤT CHẾ BIẾN
+                      HOÀN TẤT & RUNG THẺ IOT
                     </button>
                   </div>
                 </div>
@@ -311,9 +279,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       {activeTab === 'kds-batch' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Gom Món Chế Biến Đồng Thời (Smart Batch View)</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Hệ thống tự động gom nhóm tổng số lượng món trùng nhau từ tất cả các bàn để đầu bếp pha chế 1 mẻ lớn tối ưu thời gian.</p>
-
-          <div style={{ width: '100%', overflowX: 'auto' }}>
+          <div style={{ width: '100%', overflowX: 'auto', marginTop: '16px' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
@@ -346,9 +312,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       {activeTab === 'kds-86' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Bảng Khóa Món Báo Hết Nguyên Liệu (86-List Toggle Matrix)</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Khi món bị khóa 86-List, Menu QR của khách và màn hình Thu Ngân POS sẽ tự động gắn cờ Hết Hàng trong vòng 3 giây.</p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px', marginTop: '16px' }}>
             {items86.map((item) => (
               <div key={item.id} style={{ border: '1px solid #E2E8F0', background: '#F8FAFC', borderRadius: '8px', padding: '16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
@@ -380,9 +344,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       {activeTab === 'kds-recipe' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Trình Xem Quy Trình & Định Lượng Chế Biến Chuẩn (BOM Recipe Guide)</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Hướng dẫn định lượng nguyên liệu chuẩn và các bước pha chế tiêu chuẩn cho Barista/Bếp.</p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px', marginTop: '16px' }}>
             {recipeGuides.map((rg) => (
               <div key={rg.id} style={{ border: '1px solid #E2E8F0', background: '#F8FAFC', borderRadius: '8px', padding: '20px' }}>
                 <h3 style={{ margin: '0 0 12px 0', color: '#2563EB', fontSize: '18px', fontWeight: 'bold' }}>{rg.name}</h3>
@@ -398,9 +360,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                     {rg.prepSteps.map((step, i) => <li key={i}>{step}</li>)}
                   </ul>
                 </div>
-                <div style={{ background: '#DBEAFE', color: '#1E40AF', padding: '8px 12px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold' }}>
-                  {rg.standardTempPressure}
-                </div>
               </div>
             ))}
           </div>
@@ -411,9 +370,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       {activeTab === 'kds-history' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Lịch Sử Vé Bếp Đã Chế Biến & Báo Cáo SLA</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Thời gian chế biến trung bình ca hiện tại: <strong style={{ color: '#059669' }}>6.0 phút/vé (Đạt chỉ tiêu SLA &lt; 8p)</strong></p>
-
-          <div style={{ width: '100%', overflowX: 'auto' }}>
+          <div style={{ width: '100%', overflowX: 'auto', marginTop: '16px' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse' }}>
               <thead>
                 <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
@@ -438,6 +395,31 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                 ))}
               </tbody>
             </table>
+          </div>
+        </div>
+      )}
+
+      {/* IOT PAGER ALERT SIGNAL ANIMATED MODAL */}
+      {activeIotAlert && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
+            <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px', animation: 'pulse 1s infinite' }}>
+              TÍN HIỆU REALTIME SIGNALR: THẺ RUNG IOT ĐANG RUNG & PHÁT CHUÔNG BEEP BEEP!
+            </div>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '22px', fontWeight: 'bold' }}>THẺ RUNG IOT: {activeIotAlert.pagerId}</h3>
+            <p style={{ fontSize: '14px', color: '#475569', margin: '0 0 16px 0' }}>Đơn hàng: <strong>{activeIotAlert.orderNo}</strong> | {activeIotAlert.table}</p>
+            
+            <div style={{ background: '#FEF3C7', padding: '14px', borderRadius: '8px', marginBottom: '20px', border: '1px solid #FDE68A', textAlign: 'left', fontSize: '13px', color: '#92400E' }}>
+              <strong>TRẠNG THÁI THẾ RUNG IOT:</strong>
+              <ul style={{ margin: '4px 0 0 0', paddingLeft: '20px' }}>
+                <li>Thẻ Rung {activeIotAlert.pagerId} tại quầy đang kêu chuông Beep Beep & nhấp nháy đèn LED.</li>
+                <li>Khách hàng tại {activeIotAlert.table} đang tiến tới Quầy Thu Ngân để trao thẻ rung và nhận nước/món.</li>
+              </ul>
+            </div>
+
+            <button onClick={() => setActiveIotAlert(null)} style={{ padding: '10px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
+              ĐÃ HIỂU & TẮT TÍN HIỆU CHUÔNG IOT
+            </button>
           </div>
         </div>
       )}
