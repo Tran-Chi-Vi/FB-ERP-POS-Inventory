@@ -41,7 +41,9 @@ interface PendingBill {
   table: string;
   items: { name: string; quantity: number; price: number }[];
   totalAmount: number;
-  status: 'PendingPayment' | 'Paid';
+  status: 'PendingPayment' | 'Paid' | 'Expired';
+  createdAt: number;
+  expiresAt: number;
   timestamp: string;
 }
 
@@ -85,9 +87,22 @@ export const App: React.FC = () => {
     return `${prefix}-${currentSeq}`;
   };
 
+  // 15-MINUTE EXPIRATION SWEEP FOR TEMPORARY PENDING BILLS
   const syncLocalState = () => {
     const savedPending = localStorage.getItem('fnb_pending_bills');
-    setPendingBills(savedPending ? JSON.parse(savedPending) : []);
+    if (savedPending) {
+      const parsedPending: PendingBill[] = JSON.parse(savedPending);
+      const now = Date.now();
+      // Remove any bill that has passed 15-minute expiration window without payment
+      const validPending = parsedPending.filter(b => b.expiresAt > now);
+      
+      if (validPending.length !== parsedPending.length) {
+        localStorage.setItem('fnb_pending_bills', JSON.stringify(validPending));
+      }
+      setPendingBills(validPending);
+    } else {
+      setPendingBills([]);
+    }
 
     const savedPaid = localStorage.getItem('fnb_paid_invoices');
     if (savedPaid) {
@@ -98,35 +113,38 @@ export const App: React.FC = () => {
   useEffect(() => {
     syncLocalState();
     window.addEventListener('fnb_data_updated', syncLocalState);
-    const interval = setInterval(syncLocalState, 1500);
+    const interval = setInterval(syncLocalState, 1000); // Check countdown every 1 second
     return () => {
       window.removeEventListener('fnb_data_updated', syncLocalState);
       clearInterval(interval);
     };
   }, [activeTab]);
 
-  // SMART PAGER & TABLE OCCUPANCY TRACKING FROM ACTIVE KDS TICKETS & PENDING BILLS
+  // DYNAMIC TABLE OCCUPANCY & HOLD STATUS MAP
   const activeKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-  const busyPagersMap: { [pagerId: string]: string } = {}; // pagerId -> table
-  const occupiedTablesSet = new Set<string>();
+  const busyPagersMap: { [pagerId: string]: string } = {};
+  const tableStatusMap: { [table: string]: { status: 'Free' | 'PendingHold' | 'Occupied'; expiresAt?: number; billCode?: string } } = {};
+
+  const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
+  tables.forEach(t => { tableStatusMap[t] = { status: 'Free' }; });
 
   activeKdsTickets.forEach((t: any) => {
     if (t.pagerId) busyPagersMap[t.pagerId] = t.table;
-    if (t.table) occupiedTablesSet.add(t.table);
-  });
-  pendingBills.forEach((p: any) => {
-    if (p.table) occupiedTablesSet.add(p.table);
+    if (t.table) tableStatusMap[t.table] = { status: 'Occupied' };
   });
 
-  // GET ALL AVAILABLE PAGERS THAT ARE NOT BUSY
+  pendingBills.forEach((p: PendingBill) => {
+    if (p.table && tableStatusMap[p.table]?.status !== 'Occupied') {
+      tableStatusMap[p.table] = { status: 'PendingHold', expiresAt: p.expiresAt, billCode: p.billCode };
+    }
+  });
+
   const allPagers = ['PAGER-01', 'PAGER-02', 'PAGER-03', 'PAGER-04', 'PAGER-05', 'PAGER-06', 'PAGER-07', 'PAGER-08', 'PAGER-09', 'PAGER-10'];
-  
+
   const getFirstAvailablePagerForTable = (targetTable: string) => {
-    // If targetTable already has an active ticket with a pager, reuse that pager for add-on!
     const activeTicket = activeKdsTickets.find((t: any) => t.table === targetTable);
     if (activeTicket && activeTicket.pagerId) return activeTicket.pagerId;
-    
-    // Otherwise pick first free pager not in busyPagersMap
+
     const free = allPagers.find(p => !busyPagersMap[p]);
     return free || 'PAGER-01';
   };
@@ -235,7 +253,6 @@ export const App: React.FC = () => {
     setCart((prev) => prev.filter((item) => item.product.id !== productId));
   };
 
-  // FIND IF PAGER ID / TABLE ALREADY HAS AN ACTIVE UNCOMPLETED PARENT INVOICE
   const parentInvoiceForPager = paidInvoices.find(inv => inv.pagerId === selectedPosPagerId || inv.table === selectedTable);
   const isAddOnOrder = !!parentInvoiceForPager && activeKdsTickets.some((t: any) => t.table === selectedTable);
 
@@ -244,6 +261,7 @@ export const App: React.FC = () => {
     setShowPaymentConfirmModal(true);
   };
 
+  // FINALIZE CASHIER POS CHECKOUT -> ONLY NOW ADDS TO OFFICIAL DATABASE & REVENUE HISTORY!
   const handleFinalizePosCheckout = () => {
     if (cart.length === 0) return;
     const totalAmount = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
@@ -261,7 +279,6 @@ export const App: React.FC = () => {
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // PUSH TO KDS: IF ACTIVE TICKET FOR PAGER EXISTS, MERGE NEW ITEMS INTO THE SINGLE UNIFIED CARD!
     let existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
     const existingTicketIndex = existingKdsTickets.findIndex((t: any) => t.pagerId === selectedPosPagerId || t.table === selectedTable);
 
@@ -313,13 +330,10 @@ export const App: React.FC = () => {
     setShowPaymentConfirmModal(false);
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    if (isAddOnOrder) {
-      alert(`ĐÃ THANH TOÁN HÓA ĐƠN BỔ SUNG ${invoiceId}!\n- Đã GỘP MÓN MỚI vào Thẻ Rung ${selectedPosPagerId} trên Màn hình Bếp KDS!\n- Bếp thấy cả món cũ và món mới trên 1 vé duy nhất.`);
-    } else {
-      alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN GỐC ${invoiceId}!\n- Trị giá: ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table}.\n- Đã gán ${selectedPosPagerId} và chuyển lệnh xuống Bếp!`);
-    }
+    alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN ${invoiceId}!\n- Đơn hàng đã chính thức được ghi nhận vào cơ sở dữ liệu doanh thu & lịch sử mua hàng.`);
   };
 
+  // FINALIZE PENDING QR BILL -> TRANSITION FROM PENDING HOLD TO OFFICIAL DATABASE!
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
     const assignedPager = selectedPagerMap[bill.billCode] || getFirstAvailablePagerForTable(bill.table);
     const parentInv = paidInvoices.find(inv => inv.pagerId === assignedPager || inv.table === bill.table);
@@ -383,20 +397,20 @@ export const App: React.FC = () => {
 
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(existingKdsTickets));
 
+    // REMOVE FROM PENDING TEMPORARY QUEUE
     const updatedPending = pendingBills.filter(p => p.billCode !== bill.billCode);
     setPendingBills(updatedPending);
     localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
 
+    // SAVE TO OFFICIAL PAID INVOICES DATABASE & REVENUE REPORT
     const updatedPaid = [newInvoice, ...paidInvoices];
     setPaidInvoices(updatedPaid);
     localStorage.setItem('fnb_paid_invoices', JSON.stringify(updatedPaid));
 
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Gán Thẻ Rung ${assignedPager} cho ${bill.table}.\n- Đã tự động GỘP MÓN MỚI vào vé Bếp KDS hiện tại!`);
+    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Đơn đã chuyển từ bảng tạm sang CƠ SỞ DỮ LIỆU CHÍNH & LỊCH SỬ MUA HÀNG.\n- Bàn ${bill.table} đã được xác nhận ĐÃ CÓ CHỦ và gán Thẻ Rung ${assignedPager}!`);
   };
-
-  const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
 
   if (!currentUser) {
     return <LoginPage onLoginSuccess={handleLoginSuccess} />;
@@ -416,15 +430,15 @@ export const App: React.FC = () => {
         {(activeTab.startsWith('staff-')) && <StaffRunnerPage activeTab={activeTab} />}
         {(activeTab.startsWith('kds-')) && <KdsKitchenPage activeTab={activeTab} />}
 
-        {/* CASHIER PENDING QR QUEUE WITH MATCHED DYNAMIC BUSY PAGER FILTERING */}
+        {/* CASHIER PENDING QR QUEUE WITH 15-MINUTE COUNTDOWN TIMER */}
         {activeTab === 'cashier-pending' && (
           <div className="card">
             <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Hàng Đợi Đơn QR Chờ Xác Nhận Thanh Toán & Gán Thẻ Rung IoT</h2>
-            <p style={{ color: '#475569', marginTop: '0.25rem', marginBottom: '1.25rem' }}>Danh sách các mã Bill do khách chốt qua QR tại bàn. Thu ngân xác nhận nhận tiền và gán Thẻ Rung trước khi gửi xuống Bếp.</p>
+            <p style={{ color: '#475569', marginTop: '0.25rem', marginBottom: '1.25rem' }}>Các đơn hàng lưu ở BẢNG TẠM. Hóa đơn chỉ được ghi nhận vào CƠ SỞ DỮ LIỆU & BÁO CÁO DOANH THU sau khi Thu ngân xác nhận nhận tiền.</p>
 
             {pendingBills.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
-                Hiện không có mã Bill QR nào đang chờ xác nhận thanh toán.
+                Hiện không có mã Bill QR nào đang giữ chỗ chờ thanh toán.
               </div>
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -432,11 +446,22 @@ export const App: React.FC = () => {
                   const defaultPager = selectedPagerMap[b.billCode] || getFirstAvailablePagerForTable(b.table);
                   const currentSelectedPager = selectedPagerMap[b.billCode] || defaultPager;
 
+                  // CALCULATE 15-MINUTE COUNTDOWN TIMER
+                  const secondsRemaining = Math.max(0, Math.floor((b.expiresAt - Date.now()) / 1000));
+                  const mins = Math.floor(secondsRemaining / 60);
+                  const secs = secondsRemaining % 60;
+                  const timeFormatted = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+
                   return (
                     <div key={b.billCode} style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                       <div>
-                        <span style={{ fontSize: '0.85rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
-                        <strong style={{ marginLeft: '8px', color: '#0F172A', fontSize: '1.05rem' }}>{b.table}</strong>
+                        <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                          <span style={{ fontSize: '0.85rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
+                          <strong style={{ color: '#0F172A', fontSize: '1.05rem' }}>{b.table}</strong>
+                          <span style={{ background: '#DC2626', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '0.75rem', fontWeight: 'bold' }}>
+                            ⏳ Giữ bàn: {timeFormatted} còn lại (Tự hủy sau 15p)
+                          </span>
+                        </div>
                         <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
                           Món ăn: {b.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}
                         </div>
@@ -465,7 +490,7 @@ export const App: React.FC = () => {
                           onClick={() => handlePayPendingBillWithIotPager(b)}
                           style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.9rem' }}
                         >
-                          Xác Nhận Đã Thanh Toán & Gán Thẻ Gửi Bếp
+                          Xác Nhận Đã Thanh Toán & Lưu CSDL Gửi Bếp
                         </button>
                       </div>
                     </div>
@@ -492,17 +517,30 @@ export const App: React.FC = () => {
             </div>
 
             <div>
-              {/* SƠ ĐỒ BÀN PHỤC VỤ WITH TABLE STATUS BADGES & CLEAR ACTION */}
+              {/* SƠ ĐỒ BÀN PHỤC VỤ SHOWING FREE, PENDING HOLD (15M), AND OCCUPIED */}
               <div className="card" style={{ marginBottom: '1rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
-                  <h3 style={{ margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ (Trạng Thái Trống & Đang Có Khách)</h3>
-                  <span style={{ fontSize: '12px', color: '#64748B' }}>Đã bôi xám các bàn đang có khách</span>
+                  <h3 style={{ margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Sơ Đồ Bàn Phục Vụ (Trạng Thái Trống, Giữ Chỗ & Đã Có Chủ)</h3>
+                  <span style={{ fontSize: '12px', color: '#64748B' }}>Đã phân loại thời gian giữ bàn 15 phút</span>
                 </div>
 
                 <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '1rem' }}>
                   {tables.map((t) => {
-                    const isOccupied = occupiedTablesSet.has(t);
+                    const st = tableStatusMap[t]?.status || 'Free';
                     const isSelected = selectedTable === t;
+
+                    const bg = isSelected ? '#059669' : st === 'Occupied' ? '#FEE2E2' : st === 'PendingHold' ? '#FEF3C7' : '#FFFFFF';
+                    const border = isSelected ? '1px solid #059669' : st === 'Occupied' ? '2px solid #EF4444' : st === 'PendingHold' ? '2px solid #F59E0B' : '1px solid #CBD5E1';
+                    const color = isSelected ? '#fff' : st === 'Occupied' ? '#991B1B' : st === 'PendingHold' ? '#92400E' : '#0F172A';
+
+                    let label = '🟢 Trống';
+                    if (st === 'Occupied') label = '🛑 Đã Có Chủ';
+                    if (st === 'PendingHold') {
+                      const secsRem = Math.max(0, Math.floor(((tableStatusMap[t].expiresAt || 0) - Date.now()) / 1000));
+                      const m = Math.floor(secsRem / 60);
+                      const s = secsRem % 60;
+                      label = `⏳ Giữ chỗ (${m}:${s < 10 ? '0' : ''}${s})`;
+                    }
 
                     return (
                       <button
@@ -510,9 +548,9 @@ export const App: React.FC = () => {
                         style={{
                           padding: '0.6rem 1rem',
                           borderRadius: '0.375rem',
-                          border: isOccupied ? '2px solid #EF4444' : '1px solid #CBD5E1',
-                          background: isSelected ? '#059669' : isOccupied ? '#FEE2E2' : '#FFFFFF',
-                          color: isSelected ? '#fff' : isOccupied ? '#991B1B' : '#0F172A',
+                          border,
+                          background: bg,
+                          color,
                           fontWeight: 'bold',
                           cursor: 'pointer',
                           display: 'flex',
@@ -523,20 +561,18 @@ export const App: React.FC = () => {
                         onClick={() => setSelectedTable(t)}
                       >
                         <span>{t}</span>
-                        <span style={{ fontSize: '10px', fontWeight: 'normal' }}>
-                          {isOccupied ? '🛑 Đang Có Khách' : '🟢 Trống'}
-                        </span>
+                        <span style={{ fontSize: '10px', fontWeight: 'normal' }}>{label}</span>
                       </button>
                     );
                   })}
                 </div>
 
                 {/* CLEAR / RELEASE TABLE ACTION BOX */}
-                {occupiedTablesSet.size > 0 && (
+                {Object.keys(tableStatusMap).some(t => tableStatusMap[t].status !== 'Free') && (
                   <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0', marginTop: '8px' }}>
                     <span style={{ fontSize: '12px', color: '#0F172A', fontWeight: 'bold', display: 'block', marginBottom: '6px' }}>Thao Tác Dọn Bàn & Giải Phóng Ghế Cho Khách Mới:</span>
                     <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                      {Array.from(occupiedTablesSet).map(tbl => (
+                      {tables.filter(t => tableStatusMap[t].status !== 'Free').map(tbl => (
                         <button
                           key={tbl}
                           onClick={() => handleReleaseTable(tbl)}

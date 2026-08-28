@@ -24,39 +24,60 @@ interface PendingBill {
   table: string;
   items: { name: string; quantity: number; price: number }[];
   totalAmount: number;
-  status: 'PendingPayment' | 'Paid';
+  status: 'PendingPayment' | 'Paid' | 'Expired';
+  createdAt: number;
+  expiresAt: number;
   timestamp: string;
 }
 
 export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => {
   const tablesList = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
 
-  // TRACK OCCUPIED TABLES FROM LOCALSTORAGE REALTIME
-  const [occupiedTables, setOccupiedTables] = useState<string[]>([]);
+  // TRACK TABLE OCCUPANCY & PENDING TABLE HOLDS
+  const [tableStatusMap, setTableStatusMap] = useState<{ [table: string]: { status: 'Free' | 'PendingHold' | 'Occupied'; expiresAt?: number } }>({});
   const [tableSession, setTableSession] = useState<string>('Bàn 01');
 
   const syncOccupiedTables = () => {
     const activeKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-    const pendingBills = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
-    const occupiedSet = new Set<string>();
+    let pendingBills: PendingBill[] = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
+    const now = Date.now();
 
-    activeKdsTickets.forEach((t: any) => { if (t.table) occupiedSet.add(t.table); });
-    pendingBills.forEach((p: any) => { if (p.table) occupiedSet.add(p.table); });
+    // 1. AUTO-SWEEP EXPIRED PENDING BILLS (> 15 MINUTES)
+    const validPending = pendingBills.filter(b => b.expiresAt > now);
+    if (validPending.length !== pendingBills.length) {
+      localStorage.setItem('fnb_pending_bills', JSON.stringify(validPending));
+      pendingBills = validPending;
+    }
 
-    const occupiedList = Array.from(occupiedSet);
-    setOccupiedTables(occupiedList);
+    // 2. COMPUTE TABLE STATUS MAP
+    const statusMap: { [table: string]: { status: 'Free' | 'PendingHold' | 'Occupied'; expiresAt?: number } } = {};
+    tablesList.forEach(t => { statusMap[t] = { status: 'Free' }; });
 
-    // Auto-select first FREE table if current table is occupied
-    if (occupiedList.includes(tableSession)) {
-      const free = tablesList.find(t => !occupiedList.includes(t));
-      if (free) setTableSession(free);
+    // Official occupied tables (Paid & sent to Kitchen KDS)
+    activeKdsTickets.forEach((t: any) => {
+      if (t.table) statusMap[t.table] = { status: 'Occupied' };
+    });
+
+    // Temporary table holds (Waiting in QR pending queue for <= 15 mins)
+    pendingBills.forEach((p: PendingBill) => {
+      if (p.table && statusMap[p.table]?.status !== 'Occupied') {
+        statusMap[p.table] = { status: 'PendingHold', expiresAt: p.expiresAt };
+      }
+    });
+
+    setTableStatusMap(statusMap);
+
+    // Auto-select first FREE table if current table is occupied or on hold
+    if (statusMap[tableSession]?.status !== 'Free') {
+      const freeTable = tablesList.find(t => statusMap[t]?.status === 'Free');
+      if (freeTable) setTableSession(freeTable);
     }
   };
 
   useEffect(() => {
     syncOccupiedTables();
     window.addEventListener('fnb_data_updated', syncOccupiedTables);
-    const interval = setInterval(syncOccupiedTables, 1500);
+    const interval = setInterval(syncOccupiedTables, 1000);
     return () => {
       window.removeEventListener('fnb_data_updated', syncOccupiedTables);
       clearInterval(interval);
@@ -145,6 +166,8 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
 
     const totalAmount = groupCart.reduce((sum, item) => sum + item.quantity * item.price, 0);
     const billCode = getNextGlobalBillCode('BILL');
+    const now = Date.now();
+    const expiresAt = now + 15 * 60 * 1000; // 15 MINUTES EXPIRATION COUNTDOWN
 
     const newBill: PendingBill = {
       billCode: billCode,
@@ -152,10 +175,12 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
       items: groupCart.map(g => ({ name: g.itemName, quantity: g.quantity, price: g.price })),
       totalAmount: totalAmount,
       status: 'PendingPayment',
+      createdAt: now,
+      expiresAt: expiresAt,
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Save pending bill to localStorage
+    // Save temporary pending bill to localStorage (NOT IN OFFICIAL REVENUE YET!)
     const existingBills: PendingBill[] = JSON.parse(localStorage.getItem('fnb_pending_bills') || '[]');
     const updatedBills = [newBill, ...existingBills];
     localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedBills));
@@ -177,7 +202,7 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
-      {/* HEADER BANNER WITH DYNAMIC TABLE STATUS & SWITCHER */}
+      {/* HEADER BANNER WITH REALTIME TABLE HOLD STATUS & SWITCHER */}
       <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '20px 24px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
         <div>
           <span style={{ fontSize: '11px', color: '#2563EB', fontWeight: 'bold', textTransform: 'uppercase' }}>GỌI MÓN MÃ QR TẠI BÀN</span>
@@ -187,10 +212,12 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
           <label style={{ fontSize: '12px', color: '#475569', fontWeight: 'bold' }}>Vị trí bàn:</label>
           <select value={tableSession} onChange={(e) => setTableSession(e.target.value)} style={{ padding: '6px 12px', borderRadius: '6px', border: '1px solid #CBD5E1', fontWeight: 'bold' }}>
             {tablesList.map(t => {
-              const isOccupied = occupiedTables.includes(t);
+              const st = tableStatusMap[t]?.status || 'Free';
+              const isBlocked = st !== 'Free';
+              const label = st === 'Occupied' ? '🛑 Đã có chủ' : st === 'PendingHold' ? '⏳ Giữ chỗ chờ thanh toán' : '🟢 Trống';
               return (
-                <option key={t} value={t} disabled={isOccupied}>
-                  {t} {isOccupied ? '(🛑 Đang có khách)' : '(🟢 Trống)'}
+                <option key={t} value={t} disabled={isBlocked}>
+                  {t} ({label})
                 </option>
               );
             })}
@@ -355,13 +382,13 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* BILL GENERATION MODAL FOR CUSTOMER */}
+      {/* BILL GENERATION MODAL FOR CUSTOMER WITH 15-MINUTE HOLD WARNING */}
       {generatedBill && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '28px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '2px solid #059669' }}>
             <div style={{ background: '#DCFCE7', color: '#166534', width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px auto', fontSize: '24px', fontWeight: 'bold' }}>✓</div>
-            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>ĐÃ ĐẶT ĐƠN THANH TOÁN TẠI QUẦY THU NGÂN</h3>
-            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Bàn phục vụ: <strong>{generatedBill.table}</strong> | Thời gian: {generatedBill.timestamp}</p>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>ĐÃ ĐẶT ĐƠN GIỮ BÀN TẠI QUẦY THU NGÂN</h3>
+            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Vị trí giữ chỗ: <strong>{generatedBill.table}</strong> (Giữ bàn tối đa 15 phút)</p>
             
             <div style={{ background: '#F8FAFC', border: '2px dashed #2563EB', padding: '16px', borderRadius: '8px', marginBottom: '16px' }}>
               <span style={{ fontSize: '12px', color: '#2563EB', fontWeight: 'bold' }}>MÃ BILL ĐƠN HÀNG CỦA BẠN:</span>
@@ -370,11 +397,12 @@ export const CustomerQrPage: React.FC<CustomerQrPageProps> = ({ activeTab }) => 
             </div>
 
             <div style={{ background: '#FEF3C7', padding: '12px', borderRadius: '8px', marginBottom: '20px', fontSize: '12px', color: '#92400E', textAlign: 'left', border: '1px solid #FDE68A' }}>
-              <strong>BƯỚC THANH TOÁN & GÁN THỂ RUNG IOT TẠI QUẦY:</strong>
+              <strong>LƯU Ý GIỮ CHỖ & THANH TOÁN TẠI QUẦY:</strong>
               <ol style={{ margin: '4px 0 0 0', paddingLeft: '20px' }}>
-                <li>Quý khách vui lòng đến quầy Thu Ngân đọc Mã Bill <strong>{generatedBill.billCode}</strong>.</li>
-                <li>Thu Ngân xác nhận thanh toán (Tiền mặt / VietQR) và <strong>gán Thẻ Rung IoT Nhận Món</strong>.</li>
-                <li>Đơn hàng sẽ chuyển xuống Bếp chế biến. Khi xong Thẻ Rung sẽ phát chuông báo quý khách lên nhận món!</li>
+                <li>Hệ thống <strong>giữ chỗ {generatedBill.table} trong vòng 15 phút</strong> cho đơn hàng này.</li>
+                <li>Quý khách vui lòng đến Thu Ngân đọc Mã Bill <strong>{generatedBill.billCode}</strong> để thanh toán.</li>
+                <li>Sau khi thanh toán thành công, đơn mới được lưu vào hệ thống chính và gửi lệnh xuống Bếp!</li>
+                <li>Nếu quá 15 phút không thanh toán, đơn sẽ tự động bị HỦY và giải phóng bàn cho khách khác.</li>
               </ol>
             </div>
 
