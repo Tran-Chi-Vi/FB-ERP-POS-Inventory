@@ -52,8 +52,11 @@ export const App: React.FC = () => {
   const [selectedTable, setSelectedTable] = useState<string | null>('Bàn 01');
   const [cart, setCart] = useState<CartItem[]>([]);
   
+  // SEQUENTIAL BILL ID COUNTER
+  const [nextInvoiceNum, setNextInvoiceNum] = useState<number>(1001);
+
   // CASHIER COUNTER ORDERING IOT PAGER ID SELECTION
-  const [selectedPosPagerId, setSelectedPosPagerId] = useState<string>('PAGER-05');
+  const [selectedPosPagerId, setSelectedPosPagerId] = useState<string>('PAGER-01');
   const [showPaymentConfirmModal, setShowPaymentConfirmModal] = useState<boolean>(false);
 
   // PENDING QR BILLS QUEUE FOR CASHIER TO VERIFY PAYMENT AND ASSIGN IOT PAGER ID
@@ -97,6 +100,35 @@ export const App: React.FC = () => {
       clearInterval(interval);
     };
   }, [activeTab]);
+
+  // SMART PAGER ALLOCATION: FIND FIRST AVAILABLE UNASSIGNED PAGER FOR TABLE
+  const activeKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+  
+  const getFirstAvailablePager = (targetTable: string) => {
+    // If targetTable already has an active ticket with a pager, reuse that pager!
+    const existingTableTicket = activeKdsTickets.find((t: any) => t.table === targetTable);
+    if (existingTableTicket && existingTableTicket.pagerId) {
+      return existingTableTicket.pagerId;
+    }
+    // Otherwise find first pager not in activeKdsTickets
+    const usedPagers = activeKdsTickets.map((t: any) => t.pagerId);
+    for (let i = 1; i <= 10; i++) {
+      const pId = `PAGER-0${i}`.slice(-8);
+      const fullId = `PAGER-${i < 10 ? '0' + i : i}`;
+      if (!usedPagers.includes(fullId)) {
+        return fullId;
+      }
+    }
+    return 'PAGER-01';
+  };
+
+  // Update selectedPosPagerId when selectedTable changes
+  useEffect(() => {
+    if (selectedTable) {
+      const autoPager = getFirstAvailablePager(selectedTable);
+      setSelectedPosPagerId(autoPager);
+    }
+  }, [selectedTable]);
 
   const mainRef = useRef<HTMLDivElement>(null);
 
@@ -183,8 +215,8 @@ export const App: React.FC = () => {
     setCart((prev) => prev.filter((item) => item.product.id !== productId));
   };
 
-  // FIND IF PAGER ID ALREADY HAS AN ACTIVE UNCOMPLETED PARENT INVOICE
-  const parentInvoiceForPager = paidInvoices.find(inv => inv.pagerId === selectedPosPagerId);
+  // FIND IF PAGER ID / TABLE ALREADY HAS AN ACTIVE UNCOMPLETED PARENT INVOICE
+  const parentInvoiceForPager = paidInvoices.find(inv => inv.pagerId === selectedPosPagerId || inv.table === selectedTable);
   const isAddOnOrder = !!parentInvoiceForPager;
 
   const handleOpenPaymentConfirm = () => {
@@ -195,7 +227,8 @@ export const App: React.FC = () => {
   const handleFinalizePosCheckout = () => {
     if (cart.length === 0) return;
     const totalAmount = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
-    const invoiceId = `HD-${Math.floor(1000 + Math.random() * 9000)}`;
+    const invoiceId = `HD-${nextInvoiceNum}`;
+    setNextInvoiceNum(prev => prev + 1);
 
     const newInvoice: PaidInvoice = {
       id: invoiceId,
@@ -209,27 +242,51 @@ export const App: React.FC = () => {
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Send ticket to KDS Kitchen ONLY UPON EXPLICIT CASHIER CONFIRMATION!
-    const existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-    const newKdsTicket = {
-      id: `TK-${Math.floor(100 + Math.random() * 900)}`,
-      orderNo: invoiceId,
-      parentOrderNo: isAddOnOrder ? parentInvoiceForPager.id : undefined,
-      table: selectedTable || 'Bàn Thu Ngân',
-      pagerId: selectedPosPagerId,
-      station: 'Barista',
-      timeElapsedMinutes: 1,
-      slaStatus: 'Normal',
-      isAddOn: isAddOnOrder,
-      isAddOnNoticePending: isAddOnOrder, // Unique trigger flag cleared once Kitchen confirms!
-      items: cart.map(c => ({
-        id: c.product.id,
+    // PUSH TO KDS: IF ACTIVE TICKET FOR PAGER EXISTS, MERGE NEW ITEMS INTO THE SINGLE UNIFIED CARD!
+    let existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+    const existingTicketIndex = existingKdsTickets.findIndex((t: any) => t.pagerId === selectedPosPagerId || t.table === selectedTable);
+
+    if (existingTicketIndex !== -1) {
+      // MERGE INTO EXISTING ACTIVE TICKET CARD SO KITCHEN SEES OLD & NEW ITEMS TOGETHER!
+      const activeTicket = existingKdsTickets[existingTicketIndex];
+      const newItemsFormatted = cart.map(c => ({
+        id: `NEW-${c.product.id}-${Date.now()}`,
         name: c.product.name,
         quantity: c.quantity,
-        note: isAddOnOrder ? `🚨 ĐƠN BỔ SUNG (Bill ${invoiceId} - Mẹ: ${parentInvoiceForPager.id})` : `Thẻ Rung: ${selectedPosPagerId}`
-      }))
-    };
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...existingKdsTickets]));
+        note: `🚨 [MÓN MỚI BỔ SUNG] (Bill ${invoiceId})`
+      }));
+
+      existingKdsTickets[existingTicketIndex] = {
+        ...activeTicket,
+        orderNo: `${activeTicket.orderNo} + ${invoiceId}`,
+        isAddOn: true,
+        isAddOnNoticePending: true,
+        items: [...activeTicket.items, ...newItemsFormatted]
+      };
+    } else {
+      // CREATE NEW KDS TICKET CARD
+      const newKdsTicket = {
+        id: `TK-${Math.floor(100 + Math.random() * 900)}`,
+        orderNo: invoiceId,
+        parentOrderNo: isAddOnOrder ? parentInvoiceForPager.id : undefined,
+        table: selectedTable || 'Bàn Thu Ngân',
+        pagerId: selectedPosPagerId,
+        station: 'Barista',
+        timeElapsedMinutes: 1,
+        slaStatus: 'Normal',
+        isAddOn: isAddOnOrder,
+        isAddOnNoticePending: isAddOnOrder,
+        items: cart.map(c => ({
+          id: c.product.id,
+          name: c.product.name,
+          quantity: c.quantity,
+          note: isAddOnOrder ? `🚨 [MÓN MỚI BỔ SUNG] (Bill ${invoiceId})` : `Thẻ Rung: ${selectedPosPagerId}`
+        }))
+      };
+      existingKdsTickets = [newKdsTicket, ...existingKdsTickets];
+    }
+
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(existingKdsTickets));
 
     const updatedPaid = [newInvoice, ...paidInvoices];
     setPaidInvoices(updatedPaid);
@@ -239,12 +296,16 @@ export const App: React.FC = () => {
     setShowPaymentConfirmModal(false);
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`XÁC NHẬN THANH TOÁN & GỬI BẾP THÀNH CÔNG!\n- Hóa đơn: ${invoiceId}\n- Gán Thẻ Rung: ${selectedPosPagerId}\n- Tổng tiền: ${totalAmount.toLocaleString('vi-VN')} đ`);
+    if (isAddOnOrder) {
+      alert(`ĐÃ THANH TOÁN HÓA ĐƠN BỔ SUNG ${invoiceId}!\n- Đã GỘP MÓN MỚI vào Thẻ Rung ${selectedPosPagerId} trên Màn hình Bếp KDS!\n- Bếp thấy cả món cũ và món mới trên 1 vé duy nhất. Thẻ rung chỉ phát chuông 1 lần khi làm xong.`);
+    } else {
+      alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN GỐC ${invoiceId}!\n- Trị giá: ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table}.\n- Đã gán ${selectedPosPagerId} và chuyển lệnh xuống Bếp!`);
+    }
   };
 
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
-    const assignedPager = selectedPagerMap[bill.billCode] || 'PAGER-05';
-    const parentInv = paidInvoices.find(inv => inv.pagerId === assignedPager);
+    const assignedPager = selectedPagerMap[bill.billCode] || getFirstAvailablePager(bill.table);
+    const parentInv = paidInvoices.find(inv => inv.pagerId === assignedPager || inv.table === bill.table);
     const isPagerBusy = !!parentInv;
 
     const newInvoice: PaidInvoice = {
@@ -262,26 +323,49 @@ export const App: React.FC = () => {
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    const existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-    const newKdsTicket = {
-      id: `TK-${Math.floor(100 + Math.random() * 900)}`,
-      orderNo: bill.billCode,
-      parentOrderNo: isPagerBusy ? parentInv.id : undefined,
-      table: bill.table,
-      pagerId: assignedPager,
-      station: 'Barista',
-      timeElapsedMinutes: 1,
-      slaStatus: 'Normal',
-      isAddOn: isPagerBusy,
-      isAddOnNoticePending: isPagerBusy,
-      items: bill.items.map((b, idx) => ({
-        id: idx.toString(),
+    let existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
+    const existingTicketIndex = existingKdsTickets.findIndex((t: any) => t.pagerId === assignedPager || t.table === bill.table);
+
+    if (existingTicketIndex !== -1) {
+      // MERGE NEW QR ITEMS DIRECTLY INTO EXISTING ACTIVE CARD
+      const activeTicket = existingKdsTickets[existingTicketIndex];
+      const newItemsFormatted = bill.items.map((b, idx) => ({
+        id: `NEW-QR-${idx}-${Date.now()}`,
         name: b.name,
         quantity: b.quantity,
-        note: isPagerBusy ? `🚨 ĐƠN BỔ SUNG (Bill ${bill.billCode} - Mẹ: ${parentInv.id})` : `Thẻ Rung: ${assignedPager}`
-      }))
-    };
-    localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...existingKdsTickets]));
+        note: `🚨 [MÓN MỚI BỔ SUNG QR] (Bill ${bill.billCode})`
+      }));
+
+      existingKdsTickets[existingTicketIndex] = {
+        ...activeTicket,
+        orderNo: `${activeTicket.orderNo} + ${bill.billCode}`,
+        isAddOn: true,
+        isAddOnNoticePending: true,
+        items: [...activeTicket.items, ...newItemsFormatted]
+      };
+    } else {
+      const newKdsTicket = {
+        id: `TK-${Math.floor(100 + Math.random() * 900)}`,
+        orderNo: bill.billCode,
+        parentOrderNo: isPagerBusy ? parentInv.id : undefined,
+        table: bill.table,
+        pagerId: assignedPager,
+        station: 'Barista',
+        timeElapsedMinutes: 1,
+        slaStatus: 'Normal',
+        isAddOn: isPagerBusy,
+        isAddOnNoticePending: isPagerBusy,
+        items: bill.items.map((b, idx) => ({
+          id: idx.toString(),
+          name: b.name,
+          quantity: b.quantity,
+          note: isPagerBusy ? `🚨 [MÓN MỚI BỔ SUNG QR] (Bill ${bill.billCode})` : `Thẻ Rung: ${assignedPager}`
+        }))
+      };
+      existingKdsTickets = [newKdsTicket, ...existingKdsTickets];
+    }
+
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(existingKdsTickets));
 
     const updatedPending = pendingBills.filter(p => p.billCode !== bill.billCode);
     setPendingBills(updatedPending);
@@ -293,7 +377,7 @@ export const App: React.FC = () => {
 
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Gán Thẻ Rung ${assignedPager} cho ${bill.table}.\n- Đã chuyển lệnh xuống Bếp!`);
+    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Gán Thẻ Rung ${assignedPager} cho ${bill.table}.\n- Đã tự động GỘP MÓN MỚI vào vé Bếp KDS hiện tại!`);
   };
 
   const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
@@ -327,42 +411,45 @@ export const App: React.FC = () => {
               </div>
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {pendingBills.map((b) => (
-                  <div key={b.billCode} style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-                    <div>
-                      <span style={{ fontSize: '0.85rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
-                      <strong style={{ marginLeft: '8px', color: '#0F172A', fontSize: '1.05rem' }}>{b.table}</strong>
-                      <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
-                        Món ăn: {b.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}
-                      </div>
-                    </div>
-                    
-                    <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+                {pendingBills.map((b) => {
+                  const defaultPager = selectedPagerMap[b.billCode] || getFirstAvailablePager(b.table);
+                  return (
+                    <div key={b.billCode} style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                       <div>
-                        <label style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#92400E', display: 'block', marginBottom: '2px' }}>Gán Thẻ Rung IoT Nhận Món:</label>
-                        <select
-                          value={selectedPagerMap[b.billCode] || 'PAGER-05'}
-                          onChange={(e) => setSelectedPagerMap({ ...selectedPagerMap, [b.billCode]: e.target.value })}
-                          style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.9rem' }}
-                        >
-                          <option value="PAGER-01">Thẻ Rung IoT #01</option>
-                          <option value="PAGER-02">Thẻ Rung IoT #02</option>
-                          <option value="PAGER-03">Thẻ Rung IoT #03</option>
-                          <option value="PAGER-04">Thẻ Rung IoT #04</option>
-                          <option value="PAGER-05">Thẻ Rung IoT #05</option>
-                          <option value="PAGER-06">Thẻ Rung IoT #06</option>
-                        </select>
+                        <span style={{ fontSize: '0.85rem', background: '#2563EB', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontWeight: 'bold' }}>{b.billCode}</span>
+                        <strong style={{ marginLeft: '8px', color: '#0F172A', fontSize: '1.05rem' }}>{b.table}</strong>
+                        <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
+                          Món ăn: {b.items.map(i => `${i.name} (x${i.quantity})`).join(', ')}
+                        </div>
                       </div>
-                      <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
-                      <button
-                        onClick={() => handlePayPendingBillWithIotPager(b)}
-                        style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.9rem' }}
-                      >
-                        Xác Nhận Đã Thanh Toán & Gán Thẻ Gửi Bếp
-                      </button>
+                      
+                      <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+                        <div>
+                          <label style={{ fontSize: '0.75rem', fontWeight: 'bold', color: '#92400E', display: 'block', marginBottom: '2px' }}>Gán Thẻ Rung IoT Nhận Món:</label>
+                          <select
+                            value={defaultPager}
+                            onChange={(e) => setSelectedPagerMap({ ...selectedPagerMap, [b.billCode]: e.target.value })}
+                            style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.9rem' }}
+                          >
+                            <option value="PAGER-01">Thẻ Rung IoT #01</option>
+                            <option value="PAGER-02">Thẻ Rung IoT #02</option>
+                            <option value="PAGER-03">Thẻ Rung IoT #03</option>
+                            <option value="PAGER-04">Thẻ Rung IoT #04</option>
+                            <option value="PAGER-05">Thẻ Rung IoT #05</option>
+                            <option value="PAGER-06">Thẻ Rung IoT #06</option>
+                          </select>
+                        </div>
+                        <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: '#059669' }}>{b.totalAmount.toLocaleString('vi-VN')} đ</span>
+                        <button
+                          onClick={() => handlePayPendingBillWithIotPager(b)}
+                          style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.9rem' }}
+                        >
+                          Xác Nhận Đã Thanh Toán & Gán Thẻ Gửi Bếp
+                        </button>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             )}
           </div>
@@ -463,7 +550,7 @@ export const App: React.FC = () => {
 
                     {isAddOnOrder && (
                       <div style={{ marginTop: '6px', fontSize: '0.75rem', color: '#DC2626', fontWeight: 'bold', background: '#FEE2E2', padding: '6px', borderRadius: '4px' }}>
-                        ⚠️ Thẻ Rung {selectedPosPagerId} đang hoạt động tại {parentInvoiceForPager.table}. Đơn mới này sẽ tự động liên kết Hóa đơn Mẹ <strong>{parentInvoiceForPager.id}</strong>!
+                        ⚠️ Thẻ Rung {selectedPosPagerId} đang hoạt động tại {parentInvoiceForPager.table}. Đơn mới này sẽ tự động GỘP MÓN MỚI vào vé Bếp KDS hiện tại!
                       </div>
                     )}
                   </div>
@@ -510,7 +597,7 @@ export const App: React.FC = () => {
 
               {isAddOnOrder && (
                 <div style={{ background: '#FEE2E2', border: '1px solid #EF4444', color: '#991B1B', padding: '10px 12px', borderRadius: '6px', fontSize: '13px', fontWeight: 'bold', marginBottom: '16px' }}>
-                  ⚠️ LƯU Ý THU NGÂN: Đây là ĐƠN GỘP BỔ SUNG MÓN vào Thẻ Rung {selectedPosPagerId}. Hóa đơn sẽ tự động liên kết Hóa đơn Mẹ {parentInvoiceForPager.id} và phát thông báo chuông tới Bếp!
+                  ⚠️ LƯU Ý THU NGÂN: Món mới sẽ được GỘP TRỰC TIẾP vào vé Bếp KDS của {selectedPosPagerId}. Bếp sẽ thấy cả món cũ & món mới trên 1 vé duy nhất!
                 </div>
               )}
 

@@ -124,10 +124,11 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     window.dispatchEvent(new Event('fnb_data_updated'));
   };
 
-  // 2. DYNAMIC SMART BATCH ALGORITHM (ITEMS WITH TOTAL QTY >= 2)
+  // 2. DYNAMIC SMART BATCH ALGORITHM: COMPUTE EXCLUSIVELY FROM UNCOMPLETED ACTIVE TICKETS!
   const computeSmartBatches = () => {
     const itemMap: { [dishName: string]: { totalQty: number; unit: string; tablesMap: { [tbl: string]: number } } } = {};
 
+    // Filter ONLY currently active, uncompleted tickets on KDS screen
     tickets.forEach(ticket => {
       ticket.items.forEach(item => {
         if (!itemMap[item.name]) {
@@ -139,6 +140,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       });
     });
 
+    // Lọc trùng lặp từ 2 món trở lên (>= 2)
     return Object.keys(itemMap)
       .filter(dishName => itemMap[dishName].totalQty >= 2)
       .map(dishName => {
@@ -247,7 +249,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Màn Hình Chế Biến KDS & Kích Hoạt Thẻ Rung IoT</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Chỉ hiển thị vé chế biến SAU KHU THU NGÂN XÁC NHẬN THANH TOÁN & GÁN THẺ RUNG.</p>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Mỗi Bàn / Thẻ Rung được hiển thị trên 1 Thẻ Đơn Hàng duy nhất (Món mới bổ sung tự động gộp vào thẻ này).</p>
             </div>
             <div style={{ display: 'flex', gap: '8px', background: '#F1F5F9', padding: '4px', borderRadius: '8px' }}>
               <button
@@ -283,7 +285,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '20px' }}>
             {filteredTickets.length === 0 ? (
               <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px', gridColumn: '1 / -1' }}>
                 Hiện chưa có vé chế biến nào (Vé chỉ xuất hiện sau khi Thu Ngân bấm xác nhận đã thanh toán tại quầy).
@@ -302,36 +304,47 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                 >
                   {t.isAddOn && (
                     <div style={{ background: '#DC2626', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
-                      🚨 ĐƠN GỘP BỔ SUNG MÓN (THẺ RUNG {t.pagerId})
+                      🚨 VÉ GỘP CÓ MÓN MỚI BỔ SUNG (THẺ RUNG {t.pagerId})
                     </div>
                   )}
 
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', borderBottom: '1px solid #E2E8F0', paddingBottom: '10px' }}>
                     <div>
                       <h3 style={{ margin: 0, fontSize: '18px', color: '#0F172A', fontWeight: 'bold' }}>{t.table}</h3>
-                      <span style={{ fontSize: '12px', color: '#64748B' }}>Vé: {t.id} | Hóa đơn: {t.orderNo}</span>
+                      <span style={{ fontSize: '12px', color: '#64748B' }}>Các Bill: {t.orderNo}</span>
                     </div>
                     <div>
                       <span style={{ background: '#FEF3C7', color: '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold', border: '1px solid #FDE68A' }}>
-                        Thẻ Rung: {t.pagerId || 'PAGER-05'}
+                        Thẻ Rung: {t.pagerId || 'PAGER-01'}
                       </span>
                     </div>
                   </div>
 
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '16px' }}>
-                    {t.items.map((item) => (
-                      <div key={item.id} style={{ background: '#F8FAFC', padding: '10px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', color: '#0F172A' }}>
-                          <span>{item.name}</span>
-                          <span style={{ color: '#2563EB', fontSize: '16px' }}>x{item.quantity}</span>
-                        </div>
-                        {item.note && (
-                          <div style={{ fontSize: '12px', color: item.note.includes('ĐƠN GỘP') ? '#DC2626' : '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
-                            Ghi chú: {item.note}
+                    {t.items.map((item) => {
+                      const isNewItem = item.note && item.note.includes('MÓN MỚI');
+                      return (
+                        <div
+                          key={item.id}
+                          style={{
+                            background: isNewItem ? '#FEE2E2' : '#F8FAFC',
+                            padding: '10px',
+                            borderRadius: '6px',
+                            border: isNewItem ? '1px solid #EF4444' : '1px solid #E2E8F0'
+                          }}
+                        >
+                          <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 'bold', color: isNewItem ? '#991B1B' : '#0F172A' }}>
+                            <span>{item.name}</span>
+                            <span style={{ color: isNewItem ? '#DC2626' : '#2563EB', fontSize: '16px' }}>x{item.quantity}</span>
                           </div>
-                        )}
-                      </div>
-                    ))}
+                          {item.note && (
+                            <div style={{ fontSize: '12px', color: isNewItem ? '#DC2626' : '#D97706', marginTop: '4px', fontWeight: 'bold' }}>
+                              Ghi chú: {item.note}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
 
                   <div style={{ display: 'flex', gap: '8px' }}>
@@ -345,7 +358,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                       onClick={() => handleBumpAndSaveToHistory(t)}
                       style={{ flex: 2, padding: '8px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '13px' }}
                     >
-                      HOÀN TẤT CHẾ BIẾN
+                      HOÀN TẤT CHẾ BIẾN (RUNG THẺ)
                     </button>
                   </div>
                 </div>
@@ -355,15 +368,15 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* 2. VIEW 2: DYNAMIC SMART BATCH COOKING MATRIX */}
+      {/* 2. VIEW 2: DYNAMIC SMART BATCH COOKING MATRIX (COMPUTED EXCLUSIVELY FROM ACTIVE TICKETS) */}
       {activeTab === 'kds-batch' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Gom Món Chế Biến Mẻ Lớn (Smart Batch View - Tối Thiểu 2 Món Lặp Nổi)</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Tự động quét tất cả các đơn chưa làm trong trạm, lọc ra các đồ uống/bánh trùng lặp từ <strong>2 món trở lên (≥ 2)</strong> để làm mẻ lớn.</p>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Tự động quét các đơn <strong>đang tồn đọng chưa làm</strong> trên màn hình KDS, lọc ra các đồ uống/bánh trùng lặp từ <strong>2 món trở lên (≥ 2)</strong> để làm mẻ lớn.</p>
 
           {smartBatches.length === 0 ? (
             <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
-              Hiện chưa có món nào trùng lặp từ 2 phần trở lên (≥ 2) trong danh sách các đơn chưa làm. Bếp pha chế theo vé đơn lẻ.
+              Hiện không có món nào trùng lặp từ 2 phần trở lên (≥ 2) trong các đơn đang chờ làm. Bếp pha chế theo vé đơn lẻ.
             </div>
           ) : (
             <div style={{ width: '100%', overflowX: 'auto' }}>
@@ -481,15 +494,15 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* ADD-ON ORDER AUDIO / VISUAL POPUP NOTIFICATION FOR KITCHEN (FIXED DISMISSAL) */}
+      {/* ADD-ON ORDER AUDIO / VISUAL POPUP NOTIFICATION FOR KITCHEN */}
       {addOnNotice && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
             <div style={{ background: '#FEE2E2', color: '#DC2626', padding: '12px', borderRadius: '8px', fontWeight: 'bold', fontSize: '14px', marginBottom: '12px' }}>
               🔔 CẢNH BÁO BẾP: ĐƠN GỘP BỔ SUNG MÓN CHO THẺ RUNG {addOnNotice.pagerId}!
             </div>
-            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>{addOnNotice.table} | Mã HD: {addOnNotice.orderNo}</h3>
-            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Khách hàng tại bàn vừa thanh toán thêm món bổ sung cho Thẻ Rung <strong>{addOnNotice.pagerId}</strong>.</p>
+            <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>{addOnNotice.table} | Các Bill: {addOnNotice.orderNo}</h3>
+            <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Món mới đã được GỘP TRỰC TIẾP vào Thẻ Đơn Hàng hiện tại của <strong>{addOnNotice.pagerId}</strong>.</p>
             
             <button onClick={handleAcknowledgeAddOnNotice} style={{ padding: '10px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
               ĐÃ XÁC NHẬN CHẾ BIẾN BỔ SUNG
