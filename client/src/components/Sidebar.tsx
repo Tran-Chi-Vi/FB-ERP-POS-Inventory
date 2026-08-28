@@ -23,7 +23,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
       borderRight: '1px solid #E2E8F0',
       display: 'flex',
       flexDirection: 'column',
-      justify: 'space-between',
+      justifyContent: 'space-between',
       zIndex: 100,
       boxShadow: '1px 0 3px rgba(0, 0, 0, 0.05)'
     }}>
@@ -103,6 +103,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
           {role === 'Manager' && (
             <>
               <NavItem active={activeTab === 'manager-approvals'} onClick={() => onTabChange('manager-approvals')} label="Hộp Thư Phê Duyệt PIN" />
+              <NavItem active={activeTab === 'manager-payroll'} onClick={() => onTabChange('manager-payroll')} label="Kiểm Kê Lương & Giờ IN/OUT" />
               <NavItem active={activeTab === 'manager-telemetry'} onClick={() => onTabChange('manager-telemetry')} label="Branch Live Monitor" />
               <NavItem active={activeTab === 'manager-eod'} onClick={() => onTabChange('manager-eod')} label="Checklist Đóng Cửa EOD" />
               <NavItem active={activeTab === 'manager-incidents'} onClick={() => onTabChange('manager-incidents')} label="Nhật Ký Sự Cố Khiếu Nại" />
@@ -115,7 +116,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
               <NavItem active={activeTab === 'admin-users'} onClick={() => onTabChange('admin-users')} label="Quản Lý Tài Khoản Nhân Sự" />
               <NavItem active={activeTab === 'admin-bom'} onClick={() => onTabChange('admin-bom')} label="BOM Recipe Engine & DFS" />
               <NavItem active={activeTab === 'admin-happyhour'} onClick={() => onTabChange('admin-happyhour')} label="Happy Hour Dynamic Pricing" />
-              <NavItem active={activeTab === 'admin-payroll'} onClick={() => onTabChange('admin-payroll')} label="Khóa Sổ Bảng Lương" />
+              <NavItem active={activeTab === 'admin-payroll'} onClick={() => onTabChange('admin-payroll')} label="Khóa Sổ Bảng Lương Toàn Chuỗi" />
               <NavItem active={activeTab === 'admin-menu-eng'} onClick={() => onTabChange('admin-menu-eng')} label="Food Cost & Menu Engineering" />
             </>
           )}
