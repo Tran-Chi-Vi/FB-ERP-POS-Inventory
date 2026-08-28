@@ -31,7 +31,7 @@ namespace F_B_ERP_POS_Inventory.Controllers
         }
 
         /// <summary>
-        /// Lấy danh sách tài khoản toàn chuỗi hoặc theo Chi nhánh (Admin / SuperAdmin)
+        /// Lấy danh sách tài khoản toàn chuỗi hoặc theo Chi nhánh (Admin / SuperAdmin privilege)
         /// </summary>
         [HttpGet]
         public async Task<IActionResult> GetUsers()
@@ -39,17 +39,16 @@ namespace F_B_ERP_POS_Inventory.Controllers
             var users = await _dbContext.Users.ToListAsync();
             if (!users.Any())
             {
-                // Seed initial default accounts for 8 Roles Matrix
                 var defaultBranchId = Guid.NewGuid();
                 var seeds = new[]
                 {
-                    new User { Username = "superadmin", FullName = "Nguyễn Văn Quảng (SuperAdmin)", Email = "superadmin@fnb.com", Role = "SuperAdmin", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
-                    new User { Username = "admin", FullName = "Trần Chí Vĩ (Admin)", Email = "admin@fnb.com", Role = "Admin", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
-                    new User { Username = "manager1", FullName = "Lê Hoàng Phúc (Manager Q1)", Email = "manager1@fnb.com", Role = "Manager", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
-                    new User { Username = "warehouse1", FullName = "Phạm Quốc Bảo (Thủ Kho)", Email = "warehouse1@fnb.com", Role = "Warehouse", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
-                    new User { Username = "cashier1", FullName = "Nguyễn Thi Mai (Thu Ngân)", Email = "cashier1@fnb.com", Role = "Cashier", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
-                    new User { Username = "kitchen1", FullName = "Đặng Văn Lâm (Đầu Bếp)", Email = "kitchen1@fnb.com", Role = "Kitchen", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
-                    new User { Username = "staff1", FullName = "Trần Thanh Tâm (Phục Vụ)", Email = "staff1@fnb.com", Role = "Staff", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." }
+                    new User { Username = "superadmin", FullName = "Nguyễn Văn Quảng", Email = "superadmin@fnb.com", Role = "SuperAdmin", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                    new User { Username = "admin", FullName = "Trần Chí Vĩ", Email = "admin@fnb.com", Role = "Admin", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                    new User { Username = "manager1", FullName = "Lê Hoàng Phúc", Email = "manager1@fnb.com", Role = "Manager", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                    new User { Username = "warehouse1", FullName = "Phạm Quốc Bảo", Email = "warehouse1@fnb.com", Role = "Warehouse", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                    new User { Username = "cashier1", FullName = "Nguyễn Thị Mai", Email = "cashier1@fnb.com", Role = "Cashier", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                    new User { Username = "kitchen1", FullName = "Đặng Văn Lâm", Email = "kitchen1@fnb.com", Role = "Kitchen", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
+                    new User { Username = "staff1", FullName = "Trần Thanh Tâm", Email = "staff1@fnb.com", Role = "Staff", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." }
                 };
 
                 _dbContext.Users.AddRange(seeds);
@@ -85,7 +84,7 @@ namespace F_B_ERP_POS_Inventory.Controllers
                 Email = dto.Email,
                 Role = dto.Role,
                 BranchId = dto.BranchId != Guid.Empty ? dto.BranchId : Guid.NewGuid(),
-                PasswordHash = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(dto.Password)), // Demo hashing
+                PasswordHash = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(dto.Password)),
                 CreatedAt = DateTime.UtcNow
             };
 
@@ -100,7 +99,30 @@ namespace F_B_ERP_POS_Inventory.Controllers
         }
 
         /// <summary>
-        /// Cưỡng chế đăng xuất từ xa (Session Revocation - Extension Item per FNB_POS_Roles spec)
+        /// Xóa tài khoản người dùng khỏi hệ thống (Admin & SuperAdmin privilege)
+        /// </summary>
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUser(Guid id)
+        {
+            var user = await _dbContext.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound("Không tìm thấy tài khoản để xóa.");
+            }
+
+            if (user.Role == "SuperAdmin")
+            {
+                return BadRequest("Không thể xóa tài khoản SuperAdmin hệ thống.");
+            }
+
+            _dbContext.Users.Remove(user);
+            await _dbContext.SaveChangesAsync();
+
+            return Ok(new { Message = $"Đã xóa tài khoản {user.Username} thành công!" });
+        }
+
+        /// <summary>
+        /// Cưỡng chế đăng xuất từ xa (Session Revocation)
         /// </summary>
         [HttpPost("{id}/force-logout")]
         public async Task<IActionResult> ForceLogout(Guid id)

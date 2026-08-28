@@ -14,7 +14,10 @@ export const UserManagementPage: React.FC = () => {
     { id: '1', username: 'superadmin', fullName: 'Nguyễn Văn Quảng', email: 'superadmin@fnb.com', role: 'SuperAdmin', createdAt: '2025-01-01' },
     { id: '2', username: 'admin', fullName: 'Trần Chí Vĩ', email: 'admin@fnb.com', role: 'Admin', createdAt: '2025-01-02' },
     { id: '3', username: 'manager1', fullName: 'Lê Hoàng Phúc', email: 'manager1@fnb.com', role: 'Manager', createdAt: '2025-01-10' },
-    { id: '4', username: 'cashier1', fullName: 'Nguyễn Thị Mai', email: 'cashier1@fnb.com', role: 'Cashier', createdAt: '2025-02-01' },
+    { id: '4', username: 'warehouse1', fullName: 'Phạm Quốc Bảo', email: 'warehouse1@fnb.com', role: 'Warehouse', createdAt: '2025-01-15' },
+    { id: '5', username: 'cashier1', fullName: 'Nguyễn Thị Mai', email: 'cashier1@fnb.com', role: 'Cashier', createdAt: '2025-02-01' },
+    { id: '6', username: 'kitchen1', fullName: 'Đặng Văn Lâm', email: 'kitchen1@fnb.com', role: 'Kitchen', createdAt: '2025-02-05' },
+    { id: '7', username: 'staff1', fullName: 'Trần Thanh Tâm', email: 'staff1@fnb.com', role: 'Staff', createdAt: '2025-02-10' },
   ]);
 
   const [showModal, setShowModal] = useState(false);
@@ -54,16 +57,28 @@ export const UserManagementPage: React.FC = () => {
     setNewFullName('');
     setNewEmail('');
     setNewPassword('');
-    alert(`Tạo tài khoản mới '${newUser.username}' với Role '${newUser.role}' thành công!`);
+    alert(`Tạo tài khoản mới '${newUser.username}' thành công!`);
+  };
+
+  const handleDeleteUser = (id: string, username: string, role: string) => {
+    if (role === 'SuperAdmin') {
+      alert('Không thể xóa tài khoản SuperAdmin hệ thống!');
+      return;
+    }
+
+    if (window.confirm(`Bạn có chắc chắn muốn xóa vĩnh viễn tài khoản '${username}'?`)) {
+      setUsers((prev) => prev.filter((u) => u.id !== id));
+      alert(`Đã xóa vĩnh viễn tài khoản '${username}' khỏi hệ thống!`);
+    }
   };
 
   return (
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
         <div>
-          <h2>Quản Lý Tài Khoản & Phân Quyền Hệ Thống (RBAC Engine)</h2>
+          <h2>Quản Lý Tài Khoản & Phân Quyền Nâng Cao (RBAC Engine)</h2>
           <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginTop: '0.25rem' }}>
-            Dành cho Admin & SuperAdmin tạo mới tài khoản và gán phân quyền 8 Roles chuẩn.
+            Quyền hạn đặc quyền cho Admin & SuperAdmin: Tạo tài khoản, Gán Role & Xóa vĩnh viễn tài khoản.
           </p>
         </div>
         <button
@@ -71,7 +86,7 @@ export const UserManagementPage: React.FC = () => {
           style={{ width: 'auto', padding: '0.75rem 1.25rem' }}
           onClick={() => setShowModal(true)}
         >
-          ➕ Tạo Tài Khoản Mới
+          Tạo Tài Khoản Mới
         </button>
       </div>
 
@@ -84,7 +99,7 @@ export const UserManagementPage: React.FC = () => {
               <th style={{ padding: '0.75rem' }}>Email</th>
               <th style={{ padding: '0.75rem' }}>Vai Trò (Role)</th>
               <th style={{ padding: '0.75rem' }}>Ngày Tạo</th>
-              <th style={{ padding: '0.75rem' }}>Thao Tác</th>
+              <th style={{ padding: '0.75rem' }}>Thao Tác Quản Trị</th>
             </tr>
           </thead>
           <tbody>
@@ -108,7 +123,7 @@ export const UserManagementPage: React.FC = () => {
                   </span>
                 </td>
                 <td style={{ padding: '0.75rem', color: '#94a3b8' }}>{u.createdAt}</td>
-                <td style={{ padding: '0.75rem' }}>
+                <td style={{ padding: '0.75rem', display: 'flex', gap: '0.5rem' }}>
                   <button
                     style={{
                       padding: '0.3rem 0.6rem',
@@ -122,8 +137,26 @@ export const UserManagementPage: React.FC = () => {
                     }}
                     onClick={() => alert(`Đã thu hồi tất cả phiên đăng nhập của ${u.username} (Force Logout)!`)}
                   >
-                    Cưỡng Chế Đăng Xuất
+                    Thu Hồi Phiên
                   </button>
+
+                  {u.role !== 'SuperAdmin' && (
+                    <button
+                      style={{
+                        padding: '0.3rem 0.6rem',
+                        backgroundColor: '#f43f5e',
+                        color: '#ffffff',
+                        border: 'none',
+                        borderRadius: '0.25rem',
+                        cursor: 'pointer',
+                        fontSize: '0.8rem',
+                        fontWeight: 'bold',
+                      }}
+                      onClick={() => handleDeleteUser(u.id, u.username, u.role)}
+                    >
+                      Xóa Tài Khoản
+                    </button>
+                  )}
                 </td>
               </tr>
             ))}
@@ -144,25 +177,25 @@ export const UserManagementPage: React.FC = () => {
                   className="form-control"
                   value={newUsername}
                   onChange={(e) => setNewUsername(e.target.value)}
-                  placeholder="Ví dụ: manager_q1"
+                  placeholder="manager_q1"
                   required
                 />
               </div>
 
               <div className="form-group">
-                <label>Họ Và Tên</label>
+                <label>Họ Và Tên Nhân Viên</label>
                 <input
                   type="text"
                   className="form-control"
                   value={newFullName}
                   onChange={(e) => setNewFullName(e.target.value)}
-                  placeholder="Ví dụ: Nguyễn Văn A"
+                  placeholder="Nguyễn Văn A"
                   required
                 />
               </div>
 
               <div className="form-group">
-                <label>Email Liên Hệ</label>
+                <label>Email</label>
                 <input
                   type="email"
                   className="form-control"
@@ -184,7 +217,7 @@ export const UserManagementPage: React.FC = () => {
               </div>
 
               <div className="form-group">
-                <label>Gán Phân Quyền Vai Trò (8 Roles Matrix)</label>
+                <label>Gán Phân Quyền (8 Roles)</label>
                 <select
                   className="form-control"
                   value={newRole}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("F&B-ERP-POS-Inventory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84db1c9c25cce037cacec715986974f04941225f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d21fb9842909e5b7987c74590f572e7182a816c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("F&B-ERP-POS-Inventory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("F&B-ERP-POS-Inventory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

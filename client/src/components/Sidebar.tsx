@@ -8,29 +8,62 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, currentUser, onLogout }) => {
-  const isManagementRole = currentUser?.role === 'Admin' || currentUser?.role === 'SuperAdmin';
+  const role = currentUser?.role || 'Staff';
 
-  const menuItems = [
-    { id: 'pos', label: 'POS Bán Hàng', icon: '🛒' },
-    { id: 'kds', label: 'KDS Bếp / Bar', icon: '👨‍🍳' },
-    { id: 'inventory', label: 'Kho & Độc Tồn (BOM)', icon: '📦' },
-    { id: 'crm', label: 'CRM & Loyalty 360', icon: '💎' },
-    { id: 'finance', label: 'ERP Tài Chính & PO', icon: '📊' },
-    { id: 'bi', label: 'BI Menu Engineering', icon: '⭐' },
-    { id: 'hr', label: 'HRM & WiFi Chấm Công', icon: '🆔' },
-    ...(isManagementRole ? [{ id: 'users', label: 'Quản Lý Tài Khoản (RBAC)', icon: '🔑' }] : []),
-    { id: 'extensions', label: 'FNB Roadmap Extensions', icon: '🚀' },
-    { id: 'prompt-skills', label: 'AI Skills & Control', icon: '🤖' },
-  ];
+  // Strict Role-Based Menu Mapping (No Overlap, No Icons)
+  const getMenuItems = () => {
+    switch (role) {
+      case 'Kitchen':
+        return [{ id: 'kds', label: 'KDS Bếp / Bar' }];
+
+      case 'Staff':
+        return [{ id: 'staff-runner', label: 'Phục Vụ Bàn & Gọi Món' }];
+
+      case 'Cashier':
+        return [{ id: 'pos', label: 'POS Bán Hàng & Thu Tiền' }];
+
+      case 'Warehouse':
+        return [{ id: 'inventory', label: 'Quản Lý Kho WMS & FEFO' }];
+
+      case 'Manager':
+        return [
+          { id: 'manager-dash', label: 'Dashboard Ca Vận Hành' },
+          { id: 'manager-void', label: 'Duyệt Khẩn Cấp (Void / Shift Variance)' },
+        ];
+
+      case 'Admin':
+        return [
+          { id: 'users', label: 'Quản Lý Tài Khoản (Tạo & Xóa User)' },
+          { id: 'catalog-bom', label: 'Cấu Hình Menu & BOM' },
+          { id: 'finance-payroll', label: 'ERP Tài Chính & Khóa Lương' },
+          { id: 'bi-reports', label: 'BI Menu Engineering' },
+        ];
+
+      case 'SuperAdmin':
+        return [
+          { id: 'users', label: 'Quản Lý Tài Khoản Toàn Hệ Thống' },
+          { id: 'branch-admin', label: 'Quản Lý Đa Chi Nhánh' },
+          { id: 'audit-log', label: 'Centralized Audit Log' },
+          { id: 'system-console', label: 'System Console & Backup' },
+        ];
+
+      case 'Customer':
+        return [{ id: 'customer-qr', label: 'Thực Đơn Điện Tử (Dynamic QR)' }];
+
+      default:
+        return [{ id: 'pos', label: 'Giao Diện Phục Vụ' }];
+    }
+  };
+
+  const menuItems = getMenuItems();
 
   return (
     <aside className="sidebar">
       <div>
         <div className="sidebar-header">
-          <span className="sidebar-logo">☕</span>
           <div>
             <div className="sidebar-title">F&B ERP POS</div>
-            <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Super-App Platform</span>
+            <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Enterprise RBAC Matrix</span>
           </div>
         </div>
 
@@ -41,7 +74,6 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, curre
               className={`sidebar-item ${activeTab === item.id ? 'active' : ''}`}
               onClick={() => setActiveTab(item.id)}
             >
-              <span>{item.icon}</span>
               <span>{item.label}</span>
             </button>
           ))}

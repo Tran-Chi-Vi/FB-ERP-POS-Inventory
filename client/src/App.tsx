@@ -28,14 +28,38 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     if (mainRef.current) {
-      gsap.fromTo(mainRef.current, { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.4, ease: 'power2.out' });
+      gsap.fromTo(mainRef.current, { opacity: 0, x: 15 }, { opacity: 1, x: 0, duration: 0.35, ease: 'power2.out' });
     }
-  }, [activeTab]);
+  }, [activeTab, currentUser]);
 
   const handleLoginSuccess = (user: { fullName: string; role: string }) => {
     setCurrentUser(user);
-    if (user.role === 'Admin' || user.role === 'SuperAdmin') {
-      setActiveTab('users');
+    // Automatically route user to their dedicated role UI
+    switch (user.role) {
+      case 'Kitchen':
+        setActiveTab('kds');
+        break;
+      case 'Staff':
+        setActiveTab('staff-runner');
+        break;
+      case 'Cashier':
+        setActiveTab('pos');
+        break;
+      case 'Warehouse':
+        setActiveTab('inventory');
+        break;
+      case 'Manager':
+        setActiveTab('manager-dash');
+        break;
+      case 'Admin':
+      case 'SuperAdmin':
+        setActiveTab('users');
+        break;
+      case 'Customer':
+        setActiveTab('customer-qr');
+        break;
+      default:
+        setActiveTab('pos');
     }
   };
 
@@ -78,7 +102,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      {/* LEFT VERTICAL SIDEBAR NAVIGATION */}
+      {/* LEFT VERTICAL SIDEBAR NAVIGATION (STRICT ROLE ISOLATED, NO EMOJI ICONS) */}
       <Sidebar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -88,67 +112,56 @@ export const App: React.FC = () => {
 
       {/* MAIN CONTENT WRAPPER */}
       <main className="main-wrapper" ref={mainRef}>
-        {/* ACCOUNT MANAGEMENT TAB (FOR ADMIN & SUPERADMIN) */}
-        {activeTab === 'users' && <UserManagementPage />}
-
-        {/* EXTENSIONS ROADMAP TAB */}
-        {activeTab === 'extensions' && (
-          <div>
-            <h2 style={{ marginBottom: '0.5rem' }}>FNB POS Roles & Feature Extensions Roadmap</h2>
-            <p style={{ color: '#94a3b8', marginBottom: '1.5rem' }}>
-              Đặc tả tính năng mở rộng theo file FNB_POS_Roles_And_Feature_Extensions.docx
+        {/* 1. KITCHEN UI (Role: Kitchen) - NO PRICES / NO REVENUE */}
+        {activeTab === 'kds' && (
+          <div className="card">
+            <h2>KDS Kitchen Screen (Màn Hình Điều Phối Bếp)</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
+              Dành riêng cho Đầu bếp & Pha chế. Chữ to, đếm giây SLA, tuyệt đối KHÔNG có giá tiền hay doanh thu.
             </p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
-              <div className="card">
-                <h3 style={{ color: '#f43f5e' }}>👑 SuperAdmin Extensions</h3>
-                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
-                  <li>▫️ Cấu hình Franchise & Nhượng quyền (Royalty Fee %)</li>
-                  <li>▫️ Regional Dynamic Pricing (Giá theo vùng miền & sân bay)</li>
-                  <li>▫️ Session Revocation Dashboard & Force Logout từ xa</li>
-                  <li>▫️ AI-driven Anomaly Detection (Cảnh báo hủy món ca đêm)</li>
-                  <li>▫️ Financial Forecasting bằng Machine Learning</li>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', marginTop: '1.25rem' }}>
+              <div style={{ padding: '1.25rem', backgroundColor: '#0f172a', borderRadius: '0.5rem', borderLeft: '4px solid #f59e0b' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <h3 style={{ fontSize: '1.2rem' }}>Bàn 01 - Đơn #ORD-102</h3>
+                  <span style={{ color: '#f59e0b', fontWeight: 'bold' }}>03:45 SLA</span>
+                </div>
+                <ul style={{ margin: '1rem 0', fontSize: '1.1rem', lineHeight: '1.8' }}>
+                  <li>2x Cà Phê Sữa Đá (Đường 50%, Đá 100%)</li>
+                  <li>1x Bánh Croissant Bơ</li>
                 </ul>
-              </div>
-
-              <div className="card">
-                <h3 style={{ color: '#10b981' }}>🔑 Admin Extensions</h3>
-                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
-                  <li>▫️ <strong>Quản lý Tạo Tài Khoản & Gán 8 Roles (Đã hoàn thành)</strong></li>
-                  <li>▫️ Omnichannel Menu Matrix (In-store, Takeaway, GrabFood)</li>
-                  <li>▫️ Catch-weight Pricing (Bán món theo gram/kg thực tế)</li>
-                  <li>▫️ What-If Cost Simulation (Mô phỏng biến động giá vốn)</li>
-                  <li>▫️ Chi trả lương 1-click qua API Ngân hàng (VietinBank/MBBank)</li>
-                </ul>
-              </div>
-
-              <div className="card">
-                <h3 style={{ color: '#38bdf8' }}>👔 Manager Extensions</h3>
-                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
-                  <li>▫️ Dual-blind Cash Count (Xác thực đóng ca đếm tiền kép)</li>
-                  <li>▫️ Cash Skimming Alert (Cảnh báo két tiền vượt 10 triệu)</li>
-                  <li>▫️ Remote Push-Notification Approval (Duyệt hủy món qua App)</li>
-                  <li>▫️ Smart Shift Swap Marketplace (Chợ đổi ca tự động)</li>
-                </ul>
-              </div>
-
-              <div className="card">
-                <h3 style={{ color: '#818cf8' }}>📦 Warehouse & Cashier Extensions</h3>
-                <ul style={{ marginTop: '0.75rem', lineHeight: '1.8', color: '#cbd5e1', fontSize: '0.9rem' }}>
-                  <li>▫️ Automated PO Dispatch qua PDF Email</li>
-                  <li>▫️ Mobile Barcode Stocktaking (Kiểm kê kho bằng camera HP)</li>
-                  <li>▫️ P2P Local Mesh Sync (Đồng bộ ngang hàng khi mất mạng)</li>
-                  <li>▫️ Customer Facing Display (CFD Màn hình phụ hiển thị QR)</li>
-                </ul>
+                <div style={{ display: 'flex', gap: '0.5rem' }}>
+                  <button className="btn-primary" style={{ padding: '0.5rem 1rem' }}>Xác Nhận Nấu</button>
+                  <button style={{ padding: '0.5rem 1rem', background: '#f43f5e', color: '#fff', border: 'none', borderRadius: '0.375rem', cursor: 'pointer', fontWeight: 'bold' }}>Báo Hết Món (86 List)</button>
+                </div>
               </div>
             </div>
           </div>
         )}
 
-        {/* POS TAB */}
+        {/* 2. STAFF RUNNER UI (Role: Staff) */}
+        {activeTab === 'staff-runner' && (
+          <div className="card">
+            <h2>Staff Runner App (Phục Vụ Bàn & Gọi Món)</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
+              Dành cho nhân viên chạy bàn. Xem tiến độ món trong bếp và trả món ra bàn. Không thu tiền hoặc sửa tồn kho.
+            </p>
+            <div style={{ marginTop: '1.25rem' }}>
+              <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', marginBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <h3 style={{ color: '#10b981' }}>Bàn 01 - Món Đã Xong (Ready to Serve)</h3>
+                  <p style={{ color: '#cbd5e1', marginTop: '0.25rem' }}>2x Cà Phê Sữa Đá -&gt; Trạm Bar 01</p>
+                </div>
+                <button className="btn-primary" style={{ width: 'auto', padding: '0.5rem 1.25rem' }}>Đã Phục Vụ (Served)</button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 3. CASHIER UI (Role: Cashier) */}
         {activeTab === 'pos' && (
           <div className="pos-layout">
             <div className="category-menu">
-              <h3 style={{ fontSize: '0.9rem', color: '#94a3b8', marginBottom: '0.5rem' }}>DANH MỤC MÓN</h3>
+              <h3 style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '0.5rem' }}>DANH MỤC MÓN</h3>
               {categories.map((cat) => (
                 <button
                   key={cat}
@@ -162,7 +175,7 @@ export const App: React.FC = () => {
 
             <div>
               <div className="card" style={{ marginBottom: '1rem' }}>
-                <h3 style={{ marginBottom: '0.75rem' }}>Sơ Đồ Bàn Phục Vụ (Branch: Quận 1)</h3>
+                <h3 style={{ marginBottom: '0.75rem' }}>Sơ Đồ Bàn Phục Vụ</h3>
                 <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                   {tables.map((t) => (
                     <button
@@ -200,7 +213,7 @@ export const App: React.FC = () => {
             </div>
 
             <div className="card">
-              <h3>Đơn Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
+              <h3>Giỏ Hàng {selectedTable ? `- ${selectedTable}` : ''}</h3>
               {cart.length === 0 ? (
                 <p style={{ color: '#94a3b8', marginTop: '1rem' }}>Chưa chọn món nào</p>
               ) : (
@@ -212,15 +225,15 @@ export const App: React.FC = () => {
                     </div>
                   ))}
                   <div style={{ marginTop: '1.5rem', paddingTop: '1rem', borderTop: '2px solid #10b981', display: 'flex', justifyContent: 'space-between', fontSize: '1.1rem', fontWeight: 'bold' }}>
-                    <span>Tổng Cộng:</span>
+                    <span>Tổng Tiền:</span>
                     <span>{cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ</span>
                   </div>
                   <button
                     className="btn-primary"
                     style={{ marginTop: '1rem' }}
-                    onClick={() => alert('Thanh toán thành công! Tự động trừ kho theo công thức BOM và in bill nhiệt ESC/POS.')}
+                    onClick={() => alert('Thanh toán thành công! Tự động trừ kho theo công thức BOM và phát hành HĐĐT.')}
                   >
-                    Thanh Toán & In Bill (ESC/POS)
+                    Thanh Toán VietQR / Tiền Mặt
                   </button>
                 </div>
               )}
@@ -228,151 +241,139 @@ export const App: React.FC = () => {
           </div>
         )}
 
-        {/* KDS TAB */}
-        {activeTab === 'kds' && (
+        {/* 4. WAREHOUSE UI (Role: Warehouse) */}
+        {activeTab === 'inventory' && (
           <div className="card">
-            <h2>KDS Kitchen Queue Realtime (SignalR Integrated)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Màn hình điều phối bếp/bar theo chuẩn Workflow 1 & 5.</p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
-              <div style={{ padding: '1rem', backgroundColor: '#0f172a', borderRadius: '0.5rem', borderLeft: '4px solid #f59e0b' }}>
-                <h3>Bàn 01 - Đơn #ORD-20260828-A1</h3>
-                <p style={{ marginTop: '0.5rem' }}>2x Cà Phê Sữa Đá (Đường 50%, Đá 100%)</p>
-                <p style={{ color: '#f59e0b', margin: '0.5rem 0' }}>⏱️ SLA Delay Timer: 03:45</p>
-                <button className="btn-primary" style={{ padding: '0.4rem 0.8rem', fontSize: '0.85rem' }}>Đã Hoàn Thành</button>
+            <h2>WMS Desktop (Quản Lý Kho & Lô Date FEFO)</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Dành riêng cho Thủ kho. Quản lý PO, nhập kho, kiểm kê và theo dõi lô date FEFO.</p>
+            <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1.25rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '2px solid #334155', color: '#10b981', textAlign: 'left' }}>
+                  <th style={{ padding: '0.75rem' }}>Tên Nguyên Liệu</th>
+                  <th style={{ padding: '0.75rem' }}>Số Lượng Tồn</th>
+                  <th style={{ padding: '0.75rem' }}>Mã Lô Hạn Dùng</th>
+                  <th style={{ padding: '0.75rem' }}>Quy Tắc FEFO</th>
+                  <th style={{ padding: '0.75rem' }}>Thao Tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #334155' }}>
+                  <td style={{ padding: '0.75rem' }}>Hạt Cà Phê Robusta</td>
+                  <td style={{ padding: '0.75rem' }}>50,000 g</td>
+                  <td style={{ padding: '0.75rem', color: '#38bdf8' }}>L01 (HSD: 2027-01-15)</td>
+                  <td style={{ padding: '0.75rem', color: '#10b981', fontWeight: 'bold' }}>Ưu tiên xuất trước</td>
+                  <td style={{ padding: '0.75rem' }}>
+                    <button className="btn-primary" style={{ padding: '0.3rem 0.75rem', fontSize: '0.8rem' }}>Tạo Phiếu Kiểm Kê</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {/* 5. MANAGER OPERATIONS VIEW (Role: Manager) */}
+        {activeTab === 'manager-dash' && (
+          <div>
+            <div className="card">
+              <h2>Manager Operations Dashboard (Giao Diện Giám Sát Ca Quản Lý)</h2>
+              <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
+                Cửa sổ kiểm soát chi nhánh: Soi thu ngân (chênh lệch ca), soi bếp (SLA nghẽn), soi kho (cận date).
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.25rem' }}>
+                <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem' }}>
+                  <h3>Soi Ca Thu Ngân (Dual-Blind Shift Audit)</h3>
+                  <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Két thu ngân ca sáng: Khai báo 5,000,000 đ | Thực tế: 4,980,000 đ</p>
+                  <span style={{ color: '#f43f5e', fontWeight: 'bold' }}>Lệch: -20,000 đ</span>
+                </div>
+                <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem' }}>
+                  <h3>Soi Nghẽn Bếp (Kitchen SLA Bottleneck)</h3>
+                  <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Trạm Bar 01: 0 đơn quá SLA | Bếp Nóng: 1 đơn quá 10 phút</p>
+                  <span style={{ color: '#10b981', fontWeight: 'bold' }}>Vận hành bình thường</span>
+                </div>
               </div>
             </div>
           </div>
         )}
 
-        {/* INVENTORY TAB */}
-        {activeTab === 'inventory' && (
+        {activeTab === 'manager-void' && (
           <div className="card">
-            <h2>Quản Lý Tồn Kho Chi Tiết F&B, Lô Hàng & Hạn Sử Dụng (FEFO/FIFO)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Sổ cái Append-Only Inventory Ledger chống sửa/xóa số lượng trực tiếp.</p>
-            <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid #334155', color: '#10b981', textAlign: 'left' }}>
-                  <th style={{ padding: '0.5rem' }}>Mã NVL</th>
-                  <th style={{ padding: '0.5rem' }}>Tên Nguyên Liệu</th>
-                  <th style={{ padding: '0.5rem' }}>Số Lượng Tồn</th>
-                  <th style={{ padding: '0.5rem' }}>Mã Lô / HSD</th>
-                  <th style={{ padding: '0.5rem' }}>Quy Tắc Xuất Kho</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid #334155' }}>
-                  <td style={{ padding: '0.5rem' }}>NVL-01</td>
-                  <td style={{ padding: '0.5rem' }}>Hạt Cà Phê Robusta</td>
-                  <td style={{ padding: '0.5rem' }}>50,000 g</td>
-                  <td style={{ padding: '0.5rem', color: '#38bdf8' }}>L01 (HSD: 2027-01-15)</td>
-                  <td style={{ padding: '0.5rem', color: '#10b981', fontWeight: 'bold' }}>FEFO</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #334155' }}>
-                  <td style={{ padding: '0.5rem' }}>NVL-02</td>
-                  <td style={{ padding: '0.5rem' }}>Sữa Đặc Lon</td>
-                  <td style={{ padding: '0.5rem' }}>20,000 ml</td>
-                  <td style={{ padding: '0.5rem', color: '#38bdf8' }}>L02 (HSD: 2026-12-30)</td>
-                  <td style={{ padding: '0.5rem', color: '#10b981', fontWeight: 'bold' }}>FIFO</td>
-                </tr>
-              </tbody>
-            </table>
+            <h2>Duyệt Khẩn Cấp (Emergency Void & Discount Approvals)</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Thẩm quyền sinh sát: Duyệt hủy món sau khi gửi bếp, duyệt bồi hoàn và xuất hủy kho.</p>
+            <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div>
+                <h3>Yêu Cầu Hủy Món #ORD-102 (Thu Ngân: Nguyễn Thị Mai)</h3>
+                <p style={{ color: '#94a3b8' }}>Món: 1x Trà Đào Cam Sả | Lý do: Khách đổi ý sang Cà Phê</p>
+              </div>
+              <div style={{ display: 'flex', gap: '0.5rem' }}>
+                <button className="btn-primary" style={{ padding: '0.5rem 1rem' }}>Duyệt Hủy Món</button>
+                <button style={{ padding: '0.5rem 1rem', background: '#334155', color: '#fff', border: 'none', borderRadius: '0.375rem', cursor: 'pointer' }}>Từ Chối</button>
+              </div>
+            </div>
           </div>
         )}
 
-        {/* CRM TAB */}
-        {activeTab === 'crm' && (
-          <div className="card">
-            <h2>CRM Customer 360 & Ví Điểm Loyalty (4 Tiers)</h2>
-            <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid #334155', color: '#10b981', textAlign: 'left' }}>
-                  <th style={{ padding: '0.5rem' }}>Họ Và Tên</th>
-                  <th style={{ padding: '0.5rem' }}>Số Điện Thoại</th>
-                  <th style={{ padding: '0.5rem' }}>Hạng Thành Viên</th>
-                  <th style={{ padding: '0.5rem' }}>Ví Điểm Loyalty</th>
-                  <th style={{ padding: '0.5rem' }}>Tổng Chi Tiêu</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid #334155' }}>
-                  <td style={{ padding: '0.5rem' }}>Nguyễn Văn A</td>
-                  <td style={{ padding: '0.5rem' }}>0988111222</td>
-                  <td style={{ padding: '0.5rem', color: '#f59e0b', fontWeight: 'bold' }}>Gold 🥇</td>
-                  <td style={{ padding: '0.5rem' }}>1,250 điểm</td>
-                  <td style={{ padding: '0.5rem' }}>12,500,000 đ</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #334155' }}>
-                  <td style={{ padding: '0.5rem' }}>Trần Thị B</td>
-                  <td style={{ padding: '0.5rem' }}>0977333444</td>
-                  <td style={{ padding: '0.5rem', color: '#38bdf8', fontWeight: 'bold' }}>Diamond 💎</td>
-                  <td style={{ padding: '0.5rem' }}>5,400 điểm</td>
-                  <td style={{ padding: '0.5rem' }}>54,000,000 đ</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        )}
+        {/* 6. USER MANAGEMENT (Role: Admin & SuperAdmin) */}
+        {activeTab === 'users' && <UserManagementPage />}
 
-        {/* ERP FINANCE TAB */}
-        {activeTab === 'finance' && (
+        {/* ADMIN ERP PANEL (Role: Admin) */}
+        {activeTab === 'catalog-bom' && (
           <div className="card">
-            <h2>ERP Kế Toán Tài Chính & Mua Hàng PO</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Quản lý đơn mua hàng PO và tự động hạch toán doanh thu/chi phí.</p>
-            <ul style={{ marginTop: '1rem', lineHeight: '2' }}>
-              <li>📦 <strong>Đơn PO-2026-001:</strong> 50kg Hạt Cà Phê | Nhà Cung Cấp: Vinacafé | Trạng thái: Đã Phê Duyệt</li>
-              <li>🧾 <strong>Hóa Đơn Điện Tử (Nghị định 123):</strong> Đã phát hành 1,420 hóa đơn GTGT.</li>
+            <h2>Cấu Hình Menu Master Data & Công Thức Định Lượng BOM</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Cài đặt công thức pha chế đa tầng (BOM Engine) và ma trận Topping.</p>
+            <ul style={{ lineHeight: '2', marginTop: '1rem' }}>
+              <li>☕ <strong>1 ly Cà Phê Sữa Đá BOM:</strong> 30ml Cà Phê cốt + 40ml Sữa đặc + 150g Đá viên.</li>
+              <li>🍰 <strong>1 bánh Tiramisu BOM:</strong> 50g Bột Mì + 30g Bơ + 20g Phô mai Mascarpone.</li>
             </ul>
           </div>
         )}
 
-        {/* BI REPORT TAB */}
-        {activeTab === 'bi' && (
+        {activeTab === 'finance-payroll' && (
           <div className="card">
-            <h2>BI Dashboard - Menu Engineering Matrix & P&L Realtime</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1rem' }}>
-              <div style={{ padding: '1rem', backgroundColor: '#0f172a', borderRadius: '0.5rem' }}>
-                <h3>Menu Engineering Matrix</h3>
-                <p style={{ marginTop: '0.5rem' }}>⭐ <strong>Star (Lời Cao & Bán Chạy):</strong> Cà Phê Sữa Đá</p>
-                <p>🐴 <strong>Plowhorse (Bán Chạy & Lời Ít):</strong> Bạc Xỉu Đá</p>
-                <p>🧩 <strong>Puzzle (Lời Cao & Bán Chậm):</strong> Trà Đào Cam Sả</p>
-              </div>
-              <div style={{ padding: '1rem', backgroundColor: '#0f172a', borderRadius: '0.5rem' }}>
-                <h3>Báo Cáo P&L Realtime</h3>
-                <p style={{ color: '#10b981', marginTop: '0.5rem' }}>📈 Doanh Thu Gộp: 185,400,000 đ</p>
-                <p style={{ color: '#f43f5e' }}>📉 Giá Vốn Hàng Bán: 55,620,000 đ</p>
-                <p style={{ color: '#38bdf8', fontWeight: 'bold', fontSize: '1.1rem', marginTop: '0.5rem' }}>💰 Lợi Nhuận Ròng: 129,780,000 đ (Tỷ suất 70%)</p>
-              </div>
-            </div>
-          </div>
-        )}
-
-        {/* HRM TAB */}
-        {activeTab === 'hr' && (
-          <div className="card">
-            <h2>Quản Lý Nhân Sự, Chấm Công WiFi Nội Bộ & Khóa Sổ Lương</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.5rem' }}>Chống gian lận chấm công qua BSSID/IP WiFi chi nhánh.</p>
-            <button
-              className="btn-primary"
-              style={{ width: 'auto', padding: '0.6rem 1.25rem', marginTop: '1rem' }}
-              onClick={() => alert('Chấm công WiFi thành công! BSSID: 00:11:22:33:44:55 (IP: 192.168.1.102)')}
-            >
-              Chấm Công WiFi Cửa Hàng
+            <h2>ERP Tài Chính, Khóa Sổ Lương & Hạch Toán P&L</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Phê duyệt bảng lương tháng và khóa sổ chống chỉnh sửa trực tiếp.</p>
+            <button className="btn-primary" style={{ width: 'auto', padding: '0.6rem 1.25rem', marginTop: '1rem' }}>
+              Khóa Sổ Bảng Lương Tháng Hiện Tại
             </button>
           </div>
         )}
 
-        {/* AI SKILLS TAB */}
-        {activeTab === 'prompt-skills' && (
+        {/* 7. SUPERADMIN CONSOLE (Role: SuperAdmin) */}
+        {activeTab === 'branch-admin' && (
           <div className="card">
-            <h2>AI Prompt & Skills Control Panel (6 Repos GitHub)</h2>
+            <h2>System Console - Quản Lý Đa Chi Nhánh Hợp Nhất</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Quản lý chi nhánh trực thuộc & chi nhánh nhượng quyền (Franchise).</p>
             <ul style={{ lineHeight: '2', marginTop: '1rem' }}>
-              <li><strong>pbakaus/impeccable:</strong> GSAP Micro-interactions & Visual Polish</li>
-              <li><strong>mattpocock/skills:</strong> TypeScript Standards</li>
-              <li><strong>DietrichGebert/ponytail:</strong> Async Execution Wrapper</li>
-              <li><strong>linshenkx/prompt-optimizer:</strong> Prompt Standardization</li>
-              <li><strong>multica-ai/andrej-karpathy-skills:</strong> Single Source of Truth</li>
-              <li><strong>obra/superpowers:</strong> Automated Workflows</li>
+              <li>📍 <strong>Chi nhánh Q1 (Trực thuộc):</strong> Doanh thu hôm nay: 45,200,000 đ</li>
+              <li>📍 <strong>Chi nhánh Q7 (Franchise):</strong> Doanh thu hôm nay: 38,100,000 đ (Trích 5% phí bản quyền)</li>
             </ul>
+          </div>
+        )}
+
+        {activeTab === 'audit-log' && (
+          <div className="card">
+            <h2>Centralized Audit Log (Nhật Ký Kiểm Toán Toàn Chuỗi)</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Xem vết mọi hành động nhạy cảm toàn hệ thống có dấu thời gian nguyên tử.</p>
+            <ul style={{ lineHeight: '2', marginTop: '1rem', fontSize: '0.9rem', color: '#cbd5e1' }}>
+              <li>[2026-08-28 20:15:02] [ADMIN] [Trần Chí Vĩ] Tạo tài khoản mới 'manager1' role Manager.</li>
+              <li>[2026-08-28 20:20:11] [MANAGER] [Lê Hoàng Phúc] Duyệt hủy món ORD-102.</li>
+            </ul>
+          </div>
+        )}
+
+        {/* 8. CUSTOMER UI (Role: Customer) */}
+        {activeTab === 'customer-qr' && (
+          <div className="card">
+            <h2>Thực Đơn Điện Tử Dynamic QR (Giao Diện Khách Hàng)</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Khách tự chọn món tại bàn, tùy biến đường/đá và gửi đơn trực tiếp vào bếp.</p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+              {products.map((p) => (
+                <div key={p.id} style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', border: '1px solid #334155' }}>
+                  <h4>{p.name}</h4>
+                  <p style={{ color: '#10b981', fontWeight: 'bold', marginTop: '0.5rem' }}>{p.price.toLocaleString('vi-VN')} đ</p>
+                  <button className="btn-primary" style={{ padding: '0.3rem', fontSize: '0.8rem', marginTop: '0.5rem' }}>Thêm Vào Đơn</button>
+                </div>
+              ))}
+            </div>
           </div>
         )}
       </main>
