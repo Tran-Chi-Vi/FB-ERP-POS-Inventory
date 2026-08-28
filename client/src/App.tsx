@@ -54,6 +54,7 @@ export const App: React.FC = () => {
   
   // CASHIER COUNTER ORDERING IOT PAGER ID SELECTION
   const [selectedPosPagerId, setSelectedPosPagerId] = useState<string>('PAGER-05');
+  const [showPaymentConfirmModal, setShowPaymentConfirmModal] = useState<boolean>(false);
 
   // PENDING QR BILLS QUEUE FOR CASHIER TO VERIFY PAYMENT AND ASSIGN IOT PAGER ID
   const [pendingBills, setPendingBills] = useState<PendingBill[]>([]);
@@ -186,7 +187,12 @@ export const App: React.FC = () => {
   const parentInvoiceForPager = paidInvoices.find(inv => inv.pagerId === selectedPosPagerId);
   const isAddOnOrder = !!parentInvoiceForPager;
 
-  const handleCheckoutPayment = () => {
+  const handleOpenPaymentConfirm = () => {
+    if (cart.length === 0) return;
+    setShowPaymentConfirmModal(true);
+  };
+
+  const handleFinalizePosCheckout = () => {
     if (cart.length === 0) return;
     const totalAmount = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
     const invoiceId = `HD-${Math.floor(1000 + Math.random() * 9000)}`;
@@ -203,7 +209,7 @@ export const App: React.FC = () => {
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Send ticket to KDS Kitchen with Pager ID & Add-On parent reference!
+    // Send ticket to KDS Kitchen ONLY UPON EXPLICIT CASHIER CONFIRMATION!
     const existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
     const newKdsTicket = {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
@@ -215,6 +221,7 @@ export const App: React.FC = () => {
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
       isAddOn: isAddOnOrder,
+      isAddOnNoticePending: isAddOnOrder, // Unique trigger flag cleared once Kitchen confirms!
       items: cart.map(c => ({
         id: c.product.id,
         name: c.product.name,
@@ -229,13 +236,10 @@ export const App: React.FC = () => {
     localStorage.setItem('fnb_paid_invoices', JSON.stringify(updatedPaid));
 
     setCart([]);
+    setShowPaymentConfirmModal(false);
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    if (isAddOnOrder) {
-      alert(`ĐÃ THANH TOÁN HÓA ĐƠN BỔ SUNG ${invoiceId} (Liên kết Hóa đơn Mẹ: ${parentInvoiceForPager.id})!\n- Gán Thẻ Rung: ${selectedPosPagerId}\n- Đã tự động gửi lệnh gộp món & phát cảnh báo chuông tới Bếp. Thẻ rung chỉ báo 1 lần khi làm xong toàn bộ.`);
-    } else {
-      alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN GỐC ${invoiceId}!\n- Trị giá: ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table}.\n- Đã gán ${selectedPosPagerId} và chuyển lệnh xuống Bếp!`);
-    }
+    alert(`XÁC NHẬN THANH TOÁN & GỬI BẾP THÀNH CÔNG!\n- Hóa đơn: ${invoiceId}\n- Gán Thẻ Rung: ${selectedPosPagerId}\n- Tổng tiền: ${totalAmount.toLocaleString('vi-VN')} đ`);
   };
 
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
@@ -269,6 +273,7 @@ export const App: React.FC = () => {
       timeElapsedMinutes: 1,
       slaStatus: 'Normal',
       isAddOn: isPagerBusy,
+      isAddOnNoticePending: isPagerBusy,
       items: bill.items.map((b, idx) => ({
         id: idx.toString(),
         name: b.name,
@@ -470,12 +475,59 @@ export const App: React.FC = () => {
                   <button
                     className="btn-primary"
                     style={{ marginTop: '1rem' }}
-                    onClick={handleCheckoutPayment}
+                    onClick={handleOpenPaymentConfirm}
                   >
                     Thanh Toán VietQR Hoặc Tiền Mặt
                   </button>
                 </div>
               )}
+            </div>
+          </div>
+        )}
+
+        {/* CASHIER PAYMENT CONFIRMATION MODAL */}
+        {showPaymentConfirmModal && (
+          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
+            <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '500px', width: '100%', border: '2px solid #2563EB' }}>
+              <h3 style={{ margin: '0 0 12px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>XÁC NHẬN THU TIỀN HÓA ĐƠN & GÁN THẺ RUNG IOT</h3>
+              
+              <div style={{ background: '#F8FAFC', padding: '14px', borderRadius: '8px', border: '1px solid #E2E8F0', marginBottom: '16px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#0F172A', marginBottom: '6px' }}>
+                  <span>Vị trí phục vụ:</span>
+                  <strong style={{ color: '#2563EB' }}>{selectedTable || 'Bàn Thu Ngân'}</strong>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '14px', color: '#0F172A', marginBottom: '6px' }}>
+                  <span>Thẻ Rung IoT đã chọn:</span>
+                  <strong style={{ color: '#D97706' }}>{selectedPosPagerId}</strong>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '16px', color: '#0F172A', fontWeight: 'bold', paddingTop: '8px', borderTop: '1px solid #CBD5E1' }}>
+                  <span>Tổng tiền thu thực tế:</span>
+                  <strong style={{ color: '#059669', fontSize: '18px' }}>
+                    {cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0).toLocaleString('vi-VN')} đ
+                  </strong>
+                </div>
+              </div>
+
+              {isAddOnOrder && (
+                <div style={{ background: '#FEE2E2', border: '1px solid #EF4444', color: '#991B1B', padding: '10px 12px', borderRadius: '6px', fontSize: '13px', fontWeight: 'bold', marginBottom: '16px' }}>
+                  ⚠️ LƯU Ý THU NGÂN: Đây là ĐƠN GỘP BỔ SUNG MÓN vào Thẻ Rung {selectedPosPagerId}. Hóa đơn sẽ tự động liên kết Hóa đơn Mẹ {parentInvoiceForPager.id} và phát thông báo chuông tới Bếp!
+                </div>
+              )}
+
+              <div style={{ display: 'flex', gap: '12px', justifyContent: 'flex-end' }}>
+                <button
+                  onClick={() => setShowPaymentConfirmModal(false)}
+                  style={{ padding: '10px 16px', background: '#F1F5F9', color: '#475569', border: '1px solid #CBD5E1', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}
+                >
+                  HỦY BỎ / KIỂM TRA LẠI
+                </button>
+                <button
+                  onClick={handleFinalizePosCheckout}
+                  style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}
+                >
+                  XÁC NHẬN ĐÃ NHẬN ĐỦ TIỀN & XUẤT LỆNH BẾP
+                </button>
+              </div>
             </div>
           </div>
         )}

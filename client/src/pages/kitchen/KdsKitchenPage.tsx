@@ -14,12 +14,14 @@ interface TicketItem {
 interface KdsTicket {
   id: string;
   orderNo: string;
+  parentOrderNo?: string;
   table: string;
-  pagerId: string; // Mã Thẻ Rung IoT
+  pagerId: string;
   station: 'Barista' | 'Kitchen';
   timeElapsedMinutes: number;
   slaStatus: 'Normal' | 'Warning' | 'Overdue';
   isAddOn?: boolean;
+  isAddOnNoticePending?: boolean;
   items: TicketItem[];
 }
 
@@ -64,8 +66,8 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         const osc = ctx.createOscillator();
         const gain = ctx.createGain();
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(880, ctx.currentTime); // Note A5
-        osc.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime + 0.3); // Note E6
+        osc.frequency.setValueAtTime(880, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(1320, ctx.currentTime + 0.3);
         gain.gain.setValueAtTime(0.5, ctx.currentTime);
         gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.5);
         osc.connect(gain);
@@ -82,11 +84,11 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     const saved = localStorage.getItem('fnb_kds_tickets');
     if (saved) {
       const parsed: KdsTicket[] = JSON.parse(saved);
-      // Check if new add-on ticket arrived
-      const newAddOn = parsed.find(t => t.isAddOn);
-      if (newAddOn && tickets.length < parsed.length) {
+      // ONLY trigger popup if there is a ticket with isAddOnNoticePending === true!
+      const unacknowledgedAddOn = parsed.find(t => t.isAddOn && t.isAddOnNoticePending);
+      if (unacknowledgedAddOn && !addOnNotice) {
         playAddOnSoundChime();
-        setAddOnNotice(newAddOn);
+        setAddOnNotice(unacknowledgedAddOn);
       }
       setTickets(parsed);
     } else {
@@ -103,6 +105,24 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
       clearInterval(interval);
     };
   }, [activeTab]);
+
+  const handleAcknowledgeAddOnNotice = () => {
+    if (!addOnNotice) return;
+    const ticketIdToAck = addOnNotice.id;
+
+    // Mark isAddOnNoticePending = false so the modal NEVER pops up again!
+    const updatedTickets = tickets.map(t => {
+      if (t.id === ticketIdToAck) {
+        return { ...t, isAddOnNoticePending: false };
+      }
+      return t;
+    });
+
+    setTickets(updatedTickets);
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+    setAddOnNotice(null);
+    window.dispatchEvent(new Event('fnb_data_updated'));
+  };
 
   // 2. DYNAMIC SMART BATCH ALGORITHM (ITEMS WITH TOTAL QTY >= 2)
   const computeSmartBatches = () => {
@@ -280,7 +300,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
                     boxShadow: t.isAddOn ? '0 0 12px rgba(220, 38, 38, 0.3)' : '0 2px 4px rgba(0,0,0,0.05)'
                   }}
                 >
-                  {/* ADD-ON ORDER BADGE ALERT FOR KITCHEN */}
                   {t.isAddOn && (
                     <div style={{ background: '#DC2626', color: '#fff', padding: '6px 10px', borderRadius: '6px', fontSize: '12px', fontWeight: 'bold', marginBottom: '10px', textAlign: 'center', letterSpacing: '0.5px' }}>
                       🚨 ĐƠN GỘP BỔ SUNG MÓN (THẺ RUNG {t.pagerId})
@@ -462,7 +481,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* ADD-ON ORDER AUDIO / VISUAL POPUP NOTIFICATION FOR KITCHEN */}
+      {/* ADD-ON ORDER AUDIO / VISUAL POPUP NOTIFICATION FOR KITCHEN (FIXED DISMISSAL) */}
       {addOnNotice && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '480px', width: '100%', textAlign: 'center', border: '3px solid #DC2626' }}>
@@ -472,7 +491,7 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
             <h3 style={{ margin: '0 0 6px 0', color: '#0F172A', fontSize: '20px', fontWeight: 'bold' }}>{addOnNotice.table} | Mã HD: {addOnNotice.orderNo}</h3>
             <p style={{ fontSize: '13px', color: '#475569', margin: '0 0 16px 0' }}>Khách hàng tại bàn vừa thanh toán thêm món bổ sung cho Thẻ Rung <strong>{addOnNotice.pagerId}</strong>.</p>
             
-            <button onClick={() => setAddOnNotice(null)} style={{ padding: '10px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
+            <button onClick={handleAcknowledgeAddOnNotice} style={{ padding: '10px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold', fontSize: '14px' }}>
               ĐÃ XÁC NHẬN CHẾ BIẾN BỔ SUNG
             </button>
           </div>
