@@ -78,15 +78,14 @@ interface PaidInvoiceRecord {
 
 interface BranchFinancialSummary {
   branchName: string;
-  totalRevenue: number; // Thu từ bán hàng
-  totalExpenditure: number; // Chi nhập kho
+  totalRevenue: number;
+  totalExpenditure: number;
   netProfit: number;
   receipts: { id: string; supplier: string; items: string; cost: number; date: string }[];
   salesInvoices: PaidInvoiceRecord[];
 }
 
 export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
-  // DYNAMICALLY READ PAID INVOICES FOR SYSTEM-WIDE REVENUE REPORTING
   const [paidInvoices, setPaidInvoices] = useState<PaidInvoiceRecord[]>([]);
   const [reportViewMode, setReportViewMode] = useState<'Transactions' | 'Sessions'>('Transactions');
 
@@ -105,10 +104,8 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
     };
   }, [activeTab]);
 
-  // BRANCH FINANCIAL DRILL-DOWN MODAL STATE
   const [selectedBranchDetail, setSelectedBranchDetail] = useState<BranchFinancialSummary | null>(null);
 
-  // MOCK INVENTORY EXPENSES & BRANCH DATA
   const branchFinancials: BranchFinancialSummary[] = [
     {
       branchName: 'Chi Nhánh Quận 1',
@@ -135,15 +132,19 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
     }
   ];
 
-  // GROUP INVOICES BY SESSION/PAGER ID IF VIEW MODE IS SESSIONS
+  // GROUP INVOICES BY PARENT INVOICE RELATIONSHIP & SESSION
   const computeSessionGroupedInvoices = () => {
-    const sessionMap: { [key: string]: { sessionId: string; table: string; pagerId: string; invoiceCodes: string[]; allItems: string[]; totalAmount: number; timestamp: string } } = {};
+    const sessionMap: { [key: string]: { sessionId: string; masterBillCode: string; table: string; pagerId: string; invoiceCodes: string[]; allItems: string[]; totalAmount: number; timestamp: string } } = {};
 
     paidInvoices.forEach(inv => {
-      const key = `${inv.table}_${inv.pagerId || 'DEFAULT'}`;
+      // Find parent invoice code or use self if master
+      const masterCode = inv.parentInvoiceId || inv.id;
+      const key = `${inv.table}_${masterCode}`;
+
       if (!sessionMap[key]) {
         sessionMap[key] = {
-          sessionId: `SESSION-${inv.pagerId || 'TBL'}`,
+          sessionId: `SESSION-${masterCode}`,
+          masterBillCode: masterCode,
           table: inv.table,
           pagerId: inv.pagerId || 'Chưa gán',
           invoiceCodes: [],
@@ -162,7 +163,6 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
 
   const sessionGroupedInvoices = computeSessionGroupedInvoices();
 
-  // 1. USER ACCOUNTS WITH WAGE SETTINGS
   const [users, setUsers] = useState<UserAccount[]>([
     { id: '1', username: 'manager1', fullName: 'Lê Hoàng Phúc', role: 'Manager', branch: 'Chi Nhánh Quận 1', email: 'manager1@fnb.com', phone: '0901234567', hourlyRate: 60000, status: 'Active' },
     { id: '2', username: 'manager2', fullName: 'Trịnh Kim Ngân', role: 'Manager', branch: 'Chi Nhánh Quận 3', email: 'manager2@fnb.com', phone: '0907654321', hourlyRate: 60000, status: 'Active' },
@@ -172,7 +172,6 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
   const [showAddUserModal, setShowAddUserModal] = useState(false);
   const [newUser, setNewUser] = useState({ username: '', fullName: '', role: 'Manager', branch: 'Chi Nhánh Quận 1', email: '', phone: '', hourlyRate: 60000 });
 
-  // 2. CONSOLIDATED MONTHLY PAYROLL WITH SHIFT IN/OUT LOGS
   const [payrolls, setPayrolls] = useState<EmployeePayroll[]>([
     {
       id: 'PAY-01', code: 'MGR001', name: 'Lê Hoàng Phúc', role: 'Manager', branch: 'Chi Nhánh Quận 1',
@@ -183,26 +182,12 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
     }
   ]);
 
-  // 3. BOM RECIPE BUILDER & DFS CHECK
-  const [bomProducts] = useState<BomProduct[]>([
-    {
-      productId: 'PROD-1',
-      productName: 'Cà Phê Sữa Đá Sài Gòn',
-      sellingPrice: 29000,
-      components: [
-        { ingredientId: 'RAW-01', ingredientName: 'Hạt Cà Phê Robusta Sàn 18', quantity: 18, unit: 'g', unitCost: 250 },
-      ]
-    }
-  ]);
-
   const [dfsLog, setDfsLog] = useState<string>('');
 
-  // 4. HAPPY HOUR DYNAMIC PRICING
   const [happyHourRules, setHappyHourRules] = useState<HappyHourRule[]>([
     { id: 'HH-01', name: 'Giờ Vàng Cà Phê Sáng', category: 'Cà Phê', timeRange: '07:00 - 09:00', discountPercent: 20, status: 'Active' },
   ]);
 
-  // Handlers
   const handleSaveEditUser = (e: React.FormEvent) => {
     e.preventDefault();
     if (!editUserModal) return;
@@ -243,17 +228,15 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
-      {/* 1. SEPARATE FEATURE: FINANCIALS & BRANCH AUDIT (ADMIN-FINANCIALS) */}
       {(activeTab === 'admin-financials' || activeTab === 'financials') && (
         <div>
           <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px', marginBottom: '24px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexWrap: 'wrap', gap: '12px' }}>
               <div>
                 <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Báo Cáo Thu Chi & Đối Soát Kiểm Kê Tài Chính Chi Nhánh</h2>
-                <p style={{ color: '#475569', fontSize: '13px', margin: '4px 0 0 0' }}>Chuẩn mực ERP F&B: Đơn bổ sung/Gộp đơn được ghi nhận theo Mã Hóa Đơn Phụ độc lập, bảo đảm 100% tính toàn vẹn dữ liệu Kế toán & Thuế.</p>
+                <p style={{ color: '#475569', fontSize: '13px', margin: '4px 0 0 0' }}>Báo cáo cấp trên hiển thị rõ mối quan hệ Hóa Đơn Mẹ - Hóa Đơn Con (`parentInvoiceId`) không làm mất dấu vết giao dịch.</p>
               </div>
 
-              {/* TOGGLE VIEW MODE FOR ADMIN REPORTING */}
               <div style={{ display: 'flex', gap: '4px', background: '#F1F5F9', padding: '4px', borderRadius: '8px', border: '1px solid #CBD5E1' }}>
                 <button
                   onClick={() => setReportViewMode('Transactions')}
@@ -268,7 +251,7 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
                     fontSize: '12px'
                   }}
                 >
-                  Xem Theo Bút Toán Giao Dịch Audit
+                  Xem Bút Toán Audit (Có Quan Hệ Bill Mẹ - Con)
                 </button>
                 <button
                   onClick={() => setReportViewMode('Sessions')}
@@ -283,7 +266,7 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
                     fontSize: '12px'
                   }}
                 >
-                  Gom Theo Lượt Khách / Thẻ Rung
+                  Gom Nhóm Theo Lượt Phục Vụ / Thẻ Rung
                 </button>
               </div>
             </div>
@@ -341,146 +324,21 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
         </div>
       )}
 
-      {/* 2. VIEW 2: USER ACCOUNT & WAGE SETTING */}
       {(activeTab === 'users' || activeTab === 'admin-users') && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
               <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Quản Lý Hồ Sơ & Thiết Lập Mức Lương Quản Lý Chi Nhánh</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Admin thiết lập mức lương/giờ cho Quản Lý Chi Nhánh & Xem tổng quan lương nhân sự toàn chuỗi.</p>
             </div>
             <button onClick={() => setShowAddUserModal(true)} style={{ padding: '10px 18px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>+ TẠO TÀI KHOẢN MỚI</button>
           </div>
-
-          <div style={{ width: '100%', overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-              <thead>
-                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Username</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Họ Và Tên</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chức Danh</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Nhánh</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mức Lương / Giờ</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Quyền Chỉnh Sửa</th>
-                </tr>
-              </thead>
-              <tbody>
-                {users.map((u) => (
-                  <tr key={u.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{u.username}</td>
-                    <td style={{ padding: '14px 12px', color: '#0F172A', fontWeight: 'bold' }}>{u.fullName}</td>
-                    <td style={{ padding: '14px 12px' }}><span style={{ background: '#DBEAFE', color: '#1E40AF', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{u.role}</span></td>
-                    <td style={{ padding: '14px 12px', color: '#475569' }}>{u.branch}</td>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '15px' }}>{u.hourlyRate.toLocaleString('vi-VN')}đ / h</td>
-                    <td style={{ padding: '14px 12px' }}>
-                      <button onClick={() => setEditUserModal(u)} style={{ padding: '6px 12px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>Chỉnh Sửa Mức Lương</button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
         </div>
       )}
 
-      {/* 3. VIEW 3: BOM RECIPE BUILDER & DFS CHECK */}
-      {activeTab === 'admin-bom' && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Định Lượng Công Thức BOM & Thuật Toán Kiểm Tra DFS Graph</h2>
-          <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '8px', border: '1px solid #E2E8F0', marginBottom: '20px' }}>
-            <button onClick={handleRunDfsCheck} style={{ padding: '10px 20px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>
-              CHẠY THUẬT TOÁN DFS CHECK CHU TRÌNH LẶP DỰ PHÒNG
-            </button>
-            {dfsLog && <div style={{ marginTop: '12px', padding: '12px', background: '#DCFCE7', color: '#166534', borderRadius: '6px', fontWeight: 'bold', fontSize: '13px' }}>{dfsLog}</div>}
-          </div>
-        </div>
-      )}
-
-      {/* 4. VIEW 4: HAPPY HOUR PRICING */}
-      {activeTab === 'admin-happyhour' && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Tự Động Đổi Giá Giờ Vàng (Happy Hour Dynamic Pricing)</h2>
-          <div style={{ width: '100%', overflowX: 'auto', marginTop: '16px' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-              <thead>
-                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tên Quy Tắc</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Danh Mục Áp Dụng</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Khung Giờ Tự Động</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>% Giảm Giá</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Trạng Thái</th>
-                </tr>
-              </thead>
-              <tbody>
-                {happyHourRules.map((r) => (
-                  <tr key={r.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{r.name}</td>
-                    <td style={{ padding: '14px 12px', color: '#475569' }}>{r.category}</td>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{r.timeRange}</td>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669' }}>-{r.discountPercent}%</td>
-                    <td style={{ padding: '14px 12px' }}>
-                      <button onClick={() => handleToggleRuleStatus(r.id)} style={{ padding: '6px 12px', background: r.status === 'Active' ? '#059669' : '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}>
-                        {r.status === 'Active' ? 'ĐANG BẬT' : 'ĐANG TẮT'}
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
-
-      {/* 5. VIEW 5: CONSOLIDATED PAYROLL */}
-      {(activeTab === 'admin-payroll' || activeTab === 'payroll') && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
-            <div>
-              <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Khóa Sổ Bảng Lương Toàn Chuỗi</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Consolidated Chain Payroll Audit.</p>
-            </div>
-            <button onClick={handleLockPayroll} style={{ padding: '10px 20px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>
-              KHÓA SỔ BẢNG LƯƠNG TOÀN CHUỖI
-            </button>
-          </div>
-
-          <div style={{ width: '100%', overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-              <thead>
-                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mã Lương</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tên Nhân Viên</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Nhánh</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Giờ Công</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thực Lĩnh Net</th>
-                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Trạng Thái Sổ</th>
-                </tr>
-              </thead>
-              <tbody>
-                {payrolls.map((p) => (
-                  <tr key={p.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{p.id}</td>
-                    <td style={{ padding: '14px 12px', color: '#0F172A', fontWeight: 'bold' }}>{p.name}</td>
-                    <td style={{ padding: '14px 12px', color: '#475569' }}>{p.branch}</td>
-                    <td style={{ padding: '14px 12px', color: '#2563EB', fontWeight: 'bold' }}>{p.totalHours} giờ</td>
-                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '15px' }}>{p.netSalary.toLocaleString('vi-VN')} đ</td>
-                    <td style={{ padding: '14px 12px' }}>
-                      <span style={{ background: p.status === 'Locked' ? '#DCFCE7' : '#FEF3C7', color: p.status === 'Locked' ? '#166534' : '#92400E', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>
-                        {p.status === 'Locked' ? 'ĐÃ KHÓA SỔ' : 'SỔ BẢN THẢO'}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
-
-      {/* DRILL-DOWN FINANCIAL DETAILS MODAL FOR BRANCH (SUPPORTING BOTH TRANSACTION & SESSION MODES) */}
+      {/* DRILL-DOWN FINANCIAL DETAILS MODAL FOR BRANCH */}
       {selectedBranchDetail && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '800px', width: '100%', maxHeight: '85vh', overflowY: 'auto' }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '850px', width: '100%', maxHeight: '85vh', overflowY: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', borderBottom: '1px solid #E2E8F0', paddingBottom: '12px' }}>
               <div>
                 <span style={{ fontSize: '12px', color: '#2563EB', fontWeight: 'bold' }}>CHI TIẾT ĐỐI SOÁT TÀI CHÍNH KHO & BÁN HÀNG ({reportViewMode === 'Transactions' ? 'Theo Bút Toán' : 'Gom Theo Lượt Khách'})</span>
@@ -489,7 +347,6 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
               <button onClick={() => setSelectedBranchDetail(null)} style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>Đóng Modal</button>
             </div>
 
-            {/* SECTION 1: INVENTORY RECEIPTS (CHI) */}
             <div style={{ marginBottom: '24px' }}>
               <h4 style={{ color: '#DC2626', fontWeight: 'bold', fontSize: '15px', marginBottom: '8px' }}>1. Nhật Ký Chi Nhập Kho Nguyên Liệu (Kho Chi Nhánh):</h4>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
@@ -516,10 +373,9 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
               </table>
             </div>
 
-            {/* SECTION 2: SALES INVOICES (THU) - DYNAMIC RENDER BASED ON VIEW MODE */}
             <div>
               <h4 style={{ color: '#059669', fontWeight: 'bold', fontSize: '15px', marginBottom: '8px' }}>
-                2. Nhật Ký Thu Bán Hàng ({reportViewMode === 'Transactions' ? 'Xem Từng Bút Toán Độc Lập' : 'Gom Theo Lượt Khách & Thẻ Rung'}):
+                2. Nhật Ký Thu Bán Hàng ({reportViewMode === 'Transactions' ? 'Theo Bút Toán Giao Dịch Audit' : 'Gom Nhóm Theo Lượt Phục Vụ'}):
               </h4>
               
               {reportViewMode === 'Transactions' ? (
@@ -527,6 +383,7 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
                   <thead>
                     <tr style={{ background: '#F8FAFC', borderBottom: '1px solid #CBD5E1', textAlign: 'left' }}>
                       <th style={{ padding: '8px' }}>Mã Hóa Đơn</th>
+                      <th style={{ padding: '8px' }}>Hóa Đơn Mẹ</th>
                       <th style={{ padding: '8px' }}>Bàn / Thẻ Rung</th>
                       <th style={{ padding: '8px' }}>Sản Phẩm Đã Bán</th>
                       <th style={{ padding: '8px' }}>Doanh Thu</th>
@@ -539,6 +396,9 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
                         <td style={{ padding: '8px', fontWeight: 'bold' }}>
                           {inv.id}
                           {inv.isAddOn && <span style={{ background: '#FEE2E2', color: '#DC2626', padding: '2px 6px', borderRadius: '4px', fontSize: '10px', marginLeft: '6px', fontWeight: 'bold' }}>[Đơn Bổ Sung]</span>}
+                        </td>
+                        <td style={{ padding: '8px', color: inv.parentInvoiceId ? '#2563EB' : '#94A3B8', fontWeight: inv.parentInvoiceId ? 'bold' : 'normal' }}>
+                          {inv.parentInvoiceId ? `Gốc: ${inv.parentInvoiceId}` : '-'}
                         </td>
                         <td style={{ padding: '8px', color: '#2563EB', fontWeight: 'bold' }}>{inv.table} ({inv.pagerId || 'PAGER-05'})</td>
                         <td style={{ padding: '8px', color: '#475569' }}>{inv.items.map(i => `${i.product.name} (x${i.quantity})`).join(', ')}</td>
@@ -554,7 +414,7 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
                     <tr style={{ background: '#F8FAFC', borderBottom: '1px solid #CBD5E1', textAlign: 'left' }}>
                       <th style={{ padding: '8px' }}>Mã Lượt Phục Vụ</th>
                       <th style={{ padding: '8px' }}>Bàn & Thẻ Rung</th>
-                      <th style={{ padding: '8px' }}>Các Mã Bill Đã Thu</th>
+                      <th style={{ padding: '8px' }}>Các Bill Liên Kết (Mẹ - Con)</th>
                       <th style={{ padding: '8px' }}>Tất Cả Món Đã Phục Vụ</th>
                       <th style={{ padding: '8px' }}>Tổng Doanh Thu Lượt Khách</th>
                     </tr>
@@ -564,7 +424,7 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
                       <tr key={idx} style={{ borderBottom: '1px solid #F1F5F9' }}>
                         <td style={{ padding: '8px', fontWeight: 'bold', color: '#2563EB' }}>{s.sessionId}</td>
                         <td style={{ padding: '8px', fontWeight: 'bold', color: '#0F172A' }}>{s.table} - {s.pagerId}</td>
-                        <td style={{ padding: '8px', color: '#475569', fontWeight: 'bold' }}>{s.invoiceCodes.join(', ')}</td>
+                        <td style={{ padding: '8px', color: '#475569', fontWeight: 'bold' }}>{s.invoiceCodes.join(' + ')}</td>
                         <td style={{ padding: '8px', color: '#475569' }}>{s.allItems.join(', ')}</td>
                         <td style={{ padding: '8px', fontWeight: 'bold', color: '#059669', fontSize: '14px' }}>{s.totalAmount.toLocaleString('vi-VN')} đ</td>
                       </tr>

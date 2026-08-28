@@ -27,6 +27,9 @@ interface CartItem {
 interface PaidInvoice {
   id: string;
   table: string;
+  pagerId?: string;
+  parentInvoiceId?: string;
+  isAddOn?: boolean;
   items: CartItem[];
   totalAmount: number;
   paymentMethod: string;
@@ -56,7 +59,24 @@ export const App: React.FC = () => {
   const [pendingBills, setPendingBills] = useState<PendingBill[]>([]);
   const [selectedPagerMap, setSelectedPagerMap] = useState<{ [billCode: string]: string }>({});
 
-  // DYNAMICALLY SYNC PENDING BILLS & PAID INVOICES FROM LOCALSTORAGE REALTIME
+  const [paidInvoices, setPaidInvoices] = useState<PaidInvoice[]>(() => {
+    const saved = localStorage.getItem('fnb_paid_invoices');
+    return saved ? JSON.parse(saved) : [
+      {
+        id: 'HD-1001',
+        table: 'Bàn 04',
+        pagerId: 'PAGER-05',
+        items: [
+          { product: { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', price: 29000, category: 'Cà Phê', unit: 'Ly' }, quantity: 2 },
+          { product: { id: '4', name: 'Trà Đào Cam Sả Tươi', price: 39000, category: 'Trà & Trà Sữa', unit: 'Ly' }, quantity: 1 }
+        ],
+        totalAmount: 97000,
+        paymentMethod: 'Chuyển Khoản VietQR',
+        timestamp: '21:15:30'
+      }
+    ];
+  });
+
   const syncLocalState = () => {
     const savedPending = localStorage.getItem('fnb_pending_bills');
     setPendingBills(savedPending ? JSON.parse(savedPending) : []);
@@ -76,23 +96,6 @@ export const App: React.FC = () => {
       clearInterval(interval);
     };
   }, [activeTab]);
-
-  const [paidInvoices, setPaidInvoices] = useState<PaidInvoice[]>(() => {
-    const saved = localStorage.getItem('fnb_paid_invoices');
-    return saved ? JSON.parse(saved) : [
-      {
-        id: 'HD-9921',
-        table: 'Bàn 04',
-        items: [
-          { product: { id: '1', name: 'Cà Phê Sữa Đá Sài Gòn', price: 29000, category: 'Cà Phê', unit: 'Ly' }, quantity: 2 },
-          { product: { id: '4', name: 'Trà Đào Cam Sả Tươi', price: 39000, category: 'Trà & Trà Sữa', unit: 'Ly' }, quantity: 1 }
-        ],
-        totalAmount: 97000,
-        paymentMethod: 'Chuyển Khoản VietQR',
-        timestamp: '21:15:30'
-      }
-    ];
-  });
 
   const mainRef = useRef<HTMLDivElement>(null);
 
@@ -179,10 +182,9 @@ export const App: React.FC = () => {
     setCart((prev) => prev.filter((item) => item.product.id !== productId));
   };
 
-  // CHECK IF SELECTED PAGER ID IS ALREADY ACTIVE FOR AN ONGOING KDS ORDER
-  const existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-  const activePagerTicket = existingKdsTickets.find((t: any) => t.pagerId === selectedPosPagerId);
-  const isAddOnOrder = !!activePagerTicket;
+  // FIND IF PAGER ID ALREADY HAS AN ACTIVE UNCOMPLETED PARENT INVOICE
+  const parentInvoiceForPager = paidInvoices.find(inv => inv.pagerId === selectedPosPagerId);
+  const isAddOnOrder = !!parentInvoiceForPager;
 
   const handleCheckoutPayment = () => {
     if (cart.length === 0) return;
@@ -192,16 +194,21 @@ export const App: React.FC = () => {
     const newInvoice: PaidInvoice = {
       id: invoiceId,
       table: selectedTable || 'Bàn Thu Ngân',
+      pagerId: selectedPosPagerId,
+      parentInvoiceId: isAddOnOrder ? parentInvoiceForPager.id : undefined,
+      isAddOn: isAddOnOrder,
       items: [...cart],
       totalAmount: totalAmount,
       paymentMethod: 'Chuyển Khoản VietQR / Tiền Mặt',
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Send ticket to KDS Kitchen with Pager ID & Add-On alert flag if re-using an active pager!
+    // Send ticket to KDS Kitchen with Pager ID & Add-On parent reference!
+    const existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
     const newKdsTicket = {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
       orderNo: invoiceId,
+      parentOrderNo: isAddOnOrder ? parentInvoiceForPager.id : undefined,
       table: selectedTable || 'Bàn Thu Ngân',
       pagerId: selectedPosPagerId,
       station: 'Barista',
@@ -212,7 +219,7 @@ export const App: React.FC = () => {
         id: c.product.id,
         name: c.product.name,
         quantity: c.quantity,
-        note: isAddOnOrder ? `🚨 ĐƠN GỘP BỔ SUNG MÓN (Thẻ ${selectedPosPagerId})` : `Thẻ Rung: ${selectedPosPagerId}`
+        note: isAddOnOrder ? `🚨 ĐƠN BỔ SUNG (Bill ${invoiceId} - Mẹ: ${parentInvoiceForPager.id})` : `Thẻ Rung: ${selectedPosPagerId}`
       }))
     };
     localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...existingKdsTickets]));
@@ -225,19 +232,23 @@ export const App: React.FC = () => {
     window.dispatchEvent(new Event('fnb_data_updated'));
 
     if (isAddOnOrder) {
-      alert(`ĐÃ THANH TOÁN ĐƠN BỔ SUNG ${invoiceId} THÀNH CÔNG!\n- Đơn được tự động ĐỔI NỔI ÂM THÀNH VÀ CẢNH BÁO BỔ SUNG MÓN sang Bếp cho Thẻ Rung ${selectedPosPagerId}!`);
+      alert(`ĐÃ THANH TOÁN HÓA ĐƠN BỔ SUNG ${invoiceId} (Liên kết Hóa đơn Mẹ: ${parentInvoiceForPager.id})!\n- Gán Thẻ Rung: ${selectedPosPagerId}\n- Đã tự động gửi lệnh gộp món & phát cảnh báo chuông tới Bếp. Thẻ rung chỉ báo 1 lần khi làm xong toàn bộ.`);
     } else {
-      alert(`THANH TOÁN THÀNH CÔNG!\n- Hóa đơn ${invoiceId} trị giá ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table}.\n- Đã gán ${selectedPosPagerId} và chuyển lệnh chế biến xuống Bếp!`);
+      alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN GỐC ${invoiceId}!\n- Trị giá: ${totalAmount.toLocaleString('vi-VN')}đ tại ${newInvoice.table}.\n- Đã gán ${selectedPosPagerId} và chuyển lệnh xuống Bếp!`);
     }
   };
 
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
     const assignedPager = selectedPagerMap[bill.billCode] || 'PAGER-05';
-    const isPagerBusy = existingKdsTickets.some((t: any) => t.pagerId === assignedPager);
+    const parentInv = paidInvoices.find(inv => inv.pagerId === assignedPager);
+    const isPagerBusy = !!parentInv;
 
     const newInvoice: PaidInvoice = {
       id: bill.billCode,
       table: bill.table,
+      pagerId: assignedPager,
+      parentInvoiceId: isPagerBusy ? parentInv.id : undefined,
+      isAddOn: isPagerBusy,
       items: bill.items.map((b, idx) => ({
         product: { id: idx.toString(), name: b.name, price: b.price, category: 'Món QR', unit: 'Phần' },
         quantity: b.quantity
@@ -247,10 +258,11 @@ export const App: React.FC = () => {
       timestamp: new Date().toLocaleTimeString('vi-VN')
     };
 
-    // Push new KDS ticket for Kitchen with assigned IoT Pager ID!
+    const existingKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
     const newKdsTicket = {
       id: `TK-${Math.floor(100 + Math.random() * 900)}`,
       orderNo: bill.billCode,
+      parentOrderNo: isPagerBusy ? parentInv.id : undefined,
       table: bill.table,
       pagerId: assignedPager,
       station: 'Barista',
@@ -261,24 +273,22 @@ export const App: React.FC = () => {
         id: idx.toString(),
         name: b.name,
         quantity: b.quantity,
-        note: isPagerBusy ? `🚨 ĐƠN GỘP BỔ SUNG MÓN (Thẻ ${assignedPager})` : `Thẻ Rung: ${assignedPager}`
+        note: isPagerBusy ? `🚨 ĐƠN BỔ SUNG (Bill ${bill.billCode} - Mẹ: ${parentInv.id})` : `Thẻ Rung: ${assignedPager}`
       }))
     };
     localStorage.setItem('fnb_kds_tickets', JSON.stringify([newKdsTicket, ...existingKdsTickets]));
 
-    // Remove bill from pending list
     const updatedPending = pendingBills.filter(p => p.billCode !== bill.billCode);
     setPendingBills(updatedPending);
     localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
 
-    // Save to paid invoices
     const updatedPaid = [newInvoice, ...paidInvoices];
     setPaidInvoices(updatedPaid);
     localStorage.setItem('fnb_paid_invoices', JSON.stringify(updatedPaid));
 
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Đã gán ${assignedPager} cho khách tại ${bill.table}.\n- Bếp / Barista đã nhận lệnh chế biến và sẽ kích hoạt thẻ rung ${assignedPager} khi xong!`);
+    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Gán Thẻ Rung ${assignedPager} cho ${bill.table}.\n- Đã chuyển lệnh xuống Bếp!`);
   };
 
   const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
@@ -289,7 +299,6 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      {/* LEFT VERTICAL SIDEBAR */}
       <Sidebar
         activeTab={activeTab}
         onTabChange={setActiveTab}
@@ -297,18 +306,11 @@ export const App: React.FC = () => {
         onLogout={handleLogout}
       />
 
-      {/* MAIN CONTENT WRAPPER */}
       <main className="main-wrapper" ref={mainRef}>
-        {/* ROLE 1: CUSTOMER UI */}
         {(activeTab.startsWith('customer-')) && <CustomerQrPage activeTab={activeTab} />}
-
-        {/* ROLE 2: STAFF UI */}
         {(activeTab.startsWith('staff-')) && <StaffRunnerPage activeTab={activeTab} />}
-
-        {/* ROLE 3: KITCHEN UI */}
         {(activeTab.startsWith('kds-')) && <KdsKitchenPage activeTab={activeTab} />}
 
-        {/* ROLE 4: SEPARATE PENDING QR BILLS QUEUE PAGE */}
         {activeTab === 'cashier-pending' && (
           <div className="card">
             <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Hàng Đợi Đơn QR Chờ Xác Nhận Thanh Toán & Gán Thẻ Rung IoT</h2>
@@ -361,7 +363,6 @@ export const App: React.FC = () => {
           </div>
         )}
 
-        {/* ROLE 4: PURE CASHIER TOUCH POS UI */}
         {activeTab === 'pos' && (
           <div className="pos-layout">
             <div className="category-menu">
@@ -440,7 +441,6 @@ export const App: React.FC = () => {
                     </div>
                   ))}
 
-                  {/* COUNTER ORDERING IOT PAGER ALLOCATION DROPDOWN */}
                   <div style={{ marginTop: '1rem', background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
                     <label style={{ fontSize: '0.8rem', fontWeight: 'bold', color: '#0F172A', display: 'block', marginBottom: '4px' }}>Gán Thẻ Rung IoT Nhận Món Cho Khách Quầy:</label>
                     <select
@@ -458,7 +458,7 @@ export const App: React.FC = () => {
 
                     {isAddOnOrder && (
                       <div style={{ marginTop: '6px', fontSize: '0.75rem', color: '#DC2626', fontWeight: 'bold', background: '#FEE2E2', padding: '6px', borderRadius: '4px' }}>
-                        ⚠️ Thẻ Rung {selectedPosPagerId} đang hoạt động tại {activePagerTicket.table}. Đơn này sẽ tự động GỘP BỔ SUNG MÓN & phát cảnh báo âm thanh tới Bếp!
+                        ⚠️ Thẻ Rung {selectedPosPagerId} đang hoạt động tại {parentInvoiceForPager.table}. Đơn mới này sẽ tự động liên kết Hóa đơn Mẹ <strong>{parentInvoiceForPager.id}</strong>!
                       </div>
                     )}
                   </div>
@@ -483,15 +483,10 @@ export const App: React.FC = () => {
         {activeTab === 'cashier-shift' && (
           <div className="card">
             <h2 style={{ color: '#0F172A', fontWeight: 'bold' }}>Đóng Mở Ca & Kiểm Tiền Két Thu Ngân</h2>
-            <p style={{ color: '#475569', marginTop: '0.25rem' }}>Đếm chi tiết số lượng từng mệnh giá tiền mặt thực tế khi bàn giao ca trực.</p>
             <div style={{ marginTop: '1.25rem', padding: '1.25rem', background: '#F8FAFC', borderRadius: '0.5rem', border: '1px solid #E2E8F0' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem', color: '#0F172A' }}>
                 <span>Tiền mặt kỳ vọng trong két:</span>
                 <span style={{ fontWeight: 'bold', color: '#059669' }}>5.000.000 đ</span>
-              </div>
-              <div className="form-group" style={{ marginTop: '1rem' }}>
-                <label style={{ color: '#0F172A', fontWeight: 'bold' }}>Tiền Mặt Thực Đếm (VNĐ)</label>
-                <input type="number" className="form-control" defaultValue={4980000} style={{ border: '1px solid #CBD5E1', color: '#0F172A' }} />
               </div>
               <button className="btn-primary" style={{ width: 'auto', padding: '0.75rem 1.5rem', marginTop: '0.5rem' }} onClick={() => alert('Đã chốt sổ giao ca thu ngân và chuyển báo cáo chênh lệch tới Quản Lý!')}>
                 Xác Nhận Chốt Ca Thu Ngân
@@ -500,7 +495,6 @@ export const App: React.FC = () => {
           </div>
         )}
 
-        {/* CASHIER INVOICE HISTORY TAB */}
         {activeTab === 'cashier-orders' && (
           <div className="card">
             <h2 style={{ color: '#0F172A', fontWeight: 'bold', marginTop: 0 }}>Lịch Sử Hóa Đơn & In Vé Thu Ngân</h2>
@@ -509,27 +503,32 @@ export const App: React.FC = () => {
                 <thead>
                   <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
                     <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mã Hóa Đơn</th>
-                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Bàn Phục Vụ</th>
-                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Tiết Các Món</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Hóa Đơn Mẹ</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Bàn & Thẻ Rung</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Tiết Món</th>
                     <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Tiền</th>
-                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Phương Thức</th>
                     <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thời Gian</th>
-                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác In</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác</th>
                   </tr>
                 </thead>
                 <tbody>
                   {paidInvoices.map((inv) => (
                     <tr key={inv.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{inv.id}</td>
-                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{inv.table}</td>
+                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>
+                        {inv.id}
+                        {inv.isAddOn && <span style={{ background: '#FEE2E2', color: '#DC2626', padding: '2px 6px', borderRadius: '4px', fontSize: '10px', marginLeft: '6px', fontWeight: 'bold' }}>[Bổ Sung]</span>}
+                      </td>
+                      <td style={{ padding: '14px 12px', color: inv.parentInvoiceId ? '#2563EB' : '#94A3B8', fontWeight: inv.parentInvoiceId ? 'bold' : 'normal' }}>
+                        {inv.parentInvoiceId ? `Gốc: ${inv.parentInvoiceId}` : '-'}
+                      </td>
+                      <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#2563EB' }}>{inv.table} ({inv.pagerId || 'PAGER-05'})</td>
                       <td style={{ padding: '14px 12px', color: '#475569', fontSize: '13px' }}>
                         {inv.items.map(i => `${i.product.name} (x${i.quantity})`).join(', ')}
                       </td>
                       <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '15px' }}>{inv.totalAmount.toLocaleString('vi-VN')} đ</td>
-                      <td style={{ padding: '14px 12px' }}><span style={{ background: '#DBEAFE', color: '#1E40AF', padding: '4px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{inv.paymentMethod}</span></td>
                       <td style={{ padding: '14px 12px', color: '#64748B', fontSize: '13px' }}>{inv.timestamp}</td>
                       <td style={{ padding: '14px 12px' }}>
-                        <button onClick={() => alert(`Đã gửi lệnh in hóa đơn ${inv.id} tới máy in nhiệt ESC/POS LAN/USB!`)} style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>In Lại Hóa Đơn</button>
+                        <button onClick={() => alert(`Đã in hóa đơn ${inv.id}!`)} style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>In Hóa Đơn</button>
                       </td>
                     </tr>
                   ))}
@@ -539,21 +538,10 @@ export const App: React.FC = () => {
           </div>
         )}
 
-        {/* ROLE 5: WAREHOUSE UI */}
         {(activeTab.startsWith('wh-')) && <WarehousePage activeTab={activeTab} />}
-
-        {/* ROLE 6: STORE MANAGER OPERATIONS UI */}
         {(activeTab.startsWith('manager-')) && <ManagerOperationsPage activeTab={activeTab} />}
-
-        {/* ROLE 7: BRAND ADMIN ERP UI */}
-        {(activeTab.startsWith('admin-')) && currentUser.role === 'Admin' && (
-          <AdminErpPage activeTab={activeTab} />
-        )}
-
-        {/* ROLE 8: SUPERADMIN CONSOLE UI */}
-        {(activeTab.startsWith('superadmin-') || activeTab.startsWith('super-')) && currentUser.role === 'SuperAdmin' && (
-          <SuperAdminConsolePage activeTab={activeTab} />
-        )}
+        {(activeTab.startsWith('admin-')) && currentUser.role === 'Admin' && <AdminErpPage activeTab={activeTab} />}
+        {(activeTab.startsWith('superadmin-') || activeTab.startsWith('super-')) && currentUser.role === 'SuperAdmin' && <SuperAdminConsolePage activeTab={activeTab} />}
       </main>
     </div>
   );
