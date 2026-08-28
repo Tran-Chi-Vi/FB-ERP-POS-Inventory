@@ -114,6 +114,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabC
           {role === 'Admin' && (
             <>
               <NavItem active={activeTab === 'admin-users'} onClick={() => onTabChange('admin-users')} label="Quản Lý Tài Khoản Nhân Sự" />
+              <NavItem active={activeTab === 'admin-financials'} onClick={() => onTabChange('admin-financials')} label="Báo Cáo Thu Chi & Kiểm Kê Chi Nhánh" />
               <NavItem active={activeTab === 'admin-bom'} onClick={() => onTabChange('admin-bom')} label="Định Lượng Công Thức & Kiểm Tra DFS" />
               <NavItem active={activeTab === 'admin-happyhour'} onClick={() => onTabChange('admin-happyhour')} label="Tự Động Đổi Giá Giờ Vàng" />
               <NavItem active={activeTab === 'admin-payroll'} onClick={() => onTabChange('admin-payroll')} label="Khóa Sổ Bảng Lương Toàn Chuỗi" />

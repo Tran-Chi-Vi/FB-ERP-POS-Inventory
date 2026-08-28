@@ -22,14 +22,6 @@ interface KdsTicket {
   items: TicketItem[];
 }
 
-interface BatchItem {
-  id: string;
-  dishName: string;
-  totalQuantity: number;
-  unit: string;
-  tables: string[];
-}
-
 interface Item86 {
   id: string;
   name: string;
@@ -76,18 +68,50 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
     };
   }, [activeTab]);
 
-  // 2. DYNAMIC BATCH COOKING MATRIX WITH ROW DELETION UPON COMPLETION
-  const [batchList, setBatchList] = useState<BatchItem[]>(() => {
-    const saved = localStorage.getItem('fnb_kds_batch');
-    return saved ? JSON.parse(saved) : [
-      { id: 'B-1', dishName: 'Trà Đào Cam Sả Tươi', totalQuantity: 4, unit: 'Ly', tables: ['Bàn 04 (x1)', 'Bàn 01 (x3)'] },
-      { id: 'B-2', dishName: 'Cà Phê Sữa Đá Sài Gòn', totalQuantity: 2, unit: 'Ly', tables: ['Bàn 04 (x2)'] },
-    ];
-  });
+  // 2. DYNAMIC SMART BATCH ALGORITHM: AGGREGATE UNPROCESSED TICKETS FOR ITEMS WITH TOTAL QTY >= 2
+  const computeSmartBatches = () => {
+    const itemMap: { [dishName: string]: { totalQty: number; unit: string; tablesMap: { [tbl: string]: number } } } = {};
 
-  useEffect(() => {
-    localStorage.setItem('fnb_kds_batch', JSON.stringify(batchList));
-  }, [batchList]);
+    tickets.forEach(ticket => {
+      ticket.items.forEach(item => {
+        if (!itemMap[item.name]) {
+          const unit = item.name.toLowerCase().includes('bánh') ? 'Cái' : 'Ly';
+          itemMap[item.name] = { totalQty: 0, unit, tablesMap: {} };
+        }
+        itemMap[item.name].totalQty += item.quantity;
+        itemMap[item.name].tablesMap[ticket.table] = (itemMap[item.name].tablesMap[ticket.table] || 0) + item.quantity;
+      });
+    });
+
+    // Filter ONLY items with totalQty >= 2 as per user directive!
+    return Object.keys(itemMap)
+      .filter(dishName => itemMap[dishName].totalQty >= 2)
+      .map(dishName => {
+        const info = itemMap[dishName];
+        const tableDetails = Object.keys(info.tablesMap).map(tbl => `${tbl} (x${info.tablesMap[tbl]})`);
+        return {
+          dishName: dishName,
+          totalQuantity: info.totalQty,
+          unit: info.unit,
+          tables: tableDetails
+        };
+      });
+  };
+
+  const smartBatches = computeSmartBatches();
+
+  const handleCompleteBatchItem = (dishName: string) => {
+    // Remove completed batch items from active tickets
+    const updatedTickets = tickets.map(t => ({
+      ...t,
+      items: t.items.filter(i => i.name !== dishName)
+    })).filter(t => t.items.length > 0);
+
+    setTickets(updatedTickets);
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+    window.dispatchEvent(new Event('fnb_data_updated'));
+    alert(`ĐÃ HOÀN TẤT MẺ CHẾ BIẾN "${dishName}"! Các món trong mẻ đã được làm xong và tự động làm sạch khỏi danh sách gom mẻ.`);
+  };
 
   // 3. 86-LIST MATRIX
   const [items86, setItems86] = useState<Item86[]>([
@@ -156,12 +180,6 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
 
     // 4. Trigger IoT Pager alert modal
     setActiveIotAlert({ pagerId: ticket.pagerId, orderNo: ticket.orderNo, table: ticket.table });
-  };
-
-  const handleCompleteBatchItem = (batchId: string) => {
-    const updatedBatch = batchList.filter(b => b.id !== batchId);
-    setBatchList(updatedBatch);
-    alert('ĐÃ HOÀN TẤT MẺ CHẾ BIẾN! Mẻ chế biến đã được xóa khỏi danh sách gom món.');
   };
 
   const handleTransferStation = (ticketId: string) => {
@@ -295,35 +313,35 @@ export const KdsKitchenPage: React.FC<KdsKitchenPageProps> = ({ activeTab }) => 
         </div>
       )}
 
-      {/* 2. VIEW 2: SMART BATCH COOKING MATRIX WITH AUTO-REMOVE ROW */}
+      {/* 2. VIEW 2: DYNAMIC SMART BATCH COOKING MATRIX (ITEMS WITH TOTAL QTY >= 2 ONLY) */}
       {activeTab === 'kds-batch' && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Gom Món Chế Biến Đồng Thời (Smart Batch View)</h2>
-          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Khi làm xong mẻ nào, bấm nút hoàn tất mẻ đó sẽ tự động xóa dòng mẻ khỏi danh sách gom món.</p>
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Gom Món Chế Biến Mẻ Lớn (Smart Batch View - Tối Thiểu 2 Món Lặp Nổi)</h2>
+          <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Tự động quét tất cả các đơn chưa làm trong trạm, lọc ra các đồ uống/bánh trùng lặp từ <strong>2 món trở lên (≥ 2)</strong> để làm mẻ lớn.</p>
 
-          {batchList.length === 0 ? (
+          {smartBatches.length === 0 ? (
             <div style={{ padding: '40px', textAlign: 'center', color: '#64748B', background: '#F8FAFC', borderRadius: '8px' }}>
-              Hiện không còn mẻ gom món nào đang chờ chế biến. Tất cả các mẻ đã hoàn tất!
+              Hiện chưa có món nào trùng lặp từ 2 phần trở lên (≥ 2) trong danh sách các đơn chưa làm. Bếp pha chế theo vé đơn lẻ.
             </div>
           ) : (
             <div style={{ width: '100%', overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
                   <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
-                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tên Món Chế Biến</th>
-                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Số Lượng Cần Pha</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tên Món Chế Biến Mẻ</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Tổng Số Lượng Cần Pha (≥ 2)</th>
                     <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Chi Tiết Các Bàn Đang Đợi</th>
-                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác Mẻ</th>
+                    <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Thao Tác Hoàn Tất Mẻ</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {batchList.map((b) => (
-                    <tr key={b.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                  {smartBatches.map((b, idx) => (
+                    <tr key={idx} style={{ borderBottom: '1px solid #F1F5F9' }}>
                       <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{b.dishName}</td>
                       <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#059669', fontSize: '16px' }}>{b.totalQuantity} {b.unit}</td>
                       <td style={{ padding: '14px 12px', color: '#475569' }}>{b.tables.join(', ')}</td>
                       <td style={{ padding: '14px 12px' }}>
-                        <button onClick={() => handleCompleteBatchItem(b.id)} style={{ padding: '6px 14px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>
+                        <button onClick={() => handleCompleteBatchItem(b.dishName)} style={{ padding: '6px 14px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}>
                           Xong Mẻ {b.totalQuantity} {b.unit}
                         </button>
                       </td>
