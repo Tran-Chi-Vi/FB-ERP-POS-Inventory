@@ -1,151 +1,153 @@
 import React from 'react';
 
-interface SidebarProps {
+export interface SidebarProps {
+  currentUser: { fullName: string; role: string } | null;
   activeTab: string;
-  setActiveTab: (tab: string) => void;
-  currentUser: { fullName: string; role: string };
+  onTabChange: (tab: string) => void;
   onLogout: () => void;
 }
 
-export const Sidebar: React.FC<SidebarProps> = ({
-  activeTab,
-  setActiveTab,
-  currentUser,
-  onLogout,
-}) => {
-  const getTabsForRole = (role: string) => {
-    switch (role) {
-      case 'Customer':
-        return [
-          { id: 'customer-menu', label: 'Menu Điện Tử & Đặt Món' },
-          { id: 'customer-group', label: 'Giỏ Hàng Nhóm Realtime' },
-          { id: 'customer-split', label: 'Chia Hóa Đơn Bàn' },
-          { id: 'customer-loyalty', label: 'Ví Điểm & Đổi Quà' },
-        ];
-      case 'Staff':
-        return [
-          { id: 'staff-tables', label: 'Sơ Đồ Bàn Ăn & mPOS' },
-          { id: 'staff-runner', label: 'Hàng Đợi Trả Món Ready' },
-          { id: 'staff-attendance', label: 'Chấm Công Selfie WiFi' },
-        ];
-      case 'Kitchen':
-        return [
-          { id: 'kds-tickets', label: 'Màn Hình Chế Biến KDS' },
-          { id: 'kds-batch', label: 'Gom Món Batch Cooking' },
-          { id: 'kds-86', label: 'Khóa Món 86-List Matrix' },
-          { id: 'kds-recipe', label: 'Quy Trình & Định Lượng BOM' },
-          { id: 'kds-history', label: 'Lịch Sử Vé & SLA Chế Biến' },
-        ];
-      case 'Cashier':
-        return [
-          { id: 'pos', label: 'Thu Ngân POS & Sơ Đồ Bàn' },
-          { id: 'cashier-shift', label: 'Đóng / Mở Ca Thu Ngân' },
-        ];
-      case 'Warehouse':
-        return [
-          { id: 'wh-inventory', label: 'Tồn Kho Thực Tế' },
-          { id: 'wh-fefo', label: 'Bảng Theo Dõi Date Lô FEFO' },
-          { id: 'wh-receipt', label: 'Nhập Kho Goods Receipt' },
-          { id: 'wh-transfer', label: 'Điều Chuyển Kho Chi Nhánh' },
-          { id: 'wh-srm', label: 'Danh Bạ Nhà Cung Cấp SRM' },
-        ];
-      case 'Manager':
-        return [
-          { id: 'manager-approvals', label: 'Hộp Thư Phê Duyệt PIN' },
-          { id: 'manager-telemetry', label: 'Branch Live Monitor' },
-          { id: 'manager-eod', label: 'Checklist Đóng Cửa EOD' },
-          { id: 'manager-incidents', label: 'Nhật Ký Sự Cố Khiếu Nại' },
-        ];
-      case 'Admin':
-        return [
-          { id: 'users', label: 'Quản Lý Tài Khoản Nhân Sự' },
-          { id: 'admin-bom', label: 'BOM Recipe Engine & DFS' },
-          { id: 'admin-happyhour', label: 'Happy Hour Dynamic Pricing' },
-          { id: 'admin-payroll', label: 'Khóa Sổ Bảng Lương' },
-          { id: 'admin-menu-eng', label: 'Food Cost & Menu Engineering' },
-        ];
-      case 'SuperAdmin':
-        return [
-          { id: 'users', label: 'Tài Khoản Toàn Chuỗi' },
-          { id: 'super-branches', label: 'Quản Lý Chi Nhánh & Phí' },
-          { id: 'super-audit', label: 'Centralized Audit Log JSON' },
-          { id: 'super-dr', label: 'Disaster Recovery Console' },
-          { id: 'super-broadcast', label: 'Phát Thông Báo Khẩn Cấp' },
-        ];
-      default:
-        return [];
-    }
-  };
+export const Sidebar: React.FC<SidebarProps> = ({ currentUser, activeTab, onTabChange, onLogout }) => {
+  if (!currentUser) return null;
 
-  const tabs = getTabsForRole(currentUser.role);
+  const role = currentUser.role;
 
   return (
-    <aside style={{ width: '280px', background: '#111827', color: '#F3F4F6', height: '100vh', display: 'flex', flexDirection: 'column', borderRight: '1px solid #1F2937', position: 'fixed', left: 0, top: 0, overflowY: 'auto', zIndex: 100 }}>
-      {/* App Branding */}
-      <div style={{ padding: '20px', borderBottom: '1px solid #1F2937' }}>
-        <div style={{ fontSize: '11px', background: '#374151', color: '#9CA3AF', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase', width: 'fit-content', marginBottom: '6px' }}>
-          ENTERPRISE ERP POS
+    <aside style={{
+      width: '280px',
+      height: '100vh',
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      background: '#FFFFFF',
+      borderRight: '1px solid #E2E8F0',
+      display: 'flex',
+      flexDirection: 'column',
+      justify: 'space-between',
+      zIndex: 100,
+      boxShadow: '1px 0 3px rgba(0, 0, 0, 0.05)'
+    }}>
+      <div>
+        {/* BRAND LOGO HEADER */}
+        <div style={{ padding: '24px 20px', borderBottom: '1px solid #E2E8F0', background: '#F8FAFC' }}>
+          <span style={{ fontSize: '11px', fontWeight: 'bold', color: '#2563EB', textTransform: 'uppercase', letterSpacing: '1px' }}>ENTERPRISE ERP POS</span>
+          <h1 style={{ fontSize: '20px', fontWeight: '800', color: '#0F172A', margin: '4px 0 0 0' }}>F&B SUPER-APP</h1>
+          <p style={{ fontSize: '12px', color: '#475569', margin: '2px 0 0 0' }}>System Engine v2.0</p>
         </div>
-        <h2 style={{ margin: 0, fontSize: '18px', fontWeight: 'bold', color: '#FFFFFF' }}>F&B SUPER-APP</h2>
-        <p style={{ margin: '4px 0 0 0', fontSize: '12px', color: '#9CA3AF' }}>System Engine v2.0</p>
-      </div>
 
-      {/* User Info Header */}
-      <div style={{ padding: '16px', borderBottom: '1px solid #1F2937', background: '#1F2937' }}>
-        <div style={{ fontSize: '12px', color: '#9CA3AF' }}>TÀI KHOẢN ĐANG ĐĂNG NHẬP:</div>
-        <div style={{ fontSize: '15px', fontWeight: 'bold', color: '#FFFFFF', marginTop: '2px' }}>{currentUser.fullName}</div>
-        <div style={{ fontSize: '12px', color: '#10B981', marginTop: '2px' }}>Vai trò: <strong>{currentUser.role}</strong></div>
-      </div>
-
-      {/* Feature Menu List */}
-      <div style={{ padding: '16px 12px', flex: 1 }}>
-        <div style={{ fontSize: '11px', textTransform: 'uppercase', color: '#6B7280', marginBottom: '10px', paddingLeft: '8px', fontWeight: 'bold' }}>
-          DANH MỤC CHỨC NĂNG {currentUser.role.toUpperCase()}
+        {/* LOGGED IN USER CARD */}
+        <div style={{ padding: '16px 20px', borderBottom: '1px solid #E2E8F0', background: '#FFFFFF' }}>
+          <div style={{ fontSize: '11px', color: '#475569', textTransform: 'uppercase', fontWeight: '600' }}>Tài Khoản Đang Đăng Nhập:</div>
+          <div style={{ fontSize: '15px', fontWeight: 'bold', color: '#0F172A', marginTop: '2px' }}>{currentUser.fullName}</div>
+          <div style={{ fontSize: '13px', color: '#2563EB', fontWeight: '600' }}>Vai trò: {currentUser.role}</div>
         </div>
-        <nav style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-          {tabs.map((tab) => {
-            const isActive = activeTab === tab.id;
-            return (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                style={{
-                  width: '100%',
-                  textAlign: 'left',
-                  padding: '12px 14px',
-                  background: isActive ? '#2563EB' : 'transparent',
-                  color: isActive ? '#FFFFFF' : '#9CA3AF',
-                  border: 'none',
-                  borderRadius: '6px',
-                  fontSize: '13px',
-                  fontWeight: isActive ? 'bold' : 'normal',
-                  cursor: 'pointer',
-                  transition: 'all 0.15s ease-in-out',
-                }}
-              >
-                {tab.label}
-              </button>
-            );
-          })}
-        </nav>
+
+        {/* NAV ITEMS DRIVEN EXCLUSIVELY BY ROLE */}
+        <div style={{ padding: '16px 12px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+          
+          <div style={{ fontSize: '11px', fontWeight: 'bold', color: '#64748B', textTransform: 'uppercase', padding: '0 8px 8px 8px', letterSpacing: '0.5px' }}>
+            DANH MỤC CHỨC NĂNG {role.toUpperCase()}
+          </div>
+
+          {/* CUSTOMER ROLE NAV ITEMS */}
+          {role === 'Customer' && (
+            <>
+              <NavItem active={activeTab === 'customer-menu'} onClick={() => onTabChange('customer-menu')} label="Menu Gọi Món QR Tại Bàn" />
+              <NavItem active={activeTab === 'customer-group'} onClick={() => onTabChange('customer-group')} label="Giỏ Hàng Nhóm Realtime" />
+              <NavItem active={activeTab === 'customer-split'} onClick={() => onTabChange('customer-split')} label="Công Cụ Tách Tiền Hóa Đơn" />
+              <NavItem active={activeTab === 'customer-loyalty'} onClick={() => onTabChange('customer-loyalty')} label="Ví Điểm Thưởng Hội Viên" />
+            </>
+          )}
+
+          {/* CASHIER ROLE NAV ITEMS */}
+          {role === 'Cashier' && (
+            <>
+              <NavItem active={activeTab === 'pos'} onClick={() => onTabChange('pos')} label="Màn Hình Thu Ngân POS" />
+              <NavItem active={activeTab === 'cashier-shift'} onClick={() => onTabChange('cashier-shift')} label="Giao Ca & Kiểm Tiền Két" />
+              <NavItem active={activeTab === 'cashier-orders'} onClick={() => onTabChange('cashier-orders')} label="Lịch Sử Hóa Đơn & In Vé" />
+            </>
+          )}
+
+          {/* STAFF ROLE NAV ITEMS */}
+          {role === 'Staff' && (
+            <>
+              <NavItem active={activeTab === 'staff-runner'} onClick={() => onTabChange('staff-runner')} label="Trả Món mPOS Runner Queue" />
+              <NavItem active={activeTab === 'staff-tables'} onClick={() => onTabChange('staff-tables')} label="Sơ Đồ Bàn & Trạng Thái" />
+              <NavItem active={activeTab === 'staff-attendance'} onClick={() => onTabChange('staff-attendance')} label="Chấm Công WiFi Geofence" />
+            </>
+          )}
+
+          {/* KITCHEN ROLE NAV ITEMS */}
+          {role === 'Kitchen' && (
+            <>
+              <NavItem active={activeTab === 'kds-tickets'} onClick={() => onTabChange('kds-tickets')} label="Màn Hình Chế Biến KDS" />
+              <NavItem active={activeTab === 'kds-batch'} onClick={() => onTabChange('kds-batch')} label="Gom Món Batch Cooking" />
+              <NavItem active={activeTab === 'kds-86'} onClick={() => onTabChange('kds-86')} label="Khóa Món 86-List Matrix" />
+              <NavItem active={activeTab === 'kds-recipe'} onClick={() => onTabChange('kds-recipe')} label="Quy Trình & Định Lượng BOM" />
+              <NavItem active={activeTab === 'kds-history'} onClick={() => onTabChange('kds-history')} label="Lịch Sử Vé & SLA Chế Biến" />
+            </>
+          )}
+
+          {/* WAREHOUSE ROLE NAV ITEMS */}
+          {role === 'Warehouse' && (
+            <>
+              <NavItem active={activeTab === 'wh-inventory'} onClick={() => onTabChange('wh-inventory')} label="Tồn Kho Thực Tế" />
+              <NavItem active={activeTab === 'wh-fefo'} onClick={() => onTabChange('wh-fefo')} label="Bảng Theo Dõi Date Lô FEFO" />
+              <NavItem active={activeTab === 'wh-receipt'} onClick={() => onTabChange('wh-receipt')} label="Nhập Kho Goods Receipt" />
+              <NavItem active={activeTab === 'wh-transfer'} onClick={() => onTabChange('wh-transfer')} label="Điều Chuyển Kho Chi Nhánh" />
+              <NavItem active={activeTab === 'wh-srm'} onClick={() => onTabChange('wh-srm')} label="Danh Bạ Nhà Cung Cấp SRM" />
+            </>
+          )}
+
+          {/* MANAGER ROLE NAV ITEMS */}
+          {role === 'Manager' && (
+            <>
+              <NavItem active={activeTab === 'manager-approvals'} onClick={() => onTabChange('manager-approvals')} label="Hộp Thư Phê Duyệt PIN" />
+              <NavItem active={activeTab === 'manager-telemetry'} onClick={() => onTabChange('manager-telemetry')} label="Branch Live Monitor" />
+              <NavItem active={activeTab === 'manager-eod'} onClick={() => onTabChange('manager-eod')} label="Checklist Đóng Cửa EOD" />
+              <NavItem active={activeTab === 'manager-incidents'} onClick={() => onTabChange('manager-incidents')} label="Nhật Ký Sự Cố Khiếu Nại" />
+            </>
+          )}
+
+          {/* ADMIN ROLE NAV ITEMS */}
+          {role === 'Admin' && (
+            <>
+              <NavItem active={activeTab === 'admin-users'} onClick={() => onTabChange('admin-users')} label="Quản Lý Tài Khoản Nhân Sự" />
+              <NavItem active={activeTab === 'admin-bom'} onClick={() => onTabChange('admin-bom')} label="BOM Recipe Engine & DFS" />
+              <NavItem active={activeTab === 'admin-happyhour'} onClick={() => onTabChange('admin-happyhour')} label="Happy Hour Dynamic Pricing" />
+              <NavItem active={activeTab === 'admin-payroll'} onClick={() => onTabChange('admin-payroll')} label="Khóa Sổ Bảng Lương" />
+              <NavItem active={activeTab === 'admin-menu-eng'} onClick={() => onTabChange('admin-menu-eng')} label="Food Cost & Menu Engineering" />
+            </>
+          )}
+
+          {/* SUPERADMIN ROLE NAV ITEMS */}
+          {role === 'SuperAdmin' && (
+            <>
+              <NavItem active={activeTab === 'superadmin-users'} onClick={() => onTabChange('superadmin-users')} label="Tài Khoản Toàn Chuỗi" />
+              <NavItem active={activeTab === 'super-branches'} onClick={() => onTabChange('super-branches')} label="Quản Lý Chi Nhánh & Phí" />
+              <NavItem active={activeTab === 'super-audit'} onClick={() => onTabChange('super-audit')} label="Centralized Audit Log JSON" />
+              <NavItem active={activeTab === 'super-dr'} onClick={() => onTabChange('super-dr')} label="Disaster Recovery Console" />
+              <NavItem active={activeTab === 'super-broadcast'} onClick={() => onTabChange('super-broadcast')} label="Phát Thông Báo Khẩn Cấp" />
+            </>
+          )}
+
+        </div>
       </div>
 
-      {/* Logout Button */}
-      <div style={{ padding: '16px', borderTop: '1px solid #1F2937' }}>
-        <button
-          onClick={onLogout}
-          style={{
-            width: '100%',
-            padding: '10px',
-            background: '#DC2626',
-            color: '#FFFFFF',
-            border: 'none',
-            borderRadius: '6px',
-            fontSize: '13px',
-            fontWeight: 'bold',
-            cursor: 'pointer',
-          }}
-        >
+      {/* LOGOUT BUTTON */}
+      <div style={{ padding: '16px', borderTop: '1px solid #E2E8F0', background: '#F8FAFC' }}>
+        <button onClick={onLogout} style={{
+          width: '100%',
+          padding: '12px',
+          background: '#DC2626',
+          color: '#FFFFFF',
+          border: 'none',
+          borderRadius: '6px',
+          cursor: 'pointer',
+          fontWeight: 'bold',
+          fontSize: '14px',
+          transition: 'all 0.2s ease'
+        }}>
           Đăng Xuất Tài Khoản
         </button>
       </div>
@@ -153,4 +155,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
   );
 };
 
-export default Sidebar;
+const NavItem: React.FC<{ active: boolean; onClick: () => void; label: string }> = ({ active, onClick, label }) => (
+  <button onClick={onClick} style={{
+    width: '100%',
+    textAlign: 'left',
+    padding: '12px 14px',
+    background: active ? '#2563EB' : 'transparent',
+    color: active ? '#FFFFFF' : '#334155',
+    border: 'none',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    fontWeight: active ? 'bold' : '500',
+    fontSize: '13px',
+    transition: 'all 0.15s ease'
+  }}>
+    {label}
+  </button>
+);

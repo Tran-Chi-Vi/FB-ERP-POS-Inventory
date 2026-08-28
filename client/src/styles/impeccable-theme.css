@@ -1,17 +1,17 @@
 :root {
-  --bg-dark: #0F172A;
-  --bg-sidebar: #0F172A;
-  --bg-card: #1E293B;
-  --bg-card-hover: #334155;
-  --border-color: #334155;
-  --text-main: #F8FAFC;
-  --text-muted: #94A3B8;
+  --bg-dark: #F1F5F9;
+  --bg-sidebar: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F8FAFC;
+  --border-color: #E2E8F0;
+  --text-main: #0F172A;
+  --text-muted: #475569;
   --text-subtle: #64748B;
   --accent-primary: #2563EB;
   --accent-hover: #1D4ED8;
-  --accent-emerald: #10B981;
-  --accent-warning: #F59E0B;
-  --accent-danger: #EF4444;
+  --accent-emerald: #059669;
+  --accent-warning: #D97706;
+  --accent-danger: #DC2626;
   --sidebar-width: 280px;
 }
 
@@ -54,7 +54,7 @@ html, body {
   border-radius: 0.75rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
   color: var(--text-main);
   max-width: 100%;
 }
@@ -73,24 +73,24 @@ table {
 }
 
 th {
-  background-color: #1E293B;
-  color: #F8FAFC;
+  background-color: #F8FAFC;
+  color: #0F172A;
   font-weight: 700;
   text-align: left;
   padding: 12px;
-  border-bottom: 2px solid #334155;
+  border-bottom: 2px solid #E2E8F0;
   font-size: 13px;
 }
 
 td {
   padding: 12px;
-  border-bottom: 1px solid #1E293B;
-  color: #F8FAFC;
+  border-bottom: 1px solid #F1F5F9;
+  color: #1E293B;
   font-size: 14px;
 }
 
 tr:nth-child(even) td {
-  background-color: rgba(255, 255, 255, 0.02);
+  background-color: #F8FAFC;
 }
 
 /* POS SCREEN CATEGORY MENU & PRODUCT GRID */
@@ -115,7 +115,7 @@ tr:nth-child(even) td {
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--border-color);
-  background: #0F172A;
+  background: #F8FAFC;
   color: var(--text-muted);
   cursor: pointer;
   text-align: left;
@@ -151,28 +151,28 @@ tr:nth-child(even) td {
 .product-card:hover {
   transform: translateY(-3px);
   border-color: #2563EB;
-  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.15);
 }
 
 .product-title {
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #F8FAFC;
+  color: #0F172A;
 }
 
 .product-price {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #10B981;
+  color: #059669;
 }
 
 /* AUTH LOGIN OVERLAY */
 .auth-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.9);
-  backdrop-filter: blur(8px);
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,13 +180,13 @@ tr:nth-child(even) td {
 }
 
 .auth-modal {
-  background: var(--bg-card);
+  background: #FFFFFF;
   border: 1px solid var(--border-color);
   border-radius: 1rem;
   padding: 2.5rem;
   width: 100%;
   max-width: 440px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   color: var(--text-main);
 }
 
@@ -205,10 +205,10 @@ tr:nth-child(even) td {
 .form-control {
   width: 100%;
   padding: 0.75rem 1rem;
-  background: #0F172A;
-  border: 1px solid var(--border-color);
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
   border-radius: 0.5rem;
-  color: #F8FAFC;
+  color: #0F172A;
   font-size: 0.95rem;
 }
 

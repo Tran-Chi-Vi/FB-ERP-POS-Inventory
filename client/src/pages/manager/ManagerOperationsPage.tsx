@@ -84,26 +84,26 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
   };
 
   return (
-    <div style={{ padding: '24px', maxWidth: '1150px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
+    <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
       {/* 1. VIEW 1: APPROVALS */}
       {activeTab === 'manager-approvals' && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#111827', fontWeight: 'bold' }}>Hộp Thư Phê Duyệt Yêu Cầu Khẩn Cấp Bằng Mã PIN Manager</h2>
-          <p style={{ color: '#4B5563', fontSize: '14px', marginBottom: '16px' }}>Các yêu cầu hủy đơn, chiết khấu vượt định mức từ thu ngân quầy cần mã PIN quản lý để phê duyệt.</p>
+        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Hộp Thư Phê Duyệt Yêu Cầu Khẩn Cấp Bằng Mã PIN Manager</h2>
+          <p style={{ color: '#475569', fontSize: '14px', marginBottom: '16px' }}>Các yêu cầu hủy đơn, chiết khấu vượt định mức từ thu ngân quầy cần mã PIN quản lý để phê duyệt.</p>
 
-          <div style={{ background: '#F3F4F6', padding: '16px', borderRadius: '6px', border: '1px solid #E5E7EB', marginBottom: '20px', display: 'flex', gap: '12px', alignItems: 'center' }}>
-            <label style={{ fontSize: '14px', fontWeight: 'bold', color: '#111827' }}>Nhập Mã PIN Xác Thực (Manager PIN):</label>
-            <input type="password" maxLength={6} value={pinCode} onChange={(e) => setPinCode(e.target.value)} placeholder="• • • •" style={{ padding: '8px 12px', border: '1px solid #D1D5DB', borderRadius: '4px', width: '130px', letterSpacing: '4px', fontWeight: 'bold', color: '#111827' }} />
+          <div style={{ background: '#F8FAFC', padding: '16px', borderRadius: '6px', border: '1px solid #E2E8F0', marginBottom: '20px', display: 'flex', gap: '12px', alignItems: 'center' }}>
+            <label style={{ fontSize: '14px', fontWeight: 'bold', color: '#0F172A' }}>Nhập Mã PIN Xác Thực (Manager PIN):</label>
+            <input type="password" maxLength={6} value={pinCode} onChange={(e) => setPinCode(e.target.value)} placeholder="• • • •" style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '4px', width: '130px', letterSpacing: '4px', fontWeight: 'bold', color: '#0F172A' }} />
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {pendingApprovals.map((app) => (
-              <div key={app.id} style={{ border: '1px solid #E5E7EB', background: '#F9FAFB', padding: '16px', borderRadius: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div key={app.id} style={{ border: '1px solid #E2E8F0', background: '#F8FAFC', padding: '16px', borderRadius: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
                 <div>
                   <span style={{ background: '#DC2626', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{app.type}</span>
-                  <h3 style={{ margin: '8px 0 4px 0', fontSize: '18px', color: '#111827' }}>{app.detail}</h3>
-                  <div style={{ fontSize: '13px', color: '#4B5563' }}>Yêu cầu bởi: {app.cashier} | Giá trị: <strong style={{ color: '#059669' }}>{app.amount}</strong> | Thời gian: {app.time}</div>
+                  <h3 style={{ margin: '8px 0 4px 0', fontSize: '18px', color: '#0F172A' }}>{app.detail}</h3>
+                  <div style={{ fontSize: '13px', color: '#475569' }}>Yêu cầu bởi: {app.cashier} | Giá trị: <strong style={{ color: '#059669' }}>{app.amount}</strong> | Thời gian: {app.time}</div>
                 </div>
                 <div style={{ display: 'flex', gap: '8px' }}>
                   <button onClick={() => setPendingApprovals(pendingApprovals.filter(a => a.id !== app.id))} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Từ chối</button>
@@ -113,7 +113,7 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
             ))}
 
             {pendingApprovals.length === 0 && (
-              <div style={{ textAlign: 'center', padding: '30px', color: '#6B7280', fontWeight: 'bold' }}>Không có yêu cầu duyệt khẩn cấp nào đang chờ.</div>
+              <div style={{ textAlign: 'center', padding: '30px', color: '#64748B', fontWeight: 'bold' }}>Không có yêu cầu duyệt khẩn cấp nào đang chờ.</div>
             )}
           </div>
         </div>
@@ -121,18 +121,18 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
 
       {/* 2. VIEW 2: BRANCH LIVE MONITOR */}
       {activeTab === 'manager-telemetry' && (
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '20px' }}>
           {/* Cashier Safe Float Card */}
-          <div style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '24px' }}>
+          <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
             <h3 style={{ marginTop: 0, color: '#2563EB', fontWeight: 'bold', fontSize: '18px' }}>Soi Ca Thu Ngân & Tiền Mặt Két Quầy</h3>
             <div style={{ margin: '16px 0' }}>
-              <div style={{ fontSize: '13px', color: '#4B5563' }}>Tiền mặt hiện tại trong két:</div>
+              <div style={{ fontSize: '13px', color: '#475569' }}>Tiền mặt hiện tại trong két:</div>
               <div style={{ fontSize: '26px', fontWeight: 'bold', color: cashInDrawer > 10000000 ? '#DC2626' : '#059669' }}>
                 {cashInDrawer.toLocaleString('vi-VN')}đ
               </div>
               {cashInDrawer > 10000000 && (
                 <div style={{ fontSize: '12px', color: '#DC2626', fontWeight: 'bold', marginTop: '4px' }}>
-                  ⚠️ CẢNH BÁO: Tiền két vượt định mức 10M, đề xuất rút bớt tiền chuyển vào két an toàn!
+                  CẢNH BÁO: Tiền két vượt định mức 10M, đề xuất rút bớt tiền chuyển vào két an toàn!
                 </div>
               )}
             </div>
@@ -142,14 +142,14 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
           </div>
 
           {/* Kitchen SLA & Labor Cost Card */}
-          <div style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '24px' }}>
+          <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
             <h3 style={{ marginTop: 0, color: '#D97706', fontWeight: 'bold', fontSize: '18px' }}>Soi Trạm Chế Biến KDS & Chi Phí Nhân Công</h3>
             <div style={{ margin: '16px 0' }}>
-              <div style={{ fontSize: '14px', color: '#111827', marginBottom: '8px' }}>Tốc độ chế biến trung bình: <strong style={{ color: '#059669' }}>6.2 phút/món (Tốt)</strong></div>
-              <div style={{ fontSize: '14px', color: '#111827', marginBottom: '12px' }}>
+              <div style={{ fontSize: '14px', color: '#0F172A', marginBottom: '8px' }}>Tốc độ chế biến trung bình: <strong style={{ color: '#059669' }}>6.2 phút/món (Tốt)</strong></div>
+              <div style={{ fontSize: '14px', color: '#0F172A', marginBottom: '12px' }}>
                 Chi Phí Nhân Công Realtime (Labor Cost %): <strong style={{ color: '#2563EB' }}>{laborCostPercent}%</strong> (Target &lt; 22%)
               </div>
-              <label style={{ display: 'block', fontSize: '12px', color: '#4B5563', marginBottom: '4px' }}>Điều chỉnh định mức phân bổ nhân sự ca:</label>
+              <label style={{ display: 'block', fontSize: '12px', color: '#475569', marginBottom: '4px' }}>Điều chỉnh định mức phân bổ nhân sự ca:</label>
               <input type="range" min={15} max={30} step={0.5} value={laborCostPercent} onChange={(e) => setLaborCostPercent(Number(e.target.value))} style={{ width: '100%' }} />
             </div>
             <button onClick={handleSendSlaAlert} disabled={slaAlertSent} style={{ width: '100%', padding: '10px', background: slaAlertSent ? '#9CA3AF' : '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: slaAlertSent ? 'not-allowed' : 'pointer' }}>
@@ -161,68 +161,70 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
 
       {/* 3. VIEW 3: EOD CHECKLIST */}
       {activeTab === 'manager-eod' && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '24px' }}>
-          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#111827', fontWeight: 'bold' }}>Checklist Đóng Cửa Quán Cuối Ngày (EOD Closure Checklist)</h2>
-          <p style={{ color: '#4B5563', fontSize: '14px', marginBottom: '20px' }}>Yêu cầu quản lý hoàn tất 4 bước kiểm tra trước khi niêm phong ca làm việc ngày.</p>
+        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+          <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Checklist Đóng Cửa Quán Cuối Ngày (EOD Closure Checklist)</h2>
+          <p style={{ color: '#475569', fontSize: '14px', marginBottom: '20px' }}>Yêu cầu quản lý hoàn tất 4 bước kiểm tra trước khi niêm phong ca làm việc ngày.</p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#111827', background: '#F9FAFB', padding: '12px', borderRadius: '6px', border: '1px solid #E5E7EB' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
               <input type="checkbox" checked={eodChecked.cashReconciled} onChange={(e) => setEodChecked({ ...eodChecked, cashReconciled: e.target.checked })} style={{ width: '18px', height: '18px' }} />
               1. Đã kiểm đếm két tiền mặt thực tế và đối soát chênh lệch ca thu ngân thành công.
             </label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#111827', background: '#F9FAFB', padding: '12px', borderRadius: '6px', border: '1px solid #E5E7EB' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
               <input type="checkbox" checked={eodChecked.stockLocked} onChange={(e) => setEodChecked({ ...eodChecked, stockLocked: e.target.checked })} style={{ width: '18px', height: '18px' }} />
               2. Đã khóa sổ kho nguyên liệu cuối ngày và kiểm kê niêm phong tủ lạnh bảo quản FEFO.
             </label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#111827', background: '#F9FAFB', padding: '12px', borderRadius: '6px', border: '1px solid #E5E7EB' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
               <input type="checkbox" checked={eodChecked.equipmentOff} onChange={(e) => setEodChecked({ ...eodChecked, equipmentOff: e.target.checked })} style={{ width: '18px', height: '18px' }} />
               3. Đã ngắt nguồn máy pha cà phê, bếp đun, hệ thống âm thanh và đèn chiếu sáng.
             </label>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#111827', background: '#F9FAFB', padding: '12px', borderRadius: '6px', border: '1px solid #E5E7EB' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '15px', color: '#0F172A', background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0' }}>
               <input type="checkbox" checked={eodChecked.kdsCleared} onChange={(e) => setEodChecked({ ...eodChecked, kdsCleared: e.target.checked })} style={{ width: '18px', height: '18px' }} />
               4. Màn hình KDS trạm Bar & Kitchen đã hoàn tất 100% các vé order trong ngày.
             </label>
           </div>
 
           <button onClick={() => alert('Đã CHỐT EOD ĐÓNG CỬA QUÁN THÀNH CÔNG! Báo cáo chốt doanh số và chi phí ngày đã tự động gửi về Admin.')} style={{ marginTop: '24px', padding: '12px 24px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>
-            🔒 HOÀN TẤT ĐÓNG CỬA QUÁN CUỐI NGÀY
+            HOÀN TẤT ĐÓNG CỬA QUÁN CUỐI NGÀY
           </button>
         </div>
       )}
 
       {/* 4. VIEW 4: INCIDENTS */}
       {activeTab === 'manager-incidents' && (
-        <div style={{ background: '#FFFFFF', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '24px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+        <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '12px' }}>
             <div>
-              <h2 style={{ fontSize: '20px', margin: 0, color: '#111827', fontWeight: 'bold' }}>Sổ Ghi Nhận Sự Cố & Khiếu Nại Khách Hàng</h2>
-              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#4B5563' }}>Nhật ký truy vết xử lý phản ánh chất lượng phục vụ và bồi thường voucher cho khách.</p>
+              <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Sổ Ghi Nhận Sự Cố & Khiếu Nại Khách Hàng</h2>
+              <p style={{ margin: '4px 0 0 0', fontSize: '13px', color: '#475569' }}>Nhật ký truy vết xử lý phản ánh chất lượng phục vụ và bồi thường voucher cho khách.</p>
             </div>
             <button onClick={() => setShowAddIncidentModal(true)} style={{ padding: '10px 18px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>+ GHI NHẬN SỰ CỐ MỚI</button>
           </div>
 
-          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-            <thead>
-              <tr style={{ background: '#F9FAFB', borderBottom: '2px solid #E5E7EB', textAlign: 'left' }}>
-                <th style={{ padding: '12px', color: '#111827', fontWeight: 'bold' }}>Mã Sự Cố</th>
-                <th style={{ padding: '12px', color: '#111827', fontWeight: 'bold' }}>Khách Hàng / Bàn</th>
-                <th style={{ padding: '12px', color: '#111827', fontWeight: 'bold' }}>Nội Dung Phản Ánh</th>
-                <th style={{ padding: '12px', color: '#111827', fontWeight: 'bold' }}>Biện Pháp Xử Lý</th>
-                <th style={{ padding: '12px', color: '#111827', fontWeight: 'bold' }}>Quản Lý Xử Lý</th>
-              </tr>
-            </thead>
-            <tbody>
-              {incidents.map((inc) => (
-                <tr key={inc.id} style={{ borderBottom: '1px solid #F3F4F6' }}>
-                  <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#111827' }}>{inc.id}</td>
-                  <td style={{ padding: '14px 12px', color: '#111827', fontWeight: 'bold' }}>{inc.customer}</td>
-                  <td style={{ padding: '14px 12px', color: '#DC2626' }}>{inc.issue}</td>
-                  <td style={{ padding: '14px 12px', color: '#059669', fontWeight: 'bold' }}>{inc.resolution}</td>
-                  <td style={{ padding: '14px 12px', color: '#4B5563' }}>{inc.handledBy}</td>
+          <div style={{ width: '100%', overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr style={{ background: '#F8FAFC', borderBottom: '2px solid #E2E8F0', textAlign: 'left' }}>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Mã Sự Cố</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Khách Hàng / Bàn</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Nội Dung Phản Ánh</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Biện Pháp Xử Lý</th>
+                  <th style={{ padding: '12px', color: '#0F172A', fontWeight: 'bold' }}>Quản Lý Xử Lý</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {incidents.map((inc) => (
+                  <tr key={inc.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                    <td style={{ padding: '14px 12px', fontWeight: 'bold', color: '#0F172A' }}>{inc.id}</td>
+                    <td style={{ padding: '14px 12px', color: '#0F172A', fontWeight: 'bold' }}>{inc.customer}</td>
+                    <td style={{ padding: '14px 12px', color: '#DC2626' }}>{inc.issue}</td>
+                    <td style={{ padding: '14px 12px', color: '#059669', fontWeight: 'bold' }}>{inc.resolution}</td>
+                    <td style={{ padding: '14px 12px', color: '#475569' }}>{inc.handledBy}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
 
@@ -230,15 +232,15 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
       {showWithdrawCashModal && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '450px', width: '100%' }}>
-            <h3 style={{ marginTop: 0, color: '#111827' }}>Rút Bớt Két Tiền Mặt Thu Ngân</h3>
+            <h3 style={{ marginTop: 0, color: '#0F172A' }}>Rút Bớt Két Tiền Mặt Thu Ngân</h3>
             <form onSubmit={handleWithdrawCash}>
               <div style={{ marginBottom: '12px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#111827', fontWeight: 'bold' }}>Số Tiền Rút (đ):</label>
-                <input type="number" required value={withdrawAmount} onChange={(e) => setWithdrawAmount(Number(e.target.value))} style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px', color: '#111827' }} />
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Số Tiền Rút (đ):</label>
+                <input type="number" required value={withdrawAmount} onChange={(e) => setWithdrawAmount(Number(e.target.value))} style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
               </div>
               <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#111827', fontWeight: 'bold' }}>Ghi Chú Lý Do Rút Tiền:</label>
-                <input type="text" required value={withdrawReason} onChange={(e) => setWithdrawReason(e.target.value)} style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px', color: '#111827' }} />
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Ghi Chú Lý Do Rút Tiền:</label>
+                <input type="text" required value={withdrawReason} onChange={(e) => setWithdrawReason(e.target.value)} style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
               </div>
               <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
                 <button type="button" onClick={() => setShowWithdrawCashModal(false)} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Hủy</button>
@@ -253,19 +255,19 @@ export const ManagerOperationsPage: React.FC<ManagerOperationsPageProps> = ({ ac
       {showAddIncidentModal && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
           <div style={{ background: '#fff', padding: '24px', borderRadius: '8px', maxWidth: '450px', width: '100%' }}>
-            <h3 style={{ marginTop: 0, color: '#111827' }}>Ghi Nhận Sự Cố Khiếu Nại Mới</h3>
+            <h3 style={{ marginTop: 0, color: '#0F172A' }}>Ghi Nhận Sự Cố Khiếu Nại Mới</h3>
             <form onSubmit={handleAddIncident}>
               <div style={{ marginBottom: '12px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#111827', fontWeight: 'bold' }}>Tên Khách Hàng / Số Bàn:</label>
-                <input type="text" required value={newIncident.customer} onChange={(e) => setNewIncident({ ...newIncident, customer: e.target.value })} placeholder="Anh Hoàng (Bàn 03)" style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px', color: '#111827' }} />
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Tên Khách Hàng / Số Bàn:</label>
+                <input type="text" required value={newIncident.customer} onChange={(e) => setNewIncident({ ...newIncident, customer: e.target.value })} placeholder="Anh Hoàng (Bàn 03)" style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
               </div>
               <div style={{ marginBottom: '12px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#111827', fontWeight: 'bold' }}>Nội Dung Sự Cố / Khiếu Nại:</label>
-                <input type="text" required value={newIncident.issue} onChange={(e) => setNewIncident({ ...newIncident, issue: e.target.value })} placeholder="Phản ánh đồ uống không đúng vị..." style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px', color: '#111827' }} />
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Nội Dung Sự Cố / Khiếu Nại:</label>
+                <input type="text" required value={newIncident.issue} onChange={(e) => setNewIncident({ ...newIncident, issue: e.target.value })} placeholder="Phản ánh đồ uống không đúng vị..." style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
               </div>
               <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#111827', fontWeight: 'bold' }}>Biện Pháp Giải Quyết / Bồi Thường:</label>
-                <input type="text" required value={newIncident.resolution} onChange={(e) => setNewIncident({ ...newIncident, resolution: e.target.value })} placeholder="Đổi ly mới & tặng voucher 20k" style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px', color: '#111827' }} />
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px', color: '#0F172A', fontWeight: 'bold' }}>Biện Pháp Giải Quyết / Bồi Thường:</label>
+                <input type="text" required value={newIncident.resolution} onChange={(e) => setNewIncident({ ...newIncident, resolution: e.target.value })} placeholder="Đổi ly mới & tặng voucher 20k" style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A' }} />
               </div>
               <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
                 <button type="button" onClick={() => setShowAddIncidentModal(false)} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Hủy</button>
