@@ -93,7 +93,6 @@ export const App: React.FC = () => {
     if (savedPending) {
       const parsedPending: PendingBill[] = JSON.parse(savedPending);
       const now = Date.now();
-      // Remove any bill that has passed 15-minute expiration window without payment
       const validPending = parsedPending.filter(b => b.expiresAt > now);
       
       if (validPending.length !== parsedPending.length) {
@@ -113,7 +112,7 @@ export const App: React.FC = () => {
   useEffect(() => {
     syncLocalState();
     window.addEventListener('fnb_data_updated', syncLocalState);
-    const interval = setInterval(syncLocalState, 1000); // Check countdown every 1 second
+    const interval = setInterval(syncLocalState, 1000);
     return () => {
       window.removeEventListener('fnb_data_updated', syncLocalState);
       clearInterval(interval);
@@ -122,14 +121,16 @@ export const App: React.FC = () => {
 
   // DYNAMIC TABLE OCCUPANCY & HOLD STATUS MAP
   const activeKdsTickets = JSON.parse(localStorage.getItem('fnb_kds_tickets') || '[]');
-  const busyPagersMap: { [pagerId: string]: string } = {};
+  const busyPagersMap: { [pagerId: string]: { table: string; orderNo: string; ticketId: string } } = {};
   const tableStatusMap: { [table: string]: { status: 'Free' | 'PendingHold' | 'Occupied'; expiresAt?: number; billCode?: string } } = {};
 
   const tables = ['Bàn 01', 'Bàn 02', 'Bàn 03', 'Bàn 04', 'Bàn 05', 'VIP 01', 'VIP 02'];
   tables.forEach(t => { tableStatusMap[t] = { status: 'Free' }; });
 
   activeKdsTickets.forEach((t: any) => {
-    if (t.pagerId) busyPagersMap[t.pagerId] = t.table;
+    if (t.pagerId && !t.pagerReturned) {
+      busyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo, ticketId: t.id };
+    }
     if (t.table) tableStatusMap[t.table] = { status: 'Occupied' };
   });
 
@@ -142,7 +143,7 @@ export const App: React.FC = () => {
   const allPagers = ['PAGER-01', 'PAGER-02', 'PAGER-03', 'PAGER-04', 'PAGER-05', 'PAGER-06', 'PAGER-07', 'PAGER-08', 'PAGER-09', 'PAGER-10'];
 
   const getFirstAvailablePagerForTable = (targetTable: string) => {
-    const activeTicket = activeKdsTickets.find((t: any) => t.table === targetTable);
+    const activeTicket = activeKdsTickets.find((t: any) => t.table === targetTable && !t.pagerReturned);
     if (activeTicket && activeTicket.pagerId) return activeTicket.pagerId;
 
     const free = allPagers.find(p => !busyPagersMap[p]);
@@ -155,6 +156,20 @@ export const App: React.FC = () => {
       setSelectedPosPagerId(autoPager);
     }
   }, [selectedTable]);
+
+  // ACTION: CONFIRM RETURN / RECOVERY OF IOT PAGER -> RESET PAGER BACK TO FREE!
+  const handleReturnIotPager = (pagerIdToReturn: string) => {
+    const updatedTickets = activeKdsTickets.map((t: any) => {
+      if (t.pagerId === pagerIdToReturn) {
+        return { ...t, pagerReturned: true, pagerId: '' };
+      }
+      return t;
+    });
+
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+    window.dispatchEvent(new Event('fnb_data_updated'));
+    alert(`ĐÃ THU HỒI THẺ RUNG IOT "${pagerIdToReturn}" THÀNH CÔNG!\nThẻ đã sẵn sàng trả về khay để cấp cho khách hàng tiếp theo.`);
+  };
 
   // CLEAR TABLE & RELEASE OCCUPANCY ACTION FOR CASHIER
   const handleReleaseTable = (tableToRelease: string) => {
@@ -261,7 +276,6 @@ export const App: React.FC = () => {
     setShowPaymentConfirmModal(true);
   };
 
-  // FINALIZE CASHIER POS CHECKOUT -> ONLY NOW ADDS TO OFFICIAL DATABASE & REVENUE HISTORY!
   const handleFinalizePosCheckout = () => {
     if (cart.length === 0) return;
     const totalAmount = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
@@ -330,10 +344,9 @@ export const App: React.FC = () => {
     setShowPaymentConfirmModal(false);
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN ${invoiceId}!\n- Đơn hàng đã chính thức được ghi nhận vào cơ sở dữ liệu doanh thu & lịch sử mua hàng.`);
+    alert(`THANH TOÁN THÀNH CÔNG HÓA ĐƠN ${invoiceId}!\n- Đã gán Thẻ Rung ${selectedPosPagerId} cho ${selectedTable}.`);
   };
 
-  // FINALIZE PENDING QR BILL -> TRANSITION FROM PENDING HOLD TO OFFICIAL DATABASE!
   const handlePayPendingBillWithIotPager = (bill: PendingBill) => {
     const assignedPager = selectedPagerMap[bill.billCode] || getFirstAvailablePagerForTable(bill.table);
     const parentInv = paidInvoices.find(inv => inv.pagerId === assignedPager || inv.table === bill.table);
@@ -397,24 +410,24 @@ export const App: React.FC = () => {
 
     localStorage.setItem('fnb_kds_tickets', JSON.stringify(existingKdsTickets));
 
-    // REMOVE FROM PENDING TEMPORARY QUEUE
     const updatedPending = pendingBills.filter(p => p.billCode !== bill.billCode);
     setPendingBills(updatedPending);
     localStorage.setItem('fnb_pending_bills', JSON.stringify(updatedPending));
 
-    // SAVE TO OFFICIAL PAID INVOICES DATABASE & REVENUE REPORT
     const updatedPaid = [newInvoice, ...paidInvoices];
     setPaidInvoices(updatedPaid);
     localStorage.setItem('fnb_paid_invoices', JSON.stringify(updatedPaid));
 
     window.dispatchEvent(new Event('fnb_data_updated'));
 
-    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Đơn đã chuyển từ bảng tạm sang CƠ SỞ DỮ LIỆU CHÍNH & LỊCH SỬ MUA HÀNG.\n- Bàn ${bill.table} đã được xác nhận ĐÃ CÓ CHỦ và gán Thẻ Rung ${assignedPager}!`);
+    alert(`XÁC NHẬN THANH TOÁN MÃ BILL ${bill.billCode} THÀNH CÔNG!\n- Gán Thẻ Rung ${assignedPager} cho ${bill.table}.`);
   };
 
   if (!currentUser) {
     return <LoginPage onLoginSuccess={handleLoginSuccess} />;
   }
+
+  const busyPagersList = Object.keys(busyPagersMap);
 
   return (
     <div className="app-layout">
@@ -446,7 +459,6 @@ export const App: React.FC = () => {
                   const defaultPager = selectedPagerMap[b.billCode] || getFirstAvailablePagerForTable(b.table);
                   const currentSelectedPager = selectedPagerMap[b.billCode] || defaultPager;
 
-                  // CALCULATE 15-MINUTE COUNTDOWN TIMER
                   const secondsRemaining = Math.max(0, Math.floor((b.expiresAt - Date.now()) / 1000));
                   const mins = Math.floor(secondsRemaining / 60);
                   const secs = secondsRemaining % 60;
@@ -476,10 +488,10 @@ export const App: React.FC = () => {
                             style={{ padding: '8px 12px', border: '1px solid #CBD5E1', borderRadius: '6px', color: '#0F172A', fontWeight: 'bold', fontSize: '0.9rem' }}
                           >
                             {allPagers.map(p => {
-                              const isBusy = !!busyPagersMap[p] && busyPagersMap[p] !== b.table;
+                              const isBusy = !!busyPagersMap[p] && busyPagersMap[p].table !== b.table;
                               return (
                                 <option key={p} value={p} disabled={isBusy}>
-                                  {p} {isBusy ? `(Đang bận - ${busyPagersMap[p]})` : '(Đang rảnh)'}
+                                  {p} {isBusy ? `(Đang bận - ${busyPagersMap[p].table})` : '(Đang rảnh)'}
                                 </option>
                               );
                             })}
@@ -567,9 +579,39 @@ export const App: React.FC = () => {
                   })}
                 </div>
 
+                {/* IOT PAGER RETURN & RECOVERY CONTROL PANEL */}
+                <div style={{ background: '#FEF3C7', padding: '14px', borderRadius: '8px', border: '1px solid #FDE68A', marginTop: '12px' }}>
+                  <h4 style={{ margin: '0 0 8px 0', color: '#92400E', fontSize: '14px', fontWeight: 'bold' }}>
+                    📲 BẢNG THU HỒI THẺ RUNG IOT KHI KHÁCH ĐÃ NHẬN ĐỒ UỐNG:
+                  </h4>
+                  {busyPagersList.length === 0 ? (
+                    <div style={{ fontSize: '13px', color: '#78350F' }}>Hiện không có Thẻ Rung IoT nào đang bận. Tất cả thẻ đang ở trạng thái RẢNH.</div>
+                  ) : (
+                    <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                      {busyPagersList.map(pId => {
+                        const info = busyPagersMap[pId];
+                        return (
+                          <div key={pId} style={{ background: '#FFFFFF', border: '1px solid #F59E0B', padding: '10px 14px', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            <div>
+                              <strong style={{ color: '#D97706', fontSize: '14px' }}>{pId}</strong>
+                              <div style={{ fontSize: '12px', color: '#475569' }}>{info.table} | Bill: {info.orderNo}</div>
+                            </div>
+                            <button
+                              onClick={() => handleReturnIotPager(pId)}
+                              style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
+                            >
+                              ✓ XÁC NHẬN ĐÃ THU HỒI THẺ {pId}
+                            </button>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+
                 {/* CLEAR / RELEASE TABLE ACTION BOX */}
                 {Object.keys(tableStatusMap).some(t => tableStatusMap[t].status !== 'Free') && (
-                  <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0', marginTop: '8px' }}>
+                  <div style={{ background: '#F8FAFC', padding: '12px', borderRadius: '6px', border: '1px solid #E2E8F0', marginTop: '12px' }}>
                     <span style={{ fontSize: '12px', color: '#0F172A', fontWeight: 'bold', display: 'block', marginBottom: '6px' }}>Thao Tác Dọn Bàn & Giải Phóng Ghế Cho Khách Mới:</span>
                     <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                       {tables.filter(t => tableStatusMap[t].status !== 'Free').map(tbl => (
@@ -634,10 +676,10 @@ export const App: React.FC = () => {
                       style={{ width: '100%', padding: '8px', border: '1px solid #CBD5E1', borderRadius: '4px', fontWeight: 'bold', color: '#0F172A' }}
                     >
                       {allPagers.map(p => {
-                        const isBusy = !!busyPagersMap[p] && busyPagersMap[p] !== selectedTable;
+                        const isBusy = !!busyPagersMap[p] && busyPagersMap[p].table !== selectedTable;
                         return (
                           <option key={p} value={p} disabled={isBusy}>
-                            {p} {isBusy ? `(Đang bận tại ${busyPagersMap[p]})` : '(Đang rảnh)'}
+                            {p} {isBusy ? `(Đang bận tại ${busyPagersMap[p].table})` : '(Đang rảnh)'}
                           </option>
                         );
                       })}

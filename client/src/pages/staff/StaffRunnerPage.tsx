@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface StaffRunnerPageProps {
   activeTab: string;
@@ -46,7 +46,49 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
     { id: 'TV2', name: 'VIP 02', status: 'Empty', guests: 0 },
   ]);
 
-  // 3. WIFI ATTENDANCE LOGS
+  // 3. IOT PAGERS RETURN MANAGEMENT STATE
+  const [activeKdsTickets, setActiveKdsTickets] = useState<any[]>([]);
+
+  const syncKdsTickets = () => {
+    const saved = localStorage.getItem('fnb_kds_tickets');
+    if (saved) {
+      setActiveKdsTickets(JSON.parse(saved));
+    } else {
+      setActiveKdsTickets([]);
+    }
+  };
+
+  useEffect(() => {
+    syncKdsTickets();
+    window.addEventListener('fnb_data_updated', syncKdsTickets);
+    const interval = setInterval(syncKdsTickets, 1500);
+    return () => {
+      window.removeEventListener('fnb_data_updated', syncKdsTickets);
+      clearInterval(interval);
+    };
+  }, []);
+
+  const busyPagersMap: { [pagerId: string]: { table: string; orderNo: string } } = {};
+  activeKdsTickets.forEach((t: any) => {
+    if (t.pagerId && !t.pagerReturned) {
+      busyPagersMap[t.pagerId] = { table: t.table, orderNo: t.orderNo };
+    }
+  });
+
+  const handleReturnIotPager = (pagerIdToReturn: string) => {
+    const updatedTickets = activeKdsTickets.map((t: any) => {
+      if (t.pagerId === pagerIdToReturn) {
+        return { ...t, pagerReturned: true, pagerId: '' };
+      }
+      return t;
+    });
+
+    localStorage.setItem('fnb_kds_tickets', JSON.stringify(updatedTickets));
+    window.dispatchEvent(new Event('fnb_data_updated'));
+    alert(`ĐÃ THU HỒI THẺ RUNG IOT "${pagerIdToReturn}" THÀNH CÔNG!\nThẻ đã sẵn sàng trả về khay để cấp cho khách hàng tiếp theo.`);
+  };
+
+  // 4. WIFI ATTENDANCE LOGS
   const [attendanceLogs, setAttendanceLogs] = useState<AttendanceLog[]>([
     { date: '2026-08-28', type: 'IN', timestamp: '08:00:15 AM', bssid: '74:83:C2:9F:10:AB (WiFi_Q1_5G)', status: 'Hợp Lệ (Geofenced)' },
     { date: '2026-08-27', type: 'OUT', timestamp: '18:02:10 PM', bssid: '74:83:C2:9F:10:AB (WiFi_Q1_5G)', status: 'Hợp Lệ (Geofenced)' },
@@ -95,9 +137,41 @@ export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) =
     alert('CHẤM CÔNG TAN LÀM THÀNH CÔNG! Ghi nhận số giờ làm ca hôm nay.');
   };
 
+  const busyPagersList = Object.keys(busyPagersMap);
+
   return (
     <div style={{ width: '100%', maxWidth: '100%', fontFamily: 'system-ui, sans-serif' }}>
       
+      {/* IOT PAGERS RETURN & RECOVERY PANEL FOR RUNNER STAFF */}
+      <div style={{ background: '#FEF3C7', padding: '16px', borderRadius: '8px', border: '1px solid #FDE68A', marginBottom: '20px' }}>
+        <h3 style={{ margin: '0 0 8px 0', color: '#92400E', fontSize: '16px', fontWeight: 'bold' }}>
+          📲 THU HỒI THẺ RUNG IOT KHI KHÁCH NHẬN MÓN TẠI QUẦY:
+        </h3>
+        {busyPagersList.length === 0 ? (
+          <div style={{ fontSize: '13px', color: '#78350F' }}>Hiện không có Thẻ Rung nào đang bận. Tất cả thẻ đã thu hồi về khay.</div>
+        ) : (
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            {busyPagersList.map(pId => {
+              const info = busyPagersMap[pId];
+              return (
+                <div key={pId} style={{ background: '#FFFFFF', border: '1px solid #F59E0B', padding: '10px 14px', borderRadius: '6px', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                  <div>
+                    <strong style={{ color: '#D97706', fontSize: '15px' }}>{pId}</strong>
+                    <div style={{ fontSize: '12px', color: '#475569' }}>{info.table} | Bill: {info.orderNo}</div>
+                  </div>
+                  <button
+                    onClick={() => handleReturnIotPager(pId)}
+                    style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '12px' }}
+                  >
+                    ✓ XÁC NHẬN THU HỒI {pId}
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
       {/* 1. VIEW 1: RUNNER QUEUE */}
       {(activeTab === 'staff-runner' || activeTab === 'staff') && (
         <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px' }}>
