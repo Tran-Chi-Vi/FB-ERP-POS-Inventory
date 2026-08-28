@@ -110,7 +110,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      {/* LEFT VERTICAL SIDEBAR (STRICT ISOLATION, NO EMOJIS) */}
+      {/* LEFT VERTICAL SIDEBAR (STRICT ISOLATION, NO EMOJIS, NO TOP BANNER DUPES) */}
       <Sidebar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -220,10 +220,14 @@ export const App: React.FC = () => {
         {(activeTab === 'manager-dash' || activeTab === 'manager-void') && <ManagerOperationsPage />}
 
         {/* ROLE 7: BRAND ADMIN ERP UI */}
-        {(activeTab === 'users' || activeTab === 'catalog-bom' || activeTab === 'finance-payroll' || activeTab === 'bi-reports') && currentUser.role === 'Admin' && <AdminErpPage />}
+        {(activeTab === 'users' || activeTab === 'catalog-bom' || activeTab === 'finance-payroll' || activeTab === 'bi-reports') && currentUser.role === 'Admin' && (
+          <AdminErpPage activeTab={activeTab} />
+        )}
 
         {/* ROLE 8: SUPERADMIN CONSOLE UI */}
-        {(activeTab === 'users' || activeTab === 'branch-admin' || activeTab === 'audit-log' || activeTab === 'system-console') && currentUser.role === 'SuperAdmin' && <SuperAdminConsolePage />}
+        {(activeTab === 'users' || activeTab === 'branch-admin' || activeTab === 'audit-log' || activeTab === 'system-console') && currentUser.role === 'SuperAdmin' && (
+          <SuperAdminConsolePage activeTab={activeTab} />
+        )}
       </main>
     </div>
   );
