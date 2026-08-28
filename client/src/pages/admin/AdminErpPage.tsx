@@ -67,6 +67,9 @@ interface HappyHourRule {
 interface PaidInvoiceRecord {
   id: string;
   table: string;
+  pagerId?: string;
+  parentInvoiceId?: string;
+  isAddOn?: boolean;
   items: { product: { name: string; price: number }; quantity: number }[];
   totalAmount: number;
   paymentMethod: string;
@@ -85,6 +88,7 @@ interface BranchFinancialSummary {
 export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
   // DYNAMICALLY READ PAID INVOICES FOR SYSTEM-WIDE REVENUE REPORTING
   const [paidInvoices, setPaidInvoices] = useState<PaidInvoiceRecord[]>([]);
+  const [reportViewMode, setReportViewMode] = useState<'Transactions' | 'Sessions'>('Transactions');
 
   const syncPaidInvoices = () => {
     const saved = localStorage.getItem('fnb_paid_invoices');
@@ -124,7 +128,6 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
       netProfit: 36500000,
       receipts: [
         { id: 'NK-8805', supplier: 'Công ty Sữa Vinamilk', items: 'Sữa tươi thanh trùng 100 lít', cost: 12000000, date: '2026-08-24' },
-        { id: 'NK-8806', supplier: 'Nông nghiệp Tươi Da Lat', items: 'Trái cây tươi, Cam Sả Đào 200kg', cost: 20000000, date: '2026-08-27' },
       ],
       salesInvoices: [
         { id: 'HD-7701', table: 'Bàn 02', items: [{ product: { name: 'Cà Phê Sữa Đá', price: 29000 }, quantity: 4 }], totalAmount: 116000, paymentMethod: 'Chuyển Khoản VietQR', timestamp: '14:20:00' }
@@ -132,13 +135,37 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
     }
   ];
 
+  // GROUP INVOICES BY SESSION/PAGER ID IF VIEW MODE IS SESSIONS
+  const computeSessionGroupedInvoices = () => {
+    const sessionMap: { [key: string]: { sessionId: string; table: string; pagerId: string; invoiceCodes: string[]; allItems: string[]; totalAmount: number; timestamp: string } } = {};
+
+    paidInvoices.forEach(inv => {
+      const key = `${inv.table}_${inv.pagerId || 'DEFAULT'}`;
+      if (!sessionMap[key]) {
+        sessionMap[key] = {
+          sessionId: `SESSION-${inv.pagerId || 'TBL'}`,
+          table: inv.table,
+          pagerId: inv.pagerId || 'Chưa gán',
+          invoiceCodes: [],
+          allItems: [],
+          totalAmount: 0,
+          timestamp: inv.timestamp
+        };
+      }
+      sessionMap[key].invoiceCodes.push(inv.id);
+      inv.items.forEach(i => sessionMap[key].allItems.push(`${i.product.name} (x${i.quantity})`));
+      sessionMap[key].totalAmount += inv.totalAmount;
+    });
+
+    return Object.values(sessionMap);
+  };
+
+  const sessionGroupedInvoices = computeSessionGroupedInvoices();
+
   // 1. USER ACCOUNTS WITH WAGE SETTINGS
   const [users, setUsers] = useState<UserAccount[]>([
     { id: '1', username: 'manager1', fullName: 'Lê Hoàng Phúc', role: 'Manager', branch: 'Chi Nhánh Quận 1', email: 'manager1@fnb.com', phone: '0901234567', hourlyRate: 60000, status: 'Active' },
     { id: '2', username: 'manager2', fullName: 'Trịnh Kim Ngân', role: 'Manager', branch: 'Chi Nhánh Quận 3', email: 'manager2@fnb.com', phone: '0907654321', hourlyRate: 60000, status: 'Active' },
-    { id: '3', username: 'warehouse1', fullName: 'Phạm Quốc Bảo', role: 'Warehouse', branch: 'Chi Nhánh Quận 1', email: 'warehouse1@fnb.com', phone: '0912345678', hourlyRate: 45000, status: 'Active' },
-    { id: '4', username: 'cashier1', fullName: 'Nguyễn Thị Mai', role: 'Cashier', branch: 'Chi Nhánh Quận 1', email: 'cashier1@fnb.com', phone: '0923456789', hourlyRate: 40000, status: 'Active' },
-    { id: '5', username: 'staff1', fullName: 'Trần Thanh Tâm', role: 'Staff', branch: 'Chi Nhánh Quận 1', email: 'staff1@fnb.com', phone: '0934567890', hourlyRate: 35000, status: 'Active' },
   ]);
 
   const [editUserModal, setEditUserModal] = useState<UserAccount | null>(null);
@@ -152,32 +179,27 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
       hourlyRate: 60000, totalHours: 200, baseSalary: 12000000, bonus: 2000000, deductions: 500000, netSalary: 13500000, status: 'Draft',
       shifts: [
         { date: '2026-08-25', clockIn: '08:00 AM', clockOut: '18:00 PM', hoursWorked: 10, dailyWage: 600000 },
-        { date: '2026-08-26', clockIn: '08:00 AM', clockOut: '18:00 PM', hoursWorked: 10, dailyWage: 600000 },
       ]
     }
   ]);
-  const [branchFilter, setBranchFilter] = useState<string>('ALL');
 
   // 3. BOM RECIPE BUILDER & DFS CHECK
-  const [bomProducts, setBomProducts] = useState<BomProduct[]>([
+  const [bomProducts] = useState<BomProduct[]>([
     {
       productId: 'PROD-1',
       productName: 'Cà Phê Sữa Đá Sài Gòn',
       sellingPrice: 29000,
       components: [
         { ingredientId: 'RAW-01', ingredientName: 'Hạt Cà Phê Robusta Sàn 18', quantity: 18, unit: 'g', unitCost: 250 },
-        { ingredientId: 'RAW-02', ingredientName: 'Sữa Đặc Ngôi Sao Phương Nam', quantity: 30, unit: 'ml', unitCost: 150 },
       ]
     }
   ]);
 
-  const [selectedBomProduct] = useState<string>('PROD-1');
   const [dfsLog, setDfsLog] = useState<string>('');
 
   // 4. HAPPY HOUR DYNAMIC PRICING
   const [happyHourRules, setHappyHourRules] = useState<HappyHourRule[]>([
     { id: 'HH-01', name: 'Giờ Vàng Cà Phê Sáng', category: 'Cà Phê', timeRange: '07:00 - 09:00', discountPercent: 20, status: 'Active' },
-    { id: 'HH-02', name: 'Happy Hour Trà Sữa Chiều', category: 'Trà & Trà Sữa', timeRange: '14:00 - 16:00', discountPercent: 15, status: 'Active' },
   ]);
 
   // Handlers
@@ -225,8 +247,46 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
       {(activeTab === 'admin-financials' || activeTab === 'financials') && (
         <div>
           <div style={{ background: '#FFFFFF', border: '1px solid #E2E8F0', borderRadius: '8px', padding: '24px', marginBottom: '24px' }}>
-            <h2 style={{ fontSize: '20px', marginTop: 0, color: '#0F172A', fontWeight: 'bold' }}>Báo Cáo Thu Chi & Đối Soát Kiểm Kê Tài Chính Chi Nhánh</h2>
-            <p style={{ color: '#475569', fontSize: '13px', marginBottom: '20px' }}>Đối soát tiền Thu từ bán sản phẩm với tiền Chi nhập kho nguyên liệu của từng chi nhánh.</p>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexWrap: 'wrap', gap: '12px' }}>
+              <div>
+                <h2 style={{ fontSize: '20px', margin: 0, color: '#0F172A', fontWeight: 'bold' }}>Báo Cáo Thu Chi & Đối Soát Kiểm Kê Tài Chính Chi Nhánh</h2>
+                <p style={{ color: '#475569', fontSize: '13px', margin: '4px 0 0 0' }}>Chuẩn mực ERP F&B: Đơn bổ sung/Gộp đơn được ghi nhận theo Mã Hóa Đơn Phụ độc lập, bảo đảm 100% tính toàn vẹn dữ liệu Kế toán & Thuế.</p>
+              </div>
+
+              {/* TOGGLE VIEW MODE FOR ADMIN REPORTING */}
+              <div style={{ display: 'flex', gap: '4px', background: '#F1F5F9', padding: '4px', borderRadius: '8px', border: '1px solid #CBD5E1' }}>
+                <button
+                  onClick={() => setReportViewMode('Transactions')}
+                  style={{
+                    padding: '8px 14px',
+                    background: reportViewMode === 'Transactions' ? '#2563EB' : 'transparent',
+                    color: reportViewMode === 'Transactions' ? '#fff' : '#475569',
+                    border: 'none',
+                    borderRadius: '6px',
+                    cursor: 'pointer',
+                    fontWeight: 'bold',
+                    fontSize: '12px'
+                  }}
+                >
+                  Xem Theo Bút Toán Giao Dịch Audit
+                </button>
+                <button
+                  onClick={() => setReportViewMode('Sessions')}
+                  style={{
+                    padding: '8px 14px',
+                    background: reportViewMode === 'Sessions' ? '#2563EB' : 'transparent',
+                    color: reportViewMode === 'Sessions' ? '#fff' : '#475569',
+                    border: 'none',
+                    borderRadius: '6px',
+                    cursor: 'pointer',
+                    fontWeight: 'bold',
+                    fontSize: '12px'
+                  }}
+                >
+                  Gom Theo Lượt Khách / Thẻ Rung
+                </button>
+              </div>
+            </div>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '24px' }}>
               <div style={{ background: '#ECFDF5', border: '1px solid #10B981', padding: '20px', borderRadius: '8px' }}>
@@ -417,13 +477,13 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
         </div>
       )}
 
-      {/* DRILL-DOWN FINANCIAL DETAILS MODAL FOR BRANCH (LINKING INVENTORY & SALES) */}
+      {/* DRILL-DOWN FINANCIAL DETAILS MODAL FOR BRANCH (SUPPORTING BOTH TRANSACTION & SESSION MODES) */}
       {selectedBranchDetail && (
         <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '750px', width: '100%', maxHeight: '85vh', overflowY: 'auto' }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '800px', width: '100%', maxHeight: '85vh', overflowY: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', borderBottom: '1px solid #E2E8F0', paddingBottom: '12px' }}>
               <div>
-                <span style={{ fontSize: '12px', color: '#2563EB', fontWeight: 'bold' }}>CHI TIẾT ĐỐI SOÁT TÀI CHÍNH KHO & BÁN HÀNG</span>
+                <span style={{ fontSize: '12px', color: '#2563EB', fontWeight: 'bold' }}>CHI TIẾT ĐỐI SOÁT TÀI CHÍNH KHO & BÁN HÀNG ({reportViewMode === 'Transactions' ? 'Theo Bút Toán' : 'Gom Theo Lượt Khách'})</span>
                 <h3 style={{ margin: '2px 0 0 0', fontSize: '20px', color: '#0F172A', fontWeight: 'bold' }}>{selectedBranchDetail.branchName}</h3>
               </div>
               <button onClick={() => setSelectedBranchDetail(null)} style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>Đóng Modal</button>
@@ -456,35 +516,62 @@ export const AdminErpPage: React.FC<AdminErpPageProps> = ({ activeTab }) => {
               </table>
             </div>
 
-            {/* SECTION 2: SALES INVOICES (THU) */}
+            {/* SECTION 2: SALES INVOICES (THU) - DYNAMIC RENDER BASED ON VIEW MODE */}
             <div>
-              <h4 style={{ color: '#059669', fontWeight: 'bold', fontSize: '15px', marginBottom: '8px' }}>2. Nhật Ký Thu Sản Phẩm Đã Bán Out (Quầy Bán Hàng):</h4>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
-                <thead>
-                  <tr style={{ background: '#F8FAFC', borderBottom: '1px solid #CBD5E1', textAlign: 'left' }}>
-                    <th style={{ padding: '8px' }}>Mã Hóa Đơn</th>
-                    <th style={{ padding: '8px' }}>Bàn Phục Vụ</th>
-                    <th style={{ padding: '8px' }}>Sản Phẩm Đã Bán</th>
-                    <th style={{ padding: '8px' }}>Doanh Thu</th>
-                    <th style={{ padding: '8px' }}>Giờ Xuất</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {selectedBranchDetail.salesInvoices.length === 0 ? (
-                    <tr><td colSpan={5} style={{ padding: '12px', textAlign: 'center', color: '#64748B' }}>Chưa phát sinh hóa đơn bán hàng.</td></tr>
-                  ) : (
-                    selectedBranchDetail.salesInvoices.map((inv) => (
+              <h4 style={{ color: '#059669', fontWeight: 'bold', fontSize: '15px', marginBottom: '8px' }}>
+                2. Nhật Ký Thu Bán Hàng ({reportViewMode === 'Transactions' ? 'Xem Từng Bút Toán Độc Lập' : 'Gom Theo Lượt Khách & Thẻ Rung'}):
+              </h4>
+              
+              {reportViewMode === 'Transactions' ? (
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
+                  <thead>
+                    <tr style={{ background: '#F8FAFC', borderBottom: '1px solid #CBD5E1', textAlign: 'left' }}>
+                      <th style={{ padding: '8px' }}>Mã Hóa Đơn</th>
+                      <th style={{ padding: '8px' }}>Bàn / Thẻ Rung</th>
+                      <th style={{ padding: '8px' }}>Sản Phẩm Đã Bán</th>
+                      <th style={{ padding: '8px' }}>Doanh Thu</th>
+                      <th style={{ padding: '8px' }}>Giờ Xuất</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {selectedBranchDetail.salesInvoices.map((inv) => (
                       <tr key={inv.id} style={{ borderBottom: '1px solid #F1F5F9' }}>
-                        <td style={{ padding: '8px', fontWeight: 'bold' }}>{inv.id}</td>
-                        <td style={{ padding: '8px', color: '#2563EB', fontWeight: 'bold' }}>{inv.table}</td>
+                        <td style={{ padding: '8px', fontWeight: 'bold' }}>
+                          {inv.id}
+                          {inv.isAddOn && <span style={{ background: '#FEE2E2', color: '#DC2626', padding: '2px 6px', borderRadius: '4px', fontSize: '10px', marginLeft: '6px', fontWeight: 'bold' }}>[Đơn Bổ Sung]</span>}
+                        </td>
+                        <td style={{ padding: '8px', color: '#2563EB', fontWeight: 'bold' }}>{inv.table} ({inv.pagerId || 'PAGER-05'})</td>
                         <td style={{ padding: '8px', color: '#475569' }}>{inv.items.map(i => `${i.product.name} (x${i.quantity})`).join(', ')}</td>
                         <td style={{ padding: '8px', fontWeight: 'bold', color: '#059669' }}>{inv.totalAmount.toLocaleString('vi-VN')} đ</td>
                         <td style={{ padding: '8px', color: '#64748B' }}>{inv.timestamp}</td>
                       </tr>
-                    ))
-                  )}
-                </tbody>
-              </table>
+                    ))}
+                  </tbody>
+                </table>
+              ) : (
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px' }}>
+                  <thead>
+                    <tr style={{ background: '#F8FAFC', borderBottom: '1px solid #CBD5E1', textAlign: 'left' }}>
+                      <th style={{ padding: '8px' }}>Mã Lượt Phục Vụ</th>
+                      <th style={{ padding: '8px' }}>Bàn & Thẻ Rung</th>
+                      <th style={{ padding: '8px' }}>Các Mã Bill Đã Thu</th>
+                      <th style={{ padding: '8px' }}>Tất Cả Món Đã Phục Vụ</th>
+                      <th style={{ padding: '8px' }}>Tổng Doanh Thu Lượt Khách</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {sessionGroupedInvoices.map((s, idx) => (
+                      <tr key={idx} style={{ borderBottom: '1px solid #F1F5F9' }}>
+                        <td style={{ padding: '8px', fontWeight: 'bold', color: '#2563EB' }}>{s.sessionId}</td>
+                        <td style={{ padding: '8px', fontWeight: 'bold', color: '#0F172A' }}>{s.table} - {s.pagerId}</td>
+                        <td style={{ padding: '8px', color: '#475569', fontWeight: 'bold' }}>{s.invoiceCodes.join(', ')}</td>
+                        <td style={{ padding: '8px', color: '#475569' }}>{s.allItems.join(', ')}</td>
+                        <td style={{ padding: '8px', fontWeight: 'bold', color: '#059669', fontSize: '14px' }}>{s.totalAmount.toLocaleString('vi-VN')} đ</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
             </div>
 
           </div>
