@@ -1,66 +1,179 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-interface StaffRunnerPageProps {
-  activeTab: string;
+interface TableStatus {
+  id: string;
+  name: string;
+  area: string;
+  status: 'empty' | 'occupied' | 'waiting_payment' | 'delayed';
+  seatedMinutes: number;
+  currentOrderTotal: number;
 }
 
-export const StaffRunnerPage: React.FC<StaffRunnerPageProps> = ({ activeTab }) => {
-  const readyItems = [
-    { id: '1', table: 'Bàn 01', item: '2x Cà Phê Sữa Đá', station: 'Bar 01', elapsed: '01:15' },
-    { id: '2', table: 'Bàn 03', item: '1x Trà Đào Cam Sả', station: 'Bar 01', elapsed: '00:45' },
-  ];
+export const StaffRunnerPage: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'tables' | 'runner' | 'attendance'>('tables');
+  const [selectedTable, setSelectedTable] = useState<TableStatus | null>(null);
+  const [tipAmount, setTipAmount] = useState<number>(0);
+  const [transferTarget, setTransferTarget] = useState<string>('');
+
+  const [tables] = useState<TableStatus[]>([
+    { id: 'T01', name: 'Bàn 01', area: 'Tầng 1', status: 'occupied', seatedMinutes: 12, currentOrderTotal: 145000 },
+    { id: 'T02', name: 'Bàn 02', area: 'Tầng 1', status: 'empty', seatedMinutes: 0, currentOrderTotal: 0 },
+    { id: 'T03', name: 'Bàn 03', area: 'Tầng 1', status: 'delayed', seatedMinutes: 24, currentOrderTotal: 85000 },
+    { id: 'T04', name: 'Bàn 04', area: 'Sân Vườn', status: 'waiting_payment', seatedMinutes: 45, currentOrderTotal: 210000 },
+    { id: 'T05', name: 'Bàn 05', area: 'Sân Vườn', status: 'occupied', seatedMinutes: 8, currentOrderTotal: 90000 },
+  ]);
+
+  const [runnerQueue, setRunnerQueue] = useState([
+    { id: 'R-101', table: 'Bàn 04', item: 'Cà Phê Sữa Đá Sài Gòn (x2)', readyTime: '2 phút trước', note: 'Nhiều đá, 100% đường' },
+    { id: 'R-102', table: 'Bàn 01', item: 'Bánh Tiramisu Ý (x1)', readyTime: 'Vừa xong', note: 'Kèm dĩa nhỏ' },
+  ]);
+
+  const [attendanceVerified, setAttendanceVerified] = useState<boolean>(true);
+
+  const getStatusColor = (status: TableStatus['status']) => {
+    switch (status) {
+      case 'empty': return '#9CA3AF';
+      case 'occupied': return '#2563EB';
+      case 'delayed': return '#EF4444';
+      case 'waiting_payment': return '#F59E0B';
+    }
+  };
 
   return (
-    <div>
-      {/* 1. HÀNG ĐỢI TRẢ MÓN */}
-      {activeTab === 'staff-runner' && (
-        <div className="card">
-          <h2>Danh Sách Món Cần Bưng Ra Bàn (Runner Queue)</h2>
-          <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Nhận tín hiệu từ trạm bếp/bar khi món đã nấu xong để bưng ra cho khách.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1rem', marginTop: '1.25rem' }}>
-            {readyItems.map(i => (
-              <div key={i.id} style={{ padding: '1.25rem', background: '#0f172a', borderLeft: '4px solid #10b981', borderRadius: '0.5rem' }}>
+    <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
+      {/* Top Header */}
+      <div style={{ background: '#1F2937', color: '#fff', padding: '20px', borderRadius: '12px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div>
+          <span style={{ background: '#059669', color: '#fff', fontSize: '11px', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase' }}>ROLE: PHỤC VỤ (STAFF RUNNER)</span>
+          <h1 style={{ margin: '8px 0 4px 0', fontSize: '24px' }}>Màn Hình Phục Vụ mPOS & Bàn Ăn Realtime</h1>
+          <p style={{ margin: 0, fontSize: '14px', color: '#9CA3AF' }}>Nhân viên: <strong>Trần Thanh Tâm (EMP001)</strong> | Ca làm: Ca Sáng (07:00 - 15:00)</p>
+        </div>
+        <div style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: '13px', color: '#10B981' }}>WiFi Check-in: <strong>a4:b2:c8:99:11:00 (Hợp lệ)</strong></div>
+          <div style={{ fontSize: '13px', color: '#9CA3AF' }}>Thiết bị: Handheld Tablet #DEV-TAB-01</div>
+        </div>
+      </div>
+
+      {/* Tabs */}
+      <div style={{ display: 'flex', gap: '8px', borderBottom: '2px solid #E5E7EB', marginBottom: '24px' }}>
+        <button onClick={() => setActiveTab('tables')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'tables' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'tables' ? '#2563EB' : '#4B5563' }}>🪑 Sơ Đồ Bàn Ăn & mPOS</button>
+        <button onClick={() => setActiveTab('runner')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'runner' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'runner' ? '#2563EB' : '#4B5563' }}>🏃 Hàng Đợi Trả Món Ready ({runnerQueue.length})</button>
+        <button onClick={() => setActiveTab('attendance')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'attendance' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'attendance' ? '#2563EB' : '#4B5563' }}>📸 Selfie WiFi Chấm Công</button>
+      </div>
+
+      {/* Tab 1: Interactive Table Map */}
+      {activeTab === 'tables' && (
+        <div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '16px', marginBottom: '24px' }}>
+            {tables.map((tbl) => (
+              <div 
+                key={tbl.id} 
+                onClick={() => setSelectedTable(tbl)}
+                style={{ 
+                  border: `2px solid ${getStatusColor(tbl.status)}`, 
+                  borderRadius: '10px', 
+                  padding: '16px', 
+                  background: '#fff', 
+                  cursor: 'pointer',
+                  boxShadow: selectedTable?.id === tbl.id ? '0 0 0 3px rgba(37, 99, 235, 0.4)' : 'none'
+                }}
+              >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <h3 style={{ color: '#10b981' }}>{i.table}</h3>
-                  <span style={{ fontSize: '0.8rem', color: '#94a3b8' }}>Xong cách đây: {i.elapsed}</span>
+                  <span style={{ fontSize: '12px', color: '#6B7280' }}>{tbl.area}</span>
+                  {tbl.seatedMinutes > 20 && <span style={{ background: '#FEE2E2', color: '#DC2626', fontSize: '11px', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }}>⚠️ Chờ lâu ({tbl.seatedMinutes}m)</span>}
                 </div>
-                <p style={{ margin: '0.75rem 0', fontSize: '1.05rem', fontWeight: 'bold' }}>{i.item}</p>
-                <button className="btn-primary" style={{ width: '100%' }} onClick={() => alert(`Đã cập nhật trạng thái món '${i.item}' sang Served (Đã phục vụ)!`)}>
-                  Đã Bưng Ra Bàn (Served)
-                </button>
+                <h3 style={{ margin: '8px 0 4px 0', fontSize: '20px' }}>{tbl.name}</h3>
+                <div style={{ fontSize: '13px', color: getStatusColor(tbl.status), fontWeight: 'bold' }}>
+                  {tbl.status === 'empty' && 'Trống'}
+                  {tbl.status === 'occupied' && 'Đang có khách'}
+                  {tbl.status === 'delayed' && 'Cảnh báo trễ order'}
+                  {tbl.status === 'waiting_payment' && 'Chờ thanh toán'}
+                </div>
+                {tbl.currentOrderTotal > 0 && (
+                  <div style={{ marginTop: '12px', fontSize: '15px', fontWeight: 'bold', color: '#059669' }}>
+                    {tbl.currentOrderTotal.toLocaleString('vi-VN')}đ
+                  </div>
+                )}
               </div>
             ))}
           </div>
+
+          {/* Table Operations Modal/Panel */}
+          {selectedTable && (
+            <div style={{ background: '#F9FAFB', border: '1px solid #D1D5DB', borderRadius: '8px', padding: '20px' }}>
+              <h3 style={{ marginTop: 0 }}>Thao Tác Trên {selectedTable.name} ({selectedTable.area})</h3>
+              <p style={{ fontSize: '14px', color: '#4B5563' }}>Thời gian ngồi: <strong>{selectedTable.seatedMinutes} phút</strong> | Giá trị đơn hiện tại: <strong>{selectedTable.currentOrderTotal.toLocaleString('vi-VN')}đ</strong></p>
+              
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '16px 0' }}>
+                <button onClick={() => alert(`Đã mở giao diện gọi món mPOS cho ${selectedTable.name}`)} style={{ padding: '10px 18px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>➕ Thêm Món Vào Bàn</button>
+                <button onClick={() => alert(`Đã chuyển ${selectedTable.name} sang ${transferTarget || 'Bàn 02'}`)} style={{ padding: '10px 18px', background: '#4F46E5', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>🔀 Chuyển Bàn Sang Bàn 02</button>
+                <button onClick={() => alert(`Đã gộp đơn ${selectedTable.name} vào Bàn 04`)} style={{ padding: '10px 18px', background: '#D97706', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>🔗 Gộp Vào Bàn 04</button>
+                <button onClick={() => alert('Đã gửi yêu cầu in tạm tính xuống máy in thu ngân!')} style={{ padding: '10px 18px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>🖨️ In Phiếu Tạm Tính</button>
+              </div>
+
+              {/* Staff Tip Addition */}
+              <div style={{ marginTop: '16px', background: '#fff', padding: '12px', borderRadius: '6px', border: '1px solid #E5E7EB', display: 'flex', gap: '12px', alignItems: 'center' }}>
+                <label style={{ fontSize: '14px', fontWeight: 'bold' }}>Tiền Tip Phục Vụ (Tip Reward):</label>
+                <input type="number" value={tipAmount} onChange={(e) => setTipAmount(Number(e.target.value))} placeholder="Nhập số tiền tip" style={{ padding: '6px 12px', border: '1px solid #D1D5DB', borderRadius: '4px', width: '150px' }} />
+                <button onClick={() => alert(`Ghi nhận Tiền Tip ${tipAmount.toLocaleString('vi-VN')}đ!`)} style={{ padding: '6px 12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Ghi Nhận Tip</button>
+              </div>
+            </div>
+          )}
         </div>
       )}
 
-      {/* 2. SOI TRẠNG THÁI BẾP (READ-ONLY) */}
-      {activeTab === 'staff-kitchen-status' && (
-        <div className="card">
-          <h2>Soi Trạng Thái Bếp Trực Tiếp (Read-Only Monitoring)</h2>
-          <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
-            Nhân viên phục vụ xem tiến độ bếp nấu để trả lời khách giục, tuyệt đối KHÔNG có quyền bấm thay trạng thái của bếp.
-          </p>
-          <ul style={{ lineHeight: '2', marginTop: '1.25rem' }}>
-            <li>Bàn 02 - 2x Bạc Xỉu: Đang chế biến (Preparing - Trạm Bar 01)</li>
-            <li>VIP 01 - 1x Tiramisu: Chờ nhận đơn (Pending - Bếp Nóng)</li>
-          </ul>
-        </div>
-      )}
+      {/* Tab 2: Runner Queue */}
+      {activeTab === 'runner' && (
+        <div>
+          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Hàng Đợi Trả Món Ready Bếp (SignalR Realtime)</h2>
+          <p style={{ color: '#6B7280', fontSize: '14px' }}>Các món bếp đã chế biến xong cần được nhân viên mang ra bàn cho khách ngay lập tức.</p>
 
-      {/* 3. TỰ CHẤM CÔNG SELFIE WIFI */}
-      {activeTab === 'staff-checkin' && (
-        <div className="card" style={{ maxWidth: '480px' }}>
-          <h2>Chấm Công Selfie WiFi Chống Gian Lận</h2>
-          <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Tự động kiểm tra BSSID mạng WiFi nội bộ quán + Hardware Device ID.</p>
-          <div style={{ width: '200px', height: '200px', borderRadius: '50%', background: '#0f172a', border: '2px dashed #10b981', margin: '1.5rem auto', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#94a3b8' }}>
-            Khung Camera Selfie
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '16px' }}>
+            {runnerQueue.map((item) => (
+              <div key={item.id} style={{ background: '#ECFDF5', border: '1px solid #A7F3D0', padding: '16px', borderRadius: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <span style={{ background: '#059669', color: '#fff', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{item.table}</span>
+                  <h3 style={{ margin: '4px 0', fontSize: '18px', color: '#065F46' }}>{item.item}</h3>
+                  <div style={{ fontSize: '13px', color: '#047857' }}>Ghi chú: {item.note} | Xong lúc: {item.readyTime}</div>
+                </div>
+                <button onClick={() => setRunnerQueue(runnerQueue.filter(r => r.id !== item.id))} style={{ padding: '10px 20px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>✔ ĐÃ MANG RA BÀN</button>
+              </div>
+            ))}
+
+            {runnerQueue.length === 0 && (
+              <div style={{ textAlign: 'center', padding: '40px', color: '#9CA3AF' }}>Không có món nào đang chờ trả ra bàn.</div>
+            )}
           </div>
-          <button className="btn-primary" onClick={() => alert('Check-in ca làm việc thành công trên WiFi quán!')}>
-            Xác Nhận Check-In
-          </button>
+        </div>
+      )}
+
+      {/* Tab 3: Attendance */}
+      {activeTab === 'attendance' && (
+        <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
+          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Selfie WiFi BSSID Check-in Chống Gian Lận</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '16px' }}>
+            <div style={{ border: '1px solid #E5E7EB', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
+              <div style={{ width: '100%', height: '200px', background: '#374151', color: '#9CA3AF', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '6px', marginBottom: '16px' }}>
+                [ MÀN HÌNH CAMERA SELFIE CAMERA VIEW ]
+              </div>
+              <button onClick={() => alert('Đã chụp ảnh selfie và đối soát thành công!')} style={{ padding: '10px 20px', background: '#2563EB', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>📸 Chụp Ảnh Selfie Xóa Vết</button>
+            </div>
+
+            <div style={{ border: '1px solid #E5E7EB', borderRadius: '8px', padding: '16px' }}>
+              <h3>Thông Tin Xác Thực Mạng:</h3>
+              <ul style={{ paddingLeft: '20px', fontSize: '14px', lineHeight: '1.8' }}>
+                <li>Mạng WiFi Kết Nối: <strong>FnB_Store_Quoc_1</strong></li>
+                <li>Địa Chỉ BSSID: <strong style={{ color: '#059669' }}>a4:b2:c8:99:11:00 (KÍCH HOẠT HỢP LỆ)</strong></li>
+                <li>Device Identifier: <strong>DEV-TAB-01 (Đúng máy được giao)</strong></li>
+                <li>Thời gian Check-in: <strong>07:02:14 AM (Đúng giờ)</strong></li>
+              </ul>
+              <button style={{ width: '100%', padding: '12px', background: '#059669', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', marginTop: '16px', cursor: 'pointer' }}>XÁC NHẬN VÀO CA LÀM VIỆC</button>
+            </div>
+          </div>
         </div>
       )}
     </div>
   );
 };
+
+export default StaffRunnerPage;

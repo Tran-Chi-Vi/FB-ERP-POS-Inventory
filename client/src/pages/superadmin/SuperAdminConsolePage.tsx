@@ -1,253 +1,228 @@
 import React, { useState } from 'react';
-import { UserManagementPage } from '../admin/UserManagementPage';
 
-interface SuperAdminConsolePageProps {
-  activeTab: string;
-}
-
-export const SuperAdminConsolePage: React.FC<SuperAdminConsolePageProps> = ({ activeTab }) => {
-  // Branch Master State
-  const [branches, setBranches] = useState([
-    { id: '1', name: 'Chi Nhánh Quận 1', type: 'Trực Thuộc (Directly Operated)', royaltyFee: '0%', status: 'Hoạt Động', revenueToday: '45.200.000 đ' },
-    { id: '2', name: 'Chi Nhánh Quận 7', type: 'Nhượng Quyền (Franchise Partner)', royaltyFee: '5%', status: 'Hoạt Động', revenueToday: '38.100.000 đ' },
-    { id: '3', name: 'Chi Nhánh Sân Bay Tân Sơn Nhất', type: 'Trực Thuộc (Special Airport Pricing)', royaltyFee: '0%', status: 'Hoạt Động', revenueToday: '62.800.000 đ' },
+export const SuperAdminConsolePage: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'users' | 'branches' | 'audit' | 'dr' | 'broadcast'>('users');
+  
+  // System-Wide Users State
+  const [allUsers, setAllUsers] = useState([
+    { id: 'SA-1', username: 'superadmin', name: 'Nguyễn Văn Quảng', role: 'SuperAdmin', branch: 'Toàn Chuỗi', email: 'superadmin@fnb.com' },
+    { id: 'AD-1', username: 'admin', name: 'Trần Chí Vĩ', role: 'Admin', branch: 'Toàn Chuỗi', email: 'admin@fnb.com' },
+    { id: 'MGR-1', username: 'manager1', name: 'Lê Hoàng Phúc', role: 'Manager', branch: 'Chi Nhánh Quận 1', email: 'manager1@fnb.com' },
+    { id: 'WH-1', username: 'warehouse1', name: 'Phạm Quốc Bảo', role: 'Warehouse', branch: 'Chi Nhánh Quận 1', email: 'warehouse1@fnb.com' },
+    { id: 'CSH-1', username: 'cashier1', name: 'Nguyễn Thị Mai', role: 'Cashier', branch: 'Chi Nhánh Quận 1', email: 'cashier1@fnb.com' }
   ]);
-  const [showAddBranchModal, setShowAddBranchModal] = useState(false);
-  const [newBranchName, setNewBranchName] = useState('');
-  const [newBranchType, setNewBranchType] = useState('Trực Thuộc (Directly Operated)');
 
-  // Audit Log State
-  const [auditSearch, setAuditSearch] = useState('');
-  const [selectedAuditLog, setSelectedAuditLog] = useState<any>(null);
+  const [showAddUserModal, setShowAddUserModal] = useState(false);
+  const [newUser, setNewUser] = useState({ username: '', name: '', role: 'Admin', branch: 'Chi Nhánh Quận 1', email: '' });
 
-  const auditLogs = [
-    { id: 'LOG-1001', time: '2026-08-28 20:30:11', user: 'admin (Trần Chí Vĩ)', action: 'UPDATE_PRODUCT_PRICE', details: 'Sửa giá Cà Phê Sữa Đá từ 35.000đ thành 29.000đ', before: '{ "Price": 35000, "Quantity": 10 }', after: '{ "Price": 29000, "Quantity": 10 }' },
-    { id: 'LOG-1002', time: '2026-08-28 20:25:40', user: 'superadmin (Nguyễn Văn Quảng)', action: 'CREATE_USER_ACCOUNT', details: 'Tạo mới tài khoản manager1 role Manager', before: 'null', after: '{ "Username": "manager1", "Role": "Manager" }' },
-    { id: 'LOG-1003', time: '2026-08-28 20:15:02', user: 'manager1 (Lê Hoàng Phúc)', action: 'APPROVE_VOID_ORDER', details: 'Duyệt hủy món #ORD-102 (Trà Đào Cam Sả)', before: '{ "Status": "PendingApproval" }', after: '{ "Status": "Voided" }' },
-  ];
+  // Broadcast Message State
+  const [broadcastMsg, setBroadcastMsg] = useState('');
+  const [activeBroadcast, setActiveBroadcast] = useState<string | null>(null);
 
-  const filteredLogs = auditLogs.filter(l => l.user.toLowerCase().includes(auditSearch.toLowerCase()) || l.action.toLowerCase().includes(auditSearch.toLowerCase()));
-
-  // Add Branch Handler
-  const handleAddBranch = (e: React.FormEvent) => {
+  const handleAddUser = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newBranchName) return;
-    const newB = {
-      id: Date.now().toString(),
-      name: newBranchName,
-      type: newBranchType,
-      royaltyFee: newBranchType.includes('Franchise') ? '5%' : '0%',
-      status: 'Hoạt Động',
-      revenueToday: '0 đ'
-    };
-    setBranches(prev => [...prev, newB]);
-    setShowAddBranchModal(false);
-    setNewBranchName('');
-    alert(`Đã thêm chi nhánh mới '${newBranchName}' thành công!`);
+    if (!newUser.username || !newUser.name) return;
+    setAllUsers([...allUsers, { id: Date.now().toString(), ...newUser }]);
+    setShowAddUserModal(false);
+    alert(`SuperAdmin đã khởi tạo tài khoản "${newUser.username}" thành công trên toàn hệ thống!`);
+    setNewUser({ username: '', name: '', role: 'Admin', branch: 'Chi Nhánh Quận 1', email: '' });
+  };
+
+  const handleDeleteUser = (id: string, username: string) => {
+    if (confirm(`SUPERADMIN ACTION: Bạn có chắc chắn muốn XÓA VĨNH VIỄN tài khoản "${username}" khỏi CSDL SQL Server không?`)) {
+      setAllUsers(allUsers.filter(u => u.id !== id));
+      alert(`Đã xóa vĩnh viễn tài khoản "${username}"!`);
+    }
+  };
+
+  const handleSendBroadcast = () => {
+    if (!broadcastMsg) return;
+    setActiveBroadcast(broadcastMsg);
+    alert(`Đã phát thông báo khẩn cấp tới toàn bộ máy POS và mPOS trên hệ thống: "${broadcastMsg}"`);
+    setBroadcastMsg('');
   };
 
   return (
-    <div>
-      {/* 1. USER MANAGEMENT TAB */}
-      {activeTab === 'users' && <UserManagementPage />}
-
-      {/* 2. MULTI-BRANCH FRANCHISE TAB */}
-      {activeTab === 'branch-admin' && (
-        <div className="card">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-            <div>
-              <h2>Quản Lý Đa Chi Nhánh & Nhượng Quyền (Franchise Master Console)</h2>
-              <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginTop: '0.25rem' }}>
-                Thiết lập mô hình kinh doanh, dải IP WiFi nội bộ, BSSID router và trích nộp % phí bản quyền nhượng quyền tự động.
-              </p>
-            </div>
-            <button className="btn-primary" style={{ width: 'auto', padding: '0.75rem 1.25rem' }} onClick={() => setShowAddBranchModal(true)}>
-              ➕ Thêm Chi Nhánh Mới
-            </button>
-          </div>
-
-          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-            <thead>
-              <tr style={{ borderBottom: '2px solid #334155', color: '#10b981', textAlign: 'left' }}>
-                <th style={{ padding: '0.75rem' }}>Tên Chi Nhánh</th>
-                <th style={{ padding: '0.75rem' }}>Mô Hình Vận Hành</th>
-                <th style={{ padding: '0.75rem' }}>Phí Bản Quyền (Royalty Fee)</th>
-                <th style={{ padding: '0.75rem' }}>Doanh Thu Hôm Nay</th>
-                <th style={{ padding: '0.75rem' }}>Trạng Thái</th>
-                <th style={{ padding: '0.75rem' }}>Thao Tác</th>
-              </tr>
-            </thead>
-            <tbody>
-              {branches.map((b) => (
-                <tr key={b.id} style={{ borderBottom: '1px solid #334155' }}>
-                  <td style={{ padding: '0.75rem', fontWeight: 'bold' }}>{b.name}</td>
-                  <td style={{ padding: '0.75rem', color: '#cbd5e1' }}>{b.type}</td>
-                  <td style={{ padding: '0.75rem', color: '#f59e0b', fontWeight: 'bold' }}>{b.royaltyFee}</td>
-                  <td style={{ padding: '0.75rem', color: '#10b981', fontWeight: 'bold' }}>{b.revenueToday}</td>
-                  <td style={{ padding: '0.75rem' }}>
-                    <span style={{ background: 'rgba(16,185,129,0.2)', color: '#10b981', padding: '0.2rem 0.5rem', borderRadius: '0.25rem', fontSize: '0.8rem', fontWeight: 'bold' }}>
-                      {b.status}
-                    </span>
-                  </td>
-                  <td style={{ padding: '0.75rem' }}>
-                    <button style={{ padding: '0.3rem 0.6rem', background: '#334155', color: '#fff', border: 'none', borderRadius: '0.25rem', cursor: 'pointer', fontSize: '0.8rem' }} onClick={() => alert(`Cấu hình dải IP WiFi chi nhánh '${b.name}' thành công!`)}>
-                      Cấu Hình WiFi / IP
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-
-      {/* 3. CENTRALIZED AUDIT LOG TAB */}
-      {activeTab === 'audit-log' && (
-        <div className="card">
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
-            <div>
-              <h2>Centralized Audit Log - Nhật Ký Kiểm Toán Toàn Chuỗi</h2>
-              <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginTop: '0.25rem' }}>
-                Xem vết mọi thao tác nhạy cảm với dấu thời gian nguyên tử và chi tiết JSON Diff BeforeState vs AfterState.
-              </p>
-            </div>
-            <input
-              type="text"
-              className="form-control"
-              style={{ width: '260px' }}
-              placeholder="Tìm theo user hoặc hành động..."
-              value={auditSearch}
-              onChange={e => setAuditSearch(e.target.value)}
-            />
-          </div>
-
-          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-            <thead>
-              <tr style={{ borderBottom: '2px solid #334155', color: '#10b981', textAlign: 'left' }}>
-                <th style={{ padding: '0.75rem' }}>Mã Log</th>
-                <th style={{ padding: '0.75rem' }}>Thời Gian</th>
-                <th style={{ padding: '0.75rem' }}>Tài Khoản Thao Tác</th>
-                <th style={{ padding: '0.75rem' }}>Mã Hành Động</th>
-                <th style={{ padding: '0.75rem' }}>Chi Tiết Chi Nhánh</th>
-                <th style={{ padding: '0.75rem' }}>Xem Dữ Liệu Gốc</th>
-              </tr>
-            </thead>
-            <tbody>
-              {filteredLogs.map((l) => (
-                <tr key={l.id} style={{ borderBottom: '1px solid #334155' }}>
-                  <td style={{ padding: '0.75rem', fontWeight: 'bold', color: '#38bdf8' }}>{l.id}</td>
-                  <td style={{ padding: '0.75rem', color: '#94a3b8' }}>{l.time}</td>
-                  <td style={{ padding: '0.75rem', fontWeight: 'bold' }}>{l.user}</td>
-                  <td style={{ padding: '0.75rem', color: '#f59e0b', fontWeight: 'bold' }}>{l.action}</td>
-                  <td style={{ padding: '0.75rem' }}>{l.details}</td>
-                  <td style={{ padding: '0.75rem' }}>
-                    <button style={{ padding: '0.3rem 0.6rem', background: 'rgba(56,189,248,0.2)', color: '#38bdf8', border: '1px solid rgba(56,189,248,0.4)', borderRadius: '0.25rem', cursor: 'pointer', fontSize: '0.8rem', fontWeight: 'bold' }} onClick={() => setSelectedAuditLog(l)}>
-                      Soi JSON Diff
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-
-      {/* 4. SYSTEM CONSOLE & BACKUP TAB */}
-      {activeTab === 'system-console' && (
+    <div style={{ padding: '24px', maxWidth: '1200px', margin: '0 auto', fontFamily: 'system-ui, sans-serif' }}>
+      {/* Top Header */}
+      <div style={{ background: '#111827', color: '#fff', padding: '20px', borderRadius: '12px', marginBottom: '24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
-          <div className="card" style={{ marginBottom: '1.25rem' }}>
-            <h2>System Infrastructure Metrics (Máy Chủ & Hạ Tầng System Console)</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1rem', marginTop: '1.25rem' }}>
-              <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', borderLeft: '4px solid #10b981' }}>
-                <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>Tải CPU Server</span>
-                <h3 style={{ color: '#10b981', fontSize: '1.8rem', marginTop: '0.25rem' }}>14.2%</h3>
-              </div>
-              <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', borderLeft: '4px solid #38bdf8' }}>
-                <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>Bộ Nhớ RAM</span>
-                <h3 style={{ color: '#38bdf8', fontSize: '1.8rem', marginTop: '0.25rem' }}>2.8 GB / 16 GB</h3>
-              </div>
-              <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', borderLeft: '4px solid #f59e0b' }}>
-                <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>Kết Nối Database (SQL Pool)</span>
-                <h3 style={{ color: '#f59e0b', fontSize: '1.8rem', marginTop: '0.25rem' }}>24 Connections</h3>
-              </div>
-              <div style={{ padding: '1rem', background: '#0f172a', borderRadius: '0.5rem', borderLeft: '4px solid #10b981' }}>
-                <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>Trạng Thái SignalR Mesh</span>
-                <h3 style={{ color: '#10b981', fontSize: '1.5rem', marginTop: '0.25rem' }}>🟢 Connected</h3>
-              </div>
-            </div>
-          </div>
+          <span style={{ background: '#DC2626', color: '#fff', fontSize: '11px', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase', tracking: '1px' }}>ROLE: SUPERADMIN (QUẢN TRỊ VIÊN HẠ TẦNG TOÀN CHUỖI)</span>
+          <h1 style={{ margin: '8px 0 4px 0', fontSize: '24px' }}>System Master Control & Disaster Recovery Console</h1>
+          <p style={{ margin: 0, fontSize: '14px', color: '#9CA3AF' }}>Tài khoản: <strong>Nguyễn Văn Quảng (SuperAdmin)</strong> | Scope: All Tenants (`IgnoreQueryFilters()` Active)</p>
+        </div>
+        <div style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: '13px', color: '#10B981' }}>SignalR Sockets: <strong>42 Active Connections</strong></div>
+          <div style={{ fontSize: '13px', color: '#60A5FA' }}>DB Latency: <strong>4ms (SQL Server Local)</strong></div>
+        </div>
+      </div>
 
-          <div className="card">
-            <h2>Bảng Điều Khiển Sao Lưu & Diễn Tập Phục Hồi Thảm Họa (Disaster Recovery Console)</h2>
-            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
-              Sao lưu Full tự động hàng ngày lúc 00:00 và Transaction Log Backup mỗi 15 phút.
-            </p>
-            <div style={{ display: 'flex', gap: '1rem', marginTop: '1.25rem' }}>
-              <div style={{ padding: '1.25rem', background: '#0f172a', borderRadius: '0.5rem', flex: 1 }}>
-                <h4>Chỉ Số RTO Thực Tế (Recovery Time Objective)</h4>
-                <span style={{ fontSize: '2rem', color: '#10b981', fontWeight: 'bold' }}>18 Phút</span>
-                <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginTop: '0.25rem' }}>Mục tiêu cam kết SLA: &lt; 30 phút</p>
-              </div>
-              <div style={{ padding: '1.25rem', background: '#0f172a', borderRadius: '0.5rem', flex: 1 }}>
-                <h4>Chỉ Số RPO Thực Tế (Recovery Point Objective)</h4>
-                <span style={{ fontSize: '2rem', color: '#10b981', fontWeight: 'bold' }}>3 Phút</span>
-                <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginTop: '0.25rem' }}>Mục tiêu cam kết SLA: &lt; 5 phút</p>
-              </div>
-            </div>
-
-            <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem' }}>
-              <button className="btn-primary" style={{ width: 'auto', padding: '0.75rem 1.5rem' }} onClick={() => alert('Khởi tạo bản Sao Lưu Full Database thành công! Lưu trữ tại MinIO Storage.')}>
-                📦 Thực Hiện Sao Lưu Khẩn Cấp (Manual Backup)
-              </button>
-              <button style={{ width: 'auto', padding: '0.75rem 1.5rem', background: '#38bdf8', color: '#fff', border: 'none', borderRadius: '0.5rem', fontWeight: 'bold', cursor: 'pointer' }} onClick={() => alert('Đã khởi chạy 1-Click Disaster Recovery Simulation Drill trên máy chủ phụ thử nghiệm thành công!')}>
-                🔄 Diễn Tập Phục Hồi Thảm Họa (Restore Drill)
-              </button>
-            </div>
-          </div>
+      {/* Broadcast Banner */}
+      {activeBroadcast && (
+        <div style={{ background: '#DC2626', color: '#fff', padding: '12px 20px', borderRadius: '8px', marginBottom: '24px', fontWeight: 'bold', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <span>📢 THÔNG BÁO KHẨN CẤP TOÀN HỆ THỐNG: {activeBroadcast}</span>
+          <button onClick={() => setActiveBroadcast(null)} style={{ background: 'transparent', border: '1px solid #fff', color: '#fff', padding: '4px 8px', borderRadius: '4px', cursor: 'pointer' }}>Tắt thông báo</button>
         </div>
       )}
 
-      {/* ADD BRANCH MODAL */}
-      {showAddBranchModal && (
-        <div className="auth-overlay">
-          <div className="auth-modal">
-            <h3 style={{ color: '#10b981', marginBottom: '1rem' }}>Thêm Chi Nhánh Mới Hệ Thống</h3>
-            <form onSubmit={handleAddBranch}>
-              <div className="form-group">
-                <label>Tên Chi Nhánh</label>
-                <input type="text" className="form-control" value={newBranchName} onChange={e => setNewBranchName(e.target.value)} placeholder="Chi Nhánh Thủ Đức" required />
+      {/* Tabs */}
+      <div style={{ display: 'flex', gap: '8px', borderBottom: '2px solid #E5E7EB', marginBottom: '24px' }}>
+        <button onClick={() => setActiveTab('users')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'users' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'users' ? '#2563EB' : '#4B5563' }}>👑 Quản Lý Tài Khoản Toàn Chuỗi ({allUsers.length})</button>
+        <button onClick={() => setActiveTab('branches')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'branches' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'branches' ? '#2563EB' : '#4B5563' }}>🏢 Quản Lý Chi Nhánh & Phí Bản Quyền</button>
+        <button onClick={() => setActiveTab('audit')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'audit' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'audit' ? '#2563EB' : '#4B5563' }}>🔍 Centralized Audit Log & JSON Diff</button>
+        <button onClick={() => setActiveTab('dr')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'dr' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'dr' ? '#2563EB' : '#4B5563' }}>🛡️ Disaster Recovery (RTO/RPO Drill)</button>
+        <button onClick={() => setActiveTab('broadcast')} style={{ padding: '12px 20px', fontWeight: 'bold', border: 'none', borderBottom: activeTab === 'broadcast' ? '3px solid #2563EB' : 'none', background: 'transparent', cursor: 'pointer', color: activeTab === 'broadcast' ? '#2563EB' : '#4B5563' }}>📢 Phát Thông Báo Khẩn Cấp</button>
+      </div>
+
+      {/* Tab 1: System-Wide Users Management */}
+      {activeTab === 'users' && (
+        <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+            <h2 style={{ fontSize: '18px', margin: 0 }}>Danh Sách Tất Cả Tài Khoản Hệ Thống (SuperAdmin Scope)</h2>
+            <button onClick={() => setShowAddUserModal(true)} style={{ padding: '10px 18px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>+ TẠO TÀI KHOẢN TOÀN HỆ THỐNG</button>
+          </div>
+
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <thead>
+              <tr style={{ background: '#F9FAFB', borderBottom: '1px solid #E5E7EB', textAlign: 'left' }}>
+                <th style={{ padding: '10px' }}>Username</th>
+                <th style={{ padding: '10px' }}>Họ Và Tên</th>
+                <th style={{ padding: '10px' }}>Vai Trò (Role)</th>
+                <th style={{ padding: '10px' }}>Chi Nhánh Quản Lý</th>
+                <th style={{ padding: '10px' }}>Email</th>
+                <th style={{ padding: '10px' }}>Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody>
+              {allUsers.map((u) => (
+                <tr key={u.id} style={{ borderBottom: '1px solid #F3F4F6' }}>
+                  <td style={{ padding: '12px 10px', fontWeight: 'bold' }}>{u.username}</td>
+                  <td style={{ padding: '12px 10px' }}>{u.name}</td>
+                  <td style={{ padding: '12px 10px' }}><span style={{ background: u.role === 'SuperAdmin' ? '#FEE2E2' : '#E0E7FF', color: u.role === 'SuperAdmin' ? '#991B1B' : '#4338CA', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>{u.role}</span></td>
+                  <td style={{ padding: '12px 10px' }}>{u.branch}</td>
+                  <td style={{ padding: '12px 10px' }}>{u.email}</td>
+                  <td style={{ padding: '12px 10px' }}>
+                    {u.role !== 'SuperAdmin' && (
+                      <button onClick={() => handleDeleteUser(u.id, u.username)} style={{ padding: '6px 12px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '12px', fontWeight: 'bold' }}>❌ Xóa Vĩnh Viễn</button>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* Add User Modal */}
+      {showAddUserModal && (
+        <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
+          <div style={{ background: '#fff', padding: '24px', borderRadius: '12px', maxWidth: '450px', width: '100%' }}>
+            <h3 style={{ marginTop: 0 }}>SuperAdmin Tạo Tài Khoản Mới</h3>
+            <form onSubmit={handleAddUser}>
+              <div style={{ marginBottom: '12px' }}>
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px' }}>Username:</label>
+                <input type="text" required value={newUser.username} onChange={(e) => setNewUser({ ...newUser, username: e.target.value })} style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px' }} />
               </div>
-              <div className="form-group">
-                <label>Mô Hình Vận Hành</label>
-                <select className="form-control" value={newBranchType} onChange={e => setNewBranchType(e.target.value)}>
-                  <option value="Trực Thuộc (Directly Operated)">Trực Thuộc (Directly Operated)</option>
-                  <option value="Nhượng Quyền (Franchise Partner)">Nhượng Quyền (Franchise Partner - 5% Royalty Fee)</option>
-                  <option value="Trực Thuộc (Special Airport Pricing)">Sân Bay / Vùng Đặc Thù (Special Pricing)</option>
+              <div style={{ marginBottom: '12px' }}>
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px' }}>Họ và tên:</label>
+                <input type="text" required value={newUser.name} onChange={(e) => setNewUser({ ...newUser, name: e.target.value })} style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px' }} />
+              </div>
+              <div style={{ marginBottom: '12px' }}>
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px' }}>Vai trò (Role):</label>
+                <select value={newUser.role} onChange={(e) => setNewUser({ ...newUser, role: e.target.value })} style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px' }}>
+                  <option value="Admin">Admin (Chủ thương hiệu)</option>
+                  <option value="Manager">Manager (Quản lý)</option>
+                  <option value="Warehouse">Warehouse (Thủ kho)</option>
+                  <option value="Cashier">Cashier (Thu ngân)</option>
                 </select>
               </div>
-              <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.5rem' }}>
-                <button type="submit" className="btn-primary" style={{ flex: 1 }}>Tạo Chi Nhánh</button>
-                <button type="button" style={{ flex: 1, padding: '0.75rem', background: '#334155', color: '#fff', border: 'none', borderRadius: '0.5rem' }} onClick={() => setShowAddBranchModal(false)}>Hủy</button>
+              <div style={{ marginBottom: '16px' }}>
+                <label style={{ display: 'block', fontSize: '13px', marginBottom: '4px' }}>Email:</label>
+                <input type="email" required value={newUser.email} onChange={(e) => setNewUser({ ...newUser, email: e.target.value })} style={{ width: '100%', padding: '8px', border: '1px solid #D1D5DB', borderRadius: '6px' }} />
+              </div>
+              <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end' }}>
+                <button type="button" onClick={() => setShowAddUserModal(false)} style={{ padding: '8px 16px', background: '#9CA3AF', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Hủy</button>
+                <button type="submit" style={{ padding: '8px 16px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>Khởi Tạo Tài Khoản</button>
               </div>
             </form>
           </div>
         </div>
       )}
 
-      {/* JSON DIFF MODAL */}
-      {selectedAuditLog && (
-        <div className="auth-overlay">
-          <div className="auth-modal" style={{ maxWidth: '600px' }}>
-            <h3 style={{ color: '#38bdf8', marginBottom: '0.5rem' }}>JSON Diff Viewer - {selectedAuditLog.id}</h3>
-            <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1rem' }}>{selectedAuditLog.time} | {selectedAuditLog.user}</p>
-            <div style={{ background: '#0f172a', padding: '1rem', borderRadius: '0.5rem', fontFamily: 'monospace', fontSize: '0.85rem' }}>
-              <div style={{ color: '#f43f5e', marginBottom: '0.5rem' }}><strong>BeforeState:</strong> {selectedAuditLog.before}</div>
-              <div style={{ color: '#10b981' }}><strong>AfterState:</strong> {selectedAuditLog.after}</div>
-            </div>
-            <button className="btn-primary" style={{ marginTop: '1.25rem' }} onClick={() => setSelectedAuditLog(null)}>Đóng Cửa Sổ</button>
+      {/* Tab 2: Branches Management */}
+      {activeTab === 'branches' && (
+        <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
+          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Danh Sách Chi Nhánh & Phí Bản Quyền Royalty Fee (%)</h2>
+          <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '16px' }}>
+            <thead>
+              <tr style={{ background: '#F9FAFB', borderBottom: '1px solid #E5E7EB', textAlign: 'left' }}>
+                <th style={{ padding: '10px' }}>Mã Chi Nhánh</th>
+                <th style={{ padding: '10px' }}>Tên Chi Nhánh</th>
+                <th style={{ padding: '10px' }}>Mạng WiFi BSSID Cho Phép</th>
+                <th style={{ padding: '10px' }}>Tỷ Lệ Phí Bản Quyền</th>
+                <th style={{ padding: '10px' }}>Trạng Thái</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ borderBottom: '1px solid #F3F4F6' }}>
+                <td style={{ padding: '12px 10px', fontWeight: 'bold' }}>BR01</td>
+                <td style={{ padding: '12px 10px' }}>Chi Nhánh Quận 1 (Flagship)</td>
+                <td style={{ padding: '12px 10px' }}>a4:b2:c8:99:11:00</td>
+                <td style={{ padding: '12px 10px', fontWeight: 'bold', color: '#059669' }}>5.0% Doanh Thu</td>
+                <td style={{ padding: '12px 10px' }}><span style={{ background: '#D1FAE5', color: '#065F46', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>Active</span></td>
+              </tr>
+              <tr style={{ borderBottom: '1px solid #F3F4F6' }}>
+                <td style={{ padding: '12px 10px', fontWeight: 'bold' }}>BR02</td>
+                <td style={{ padding: '12px 10px' }}>Chi Nhánh Quận 3</td>
+                <td style={{ padding: '12px 10px' }}>b5:c3:d9:00:22:11</td>
+                <td style={{ padding: '12px 10px', fontWeight: 'bold', color: '#059669' }}>4.5% Doanh Thu</td>
+                <td style={{ padding: '12px 10px' }}><span style={{ background: '#D1FAE5', color: '#065F46', padding: '2px 8px', borderRadius: '4px', fontSize: '12px', fontWeight: 'bold' }}>Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      )}
+
+      {/* Tab 3: Audit Log & JSON Diff */}
+      {activeTab === 'audit' && (
+        <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
+          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Centralized Audit Log & Trình So Sánh JSON Diff Viewer</h2>
+          <div style={{ background: '#1F2937', color: '#10B981', padding: '16px', borderRadius: '8px', fontFamily: 'monospace', fontSize: '13px', lineHeight: '1.6' }}>
+            <div>[CORRELATION-ID: #8921a481] Action: APPROVE_VOID | Table: Order | PerformedBy: Manager</div>
+            <div style={{ color: '#EF4444' }}>- BeforeState: &#123; "Status": "Preparing", "TotalAmount": 90000 &#125;</div>
+            <div style={{ color: '#10B981' }}>+ AfterState:  &#123; "Status": "Cancelled", "TotalAmount": 0, "Reason": "Khách đổi ý" &#125;</div>
           </div>
+        </div>
+      )}
+
+      {/* Tab 4: Disaster Recovery */}
+      {activeTab === 'dr' && (
+        <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
+          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Disaster Recovery Console (RTO/RPO Metrics & 1-Click Restore Drill)</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', margin: '16px 0' }}>
+            <div style={{ background: '#F3F4F6', padding: '16px', borderRadius: '8px' }}>
+              <div style={{ fontSize: '13px', color: '#4B5563' }}>Cam kết RTO (Recovery Time Objective):</div>
+              <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#059669' }}>&lt; 30 Phút</div>
+            </div>
+            <div style={{ background: '#F3F4F6', padding: '16px', borderRadius: '8px' }}>
+              <div style={{ fontSize: '13px', color: '#4B5563' }}>Cam kết RPO (Recovery Point Objective):</div>
+              <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#059669' }}>&lt; 5 Phút</div>
+            </div>
+          </div>
+          <button onClick={() => alert('Đã khởi chạy diễn tập Restore Drill dữ liệu SQL Server sang Database thử nghiệm thành công!')} style={{ padding: '12px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>🚀 1-CLICK CHẠY DIỄN TẬP KHÔI PHỤC DỮ LIỆU (RESTORE DRILL)</button>
+        </div>
+      )}
+
+      {/* Tab 5: Broadcast Message */}
+      {activeTab === 'broadcast' && (
+        <div style={{ background: '#fff', border: '1px solid #E5E7EB', borderRadius: '8px', padding: '20px' }}>
+          <h2 style={{ fontSize: '18px', marginTop: 0 }}>Phát Thông Báo Khẩn Cấp Toàn Chuỗi qua WebSocket</h2>
+          <textarea value={broadcastMsg} onChange={(e) => setBroadcastMsg(e.target.value)} placeholder="Nhập nội dung thông báo khẩn cấp (ví dụ: Hệ thống bảo trì trong 15 phút)..." style={{ width: '100%', height: '100px', padding: '12px', border: '1px solid #D1D5DB', borderRadius: '6px', marginBottom: '16px' }} />
+          <button onClick={handleSendBroadcast} style={{ padding: '12px 24px', background: '#DC2626', color: '#fff', border: 'none', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer' }}>📢 PHÁT THÔNG BÁO TOÀN HỆ THỐNG</button>
         </div>
       )}
     </div>
   );
 };
+
+export default SuperAdminConsolePage;

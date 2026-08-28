@@ -93,15 +93,13 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Ensure Database & Tables are Created on SQL Server DESKTOP-JE3MPP4\ViDay with seed data
+// Ensure Database & Rich Seed Data Population on SQL Server DESKTOP-JE3MPP4\ViDay
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var dbContext = services.GetRequiredService<AppDbContext>();
-        
-        // Migrate or EnsureCreated on SQL Server instance DESKTOP-JE3MPP4\ViDay
         try
         {
             dbContext.Database.Migrate();
@@ -111,10 +109,17 @@ using (var scope = app.Services.CreateScope())
             dbContext.Database.EnsureCreated();
         }
 
-        // Seed Users across 8 roles if empty
-        if (!dbContext.Users.Any())
+        // Rich Data Seeding for 8 Roles
+        if (!dbContext.Branches.Any())
         {
-            var defaultBranchId = Guid.NewGuid();
+            var branch1 = new Branch { Id = Guid.NewGuid(), Code = "BR01", Name = "Chi Nhánh Quận 1 (Flagship)", Address = "123 Lê Lợi, Q.1, TP.HCM", Phone = "02838221199" };
+            var branch2 = new Branch { Id = Guid.NewGuid(), Code = "BR02", Name = "Chi Nhánh Quận 3", Address = "456 Nguyễn Thị Minh Khai, Q.3, TP.HCM", Phone = "02839332288" };
+            dbContext.Branches.AddRange(branch1, branch2);
+            dbContext.SaveChanges();
+
+            var defaultBranchId = branch1.Id;
+
+            // 1. Seed Users across 8 roles
             var seedUsers = new[]
             {
                 new User { Username = "superadmin", FullName = "Nguyễn Văn Quảng", Email = "superadmin@fnb.com", Role = "SuperAdmin", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." },
@@ -127,12 +132,36 @@ using (var scope = app.Services.CreateScope())
                 new User { Username = "customer1", FullName = "Nguyễn Văn A", Email = "customer1@fnb.com", Role = "Customer", BranchId = defaultBranchId, PasswordHash = "AQAAAAEAACcQAAAAE..." }
             };
             dbContext.Users.AddRange(seedUsers);
+
+            // 2. Seed Categories & Products
+            var catDrinks = new Category { Id = Guid.NewGuid(), BranchId = defaultBranchId, Name = "Trà & Cà Phê", Description = "Đồ uống pha chế tươi nóng/lạnh" };
+            var catCakes = new Category { Id = Guid.NewGuid(), BranchId = defaultBranchId, Name = "Bánh Ngọt & Tráng Miệng", Description = "Bánh tươi nhập trong ngày" };
+            dbContext.Categories.AddRange(catDrinks, catCakes);
+
+            var p1 = new Product { Id = Guid.NewGuid(), BranchId = defaultBranchId, CategoryId = catDrinks.Id, Sku = "BEV-001", Name = "Cà Phê Sữa Đá Sài Gòn", Price = 35000, CostPrice = 12000, StockQuantity = 150, Unit = "Ly" };
+            var p2 = new Product { Id = Guid.NewGuid(), BranchId = defaultBranchId, CategoryId = catDrinks.Id, Sku = "BEV-002", Name = "Trà Đào Cam Sả Tươi", Price = 45000, CostPrice = 15000, StockQuantity = 95, Unit = "Ly" };
+            var p3 = new Product { Id = Guid.NewGuid(), BranchId = defaultBranchId, CategoryId = catCakes.Id, Sku = "CAKE-001", Name = "Bánh Tiramisu Ý", Price = 55000, CostPrice = 22000, StockQuantity = 40, Unit = "Cái" };
+            dbContext.Products.AddRange(p1, p2, p3);
+
+            // 3. Seed Audit Logs
+            var audit1 = new AuditLog { Id = Guid.NewGuid(), BranchId = defaultBranchId, UserId = seedUsers[2].Id, Action = "APPROVE_VOID", EntityType = "Order", EntityId = Guid.NewGuid().ToString(), StateBefore = "{\"Status\":\"Preparing\",\"TotalAmount\":90000}", StateAfter = "{\"Status\":\"Cancelled\",\"TotalAmount\":0,\"Reason\":\"Khách đổi ý\"}", Reason = "Khách hủy order", IpAddress = "192.168.1.15", Timestamp = DateTime.UtcNow.AddMinutes(-45) };
+            var audit2 = new AuditLog { Id = Guid.NewGuid(), BranchId = defaultBranchId, UserId = seedUsers[1].Id, Action = "PAYROLL_LOCK", EntityType = "PayrollRecord", EntityId = Guid.NewGuid().ToString(), StateBefore = "{\"IsLocked\":false,\"Month\":8}", StateAfter = "{\"IsLocked\":true,\"Month\":8}", Reason = "Khóa sổ lương", IpAddress = "192.168.1.50", Timestamp = DateTime.UtcNow.AddHours(-2) };
+            dbContext.AuditLogs.AddRange(audit1, audit2);
+
+            // 4. Seed Employees & Attendance
+            var emp1 = new Employee { Id = Guid.NewGuid(), BranchId = defaultBranchId, EmployeeCode = "EMP001", FullName = "Trần Thanh Tâm", Role = "Staff", Phone = "0901234567", BaseSalary = 7500000, HourlyRate = 35000, IsActive = true, JoinedDate = DateTime.UtcNow.AddMonths(-6) };
+            var emp2 = new Employee { Id = Guid.NewGuid(), BranchId = defaultBranchId, EmployeeCode = "EMP002", FullName = "Nguyễn Thị Mai", Role = "Cashier", Phone = "0908765432", BaseSalary = 8500000, HourlyRate = 40000, IsActive = true, JoinedDate = DateTime.UtcNow.AddMonths(-12) };
+            dbContext.Employees.AddRange(emp1, emp2);
+
+            var att1 = new Attendance { Id = Guid.NewGuid(), BranchId = defaultBranchId, EmployeeId = emp1.Id, CheckInTime = DateTime.UtcNow.AddHours(-6), WifiBssid = "a4:b2:c8:99:11:00", IpAddress = "192.168.1.22", IsVerified = true, Note = "Selfie + BSSID Verified" };
+            dbContext.Attendances.Add(att1);
+
             dbContext.SaveChanges();
         }
     }
     catch (Exception ex)
     {
-        Log.Warning("Automated SQL Server initialization notice: {Message}", ex.Message);
+        Log.Warning("Automated SQL Server seed notice: {Message}", ex.Message);
     }
 }
 
