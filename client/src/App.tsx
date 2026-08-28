@@ -40,10 +40,10 @@ export const App: React.FC = () => {
 
   const handleLoginSuccess = (user: { fullName: string; role: string }) => {
     setCurrentUser(user);
-    // Route user to their dedicated role UI per RACI matrix
+    // Route user to their dedicated default tab per RACI matrix
     switch (user.role) {
       case 'Kitchen':
-        setActiveTab('kds');
+        setActiveTab('kds-tickets');
         break;
       case 'Staff':
         setActiveTab('staff-runner');
@@ -52,10 +52,10 @@ export const App: React.FC = () => {
         setActiveTab('pos');
         break;
       case 'Warehouse':
-        setActiveTab('inventory');
+        setActiveTab('wh-receipt');
         break;
       case 'Manager':
-        setActiveTab('manager-dash');
+        setActiveTab('manager-approvals');
         break;
       case 'Admin':
         setActiveTab('users');
@@ -110,7 +110,7 @@ export const App: React.FC = () => {
 
   return (
     <div className="app-layout">
-      {/* LEFT VERTICAL SIDEBAR (STRICT ISOLATION, NO EMOJIS, NO TOP BANNER DUPES) */}
+      {/* LEFT VERTICAL SIDEBAR (CLEAN, NO EMOJIS, NO TOP BANNER SUB-BUTTONS) */}
       <Sidebar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -121,13 +121,13 @@ export const App: React.FC = () => {
       {/* MAIN CONTENT WRAPPER */}
       <main className="main-wrapper" ref={mainRef}>
         {/* ROLE 1: CUSTOMER UI */}
-        {activeTab === 'customer-qr' && <CustomerQrPage />}
+        {(activeTab.startsWith('customer-')) && <CustomerQrPage activeTab={activeTab} />}
 
         {/* ROLE 2: STAFF UI */}
-        {activeTab === 'staff-runner' && <StaffRunnerPage />}
+        {(activeTab.startsWith('staff-')) && <StaffRunnerPage activeTab={activeTab} />}
 
         {/* ROLE 3: KITCHEN UI */}
-        {activeTab === 'kds' && <KdsKitchenPage />}
+        {(activeTab.startsWith('kds-')) && <KdsKitchenPage activeTab={activeTab} />}
 
         {/* ROLE 4: CASHIER TOUCH POS UI */}
         {activeTab === 'pos' && (
@@ -213,19 +213,43 @@ export const App: React.FC = () => {
           </div>
         )}
 
+        {activeTab === 'cashier-shift' && (
+          <div className="card">
+            <h2>Đóng / Mở Ca & Kiểm Tiền Két (Cashier Shift Reconciliation)</h2>
+            <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Đếm chi tiết số lượng từng mệnh giá tiền mặt thực tế khi bàn giao ca trực.</p>
+            <div style={{ marginTop: '1.25rem', padding: '1.25rem', background: '#0f172a', borderRadius: '0.5rem' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+                <span>Tiền mặt kỳ vọng trong két:</span>
+                <span style={{ fontWeight: 'bold', color: '#10b981' }}>5.000.000 đ</span>
+              </div>
+              <div className="form-group" style={{ marginTop: '1rem' }}>
+                <label>Tiền Mặt Thực Đếm (VNĐ)</label>
+                <input type="number" className="form-control" defaultValue={4980000} />
+              </div>
+              <div className="form-group">
+                <label>Giải Trình Chênh Lệch (Bắt Buộc Khi Lệch Tiền)</label>
+                <input type="text" className="form-control" placeholder="Ví dụ: Thối nhầm tiền lẻ 20.000đ cho đơn #104" />
+              </div>
+              <button className="btn-primary" style={{ width: 'auto', padding: '0.75rem 1.5rem', marginTop: '0.5rem' }} onClick={() => alert('Đã chốt sổ giao ca thu ngân và chuyển báo cáo chênh lệch tới Quản Lý!')}>
+                Xác Nhận Chốt Ca Thu Ngân
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* ROLE 5: WAREHOUSE UI */}
-        {activeTab === 'inventory' && <WarehousePage />}
+        {(activeTab.startsWith('wh-')) && <WarehousePage activeTab={activeTab} />}
 
         {/* ROLE 6: STORE MANAGER OPERATIONS UI */}
-        {(activeTab === 'manager-dash' || activeTab === 'manager-void') && <ManagerOperationsPage />}
+        {(activeTab.startsWith('manager-')) && <ManagerOperationsPage activeTab={activeTab} />}
 
         {/* ROLE 7: BRAND ADMIN ERP UI */}
-        {(activeTab === 'users' || activeTab === 'catalog-bom' || activeTab === 'finance-payroll' || activeTab === 'bi-reports') && currentUser.role === 'Admin' && (
+        {(activeTab === 'users' || activeTab.startsWith('admin-')) && currentUser.role === 'Admin' && (
           <AdminErpPage activeTab={activeTab} />
         )}
 
         {/* ROLE 8: SUPERADMIN CONSOLE UI */}
-        {(activeTab === 'users' || activeTab === 'branch-admin' || activeTab === 'audit-log' || activeTab === 'system-console') && currentUser.role === 'SuperAdmin' && (
+        {(activeTab === 'users' || activeTab.startsWith('super-')) && currentUser.role === 'SuperAdmin' && (
           <SuperAdminConsolePage activeTab={activeTab} />
         )}
       </main>

@@ -2,7 +2,7 @@ import React from 'react';
 
 interface SidebarProps {
   activeTab: string;
-  setActiveTab: (tab: any) => void;
+  setActiveTab: (tab: string) => void;
   currentUser: { fullName: string; role: string } | null;
   onLogout: () => void;
 }
@@ -10,45 +10,67 @@ interface SidebarProps {
 export const Sidebar: React.FC<SidebarProps> = ({ activeTab, setActiveTab, currentUser, onLogout }) => {
   const role = currentUser?.role || 'Staff';
 
-  // Strict Role-Based Menu Mapping (No Overlap, No Icons)
+  // Comprehensive, Strict Role-Isolated Left Menu Items (NO Top Banners, NO Emoji Icons)
   const getMenuItems = () => {
     switch (role) {
-      case 'Kitchen':
-        return [{ id: 'kds', label: 'KDS Bếp / Bar' }];
+      case 'Customer':
+        return [
+          { id: 'customer-qr', label: 'Menu Điện Tử Gọi Món' },
+          { id: 'customer-service', label: 'Tiện Ích Yêu Cầu Tại Bàn' },
+          { id: 'customer-loyalty', label: 'Ví Tích Điểm Loyalty' },
+        ];
 
       case 'Staff':
-        return [{ id: 'staff-runner', label: 'Phục Vụ Bàn & Gọi Món' }];
+        return [
+          { id: 'staff-runner', label: 'Hàng Đợi Trả Món (Runner)' },
+          { id: 'staff-kitchen-status', label: 'Soi Trạng Thái Bếp (Read-Only)' },
+          { id: 'staff-checkin', label: 'Tự Chấm Công Selfie WiFi' },
+        ];
+
+      case 'Kitchen':
+        return [
+          { id: 'kds-tickets', label: 'KDS Phiếu Order Bếp' },
+          { id: 'kds-batch', label: 'Chế Độ Gom Món Nhanh' },
+          { id: 'kds-86list', label: 'Khóa Món Tức Thì (86 List)' },
+        ];
 
       case 'Cashier':
-        return [{ id: 'pos', label: 'POS Bán Hàng & Thu Tiền' }];
+        return [
+          { id: 'pos', label: 'POS Bán Hàng & Thu Tiền' },
+          { id: 'cashier-shift', label: 'Đóng / Mở Ca & Đếm Két' },
+        ];
 
       case 'Warehouse':
-        return [{ id: 'inventory', label: 'Quản Lý Kho WMS & FEFO' }];
+        return [
+          { id: 'wh-receipt', label: 'Nhập Hàng (Goods Receipt)' },
+          { id: 'wh-fefo', label: 'Quản Lý Lô Date FEFO' },
+          { id: 'wh-production', label: 'Lệnh Chế Biến Sơ Chế' },
+          { id: 'wh-stockcount', label: 'Kiểm Kê Kho & Phiếu Xuất Hủy' },
+        ];
 
       case 'Manager':
         return [
-          { id: 'manager-dash', label: 'Dashboard Ca Vận Hành' },
-          { id: 'manager-void', label: 'Duyệt Khẩn Cấp (Void / Shift Variance)' },
+          { id: 'manager-approvals', label: 'Hộp Thư Phê Duyệt Khẩn Cấp' },
+          { id: 'manager-live-monitor', label: 'Giám Sát Vận Hành Chi Nhánh' },
+          { id: 'manager-scheduling', label: 'Xếp Lịch Ca & Duyệt Phép' },
         ];
 
       case 'Admin':
         return [
           { id: 'users', label: 'Quản Lý Tài Khoản (Tạo & Xóa User)' },
-          { id: 'catalog-bom', label: 'Cấu Hình Menu & BOM' },
-          { id: 'finance-payroll', label: 'ERP Tài Chính & Khóa Lương' },
-          { id: 'bi-reports', label: 'BI Menu Engineering' },
+          { id: 'admin-bom', label: 'Cấu Hình Menu & BOM Builder' },
+          { id: 'admin-promotions', label: 'Khuyến Mãi & Conflict Matrix' },
+          { id: 'admin-payroll', label: 'Khóa Sổ Bảng Lương' },
+          { id: 'admin-pnl', label: 'Báo Cáo Food Cost P&L' },
         ];
 
       case 'SuperAdmin':
         return [
           { id: 'users', label: 'Quản Lý Tài Khoản Toàn Hệ Thống' },
-          { id: 'branch-admin', label: 'Quản Lý Đa Chi Nhánh' },
-          { id: 'audit-log', label: 'Centralized Audit Log' },
-          { id: 'system-console', label: 'System Console & Backup' },
+          { id: 'super-branch', label: 'Quản Lý Chi Nhánh Nhượng Quyền' },
+          { id: 'super-audit', label: 'Centralized Audit Log (JSON Diff)' },
+          { id: 'super-console', label: 'System Console & Backup DR' },
         ];
-
-      case 'Customer':
-        return [{ id: 'customer-qr', label: 'Thực Đơn Điện Tử (Dynamic QR)' }];
 
       default:
         return [{ id: 'pos', label: 'Giao Diện Phục Vụ' }];

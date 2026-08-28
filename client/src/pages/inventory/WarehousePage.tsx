@@ -1,26 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export const WarehousePage: React.FC = () => {
-  const [tab, setTab] = useState<'receipt' | 'fefo' | 'production' | 'stockcount'>('receipt');
+interface WarehousePageProps {
+  activeTab: string;
+}
 
+export const WarehousePage: React.FC<WarehousePageProps> = ({ activeTab }) => {
   return (
     <div>
-      <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.25rem' }}>
-        <button className={`category-btn ${tab === 'receipt' ? 'active' : ''}`} onClick={() => setTab('receipt')}>
-          Nhập Hàng (Goods Receipt)
-        </button>
-        <button className={`category-btn ${tab === 'fefo' ? 'active' : ''}`} onClick={() => setTab('fefo')}>
-          Quản Lý Lô Date FEFO
-        </button>
-        <button className={`category-btn ${tab === 'production' ? 'active' : ''}`} onClick={() => setTab('production')}>
-          Lệnh Chế Biến Sơ Chế
-        </button>
-        <button className={`category-btn ${tab === 'stockcount' ? 'active' : ''}`} onClick={() => setTab('stockcount')}>
-          Phiên Kiểm Kê Kho & Hủy
-        </button>
-      </div>
-
-      {tab === 'receipt' && (
+      {/* 1. NHẬP HÀNG */}
+      {activeTab === 'wh-receipt' && (
         <div className="card">
           <h2>Mua Hàng & Nhập Kho (Procurement & Goods Receipt)</h2>
           <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>
@@ -50,11 +38,12 @@ export const WarehousePage: React.FC = () => {
         </div>
       )}
 
-      {tab === 'fefo' && (
+      {/* 2. FEFO BATCH CONTROL */}
+      {activeTab === 'wh-fefo' && (
         <div className="card">
           <h2>Bảng Theo Dõi Lô Hạn Sử Dụng (FEFO Control)</h2>
           <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Hệ thống tự động ưu chỉ định xuất kho lô gần hết hạn nhất (First Expired, First Out).</p>
-          <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1.25rem' }}>
             <thead>
               <tr style={{ borderBottom: '2px solid #334155', color: '#10b981', textAlign: 'left' }}>
                 <th style={{ padding: '0.75rem' }}>Số Lô (Batch#)</th>
@@ -70,25 +59,27 @@ export const WarehousePage: React.FC = () => {
                 <td style={{ padding: '0.75rem' }}>Sữa Tươi Thanh Trùng 1L</td>
                 <td style={{ padding: '0.75rem' }}>30 Hộp</td>
                 <td style={{ padding: '0.75rem', color: '#f43f5e' }}>2026-09-02 (Còn 5 ngày)</td>
-                <td style={{ padding: '0.75rem', color: '#10b981', fontWeight: 'bold' }}>🔴 Cận Date (Xuất Hàng Đầu Tiên)</td>
+                <td style={{ padding: '0.75rem', color: '#f43f5e', fontWeight: 'bold' }}>Cận Date (Ưu Tiên Xuất Hàng Đầu Tiên)</td>
               </tr>
             </tbody>
           </table>
         </div>
       )}
 
-      {tab === 'production' && (
+      {/* 3. PRODUCTION ORDER */}
+      {activeTab === 'wh-production' && (
         <div className="card">
           <h2>Lệnh Chế Biến Sơ Chế Bán Thành Phẩm (Production Order & Yield Variance)</h2>
           <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Nấu sẵn bán thành phẩm (Siro Đào, Thạch Trân Châu) và đối soát hao hụt sản xuất.</p>
-          <ul style={{ marginTop: '1rem', lineHeight: '2' }}>
-            <li>🧪 <strong>Lệnh PO-PREP-05:</strong> Nấu 10 Lít Siro Đào Nhà Làm</li>
-            <li>📊 <strong>Hao hụt sản xuất (Yield Variance):</strong> Lý thuyết 10L - Thực tế 9L = <span style={{ color: '#f59e0b' }}>-10% hao hụt bốc hơi</span></li>
+          <ul style={{ marginTop: '1.25rem', lineHeight: '2' }}>
+            <li>Lệnh PO-PREP-05: Nấu 10 Lít Siro Đào Nhà Làm</li>
+            <li>Hao hụt sản xuất (Yield Variance): Lý thuyết 10L - Thực tế 9L = <span style={{ color: '#f59e0b' }}>-10% hao hụt bốc hơi</span></li>
           </ul>
         </div>
       )}
 
-      {tab === 'stockcount' && (
+      {/* 4. STOCK COUNT */}
+      {activeTab === 'wh-stockcount' && (
         <div className="card">
           <h2>Phiên Kiểm Kê Kho & Phiếu Xuất Hủy (Stock Count & Waste)</h2>
           <p style={{ color: '#94a3b8', marginTop: '0.25rem' }}>Chụp Snapshot tồn kho hệ thống và gửi phiếu kiểm kê đếm thực tế lên Quản lý duyệt.</p>
