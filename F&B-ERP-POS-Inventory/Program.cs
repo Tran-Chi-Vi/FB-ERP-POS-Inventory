@@ -100,7 +100,16 @@ using (var scope = app.Services.CreateScope())
     try
     {
         var dbContext = services.GetRequiredService<AppDbContext>();
-        dbContext.Database.EnsureCreated();
+        
+        // Migrate or EnsureCreated on SQL Server instance DESKTOP-JE3MPP4\ViDay
+        try
+        {
+            dbContext.Database.Migrate();
+        }
+        catch
+        {
+            dbContext.Database.EnsureCreated();
+        }
 
         // Seed Users across 8 roles if empty
         if (!dbContext.Users.Any())

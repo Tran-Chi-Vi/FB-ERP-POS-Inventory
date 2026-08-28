@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using F_B_ERP_POS_Inventory.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -39,7 +40,77 @@ namespace F_B_ERP_POS_Inventory.Infrastructure.Persistence
         {
             base.OnModelCreating(modelBuilder);
 
-            // Optimistic concurrency RowVersion for Product stock & Order status
+            // Configure DeleteBehavior.NoAction on ALL foreign keys to prevent SQL Server Error 1785
+            modelBuilder.Entity<Category>()
+                .HasOne(c => c.Branch)
+                .WithMany()
+                .HasForeignKey(c => c.BranchId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.Category)
+                .WithMany(c => c.Products)
+                .HasForeignKey(p => p.CategoryId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Product>()
+                .HasOne(p => p.Branch)
+                .WithMany()
+                .HasForeignKey(p => p.BranchId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.Branch)
+                .WithMany()
+                .HasForeignKey(u => u.BranchId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(o => o.Branch)
+                .WithMany()
+                .HasForeignKey(o => o.BranchId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<OrderItem>()
+                .HasOne(i => i.Order)
+                .WithMany()
+                .HasForeignKey(i => i.OrderId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Employee>()
+                .HasOne(e => e.Branch)
+                .WithMany()
+                .HasForeignKey(e => e.BranchId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Attendance>()
+                .HasOne(a => a.Employee)
+                .WithMany()
+                .HasForeignKey(a => a.EmployeeId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<PayrollRecord>()
+                .HasOne(p => p.Employee)
+                .WithMany()
+                .HasForeignKey(p => p.EmployeeId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<LoyaltyLedger>()
+                .HasOne(l => l.Customer)
+                .WithMany()
+                .HasForeignKey(l => l.CustomerId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            // Globally override all foreign key delete behaviors
+            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+            {
+                foreach (var fk in entityType.GetForeignKeys())
+                {
+                    fk.DeleteBehavior = DeleteBehavior.NoAction;
+                }
+            }
+
+            // Optimistic concurrency RowVersion for Product stock
             modelBuilder.Entity<Product>()
                 .Property(p => p.RowVersion)
                 .IsRowVersion();
